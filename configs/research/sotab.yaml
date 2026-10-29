@@ -1,0 +1,13 @@
+base: alaska.yaml
+dataset: {name: SOTAB_CPA, root: data, variant: original}
+experiment: {name: SOTAB_research}
+research:
+  name: sotab
+  fold: websites
+  calibration: calibration/research/sotab_{matcher}_{fold}.json
+  matcher_params:
+    mean: {name_weight: 0.0, value_weight: 1.0}
+  roles:
+    fit: {name: SOTAB_CPA, sets: [fit_*]}
+    validation: {name: SOTAB_CPA, sets: [validation_*]}
+    test: {name: SOTAB_CPA, sets: [test_*]}

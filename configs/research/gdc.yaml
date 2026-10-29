@@ -1,0 +1,14 @@
+base: alaska.yaml
+dataset: {name: GDC, root: data, variant: original}
+experiment: {name: GDC_research}
+research:
+  name: gdc
+  fold: external_calibration
+  matcher: magneto
+  calibration: calibration/research/gdc_{matcher}_{fold}.json
+  matcher_params:
+    magneto: {llm_workers: 2}
+  roles:
+    fit: {name: Real, sets: [1009ipopayments]}
+    validation: {name: Real, sets: [DCMS_NHM_NHM]}
+    test: {name: GDC, sets: [clinical]}

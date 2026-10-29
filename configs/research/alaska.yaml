@@ -1,0 +1,25 @@
+dataset: {name: Alaska, root: data, variant: original}
+experiment: {name: Alaska_research, output_dir: results/research, seed: 42}
+candidates: {mode: all}
+research:
+  name: alaska
+  fold: camera8_notebook8_monitor8
+  matcher: mean
+  calibration: calibration/research/alaska_{matcher}_{fold}.json
+  roles:
+    fit: {name: Alaska, sets: [camera_fit]}
+    validation: {name: Alaska, sets: [notebook_validation]}
+    test: {name: Alaska, sets: [monitor_test]}
+  n_samples: 32
+  max_cells: 200
+  risk_lambda: 0.5
+  prior: 0.5
+  lambda_grid: [0, 0.1, 0.25, 0.5]
+  prior_grid: [0.4, 0.45, 0.5]
+  prior_strategy: observed_only
+  missing: [observed_only, mode, top1, Q_mean, Q_risk]
+  global_missing: [observed_only]
+  optimizers: [local, greedy, alite, global]
+  subsets: {k: [2, 3, 4, 6, 8, 12, all], repeats: 20, seed: 2026}
+  diagnostics: true
+  plots: true

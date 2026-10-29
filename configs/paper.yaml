@@ -1,0 +1,26 @@
+# Main handoff configuration. Change these four modules for controlled comparisons.
+base: research/isolate_alaska.yaml
+research:
+  name: paper
+  matcher: mean
+  evidence_scope: pair
+  calibration: calibration/research/paper_{matcher}_{fold}.json
+modules:
+  uncertainty_model:
+    name: calibrated_mixture
+    params: {rho: 0.95, k_max: 10}
+  matcher:
+    name: sbert_mean
+    params: {name_weight: 1.0, value_weight: 1.0}
+  uncertainty_propagation:
+    name: calibrated_logit
+    params: {risk_lambda: 0.5}
+  global_optimizer:
+    name: ilp_logit
+    params: {triangles: auto, require_optimal: true, mip_rel_gap: 0.0, save_solution: false}
+calibration:
+  method: platt  # identity is only for a genuinely calibrated base probability
+experiment:
+  online: true
+paths:
+  raw_score_cache: false  # true preserves raw per-round scores on disk, useful for paid LLMs
