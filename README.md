@@ -69,6 +69,3 @@ python check_llm.py -c configs/magneto_deepseek.yaml
 python run.py --phase package --output dist/umsm_source.zip
 ```
 
-交接 ZIP 带源码 SHA256 清单，排除 `.env`、虚拟环境、数据、模型、缓存、校准及结果。协调者另行共享审核过的数据 provenance 和冻结校准；每位实验人员使用自己的输出/缓存目录。具体分工模板见实验手册。
-
-仓库保留论文数学与实验隔离测试；删除教学运行示例、旧专用 study 脚本和历史试跑配置。必要的原始分数/阈值方法仍保留为对照，不冒充论文主方法。
