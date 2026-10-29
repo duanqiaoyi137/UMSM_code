@@ -40,7 +40,6 @@ python run.py --phase factorial --selection latest
 
 `fit` 生成可复用冻结校准；每次评估只生成一个自包含 HTML，含配置、校准哈希、指标及具体 FP/FN。新默认研究名为 `paper`，不会覆盖 `alaska_isolated` 的已有结果。
 
-完整命令、三折、原生 Magneto、同域/跨域校准、遮蔽、表数扫描和合作实验规范见 [实验手册](md/RESEARCH_EXPERIMENTS.md)。论文逐项核对、数据对象和代码阅读见 [学生指南](md/STUDENT_GUIDE.md)。
 
 ## 切换方法
 
