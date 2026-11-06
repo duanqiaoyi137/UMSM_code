@@ -1,0 +1,111 @@
+gender,height,weight,bmi,ethnicity_self_identify,smoking_history,vital_status,path_diag_to_last_contact_days,path_diag_to_death_days,cause_of_death,lost_to_follow_up,tumor_reoccur_after_treatment
+Male,188.0,115.0,32.54,Caucasian,Current reformed smoker within past 15 years,Deceased,128.0,129.0,,No,0.0
+Female,162.0,54.0,20.61,Caucasian,Current reformed smoker within past 15 years,Deceased,280.0,322.0,,No,
+Male,193.0,102.0,27.44,Caucasian,,Deceased,385.0,478.0,GBM,No,1.0
+Female,164.0,52.0,19.32,Caucasian,Current smoker: Includes daily and non-daily smokers,Deceased,155.0,155.0,GBM,No,
+Male,170.0,70.0,24.22,Caucasian,,Living,608.0,,,Yes,0.0
+Male,170.0,70.0,24.22,Caucasian,Current smoker: Includes daily and non-daily smokers,Deceased,1.0,79.0,GBM,No,
+Female,165.0,60.0,22.04,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,0.0,66.0,Severe acute pneumonia,No,
+Male,185.0,110.0,32.14,Caucasian,"Current reformed smoker, more than 15 years",Deceased,195.0,349.0,GBM,No,
+Male,168.0,69.0,24.45,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,806.0,,,No,0.0
+Male,172.0,86.0,29.07,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,69.0,191.0,GBM,No,
+Male,172.0,76.0,25.69,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,840.0,,,No,0.0
+Female,165.0,63.0,23.14,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,0.0,,,Yes,
+Male,175.0,96.0,31.35,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,508.0,509.0,GBM,No,0.0
+Male,173.0,91.0,30.41,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,666.0,,,No,0.0
+Female,165.0,74.0,27.18,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,496.0,496.0,Glioblastoma progression,No,0.0
+Male,183.0,91.0,27.17,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,362.0,,,Yes,
+Male,171.0,73.0,24.96,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,182.0,291.0,GBM,No,0.0
+Female,162.0,75.0,28.58,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,734.0,,,No,0.0
+Male,175.0,77.0,25.07,Caucasian,,Deceased,2.0,646.0,GBM,No,
+Female,175.0,69.0,22.56,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,482.0,497.0,GBM,No,0.0
+Male,178.0,95.0,30.11,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,1075.0,,,No,0.0
+Female,170.0,56.0,19.46,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,668.0,,,No,1.0
+Male,180.0,125.0,38.34,Hispanic,,Deceased,550.0,591.0,Malignant brain neoplasm,No,0.0
+Male,168.0,70.0,25.07,Caucasian,Current reformed smoker within past 15 years,Living,823.0,,,No,0.0
+Female,160.0,67.0,26.21,Hispanic,,Deceased,154.0,180.0,GBM,No,
+Male,172.0,70.0,23.66,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,828.0,828.0,Malignant brain neoplasm,No,0.0
+Male,180.0,98.0,29.98,Caucasian,Current reformed smoker within past 15 years,Living,186.0,,,Yes,
+Male,196.0,98.0,25.61,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,104.0,111.0,GBM,No,
+Male,178.0,68.0,21.52,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,91.0,,,Yes,
+Male,188.0,166.0,46.97,Caucasian,,Deceased,738.0,738.0,Malignant brain neoplasm,Yes,1.0
+Male,173.0,66.0,22.2,Caucasian,Current smoker: Includes daily and non-daily smokers,Living,699.0,,,No,0.0
+Female,163.0,87.0,32.95,Caucasian,,Deceased,350.0,378.0,Malignant brain neoplasm,No,1.0
+Male,173.0,94.0,31.47,Caucasian,Current smoker: Includes daily and non-daily smokers,Deceased,381.0,381.0,Progression of brain cancer,No,
+Male,173.0,98.0,32.69,Asian/Filipino,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,685.0,,,No,0.0
+Female,168.0,86.0,30.66,Caucasian,"Current reformed smoker, more than 15 years",Deceased,42.0,43.0,GBM,No,
+Female,163.0,66.0,24.89,Hispanic,Current smoker: Includes daily and non-daily smokers,Deceased,223.0,281.0,GBM,No,0.0
+Male,171.0,76.0,25.99,Caucasian,,Deceased,403.0,403.0,"Cerebral edema, brain dislocation",No,0.0
+Female,163.0,79.0,29.73,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,815.0,,,No,0.0
+Female,159.0,71.0,28.08,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,-9.0,147.0,GBM,No,
+Female,167.0,82.0,29.4,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,786.0,,,No,0.0
+Male,168.0,76.0,26.93,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,87.0,87.0,Cardiac infarction,No,0.0
+Female,155.0,75.0,31.17,Hispanic,Current smoker: Includes daily and non-daily smokers,Deceased,176.0,238.0,GBM,No,0.0
+Female,157.0,76.0,30.72,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,7.0,7.0,Respiratory failure,Yes,
+Female,150.0,77.0,34.41,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,613.0,721.0,GBM,No,1.0
+Female,152.0,64.0,27.56,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,127.0,127.0,GBM,No,
+Male,180.0,79.0,24.27,Caucasian,,Living,804.0,,,No,0.0
+Male,180.0,91.0,27.89,Caucasian,,Deceased,705.0,705.0,Malignant brain neoplasm,No,1.0
+Female,165.0,68.0,24.79,Caucasian,,Deceased,397.0,401.0,Malignant brain neoplasm,No,1.0
+Female,160.0,60.0,23.44,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,775.0,,,No,
+Female,152.0,55.0,23.82,Caucasian,,Deceased,206.0,274.0,"Neoplasm, uncertain whether benign or malignant",No,
+Male,176.0,105.0,33.0,Caucasian,"Current reformed smoker, more than 15 years",Living,1107.0,,,No,1.0
+Female,153.0,61.0,26.0,Caucasian,Current smoker: Includes daily and non-daily smokers,Deceased,116.0,116.0,Pneumonia after fracture of lower limb,No,
+Male,182.0,100.0,30.19,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,1.0,1.0,Oedema of the left part of the tumor in the postoperative period,No,0.0
+Female,164.0,58.0,21.0,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,1072.0,,,No,0.0
+Female,165.0,85.0,31.0,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,666.0,,,Yes,0.0
+Male,172.0,90.0,30.42,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,230.0,684.0,GBM,No,1.0
+Female,160.0,65.0,25.0,Caucasian,,Deceased,7.0,7.0,GBM,No,0.0
+Female,158.0,58.0,23.0,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,720.0,,,No,1.0
+Male,182.0,97.0,29.28,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,6.0,6.0,Intracerebral hematoma after surgery,No,0.0
+Male,185.0,78.0,22.0,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,,,,
+Male,180.0,90.0,27.78,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,245.0,245.0,Autopsy not performed/ sudden death,No,1.0
+Female,166.0,56.0,20.0,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,,,,
+Male,175.0,80.0,25.99,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,192.0,192.0,Fall with head trauma,Yes,1.0
+Female,160.0,71.0,27.73,Caucasian,"Current reformed smoker, more than 15 years",Deceased,19.0,19.0,GBM,Yes,0.0
+Male,172.0,78.0,26.37,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,1023.0,,,No,1.0
+Female,164.0,70.0,26.03,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,805.0,805.0,Malignant brain neoplasm,No,1.0
+Male,170.0,70.0,24.22,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,590.0,590.0,Malignant brain neoplasm,No,0.0
+Female,153.0,52.0,22.21,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,383.0,,,Yes,
+Female,158.0,58.0,23.23,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,96.0,121.0,,Yes,
+Female,156.0,65.0,26.71,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,841.0,841.0,Malignant brain neoplasm,No,1.0
+Male,170.0,65.0,22.49,Han nationality,Current smoker: Includes daily and non-daily smokers,Deceased,221.0,270.0,,No,
+Male,184.0,103.0,30.42,Caucasian,Current smoker: Includes daily and non-daily smokers,Deceased,363.0,363.0,GBM,No,0.0
+Male,184.0,82.0,24.22,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,3.0,,,Yes,
+Male,178.0,80.0,25.0,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,382.0,382.0,"Respiratory failure, brain edema?",No,1.0
+Female,164.0,60.0,22.0,Caucasian,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,651.0,651.0,Malignant brain neoplasm,No,1.0
+Female,160.0,70.0,27.34,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,388.0,,,Yes,0.0
+Female,157.0,50.0,20.28,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,340.0,340.0,Maligant brain neoplasm,Yes,1.0
+Female,158.0,50.0,20.03,Mongol nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,386.0,,,Yes,1.0
+Male,175.0,67.0,21.88,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,264.0,,,Yes,1.0
+Male,180.0,70.0,21.6,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,411.0,411.0,Malignant brain neoplasm,No,1.0
+Male,182.0,75.0,22.64,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,311.0,311.0,Malignant brain neoplasm,No,1.0
+Male,172.0,70.0,23.66,Caucasian,,Deceased,226.0,265.0,GBM,No,0.0
+Male,181.0,112.0,34.0,Caucasian,,Deceased,188.0,294.0,GBM,No,1.0
+Male,170.0,65.0,22.49,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,996.0,,,No,1.0
+Male,170.0,75.0,25.95,Han nationality,Current reformed smoker within past 15 years,Deceased,779.0,779.0,Malignant brain neoplasm,No,0.0
+Female,164.0,56.0,20.82,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,985.0,,,No,1.0
+Female,153.0,43.0,18.37,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,977.0,,,No,0.0
+Male,175.0,90.0,29.39,Han nationality,Current smoker: Includes daily and non-daily smokers,Deceased,391.0,391.0,Malignant brain neoplasm,No,1.0
+Male,178.0,75.0,23.67,Han nationality,Current smoker: Includes daily and non-daily smokers,Deceased,546.0,546.0,Malignant brain neoplasm,No,1.0
+Female,166.0,67.0,24.31,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,768.0,,,No,0.0
+Male,170.0,68.0,23.53,Han nationality,Current smoker: Includes daily and non-daily smokers,Deceased,845.0,845.0,Malignant brain neoplasm,No,1.0
+Female,165.0,65.0,23.88,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,332.0,,,Yes,0.0
+Female,153.0,46.0,19.65,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,27.0,142.0,,No,0.0
+Male,165.0,85.0,31.22,Han nationality,Current smoker: Includes daily and non-daily smokers,Deceased,511.0,511.0,Malignant nervous system neoplasm,Yes,
+Male,170.0,73.0,25.26,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,763.0,763.0,Epilepsy,No,1.0
+Male,175.0,80.0,26.12,Salar nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,315.0,315.0,Malignant brain neoplasm,No,
+Male,185.0,90.0,26.3,Han nationality,Current smoker: Includes daily and non-daily smokers,Living,390.0,,,Yes,0.0
+Female,158.0,54.0,21.63,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,646.0,646.0,Malignant nervous system neoplasm,No,1.0
+Male,175.0,88.0,28.73,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Living,759.0,,,No,1.0
+Female,175.0,62.0,20.24,Han nationality,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,297.0,297.0,Malignant nervous system neoplasm,No,
+Female,160.02,74.84,29.23,,,Deceased,,,,,
+Male,177.8,112.04,35.44,,,Deceased,,,Etoh abuse,,
+Female,177.8,102.06,32.28,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,,,Heart disease (mi),,
+Female,170.18,55.79,19.26,,,Deceased,,,Pneumonia,,
+Male,177.8,77.11,24.39,,,Deceased,,,Heart failure,,
+Female,162.56,49.9,18.88,,,Deceased,,,Emphysema,,
+Female,162.56,63.05,23.86,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Deceased,,,Prescription drug overdose,,
+Male,182.88,62.87,18.8,,Current smoker: Includes daily and non-daily smokers,Deceased,,,Heart disease,,
+Male,182.88,90.72,27.12,,Current reformed smoker within past 15 years,Deceased,,,Probable mi,,
+Male,172.72,81.65,27.37,,Current reformed smoker within past 15 years,Deceased,,,Cardiac arrest,,

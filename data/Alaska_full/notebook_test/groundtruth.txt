@@ -1,0 +1,163 @@
+Cluster 1:
+  www.alibaba.com.csv.aspect ratio
+  www.mygofer.com.csv.aspect ratio
+  www.topendelectronic.co.uk.csv.aspect ratio
+
+Cluster 2:
+  www.alibaba.com.csv.capacity
+  www.tinydeal.com.csv.builtin rechargeable polymer battery
+  www.topendelectronic.co.uk.csv.battery capacity
+
+Cluster 3:
+  www.alibaba.com.csv.lithium battery
+  www.mygofer.com.csv.battery type
+  www.topendelectronic.co.uk.csv.battery
+
+Cluster 4:
+  www.alibaba.com.csv.battery life
+  www.mygofer.com.csv.battery life range
+  www.topendelectronic.co.uk.csv.maximum battery run time
+
+Cluster 5:
+  catalog.com.csv.brand
+  www.alibaba.com.csv.brand
+  www.directdial.com.csv.brand name
+  www.topendelectronic.co.uk.csv.brand
+
+Cluster 6:
+  www.alibaba.com.csv.cpu manufacturer
+  www.mygofer.com.csv.cpu brand
+  www.topendelectronic.co.uk.csv.processor manufacturer
+
+Cluster 7:
+  www.directdial.com.csv.cache
+  www.mygofer.com.csv.cpu cache mb
+  www.topendelectronic.co.uk.csv.cache
+
+Cluster 8:
+  catalog.com.csv.clock speed
+  www.alibaba.com.csv.processor frequency
+  www.directdial.com.csv.processor speed
+  www.mygofer.com.csv.cpu speed
+  www.topendelectronic.co.uk.csv.processor speed
+
+Cluster 9:
+  www.alibaba.com.csv.processor family
+  www.directdial.com.csv.processor type
+  www.topendelectronic.co.uk.csv.processor type
+
+Cluster 10:
+  www.mygofer.com.csv.depth in
+
+Cluster 11:
+  www.alibaba.com.csv.display resolution
+
+Cluster 12:
+  www.alibaba.com.csv.screen size
+  www.directdial.com.csv.screen size
+  www.mygofer.com.csv.screen size range
+  www.topendelectronic.co.uk.csv.screen size
+
+Cluster 13:
+  www.alibaba.com.csv.display technology
+
+Cluster 14:
+  www.alibaba.com.csv.flash
+  www.directdial.com.csv.flash memory
+
+Cluster 15:
+  www.directdial.com.csv.graphics controller manufacturer
+  www.mygofer.com.csv.gpu chipset
+  www.topendelectronic.co.uk.csv.graphics controller manufacturer
+
+Cluster 16:
+  www.directdial.com.csv.graphics controller model
+  www.topendelectronic.co.uk.csv.graphics controller model
+
+Cluster 17:
+  www.alibaba.com.csv.output hdmi
+  www.directdial.com.csv.hdmi
+  www.mygofer.com.csv.hdmi outputs
+  www.topendelectronic.co.uk.csv.interfacesports
+
+Cluster 18:
+  www.directdial.com.csv.memory card reader
+  www.topendelectronic.co.uk.csv.memory card reader
+
+Cluster 19:
+  www.directdial.com.csv.vga
+  www.mygofer.com.csv.vga out
+  www.topendelectronic.co.uk.csv.vga
+
+Cluster 20:
+  www.alibaba.com.csv.hdd
+  www.directdial.com.csv.total hard drive capacity
+  www.mygofer.com.csv.hard drive capacity range
+  www.topendelectronic.co.uk.csv.hdd
+
+Cluster 21:
+  www.alibaba.com.csv.maximum
+
+Cluster 22:
+  www.alibaba.com.csv.hard drive speed
+  www.topendelectronic.co.uk.csv.hdd rpm
+
+Cluster 23:
+  catalog.com.csv.64bit computing
+  www.directdial.com.csv.64bit processing
+  www.topendelectronic.co.uk.csv.64bit processing
+
+Cluster 24:
+  www.alibaba.com.csv.carton size
+
+Cluster 25:
+  www.alibaba.com.csv.master carton weight
+
+Cluster 26:
+  www.directdial.com.csv.standby power consumption
+
+Cluster 27:
+  www.alibaba.com.csv.graphics memory
+  www.mygofer.com.csv.memory range
+  www.topendelectronic.co.uk.csv.memory
+
+Cluster 28:
+  www.alibaba.com.csv.maximum memory capacity
+  www.directdial.com.csv.maximum memory
+  www.mygofer.com.csv.maximum memory supported
+
+Cluster 29:
+  www.alibaba.com.csv.memory type
+  www.directdial.com.csv.memory technology
+  www.mygofer.com.csv.memory type
+  www.topendelectronic.co.uk.csv.memory technology
+
+Cluster 30:
+  www.directdial.com.csv.ssd cache capacity
+
+Cluster 31:
+  www.alibaba.com.csv.ssd
+  www.topendelectronic.co.uk.csv.ssd
+
+Cluster 32:
+  www.alibaba.com.csv.interface
+  www.directdial.com.csv.number of usb 20 ports
+  www.topendelectronic.co.uk.csv.number of usb 20 ports
+
+Cluster 33:
+  www.directdial.com.csv.number of usb 30 ports
+  www.topendelectronic.co.uk.csv.number of usb 30 ports
+
+Cluster 34:
+  livehotdeals.com.csv.support
+  www.alibaba.com.csv.warranty
+  www.directdial.com.csv.limited warranty
+  www.mygofer.com.csv.general warranty
+
+Cluster 35:
+  www.alibaba.com.csv.weight
+  www.directdial.com.csv.weight approximate
+  www.mygofer.com.csv.item weight lbs
+  www.tinydeal.com.csv.weight
+  www.topendelectronic.co.uk.csv.weight
+

@@ -1,0 +1,201 @@
+Type,Smoking.History,Gender,Cigarettes.per.Day,Pack.Years.Smoked
+,,female,,
+,,,,35.0
+,,female,20,
+Tumor,Current reformed smoker within past 15 years,male,20,
+NAT,Current reformed smoker within past 15 years,female,,
+,Current reformed smoker within past 15 years,,20,39.0
+NAT,,,,67.5
+Tumor,"Current reformed smoker, more than 15 years",,30,
+NAT,Current smoker: Includes daily and non-daily smokers,,20,
+,Current smoker: Includes daily and non-daily smokers,,,
+,Current reformed smoker within past 15 years,,30,67.5
+,,female,30,67.5
+NAT,Current smoker: Includes daily and non-daily smokers,male,,
+Tumor,,,,57.0
+Tumor,,male,20,42.0
+Tumor,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,
+,Current smoker: Includes daily and non-daily smokers,male,,84.0
+,,,40,84.0
+,,,0,
+Tumor,Current smoker: Includes daily and non-daily smokers,,,
+,,male,Unknown,
+Tumor,,,,
+NAT,Current reformed smoker within past 15 years,male,,35.0
+,,male,20,35.0
+,,female,,
+,,,,
+Tumor,"Current reformed smoker, more than 15 years",,20,
+NAT,Smoking history not available,,,
+Tumor,Smoking history not available,male,,
+NAT,Current smoker: Includes daily and non-daily smokers,male,30,78.0
+,Current smoker: Includes daily and non-daily smokers,,30,78.0
+NAT,Current smoker: Includes daily and non-daily smokers,,10,24.0
+Tumor,,male,,24.0
+NAT,,,20,
+Tumor,Current smoker: Includes daily and non-daily smokers,,,
+NAT,"Current reformed smoker, years unknown",,20,
+,"Current reformed smoker, years unknown",male,,
+NAT,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,male,,
+,,,,
+Tumor,Current reformed smoker within past 15 years,male,20,
+NAT,,female,,
+,Smoking history not available,,,
+NAT,"Current reformed smoker, more than 15 years",female,40,
+Tumor,"Current reformed smoker, more than 15 years",,40,70.0
+NAT,,male,,
+Tumor,,,20,
+,Current smoker: Includes daily and non-daily smokers,male,30,79.5
+,Current smoker: Includes daily and non-daily smokers,male,,79.5
+NAT,Current smoker: Includes daily and non-daily smokers,,,72.0
+Tumor,,male,,
+NAT,,,,36.0
+,,male,20,36.0
+,Current smoker: Includes daily and non-daily smokers,,,45.0
+Tumor,,female,30,
+,"Current reformed smoker, more than 15 years",,30,
+Tumor,"Current reformed smoker, more than 15 years",male,30,
+NAT,,,,5.0
+,,male,50,5.0
+NAT,,,20,3.0
+Tumor,Current reformed smoker within past 15 years,male,20,
+NAT,Current reformed smoker within past 15 years,male,40,
+,Current reformed smoker within past 15 years,,40,
+NAT,Current smoker: Includes daily and non-daily smokers,,20,
+Tumor,Current smoker: Includes daily and non-daily smokers,,20,
+,Current reformed smoker within past 15 years,male,,
+Tumor,,male,40,
+NAT,Smoking history not available,,,
+Tumor,,,,
+NAT,Current reformed smoker within past 15 years,male,35,96.3
+Tumor,Current reformed smoker within past 15 years,male,,
+,Current reformed smoker within past 15 years,,40,
+Tumor,Current reformed smoker within past 15 years,female,,
+,,male,,
+Tumor,Current smoker: Includes daily and non-daily smokers,male,,20.0
+NAT,Current smoker: Includes daily and non-daily smokers,male,20,56.0
+,,,,56.0
+NAT,Current smoker: Includes daily and non-daily smokers,male,,42.0
+,Current smoker: Includes daily and non-daily smokers,,20,42.0
+Tumor,Current reformed smoker within past 15 years,male,,
+NAT,,male,,
+Tumor,Current reformed smoker within past 15 years,male,20,45.0
+NAT,"Current reformed smoker, more than 15 years",male,,
+,,male,Unknown,
+Tumor,,male,,70.0
+,Current smoker: Includes daily and non-daily smokers,female,,
+,Current smoker: Includes daily and non-daily smokers,,30,43.5
+,Current smoker: Includes daily and non-daily smokers,,20,
+Tumor,Current smoker: Includes daily and non-daily smokers,male,,
+,,,20,
+Tumor,Current smoker: Includes daily and non-daily smokers,,20,60.0
+NAT,,male,,40.0
+Tumor,,male,40,40.0
+,Current smoker: Includes daily and non-daily smokers,,,
+Tumor,,male,25,48.8
+,,male,30,
+Tumor,Current smoker: Includes daily and non-daily smokers,male,,43.5
+,Current reformed smoker within past 15 years,,30,
+,,male,30,
+NAT,,,20,10.0
+,"Current reformed smoker, more than 15 years",male,20,10.0
+Tumor,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,
+,,male,,
+,"Current reformed smoker, more than 15 years",male,20,36.0
+Tumor,"Current reformed smoker, more than 15 years",female,,
+,"Current reformed smoker, more than 15 years",female,20,
+Tumor,"Current reformed smoker, more than 15 years",female,20,31.0
+,Current smoker: Includes daily and non-daily smokers,male,,3.2
+Tumor,Current smoker: Includes daily and non-daily smokers,,3,3.2
+,Current smoker: Includes daily and non-daily smokers,,,5.0
+,Current smoker: Includes daily and non-daily smokers,male,5,5.0
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,male,,
+,,male,,
+,,male,1,
+Tumor,,male,,
+NAT,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,male,,
+Tumor,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,
+NAT,Current smoker: Includes daily and non-daily smokers,male,20,45.0
+,,male,,45.0
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,male,,
+Tumor,,male,,
+,,male,,
+Tumor,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,
+NAT,,male,,
+Tumor,Smoking history not available,,,
+NAT,Smoking history not available,male,,
+Tumor,,,,
+NAT,,female,,
+,,female,,
+,Current reformed smoker within past 15 years,male,,90.0
+Tumor,Current smoker: Includes daily and non-daily smokers,,20,
+,Current reformed smoker within past 15 years,female,15,
+Tumor,Current reformed smoker within past 15 years,,,
+,,,20,
+NAT,"Current reformed smoker, more than 15 years",,Unknown,
+Tumor,,,Unknown,
+Tumor,Smoking history not available,,,
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,male,,
+,,male,,
+,,male,,
+Tumor,Current reformed smoker within past 15 years,,40,42.0
+NAT,Current reformed smoker within past 15 years,,,29.0
+,Current reformed smoker within past 15 years,male,20,
+,,male,20,40.0
+Tumor,Current smoker: Includes daily and non-daily smokers,male,,
+NAT,,,,
+Tumor,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,female,,
+NAT,Current reformed smoker within past 15 years,,,40.0
+,Current reformed smoker within past 15 years,male,,40.0
+,Current reformed smoker within past 15 years,female,30,52.5
+,,female,30,52.5
+NAT,,,,
+Tumor,,female,,
+Tumor,,,,
+NAT,Current reformed smoker within past 15 years,male,,
+Tumor,,male,,100.0
+NAT,"Current reformed smoker, more than 15 years",male,20,20.0
+Tumor,,male,20,
+NAT,Current smoker: Includes daily and non-daily smokers,male,20,
+,,male,20,
+NAT,Current reformed smoker within past 15 years,,20,
+,Current reformed smoker within past 15 years,,20,
+NAT,,,,
+,,male,,
+NAT,,,,
+,,male,,
+,,,,
+Tumor,,,,
+,,male,5,
+Tumor,,male,,
+Tumor,,male,Unknown,
+,,,,
+,"Current reformed smoker, more than 15 years",female,Unknown,
+NAT,"Current reformed smoker, more than 15 years",male,Unknown,
+,,male,,
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,male,,
+Tumor,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,
+NAT,,,,
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,male,,
+NAT,,female,,
+Tumor,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,female,,
+NAT,,male,20,
+,Current smoker: Includes daily and non-daily smokers,,20,
+NAT,Current reformed smoker within past 15 years,,20,
+Tumor,Current reformed smoker within past 15 years,male,,
+NAT,Current smoker: Includes daily and non-daily smokers,,20,
+,,,20,
+NAT,Current smoker: Includes daily and non-daily smokers,,40,108.0
+,,,40,108.0
+NAT,Current reformed smoker within past 15 years,male,,
+Tumor,Current reformed smoker within past 15 years,male,40,
+NAT,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,male,,
+Tumor,,,,
+NAT,Current smoker: Includes daily and non-daily smokers,male,,19.0
+Tumor,Current smoker: Includes daily and non-daily smokers,male,20,19.0
+,Current smoker: Includes daily and non-daily smokers,male,,58.5
+Tumor,Current smoker: Includes daily and non-daily smokers,,30,58.5
+NAT,,male,,
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,male,,
+NAT,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,male,,
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,male,,

@@ -1,0 +1,147 @@
+Cluster 1:
+  www.flexshopper.com.csv.aspect ratio
+  www.thenerds.net.csv.aspect ratio
+
+Cluster 2:
+  www.flexshopper.com.csv.battery capacity
+  www.techbuy.com.au.csv.battery
+  www.thenerds.net.csv.battery capacity
+  www.tinydeal.com.csv.builtin rechargeable polymer battery
+
+Cluster 3:
+  wallmartphoto.com.csv.battery type
+  www.amazon.com.csv.batteries
+  www.flexshopper.com.csv.battery type
+  www.thenerds.net.csv.battery chemistry
+
+Cluster 4:
+  wallmartphoto.com.csv.battery life
+  www.amazon.com.csv.average battery life in hours
+  www.flexshopper.com.csv.battery life
+  www.thenerds.net.csv.maximum battery run time
+
+Cluster 5:
+  www.amazon.com.csv.brand name
+  www.techbuy.com.au.csv.brand name
+  www.thenerds.net.csv.brand name
+
+Cluster 6:
+  wallmartphoto.com.csv.processor brand
+  www.flexshopper.com.csv.processor brand
+  www.thenerds.net.csv.processor manufacturer
+
+Cluster 7:
+  www.flexshopper.com.csv.cache per processor
+  www.thenerds.net.csv.cache
+
+Cluster 8:
+  wallmartphoto.com.csv.processor speed
+  www.flexshopper.com.csv.processor speed
+  www.thenerds.net.csv.processor speed
+
+Cluster 9:
+  www.flexshopper.com.csv.processor type
+  www.thenerds.net.csv.processor type
+
+Cluster 10:
+  wallmartphoto.com.csv.resolution
+
+Cluster 11:
+  wallmartphoto.com.csv.laptop screen size
+  www.amazon.com.csv.screen size
+  www.flexshopper.com.csv.screen size measured diagonally
+  www.overstock.com.csv.screen size
+  www.techbuy.com.au.csv.screen size
+  www.thenerds.net.csv.screen size
+
+Cluster 12:
+  wallmartphoto.com.csv.screen type
+
+Cluster 13:
+  www.amazon.com.csv.flash memory size
+  www.techbuy.com.au.csv.flash memory
+  www.thenerds.net.csv.flash memory capacity
+
+Cluster 14:
+  www.flexshopper.com.csv.graphics chip
+  www.techbuy.com.au.csv.multigpu support
+  www.thenerds.net.csv.graphics controller manufacturer
+
+Cluster 15:
+  www.thenerds.net.csv.graphics controller model
+
+Cluster 16:
+  www.flexshopper.com.csv.hdmi output
+  www.thenerds.net.csv.hdmi
+
+Cluster 17:
+  www.flexshopper.com.csv.memory card reader
+  www.thenerds.net.csv.memory card reader
+
+Cluster 18:
+  www.flexshopper.com.csv.vga input
+  www.thenerds.net.csv.vga
+
+Cluster 19:
+  wallmartphoto.com.csv.hard drive size
+  www.amazon.com.csv.hard drive
+  www.flexshopper.com.csv.drive capacity
+  www.overstock.com.csv.hard drive capacity
+  www.techbuy.com.au.csv.storage
+  www.thenerds.net.csv.hard drive capacity
+
+Cluster 20:
+  www.thenerds.net.csv.64bit processing
+
+Cluster 21:
+  wallmartphoto.com.csv.shipping weight in pounds
+  www.amazon.com.csv.shipping weight
+
+Cluster 22:
+  www.flexshopper.com.csv.power consumption
+  www.techbuy.com.au.csv.power consumption
+
+Cluster 23:
+  www.techbuy.com.au.csv.power consumption standby
+
+Cluster 24:
+  wallmartphoto.com.csv.system ram
+  www.flexshopper.com.csv.system memory ram
+  www.overstock.com.csv.installed ram
+
+Cluster 25:
+  wallmartphoto.com.csv.maximum memory expansion
+  www.flexshopper.com.csv.system memory ram expandable to
+  www.techbuy.com.au.csv.memory
+
+Cluster 26:
+  www.amazon.com.csv.computer memory type
+  www.flexshopper.com.csv.type of memory ram
+  www.thenerds.net.csv.memory technology
+
+Cluster 27:
+  www.thenerds.net.csv.solid state drive configuration
+
+Cluster 28:
+  www.amazon.com.csv.number of usb 20 ports
+  www.flexshopper.com.csv.number of usb 20 ports
+  www.thenerds.net.csv.number of usb 20 ports
+
+Cluster 29:
+  www.amazon.com.csv.number of usb 30 ports
+  www.flexshopper.com.csv.number of usb 30 ports
+  www.thenerds.net.csv.number of usb 30 ports
+
+Cluster 30:
+  livehotdeals.com.csv.support
+  www.flexshopper.com.csv.manufacturer warranty
+  www.techbuy.com.au.csv.warranty
+
+Cluster 31:
+  www.amazon.com.csv.item weight
+  www.flexshopper.com.csv.weight
+  www.overstock.com.csv.laptop weight
+  www.techbuy.com.au.csv.weight
+  www.thenerds.net.csv.weight approximate
+  www.tinydeal.com.csv.weight
+

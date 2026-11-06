@@ -1,0 +1,111 @@
+Gender,Subsite,Vascular_Invasion,Lymphatic_Invasion,Perineural_Invasion,Synchronous_Tumors,Vital.Status,Tumor.Status,MSmutectFishercall,TumorPurity
+,,,Yes,No,,Living,Tumor free,MSS,
+Female,,,,No,,Deceased,Tumor free,MSS,
+,Ascending Colon,Yes,,Yes,,Living,With tumor,MSS,
+Female,Descending Colon,,,No,,Living,With tumor,,
+,Sigmoid Colon,,No,No,,,,MSS,
+Female,Hepatix Flexure,No,,Yes,No,Living,,,0.837957353
+,,,,,No,Living,Tumor free,,
+Female,Sigmoid Colon,Yes,Yes,Yes,Yes,Living,,MSS,0.890549833
+,,,,,No,,Tumor free,,
+Female,Sigmoid Colon,,No,,,Living,Tumor free,,
+,Ascending Colon,,No,No,,Living,Tumor free,,0.713221172
+,Sigmoid Colon,Yes,Yes,No,No,,Tumor free,,
+,,,Yes,,,Living,Tumor free,,
+,Cecum,,No,,,,Tumor free,,
+Female,Sigmoid Colon,,Yes,,,,Tumor free,MSI-H,
+Male,Sigmoid Colon,,Yes,,,Living,,,0.902983038
+,,,,No,No,Living,Tumor free,,
+Female,Ascending Colon,,No,No,No,Deceased,Tumor free,,0.648659159
+Female,Cecum,No,,,No,,Tumor free,,
+Female,Splenic Flexure,,No,,,Living,Tumor free,MSS,0.859733813
+Female,Ascending Colon,,No,No,No,Living,Tumor free,,0.837262912
+,Hepatix Flexure,,No,No,No,,Tumor free,,
+Male,Ascending Colon,,,,No,Living,,MSI-H,0.690965801
+Male,,Yes,Yes,No,No,Living,,,0.518646865
+Female,Cecum,No,No,,No,,,MSS,0.777156409
+,Ascending Colon,,No,,No,Living,,MSS,
+Male,,No,No,,No,Living,Tumor free,MSI-H,0.679040261
+Male,,No,,,,Deceased,Tumor free,,0.867462994
+Female,Ascending Colon,No,,,,Living,,,0.752921428
+Female,,No,No,No,,,Tumor free,MSI-H,0.903745063
+Female,,,No,,,Living,,,
+Male,Sigmoid Colon,,,No,No,Living,,,0.92887281
+,Ascending Colon,Yes,,,No,,Tumor free,,0.762387163
+,Hepatix Flexure,,,,No,Living,,MSS,
+Female,,,No,No,,Living,,,
+Male,Cecum,No,No,,No,Living,Tumor free,MSS,0.866147402
+Male,,,No,,No,,Tumor free,,0.883783658
+,Sigmoid Colon,,Yes,No,No,,Tumor free,MSS,
+,,,,,,Living,With tumor,,
+,Sigmoid Colon,No,,,,,Tumor free,MSS,
+,Cecum,Yes,,,,Living,,,
+,Ascending Colon,,,,,,,MSS,0.795495881
+,,Yes,,,Yes,,Tumor free,MSS,
+Female,Cecum,,,No,,Living,Tumor free,MSS,
+,,No,No,No,No,,,,0.840363557
+,Ascending Colon,,,No,,Living,,,0.666500114
+Male,,,No,No,Yes,Living,Tumor free,,
+,Sigmoid Colon,,,No,,Living,Tumor free,MSS,0.664727502
+,Hepatix Flexure,No,,No,No,Living,,,0.835475773
+Female,Cecum,,,,No,Living,Tumor free,,
+Female,,No,,No,No,Living,,MSS,0.679779194
+Female,Ascending Colon,,,,No,,Tumor free,MSI-H,0.780587768
+Female,Sigmoid Colon,No,,,No,Living,Tumor free,MSS,0.679311559
+Female,,No,No,No,,Living,Tumor free,MSS,
+Male,,No,,No,No,Living,,MSI-H,
+,,,No,No,No,Living,Tumor free,MSS,
+Male,Sigmoid Colon,No,,No,,,Tumor free,MSS,0.788692958
+,,No,,,No,,With tumor,MSS,
+,,No,No,No,No,,With tumor,,0.770902646
+,Sigmoid Colon,No,No,No,No,,Tumor free,,0.83302696
+Female,Descending Colon,,,No,No,,Tumor free,MSS,0.718180802
+,Descending Colon,No,No,No,,,Tumor free,MSI-H,
+,,,,No,,Living,,MSS,0.748332523
+Male,Descending Colon,,No,No,,,Tumor free,MSI-H,0.556965911
+,Ascending Colon,,No,No,No,,Tumor free,MSI-H,0.700179403
+Female,Sigmoid Colon,,No,,No,,Tumor free,MSS,0.758436641
+Female,Sigmoid Colon,No,,No,No,Living,,MSS,0.843553632
+Male,Splenic Flexure,No,,,No,,,MSS,
+,Ascending Colon,No,,No,,Living,,,0.893879665
+Female,Ascending Colon,No,No,No,No,Deceased,With tumor,,0.652571359
+Female,,No,No,No,No,Living,Tumor free,,
+Male,Sigmoid Colon,,No,No,No,,,MSS,0.767812593
+Male,Cecum,,No,No,,Living,,MSS,
+Female,Ascending Colon,No,No,,,Living,Tumor free,,0.681818299
+Female,Cecum,No,,,No,Deceased,,MSS,
+,,No,,,,Living,Tumor free,MSS,0.780012271
+Female,Sigmoid Colon,No,No,No,,Living,Tumor free,,
+Male,Ascending Colon,No,,No,No,Living,,,0.753922392
+,Ascending Colon,No,No,No,No,Living,Tumor free,MSS,0.73708029
+Female,Ascending Colon,No,,No,,,Tumor free,MSI-H,0.649773276
+,,,No,No,,Living,,,
+Female,Ascending Colon,No,,,,,Tumor free,MSI-H,0.566836779
+,Ascending Colon,No,No,No,No,Living,Tumor free,MSS,
+,Sigmoid Colon,,No,,No,,,MSS,0.600563954
+,Descending Colon,No,No,,No,Living,Tumor free,,0.738710898
+Male,,No,,,No,,,MSS,0.676724027
+Female,Sigmoid Colon,,No,,No,,Tumor free,,0.890574528
+,,Yes,,,,,,,
+,Sigmoid Colon,,,Yes,,,,,
+Male,Sigmoid Colon,,,No,,,Tumor free,MSS,0.915267327
+,,No,Yes,,,Living,Tumor free,MSI-H,0.800546985
+Female,Cecum,,,Yes,No,,Tumor free,MSS,
+Female,Sigmoid Colon,No,No,,Yes,Living,,MSS,
+Female,Hepatix Flexure,No,,No,No,Living,Tumor free,MSS,
+,Splenic Flexure,,Yes,,No,,,MSS,
+Female,Sigmoid Colon,,Yes,,No,,,,0.631539727
+Male,,No,Yes,,No,Living,,,
+Male,Ascending Colon,No,Yes,,No,Living,,MSS,0.696915631
+,Sigmoid Colon,No,No,,,Living,Tumor free,MSS,
+Female,,,No,No,,Living,Tumor free,,
+Female,,No,No,,,Deceased,With tumor,MSI-H,
+Male,,Yes,,,No,,With tumor,MSS,
+,Cecum,,No,No,,Living,,,
+Male,Descending Colon,No,,,,Living,,,
+Male,,No,No,No,,,,MSS,0.663454822
+,Sigmoid Colon,Yes,Yes,,,Living,,MSS,
+Male,Sigmoid Colon,No,,,,,Tumor free,,
+Female,,,Yes,Yes,,,With tumor,MSI-H,0.442039392
+Female,Sigmoid Colon,,No,No,No,,,MSS,0.488874049
+Female,Cecum,Yes,Yes,,,Living,Tumor free,MSS,0.72583238

@@ -1,0 +1,177 @@
+Cluster 1:
+  www.flexshopper.com.csv.aspect ratio
+  www.softwarecity.ca.csv.aspect ratio
+  www.thenerds.net.csv.aspect ratio
+  www.vology.com.csv.image aspect ratio
+
+Cluster 2:
+  www.flexshopper.com.csv.battery capacity
+  www.softwarecity.ca.csv.battery capacity
+  www.techbuy.com.au.csv.battery
+  www.thenerds.net.csv.battery capacity
+
+Cluster 3:
+  www.flexshopper.com.csv.battery type
+  www.softwarecity.ca.csv.battery chemistry
+  www.staples.com.csv.laptop battery type
+  www.thenerds.net.csv.battery chemistry
+  www.vology.com.csv.technology
+
+Cluster 4:
+  www.flexshopper.com.csv.battery life
+  www.softwarecity.ca.csv.maximum battery run time
+  www.staples.com.csv.laptop battery life
+  www.thenerds.net.csv.maximum battery run time
+  www.vology.com.csv.run time
+
+Cluster 5:
+  www.softwarecity.ca.csv.brand name
+  www.techbuy.com.au.csv.brand name
+  www.thenerds.net.csv.brand name
+
+Cluster 6:
+  www.flexshopper.com.csv.processor brand
+  www.softwarecity.ca.csv.processor manufacturer
+  www.thenerds.net.csv.processor manufacturer
+
+Cluster 7:
+  www.flexshopper.com.csv.cache per processor
+  www.softwarecity.ca.csv.cache
+  www.staples.com.csv.cpu cache
+  www.thenerds.net.csv.cache
+  www.vology.com.csv.cache
+
+Cluster 8:
+  www.flexshopper.com.csv.processor speed
+  www.softwarecity.ca.csv.processor speed
+  www.staples.com.csv.processor speed up to ghz
+  www.thenerds.net.csv.processor speed
+
+Cluster 9:
+  www.flexshopper.com.csv.processor type
+  www.softwarecity.ca.csv.processor core
+  www.thenerds.net.csv.processor type
+
+Cluster 10:
+  www.vology.com.csv.resolution
+
+Cluster 11:
+  www.bidorbuy.co.za.csv.screen size diagonal
+  www.flexshopper.com.csv.screen size measured diagonally
+  www.softwarecity.ca.csv.screen size
+  www.staples.com.csv.laptop screen size inches
+  www.techbuy.com.au.csv.screen size
+  www.thenerds.net.csv.screen size
+  www.vology.com.csv.diagonal size
+
+Cluster 12:
+  www.vology.com.csv.monitor type
+
+Cluster 13:
+  www.softwarecity.ca.csv.flash memory capacity
+  www.techbuy.com.au.csv.flash memory
+  www.thenerds.net.csv.flash memory capacity
+
+Cluster 14:
+  www.flexshopper.com.csv.graphics chip
+  www.softwarecity.ca.csv.graphics controller manufacturer
+  www.techbuy.com.au.csv.multigpu support
+  www.thenerds.net.csv.graphics controller manufacturer
+  www.vology.com.csv.video system features
+
+Cluster 15:
+  www.softwarecity.ca.csv.graphics controller model
+  www.thenerds.net.csv.graphics controller model
+
+Cluster 16:
+  www.flexshopper.com.csv.hdmi output
+  www.softwarecity.ca.csv.hdmi
+  www.thenerds.net.csv.hdmi
+
+Cluster 17:
+  www.flexshopper.com.csv.memory card reader
+  www.softwarecity.ca.csv.memory card reader
+  www.thenerds.net.csv.memory card reader
+
+Cluster 18:
+  www.flexshopper.com.csv.vga input
+  www.softwarecity.ca.csv.vga
+  www.thenerds.net.csv.vga
+
+Cluster 19:
+  www.flexshopper.com.csv.drive capacity
+  www.softwarecity.ca.csv.total hard drive capacity
+  www.staples.com.csv.hard drive capacity
+  www.techbuy.com.au.csv.storage
+  www.thenerds.net.csv.hard drive capacity
+
+Cluster 20:
+  www.vology.com.csv.spindle speed
+
+Cluster 21:
+  www.softwarecity.ca.csv.64bit processing
+  www.thenerds.net.csv.64bit processing
+  www.vology.com.csv.64bit computing
+
+Cluster 22:
+  www.flexshopper.com.csv.power consumption
+  www.softwarecity.ca.csv.operating power consumption
+  www.techbuy.com.au.csv.power consumption
+
+Cluster 23:
+  www.softwarecity.ca.csv.standby power consumption
+  www.techbuy.com.au.csv.power consumption standby
+
+Cluster 24:
+  www.flexshopper.com.csv.system memory ram
+  www.staples.com.csv.ram capacity
+  www.vology.com.csv.ram
+
+Cluster 25:
+  www.flexshopper.com.csv.system memory ram expandable to
+  www.techbuy.com.au.csv.memory
+  www.vology.com.csv.max ram supported
+
+Cluster 26:
+  www.vology.com.csv.speed
+
+Cluster 27:
+  www.flexshopper.com.csv.type of memory ram
+  www.softwarecity.ca.csv.memory technology
+  www.thenerds.net.csv.memory technology
+
+Cluster 28:
+  www.softwarecity.ca.csv.ssd cache capacity
+  www.vology.com.csv.ssd cache
+
+Cluster 29:
+  www.thenerds.net.csv.solid state drive configuration
+
+Cluster 30:
+  www.flexshopper.com.csv.number of usb 20 ports
+  www.softwarecity.ca.csv.number of usb 20 ports
+  www.thenerds.net.csv.number of usb 20 ports
+
+Cluster 31:
+  www.flexshopper.com.csv.number of usb 30 ports
+  www.softwarecity.ca.csv.number of usb 30 ports
+  www.thenerds.net.csv.number of usb 30 ports
+
+Cluster 32:
+  www.bidorbuy.co.za.csv.manufacturer warranty
+  www.flexshopper.com.csv.manufacturer warranty
+  www.softwarecity.ca.csv.limited warranty
+  www.staples.com.csv.laptop warranty
+  www.techbuy.com.au.csv.warranty
+  www.vology.com.csv.manufacturer warranty
+
+Cluster 33:
+  www.bhphotovideo.com.csv.weight
+  www.bidorbuy.co.za.csv.weight
+  www.flexshopper.com.csv.weight
+  www.softwarecity.ca.csv.weight approximate
+  www.staples.com.csv.laptop weight filter
+  www.techbuy.com.au.csv.weight
+  www.thenerds.net.csv.weight approximate
+  www.vology.com.csv.weight
+

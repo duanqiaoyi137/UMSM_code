@@ -1,0 +1,3566 @@
+{
+  "protocol": {
+    "adapter_version": 1,
+    "source": "https://github.com/merialdo/research.alaska",
+    "revision": "fb452aef32cd648eae4bcbdc984789b7f6f07960",
+    "domain": "monitor",
+    "role": "fit",
+    "max_rows": 300,
+    "seed": 42,
+    "alias_policy": "most_observed",
+    "ambiguous_source_policy": "drop source attributes mapping to multiple targets",
+    "features": "annotated source names/values only; target names are labels only",
+    "missingness": "natural JSON attribute absence and original nulls"
+  },
+  "archive_sha256": "9084b8998d5afa283865dfcf8e1f3cc4137f6befbe431903a4d83df4b3f7b45d",
+  "annotation_audit": [
+    {
+      "table": "ca.pcpartpicker.com.csv",
+      "column": "refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "catalog.com.csv",
+      "column": "refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "column": "digital horizontal frequency",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_horizontal_refresh_rate_max",
+        "digital_horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "column": "digital vertical frequency",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_vertical_refresh_rate_max",
+        "digital_vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "column": "horizontal refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "column": "horizontal scan range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "column": "standard refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "column": "vertical refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "column": "vertical scan range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "column": "contrast ratio",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "contrast_ratio_dynamic",
+        "contrast_ratio_static"
+      ]
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand",
+        "monitor_weight_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "column": "environmental",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_humidity",
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "column": "headphone ports",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "headphone_port_quantity",
+        "headphone_port_type"
+      ]
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "column": "power consumption",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "power_consumption_max",
+        "power_consumption_standy"
+      ]
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "column": "resolution native",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hd_type",
+        "supported_resolution"
+      ]
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "column": "scan frequency horizontal",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "column": "scan frequency vertical",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "column": "screen type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "number_of_colors",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "column": "speakers",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "has_speakers",
+        "speakers_quantity"
+      ]
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "column": "usb ports",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "usb_port2_upstream_quantity",
+        "usb_port_quantity",
+        "usb_port_version"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "dvi",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dvi_port_quantity",
+        "has_dvi_port"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "dvid",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dvid_port_quantity",
+        "has_dvid_port"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "environmental parameters",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_humidity",
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "horizontal refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "max operating temperature",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "min operating temperature",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "screen refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "standard refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "usb hub",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "has_usb_port",
+        "usb_port2_upstream_quantity",
+        "usb_port_version"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "vertical refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "altezza",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "altezza con supporto",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "altezza imballo",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_height"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "frequenza scansione orizzontale",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_horizontal_refresh_rate_max",
+        "digital_horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "frequenza scansione verticale",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_vertical_refresh_rate_max",
+        "digital_vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "intervallo di scansione verticale",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "intervallo di temperatura",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "intervallo temperatura di funzionamento",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "larghezza",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "larghezza con supporto",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "larghezza imballo",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_width"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "profondità",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "profondità con supporto",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "profondità imballo",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_depth",
+        "packaging_dimension"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "range di scansione orizzontale",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "velocità refresh orizzontale",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "column": "velocità refresh verticale",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.imldirect.it.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.imldirect.it.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.imldirect.it.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.imldirect.it.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.imldirect.it.csv",
+      "column": "product name",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.imldirect.it.csv",
+      "column": "standard refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.imldirect.it.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.imldirect.it.csv",
+      "column": "width with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.itenergy.co.uk.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.itenergy.co.uk.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.itenergy.co.uk.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.itenergy.co.uk.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.itenergy.co.uk.csv",
+      "column": "product name",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.itenergy.co.uk.csv",
+      "column": "standard refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.itenergy.co.uk.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.itenergy.co.uk.csv",
+      "column": "width with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.jrlinton.co.uk.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.jrlinton.co.uk.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.jrlinton.co.uk.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.jrlinton.co.uk.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.jrlinton.co.uk.csv",
+      "column": "product name",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.jrlinton.co.uk.csv",
+      "column": "standard refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.jrlinton.co.uk.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.jrlinton.co.uk.csv",
+      "column": "width with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.kingsfieldcomputers.co.uk.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.kingsfieldcomputers.co.uk.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.kingsfieldcomputers.co.uk.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.kingsfieldcomputers.co.uk.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.kingsfieldcomputers.co.uk.csv",
+      "column": "product name",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.kingsfieldcomputers.co.uk.csv",
+      "column": "standard refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.kingsfieldcomputers.co.uk.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.kingsfieldcomputers.co.uk.csv",
+      "column": "width with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "digital horizontal frequency",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_horizontal_refresh_rate_max",
+        "digital_horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "digital vertical frequency",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_vertical_refresh_rate_max",
+        "digital_vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "dimensions w x d x h with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "horizontal scan range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "operating temperature tt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "package dimensions wxdxh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_depth",
+        "packaging_dimension",
+        "packaging_height",
+        "packaging_width"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "packaging depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_depth",
+        "packaging_dimension"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "packaging height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_height"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "packaging width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_width"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "storage temperature tt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "vertical scan range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "column": "width with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "digital horizontal frequency",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_horizontal_refresh_rate_max",
+        "digital_horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "digital vertical frequency",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_vertical_refresh_rate_max",
+        "digital_vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "horizontal scan range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "operating temperature tt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "packaging depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_depth",
+        "packaging_dimension"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "packaging height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_height"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "packaging width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_width"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "storage temperature tt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "vertical scan range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "column": "width with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "digital horizontal frequency",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_horizontal_refresh_rate_max",
+        "digital_horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "digital vertical frequency",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_vertical_refresh_rate_max",
+        "digital_vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "horizontal scan range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "operating temperature tt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "packaging depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_depth",
+        "packaging_dimension"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "packaging height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_height"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "packaging width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_width"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "storage temperature tt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "vertical scan range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "column": "width with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "horizontal frequency range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "package height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_height"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "package length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_width"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "package width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_width"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "product height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "product height without stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "product length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "product length without stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "product name",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "brand",
+        "color",
+        "response_time",
+        "screen_size_diagonal",
+        "screen_type",
+        "supported_resolution"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "product width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "product width without stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "column": "vertical frequency range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "contrast ratio",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "contrast_ratio_dynamic",
+        "contrast_ratio_static"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "device type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "dimensions  weight details",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_depth_with_stand",
+        "monitor_dimension",
+        "monitor_dimension_with_stand",
+        "monitor_height",
+        "monitor_height_with_stand",
+        "monitor_weight",
+        "monitor_weight_with_stand",
+        "monitor_width",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "dimensions wxdxh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_depth_with_stand",
+        "monitor_dimension",
+        "monitor_dimension_with_stand",
+        "monitor_height",
+        "monitor_height_with_stand",
+        "monitor_width",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "horizontal refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "max operating temperature",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "min operating temperature",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "product description",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "brand",
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "vertical refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "column": "product name",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "column": "standard refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "column": "width with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.ohc24.ch.csv",
+      "column": "contrast ratio",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "contrast_ratio_dynamic",
+        "contrast_ratio_static"
+      ]
+    },
+    {
+      "table": "www.ohc24.ch.csv",
+      "column": "device type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.ohc24.ch.csv",
+      "column": "dimensions wxdxh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_depth_with_stand",
+        "monitor_dimension",
+        "monitor_dimension_with_stand",
+        "monitor_height",
+        "monitor_height_with_stand",
+        "monitor_width",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.ohc24.ch.csv",
+      "column": "product description",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.ohc24.ch.csv",
+      "column": "usb port",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "has_usb_port",
+        "usb_port_quantity"
+      ]
+    },
+    {
+      "table": "www.pc-canada.com.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.pc-canada.com.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.pc-canada.com.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.pc-canada.com.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.pc-canada.com.csv",
+      "column": "product name",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.pc-canada.com.csv",
+      "column": "standard refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.pc-canada.com.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.pc-canada.com.csv",
+      "column": "width with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.pcconnection.com.csv",
+      "column": "attributes",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "has_speakers",
+        "speakers_quantity"
+      ]
+    },
+    {
+      "table": "www.pcconnection.com.csv",
+      "column": "physical dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension",
+        "monitor_height",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "altezza",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "altezza con supporto",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "altezza imballo",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_height"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "condizioni ambientali",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "non_operating_working_altitude",
+        "operating_working_altitude",
+        "working_humidity",
+        "working_temperature_max",
+        "working_temperature_min"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "dimensioni imballo lxpxa",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_depth",
+        "packaging_dimension",
+        "packaging_height",
+        "packaging_width"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "frequenza scansione orizzontale",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_horizontal_refresh_rate_max",
+        "digital_horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "frequenza scansione verticale",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_vertical_refresh_rate_max",
+        "digital_vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "intervallo di scansione verticale",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "intervallo di temperatura",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "intervallo temperatura di funzionamento",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "larghezza",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "larghezza con supporto",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "larghezza imballo",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_width"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "profondità",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "profondità con supporto",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "profondità imballo",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_depth",
+        "packaging_dimension"
+      ]
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "column": "range di scansione orizzontale",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.shopmania.com.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.shopmania.com.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.shopmania.com.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "horizontal frequency",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "standard refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "width with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "contrast ratio",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "contrast_ratio_dynamic",
+        "contrast_ratio_static"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "device type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "dimensions  weight",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_depth_with_stand",
+        "monitor_dimension",
+        "monitor_dimension_with_stand",
+        "monitor_height",
+        "monitor_height_with_stand",
+        "monitor_weight",
+        "monitor_weight_with_stand",
+        "monitor_width",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "dimensions  weight details",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_depth_with_stand",
+        "monitor_dimension",
+        "monitor_dimension_with_stand",
+        "monitor_height",
+        "monitor_height_with_stand",
+        "monitor_weight",
+        "monitor_weight_with_stand",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "dimensions wxdxh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_depth_with_stand",
+        "monitor_dimension",
+        "monitor_dimension_with_stand",
+        "monitor_height",
+        "monitor_height_with_stand",
+        "monitor_width",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "environmental parameters",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_humidity",
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "horizontal refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "max operating temperature",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "min operating temperature",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "product description",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "brand",
+        "screen_size_diagonal",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "vertical refresh rate",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth",
+        "monitor_dimension"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_depth_with_stand",
+        "monitor_dimension_with_stand"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "digital horizontal frequency",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_horizontal_refresh_rate_max",
+        "digital_horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "digital vertical frequency",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "digital_vertical_refresh_rate_max",
+        "digital_vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "headphone out",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "has_headphone_port",
+        "headphone_port_quantity"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_height"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_height_with_stand"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "horizontal scan range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "horizontal_refresh_rate_max",
+        "horizontal_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "operating temperature range tt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "operating temperature tt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "packaging depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_depth",
+        "packaging_dimension"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "packaging height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_height"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "packaging width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimension",
+        "packaging_width"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "storage temperature range tt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "storage temperature tt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "working_temperature_max",
+        "working_temperature_min",
+        "working_temperature_range"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "vertical scan range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "vertical_refresh_rate_max",
+        "vertical_refresh_rate_range"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension",
+        "monitor_width"
+      ]
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "column": "width with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "monitor_dimension_with_stand",
+        "monitor_width_with_stand"
+      ]
+    },
+    {
+      "table": "ce.yikus.com.csv",
+      "target": "brand",
+      "kept": "label",
+      "excluded": [
+        "brand",
+        "manufacturer",
+        "publisher",
+        "studio"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "target": "color",
+      "kept": "colour",
+      "excluded": [
+        "case colour",
+        "product color"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "target": "dvid_port_quantity",
+      "kept": "dvid ports",
+      "excluded": [
+        "dvid ports quantity"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "target": "number_of_colors",
+      "kept": "color supported",
+      "excluded": [
+        "color support",
+        "colour support"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "target": "supported_aspect_ratio",
+      "kept": "aspect ratio",
+      "excluded": [
+        "display ratio",
+        "image aspect ratio"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "target": "supported_resolution",
+      "kept": "display resolution",
+      "excluded": [
+        "native resolution",
+        "supported graphics resolutions"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "target": "usb_port2_quantity",
+      "kept": "usb 20 ports quantity",
+      "excluded": [
+        "usb 20 ports"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "target": "warranty_duration",
+      "kept": "limited warranty",
+      "excluded": [
+        "service  support"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.best-deal-items.com.csv",
+      "target": "working_humidity",
+      "kept": "operating relative humidity hh",
+      "excluded": [
+        "humidity range operating",
+        "operating relative humidity range",
+        "storage relative humidity hh",
+        "storage relative humidity range"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "target": "color",
+      "kept": "case colour",
+      "excluded": [
+        "colour"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "target": "response_time",
+      "kept": "response time",
+      "excluded": [
+        "maximum response time"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "target": "screen_type",
+      "kept": "product type",
+      "excluded": [
+        "display type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cleverboxes.com.csv",
+      "target": "supported_resolution",
+      "kept": "resolution maximum",
+      "excluded": [
+        "maximum resolution"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "brand",
+      "kept": "brand",
+      "excluded": [
+        "manufacturer",
+        "manufacturersupplier"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "color",
+      "kept": "product color",
+      "excluded": [
+        "exterior color"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "has_dvid_port",
+      "kept": "dvid input",
+      "excluded": [
+        "dvid with hdcp input"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "hdmi_port_quantity",
+      "kept": "hdmi ports qty",
+      "excluded": [
+        "number of hdmi inputs",
+        "number of hdmi ports"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "number_of_colors",
+      "kept": "maximum colors",
+      "excluded": [
+        "color depth",
+        "color depth ja",
+        "colour support",
+        "display  color support"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "power_consumption_standy",
+      "kept": "standby power consumption",
+      "excluded": [
+        "offmode power consumption"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "response_time",
+      "kept": "response time",
+      "excluded": [
+        "display response time"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "screen_brightness",
+      "kept": "brightness",
+      "excluded": [
+        "image brightness",
+        "projector image brightness",
+        "screen brightness"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "speakers_quantity",
+      "kept": "number of speakers",
+      "excluded": [
+        "speaker qty",
+        "speaker system"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "supported_aspect_ratio",
+      "kept": "aspect ratio",
+      "excluded": [
+        "image aspect ratio"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "supported_resolution",
+      "kept": "max resolution",
+      "excluded": [
+        "display format",
+        "maximum resolution",
+        "recommended resolution",
+        "scan format",
+        "supported resolutions"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "usb_port_quantity",
+      "kept": "number of usb ports",
+      "excluded": [
+        "usb ports qty"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "warranty_duration",
+      "kept": "service  support",
+      "excluded": [
+        "support details full contract period"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "working_humidity",
+      "kept": "humidity range operating",
+      "excluded": [
+        "humidity rh non condensing",
+        "operating humidity rh non condensing"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "target": "power_consumption_standy",
+      "kept": "consumi modalità standby",
+      "excluded": [
+        "consumi modalità risparmio energetico",
+        "consumi modalità spento"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "target": "screen_brightness",
+      "kept": "luminosità schermo",
+      "excluded": [
+        "luminosità"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "target": "screen_type",
+      "kept": "tipologia display",
+      "excluded": [
+        "tecnologia display",
+        "tipo di display"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "target": "supported_aspect_ratio",
+      "kept": "formato",
+      "excluded": [
+        "rapporto daspetto",
+        "regolazioni formato schermo"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "target": "supported_resolution",
+      "kept": "risoluzione",
+      "excluded": [
+        "modalità video supportate",
+        "risoluzione massima",
+        "risoluzioni grafiche supportate"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "target": "working_humidity",
+      "kept": "range di umidità di funzionamento",
+      "excluded": [
+        "umidità"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.imldirect.it.csv",
+      "target": "brand",
+      "kept": "brand name",
+      "excluded": [
+        "manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.imldirect.it.csv",
+      "target": "power_consumption_standy",
+      "kept": "standby power consumption",
+      "excluded": [
+        "offmode power consumption"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.itenergy.co.uk.csv",
+      "target": "brand",
+      "kept": "brand name",
+      "excluded": [
+        "manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.itenergy.co.uk.csv",
+      "target": "power_consumption_standy",
+      "kept": "standby power consumption",
+      "excluded": [
+        "offmode power consumption"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.jrlinton.co.uk.csv",
+      "target": "brand",
+      "kept": "brand name",
+      "excluded": [
+        "manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.jrlinton.co.uk.csv",
+      "target": "power_consumption_standy",
+      "kept": "standby power consumption",
+      "excluded": [
+        "offmode power consumption"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.kingsfieldcomputers.co.uk.csv",
+      "target": "brand",
+      "kept": "brand name",
+      "excluded": [
+        "manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.kingsfieldcomputers.co.uk.csv",
+      "target": "power_consumption_standy",
+      "kept": "standby power consumption",
+      "excluded": [
+        "offmode power consumption"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "target": "number_of_colors",
+      "kept": "display number of colours",
+      "excluded": [
+        "number of colours"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "target": "power_consumption_max",
+      "kept": "power consumption typical",
+      "excluded": [
+        "power consumption max"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "target": "power_consumption_standy",
+      "kept": "power consumption standby",
+      "excluded": [
+        "power consumption off",
+        "power consumption powersave"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "target": "screen_size_diagonal",
+      "kept": "display diagonal",
+      "excluded": [
+        "display diagonal metric"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "target": "screen_type",
+      "kept": "display",
+      "excluded": [
+        "display technology",
+        "display type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "target": "supported_resolution",
+      "kept": "display resolution",
+      "excluded": [
+        "supported graphics resolutions",
+        "supported video modes"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "target": "vga_port_quantity",
+      "kept": "vga dsub ports quantity",
+      "excluded": [
+        "vga dsub input ports"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.makingbuyingeasy.co.uk.csv",
+      "target": "working_humidity",
+      "kept": "operating relative humidity hh",
+      "excluded": [
+        "relative humidity",
+        "storage relative humidity hh"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "target": "power_consumption_max",
+      "kept": "power consumption typical",
+      "excluded": [
+        "power consumption max"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "target": "power_consumption_standy",
+      "kept": "power consumption standby",
+      "excluded": [
+        "power consumption off",
+        "power consumption powersave"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "target": "screen_size_diagonal",
+      "kept": "display diagonal",
+      "excluded": [
+        "display diagonal metric"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "target": "screen_type",
+      "kept": "display",
+      "excluded": [
+        "display technology"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "target": "supported_resolution",
+      "kept": "display resolution",
+      "excluded": [
+        "supported graphics resolutions",
+        "supported video modes"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mediashopuk.com.csv",
+      "target": "working_humidity",
+      "kept": "operating relative humidity hh",
+      "excluded": [
+        "relative humidity",
+        "storage relative humidity hh"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "target": "power_consumption_max",
+      "kept": "power consumption typical",
+      "excluded": [
+        "power consumption max"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "target": "power_consumption_standy",
+      "kept": "power consumption standby",
+      "excluded": [
+        "power consumption off",
+        "power consumption powersave"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "target": "screen_size_diagonal",
+      "kept": "display diagonal",
+      "excluded": [
+        "display diagonal metric"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "target": "screen_type",
+      "kept": "display",
+      "excluded": [
+        "display technology"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "target": "supported_resolution",
+      "kept": "display resolution",
+      "excluded": [
+        "supported graphics resolutions",
+        "supported video modes"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mrhightech.com.csv",
+      "target": "working_humidity",
+      "kept": "operating relative humidity hh",
+      "excluded": [
+        "relative humidity",
+        "storage relative humidity hh"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "target": "displayport_quantity",
+      "kept": "displayports",
+      "excluded": [
+        "displayports out"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "target": "supported_resolution",
+      "kept": "recommend resolution",
+      "excluded": [
+        "max resolution"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "target": "color",
+      "kept": "colour",
+      "excluded": [
+        "enclosure colour"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "target": "number_of_colors",
+      "kept": "colour support",
+      "excluded": [
+        "colour depth"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "target": "power_consumption_standy",
+      "kept": "power consumption stand by",
+      "excluded": [
+        "power consumption stand by  sleep"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "target": "screen_brightness",
+      "kept": "brightness",
+      "excluded": [
+        "image brightness"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "target": "screen_size_diagonal",
+      "kept": "diagonal size",
+      "excluded": [
+        "diagonal size cm",
+        "viewable size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "target": "screen_type",
+      "kept": "display type",
+      "excluded": [
+        "product type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "target": "speakers_quantity",
+      "kept": "speakers",
+      "excluded": [
+        "speaker system"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "target": "supported_aspect_ratio",
+      "kept": "aspect ratio",
+      "excluded": [
+        "image aspect ratio"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "target": "supported_resolution",
+      "kept": "native resolution",
+      "excluded": [
+        "display format",
+        "max resolution",
+        "native maximum resolution",
+        "resolution",
+        "supported computer resolutions"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.odsi.co.uk.csv",
+      "target": "warranty_duration",
+      "kept": "service  support",
+      "excluded": [
+        "manufacturer warranty",
+        "service  support details"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "target": "has_speakers",
+      "kept": "speakers",
+      "excluded": [
+        "integrated speakers"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "target": "power_consumption_standy",
+      "kept": "standby power consumption",
+      "excluded": [
+        "offmode power consumption"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "target": "response_time",
+      "kept": "response time",
+      "excluded": [
+        "typical response time"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "target": "screen_brightness",
+      "kept": "brightness",
+      "excluded": [
+        "monitor brightness"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "target": "screen_size_diagonal",
+      "kept": "screen size",
+      "excluded": [
+        "diagonal screen size",
+        "viewable image size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ohc24.ch.csv",
+      "target": "supported_aspect_ratio",
+      "kept": "aspect ratio",
+      "excluded": [
+        "image aspect ratio"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ohc24.ch.csv",
+      "target": "supported_resolution",
+      "kept": "native resolution",
+      "excluded": [
+        "resolution"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.pc-canada.com.csv",
+      "target": "brand",
+      "kept": "brand name",
+      "excluded": [
+        "manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.pc-canada.com.csv",
+      "target": "power_consumption_standy",
+      "kept": "standby power consumption",
+      "excluded": [
+        "offmode power consumption"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.pcconnection.com.csv",
+      "target": "screen_brightness",
+      "kept": "image brightness",
+      "excluded": [
+        "brightness nitscdm2"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "target": "power_consumption_standy",
+      "kept": "consumi modalità standby",
+      "excluded": [
+        "consumi modalità risparmio energetico",
+        "consumi modalità spento"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "target": "screen_type",
+      "kept": "tipologia display",
+      "excluded": [
+        "tecnologia display"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "target": "supported_resolution",
+      "kept": "risoluzione",
+      "excluded": [
+        "modalità video supportate",
+        "risoluzione consigliata",
+        "risoluzione massima",
+        "risoluzioni grafiche supportate"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "target": "working_humidity",
+      "kept": "range di umidità di funzionamento",
+      "excluded": [
+        "umidità",
+        "umidità relativa"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.shopmania.com.csv",
+      "target": "brand",
+      "kept": "product name",
+      "excluded": [
+        "brand"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "target": "brand",
+      "kept": "brand name",
+      "excluded": [
+        "manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "target": "power_consumption_standy",
+      "kept": "standby power consumption",
+      "excluded": [
+        "offmode power consumption"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "target": "power_consumption_standy",
+      "kept": "power consumption stand by  sleep",
+      "excluded": [
+        "power consumption sleep",
+        "power consumption stand by"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "target": "screen_size_diagonal",
+      "kept": "diagonal size",
+      "excluded": [
+        "viewable size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "target": "warranty_duration",
+      "kept": "manufacturer warranty",
+      "excluded": [
+        "service  support"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "target": "has_ethernet_port",
+      "kept": "ethernet lan",
+      "excluded": [
+        "ethernet lan connection"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "target": "has_speakers",
+      "kept": "builtin speakers",
+      "excluded": [
+        "builtin subwoofer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "target": "power_consumption_max",
+      "kept": "power consumption typical",
+      "excluded": [
+        "power consumption max"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "target": "power_consumption_standy",
+      "kept": "power consumption standby",
+      "excluded": [
+        "power consumption off",
+        "power consumption powersave"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "target": "response_time",
+      "kept": "response time",
+      "excluded": [
+        "reaktionszeit"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "target": "screen_size_diagonal",
+      "kept": "display diagonal",
+      "excluded": [
+        "display diagonal metric"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "target": "screen_type",
+      "kept": "display",
+      "excluded": [
+        "display technology"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "target": "supported_resolution",
+      "kept": "display resolution",
+      "excluded": [
+        "maximum resolution",
+        "supported graphics resolutions",
+        "supported video modes"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "target": "working_humidity",
+      "kept": "operating relative humidity range",
+      "excluded": [
+        "operating relative humidity hh",
+        "relative humidity",
+        "storage relative humidity hh",
+        "storage relative humidity range"
+      ],
+      "reason": "same_table_alias"
+    }
+  ],
+  "source_tables": [
+    "www.hardware-planet.it.csv",
+    "www.nexus-t.co.uk.csv",
+    "www.planet-computer.it.csv",
+    "www.pcconnection.com.csv",
+    "www.officedepot.com.csv",
+    "www.ebay.com.csv",
+    "www.ohc24.ch.csv",
+    "www.xpcpro.com.csv",
+    "www.jrlinton.co.uk.csv"
+  ],
+  "original_rows": {
+    "ca.pcpartpicker.com.csv": 712,
+    "catalog.com.csv": 180,
+    "ce.yikus.com.csv": 257,
+    "www.best-deal-items.com.csv": 2801,
+    "www.cleverboxes.com.csv": 469,
+    "www.ebay.com.csv": 4281,
+    "www.getprice.com.au.csv": 268,
+    "www.hardware-planet.it.csv": 305,
+    "www.imldirect.it.csv": 763,
+    "www.itenergy.co.uk.csv": 366,
+    "www.jrlinton.co.uk.csv": 1089,
+    "www.kingsfieldcomputers.co.uk.csv": 571,
+    "www.makingbuyingeasy.co.uk.csv": 603,
+    "www.mediashopuk.com.csv": 176,
+    "www.mrhightech.com.csv": 176,
+    "www.nexus-t.co.uk.csv": 136,
+    "www.odsi.co.uk.csv": 199,
+    "www.officedepot.com.csv": 235,
+    "www.ohc24.ch.csv": 798,
+    "www.pc-canada.com.csv": 120,
+    "www.pcconnection.com.csv": 623,
+    "www.planet-computer.it.csv": 190,
+    "www.shopmania.com.csv": 108,
+    "www.softwarecity.ca.csv": 401,
+    "www.vology.com.csv": 528,
+    "www.xpcpro.com.csv": 307
+  },
+  "tables": [
+    {
+      "table": "www.ebay.com.csv",
+      "rows": 300,
+      "columns": 26,
+      "missing_rate": 0.8103846153846154,
+      "column_missing_rates": {
+        "aspect ratio": 0.37,
+        "brand": 0.47,
+        "contrast ratio": 0.36,
+        "display technology": 0.21,
+        "screen size": 0.16666666666666666,
+        "brightness": 0.49,
+        "headphone": 0.99,
+        "response time": 0.37,
+        "standby power consumption": 0.9633333333333334,
+        "max resolution": 0.73,
+        "product color": 0.99,
+        "service  support": 0.9866666666666667,
+        "humidity range operating": 0.9966666666666667,
+        "usb standard": 0.9933333333333333,
+        "hdmi ports qty": 1.0,
+        "number of dvi": 1.0,
+        "number of usb ports": 1.0,
+        "built in speakers": 1.0,
+        "maximum colors": 0.9933333333333333,
+        "number of speakers": 1.0,
+        "dvid input": 0.9966666666666667,
+        "hdmi input": 0.9966666666666667,
+        "vga input": 0.9966666666666667,
+        "bluetooth": 1.0,
+        "microphone": 1.0,
+        "number of usb 30 ports": 1.0
+      }
+    },
+    {
+      "table": "www.hardware-planet.it.csv",
+      "rows": 300,
+      "columns": 41,
+      "missing_rate": 0.4767479674796748,
+      "column_missing_rates": {
+        "rapporto di contrasto": 0.30333333333333334,
+        "tempo di risposta": 0.006666666666666667,
+        "altoparlanti incorporati": 0.13333333333333333,
+        "bluetooth": 0.79,
+        "classe efficienza energetica": 0.3,
+        "collegamento ethernet lan": 0.78,
+        "colore del prodotto": 0.03333333333333333,
+        "colori del display": 0.11333333333333333,
+        "consumi": 0.14,
+        "consumi modalità standby": 0.29,
+        "dimensioni schermo": 0.023333333333333334,
+        "dot pitch": 0.23666666666666666,
+        "formato": 0.06333333333333334,
+        "frequenza di ingresso": 0.31333333333333335,
+        "luminosità schermo": 0.03333333333333333,
+        "peso incluso imballo": 0.5333333333333333,
+        "peso prodotto con supporto": 0.5966666666666667,
+        "porta dvi": 0.38333333333333336,
+        "quantità displayports": 0.7933333333333333,
+        "quantità porte dvid": 0.3933333333333333,
+        "quantità porte hdmi": 0.48,
+        "quantità porte vga dsub": 0.12,
+        "rapporto di contrasto dinamico": 0.09666666666666666,
+        "risoluzione": 0.02666666666666667,
+        "tipologia display": 0.07,
+        "tipologia hd": 0.21,
+        "microfono incorporato": 0.9433333333333334,
+        "numero di altoparlanti": 0.5066666666666667,
+        "peso": 0.24,
+        "quantità porte usb 20": 0.8333333333333334,
+        "subwoofer incorporato": 0.8933333333333333,
+        "altoparlante  cuffia  spinotto di uscita": 0.7033333333333334,
+        "full hd": 0.96,
+        "lingue osd": 0.8633333333333333,
+        "numero di lingue osd": 0.7866666666666666,
+        "range di umidità di funzionamento": 0.9033333333333333,
+        "connessione cuffia": 0.8466666666666667,
+        "hdmi": 0.93,
+        "colore piedi": 0.9733333333333334,
+        "microfono spinotto dingresso": 0.96,
+        "quantità porte usb 30": 0.94
+      }
+    },
+    {
+      "table": "www.jrlinton.co.uk.csv",
+      "rows": 300,
+      "columns": 27,
+      "missing_rate": 0.3385185185185185,
+      "column_missing_rates": {
+        "aspect ratio": 0.06666666666666667,
+        "brand name": 0.0,
+        "brightness": 0.02,
+        "colour": 0.18666666666666668,
+        "colour support": 0.17666666666666667,
+        "contrast ratio": 0.016666666666666666,
+        "dvi": 0.15333333333333332,
+        "maximum resolution": 0.0033333333333333335,
+        "operating power consumption": 0.11333333333333333,
+        "response time": 0.02,
+        "screen mode": 0.043333333333333335,
+        "screen size": 0.0,
+        "standby power consumption": 0.31,
+        "vga": 0.13333333333333333,
+        "weight approximate": 0.16,
+        "weight with stand approximate": 0.6633333333333333,
+        "hdmi": 0.48333333333333334,
+        "mount type": 0.5766666666666667,
+        "speakers": 0.39666666666666667,
+        "displayport": 0.5766666666666667,
+        "limited warranty": 0.38,
+        "network rj45": 0.9133333333333333,
+        "usb": 0.6266666666666667,
+        "usb standard": 0.7766666666666666,
+        "headphone": 0.7533333333333333,
+        "number of speakers": 0.64,
+        "energy efficiency class": 0.95
+      }
+    },
+    {
+      "table": "www.nexus-t.co.uk.csv",
+      "rows": 136,
+      "columns": 28,
+      "missing_rate": 0.2602415966386555,
+      "column_missing_rates": {
+        "aspect ratio": 0.03676470588235294,
+        "brightness": 0.014705882352941176,
+        "colours": 0.03676470588235294,
+        "contrast ratio": 0.11764705882352941,
+        "dynamic contrast ratio": 0.07352941176470588,
+        "gross weight": 0.0,
+        "hdmi ports": 0.34558823529411764,
+        "manufacturer": 0.0,
+        "net weight": 0.16176470588235295,
+        "normal power consumption": 0.08088235294117647,
+        "pixel pitch": 0.03676470588235294,
+        "recommend resolution": 0.03676470588235294,
+        "response time": 0.014705882352941176,
+        "screen features": 0.5367647058823529,
+        "screen size": 0.014705882352941176,
+        "screen type": 0.014705882352941176,
+        "speakers": 0.4338235294117647,
+        "standby power consumption": 0.08088235294117647,
+        "vga ports": 0.10294117647058823,
+        "wall mount": 0.1323529411764706,
+        "warranty direct with manufacturer": 0.0,
+        "displayports": 0.6838235294117647,
+        "dvid ports": 0.3235294117647059,
+        "headphone jacks": 0.6029411764705882,
+        "usb 30 downstream ports": 0.875,
+        "usb 30 upstream ports": 0.875,
+        "usb 20 downstream ports": 0.8235294117647058,
+        "usb 20 upstream ports": 0.8308823529411765
+      }
+    },
+    {
+      "table": "www.officedepot.com.csv",
+      "rows": 235,
+      "columns": 27,
+      "missing_rate": 0.3987391646966115,
+      "column_missing_rates": {
+        "aspect ratio": 0.13191489361702127,
+        "brand name": 0.0,
+        "color supported": 0.4425531914893617,
+        "contrast ratio": 0.03829787234042553,
+        "displayport": 0.723404255319149,
+        "dvi": 0.33191489361702126,
+        "hdmi": 0.6851063829787234,
+        "maximum resolution": 0.00851063829787234,
+        "operating power consumption": 0.2680851063829787,
+        "product type": 0.10638297872340426,
+        "response time": 0.1574468085106383,
+        "screen mode": 0.13617021276595745,
+        "screen size": 0.13617021276595745,
+        "standby power consumption": 0.42127659574468085,
+        "usb": 0.7191489361702128,
+        "vga": 0.17872340425531916,
+        "warranty length": 0.2765957446808511,
+        "weight": 0.24680851063829787,
+        "weight with stand approximate": 0.625531914893617,
+        "brightness": 0.2,
+        "color": 0.31063829787234043,
+        "mount type": 0.5829787234042553,
+        "number of speakers": 0.7914893617021277,
+        "speakers": 0.5446808510638298,
+        "usb standard": 0.8638297872340426,
+        "network rj45": 0.9744680851063829,
+        "headphone jack": 0.8638297872340426
+      }
+    },
+    {
+      "table": "www.ohc24.ch.csv",
+      "rows": 300,
+      "columns": 12,
+      "missing_rate": 0.3688888888888889,
+      "column_missing_rates": {
+        "aspect ratio": 0.14666666666666667,
+        "brightness": 0.07666666666666666,
+        "colour": 0.17333333333333334,
+        "energy class": 0.9733333333333334,
+        "manufacturer warranty": 0.32666666666666666,
+        "native resolution": 0.04666666666666667,
+        "response time": 0.14,
+        "weight": 0.09666666666666666,
+        "colour support": 0.15,
+        "pixel pitch": 0.31,
+        "hdmi ports qty": 0.99,
+        "speaker system": 0.9966666666666667
+      }
+    },
+    {
+      "table": "www.pcconnection.com.csv",
+      "rows": 300,
+      "columns": 14,
+      "missing_rate": 0.6673809523809524,
+      "column_missing_rates": {
+        "actual weight": 0.63,
+        "color": 0.24333333333333335,
+        "color support": 0.87,
+        "contrast ratio": 0.7833333333333333,
+        "display technology": 0.7733333333333333,
+        "image aspect ratio": 0.9833333333333333,
+        "internal resolution max": 0.7733333333333333,
+        "warranty  labor": 0.04666666666666667,
+        "display size": 0.5666666666666667,
+        "dot pitch": 0.7166666666666667,
+        "image brightness": 0.6133333333333333,
+        "product type": 0.5466666666666666,
+        "response timerate": 0.8066666666666666,
+        "speakers included": 0.99
+      }
+    },
+    {
+      "table": "www.planet-computer.it.csv",
+      "rows": 190,
+      "columns": 47,
+      "missing_rate": 0.51993281075028,
+      "column_missing_rates": {
+        "altoparlante  cuffia  spinotto di uscita": 0.6894736842105263,
+        "bluetooth": 0.7526315789473684,
+        "classe efficienza energetica": 0.3894736842105263,
+        "collegamento ethernet lan": 0.7105263157894737,
+        "colore del prodotto": 0.23157894736842105,
+        "colori del display": 0.1368421052631579,
+        "consumi": 0.23684210526315788,
+        "consumi modalità standby": 0.29473684210526313,
+        "dimensione visibile orizzontale": 0.531578947368421,
+        "dimensione visibile verticale": 0.5263157894736842,
+        "dimensioni schermo": 0.05789473684210526,
+        "dot pitch": 0.15263157894736842,
+        "formato": 0.08421052631578947,
+        "frequenza di ingresso": 0.3526315789473684,
+        "hdmi": 0.9578947368421052,
+        "luminosità schermo": 0.06315789473684211,
+        "peso incluso imballo": 0.3684210526315789,
+        "peso prodotto con supporto": 0.34210526315789475,
+        "quantità porte vga dsub": 0.24736842105263157,
+        "rapporto di contrasto": 0.15789473684210525,
+        "rapporto di contrasto dinamico": 0.1368421052631579,
+        "risoluzione": 0.05789473684210526,
+        "tempo di risposta": 0.07368421052631578,
+        "tipologia display": 0.08421052631578947,
+        "tipologia hd": 0.2578947368421053,
+        "altoparlanti incorporati": 0.24736842105263157,
+        "peso": 0.23157894736842105,
+        "porta dvi": 0.4421052631578947,
+        "quantità displayports": 0.7421052631578947,
+        "quantità porte dvid": 0.5263157894736842,
+        "quantità porte hdmi": 0.6894736842105263,
+        "quantità porte usb 30": 0.9105263157894737,
+        "range di umidità di funzionamento": 0.6684210526315789,
+        "lingue osd": 0.7105263157894737,
+        "numero di altoparlanti": 0.6631578947368421,
+        "numero di lingue osd": 0.7315789473684211,
+        "altitudine di funzionamento": 0.8368421052631579,
+        "altitudine di nonfunzionamento": 0.8842105263157894,
+        "subwoofer incorporato": 0.9210526315789473,
+        "quantità porte usb 20": 0.7631578947368421,
+        "connessione cuffia": 0.9,
+        "microfono incorporato": 0.9210526315789473,
+        "microfono spinotto dingresso": 0.9368421052631579,
+        "wifi": 0.9210526315789473,
+        "full hd": 0.9789473684210527,
+        "quantità porte ethernet lan rj45": 0.9842105263157894,
+        "colore del piede": 0.9315789473684211
+      }
+    },
+    {
+      "table": "www.xpcpro.com.csv",
+      "rows": 300,
+      "columns": 43,
+      "missing_rate": 0.525891472868217,
+      "column_missing_rates": {
+        "aspect ratio": 0.13333333333333333,
+        "builtin speakers": 0.18333333333333332,
+        "colour of product": 0.10666666666666667,
+        "contrast ratio dynamic": 0.21666666666666667,
+        "contrast ratio typical": 0.19666666666666666,
+        "display": 0.11666666666666667,
+        "display brightness": 0.08,
+        "display diagonal": 0.09333333333333334,
+        "display number of colours": 0.21,
+        "display resolution": 0.09333333333333334,
+        "dvi port": 0.4766666666666667,
+        "dvid ports quantity": 0.36333333333333334,
+        "feet colour": 0.96,
+        "input frequency": 0.3566666666666667,
+        "number of loudspeakers": 0.5533333333333333,
+        "number of osd languages": 0.8133333333333334,
+        "on screen display osd languages": 0.8166666666666667,
+        "package weight": 0.5766666666666667,
+        "pixel pitch": 0.2966666666666667,
+        "power consumption standby": 0.3,
+        "power consumption typical": 0.22,
+        "response time": 0.09333333333333334,
+        "vga dsub ports quantity": 0.17333333333333334,
+        "weight": 0.24,
+        "weight with stand": 0.4766666666666667,
+        "full hd": 0.8333333333333334,
+        "hdmi ports quantity": 0.5766666666666667,
+        "energy efficiency class": 0.27666666666666667,
+        "hd type": 0.42,
+        "bluetooth": 0.77,
+        "ethernet lan": 0.8666666666666667,
+        "headphone outputs": 0.8933333333333333,
+        "wifi": 0.8666666666666667,
+        "operating relative humidity range": 0.77,
+        "displayports quantity": 0.76,
+        "dvii ports quantity": 0.9466666666666667,
+        "usb 20 ports quantity": 0.7633333333333333,
+        "hdmi": 0.9233333333333333,
+        "headphone connectivity": 0.9233333333333333,
+        "nonoperating altitude": 0.9433333333333334,
+        "usb powered": 0.99,
+        "microphone in": 0.98,
+        "usb 30 ports quantity": 0.9633333333333334
+      }
+    }
+  ],
+  "gt_pairs": 620,
+  "files": {
+    "groundtruth.txt": "eefaf61c7a76f4234a4d692a8c9cc2a741e0eb72bb8521c70313a3e4b595ef54",
+    "original/www.xpcpro.com.csv": "603bd19e33738a1c4858222fab5ca470c452618a8464512e603a44d3d64acd21",
+    "original/www.pcconnection.com.csv": "5e2a2ae2a5af5ea400aa9398fd827cb224e2cbd3d3455f6e34ef6c6f63cff8c7",
+    "original/www.ohc24.ch.csv": "c39d87d31ee1ec13c848966c2472768e85cbdbcab0dc2332e9d23855fcbbf521",
+    "original/www.ebay.com.csv": "68965b2a21cbc432ba4507b9322e7134b4d792498d16d151b3b86036890f77b1",
+    "original/www.officedepot.com.csv": "e16a875a028a292b7b707753773b2b73e54338474a7f202afa48c0d499ce1007",
+    "original/www.planet-computer.it.csv": "eb1d3b3feede2bc32bd75be19847a07c36717e2b76102d8f2f77e7e5498f55d9",
+    "original/www.hardware-planet.it.csv": "6d6916d36857ec5791e0d5a7db2abcf60770598b384aaf39536cb3d3acdde278",
+    "original/www.nexus-t.co.uk.csv": "4ec6d50b3eb042397b9827c3ca0d15af199cac3fcab4fc4fa4573677d896e5aa",
+    "original/www.jrlinton.co.uk.csv": "13257d511990b699a9e84a98104be1dad1cc01cae84dd5a7488bf42593fd432a"
+  }
+}

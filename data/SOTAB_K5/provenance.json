@@ -1,0 +1,1193 @@
+{
+  "source": "https://data.dws.informatik.uni-mannheim.de/structureddata/sotab/v2/",
+  "protocol": {
+    "adapter_version": 2,
+    "max_rows": 300,
+    "max_sets_per_role": 6,
+    "tables_per_set": 5,
+    "seed": 42,
+    "selection": "3-16 unique CPA properties; >=20 rows; >=1 column with 30-90% nulls, >=10 observed cells and >=2 values",
+    "split": "official validation -> fit/validation by website hash; official test, excluding validation websites",
+    "groundtruth": "same CPA property within same table entity class and unique subject context; derived equivalence, review required",
+    "grouping": "distinct_sites",
+    "roles": [
+      "test"
+    ]
+  },
+  "archives": {
+    "CPA_validation_schemaorg.zip": "4ec7242a71498d5f7164428c9e1aaaace493de78b66fe246a281e61b2be14804",
+    "CPA_test_schemaorg.zip": "f2699faa6ebae5e49db529ecedbd0a78ecb75ceba7bf2ff4675af64cca095425"
+  },
+  "excluded": {
+    "fit_ineligible": 205,
+    "validation_ineligible": 231,
+    "test_ineligible": 483
+  },
+  "cases": [
+    {
+      "name": "test_01_Book",
+      "role": "test",
+      "topic": "Book",
+      "tables": [
+        {
+          "source": "Book_austinsbooks.com_September2020_CPA.json.gz",
+          "topic": "Book",
+          "host": "austinsbooks.com",
+          "labels": {
+            "c5": "publisher",
+            "c4": "priceCurrency",
+            "c2": "author",
+            "c6": "price",
+            "c7": "availability"
+          },
+          "filename": "t_e1feeba24cfd.csv",
+          "profile": {
+            "rows": 250,
+            "columns": 5,
+            "missing_rate": 0.1112,
+            "column_missing_rates": {
+              "c5": 0.48,
+              "c4": 0.0,
+              "c2": 0.076,
+              "c6": 0.0,
+              "c7": 0.0
+            },
+            "observed_unique": {
+              "c5": 114,
+              "c4": 1,
+              "c2": 214,
+              "c6": 32,
+              "c7": 1
+            },
+            "informative_missing_columns": [
+              "c5"
+            ]
+          }
+        },
+        {
+          "source": "Book_bookcorner.com.pk_September2020_CPA.json.gz",
+          "topic": "Book",
+          "host": "bookcorner.com.pk",
+          "labels": {
+            "c3": "datePublished",
+            "c5": "numberOfPages",
+            "c2": "isbn",
+            "c6": "genre",
+            "c7": "price",
+            "c9": "url"
+          },
+          "filename": "t_5d1b2f1f5916.csv",
+          "profile": {
+            "rows": 37,
+            "columns": 6,
+            "missing_rate": 0.22522522522522523,
+            "column_missing_rates": {
+              "c3": 0.32432432432432434,
+              "c5": 0.40540540540540543,
+              "c2": 0.6216216216216216,
+              "c6": 0.0,
+              "c7": 0.0,
+              "c9": 0.0
+            },
+            "observed_unique": {
+              "c3": 6,
+              "c5": 15,
+              "c2": 13,
+              "c6": 25,
+              "c7": 26,
+              "c9": 37
+            },
+            "informative_missing_columns": [
+              "c3",
+              "c5",
+              "c2"
+            ]
+          }
+        },
+        {
+          "source": "Book_acequiabooksellers.com_September2020_CPA.json.gz",
+          "topic": "Book",
+          "host": "acequiabooksellers.com",
+          "labels": {
+            "c4": "publisher",
+            "c1": "author",
+            "c5": "price",
+            "c6": "availability"
+          },
+          "filename": "t_7b0d9b8882f4.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 4,
+            "missing_rate": 0.11916666666666667,
+            "column_missing_rates": {
+              "c4": 0.4666666666666667,
+              "c1": 0.01,
+              "c5": 0.0,
+              "c6": 0.0
+            },
+            "observed_unique": {
+              "c4": 134,
+              "c1": 273,
+              "c5": 30,
+              "c6": 1
+            },
+            "informative_missing_columns": [
+              "c4"
+            ]
+          }
+        },
+        {
+          "source": "Book_artisanbooksandbindery.com_September2020_CPA.json.gz",
+          "topic": "Book",
+          "host": "artisanbooksandbindery.com",
+          "labels": {
+            "c4": "publisher",
+            "c2": "author",
+            "c6": "price",
+            "c7": "availability"
+          },
+          "filename": "t_f2955d450e86.csv",
+          "profile": {
+            "rows": 198,
+            "columns": 4,
+            "missing_rate": 0.11868686868686869,
+            "column_missing_rates": {
+              "c4": 0.4292929292929293,
+              "c2": 0.045454545454545456,
+              "c6": 0.0,
+              "c7": 0.0
+            },
+            "observed_unique": {
+              "c4": 91,
+              "c2": 186,
+              "c6": 41,
+              "c7": 1
+            },
+            "informative_missing_columns": [
+              "c4"
+            ]
+          }
+        },
+        {
+          "source": "Book_rarebookcellar.com_September2020_CPA.json.gz",
+          "topic": "Book",
+          "host": "rarebookcellar.com",
+          "labels": {
+            "c8": "isbn",
+            "c2": "publisher",
+            "c3": "author",
+            "c4": "bookEdition",
+            "c6": "price",
+            "c7": "availability"
+          },
+          "filename": "t_b7e230e09115.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 6,
+            "missing_rate": 0.21055555555555555,
+            "column_missing_rates": {
+              "c8": 0.7366666666666667,
+              "c2": 0.21666666666666667,
+              "c3": 0.03,
+              "c4": 0.28,
+              "c6": 0.0,
+              "c7": 0.0
+            },
+            "observed_unique": {
+              "c8": 68,
+              "c2": 118,
+              "c3": 189,
+              "c4": 39,
+              "c6": 108,
+              "c7": 1
+            },
+            "informative_missing_columns": [
+              "c8"
+            ]
+          }
+        }
+      ],
+      "gt_pairs": 29
+    },
+    {
+      "name": "test_02_Event",
+      "role": "test",
+      "topic": "Event",
+      "tables": [
+        {
+          "source": "Event_997wooffm.com_September2020_CPA.json.gz",
+          "topic": "Event",
+          "host": "997wooffm.com",
+          "labels": {
+            "c6": "address",
+            "c7": "eventAttendanceMode",
+            "c4": "eventStatus",
+            "c5": "location",
+            "c10": "performer"
+          },
+          "filename": "t_e98fc74b9f85.csv",
+          "profile": {
+            "rows": 44,
+            "columns": 5,
+            "missing_rate": 0.37272727272727274,
+            "column_missing_rates": {
+              "c6": 0.7045454545454546,
+              "c7": 0.0,
+              "c4": 0.0,
+              "c5": 0.6818181818181818,
+              "c10": 0.4772727272727273
+            },
+            "observed_unique": {
+              "c6": 12,
+              "c7": 1,
+              "c4": 1,
+              "c5": 13,
+              "c10": 10
+            },
+            "informative_missing_columns": [
+              "c6",
+              "c5",
+              "c10"
+            ]
+          }
+        },
+        {
+          "source": "Event_h3cne.org_September2020_CPA.json.gz",
+          "topic": "Event",
+          "host": "h3cne.org",
+          "labels": {
+            "c10": "organizer",
+            "c11": "telephone",
+            "c12": "email"
+          },
+          "filename": "t_72ddbf5a47d8.csv",
+          "profile": {
+            "rows": 23,
+            "columns": 3,
+            "missing_rate": 0.5072463768115942,
+            "column_missing_rates": {
+              "c10": 0.4782608695652174,
+              "c11": 0.5217391304347826,
+              "c12": 0.5217391304347826
+            },
+            "observed_unique": {
+              "c10": 5,
+              "c11": 4,
+              "c12": 11
+            },
+            "informative_missing_columns": [
+              "c10",
+              "c11",
+              "c12"
+            ]
+          }
+        },
+        {
+          "source": "Event_aaaswfl.org_September2020_CPA.json.gz",
+          "topic": "Event",
+          "host": "aaaswfl.org",
+          "labels": {
+            "c5": "priceCurrency",
+            "c6": "category",
+            "c7": "validFrom",
+            "c8": "price",
+            "c9": "availability",
+            "c4": "location"
+          },
+          "filename": "t_0d9b55c04010.csv",
+          "profile": {
+            "rows": 44,
+            "columns": 6,
+            "missing_rate": 0.6287878787878788,
+            "column_missing_rates": {
+              "c5": 0.7272727272727273,
+              "c6": 0.7272727272727273,
+              "c7": 0.7272727272727273,
+              "c8": 0.7272727272727273,
+              "c9": 0.7272727272727273,
+              "c4": 0.13636363636363635
+            },
+            "observed_unique": {
+              "c5": 2,
+              "c6": 1,
+              "c7": 9,
+              "c8": 3,
+              "c9": 1,
+              "c4": 16
+            },
+            "informative_missing_columns": [
+              "c5",
+              "c7",
+              "c8"
+            ]
+          }
+        },
+        {
+          "source": "Event_healthychelsea.org_September2020_CPA.json.gz",
+          "topic": "Event",
+          "host": "healthychelsea.org",
+          "labels": {
+            "c4": "organizer",
+            "c5": "telephone",
+            "c7": "email"
+          },
+          "filename": "t_6b8650cc8697.csv",
+          "profile": {
+            "rows": 52,
+            "columns": 3,
+            "missing_rate": 0.7692307692307693,
+            "column_missing_rates": {
+              "c4": 0.7692307692307693,
+              "c5": 0.7692307692307693,
+              "c7": 0.7692307692307693
+            },
+            "observed_unique": {
+              "c4": 1,
+              "c5": 1,
+              "c7": 12
+            },
+            "informative_missing_columns": [
+              "c7"
+            ]
+          }
+        },
+        {
+          "source": "Event_automobiledrivingmuseum.org_September2020_CPA.json.gz",
+          "topic": "Event",
+          "host": "automobiledrivingmuseum.org",
+          "labels": {
+            "c3": "location",
+            "c4": "telephone",
+            "c6": "priceCurrency",
+            "c7": "category",
+            "c8": "validThrough",
+            "c9": "price",
+            "c10": "availability",
+            "c11": "validFrom"
+          },
+          "filename": "t_8d79733b5dad.csv",
+          "profile": {
+            "rows": 27,
+            "columns": 8,
+            "missing_rate": 0.6111111111111112,
+            "column_missing_rates": {
+              "c3": 0.7407407407407407,
+              "c4": 0.7777777777777778,
+              "c6": 0.5555555555555556,
+              "c7": 0.5555555555555556,
+              "c8": 0.5925925925925926,
+              "c9": 0.5555555555555556,
+              "c10": 0.5555555555555556,
+              "c11": 0.5555555555555556
+            },
+            "observed_unique": {
+              "c3": 1,
+              "c4": 1,
+              "c6": 5,
+              "c7": 5,
+              "c8": 11,
+              "c9": 11,
+              "c10": 6,
+              "c11": 11
+            },
+            "informative_missing_columns": [
+              "c6",
+              "c7",
+              "c8",
+              "c9",
+              "c10",
+              "c11"
+            ]
+          }
+        }
+      ],
+      "gt_pairs": 13
+    },
+    {
+      "name": "test_03_Hotel",
+      "role": "test",
+      "topic": "Hotel",
+      "tables": [
+        {
+          "source": "Hotel_goldentulip.com_September2020_CPA.json.gz",
+          "topic": "Hotel",
+          "host": "goldentulip.com",
+          "labels": {
+            "c4": "checkoutTime",
+            "c5": "checkInTime",
+            "c11": "availableLanguage",
+            "c3": "email",
+            "c7": "addressCountry"
+          },
+          "filename": "t_db64352b977c.csv",
+          "profile": {
+            "rows": 184,
+            "columns": 5,
+            "missing_rate": 0.4608695652173913,
+            "column_missing_rates": {
+              "c4": 0.6521739130434783,
+              "c5": 0.6521739130434783,
+              "c11": 0.6521739130434783,
+              "c3": 0.34782608695652173,
+              "c7": 0.0
+            },
+            "observed_unique": {
+              "c4": 3,
+              "c5": 5,
+              "c11": 14,
+              "c3": 57,
+              "c7": 21
+            },
+            "informative_missing_columns": [
+              "c4",
+              "c5",
+              "c11",
+              "c3"
+            ]
+          }
+        },
+        {
+          "source": "Hotel_campanile.com_September2020_CPA.json.gz",
+          "topic": "Hotel",
+          "host": "campanile.com",
+          "labels": {
+            "c4": "checkoutTime",
+            "c7": "checkInTime",
+            "c12": "availableLanguage",
+            "c2": "email"
+          },
+          "filename": "t_3b60ead90402.csv",
+          "profile": {
+            "rows": 292,
+            "columns": 4,
+            "missing_rate": 0.3193493150684932,
+            "column_missing_rates": {
+              "c4": 0.3664383561643836,
+              "c7": 0.3664383561643836,
+              "c12": 0.3664383561643836,
+              "c2": 0.1780821917808219
+            },
+            "observed_unique": {
+              "c4": 5,
+              "c7": 8,
+              "c12": 7,
+              "c2": 203
+            },
+            "informative_missing_columns": [
+              "c4",
+              "c7",
+              "c12"
+            ]
+          }
+        },
+        {
+          "source": "Hotel_radissonhotels.com_September2020_CPA.json.gz",
+          "topic": "Hotel",
+          "host": "radissonhotels.com",
+          "labels": {
+            "c1": "telephone",
+            "c3": "checkInTime",
+            "c4": "checkoutTime",
+            "c5": "addressCountry",
+            "c6": "streetAddress",
+            "c8": "postalCode",
+            "c9": "bestRating",
+            "c11": "ratingValue",
+            "c12": "longitude",
+            "c13": "latitude",
+            "c15": "addressLocality",
+            "c14": "review"
+          },
+          "filename": "t_5641db94a3d9.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 12,
+            "missing_rate": 0.07138888888888889,
+            "column_missing_rates": {
+              "c1": 0.0,
+              "c3": 0.0,
+              "c4": 0.0,
+              "c5": 0.0,
+              "c6": 0.0,
+              "c8": 0.03333333333333333,
+              "c9": 0.03,
+              "c11": 0.03,
+              "c12": 0.0,
+              "c13": 0.0,
+              "c15": 0.0,
+              "c14": 0.7633333333333333
+            },
+            "observed_unique": {
+              "c1": 281,
+              "c3": 5,
+              "c4": 5,
+              "c5": 56,
+              "c6": 288,
+              "c8": 275,
+              "c9": 2,
+              "c11": 9,
+              "c12": 288,
+              "c13": 288,
+              "c15": 245,
+              "c14": 71
+            },
+            "informative_missing_columns": [
+              "c14"
+            ]
+          }
+        },
+        {
+          "source": "Hotel_travelbymexico.com_September2020_CPA.json.gz",
+          "topic": "Hotel",
+          "host": "travelbymexico.com",
+          "labels": {
+            "c4": "checkoutTime",
+            "c12": "amenityFeature",
+            "c3": "checkInTime",
+            "c8": "priceRange"
+          },
+          "filename": "t_82865667b04d.csv",
+          "profile": {
+            "rows": 104,
+            "columns": 4,
+            "missing_rate": 0.23317307692307693,
+            "column_missing_rates": {
+              "c4": 0.3076923076923077,
+              "c12": 0.3173076923076923,
+              "c3": 0.3076923076923077,
+              "c8": 0.0
+            },
+            "observed_unique": {
+              "c4": 6,
+              "c12": 71,
+              "c3": 7,
+              "c8": 65
+            },
+            "informative_missing_columns": [
+              "c4",
+              "c12",
+              "c3"
+            ]
+          }
+        },
+        {
+          "source": "Hotel_destinia.fi_September2020_CPA.json.gz",
+          "topic": "Hotel",
+          "host": "destinia.fi",
+          "labels": {
+            "c5": "longitude",
+            "c6": "latitude",
+            "c7": "ratingValue",
+            "c8": "worstRating",
+            "c10": "bestRating",
+            "c4": "checkoutTime",
+            "c9": "checkInTime",
+            "c1": "address"
+          },
+          "filename": "t_342a2f704f8a.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 8,
+            "missing_rate": 0.4,
+            "column_missing_rates": {
+              "c5": 0.43333333333333335,
+              "c6": 0.43333333333333335,
+              "c7": 0.4666666666666667,
+              "c8": 0.4666666666666667,
+              "c10": 0.4666666666666667,
+              "c4": 0.4666666666666667,
+              "c9": 0.4666666666666667,
+              "c1": 0.0
+            },
+            "observed_unique": {
+              "c5": 169,
+              "c6": 170,
+              "c7": 5,
+              "c8": 1,
+              "c10": 1,
+              "c4": 24,
+              "c9": 26,
+              "c1": 300
+            },
+            "informative_missing_columns": [
+              "c5",
+              "c6",
+              "c7",
+              "c4",
+              "c9"
+            ]
+          }
+        }
+      ],
+      "gt_pairs": 27
+    },
+    {
+      "name": "test_04_LocalBusiness",
+      "role": "test",
+      "topic": "LocalBusiness",
+      "tables": [
+        {
+          "source": "LocalBusiness_giftguideonline.com.au_September2020_CPA.json.gz",
+          "topic": "LocalBusiness",
+          "host": "giftguideonline.com.au",
+          "labels": {
+            "c4": "faxNumber",
+            "c5": "addressCountry",
+            "c9": "postalCode"
+          },
+          "filename": "t_190940639e97.csv",
+          "profile": {
+            "rows": 28,
+            "columns": 3,
+            "missing_rate": 0.10714285714285714,
+            "column_missing_rates": {
+              "c4": 0.32142857142857145,
+              "c5": 0.0,
+              "c9": 0.0
+            },
+            "observed_unique": {
+              "c4": 19,
+              "c5": 5,
+              "c9": 27
+            },
+            "informative_missing_columns": [
+              "c4"
+            ]
+          }
+        },
+        {
+          "source": "LocalBusiness_caldwellchambernc.com_September2020_CPA.json.gz",
+          "topic": "LocalBusiness",
+          "host": "caldwellchambernc.com",
+          "labels": {
+            "c3": "faxNumber",
+            "c1": "telephone",
+            "c5": "postalCode",
+            "c6": "addressRegion",
+            "c7": "streetAddress",
+            "c8": "addressLocality"
+          },
+          "filename": "t_799f8775d3fa.csv",
+          "profile": {
+            "rows": 170,
+            "columns": 6,
+            "missing_rate": 0.10784313725490197,
+            "column_missing_rates": {
+              "c3": 0.6235294117647059,
+              "c1": 0.0058823529411764705,
+              "c5": 0.0,
+              "c6": 0.0,
+              "c7": 0.01764705882352941,
+              "c8": 0.0
+            },
+            "observed_unique": {
+              "c3": 64,
+              "c1": 161,
+              "c5": 22,
+              "c6": 4,
+              "c7": 159,
+              "c8": 19
+            },
+            "informative_missing_columns": [
+              "c3"
+            ]
+          }
+        },
+        {
+          "source": "LocalBusiness_3stech.co.in_September2020_CPA.json.gz",
+          "topic": "LocalBusiness",
+          "host": "3stech.co.in",
+          "labels": {
+            "c4": "priceRange",
+            "c2": "addressRegion",
+            "c3": "addressCountry",
+            "c5": "addressLocality",
+            "c6": "streetAddress"
+          },
+          "filename": "t_36532b947570.csv",
+          "profile": {
+            "rows": 24,
+            "columns": 5,
+            "missing_rate": 0.08333333333333333,
+            "column_missing_rates": {
+              "c4": 0.4166666666666667,
+              "c2": 0.0,
+              "c3": 0.0,
+              "c5": 0.0,
+              "c6": 0.0
+            },
+            "observed_unique": {
+              "c4": 11,
+              "c2": 1,
+              "c3": 1,
+              "c5": 1,
+              "c6": 2
+            },
+            "informative_missing_columns": [
+              "c4"
+            ]
+          }
+        },
+        {
+          "source": "LocalBusiness_411directoryassistance.ca_September2020_CPA.json.gz",
+          "topic": "LocalBusiness",
+          "host": "411directoryassistance.ca",
+          "labels": {
+            "c3": "faxNumber",
+            "c1": "telephone",
+            "c4": "postalCode",
+            "c5": "streetAddress",
+            "c6": "addressRegion",
+            "c8": "ratingValue",
+            "c9": "addressLocality"
+          },
+          "filename": "t_718f8ce68a9b.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 7,
+            "missing_rate": 0.10904761904761905,
+            "column_missing_rates": {
+              "c3": 0.56,
+              "c1": 0.0,
+              "c4": 0.07,
+              "c5": 0.06666666666666667,
+              "c6": 0.0,
+              "c8": 0.06666666666666667,
+              "c9": 0.0
+            },
+            "observed_unique": {
+              "c3": 132,
+              "c1": 300,
+              "c4": 271,
+              "c5": 279,
+              "c6": 13,
+              "c8": 3,
+              "c9": 100
+            },
+            "informative_missing_columns": [
+              "c3"
+            ]
+          }
+        },
+        {
+          "source": "LocalBusiness_credihealth.com_September2020_CPA.json.gz",
+          "topic": "LocalBusiness",
+          "host": "credihealth.com",
+          "labels": {
+            "c3": "openingHours",
+            "c7": "ratingValue",
+            "c8": "bestRating",
+            "c10": "worstRating",
+            "c12": "review",
+            "c6": "currenciesAccepted"
+          },
+          "filename": "t_85f138af8b2f.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 6,
+            "missing_rate": 0.5283333333333333,
+            "column_missing_rates": {
+              "c3": 0.6933333333333334,
+              "c7": 0.61,
+              "c8": 0.61,
+              "c10": 0.61,
+              "c12": 0.61,
+              "c6": 0.03666666666666667
+            },
+            "observed_unique": {
+              "c3": 81,
+              "c7": 47,
+              "c8": 1,
+              "c10": 1,
+              "c12": 95,
+              "c6": 1
+            },
+            "informative_missing_columns": [
+              "c3",
+              "c7",
+              "c12"
+            ]
+          }
+        }
+      ],
+      "gt_pairs": 18
+    },
+    {
+      "name": "test_05_Movie",
+      "role": "test",
+      "topic": "Movie",
+      "tables": [
+        {
+          "source": "Movie_clevelandfilm.org_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "clevelandfilm.org",
+          "labels": {
+            "c3": "actor",
+            "c5": "countryOfOrigin",
+            "c1": "description",
+            "c2": "duration",
+            "c4": "director"
+          },
+          "filename": "t_e15c2e87aa2b.csv",
+          "profile": {
+            "rows": 138,
+            "columns": 5,
+            "missing_rate": 0.09855072463768116,
+            "column_missing_rates": {
+              "c3": 0.45652173913043476,
+              "c5": 0.0,
+              "c1": 0.0,
+              "c2": 0.021739130434782608,
+              "c4": 0.014492753623188406
+            },
+            "observed_unique": {
+              "c3": 75,
+              "c5": 46,
+              "c1": 125,
+              "c2": 54,
+              "c4": 136
+            },
+            "informative_missing_columns": [
+              "c3"
+            ]
+          }
+        },
+        {
+          "source": "Movie_123movies.website_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "123movies.website",
+          "labels": {
+            "c8": "dateCreated",
+            "c6": "actor",
+            "c2": "duration",
+            "c3": "image",
+            "c4": "url"
+          },
+          "filename": "t_5e4426da8317.csv",
+          "profile": {
+            "rows": 90,
+            "columns": 5,
+            "missing_rate": 0.22,
+            "column_missing_rates": {
+              "c8": 0.36666666666666664,
+              "c6": 0.36666666666666664,
+              "c2": 0.36666666666666664,
+              "c3": 0.0,
+              "c4": 0.0
+            },
+            "observed_unique": {
+              "c8": 19,
+              "c6": 57,
+              "c2": 35,
+              "c3": 90,
+              "c4": 90
+            },
+            "informative_missing_columns": [
+              "c8",
+              "c6",
+              "c2"
+            ]
+          }
+        },
+        {
+          "source": "Movie_idtube.me_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "idtube.me",
+          "labels": {
+            "c11": "productionCompany",
+            "c7": "genre",
+            "c10": "actor"
+          },
+          "filename": "t_536350629d54.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 3,
+            "missing_rate": 0.18555555555555556,
+            "column_missing_rates": {
+              "c11": 0.49,
+              "c7": 0.0,
+              "c10": 0.06666666666666667
+            },
+            "observed_unique": {
+              "c11": 152,
+              "c7": 122,
+              "c10": 280
+            },
+            "informative_missing_columns": [
+              "c11"
+            ]
+          }
+        },
+        {
+          "source": "Movie_eventcinemas.co.nz_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "eventcinemas.co.nz",
+          "labels": {
+            "c5": "actor",
+            "c2": "duration",
+            "c1": "description",
+            "c4": "contentRating"
+          },
+          "filename": "t_f663ba64ef37.csv",
+          "profile": {
+            "rows": 82,
+            "columns": 4,
+            "missing_rate": 0.1676829268292683,
+            "column_missing_rates": {
+              "c5": 0.6463414634146342,
+              "c2": 0.0,
+              "c1": 0.024390243902439025,
+              "c4": 0.0
+            },
+            "observed_unique": {
+              "c5": 29,
+              "c2": 54,
+              "c1": 74,
+              "c4": 8
+            },
+            "informative_missing_columns": [
+              "c5"
+            ]
+          }
+        },
+        {
+          "source": "Movie_filmonlineindo.com_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "filmonlineindo.com",
+          "labels": {
+            "c4": "director",
+            "c2": "datePublished",
+            "c6": "bestRating",
+            "c8": "worstRating",
+            "c1": "description",
+            "c3": "image",
+            "c5": "genre",
+            "c7": "actor"
+          },
+          "filename": "t_d54fec472a68.csv",
+          "profile": {
+            "rows": 90,
+            "columns": 8,
+            "missing_rate": 0.21388888888888888,
+            "column_missing_rates": {
+              "c4": 0.5555555555555556,
+              "c2": 0.4111111111111111,
+              "c6": 0.2111111111111111,
+              "c8": 0.2111111111111111,
+              "c1": 0.1111111111111111,
+              "c3": 0.0,
+              "c5": 0.1,
+              "c7": 0.1111111111111111
+            },
+            "observed_unique": {
+              "c4": 24,
+              "c2": 42,
+              "c6": 1,
+              "c8": 1,
+              "c1": 67,
+              "c3": 79,
+              "c5": 53,
+              "c7": 64
+            },
+            "informative_missing_columns": [
+              "c4",
+              "c2"
+            ]
+          }
+        }
+      ],
+      "gt_pairs": 19
+    },
+    {
+      "name": "test_06_Person",
+      "role": "test",
+      "topic": "Person",
+      "tables": [
+        {
+          "source": "Person_fhstp.ac.at_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "fhstp.ac.at",
+          "labels": {
+            "c4": "honorificSuffix",
+            "c5": "givenName",
+            "c2": "familyName"
+          },
+          "filename": "t_e12e801ffe3c.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 3,
+            "missing_rate": 0.18444444444444444,
+            "column_missing_rates": {
+              "c4": 0.5466666666666666,
+              "c5": 0.0033333333333333335,
+              "c2": 0.0033333333333333335
+            },
+            "observed_unique": {
+              "c4": 43,
+              "c5": 161,
+              "c2": 282
+            },
+            "informative_missing_columns": [
+              "c4"
+            ]
+          }
+        },
+        {
+          "source": "Person_rxlist.com_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "rxlist.com",
+          "labels": {
+            "c1": "jobTitle",
+            "c4": "alumniOf",
+            "c5": "honorificSuffix"
+          },
+          "filename": "t_6c29f65fa0c3.csv",
+          "profile": {
+            "rows": 25,
+            "columns": 3,
+            "missing_rate": 0.22666666666666666,
+            "column_missing_rates": {
+              "c1": 0.52,
+              "c4": 0.16,
+              "c5": 0.0
+            },
+            "observed_unique": {
+              "c1": 12,
+              "c4": 21,
+              "c5": 17
+            },
+            "informative_missing_columns": [
+              "c1"
+            ]
+          }
+        },
+        {
+          "source": "Person_4mula1stats.com_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "4mula1stats.com",
+          "labels": {
+            "c3": "birthPlace",
+            "c1": "birthDate",
+            "c2": "nationality"
+          },
+          "filename": "t_798b4797523a.csv",
+          "profile": {
+            "rows": 64,
+            "columns": 3,
+            "missing_rate": 0.11458333333333333,
+            "column_missing_rates": {
+              "c3": 0.34375,
+              "c1": 0.0,
+              "c2": 0.0
+            },
+            "observed_unique": {
+              "c3": 42,
+              "c1": 64,
+              "c2": 27
+            },
+            "informative_missing_columns": [
+              "c3"
+            ]
+          }
+        },
+        {
+          "source": "Person_pietrapolis.fr_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "pietrapolis.fr",
+          "labels": {
+            "c1": "jobTitle",
+            "c3": "telephone",
+            "c2": "gender"
+          },
+          "filename": "t_1eb61b94456f.csv",
+          "profile": {
+            "rows": 87,
+            "columns": 3,
+            "missing_rate": 0.12260536398467432,
+            "column_missing_rates": {
+              "c1": 0.367816091954023,
+              "c3": 0.0,
+              "c2": 0.0
+            },
+            "observed_unique": {
+              "c1": 15,
+              "c3": 87,
+              "c2": 2
+            },
+            "informative_missing_columns": [
+              "c1"
+            ]
+          }
+        },
+        {
+          "source": "Person_triviatribute.com_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "triviatribute.com",
+          "labels": {
+            "c2": "measurements",
+            "c3": "birthPlace",
+            "c1": "birthDate"
+          },
+          "filename": "t_f5cde0b20847.csv",
+          "profile": {
+            "rows": 44,
+            "columns": 3,
+            "missing_rate": 0.12878787878787878,
+            "column_missing_rates": {
+              "c2": 0.38636363636363635,
+              "c3": 0.0,
+              "c1": 0.0
+            },
+            "observed_unique": {
+              "c2": 18,
+              "c3": 36,
+              "c1": 44
+            },
+            "informative_missing_columns": [
+              "c2"
+            ]
+          }
+        }
+      ],
+      "gt_pairs": 4
+    }
+  ],
+  "files": {
+    "test_04_LocalBusiness/groundtruth.txt": "bb7052c4e6d5f405a939cdbed7d2a19406bcc86c4b327b0b0007153099572a6e",
+    "test_01_Book/groundtruth.txt": "1df0a866c5684b9146e9f38f072fd32e1d6d862a1143dc6b9933fd2e5fc3fdb2",
+    "test_02_Event/groundtruth.txt": "31c1e29068d3ad826d18075d3d7d2ada53c695a758b5c695e2b0f42b6832784f",
+    "test_06_Person/groundtruth.txt": "27377bf0f8995f440cb5b8df26c60c07d9e4efa3ac7f1a0320bb566f87f408b8",
+    "test_05_Movie/groundtruth.txt": "29b9dffb3ba9035d2cba71433e65a1148f995b20dcc9cda53443751795c197b2",
+    "test_03_Hotel/groundtruth.txt": "4a560958e9d0434f59ceb1532fc4e9002d82d10fe42fa1dfb4ecf8c5bdfd9e7a",
+    "test_04_LocalBusiness/original/t_36532b947570.csv": "e9864435779094bb771f6b1d130357d663ddca4ffe06d1f1412c10c9e18dc01b",
+    "test_04_LocalBusiness/original/t_85f138af8b2f.csv": "b69dfb51dc51510fd26750d4aa6dfd4220e2bb40fea6e38269a3362534d28204",
+    "test_04_LocalBusiness/original/t_718f8ce68a9b.csv": "cd9d622d39e10908e242ae04ad305fff3072af7fae62bf471378dc9112a7bf95",
+    "test_04_LocalBusiness/original/t_190940639e97.csv": "0b3b8899608087859acbcddb2344c22bb7295348f807af4ef977886ce27f19a7",
+    "test_04_LocalBusiness/original/t_799f8775d3fa.csv": "aa65128468b7788d086d880a4d87039dc9d47c338b1107f0ff10c34ad75e83b7",
+    "test_01_Book/original/t_e1feeba24cfd.csv": "444025ce2fc55166e405b11acbe050cce3f8673b99083112f1c30fec1f2706da",
+    "test_01_Book/original/t_5d1b2f1f5916.csv": "c5c08a0f8180df7139e33842d2e7970b9c74c5e9f138bfbb31e8f0bca2302cc5",
+    "test_01_Book/original/t_7b0d9b8882f4.csv": "216e03c161ae05680fb16e7d1f13c9e3faaddc002b6f9873f65d54d1c0361f56",
+    "test_01_Book/original/t_f2955d450e86.csv": "ca97f1cc9d4862d09a7a6ae6c04da7a07fc1faa128ce5f852095a6adedf70d7a",
+    "test_01_Book/original/t_b7e230e09115.csv": "509407d84acc52eb1d56f33faeddde6b275b33117dd68479dad61d6c61595a6e",
+    "test_02_Event/original/t_6b8650cc8697.csv": "da24685e82d7f5a0e1084387ebf4d27154a0ca15f63b781cecad5ef5a6f1b1e5",
+    "test_02_Event/original/t_e98fc74b9f85.csv": "e93eed4200257ddd2e441158000356e19a5e9b68f8d7f3c034d2c1e57be3fa9f",
+    "test_02_Event/original/t_0d9b55c04010.csv": "7041a413e6d18bef1adab46074f3f35255e0081c09ff26759ff5ff39659f3aed",
+    "test_02_Event/original/t_72ddbf5a47d8.csv": "91bbb61670fe80efae0f1be484b7e06a85fd6c362b099590be2e5e9e5bd82eda",
+    "test_02_Event/original/t_8d79733b5dad.csv": "2bf299f8953d70d784915a6b3aeb8277ebd5ef07fd90444611424bb40af1c9ba",
+    "test_06_Person/original/t_798b4797523a.csv": "a985e474430ad8915e64f5685599a981cf3bb8fad7698f42c0a2f30e5a18bea8",
+    "test_06_Person/original/t_f5cde0b20847.csv": "3226a26fe7b634fcff6cc3a09eea287af7841aba72f1bb8a6a9eee5c189b0068",
+    "test_06_Person/original/t_6c29f65fa0c3.csv": "7714d82de03ad3b147369fc9ba416c84b00812c84646b36b6de7258e79587106",
+    "test_06_Person/original/t_e12e801ffe3c.csv": "25a265c5dafb514280a5d591d823e3cb876f26f09ce69441430f864f9f94c7b4",
+    "test_06_Person/original/t_1eb61b94456f.csv": "345fd079700739e0e8ade221f5f64fc83746851a802e8b634225c62663de88dd",
+    "test_05_Movie/original/t_536350629d54.csv": "061e8552cc0fbc80b88357bc1bf3042dcad45de35dc5be6727cbc774e0c41a0a",
+    "test_05_Movie/original/t_e15c2e87aa2b.csv": "8b9dc1cc71f889c1da7a31f95565a14da899d3b7e6234667246642e9dd121bb9",
+    "test_05_Movie/original/t_5e4426da8317.csv": "0499d4e68f6c51f906fe08af8fe6b885187e3754b213108f80f4763e484d2c95",
+    "test_05_Movie/original/t_f663ba64ef37.csv": "f096bc48f69c40dc943fd9f152d55635a5360587518b0e709b60043c0445ee27",
+    "test_05_Movie/original/t_d54fec472a68.csv": "fb125d643eaad688dfd39f353b861f704a76c4d8b1964ba8ec23c00939d7b044",
+    "test_03_Hotel/original/t_5641db94a3d9.csv": "ec1f491866552f168f9c4243be631ce9507d55233d69748f5d56d5942417c5cf",
+    "test_03_Hotel/original/t_db64352b977c.csv": "5c711291a646e31e03bb8b08794ce1e5baae662875070e18f43250c4635236dc",
+    "test_03_Hotel/original/t_3b60ead90402.csv": "aaf5585798f30f45d0e4befce7dbd48aaa1817aa88a443b3953adb5e417d86dd",
+    "test_03_Hotel/original/t_82865667b04d.csv": "12c690976f7c1a5f1a70eed5159db553b61e04e352ce526633ce230c589adabe",
+    "test_03_Hotel/original/t_342a2f704f8a.csv": "fbd68f7fe8214506a4bbab5faceac29e0fae6a4d579ffd663a838b0c28147b95"
+  }
+}

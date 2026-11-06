@@ -1,0 +1,201 @@
+Type,Region.of.Origin,Country.of.Origin,Gender,Height.cm,Weight.kg,BMI,Smoking.History,Secondhand.Smoke
+Tumor,,usa,,173.0,,,Current reformed smoker within past 15 years,
+NAT,,usa,male,,,27.37,Current reformed smoker within past 15 years,
+,,usa,,,52.9,,Current smoker: Includes daily and non-daily smokers,
+NAT,,,,,,,,Exposure to secondhand smoke history not available
+,asian,,female,156.0,,,,
+NAT,,,,,44.0,,,
+,,china,,,,27.99,"Current reformed smoker, more than 15 years",Exposure to secondhand smoke history not available
+NAT,,,male,,,27.99,,Exposure to secondhand smoke history not available
+,,,,,,,,
+,,,male,173.0,,,,Exposure to secondhand smoke history not available
+NAT,,,male,,,,,Exposure to secondhand smoke history not available
+,,,male,187.96,80.455,,,
+NAT,,,male,,80.455,,,Exposure to secondhand smoke history not available
+,,,male,,48.0,18.75,,
+,,,male,,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,No or minimal exposure to secondhand smoke
+Tumor,asian,vietnam,male,,,22.15,,No or minimal exposure to secondhand smoke
+,,,,,,22.15,Current smoker: Includes daily and non-daily smokers,No or minimal exposure to secondhand smoke
+,,,,,,,,
+,,,female,151.0,,21.93,,
+,,,,,,21.93,,Exposure to secondhand smoke history not available
+,,,male,172.72,,,,
+,,,,,,17.3,,
+NAT,,vietnam,male,,50.0,17.3,,
+Tumor,,,,,70.0,,,
+,,,female,153.0,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,,,,,,,,
+Tumor,asian,,male,,65.0,23.03,,
+NAT,,vietnam,male,,65.0,23.03,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,,,,,80.0,,,Exposure to secondhand smoke history not available
+,asian,,male,,80.0,,,
+,asian,,female,,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,No or minimal exposure to secondhand smoke
+,,vietnam,female,,50.0,,,
+NAT,,,,,,,,
+,,,,,,,,
+,,vietnam,,,,,,
+,asian,,,,,,,
+Tumor,,usa,,,,39.05,,Exposure to secondhand smoke history not available
+NAT,,,female,,,,,
+,western,,male,177.0,92.0,,,
+NAT,,usa,,,92.0,,Smoking history not available,Exposure to secondhand smoke history not available
+Tumor,,,,170.0,,,,
+,,,,,,,,No or minimal exposure to secondhand smoke
+,western,ukraine,,,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,,,,,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,asian,,,,,,,
+,,,,,,,,
+Tumor,,vietnam,,160.0,,,,
+,,vietnam,,,,19.92,,
+Tumor,asian,,,,,,Current smoker: Includes daily and non-daily smokers,
+,,,male,,54.0,,,No or minimal exposure to secondhand smoke
+Tumor,asian,vietnam,,,,21.37,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,asian,,,,63.0,24.01,,
+,,,,162.0,,,,
+,,,,,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,,,,,48.0,,,
+,,,male,,,,Current reformed smoker within past 15 years,
+,,,,,,,,Exposure to secondhand smoke history not available
+,,,male,,50.0,17.93,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,No or minimal exposure to secondhand smoke
+Tumor,asian,,,,50.0,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,asian,,,,48.0,16.61,,
+Tumor,,,,160.0,,,,
+NAT,asian,,male,,50.0,,Current smoker: Includes daily and non-daily smokers,
+,,china,,,,,,Exposure to secondhand smoke history not available
+,asian,china,,,,,,
+,,,,,,,"Current reformed smoker, more than 15 years",Exposure to secondhand smoke history not available
+Tumor,,usa,,,106.0,34.61,,
+NAT,,,,,,34.61,,Exposure to secondhand smoke history not available
+,asian,,,,,,,Exposure to secondhand smoke history not available
+,,china,,169.0,,24.51,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,,,female,,,20.78,,No or minimal exposure to secondhand smoke
+,,vietnam,male,165.0,53.0,,,
+NAT,asian,,,,,19.47,,
+,,,,,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,western,usa,female,,,,Current reformed smoker within past 15 years,
+,,,female,172.0,66.7,22.55,,
+,,,,157.0,,,,
+,western,,,,,34.08,,
+,,,female,,,,,Exposure to secondhand smoke history not available
+,,,female,,85.455,,Current reformed smoker within past 15 years,
+,western,,,,56.0,,Current reformed smoker within past 15 years,
+NAT,,,,,,,,
+Tumor,,,,,,,,
+NAT,,usa,,,,,Current reformed smoker within past 15 years,
+,,,,170.0,48.0,,,No or minimal exposure to secondhand smoke
+,,,male,,,,,
+,asian,vietnam,,168.0,,21.26,Current smoker: Includes daily and non-daily smokers,
+,asian,vietnam,,,,,,
+,,,,,,,,
+,,,female,165.0,,,,
+,,,,,,,,
+,,,,158.0,,20.03,,
+NAT,,,,,50.0,20.03,,
+,,bulgaria,,173.0,,,,
+,western,,,,,,,Yes
+Tumor,,,female,,,,,Yes
+,western,usa,,167.64,,,,Yes
+Tumor,,,,,,21.72,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,,,,168.0,,,,
+Tumor,,,,,57.0,20.94,,
+Tumor,,,female,173.0,72.0,,,
+,,,,,72.0,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+Tumor,,,,168.0,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,,vietnam,,,,,,
+,,,,180.3,71.6,22.03,,
+NAT,western,usa,female,180.3,,,,Yes
+,asian,,,157.0,,,,
+Tumor,western,,,177.0,,,,
+,,,,,127.4,,,
+,asian,,male,,56.0,,,
+,,,,,,,,
+,western,bulgaria,,,,25.71,,
+,,bulgaria,female,,,,,Exposure to secondhand smoke history not available
+Tumor,,,male,,,,,
+,,,male,,,21.89,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Exposure to secondhand smoke history not available
+,,,,,,,,
+Tumor,,vietnam,,,,,,
+,asian,,female,,,,,
+,,,male,,,,"Current reformed smoker, more than 15 years",Exposure to secondhand smoke history not available
+Tumor,,usa,,170.0,,,,
+Tumor,,,,170.0,,,,
+,,usa,,,,,Smoking history not available,
+,,usa,,147.0,,23.65,,
+Tumor,,,,,56.0,,,
+NAT,asian,vietnam,female,,56.0,,,
+Tumor,asian,china,male,,,21.97,,
+,,,,168.0,62.0,,"Current reformed smoker, more than 15 years",
+,,,,,,16.61,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,,,,170.0,,,,
+Tumor,,poland,,,80.0,,,
+Tumor,asian,vietnam,,,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,No or minimal exposure to secondhand smoke
+NAT,,,,165.0,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,No or minimal exposure to secondhand smoke
+,western,,,,127.6,,Current reformed smoker within past 15 years,Exposure to secondhand smoke history not available
+,,,,,,36.1,,
+,,,,,,,,
+,western,,,,50.0,,,Exposure to secondhand smoke history not available
+,,,,,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,asian,,,,,29.75,,
+,western,usa,,,,31.43,,Exposure to secondhand smoke history not available
+,,,,162.6,,31.43,,Exposure to secondhand smoke history not available
+,,ukraine,,,,,,
+,,ukraine,,,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+Tumor,western,usa,,,,23.73,,
+,western,,male,,,23.73,,
+,western,,,178.0,,26.0,Smoking history not available,
+,,,male,178.0,,,,Exposure to secondhand smoke history not available
+NAT,asian,,male,,,,,Exposure to secondhand smoke history not available
+,western,,,172.0,,28.67,,
+NAT,,,,,85.0,28.67,,
+,,,male,,52.0,,,
+,asian,vietnam,,,,17.99,,
+NAT,,vietnam,,,,,,
+,,vietnam,,150.0,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,asian,vietnam,female,150.0,,,,
+,,,,,,,,
+,,usa,male,180.0,,20.99,,
+,,,,,,23.42,,
+,,,,,,23.42,,
+,western,,,157.0,,,"Current reformed smoker, more than 15 years",Exposure to secondhand smoke history not available
+NAT,,,,,,,,
+,,,female,164.0,,24.17,,
+,,,,,,,,Exposure to secondhand smoke history not available
+Tumor,,,,,65.0,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+Tumor,western,other,,,,30.62,Current smoker: Includes daily and non-daily smokers,
+,,other,,,,,,
+,asian,,,170.0,51.0,,Current smoker: Includes daily and non-daily smokers,
+,asian,,,,,,,
+,,,male,,,16.61,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,No or minimal exposure to secondhand smoke
+,,,female,,,,,No or minimal exposure to secondhand smoke
+,,vietnam,,,,17.97,,No or minimal exposure to secondhand smoke
+,,,,,,,,
+,western,,,,,,,
+,western,russia,,,,,,
+,,usa,,152.0,,,,
+,western,,,,,27.27,,
+,,other,male,,73.63,,,Exposure to secondhand smoke history not available
+,western,,male,,,25.42,,
+,,vietnam,,160.0,,,,
+,,,,,,,,
+,western,usa,,,63.0,,,
+,,,male,,87.0,,,
+,,,,175.0,,,,Exposure to secondhand smoke history not available
+,,,,,61.0,,,No or minimal exposure to secondhand smoke
+,asian,,,,,23.3,,Exposure to secondhand smoke history not available
+,,china,male,,,,"Current reformed smoker, years unknown",
+,,,,,,,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,Exposure to secondhand smoke history not available
+,,,,,,28.69,"Current reformed smoker, more than 15 years",Exposure to secondhand smoke history not available
+,,usa,,,,28.69,"Current reformed smoker, more than 15 years",Exposure to secondhand smoke history not available
+,,,,157.0,55.3,,,
+NAT,,,,157.0,,22.43,,
+NAT,,,,170.2,73.5,,"Current reformed smoker, more than 15 years",
+Tumor,asian,,male,,,,,Exposure to secondhand smoke history not available
+,,,,,,26.23,,
+NAT,,,,168.0,,23.03,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+Tumor,asian,vietnam,,,49.0,,,No or minimal exposure to secondhand smoke
+,,,,173.0,,25.06,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,
+,,,,,,,,
+NAT,,,,,96.0,29.63,,
+Tumor,western,usa,,,53.0,,,Yes
+,,usa,,155.0,,,,
+,,,,,,,,

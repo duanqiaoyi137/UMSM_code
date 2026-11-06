@@ -1,0 +1,111 @@
+gender,smoking_history,smoke_age_start,num_smoke_per_day,tumor_focality,histologic_type,histologic_grade,tumor_necrosis
+Male,"Current reformed smoker, years unknown",,20,,,G1 Well differentiated,Not identified
+Male,Current smoker: Includes daily and non-daily smokers,18,20,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,Present
+Male,Current reformed smoker within past 15 years,,6,Unifocal,"Squamous cell carcinoma, conventional",,Present
+,"Current reformed smoker, more than 15 years",,,Unifocal,,G1 Well differentiated,
+Male,,,,Unifocal,,,Present
+Male,Current smoker: Includes daily and non-daily smokers,20,,,"Squamous cell carcinoma, conventional",G1 Well differentiated,
+Male,Current smoker: Includes daily and non-daily smokers,,,,,G1 Well differentiated,Not identified
+,"Current reformed smoker, more than 15 years",17,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+,Current smoker: Includes daily and non-daily smokers,20,30,Unifocal,,,
+Male,,38,30,,"Squamous cell carcinoma, conventional",G3 Poorly differentiated,Present
+Male,,,30,Unifocal,Keratinizing Squamous Cell Carcinoma,G2 Moderately differentiated,Present
+Male,,20,20,,"Squamous cell carcinoma, conventional",,Present
+,,,,Unifocal,,G2 Moderately differentiated,
+Male,Current smoker: Includes daily and non-daily smokers,30,,,Non-Keratinized Squamous Cell Carcinoma,G3 Poorly differentiated,
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,,,G2 Moderately differentiated,
+Female,Current smoker: Includes daily and non-daily smokers,21,,Unifocal,,G2 Moderately differentiated,Not identified
+,,,,Unifocal,,,Present
+,,,,Unifocal,Adenosquamous carcinoma,,
+Female,Smoking history not available,,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+Male,,,,,"Squamous cell carcinoma, conventional",,Not identified
+,,,,Unifocal,,G2 Moderately differentiated,Not identified
+Male,,,,,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,Not identified
+Male,Smoking history not available,,,Unifocal,,,
+,,,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,Not identified
+Male,,,20,,,,Not identified
+,Smoking history not available,,,Unifocal,,G2 Moderately differentiated,Not identified
+,Current smoker: Includes daily and non-daily smokers,,22,,,G2 Moderately differentiated,Not identified
+Male,"Current reformed smoker, more than 15 years",16,,,,,
+Male,Smoking history not available,,,,,,Not identified
+Male,Current smoker: Includes daily and non-daily smokers,37,10,,"Squamous cell carcinoma, conventional",G1 Well differentiated,
+Male,Smoking history not available,,,Unifocal,,,
+Male,Smoking history not available,,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,Not identified
+Male,,,12,Unifocal,,,
+,Smoking history not available,,,Unifocal,,,Not identified
+,Smoking history not available,,,,,,
+,"Current reformed smoker, more than 15 years",Unknown,Unknown,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+Male,,,,Unifocal,,G2 Moderately differentiated,
+Male,,,,,,,
+Male,Smoking history not available,,,,,,Not identified
+Male,,,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+,Current reformed smoker within past 15 years,,,,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+Male,"Current reformed smoker, years unknown",,,,,,Not identified
+Male,Current smoker: Includes daily and non-daily smokers,17,,Unifocal,"Squamous cell carcinoma, conventional",,Not identified
+,Smoking history not available,,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,Not identified
+,Current reformed smoker within past 15 years,,15,Unifocal,,,Present
+,,21,30,Unifocal,"Squamous cell carcinoma, conventional",,
+,Current reformed smoker within past 15 years,17,20,Unifocal,,G2 Moderately differentiated,
+Male,Smoking history not available,,,Unifocal,,G2 Moderately differentiated,Not identified
+Male,Current smoker: Includes daily and non-daily smokers,20,,,"Squamous cell carcinoma, conventional",G3 Poorly differentiated,Present
+Male,"Current reformed smoker, more than 15 years",Unknown,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+Male,,,,,"Squamous cell carcinoma, conventional",,Not identified
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,Unifocal,,G2 Moderately differentiated,
+Female,Smoking history not available,,,Unifocal,"Squamous cell carcinoma, conventional",,
+,,,,Unifocal,"Squamous cell carcinoma, conventional",,Not identified
+,Current reformed smoker within past 15 years,,,Unifocal,,G2 Moderately differentiated,
+,,,20,Unifocal,,G2 Moderately differentiated,Present
+Male,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,Not identified
+,"Current reformed smoker, years unknown",,15,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,Not identified
+,,,12,Multifocal,"Squamous cell carcinoma, conventional",,
+Female,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,,"Squamous cell carcinoma, conventional",G1 Well differentiated,Not identified
+Male,Current smoker: Includes daily and non-daily smokers,19,,,,,
+Male,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+Male,Current smoker: Includes daily and non-daily smokers,,,Unifocal,"Squamous cell carcinoma, conventional",,
+,,Unknown,,,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,Present
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,,"Squamous cell carcinoma, conventional",,Not identified
+Female,,,,,,,Not identified
+,Current smoker: Includes daily and non-daily smokers,20,,,"Squamous cell carcinoma, conventional",,
+Male,Current smoker: Includes daily and non-daily smokers,16,15,Unifocal,,,Not identified
+Male,Current reformed smoker within past 15 years,,20,,"Squamous cell carcinoma, conventional",G3 Poorly differentiated,
+,"Current reformed smoker, years unknown",,20,,"Squamous cell carcinoma, conventional",,Not identified
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,Unifocal,,G2 Moderately differentiated,
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,Unifocal,"Squamous cell carcinoma, conventional",G3 Poorly differentiated,Not identified
+Male,Current smoker: Includes daily and non-daily smokers,17,,Unifocal,"Squamous cell carcinoma, conventional",,Not identified
+Male,,20,,,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+Female,Smoking history not available,,,,,,Not identified
+,Smoking history not available,,,Unifocal,,G1 Well differentiated,
+Male,,19,20,Unifocal,,G2 Moderately differentiated,
+Male,Current smoker: Includes daily and non-daily smokers,,,Unifocal,,,
+,Current smoker: Includes daily and non-daily smokers,23,,,"Squamous cell carcinoma, conventional",,Not identified
+,Current reformed smoker within past 15 years,22,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+,Current smoker: Includes daily and non-daily smokers,25,,Unifocal,,,
+,,,,,,G2 Moderately differentiated,Present
+,,19,20,Unifocal,,G2 Moderately differentiated,
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,Unifocal,,G2 Moderately differentiated,
+,,,,Unifocal,,,
+Male,Current smoker: Includes daily and non-daily smokers,,,Unifocal,,G2 Moderately differentiated,Present
+Male,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+Male,,,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,Not identified
+,,28,,,,G2 Moderately differentiated,
+,Current smoker: Includes daily and non-daily smokers,20,,,,G1 Well differentiated,Not identified
+Male,Current smoker: Includes daily and non-daily smokers,,20,,,,Not identified
+Male,Current smoker: Includes daily and non-daily smokers,,4,Multifocal,"Squamous cell carcinoma, conventional",,Not identified
+,,,,Unifocal,,G1 Well differentiated,Not identified
+Male,Current smoker: Includes daily and non-daily smokers,25,,,"Squamous cell carcinoma, conventional",G3 Poorly differentiated,
+,Lifelong non-smoker: Less than 100 cigarettes smoked in lifetime,,,Unifocal,,,
+,"Current reformed smoker, more than 15 years",22,20,Unifocal,,,Not identified
+,Current smoker: Includes daily and non-daily smokers,32,,Unifocal,"Squamous cell carcinoma, conventional",,
+Male,,18,,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+,Current smoker: Includes daily and non-daily smokers,,,,,G2 Moderately differentiated,Present
+,,,,Unifocal,"Squamous cell carcinoma, conventional",,
+Female,,,,,,G2 Moderately differentiated,Present
+,,,,,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,Present
+Male,,30,20,,,G2 Moderately differentiated,
+,Current smoker: Includes daily and non-daily smokers,20,,,"Squamous cell carcinoma, conventional",G1 Well differentiated,Not identified
+,Current reformed smoker within past 15 years,,15,Unifocal,"Squamous cell carcinoma, conventional",G2 Moderately differentiated,
+,Current smoker: Includes daily and non-daily smokers,25,10,Unifocal,,G2 Moderately differentiated,Not identified
+Male,,30,,Unifocal,,G2 Moderately differentiated,
+Male,Current smoker: Includes daily and non-daily smokers,20,,,,,Not identified
+Male,,18,,,"Squamous cell carcinoma, conventional",G1 Well differentiated,Not identified
+,Current smoker: Includes daily and non-daily smokers,,,Unifocal,,G2 Moderately differentiated,Present

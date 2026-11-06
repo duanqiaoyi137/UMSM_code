@@ -1,0 +1,111 @@
+Tumor/Normal,Gender,BMI,Race,Tumor_Focality,Histologic_Type,Grade
+TN,,,White,,,
+TN,,,,,,
+,Female,27.47,,Unifocal,,
+TN,,,White,,,G3
+TN,,,,,Clear cell renal cell carcinoma,
+,Male,32.82,White,,,
+,Male,,,Multifocal,Clear cell renal cell carcinoma,
+,,36.81,,,Clear cell renal cell carcinoma,G2
+,,,,,,G3
+,,,,,,
+,,,,,non-Clear Cell renal cell carcinoma,G1
+TN,,,White,,,
+,Male,,White,Unifocal,Clear cell renal cell carcinoma,
+,,,,,,
+,,59.88,White,,,
+,Male,36.57,,Unifocal,,
+,,,White,,,
+,Male,27.47,White,,Clear cell renal cell carcinoma,
+,,33.66,,,,
+,,,,,,G3
+,,,,,,G3
+,Male,37.96,,,,G3
+T,Female,,,,,
+,,,,,Clear cell renal cell carcinoma,
+,,,White,,,G2
+,,38.99,,,,
+,,29.49,,,,
+T,,29.6,White,,Clear cell renal cell carcinoma,
+T,,,,,,
+,,,,Unifocal,Clear cell renal cell carcinoma,
+,Male,,White,Unifocal,,
+,,,White,,Clear cell renal cell carcinoma,G2
+,,,,,,
+,Male,30.56,Not Reported,Unifocal,Clear cell renal cell carcinoma,G2
+,Male,,,,,G2
+,,,,,,
+,,47.25,,,,
+TN,Female,,,,,
+,Female,,,,Clear cell renal cell carcinoma,
+,,,,,,G3
+TN,Male,,,,Clear cell renal cell carcinoma,
+T,,,White,,,
+TN,,,,,Clear cell renal cell carcinoma,
+,,25.31,,,,G4
+,,,White,,,
+,Female,36.0,,,,G4
+,,,,,,G4
+,,,,Unifocal,,
+T,Male,,,,Clear cell renal cell carcinoma,
+,,48.46,Black or African American,Unifocal,Clear cell renal cell carcinoma,
+,,,White,Unifocal,,G3
+TN,Male,,,,,
+,,,White,Unifocal,,G3
+,,,White,,,G3
+,Male,28.63,,Unifocal,,
+,,,,,Clear cell renal cell carcinoma,G2
+,,,White,,Clear cell renal cell carcinoma,
+TN,Male,,,,Clear cell renal cell carcinoma,
+TN,Female,,,,,
+,Female,,,,,G3
+,,,,,,
+,,,,Unifocal,Clear cell renal cell carcinoma,
+,,,,,,G2
+,,,,,Clear cell renal cell carcinoma,
+,,39.2,,,,
+,Male,,,Unifocal,Clear cell renal cell carcinoma,
+TN,,,White,,,
+,Female,,,,,G1
+,,28.0,,,,G2
+TN,,,,Unifocal,,
+,Female,,,,,
+TN,,31.0,,Unifocal,Clear cell renal cell carcinoma,
+T,,28.0,,,,
+,,23.0,,,,G2
+,,,,Unifocal,,
+,,,,,,
+,,,,,,
+,,26.99,,,,
+TN,,,,,,G3
+TN,,,,Unifocal,Clear cell renal cell carcinoma,G2
+,,,,Unifocal,,
+,Male,34.0,,Unifocal,,
+,Male,,,,,
+TN,,,,,,
+,,,,,,G3
+TN,,,,,,G2
+TN,Male,,,,,
+,,,,,,
+T,,23.0,,,non-Clear Cell renal cell carcinoma,G2
+,Male,,,,Clear cell renal cell carcinoma,
+TN,,28.71,,,,
+,,,,Unifocal,,
+,,,,,,
+,,,,,Clear cell renal cell carcinoma,
+,,,,Unifocal,,
+TN,,26.0,,,,
+,,24.0,,Unifocal,,
+,,,,Unifocal,,
+,,,,Unifocal,,
+TN,Male,,,,,
+,Male,23.89,,,Clear cell renal cell carcinoma,
+,Male,,,,,G1
+,Male,,,,Clear cell renal cell carcinoma,
+,,,,Unifocal,,
+,,,,,Clear cell renal cell carcinoma,
+TN,,,,,,G3
+,Male,28.0,,Multifocal,,G2
+,,,,,,
+TN,,25.0,,,Clear cell renal cell carcinoma,
+,,28.75,White,,,

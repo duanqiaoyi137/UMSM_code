@@ -1,0 +1,544 @@
+Cluster 1:
+  cammarkt.com.csv.focus type
+  www.alibaba.com.csv.focus control
+  www.eglobalcentral.co.uk.csv.focus type
+  www.flipkart.com.csv.focus
+
+Cluster 2:
+  www.cambuy.com.au.csv.af assist beam
+  www.camerafarm.com.au.csv.af assist beam
+  www.canon-europe.com.csv.af assist beam
+  www.ebay.com.csv.af assist lamp
+  www.ilgs.net.csv.auto focus af assist beam
+  www.shopmania.in.csv.af illuminator
+
+Cluster 3:
+  www.cambuy.com.au.csv.af modes
+  www.camerafarm.com.au.csv.focus modes
+  www.canon-europe.com.csv.af modes
+  www.flipkart.com.csv.focus mode
+  www.ilgs.net.csv.auto focusing af modes
+  www.price-hunt.com.csv.focusing sysetm
+
+Cluster 4:
+  www.alibaba.com.csv.focus point
+  www.cambuy.com.au.csv.afarea mode
+  www.camerafarm.com.au.csv.af system points
+  www.canon-europe.com.csv.af system points
+  www.ebay.com.csv.focus point
+  www.flipkart.com.csv.focusing sysetm
+  www.ilgs.net.csv.auto focus af points
+  www.mypriceindia.com.csv.other focus features
+  www.shopmania.in.csv.number of focus points
+
+Cluster 5:
+  www.canon-europe.com.csv.af point selection
+  www.ilgs.net.csv.auto focus af points selection
+
+Cluster 6:
+  www.cambuy.com.au.csv.autofocus af
+  www.camerafarm.com.au.csv.autofocus system
+
+Cluster 7:
+  www.buzzillions.com.csv.battery type
+  www.ebay.com.csv.battery chemistry
+  www.ilgs.net.csv.battery technology
+  www.pcconnection.com.csv.battery technology
+  www.walmart.com.csv.battery type
+
+Cluster 8:
+  www.ilgs.net.csv.battery life max
+
+Cluster 9:
+  cammarkt.com.csv.battery life
+  www.cambuy.com.au.csv.battery life
+  www.ilgs.net.csv.battery life cipa standard
+
+Cluster 10:
+  buy.net.csv.battery model supported
+
+Cluster 11:
+  buy.net.csv.brand name
+  cammarkt.com.csv.brand
+  www.camerafarm.com.au.csv.brand
+  www.ebay.com.csv.brand
+  www.flipkart.com.csv.brand
+  www.gosale.com.csv.manufacturer
+  www.ilgs.net.csv.manufacturer
+  www.price-hunt.com.csv.brand
+  www.pricedekho.com.csv.brand
+  www.shopmania.in.csv.brand
+  www.ukdigitalcameras.co.uk.csv.brand
+
+Cluster 12:
+  buy.net.csv.depth
+  www.buzzillions.com.csv.depth inches
+  www.ilgs.net.csv.depth
+  www.shopmania.in.csv.depth
+
+Cluster 13:
+  www.buzzillions.com.csv.height inches
+  www.ilgs.net.csv.height
+  www.shopmania.in.csv.height
+
+Cluster 14:
+  buy.net.csv.camera type
+  cammarkt.com.csv.camera type
+  www.buzzillions.com.csv.camera style
+  www.cambuy.com.au.csv.camera type
+  www.ebay.com.csv.body type
+  www.gosale.com.csv.camera type
+  www.henrys.com.csv.camera type
+  www.ilgs.net.csv.camera type
+  www.pcconnection.com.csv.camera type
+  www.shopbot.com.au.csv.camera type
+
+Cluster 15:
+  buy.net.csv.width
+  cammarkt.com.csv.width
+  www.buzzillions.com.csv.width inches
+  www.ilgs.net.csv.width
+  www.pricedekho.com.csv.dimension
+  www.shopmania.in.csv.width
+
+Cluster 16:
+  cammarkt.com.csv.color
+  www.buzzillions.com.csv.camera color
+  www.ebay.com.csv.camera colour
+  www.flipkart.com.csv.color
+  www.henrys.com.csv.colour
+  www.ilgs.net.csv.colour of product
+  www.pcconnection.com.csv.color
+  www.price-hunt.com.csv.color
+  www.pricedekho.com.csv.color
+  www.priceme.co.nz.csv.colour
+  www.ukdigitalcameras.co.uk.csv.colour
+  www.walmart.com.csv.primary color
+  www.wexphotographic.com.csv.colour
+
+Cluster 17:
+  www.cambuy.com.au.csv.colour filter type
+  www.camerafarm.com.au.csv.color filter
+  www.ebay.com.csv.color filter system
+  www.flipkart.com.csv.color filter
+  www.mypriceindia.com.csv.color filter
+  www.price-hunt.com.csv.color filter
+  www.pricedekho.com.csv.color filter
+
+Cluster 18:
+  www.cambuy.com.au.csv.exposure compensation
+  www.camerafarm.com.au.csv.exposure compensation
+  www.canon-europe.com.csv.exposure compensation
+  www.ebay.com.csv.compensation
+  www.flipkart.com.csv.exposure compensation
+  www.ilgs.net.csv.light exposure correction
+  www.price-hunt.com.csv.exposure compensation
+  www.pricedekho.com.csv.exposure compensation
+  www.shopmania.in.csv.exposure compensation
+  www.wexphotographic.com.csv.exposure control
+
+Cluster 19:
+  buy.net.csv.exposure control
+  www.buzzillions.com.csv.exposure modes
+  www.cambuy.com.au.csv.exposure mode
+  www.camerafarm.com.au.csv.exposure modes
+  www.flipkart.com.csv.exposure modes
+  www.henrys.com.csv.exposure modes
+  www.ilgs.net.csv.light exposure modes
+  www.price-hunt.com.csv.exposure modes
+  www.shopmania.in.csv.exposure modes
+  www.wexphotographic.com.csv.exposure modes
+
+Cluster 20:
+  buy.net.csv.memory card support
+  cammarkt.com.csv.memory type
+  www.buzzillions.com.csv.storage media type
+  www.camerafarm.com.au.csv.card slot
+  www.ebay.com.csv.storage memory
+  www.eglobalcentral.co.uk.csv.storage type
+  www.flipkart.com.csv.memory card type
+  www.garricks.com.au.csv.memory type
+  www.ilgs.net.csv.compatible memory cards
+  www.mypriceindia.com.csv.memory card type
+  www.pcconnection.com.csv.flash memory form factor
+  www.price-hunt.com.csv.memory card type
+  www.shopmania.in.csv.memory type
+  www.wexphotographic.com.csv.card format
+
+Cluster 21:
+  www.cambuy.com.au.csv.file system
+  www.camerafarm.com.au.csv.file system
+  www.ebay.com.csv.file system
+
+Cluster 22:
+  www.flipkart.com.csv.maximum focal length
+  www.ilgs.net.csv.maximum focal length 35mm film equiv
+  www.pcconnection.com.csv.35mm equivalent focal length max
+  www.priceme.co.nz.csv.max focal length
+  www.wexphotographic.com.csv.focal length tele
+
+Cluster 23:
+  www.eglobalcentral.co.uk.csv.focal length
+  www.ilgs.net.csv.minimum focal length 35mm film equiv
+  www.pcconnection.com.csv.35mm equivalent focal length min
+  www.priceme.co.nz.csv.min focal length
+  www.wexphotographic.com.csv.focal length wide
+
+Cluster 24:
+  www.buzzillions.com.csv.image format
+  www.cambuy.com.au.csv.still image type
+  www.camerafarm.com.au.csv.still image type
+  www.canon-europe.com.csv.still image type
+  www.ebay.com.csv.still image format
+  www.flipkart.com.csv.image format
+  www.ilgs.net.csv.image formats supported
+  www.mypriceindia.com.csv.image format
+  www.pcconnection.com.csv.still image format
+  www.price-hunt.com.csv.image format
+  www.pricedekho.com.csv.image format
+  www.priceme.co.nz.csv.still image format
+  www.shopmania.in.csv.image format
+
+Cluster 25:
+  buy.net.csv.effective megapixels
+  cammarkt.com.csv.resolution
+  www.buzzillions.com.csv.megapixels
+  www.cambuy.com.au.csv.effective pixels
+  www.camerafarm.com.au.csv.effective pixels
+  www.ebay.com.csv.megapixels
+  www.eglobalcentral.co.uk.csv.effective pixels
+  www.flipkart.com.csv.optical sensor resolution in megapixel
+  www.garricks.com.au.csv.resolution
+  www.gosale.com.csv.megapixels
+  www.henrys.com.csv.effective pixels
+  www.ilgs.net.csv.megapixel
+  www.mypriceindia.com.csv.camera resolution
+  www.pcconnection.com.csv.megapixels
+  www.price-hunt.com.csv.optical sensor resolution in megapixel
+  www.pricedekho.com.csv.pixels
+  www.shopbot.com.au.csv.sensor resolution
+  www.shopmania.in.csv.resolution
+  www.ukdigitalcameras.co.uk.csv.camera resolution
+  www.walmart.com.csv.resolution megapixels
+  www.wexphotographic.com.csv.megapixels
+
+Cluster 26:
+  cammarkt.com.csv.image resolutions
+  www.alibaba.com.csv.max image resolution
+  www.buzzillions.com.csv.still image resolution max
+  www.eglobalcentral.co.uk.csv.max resolution
+  www.ilgs.net.csv.still image resolutions
+  www.mypriceindia.com.csv.max resolution
+  www.priceme.co.nz.csv.max image resolution
+  www.shopmania.in.csv.image resolutions
+
+Cluster 27:
+  buy.net.csv.installed memory
+  www.buzzillions.com.csv.builtin memory
+  www.henrys.com.csv.builtin memory
+  www.ilgs.net.csv.internal memory
+  www.price-hunt.com.csv.inbuilt memory
+  www.pricedekho.com.csv.inbuilt memory
+  www.shopmania.in.csv.installed memory
+
+Cluster 28:
+  buy.net.csv.iso sensitivity
+  cammarkt.com.csv.light sensitivity max
+  www.ebay.com.csv.highest standard iso sensitivity
+  www.ilgs.net.csv.iso sensitivity max
+  www.price-hunt.com.csv.maximum expandable iso sensitivity
+  www.wexphotographic.com.csv.iso max
+
+Cluster 29:
+  cammarkt.com.csv.iso speeds
+  www.ebay.com.csv.lowest standard iso sensitivity
+  www.ilgs.net.csv.iso sensitivity min
+  www.wexphotographic.com.csv.iso min
+
+Cluster 30:
+  buy.net.csv.lens mount
+  www.alibaba.com.csv.lens mount
+  www.buzzillions.com.csv.lens mount
+  www.cambuy.com.au.csv.lens mount
+  www.camerafarm.com.au.csv.lens mount
+  www.eglobalcentral.co.uk.csv.lens mount
+  www.flipkart.com.csv.lens type
+  www.garricks.com.au.csv.lens mount
+  www.henrys.com.csv.lens
+  www.ilgs.net.csv.lens mount interface
+  www.mypriceindia.com.csv.lens type
+  www.price-hunt.com.csv.lens type
+  www.pricedekho.com.csv.lens type
+  www.shopmania.in.csv.lens mount
+  www.walmart.com.csv.lens system mounting
+
+Cluster 31:
+  cammarkt.com.csv.builtin microphone
+  www.buzzillions.com.csv.microphone
+  www.cambuy.com.au.csv.audio recording device
+  www.camerafarm.com.au.csv.movie audio recording device
+  www.ebay.com.csv.microphone  speaker
+  www.eglobalcentral.co.uk.csv.microphone
+  www.flipkart.com.csv.microphone
+  www.ilgs.net.csv.builtin microphone
+  www.mypriceindia.com.csv.microphone
+  www.price-hunt.com.csv.microphone
+  www.pricedekho.com.csv.microphone
+  www.shopmania.in.csv.microphone
+
+Cluster 32:
+  www.mypriceindia.com.csv.picture angle
+  www.price-hunt.com.csv.picture angle
+  www.pricedekho.com.csv.picture angle
+
+Cluster 33:
+  www.alibaba.com.csv.picture control system
+  www.buzzillions.com.csv.scene modes
+  www.cambuy.com.au.csv.picture control system
+  www.camerafarm.com.au.csv.picture control
+  www.canon-europe.com.csv.photo effects
+  www.ebay.com.csv.picture control system
+  www.ilgs.net.csv.photo effects
+  www.pcconnection.com.csv.special effects
+  www.shopmania.in.csv.special effects
+
+Cluster 34:
+  www.buzzillions.com.csv.red eye reduction
+  www.cambuy.com.au.csv.redeye reduction
+  www.canon-europe.com.csv.redeye reduction
+  www.ebay.com.csv.red eye reduction
+  www.flipkart.com.csv.red eye reduction
+  www.gosale.com.csv.redeye reduction
+  www.mypriceindia.com.csv.red eye reduction
+  www.pcconnection.com.csv.red eye reduction
+  www.price-hunt.com.csv.red eye reduction
+  www.pricedekho.com.csv.red eye reduction
+  www.shopmania.in.csv.red eye reduction
+
+Cluster 35:
+  buy.net.csv.lcd screen size
+  cammarkt.com.csv.lcd screen size
+  www.buzzillions.com.csv.lcd viewer
+  www.cambuy.com.au.csv.monitor size
+  www.ebay.com.csv.screen size
+  www.eglobalcentral.co.uk.csv.lcd screen size inch
+  www.flipkart.com.csv.lcd screen size
+  www.gosale.com.csv.lcd screen size
+  www.henrys.com.csv.screen size
+  www.ilgs.net.csv.lcd screen size
+  www.pcconnection.com.csv.display size
+  www.price-hunt.com.csv.lcd screen size
+  www.pricedekho.com.csv.screen size
+  www.shopbot.com.au.csv.lcd size
+  www.shopmania.in.csv.screen size
+  www.ukdigitalcameras.co.uk.csv.lcd size
+  www.walmart.com.csv.lcd screen size
+  www.wexphotographic.com.csv.screen size inches
+
+Cluster 36:
+  cammarkt.com.csv.display type
+  www.ebay.com.csv.display screen type
+  www.flipkart.com.csv.lcd display
+  www.henrys.com.csv.display screen type
+  www.ilgs.net.csv.display
+  www.pcconnection.com.csv.display technology
+  www.price-hunt.com.csv.lcd display
+  www.pricedekho.com.csv.display type
+  www.shopmania.in.csv.screen type
+
+Cluster 37:
+  cammarkt.com.csv.self timer
+  www.buzzillions.com.csv.self timer
+  www.cambuy.com.au.csv.selftimer
+  www.camerafarm.com.au.csv.selftimer
+  www.canon-europe.com.csv.self timer
+  www.ebay.com.csv.self timer delay
+  www.flipkart.com.csv.self timer
+  www.henrys.com.csv.self timer
+  www.ilgs.net.csv.selftimer
+  www.mypriceindia.com.csv.self timer
+  www.price-hunt.com.csv.self timer
+  www.pricedekho.com.csv.self timer
+  www.shopmania.in.csv.self timer delay
+  www.walmart.com.csv.self timer delay
+
+Cluster 38:
+  www.cambuy.com.au.csv.image sensor size
+  www.camerafarm.com.au.csv.sensor size
+  www.ilgs.net.csv.image sensor size
+  www.mypriceindia.com.csv.sensor size
+  www.pcconnection.com.csv.optical sensor size
+  www.price-hunt.com.csv.sensor size
+  www.pricedekho.com.csv.sensor size
+  www.shopmania.in.csv.sensor size
+  www.wexphotographic.com.csv.sensor size
+
+Cluster 39:
+  www.buzzillions.com.csv.interchangeable lens camera format
+  www.camerafarm.com.au.csv.image sensor format
+  www.garricks.com.au.csv.image format
+  www.shopmania.in.csv.sensor format
+
+Cluster 40:
+  buy.net.csv.image sensor
+  cammarkt.com.csv.image sensor type
+  www.buzzillions.com.csv.sensor
+  www.camerafarm.com.au.csv.image sensor type
+  www.ilgs.net.csv.sensor type
+  www.mypriceindia.com.csv.sensor type
+  www.pcconnection.com.csv.optical sensor type
+  www.price-hunt.com.csv.sensor type
+  www.pricedekho.com.csv.sensor type
+  www.priceme.co.nz.csv.optical sensor
+  www.shopmania.in.csv.sensor type
+  www.wexphotographic.com.csv.sensor type
+
+Cluster 41:
+  buy.net.csv.shortest shutter speed
+  www.camerafarm.com.au.csv.fastest shutter speed
+  www.ebay.com.csv.shutter speed (maximum)
+  www.mypriceindia.com.csv.maximum shutter speed
+  www.price-hunt.com.csv.maximum shutter speed
+  www.pricedekho.com.csv.maximum shutter speed
+  www.shopmania.in.csv.max shutter speed
+  www.wexphotographic.com.csv.shutter speed max
+
+Cluster 42:
+  buy.net.csv.longest shutter speed
+  www.camerafarm.com.au.csv.slowest shutter speed
+  www.ebay.com.csv.minimum shutter speed
+  www.mypriceindia.com.csv.minimum shutter speed
+  www.price-hunt.com.csv.minimum shutter speed
+  www.pricedekho.com.csv.minimum shutter speed
+  www.shopmania.in.csv.min shutter speed
+  www.wexphotographic.com.csv.shutter speed min
+
+Cluster 43:
+  www.cambuy.com.au.csv.shutter
+  www.camerafarm.com.au.csv.shutter type
+  www.ilgs.net.csv.camera shutter type
+  www.price-hunt.com.csv.shutter type
+
+Cluster 44:
+  www.cambuy.com.au.csv.aspect ratio
+  www.ebay.com.csv.image ratio wh
+  www.eglobalcentral.co.uk.csv.aspect ratio
+  www.flipkart.com.csv.supported aspect ratio
+  www.henrys.com.csv.aspect ratio
+  www.ilgs.net.csv.supported aspect ratios
+  www.mypriceindia.com.csv.image ratio wh
+  www.price-hunt.com.csv.supported aspect ratio
+  www.pricedekho.com.csv.supported aspect ratio
+  www.shopmania.in.csv.image ratio
+
+Cluster 45:
+  www.cambuy.com.au.csv.audio recording format
+  www.camerafarm.com.au.csv.movie audio recording format
+  www.ebay.com.csv.movie audio recording format
+  www.flipkart.com.csv.audio formats
+  www.henrys.com.csv.audio recording
+  www.ilgs.net.csv.audio formats supported
+  www.mypriceindia.com.csv.audio formats
+  www.price-hunt.com.csv.audio formats
+  www.pricedekho.com.csv.audio formats
+
+Cluster 46:
+  www.cambuy.com.au.csv.supported languages
+  www.camerafarm.com.au.csv.supported languages
+  www.canon-europe.com.csv.menu languages
+  www.ebay.com.csv.languages
+  www.ilgs.net.csv.languages support
+
+Cluster 47:
+  www.camerafarm.com.au.csv.movie file format
+  www.garricks.com.au.csv.video recording format
+  www.ilgs.net.csv.video formats supported
+  www.mypriceindia.com.csv.video format
+  www.price-hunt.com.csv.video format
+  www.pricedekho.com.csv.video format
+  www.shopmania.in.csv.digital video format
+
+Cluster 48:
+  buy.net.csv.maximum video capture resolution
+  cammarkt.com.csv.hd recording format
+  www.alibaba.com.csv.frame rate
+  www.cambuy.com.au.csv.1280 x 720 hd
+  www.ebay.com.csv.max. resolution
+  www.eglobalcentral.co.uk.csv.resolution
+  www.flipkart.com.csv.video display resolution
+  www.ilgs.net.csv.maximum video resolution
+  www.mypriceindia.com.csv.video resolution
+  www.price-hunt.com.csv.video display resolution
+  www.pricedekho.com.csv.video display resolution
+  www.shopbot.com.au.csv.video resolution
+  www.shopmania.in.csv.video resolution
+  www.wexphotographic.com.csv.movie mode
+
+Cluster 49:
+  buy.net.csv.warranty information
+  cammarkt.com.csv.warranty
+  www.alibaba.com.csv.warranty time
+  www.buzzillions.com.csv.standard warranty
+  www.ebay.com.csv.warranty - labor
+  www.flipkart.com.csv.warranty summary
+  www.henrys.com.csv.warranty
+  www.ilgs.net.csv.warranty
+  www.pcconnection.com.csv.warranty  labor
+  www.price-hunt.com.csv.warranty summary
+
+Cluster 50:
+  buy.net.csv.white balance modes
+  cammarkt.com.csv.white balance
+  www.alibaba.com.csv.white balance
+  www.buzzillions.com.csv.white balance
+  www.cambuy.com.au.csv.white balance
+  www.ebay.com.csv.white balance control
+  www.flipkart.com.csv.white balancing
+  www.henrys.com.csv.white balance modes
+  www.ilgs.net.csv.white balance
+  www.mypriceindia.com.csv.white balancing
+  www.price-hunt.com.csv.white balancing
+  www.pricedekho.com.csv.white balancing
+  www.shopmania.in.csv.white balance presets
+
+Cluster 51:
+  www.cambuy.com.au.csv.humidity
+  www.ebay.com.csv.humidity
+  www.flipkart.com.csv.humidity
+  www.ilgs.net.csv.operating relative humidity hh
+  www.price-hunt.com.csv.humidity
+
+Cluster 52:
+  buy.net.csv.digital zoom
+  cammarkt.com.csv.digital zoom
+  www.buzzillions.com.csv.digital zoom
+  www.cambuy.com.au.csv.digital zoom
+  www.ebay.com.csv.zoom:
+  www.henrys.com.csv.digital zoom
+  www.ilgs.net.csv.digital zoom
+  www.mypriceindia.com.csv.digital zoom
+  www.price-hunt.com.csv.digital zoom
+  www.pricedekho.com.csv.digital zoom
+  www.shopmania.in.csv.digital zoom
+  www.walmart.com.csv.digital zoom
+
+Cluster 53:
+  buy.net.csv.optical zoom
+  cammarkt.com.csv.optical zoom
+  www.buzzillions.com.csv.optical zoom
+  www.cambuy.com.au.csv.optical zoom
+  www.ebay.com.csv.optical zoom
+  www.eglobalcentral.co.uk.csv.optical zoom
+  www.garricks.com.au.csv.zoom range
+  www.gosale.com.csv.optical zoom
+  www.henrys.com.csv.optical zoom
+  www.ilgs.net.csv.optical zoom
+  www.mypriceindia.com.csv.optical zoom
+  www.pcconnection.com.csv.optical zoom
+  www.price-hunt.com.csv.optical zoom
+  www.pricedekho.com.csv.optical zoom
+  www.shopmania.in.csv.optical zoom
+  www.ukdigitalcameras.co.uk.csv.optical zoom
+  www.walmart.com.csv.optical zoom
+  www.wexphotographic.com.csv.optical zoom x
+

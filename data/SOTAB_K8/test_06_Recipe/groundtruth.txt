@@ -1,0 +1,73 @@
+Cluster 1:
+  t_8eca38a7b7d2.csv.c12
+
+Cluster 2:
+  t_55a429bbf926.csv.c7
+  t_5dd5d967da44.csv.c8
+  t_5e5befdaca25.csv.c5
+
+Cluster 3:
+  t_35430c98d74b.csv.c10
+  t_55a429bbf926.csv.c9
+  t_5617017ea097.csv.c9
+  t_7fd6584dedd5.csv.c10
+  t_8eca38a7b7d2.csv.c8
+  t_f686ad6a31b5.csv.c10
+
+Cluster 4:
+  t_5dd5d967da44.csv.c5
+  t_5e5befdaca25.csv.c4
+
+Cluster 5:
+  t_55a429bbf926.csv.c13
+  t_5e5befdaca25.csv.c13
+  t_8eca38a7b7d2.csv.c13
+
+Cluster 6:
+  t_55a429bbf926.csv.c6
+  t_5dd5d967da44.csv.c7
+  t_5e5befdaca25.csv.c14
+  t_7fd6584dedd5.csv.c7
+  t_8eca38a7b7d2.csv.c9
+
+Cluster 7:
+  t_5617017ea097.csv.c8
+  t_5dd5d967da44.csv.c9
+  t_5e5befdaca25.csv.c8
+  t_7fd6584dedd5.csv.c12
+  t_8eca38a7b7d2.csv.c7
+  t_f686ad6a31b5.csv.c8
+
+Cluster 8:
+  t_5617017ea097.csv.c5
+  t_5dd5d967da44.csv.c2
+  t_5e5befdaca25.csv.c7
+  t_7fd6584dedd5.csv.c6
+  t_8eca38a7b7d2.csv.c6
+
+Cluster 9:
+  t_35430c98d74b.csv.c12
+  t_5dd5d967da44.csv.c19
+  t_8eca38a7b7d2.csv.c14
+
+Cluster 10:
+  t_35430c98d74b.csv.c17
+  t_5617017ea097.csv.c21
+  t_7fd6584dedd5.csv.c16
+
+Cluster 11:
+  t_55a429bbf926.csv.c12
+  t_5617017ea097.csv.c17
+  t_5dd5d967da44.csv.c22
+  t_f686ad6a31b5.csv.c21
+
+Cluster 12:
+  t_5dd5d967da44.csv.c10
+  t_5e5befdaca25.csv.c11
+
+Cluster 13:
+  t_5617017ea097.csv.c6
+  t_5dd5d967da44.csv.c6
+  t_5e5befdaca25.csv.c6
+  t_8eca38a7b7d2.csv.c5
+

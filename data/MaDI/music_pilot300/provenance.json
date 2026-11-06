@@ -1,0 +1,107 @@
+{
+  "protocol": {
+    "adapter_version": 1,
+    "repository": "https://github.com/wbsg-uni-mannheim/MaDI-Bench",
+    "revision": "062058d09c8abd97026e6d4e9908b433753f58d3",
+    "domain": "music",
+    "max_rows": 300,
+    "seed": 42,
+    "feature_policy": "all gold-annotated non-ID source columns; original column names",
+    "missing_policy": "preserve nulls; empty lists and null placeholders become empty cells",
+    "task": "derived multi-table schema matching; canonical targets used only for ground truth"
+  },
+  "upstream_sha256": {
+    "use cases/music/base/input/schemamatching/sm_mapping_gold.json": "e94c90c39b3d82456eb4d9e4320143f14be23e531ee817dbfa5e68f776463361",
+    "use cases/music/base/input/data/discogs.csv": "0fab4d11a01d8ef2db38a2b7ae98279f351583bba2459e21e0c62c778f3e3a9e",
+    "use cases/music/base/input/data/lastfm.csv": "5c12950dc9ecda3c097f98de64302f32f2f9ae0c25f72ac483ee2446a007984c",
+    "use cases/music/base/input/data/musicbrainz.csv": "746c14c4ef6d0f7a4882272501591ad91c3ac2ff4552dff57656fdb2dc53445a"
+  },
+  "files": {
+    "groundtruth.txt": "f5fac413b6b87c66f3d0e5e3a4eb38c995726880af55fee7477ad249eafe7ba0",
+    "original/lastfm.csv": "accae4cb10b3a3c7c9d8bf5a99b9b3bade568e0d06d9126ed266bdf2a45ecae0",
+    "original/musicbrainz.csv": "a83f648c49e992d4bba5759e46df5944dc068b6d6b307df2486140eeea86d633",
+    "original/discogs.csv": "9c46d3f7dbe5b5e24c77209b7d8f3f8243c522114c4f5440bd485b9b8639cb4d"
+  },
+  "tables": [
+    {
+      "table": "discogs.csv",
+      "original_rows": 22627,
+      "rows": 300,
+      "columns": [
+        "title_str",
+        "performer",
+        "pub_dt",
+        "origin_loc",
+        "duration",
+        "imprint",
+        "category",
+        "tracks_track-name"
+      ],
+      "excluded_columns": [
+        "rec_uid"
+      ],
+      "missing_cells": 36,
+      "missing_rate": 0.015,
+      "column_missing_rates": {
+        "title_str": 0.0,
+        "performer": 0.0,
+        "pub_dt": 0.09333333333333334,
+        "origin_loc": 0.02666666666666667,
+        "duration": 0.0,
+        "imprint": 0.0,
+        "category": 0.0,
+        "tracks_track-name": 0.0
+      }
+    },
+    {
+      "table": "lastfm.csv",
+      "original_rows": 9865,
+      "rows": 300,
+      "columns": [
+        "album_title",
+        "band",
+        "album_length",
+        "tracks_track-name"
+      ],
+      "excluded_columns": [
+        "item_code"
+      ],
+      "missing_cells": 337,
+      "missing_rate": 0.2808333333333333,
+      "column_missing_rates": {
+        "album_title": 0.0,
+        "band": 0.0,
+        "album_length": 0.56,
+        "tracks_track-name": 0.5633333333333334
+      }
+    },
+    {
+      "table": "musicbrainz.csv",
+      "original_rows": 4763,
+      "rows": 300,
+      "columns": [
+        "Attribute_2",
+        "Attribute_3",
+        "Attribute_4",
+        "Attribute_5",
+        "Attribute_6",
+        "Attribute_9"
+      ],
+      "excluded_columns": [
+        "Attribute_1"
+      ],
+      "missing_cells": 58,
+      "missing_rate": 0.03222222222222222,
+      "column_missing_rates": {
+        "Attribute_2": 0.0,
+        "Attribute_3": 0.0,
+        "Attribute_4": 0.04666666666666667,
+        "Attribute_5": 0.14666666666666667,
+        "Attribute_6": 0.0,
+        "Attribute_9": 0.0
+      }
+    }
+  ],
+  "gt_groups": 8,
+  "gt_pairs": 14
+}

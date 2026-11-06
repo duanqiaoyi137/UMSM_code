@@ -1,0 +1,2980 @@
+{
+  "format": "umsm-data-v1",
+  "files": [
+    {
+      "path": "data/Alaska_full/camera/groundtruth.txt",
+      "bytes": 17732,
+      "sha256": "7f06ee9445f5d72586b46c5b0fa48a285c7b76d79ddf994ea3d9df0f22ab4d56"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/buy.net.csv",
+      "bytes": 67823,
+      "sha256": "f8c0311daa5adf99f0b07ed8d2ddfdb5530f045c75fe4ec7a53dc7d135e7b80e"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/cammarkt.com.csv",
+      "bytes": 318130,
+      "sha256": "3563c9a567fa1c92e268b8d681219e3d889ca9cd09d3ffa332b2fdb8c4e82acb"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.alibaba.com.csv",
+      "bytes": 17325,
+      "sha256": "c2b0218a2a53c37551eabcc5f246b937f06ac92b4f347c040818a417c3e3ca2d"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.buzzillions.com.csv",
+      "bytes": 52628,
+      "sha256": "cf847c70ca0fa9c733426b69fa9505350c7df7904fe7af76b332f81eb8876beb"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.cambuy.com.au.csv",
+      "bytes": 59688,
+      "sha256": "15b2d424ed7d34753e89961fb27db40a3f93e9e1f2807078b3c4a0867f183cdf"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.camerafarm.com.au.csv",
+      "bytes": 32163,
+      "sha256": "6e6caa17b90a537eae7bcf1d7ab370ba5ee7a3066b08bccee1448fe8a71f3956"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.canon-europe.com.csv",
+      "bytes": 106972,
+      "sha256": "c1fc6fd13ee210c5070d9cffc6ddbae096fa75dc1eb2252f03ce1f8159b75460"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.ebay.com.csv",
+      "bytes": 15523,
+      "sha256": "faf8dee314308ebd4051c22ac49d5233c67d313a1db5c18db93d4ceb5445de89"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.eglobalcentral.co.uk.csv",
+      "bytes": 12511,
+      "sha256": "bd027d0bb8be795bd1d860362dadfac3eef59e90b29b693af3459adb78af2cd8"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.flipkart.com.csv",
+      "bytes": 32330,
+      "sha256": "262865b16a0ef53a5fe8cddbc361bf12d64e8c8b0293634552477149365cce15"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.garricks.com.au.csv",
+      "bytes": 7041,
+      "sha256": "bdb961ae5038926ae62a340c1b5a63499015b9344f85ccc5f87ffd825713d9c9"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.gosale.com.csv",
+      "bytes": 6109,
+      "sha256": "60147da8a524c842bcdfec9b1cfd11730b2868074fc1b5eace853a356ab56ab1"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.henrys.com.csv",
+      "bytes": 57266,
+      "sha256": "b224c5aec46cf80e1034a36aa134443505d6910a450cd24606315546fb0099fe"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.ilgs.net.csv",
+      "bytes": 47113,
+      "sha256": "208dadf8b8ec838afec70226f94cbb01ac8bef5747d2f666cd94b5329db33e43"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.mypriceindia.com.csv",
+      "bytes": 117060,
+      "sha256": "1f21f4c94cfea4ec59e1fc97f4ac1d1d27afc2b811a862f0558f4454035c9ee1"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.pcconnection.com.csv",
+      "bytes": 19488,
+      "sha256": "a3f526189f7be5a79d82db4ca8ad82e83200127cac2327aa6edeb10d8a94081a"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.price-hunt.com.csv",
+      "bytes": 131644,
+      "sha256": "0994e4e381ada532c540de817454b7c1037ae4f3c0be664cb5bddfacf436ada0"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.pricedekho.com.csv",
+      "bytes": 57316,
+      "sha256": "5ddb1c121c9a17b9534bd80af6fbf05787ee609ffc26edf5bf982f3f58224c4a"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.priceme.co.nz.csv",
+      "bytes": 9284,
+      "sha256": "ddf37fba596dbe1436809520debebd11f60f44cca611fe50f927b19d9d98cfa1"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.shopbot.com.au.csv",
+      "bytes": 4071,
+      "sha256": "5f3640da6b1d40f6a772610a2630e229e29237b918c9dad7c23970ae52e63bfb"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.shopmania.in.csv",
+      "bytes": 165692,
+      "sha256": "75989fed8212ad498c2e4f9ff08f738e9dc4496f6568ce1968145850adb3e617"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.ukdigitalcameras.co.uk.csv",
+      "bytes": 4809,
+      "sha256": "6a9005aa5e25f14a86cb3062455864d621abb813a1cfdddafa504231a83f19b7"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.walmart.com.csv",
+      "bytes": 6190,
+      "sha256": "651a55b448b86b488c6daf160bcf586cdef5300843b3bbe04f9b370d3bd3a30b"
+    },
+    {
+      "path": "data/Alaska_full/camera/original/www.wexphotographic.com.csv",
+      "bytes": 20361,
+      "sha256": "a63e0bb14b37b923d328859b012683d12b5fb5e69b99b164294e8e24dc765b1a"
+    },
+    {
+      "path": "data/Alaska_full/camera/provenance.json",
+      "bytes": 74759,
+      "sha256": "7dc97554783c21ba6c0adf12f4397de7d5255bb571bde7b9d1cb08be33696fcb"
+    },
+    {
+      "path": "data/Alaska_full/camera_fit/groundtruth.txt",
+      "bytes": 6756,
+      "sha256": "2a3c2dfa4d86d8c27cf5278cb35a595f38138b05c94aee4a8b5abcc834403162"
+    },
+    {
+      "path": "data/Alaska_full/camera_fit/original/www.ebay.com.csv",
+      "bytes": 15523,
+      "sha256": "faf8dee314308ebd4051c22ac49d5233c67d313a1db5c18db93d4ceb5445de89"
+    },
+    {
+      "path": "data/Alaska_full/camera_fit/original/www.flipkart.com.csv",
+      "bytes": 32330,
+      "sha256": "262865b16a0ef53a5fe8cddbc361bf12d64e8c8b0293634552477149365cce15"
+    },
+    {
+      "path": "data/Alaska_full/camera_fit/original/www.pcconnection.com.csv",
+      "bytes": 19488,
+      "sha256": "a3f526189f7be5a79d82db4ca8ad82e83200127cac2327aa6edeb10d8a94081a"
+    },
+    {
+      "path": "data/Alaska_full/camera_fit/original/www.price-hunt.com.csv",
+      "bytes": 131644,
+      "sha256": "0994e4e381ada532c540de817454b7c1037ae4f3c0be664cb5bddfacf436ada0"
+    },
+    {
+      "path": "data/Alaska_full/camera_fit/original/www.pricedekho.com.csv",
+      "bytes": 57316,
+      "sha256": "5ddb1c121c9a17b9534bd80af6fbf05787ee609ffc26edf5bf982f3f58224c4a"
+    },
+    {
+      "path": "data/Alaska_full/camera_fit/original/www.priceme.co.nz.csv",
+      "bytes": 9284,
+      "sha256": "ddf37fba596dbe1436809520debebd11f60f44cca611fe50f927b19d9d98cfa1"
+    },
+    {
+      "path": "data/Alaska_full/camera_fit/original/www.shopbot.com.au.csv",
+      "bytes": 4071,
+      "sha256": "5f3640da6b1d40f6a772610a2630e229e29237b918c9dad7c23970ae52e63bfb"
+    },
+    {
+      "path": "data/Alaska_full/camera_fit/original/www.wexphotographic.com.csv",
+      "bytes": 20361,
+      "sha256": "a63e0bb14b37b923d328859b012683d12b5fb5e69b99b164294e8e24dc765b1a"
+    },
+    {
+      "path": "data/Alaska_full/camera_fit/provenance.json",
+      "bytes": 57516,
+      "sha256": "56b5dc09c6b66d40d3f57195185c8d48eb98b3a8a0b00bb699f7f3175f8fa698"
+    },
+    {
+      "path": "data/Alaska_full/camera_test/groundtruth.txt",
+      "bytes": 6284,
+      "sha256": "d0b280a17bf486af6ca3557b74c51cf6e3aba8b1d9566d4ecd0ab44468a7c928"
+    },
+    {
+      "path": "data/Alaska_full/camera_test/original/cammarkt.com.csv",
+      "bytes": 318130,
+      "sha256": "3563c9a567fa1c92e268b8d681219e3d889ca9cd09d3ffa332b2fdb8c4e82acb"
+    },
+    {
+      "path": "data/Alaska_full/camera_test/original/www.alibaba.com.csv",
+      "bytes": 17325,
+      "sha256": "c2b0218a2a53c37551eabcc5f246b937f06ac92b4f347c040818a417c3e3ca2d"
+    },
+    {
+      "path": "data/Alaska_full/camera_test/original/www.cambuy.com.au.csv",
+      "bytes": 59688,
+      "sha256": "15b2d424ed7d34753e89961fb27db40a3f93e9e1f2807078b3c4a0867f183cdf"
+    },
+    {
+      "path": "data/Alaska_full/camera_test/original/www.eglobalcentral.co.uk.csv",
+      "bytes": 12511,
+      "sha256": "bd027d0bb8be795bd1d860362dadfac3eef59e90b29b693af3459adb78af2cd8"
+    },
+    {
+      "path": "data/Alaska_full/camera_test/original/www.ilgs.net.csv",
+      "bytes": 47113,
+      "sha256": "208dadf8b8ec838afec70226f94cbb01ac8bef5747d2f666cd94b5329db33e43"
+    },
+    {
+      "path": "data/Alaska_full/camera_test/original/www.mypriceindia.com.csv",
+      "bytes": 117060,
+      "sha256": "1f21f4c94cfea4ec59e1fc97f4ac1d1d27afc2b811a862f0558f4454035c9ee1"
+    },
+    {
+      "path": "data/Alaska_full/camera_test/original/www.ukdigitalcameras.co.uk.csv",
+      "bytes": 4809,
+      "sha256": "6a9005aa5e25f14a86cb3062455864d621abb813a1cfdddafa504231a83f19b7"
+    },
+    {
+      "path": "data/Alaska_full/camera_test/original/www.walmart.com.csv",
+      "bytes": 6190,
+      "sha256": "651a55b448b86b488c6daf160bcf586cdef5300843b3bbe04f9b370d3bd3a30b"
+    },
+    {
+      "path": "data/Alaska_full/camera_test/provenance.json",
+      "bytes": 57534,
+      "sha256": "f43517ac4a0799e5ce888f1611bcacd9339ed7aa64919a61c0266cefa7e9bc69"
+    },
+    {
+      "path": "data/Alaska_full/camera_validation/groundtruth.txt",
+      "bytes": 5818,
+      "sha256": "5c0fe56244a11fc7a7043dd720188d1f9e38737ff67ddbc70d5c7d91b8bd97e5"
+    },
+    {
+      "path": "data/Alaska_full/camera_validation/original/buy.net.csv",
+      "bytes": 67823,
+      "sha256": "f8c0311daa5adf99f0b07ed8d2ddfdb5530f045c75fe4ec7a53dc7d135e7b80e"
+    },
+    {
+      "path": "data/Alaska_full/camera_validation/original/www.buzzillions.com.csv",
+      "bytes": 52628,
+      "sha256": "cf847c70ca0fa9c733426b69fa9505350c7df7904fe7af76b332f81eb8876beb"
+    },
+    {
+      "path": "data/Alaska_full/camera_validation/original/www.camerafarm.com.au.csv",
+      "bytes": 32163,
+      "sha256": "6e6caa17b90a537eae7bcf1d7ab370ba5ee7a3066b08bccee1448fe8a71f3956"
+    },
+    {
+      "path": "data/Alaska_full/camera_validation/original/www.canon-europe.com.csv",
+      "bytes": 106972,
+      "sha256": "c1fc6fd13ee210c5070d9cffc6ddbae096fa75dc1eb2252f03ce1f8159b75460"
+    },
+    {
+      "path": "data/Alaska_full/camera_validation/original/www.garricks.com.au.csv",
+      "bytes": 7041,
+      "sha256": "bdb961ae5038926ae62a340c1b5a63499015b9344f85ccc5f87ffd825713d9c9"
+    },
+    {
+      "path": "data/Alaska_full/camera_validation/original/www.gosale.com.csv",
+      "bytes": 6109,
+      "sha256": "60147da8a524c842bcdfec9b1cfd11730b2868074fc1b5eace853a356ab56ab1"
+    },
+    {
+      "path": "data/Alaska_full/camera_validation/original/www.henrys.com.csv",
+      "bytes": 57266,
+      "sha256": "b224c5aec46cf80e1034a36aa134443505d6910a450cd24606315546fb0099fe"
+    },
+    {
+      "path": "data/Alaska_full/camera_validation/original/www.shopmania.in.csv",
+      "bytes": 165692,
+      "sha256": "75989fed8212ad498c2e4f9ff08f738e9dc4496f6568ce1968145850adb3e617"
+    },
+    {
+      "path": "data/Alaska_full/camera_validation/provenance.json",
+      "bytes": 56772,
+      "sha256": "606349451e1c3835b44a462b15ecb888d6df5f1cbdee8163f7f63d03813bde93"
+    },
+    {
+      "path": "data/Alaska_full/monitor/groundtruth.txt",
+      "bytes": 27316,
+      "sha256": "355d347fe59edab8cdcebc9736dcbd764fac64ece5d650c847a9eacc5e60701f"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/ca.pcpartpicker.com.csv",
+      "bytes": 24329,
+      "sha256": "9623fa79bd2d5d543c9ef279a03b5eb33f8b61e9cff0822a2263718500ccac2c"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/catalog.com.csv",
+      "bytes": 5275,
+      "sha256": "3b549198499c1840a2c15c34641a678f5737c1f10f79e14a9ba3b1b7abe20a3c"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/ce.yikus.com.csv",
+      "bytes": 11398,
+      "sha256": "8b93fb9bdb7163a674fc8b85430c1e276adc9b2b3b1d4a197578ecc9e7b37d68"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.best-deal-items.com.csv",
+      "bytes": 5819,
+      "sha256": "0b54a17c08a390670776e23aedc388f8bad45c994886e8cff9775bfdd33ccff3"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.cleverboxes.com.csv",
+      "bytes": 44248,
+      "sha256": "e6e17f2848c8b0cf745c4372310509ecfd8d13f62fe592d02749d20b187475bc"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.ebay.com.csv",
+      "bytes": 18285,
+      "sha256": "68965b2a21cbc432ba4507b9322e7134b4d792498d16d151b3b86036890f77b1"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.getprice.com.au.csv",
+      "bytes": 8326,
+      "sha256": "b9e2f075ca76f9f44941e5569d19b6c409d8bb0733947da4c087493bc6b85e27"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.hardware-planet.it.csv",
+      "bytes": 60029,
+      "sha256": "6d6916d36857ec5791e0d5a7db2abcf60770598b384aaf39536cb3d3acdde278"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.imldirect.it.csv",
+      "bytes": 50348,
+      "sha256": "150ced31154625903da9b6ceaa692133f4506b7e9de27d42fb597f762ea8e5a4"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.itenergy.co.uk.csv",
+      "bytes": 50279,
+      "sha256": "8d3354b115b120f71620e28c82c2eb679e674d1aa1ddcee68dc3d3ebb34d4375"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.jrlinton.co.uk.csv",
+      "bytes": 47256,
+      "sha256": "13257d511990b699a9e84a98104be1dad1cc01cae84dd5a7488bf42593fd432a"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.kingsfieldcomputers.co.uk.csv",
+      "bytes": 50787,
+      "sha256": "f5aedb255064b6bef12ad8a9092b8d4d984367245d406d5c9feff2c6e53e7707"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.makingbuyingeasy.co.uk.csv",
+      "bytes": 61809,
+      "sha256": "fec181c7df5c06bc6310656d7a1cdfd43888cfa00e75d9461367326e0d114de1"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.mediashopuk.com.csv",
+      "bytes": 32926,
+      "sha256": "9bd6620c959e4403132bc85fd8bb92f13347bb94a84075086f59d50b0084c9cb"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.mrhightech.com.csv",
+      "bytes": 32926,
+      "sha256": "79785018d54866e79aaf538609622d805911e9d734a66d302a028a0338c40e5c"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.nexus-t.co.uk.csv",
+      "bytes": 25166,
+      "sha256": "4ec6d50b3eb042397b9827c3ca0d15af199cac3fcab4fc4fa4573677d896e5aa"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.odsi.co.uk.csv",
+      "bytes": 43803,
+      "sha256": "6054046f7ad7044e6f13861c1380c44d514481bcd1bf24b55f44b32d696ce3cb"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.officedepot.com.csv",
+      "bytes": 34671,
+      "sha256": "e16a875a028a292b7b707753773b2b73e54338474a7f202afa48c0d499ce1007"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.ohc24.ch.csv",
+      "bytes": 32144,
+      "sha256": "c39d87d31ee1ec13c848966c2472768e85cbdbcab0dc2332e9d23855fcbbf521"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.pc-canada.com.csv",
+      "bytes": 18471,
+      "sha256": "9aac988b5f7032a84838b6eaee6fc8faed3b7f1049cc8598f86053446857a2b8"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.pcconnection.com.csv",
+      "bytes": 17415,
+      "sha256": "5e2a2ae2a5af5ea400aa9398fd827cb224e2cbd3d3455f6e34ef6c6f63cff8c7"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.planet-computer.it.csv",
+      "bytes": 41463,
+      "sha256": "eb1d3b3feede2bc32bd75be19847a07c36717e2b76102d8f2f77e7e5498f55d9"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.shopmania.com.csv",
+      "bytes": 17298,
+      "sha256": "173a12f0f9e80310023bebdfb2a70a88f9fcb51291fd02d94b641f839f57356b"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.softwarecity.ca.csv",
+      "bytes": 47099,
+      "sha256": "38112ebaa5846859be67f12de024f30146b1afc6511491c792cf1073e4b16acc"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.vology.com.csv",
+      "bytes": 117431,
+      "sha256": "c4bc95e1a06156ad2e912fa0107bd82bdad2ec477556717fa329db04c864dd69"
+    },
+    {
+      "path": "data/Alaska_full/monitor/original/www.xpcpro.com.csv",
+      "bytes": 54042,
+      "sha256": "603bd19e33738a1c4858222fab5ca470c452618a8464512e603a44d3d64acd21"
+    },
+    {
+      "path": "data/Alaska_full/monitor/provenance.json",
+      "bytes": 119996,
+      "sha256": "e31791e49637512bddca0d67250a538e57fc105d42e5331d27189ade3fc7d2e3"
+    },
+    {
+      "path": "data/Alaska_full/monitor_fit/groundtruth.txt",
+      "bytes": 11901,
+      "sha256": "eefaf61c7a76f4234a4d692a8c9cc2a741e0eb72bb8521c70313a3e4b595ef54"
+    },
+    {
+      "path": "data/Alaska_full/monitor_fit/original/www.ebay.com.csv",
+      "bytes": 18285,
+      "sha256": "68965b2a21cbc432ba4507b9322e7134b4d792498d16d151b3b86036890f77b1"
+    },
+    {
+      "path": "data/Alaska_full/monitor_fit/original/www.hardware-planet.it.csv",
+      "bytes": 60029,
+      "sha256": "6d6916d36857ec5791e0d5a7db2abcf60770598b384aaf39536cb3d3acdde278"
+    },
+    {
+      "path": "data/Alaska_full/monitor_fit/original/www.jrlinton.co.uk.csv",
+      "bytes": 47256,
+      "sha256": "13257d511990b699a9e84a98104be1dad1cc01cae84dd5a7488bf42593fd432a"
+    },
+    {
+      "path": "data/Alaska_full/monitor_fit/original/www.nexus-t.co.uk.csv",
+      "bytes": 25166,
+      "sha256": "4ec6d50b3eb042397b9827c3ca0d15af199cac3fcab4fc4fa4573677d896e5aa"
+    },
+    {
+      "path": "data/Alaska_full/monitor_fit/original/www.officedepot.com.csv",
+      "bytes": 34671,
+      "sha256": "e16a875a028a292b7b707753773b2b73e54338474a7f202afa48c0d499ce1007"
+    },
+    {
+      "path": "data/Alaska_full/monitor_fit/original/www.ohc24.ch.csv",
+      "bytes": 32144,
+      "sha256": "c39d87d31ee1ec13c848966c2472768e85cbdbcab0dc2332e9d23855fcbbf521"
+    },
+    {
+      "path": "data/Alaska_full/monitor_fit/original/www.pcconnection.com.csv",
+      "bytes": 17415,
+      "sha256": "5e2a2ae2a5af5ea400aa9398fd827cb224e2cbd3d3455f6e34ef6c6f63cff8c7"
+    },
+    {
+      "path": "data/Alaska_full/monitor_fit/original/www.planet-computer.it.csv",
+      "bytes": 41463,
+      "sha256": "eb1d3b3feede2bc32bd75be19847a07c36717e2b76102d8f2f77e7e5498f55d9"
+    },
+    {
+      "path": "data/Alaska_full/monitor_fit/original/www.xpcpro.com.csv",
+      "bytes": 54042,
+      "sha256": "603bd19e33738a1c4858222fab5ca470c452618a8464512e603a44d3d64acd21"
+    },
+    {
+      "path": "data/Alaska_full/monitor_fit/provenance.json",
+      "bytes": 99115,
+      "sha256": "92a1cd30fcf5f398658833b33dff641591cff1ab53feb0c1326aac4360b998f2"
+    },
+    {
+      "path": "data/Alaska_full/monitor_test/groundtruth.txt",
+      "bytes": 7417,
+      "sha256": "1fa0183784b7edf718473c542148b436a6838d91cdc3871629a7602811f93772"
+    },
+    {
+      "path": "data/Alaska_full/monitor_test/original/catalog.com.csv",
+      "bytes": 5275,
+      "sha256": "3b549198499c1840a2c15c34641a678f5737c1f10f79e14a9ba3b1b7abe20a3c"
+    },
+    {
+      "path": "data/Alaska_full/monitor_test/original/ce.yikus.com.csv",
+      "bytes": 11398,
+      "sha256": "8b93fb9bdb7163a674fc8b85430c1e276adc9b2b3b1d4a197578ecc9e7b37d68"
+    },
+    {
+      "path": "data/Alaska_full/monitor_test/original/www.cleverboxes.com.csv",
+      "bytes": 44248,
+      "sha256": "e6e17f2848c8b0cf745c4372310509ecfd8d13f62fe592d02749d20b187475bc"
+    },
+    {
+      "path": "data/Alaska_full/monitor_test/original/www.imldirect.it.csv",
+      "bytes": 50348,
+      "sha256": "150ced31154625903da9b6ceaa692133f4506b7e9de27d42fb597f762ea8e5a4"
+    },
+    {
+      "path": "data/Alaska_full/monitor_test/original/www.mediashopuk.com.csv",
+      "bytes": 32926,
+      "sha256": "9bd6620c959e4403132bc85fd8bb92f13347bb94a84075086f59d50b0084c9cb"
+    },
+    {
+      "path": "data/Alaska_full/monitor_test/original/www.mrhightech.com.csv",
+      "bytes": 32926,
+      "sha256": "79785018d54866e79aaf538609622d805911e9d734a66d302a028a0338c40e5c"
+    },
+    {
+      "path": "data/Alaska_full/monitor_test/original/www.softwarecity.ca.csv",
+      "bytes": 47099,
+      "sha256": "38112ebaa5846859be67f12de024f30146b1afc6511491c792cf1073e4b16acc"
+    },
+    {
+      "path": "data/Alaska_full/monitor_test/original/www.vology.com.csv",
+      "bytes": 117431,
+      "sha256": "c4bc95e1a06156ad2e912fa0107bd82bdad2ec477556717fa329db04c864dd69"
+    },
+    {
+      "path": "data/Alaska_full/monitor_test/provenance.json",
+      "bytes": 94283,
+      "sha256": "211bf1d76431e16039e7cea6ef244ee6db52ee73359fc716dc5119d46b990be0"
+    },
+    {
+      "path": "data/Alaska_full/monitor_validation/groundtruth.txt",
+      "bytes": 9280,
+      "sha256": "e3ec3c38f7557f97a55fd2cfef6221987917905ceb5d8d248a5b600a94ac54fd"
+    },
+    {
+      "path": "data/Alaska_full/monitor_validation/original/ca.pcpartpicker.com.csv",
+      "bytes": 24329,
+      "sha256": "9623fa79bd2d5d543c9ef279a03b5eb33f8b61e9cff0822a2263718500ccac2c"
+    },
+    {
+      "path": "data/Alaska_full/monitor_validation/original/www.best-deal-items.com.csv",
+      "bytes": 5819,
+      "sha256": "0b54a17c08a390670776e23aedc388f8bad45c994886e8cff9775bfdd33ccff3"
+    },
+    {
+      "path": "data/Alaska_full/monitor_validation/original/www.getprice.com.au.csv",
+      "bytes": 8326,
+      "sha256": "b9e2f075ca76f9f44941e5569d19b6c409d8bb0733947da4c087493bc6b85e27"
+    },
+    {
+      "path": "data/Alaska_full/monitor_validation/original/www.itenergy.co.uk.csv",
+      "bytes": 50279,
+      "sha256": "8d3354b115b120f71620e28c82c2eb679e674d1aa1ddcee68dc3d3ebb34d4375"
+    },
+    {
+      "path": "data/Alaska_full/monitor_validation/original/www.kingsfieldcomputers.co.uk.csv",
+      "bytes": 50787,
+      "sha256": "f5aedb255064b6bef12ad8a9092b8d4d984367245d406d5c9feff2c6e53e7707"
+    },
+    {
+      "path": "data/Alaska_full/monitor_validation/original/www.makingbuyingeasy.co.uk.csv",
+      "bytes": 61809,
+      "sha256": "fec181c7df5c06bc6310656d7a1cdfd43888cfa00e75d9461367326e0d114de1"
+    },
+    {
+      "path": "data/Alaska_full/monitor_validation/original/www.odsi.co.uk.csv",
+      "bytes": 43803,
+      "sha256": "6054046f7ad7044e6f13861c1380c44d514481bcd1bf24b55f44b32d696ce3cb"
+    },
+    {
+      "path": "data/Alaska_full/monitor_validation/original/www.pc-canada.com.csv",
+      "bytes": 18471,
+      "sha256": "9aac988b5f7032a84838b6eaee6fc8faed3b7f1049cc8598f86053446857a2b8"
+    },
+    {
+      "path": "data/Alaska_full/monitor_validation/original/www.shopmania.com.csv",
+      "bytes": 17298,
+      "sha256": "173a12f0f9e80310023bebdfb2a70a88f9fcb51291fd02d94b641f839f57356b"
+    },
+    {
+      "path": "data/Alaska_full/monitor_validation/provenance.json",
+      "bytes": 95579,
+      "sha256": "1b1f1fa5f95af6ce41520dc27e9628373693495de53cfdfd3d5a6664b41f8a0f"
+    },
+    {
+      "path": "data/Alaska_full/notebook/groundtruth.txt",
+      "bytes": 12862,
+      "sha256": "9df2ae4738c2ed19379e7cc9d44938ff5fd0ca5883b377ec19652072723a9802"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/buy.net.csv",
+      "bytes": 35071,
+      "sha256": "cc22a643faae821e0fc608adbc4603b65f90c050c760f702343b0ff2b65eaa29"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/catalog.com.csv",
+      "bytes": 3337,
+      "sha256": "2d9e12e8bf19c16354ad21d60b71a5790216faa8e19208e5dd10ff0beaba35f5"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/livehotdeals.com.csv",
+      "bytes": 6635,
+      "sha256": "1bf9410670c299da155df387b969d82bf3ac3b7420766891441cd2f2dab261fb"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/wallmartphoto.com.csv",
+      "bytes": 22178,
+      "sha256": "6b583159f3b5c3f1e3c014a17b69a6002037938634982ecb187faaa8734e435f"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.alibaba.com.csv",
+      "bytes": 14936,
+      "sha256": "4b80245fef496113af06400fdd524331ed8020c541b739ece57a489f14240e6f"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.amazon.com.csv",
+      "bytes": 21816,
+      "sha256": "974119ac400b9556adfb5b6e6e3dc1c14b2d1d0ef6dd813bf365e797185412ac"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.bhphotovideo.com.csv",
+      "bytes": 3613,
+      "sha256": "0b6993eec4d901cd616a847d7ef4c8114599e53bb4002af34ab5135278100c18"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.bidorbuy.co.za.csv",
+      "bytes": 2019,
+      "sha256": "e98c9d2fb6f2e60306e874421d20687be904d1aae39074d196875c17916cce69"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.directdial.com.csv",
+      "bytes": 14996,
+      "sha256": "46f9d262764c710d70e4d80529649bff399394ec37cdc044d18361732272d67b"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.ebay.com.csv",
+      "bytes": 18868,
+      "sha256": "c06892455beb595fa2300a22e086a8f583e9ecf324218354ad5a14eb0644ad30"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.flexshopper.com.csv",
+      "bytes": 12406,
+      "sha256": "244dac92601076fa697db643af4ebadbce169cf04e621b73fa981c024c4142ad"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.gosale.com.csv",
+      "bytes": 3135,
+      "sha256": "4197bec59b21f5a6919d0496eb481640a0bf97fa64cf775747c2f5d16970a4c2"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.isupplyhub.com.csv",
+      "bytes": 21632,
+      "sha256": "83b457d6ed2c32452144680413b069c735163938bb6535d597e2c0b5509615bb"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.mygofer.com.csv",
+      "bytes": 23828,
+      "sha256": "6e1476ceb8adbaef4cbb7d7aa319a908b06acfa4439e21458a28c8dee4931fa2"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.overstock.com.csv",
+      "bytes": 2068,
+      "sha256": "e7bf2b25c8f76c2ede87b5247371e553838f365e392ba5f66797267c606a780b"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.softwarecity.ca.csv",
+      "bytes": 29029,
+      "sha256": "526fa2eac5822f53dd3607d2949cdf77ecba6af6ac673b6e401ffe9145696240"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.staples.com.csv",
+      "bytes": 8708,
+      "sha256": "d02b7ece4b6446be6f9738b4c82ccdccec021742c499e0706b481a8dec8ed4e5"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.techbuy.com.au.csv",
+      "bytes": 30165,
+      "sha256": "ef78377cfc1f8e00730f11acb156dd705261738b5755e86cdecc75c7e7d07a3d"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.thenerds.net.csv",
+      "bytes": 37195,
+      "sha256": "f1cc857972566f8ec4b45608b3c84517ca4f8714287530fe2a1065670f59a926"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.tigerdirect.com.csv",
+      "bytes": 11327,
+      "sha256": "9519e7f0b91f5955602fb29a8e47e0de45b7d97c36f4d67da6aaee53eb182790"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.tinydeal.com.csv",
+      "bytes": 2482,
+      "sha256": "50477c62566b55622a726849509185b32ec722710e76ba02d8e58e2b0c1c86ac"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.topendelectronic.co.uk.csv",
+      "bytes": 29487,
+      "sha256": "52778af88dfee1cb28641bc882f374552d1a3705e0ba3be68185055012a5260c"
+    },
+    {
+      "path": "data/Alaska_full/notebook/original/www.vology.com.csv",
+      "bytes": 118958,
+      "sha256": "986e8c6012f84a06938a893bb3c35c30af59e843d6a9889004af8e077aeb9b9c"
+    },
+    {
+      "path": "data/Alaska_full/notebook/provenance.json",
+      "bytes": 140094,
+      "sha256": "46a58065213e8d39f5d8cdd89241d3e9f1ef0f0f10eddaa66fe1582e847fa8cc"
+    },
+    {
+      "path": "data/Alaska_full/notebook_fit/groundtruth.txt",
+      "bytes": 4960,
+      "sha256": "4d2a8d759f6c68a5e61bb66f6e8c0d3b4b23eedc844184d4879193d7225212be"
+    },
+    {
+      "path": "data/Alaska_full/notebook_fit/original/www.bhphotovideo.com.csv",
+      "bytes": 3613,
+      "sha256": "0b6993eec4d901cd616a847d7ef4c8114599e53bb4002af34ab5135278100c18"
+    },
+    {
+      "path": "data/Alaska_full/notebook_fit/original/www.bidorbuy.co.za.csv",
+      "bytes": 2019,
+      "sha256": "e98c9d2fb6f2e60306e874421d20687be904d1aae39074d196875c17916cce69"
+    },
+    {
+      "path": "data/Alaska_full/notebook_fit/original/www.flexshopper.com.csv",
+      "bytes": 12406,
+      "sha256": "244dac92601076fa697db643af4ebadbce169cf04e621b73fa981c024c4142ad"
+    },
+    {
+      "path": "data/Alaska_full/notebook_fit/original/www.softwarecity.ca.csv",
+      "bytes": 29029,
+      "sha256": "526fa2eac5822f53dd3607d2949cdf77ecba6af6ac673b6e401ffe9145696240"
+    },
+    {
+      "path": "data/Alaska_full/notebook_fit/original/www.staples.com.csv",
+      "bytes": 8708,
+      "sha256": "d02b7ece4b6446be6f9738b4c82ccdccec021742c499e0706b481a8dec8ed4e5"
+    },
+    {
+      "path": "data/Alaska_full/notebook_fit/original/www.techbuy.com.au.csv",
+      "bytes": 30165,
+      "sha256": "ef78377cfc1f8e00730f11acb156dd705261738b5755e86cdecc75c7e7d07a3d"
+    },
+    {
+      "path": "data/Alaska_full/notebook_fit/original/www.thenerds.net.csv",
+      "bytes": 37195,
+      "sha256": "f1cc857972566f8ec4b45608b3c84517ca4f8714287530fe2a1065670f59a926"
+    },
+    {
+      "path": "data/Alaska_full/notebook_fit/original/www.vology.com.csv",
+      "bytes": 118958,
+      "sha256": "986e8c6012f84a06938a893bb3c35c30af59e843d6a9889004af8e077aeb9b9c"
+    },
+    {
+      "path": "data/Alaska_full/notebook_fit/provenance.json",
+      "bytes": 126608,
+      "sha256": "d6ebf7c7178cddca08c5f022677cf580b1be0b598ec55c5f9ec4158cb41d624d"
+    },
+    {
+      "path": "data/Alaska_full/notebook_test/groundtruth.txt",
+      "bytes": 4179,
+      "sha256": "20ace4b6ddb97f7d7ed2496289ce54f8701593a1a2a533786dc255e18ba024f5"
+    },
+    {
+      "path": "data/Alaska_full/notebook_test/original/catalog.com.csv",
+      "bytes": 3337,
+      "sha256": "2d9e12e8bf19c16354ad21d60b71a5790216faa8e19208e5dd10ff0beaba35f5"
+    },
+    {
+      "path": "data/Alaska_full/notebook_test/original/livehotdeals.com.csv",
+      "bytes": 6635,
+      "sha256": "1bf9410670c299da155df387b969d82bf3ac3b7420766891441cd2f2dab261fb"
+    },
+    {
+      "path": "data/Alaska_full/notebook_test/original/www.alibaba.com.csv",
+      "bytes": 14936,
+      "sha256": "4b80245fef496113af06400fdd524331ed8020c541b739ece57a489f14240e6f"
+    },
+    {
+      "path": "data/Alaska_full/notebook_test/original/www.directdial.com.csv",
+      "bytes": 14996,
+      "sha256": "46f9d262764c710d70e4d80529649bff399394ec37cdc044d18361732272d67b"
+    },
+    {
+      "path": "data/Alaska_full/notebook_test/original/www.mygofer.com.csv",
+      "bytes": 23828,
+      "sha256": "6e1476ceb8adbaef4cbb7d7aa319a908b06acfa4439e21458a28c8dee4931fa2"
+    },
+    {
+      "path": "data/Alaska_full/notebook_test/original/www.tinydeal.com.csv",
+      "bytes": 2482,
+      "sha256": "50477c62566b55622a726849509185b32ec722710e76ba02d8e58e2b0c1c86ac"
+    },
+    {
+      "path": "data/Alaska_full/notebook_test/original/www.topendelectronic.co.uk.csv",
+      "bytes": 29487,
+      "sha256": "52778af88dfee1cb28641bc882f374552d1a3705e0ba3be68185055012a5260c"
+    },
+    {
+      "path": "data/Alaska_full/notebook_test/provenance.json",
+      "bytes": 125634,
+      "sha256": "53dd18cf2583433aad41555d726e8531889a69687476790f6116ffc4737ad1cb"
+    },
+    {
+      "path": "data/Alaska_full/notebook_validation/groundtruth.txt",
+      "bytes": 4537,
+      "sha256": "2aed47b03dc9d74acc06cc14f625b179c34a84a86900c62751c8e41895285b44"
+    },
+    {
+      "path": "data/Alaska_full/notebook_validation/original/buy.net.csv",
+      "bytes": 35071,
+      "sha256": "cc22a643faae821e0fc608adbc4603b65f90c050c760f702343b0ff2b65eaa29"
+    },
+    {
+      "path": "data/Alaska_full/notebook_validation/original/wallmartphoto.com.csv",
+      "bytes": 22178,
+      "sha256": "6b583159f3b5c3f1e3c014a17b69a6002037938634982ecb187faaa8734e435f"
+    },
+    {
+      "path": "data/Alaska_full/notebook_validation/original/www.amazon.com.csv",
+      "bytes": 21816,
+      "sha256": "974119ac400b9556adfb5b6e6e3dc1c14b2d1d0ef6dd813bf365e797185412ac"
+    },
+    {
+      "path": "data/Alaska_full/notebook_validation/original/www.ebay.com.csv",
+      "bytes": 18868,
+      "sha256": "c06892455beb595fa2300a22e086a8f583e9ecf324218354ad5a14eb0644ad30"
+    },
+    {
+      "path": "data/Alaska_full/notebook_validation/original/www.gosale.com.csv",
+      "bytes": 3135,
+      "sha256": "4197bec59b21f5a6919d0496eb481640a0bf97fa64cf775747c2f5d16970a4c2"
+    },
+    {
+      "path": "data/Alaska_full/notebook_validation/original/www.isupplyhub.com.csv",
+      "bytes": 21632,
+      "sha256": "83b457d6ed2c32452144680413b069c735163938bb6535d597e2c0b5509615bb"
+    },
+    {
+      "path": "data/Alaska_full/notebook_validation/original/www.overstock.com.csv",
+      "bytes": 2068,
+      "sha256": "e7bf2b25c8f76c2ede87b5247371e553838f365e392ba5f66797267c606a780b"
+    },
+    {
+      "path": "data/Alaska_full/notebook_validation/original/www.tigerdirect.com.csv",
+      "bytes": 11327,
+      "sha256": "9519e7f0b91f5955602fb29a8e47e0de45b7d97c36f4d67da6aaee53eb182790"
+    },
+    {
+      "path": "data/Alaska_full/notebook_validation/provenance.json",
+      "bytes": 126623,
+      "sha256": "638dd955c779cd006e95499c864a0273fb1345b9c4b9600f2eb4157b797973ba"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/groundtruth.txt",
+      "bytes": 17732,
+      "sha256": "7f06ee9445f5d72586b46c5b0fa48a285c7b76d79ddf994ea3d9df0f22ab4d56"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/buy.net.csv",
+      "bytes": 67823,
+      "sha256": "f8c0311daa5adf99f0b07ed8d2ddfdb5530f045c75fe4ec7a53dc7d135e7b80e"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/cammarkt.com.csv",
+      "bytes": 318162,
+      "sha256": "ff43161376c8513eff59a321010559c9d380fd49bc3e44dbe184834ca92b92b5"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.alibaba.com.csv",
+      "bytes": 17325,
+      "sha256": "c2b0218a2a53c37551eabcc5f246b937f06ac92b4f347c040818a417c3e3ca2d"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.buzzillions.com.csv",
+      "bytes": 52628,
+      "sha256": "cf847c70ca0fa9c733426b69fa9505350c7df7904fe7af76b332f81eb8876beb"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.cambuy.com.au.csv",
+      "bytes": 59688,
+      "sha256": "15b2d424ed7d34753e89961fb27db40a3f93e9e1f2807078b3c4a0867f183cdf"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.camerafarm.com.au.csv",
+      "bytes": 32163,
+      "sha256": "6e6caa17b90a537eae7bcf1d7ab370ba5ee7a3066b08bccee1448fe8a71f3956"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.canon-europe.com.csv",
+      "bytes": 106972,
+      "sha256": "c1fc6fd13ee210c5070d9cffc6ddbae096fa75dc1eb2252f03ce1f8159b75460"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.ebay.com.csv",
+      "bytes": 15520,
+      "sha256": "1b2812a6ba21f163d51b0193aac8c60fa4487f3e774320d9087473991aab44dc"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.eglobalcentral.co.uk.csv",
+      "bytes": 12493,
+      "sha256": "adc7e33db5c99a71a111f987eba9a1b6bb97745ea77323a01bbfd6755984d698"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.flipkart.com.csv",
+      "bytes": 32330,
+      "sha256": "262865b16a0ef53a5fe8cddbc361bf12d64e8c8b0293634552477149365cce15"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.garricks.com.au.csv",
+      "bytes": 7041,
+      "sha256": "bdb961ae5038926ae62a340c1b5a63499015b9344f85ccc5f87ffd825713d9c9"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.gosale.com.csv",
+      "bytes": 6109,
+      "sha256": "60147da8a524c842bcdfec9b1cfd11730b2868074fc1b5eace853a356ab56ab1"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.henrys.com.csv",
+      "bytes": 56838,
+      "sha256": "e64f6b2b806e9b28f93d340d75147a836b882edcbdc1de208c301e57e8c04e0f"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.ilgs.net.csv",
+      "bytes": 47409,
+      "sha256": "218b36e8c70c3625363e10c79025a0a03d7a5425ab0e85a880d9bf45ec1b3754"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.mypriceindia.com.csv",
+      "bytes": 117060,
+      "sha256": "1f21f4c94cfea4ec59e1fc97f4ac1d1d27afc2b811a862f0558f4454035c9ee1"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.pcconnection.com.csv",
+      "bytes": 19482,
+      "sha256": "0cd48fdaadc7aaf21d314e32f3460f2e19f841b294c8cd8cd68aa2e79ebe72de"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.price-hunt.com.csv",
+      "bytes": 131644,
+      "sha256": "0994e4e381ada532c540de817454b7c1037ae4f3c0be664cb5bddfacf436ada0"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.pricedekho.com.csv",
+      "bytes": 57064,
+      "sha256": "f03edbfaf3e3fd8923aea639050a21fa8c521f138a9e4c6a60214b69094f642a"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.priceme.co.nz.csv",
+      "bytes": 9284,
+      "sha256": "ddf37fba596dbe1436809520debebd11f60f44cca611fe50f927b19d9d98cfa1"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.shopbot.com.au.csv",
+      "bytes": 4071,
+      "sha256": "5f3640da6b1d40f6a772610a2630e229e29237b918c9dad7c23970ae52e63bfb"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.shopmania.in.csv",
+      "bytes": 165946,
+      "sha256": "da1978733970ca55d31664c6dac82d732d9187191e7cabdab30c8d980d569e9e"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.ukdigitalcameras.co.uk.csv",
+      "bytes": 4806,
+      "sha256": "6f3f1dc96503443234bcf48f5acc3aa14ddecfb95161dd83464aa8b19b46708c"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.walmart.com.csv",
+      "bytes": 6184,
+      "sha256": "78774660f24b476a43559cab3cc5b2d3c386c486483d394ecbcee65d6bba392f"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/original/www.wexphotographic.com.csv",
+      "bytes": 21251,
+      "sha256": "b505c6db2ba37a5712639d6edf2369e23c19deaedd58b9c23928e66347d80ece"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_pool/provenance.json",
+      "bytes": 26842,
+      "sha256": "4a8b9ba9e251ab5682abc2de5012ae10c759f7a89d8144e803426ccd397bdade"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_01/groundtruth.txt",
+      "bytes": 4980,
+      "sha256": "aeb161421064a212a07f727733e68b44368e53e212320c9bb53c43002b712ed2"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_01/original/www.buzzillions.com.csv",
+      "bytes": 52628,
+      "sha256": "cf847c70ca0fa9c733426b69fa9505350c7df7904fe7af76b332f81eb8876beb"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_01/original/www.flipkart.com.csv",
+      "bytes": 32330,
+      "sha256": "262865b16a0ef53a5fe8cddbc361bf12d64e8c8b0293634552477149365cce15"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_01/original/www.henrys.com.csv",
+      "bytes": 56838,
+      "sha256": "e64f6b2b806e9b28f93d340d75147a836b882edcbdc1de208c301e57e8c04e0f"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_01/original/www.pcconnection.com.csv",
+      "bytes": 19482,
+      "sha256": "0cd48fdaadc7aaf21d314e32f3460f2e19f841b294c8cd8cd68aa2e79ebe72de"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_01/original/www.shopbot.com.au.csv",
+      "bytes": 4071,
+      "sha256": "5f3640da6b1d40f6a772610a2630e229e29237b918c9dad7c23970ae52e63bfb"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_01/original/www.shopmania.in.csv",
+      "bytes": 165946,
+      "sha256": "da1978733970ca55d31664c6dac82d732d9187191e7cabdab30c8d980d569e9e"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_01/provenance.json",
+      "bytes": 7582,
+      "sha256": "dfccfe59ddaa3d5ed2c45f1f94a2648b25d7a1c3e9b809e2afdee694649d97fc"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_02/groundtruth.txt",
+      "bytes": 5390,
+      "sha256": "dee0cc83c1c9a34419bcc6e9ecd4c481dba29ae0dcddeee3dbc4185c3d053d96"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_02/original/buy.net.csv",
+      "bytes": 67823,
+      "sha256": "f8c0311daa5adf99f0b07ed8d2ddfdb5530f045c75fe4ec7a53dc7d135e7b80e"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_02/original/cammarkt.com.csv",
+      "bytes": 318162,
+      "sha256": "ff43161376c8513eff59a321010559c9d380fd49bc3e44dbe184834ca92b92b5"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_02/original/www.gosale.com.csv",
+      "bytes": 6109,
+      "sha256": "60147da8a524c842bcdfec9b1cfd11730b2868074fc1b5eace853a356ab56ab1"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_02/original/www.ilgs.net.csv",
+      "bytes": 47409,
+      "sha256": "218b36e8c70c3625363e10c79025a0a03d7a5425ab0e85a880d9bf45ec1b3754"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_02/original/www.price-hunt.com.csv",
+      "bytes": 131644,
+      "sha256": "0994e4e381ada532c540de817454b7c1037ae4f3c0be664cb5bddfacf436ada0"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_02/original/www.walmart.com.csv",
+      "bytes": 6184,
+      "sha256": "78774660f24b476a43559cab3cc5b2d3c386c486483d394ecbcee65d6bba392f"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_02/provenance.json",
+      "bytes": 8410,
+      "sha256": "ee499322624714deba6ec000eb2294c3281fe62254186e75c118431e28ec6bf3"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_03/groundtruth.txt",
+      "bytes": 3877,
+      "sha256": "0f97d87fe112ae42830b35d0d682b8970914eff1db572c79c198b1e36ffa72ab"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_03/original/www.alibaba.com.csv",
+      "bytes": 17325,
+      "sha256": "c2b0218a2a53c37551eabcc5f246b937f06ac92b4f347c040818a417c3e3ca2d"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_03/original/www.canon-europe.com.csv",
+      "bytes": 106972,
+      "sha256": "c1fc6fd13ee210c5070d9cffc6ddbae096fa75dc1eb2252f03ce1f8159b75460"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_03/original/www.eglobalcentral.co.uk.csv",
+      "bytes": 12493,
+      "sha256": "adc7e33db5c99a71a111f987eba9a1b6bb97745ea77323a01bbfd6755984d698"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_03/original/www.mypriceindia.com.csv",
+      "bytes": 117060,
+      "sha256": "1f21f4c94cfea4ec59e1fc97f4ac1d1d27afc2b811a862f0558f4454035c9ee1"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_03/original/www.pricedekho.com.csv",
+      "bytes": 57064,
+      "sha256": "f03edbfaf3e3fd8923aea639050a21fa8c521f138a9e4c6a60214b69094f642a"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_03/original/www.priceme.co.nz.csv",
+      "bytes": 9284,
+      "sha256": "ddf37fba596dbe1436809520debebd11f60f44cca611fe50f927b19d9d98cfa1"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_03/provenance.json",
+      "bytes": 5981,
+      "sha256": "a1b2c190ec002c1ad8d51982f47b53d0b4f471304831c699f69d1e9cc71e8e94"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_04/groundtruth.txt",
+      "bytes": 5018,
+      "sha256": "7d114e7fff1376478c5995d322c096f64c0896e0af48536dcd471907ad455406"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_04/original/www.cambuy.com.au.csv",
+      "bytes": 59688,
+      "sha256": "15b2d424ed7d34753e89961fb27db40a3f93e9e1f2807078b3c4a0867f183cdf"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_04/original/www.camerafarm.com.au.csv",
+      "bytes": 32163,
+      "sha256": "6e6caa17b90a537eae7bcf1d7ab370ba5ee7a3066b08bccee1448fe8a71f3956"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_04/original/www.ebay.com.csv",
+      "bytes": 15520,
+      "sha256": "1b2812a6ba21f163d51b0193aac8c60fa4487f3e774320d9087473991aab44dc"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_04/original/www.garricks.com.au.csv",
+      "bytes": 7041,
+      "sha256": "bdb961ae5038926ae62a340c1b5a63499015b9344f85ccc5f87ffd825713d9c9"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_04/original/www.ukdigitalcameras.co.uk.csv",
+      "bytes": 4806,
+      "sha256": "6f3f1dc96503443234bcf48f5acc3aa14ddecfb95161dd83464aa8b19b46708c"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_04/original/www.wexphotographic.com.csv",
+      "bytes": 21251,
+      "sha256": "b505c6db2ba37a5712639d6edf2369e23c19deaedd58b9c23928e66347d80ece"
+    },
+    {
+      "path": "data/Alaska_Partition/camera_test_04/provenance.json",
+      "bytes": 7108,
+      "sha256": "95318cb7c876e01dd641153a6eded3bfbb054e1d46a36c394fd8ad4a271ff183"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/groundtruth.txt",
+      "bytes": 25828,
+      "sha256": "96b557efd5cdf7bd31aebdb4b68622ddab806e75903a8c53cd70bf90a21fe8b6"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/ca.pcpartpicker.com.csv",
+      "bytes": 26125,
+      "sha256": "36b0a43b530a9f2580b55dfbf6efb110447a672b158c5e19377ee2f288d450f0"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/catalog.com.csv",
+      "bytes": 5275,
+      "sha256": "3b549198499c1840a2c15c34641a678f5737c1f10f79e14a9ba3b1b7abe20a3c"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/ce.yikus.com.csv",
+      "bytes": 11398,
+      "sha256": "8b93fb9bdb7163a674fc8b85430c1e276adc9b2b3b1d4a197578ecc9e7b37d68"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.best-deal-items.com.csv",
+      "bytes": 5835,
+      "sha256": "5bb89cc2006b18b59b39fc4f23c2f59aefbebffb502c8cd3930cb2f10d818719"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.cleverboxes.com.csv",
+      "bytes": 44248,
+      "sha256": "e6e17f2848c8b0cf745c4372310509ecfd8d13f62fe592d02749d20b187475bc"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.getprice.com.au.csv",
+      "bytes": 8326,
+      "sha256": "b9e2f075ca76f9f44941e5569d19b6c409d8bb0733947da4c087493bc6b85e27"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.hardware-planet.it.csv",
+      "bytes": 61917,
+      "sha256": "f9c1c5f643cddbe4ecdf2928704391b72723b2874ab4aeec4b3de3f24324067c"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.imldirect.it.csv",
+      "bytes": 50522,
+      "sha256": "ebcbaf32d68c7e6466b3c6bfe3e79a185787d6694951caf9948048a47e6e6a6c"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.itenergy.co.uk.csv",
+      "bytes": 50471,
+      "sha256": "d636ad014943aba3e36bb7ab5ffd27272d75df88c0352299c1734241b7c9327e"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.jrlinton.co.uk.csv",
+      "bytes": 47472,
+      "sha256": "ac4775fbdc399945955b4669eef7892001a1d5c65331ebf4ebe45183be3df8c5"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.kingsfieldcomputers.co.uk.csv",
+      "bytes": 51039,
+      "sha256": "9ec89c9227342cf12639873e72478567fc6c68a6a290568cbe9f9091ff6c7ae3"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.makingbuyingeasy.co.uk.csv",
+      "bytes": 63457,
+      "sha256": "a407591ac98304c156cf32909c394ee8434f86e5a0efde4c38d168176bbba249"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.mediashopuk.com.csv",
+      "bytes": 33792,
+      "sha256": "6fc11a1e52410b8115be7eb33b823b81622f0bd05cae53656fa6eb6809b1817b"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.mrhightech.com.csv",
+      "bytes": 33792,
+      "sha256": "fd629432183cb1c004ccce2cbefa75375d6d2bfc77bf25aa3e0a259a97b9d805"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.nexus-t.co.uk.csv",
+      "bytes": 26128,
+      "sha256": "d05b7adde88c3cb6b99153ebb0bfbc7ea2e07bd164ca5e9c025819bf480adfca"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.odsi.co.uk.csv",
+      "bytes": 43803,
+      "sha256": "6054046f7ad7044e6f13861c1380c44d514481bcd1bf24b55f44b32d696ce3cb"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.officedepot.com.csv",
+      "bytes": 34769,
+      "sha256": "829d8e727c5dc8d8601a17520547886a93cf5f237518a1b2eb42c615863085cc"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.ohc24.ch.csv",
+      "bytes": 32144,
+      "sha256": "c39d87d31ee1ec13c848966c2472768e85cbdbcab0dc2332e9d23855fcbbf521"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.pc-canada.com.csv",
+      "bytes": 18543,
+      "sha256": "d8c3cedcf4a396a3def8308a63bd1eaacdd9cd7039e4c521df610a6cd2a70f4c"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.planet-computer.it.csv",
+      "bytes": 42505,
+      "sha256": "c3dde8dcb810e35b7c45cf354053f621ad6518c152d44b2049c02cfc9c5b6d63"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.shopmania.com.csv",
+      "bytes": 17486,
+      "sha256": "b77caf06efa5b23f47e0f2a521cb3f8d4fb1528574d75ac42b8ff23a05dbba5f"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.softwarecity.ca.csv",
+      "bytes": 47245,
+      "sha256": "62fe2c533e8c1385e3a6fdcdecedc0c75f4dbd5ed7682e7be43bea137e4d294c"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.vology.com.csv",
+      "bytes": 117431,
+      "sha256": "c4bc95e1a06156ad2e912fa0107bd82bdad2ec477556717fa329db04c864dd69"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/original/www.xpcpro.com.csv",
+      "bytes": 54384,
+      "sha256": "9cbdf5189a85575fb7e923c39526972e85bfc09660a12b2367f1a9fcae00994a"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_pool/provenance.json",
+      "bytes": 33956,
+      "sha256": "346f44acf9dc0af243e3f5840419cca36b4bd87835433d9420d1b92874cc5020"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_01/groundtruth.txt",
+      "bytes": 7928,
+      "sha256": "ea64b74afffd6e3546aec5198a6e0547e3a7c5e63cff04df3fc170ba2b2ec590"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_01/original/www.best-deal-items.com.csv",
+      "bytes": 5835,
+      "sha256": "5bb89cc2006b18b59b39fc4f23c2f59aefbebffb502c8cd3930cb2f10d818719"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_01/original/www.jrlinton.co.uk.csv",
+      "bytes": 47472,
+      "sha256": "ac4775fbdc399945955b4669eef7892001a1d5c65331ebf4ebe45183be3df8c5"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_01/original/www.mediashopuk.com.csv",
+      "bytes": 33792,
+      "sha256": "6fc11a1e52410b8115be7eb33b823b81622f0bd05cae53656fa6eb6809b1817b"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_01/original/www.odsi.co.uk.csv",
+      "bytes": 43803,
+      "sha256": "6054046f7ad7044e6f13861c1380c44d514481bcd1bf24b55f44b32d696ce3cb"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_01/original/www.planet-computer.it.csv",
+      "bytes": 42505,
+      "sha256": "c3dde8dcb810e35b7c45cf354053f621ad6518c152d44b2049c02cfc9c5b6d63"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_01/original/www.shopmania.com.csv",
+      "bytes": 17486,
+      "sha256": "b77caf06efa5b23f47e0f2a521cb3f8d4fb1528574d75ac42b8ff23a05dbba5f"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_01/provenance.json",
+      "bytes": 10255,
+      "sha256": "102989adc77a14e2f6efc8c7c44e7379b94af45bffa03f21ed42327ef18a4ea3"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_02/groundtruth.txt",
+      "bytes": 6758,
+      "sha256": "7bee47690dc5472b98d9c03cd13f4e065011b403e08777c1a300f563d8e2eedf"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_02/original/ca.pcpartpicker.com.csv",
+      "bytes": 26125,
+      "sha256": "36b0a43b530a9f2580b55dfbf6efb110447a672b158c5e19377ee2f288d450f0"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_02/original/catalog.com.csv",
+      "bytes": 5275,
+      "sha256": "3b549198499c1840a2c15c34641a678f5737c1f10f79e14a9ba3b1b7abe20a3c"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_02/original/www.makingbuyingeasy.co.uk.csv",
+      "bytes": 63457,
+      "sha256": "a407591ac98304c156cf32909c394ee8434f86e5a0efde4c38d168176bbba249"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_02/original/www.mrhightech.com.csv",
+      "bytes": 33792,
+      "sha256": "fd629432183cb1c004ccce2cbefa75375d6d2bfc77bf25aa3e0a259a97b9d805"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_02/original/www.officedepot.com.csv",
+      "bytes": 34769,
+      "sha256": "829d8e727c5dc8d8601a17520547886a93cf5f237518a1b2eb42c615863085cc"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_02/original/www.vology.com.csv",
+      "bytes": 117431,
+      "sha256": "c4bc95e1a06156ad2e912fa0107bd82bdad2ec477556717fa329db04c864dd69"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_02/provenance.json",
+      "bytes": 8724,
+      "sha256": "098e58bbba93676a4299c89a01c04e932242d9fa9d82907b043dd8581810d08a"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_03/groundtruth.txt",
+      "bytes": 6387,
+      "sha256": "e217863c4b6320209cb1cfb41f0cc55a88859a9ba928f802ca43cb5fce1e79a7"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_03/original/ce.yikus.com.csv",
+      "bytes": 11398,
+      "sha256": "8b93fb9bdb7163a674fc8b85430c1e276adc9b2b3b1d4a197578ecc9e7b37d68"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_03/original/www.hardware-planet.it.csv",
+      "bytes": 61917,
+      "sha256": "f9c1c5f643cddbe4ecdf2928704391b72723b2874ab4aeec4b3de3f24324067c"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_03/original/www.itenergy.co.uk.csv",
+      "bytes": 50471,
+      "sha256": "d636ad014943aba3e36bb7ab5ffd27272d75df88c0352299c1734241b7c9327e"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_03/original/www.nexus-t.co.uk.csv",
+      "bytes": 26128,
+      "sha256": "d05b7adde88c3cb6b99153ebb0bfbc7ea2e07bd164ca5e9c025819bf480adfca"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_03/original/www.ohc24.ch.csv",
+      "bytes": 32144,
+      "sha256": "c39d87d31ee1ec13c848966c2472768e85cbdbcab0dc2332e9d23855fcbbf521"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_03/original/www.pc-canada.com.csv",
+      "bytes": 18543,
+      "sha256": "d8c3cedcf4a396a3def8308a63bd1eaacdd9cd7039e4c521df610a6cd2a70f4c"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_03/provenance.json",
+      "bytes": 8562,
+      "sha256": "2dbd9bec7b83e8fadcbc379d647f920d57f8f92c2727507adc45125ddcd10d84"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_04/groundtruth.txt",
+      "bytes": 6704,
+      "sha256": "ff0b43a0ad0465f5482e9ca9029ffe0c345c88451c3c624f6ebd5b52bfc3b379"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_04/original/www.cleverboxes.com.csv",
+      "bytes": 44248,
+      "sha256": "e6e17f2848c8b0cf745c4372310509ecfd8d13f62fe592d02749d20b187475bc"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_04/original/www.getprice.com.au.csv",
+      "bytes": 8326,
+      "sha256": "b9e2f075ca76f9f44941e5569d19b6c409d8bb0733947da4c087493bc6b85e27"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_04/original/www.imldirect.it.csv",
+      "bytes": 50522,
+      "sha256": "ebcbaf32d68c7e6466b3c6bfe3e79a185787d6694951caf9948048a47e6e6a6c"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_04/original/www.kingsfieldcomputers.co.uk.csv",
+      "bytes": 51039,
+      "sha256": "9ec89c9227342cf12639873e72478567fc6c68a6a290568cbe9f9091ff6c7ae3"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_04/original/www.softwarecity.ca.csv",
+      "bytes": 47245,
+      "sha256": "62fe2c533e8c1385e3a6fdcdecedc0c75f4dbd5ed7682e7be43bea137e4d294c"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_04/original/www.xpcpro.com.csv",
+      "bytes": 54384,
+      "sha256": "9cbdf5189a85575fb7e923c39526972e85bfc09660a12b2367f1a9fcae00994a"
+    },
+    {
+      "path": "data/Alaska_Partition/monitor_test_04/provenance.json",
+      "bytes": 8661,
+      "sha256": "a0bbcc7e1b5e819efe24000404954202ffed3402f2e2418f33dfe507c80fa6d4"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/groundtruth.txt",
+      "bytes": 8165,
+      "sha256": "0ea92cba9920616866b1bc4869fdbe3be2dcab49e8bf6d2e5a5f75aa495f6b53"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/livehotdeals.com.csv",
+      "bytes": 6635,
+      "sha256": "1bf9410670c299da155df387b969d82bf3ac3b7420766891441cd2f2dab261fb"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/wallmartphoto.com.csv",
+      "bytes": 22169,
+      "sha256": "a40f51ee92002647a616c5ab55cd33f4a663d333ea779651e605ed021e588f1d"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.amazon.com.csv",
+      "bytes": 22326,
+      "sha256": "fdc94b7b4da618cef48418c51ed2ce0a367ccd300b97a6e865b6ff27a8d151be"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.bhphotovideo.com.csv",
+      "bytes": 3613,
+      "sha256": "0b6993eec4d901cd616a847d7ef4c8114599e53bb4002af34ab5135278100c18"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.bidorbuy.co.za.csv",
+      "bytes": 2019,
+      "sha256": "e98c9d2fb6f2e60306e874421d20687be904d1aae39074d196875c17916cce69"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.directdial.com.csv",
+      "bytes": 15422,
+      "sha256": "faf474ae4ef58fae1d9c6904452d7a502c767a40c15799f385a424b5911833d2"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.flexshopper.com.csv",
+      "bytes": 12408,
+      "sha256": "12afa00057f952a9adef8bbd9f34cf5891890ca07d26bad57d6add96dd34afc2"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.isupplyhub.com.csv",
+      "bytes": 22008,
+      "sha256": "ecc71cc5c3268fd60b319e98f2c3655f9842dde055c3dea8af3e163142284a29"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.mygofer.com.csv",
+      "bytes": 23912,
+      "sha256": "afba93a856ebcfafd609f0ed27063656e2858eb01c31f3ee0d6c0311bb41f6ce"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.overstock.com.csv",
+      "bytes": 2068,
+      "sha256": "e7bf2b25c8f76c2ede87b5247371e553838f365e392ba5f66797267c606a780b"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.staples.com.csv",
+      "bytes": 8699,
+      "sha256": "5ac17c9cc9a79deee315d57e8b4f4b4e71f5f8cae3374c4197bb6a24d0ee1544"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.techbuy.com.au.csv",
+      "bytes": 30165,
+      "sha256": "ef78377cfc1f8e00730f11acb156dd705261738b5755e86cdecc75c7e7d07a3d"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.thenerds.net.csv",
+      "bytes": 37903,
+      "sha256": "f8235a1de38d6864426606573cf0ab7a6b4f948126690f0fd3a7b421689a87d4"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.tigerdirect.com.csv",
+      "bytes": 11327,
+      "sha256": "9519e7f0b91f5955602fb29a8e47e0de45b7d97c36f4d67da6aaee53eb182790"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.tinydeal.com.csv",
+      "bytes": 2482,
+      "sha256": "50477c62566b55622a726849509185b32ec722710e76ba02d8e58e2b0c1c86ac"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/original/www.topendelectronic.co.uk.csv",
+      "bytes": 29715,
+      "sha256": "8bc26051dd116437f0816d858bf21953d02621e84c0329c6347d45f7ffd1f30b"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_pool/provenance.json",
+      "bytes": 14050,
+      "sha256": "f25bae60d9ec9a36b527eb81fd5d4927e1bced0b7bacb12b2f2ad224f47eb388"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_01/groundtruth.txt",
+      "bytes": 3847,
+      "sha256": "992f52a7d184df4edf2c2361ac803ff3b1979dfeba7200b698d747a1bb31b85e"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_01/original/livehotdeals.com.csv",
+      "bytes": 6635,
+      "sha256": "1bf9410670c299da155df387b969d82bf3ac3b7420766891441cd2f2dab261fb"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_01/original/wallmartphoto.com.csv",
+      "bytes": 22169,
+      "sha256": "a40f51ee92002647a616c5ab55cd33f4a663d333ea779651e605ed021e588f1d"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_01/original/www.amazon.com.csv",
+      "bytes": 22326,
+      "sha256": "fdc94b7b4da618cef48418c51ed2ce0a367ccd300b97a6e865b6ff27a8d151be"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_01/original/www.flexshopper.com.csv",
+      "bytes": 12408,
+      "sha256": "12afa00057f952a9adef8bbd9f34cf5891890ca07d26bad57d6add96dd34afc2"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_01/original/www.overstock.com.csv",
+      "bytes": 2068,
+      "sha256": "e7bf2b25c8f76c2ede87b5247371e553838f365e392ba5f66797267c606a780b"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_01/original/www.techbuy.com.au.csv",
+      "bytes": 30165,
+      "sha256": "ef78377cfc1f8e00730f11acb156dd705261738b5755e86cdecc75c7e7d07a3d"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_01/original/www.thenerds.net.csv",
+      "bytes": 37903,
+      "sha256": "f8235a1de38d6864426606573cf0ab7a6b4f948126690f0fd3a7b421689a87d4"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_01/original/www.tinydeal.com.csv",
+      "bytes": 2482,
+      "sha256": "50477c62566b55622a726849509185b32ec722710e76ba02d8e58e2b0c1c86ac"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_01/provenance.json",
+      "bytes": 6909,
+      "sha256": "69b84340f1c6f60654eb590da9b6c63ef3a642433a59e7dc0bde8c29b7c07db1"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_02/groundtruth.txt",
+      "bytes": 4660,
+      "sha256": "bf09d2a1da09cbfad397bfa3ae3a57ee75240a4f86d242e468ec53b6306581e4"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_02/original/www.bhphotovideo.com.csv",
+      "bytes": 3613,
+      "sha256": "0b6993eec4d901cd616a847d7ef4c8114599e53bb4002af34ab5135278100c18"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_02/original/www.bidorbuy.co.za.csv",
+      "bytes": 2019,
+      "sha256": "e98c9d2fb6f2e60306e874421d20687be904d1aae39074d196875c17916cce69"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_02/original/www.directdial.com.csv",
+      "bytes": 15422,
+      "sha256": "faf474ae4ef58fae1d9c6904452d7a502c767a40c15799f385a424b5911833d2"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_02/original/www.isupplyhub.com.csv",
+      "bytes": 22008,
+      "sha256": "ecc71cc5c3268fd60b319e98f2c3655f9842dde055c3dea8af3e163142284a29"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_02/original/www.mygofer.com.csv",
+      "bytes": 23912,
+      "sha256": "afba93a856ebcfafd609f0ed27063656e2858eb01c31f3ee0d6c0311bb41f6ce"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_02/original/www.staples.com.csv",
+      "bytes": 8699,
+      "sha256": "5ac17c9cc9a79deee315d57e8b4f4b4e71f5f8cae3374c4197bb6a24d0ee1544"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_02/original/www.tigerdirect.com.csv",
+      "bytes": 11327,
+      "sha256": "9519e7f0b91f5955602fb29a8e47e0de45b7d97c36f4d67da6aaee53eb182790"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_02/original/www.topendelectronic.co.uk.csv",
+      "bytes": 29715,
+      "sha256": "8bc26051dd116437f0816d858bf21953d02621e84c0329c6347d45f7ffd1f30b"
+    },
+    {
+      "path": "data/Alaska_Partition/notebook_test_02/provenance.json",
+      "bytes": 7892,
+      "sha256": "9ee9dc0329d65d41000645676744b89abbf493f3564776fd1735026b1d9f4fc1"
+    },
+    {
+      "path": "data/GDC/clinical/groundtruth.txt",
+      "bytes": 3294,
+      "sha256": "9107e6e7b4e1d2dde1d1a458c69363797798d3963943522c1d90717be9c7714d"
+    },
+    {
+      "path": "data/GDC/clinical/original/Cao.csv",
+      "bytes": 33577,
+      "sha256": "243f32026bb91794c0020652c13f9eb433c2137778da8cfeb4147db8695275ca"
+    },
+    {
+      "path": "data/GDC/clinical/original/Clark.csv",
+      "bytes": 6951,
+      "sha256": "66855e442681d9586d40dffd3e21f0d7b63b06e42b4ce2e194ccdcc808c10b08"
+    },
+    {
+      "path": "data/GDC/clinical/original/Dou.csv",
+      "bytes": 10013,
+      "sha256": "23241d0f6fdedf9cd379ce2294e701c664a3d47c7fc479a1a9239cf72d15b311"
+    },
+    {
+      "path": "data/GDC/clinical/original/Gillette.csv",
+      "bytes": 31040,
+      "sha256": "0c9e336860001dfd73b7366578cd5fd0939bf372b50ad1fb8ffde2df36fab9cb"
+    },
+    {
+      "path": "data/GDC/clinical/original/Huang.csv",
+      "bytes": 16768,
+      "sha256": "bb601f129333afb8a7b0050bb8b34db83637fc1c3d9ddd43d0ea73fe8fd504e8"
+    },
+    {
+      "path": "data/GDC/clinical/original/Krug.csv",
+      "bytes": 878,
+      "sha256": "8ba655f5f014204b3276d880f6f5e7b50467b2d9c36614549e5fb7aebf300926"
+    },
+    {
+      "path": "data/GDC/clinical/original/McDermott.csv",
+      "bytes": 7510,
+      "sha256": "34c096ea793d86bfb8534955ac2f97d7c3e19214244c1dcba57699af899028d9"
+    },
+    {
+      "path": "data/GDC/clinical/original/Satpathy.csv",
+      "bytes": 13283,
+      "sha256": "234eacad550c84d355f43e1081885d3788f726ae062f716ac36171bf5a4243f8"
+    },
+    {
+      "path": "data/GDC/clinical/original/Vasaikar.csv",
+      "bytes": 7249,
+      "sha256": "71e6fc54d9141dc26d128afd996f661f4315e197fbf45a300efb9dc257c670f5"
+    },
+    {
+      "path": "data/GDC/clinical/original/Wang.csv",
+      "bytes": 13803,
+      "sha256": "dfbbf4d1507433e940773289a7a5fb07258877a6f939bcb22782aec3f1e49dca"
+    },
+    {
+      "path": "data/GDC/clinical/provenance.json",
+      "bytes": 26097,
+      "sha256": "842323b5fac614902473e660143330fc7c79614161c6e0a45217f173e8eed314"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/groundtruth.txt",
+      "bytes": 2922,
+      "sha256": "3bc828eaf6ef71f745cef13de5c1417075321fde59e14ced2aa2cfc1091e68d8"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/oracle/Cao.csv",
+      "bytes": 33227,
+      "sha256": "9b4edf016cd931a53a82eeaf4bd2ac08f57f3fd6298c59b8afd8d68e4428e417"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/oracle/Clark.csv",
+      "bytes": 6951,
+      "sha256": "66855e442681d9586d40dffd3e21f0d7b63b06e42b4ce2e194ccdcc808c10b08"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/oracle/Dou.csv",
+      "bytes": 8119,
+      "sha256": "30db355bb5ba12eca9aa3e5d2cec0712842d58d1efb7a12ed51b53988c9a8562"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/oracle/Gillette.csv",
+      "bytes": 26281,
+      "sha256": "bc49db2690320b3563e39ee9d8ec29102f3e03f131514cfbb693acd2da876eb7"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/oracle/Huang.csv",
+      "bytes": 16239,
+      "sha256": "0cf86cfcfb8c816685873de75108d5d6e9adbd253c949eff37e2e162462a1eaf"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/oracle/Krug.csv",
+      "bytes": 878,
+      "sha256": "8ba655f5f014204b3276d880f6f5e7b50467b2d9c36614549e5fb7aebf300926"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/oracle/McDermott.csv",
+      "bytes": 6808,
+      "sha256": "2e2db9169a95d9862e94ac85ca88fa7c7a2d440b215e931fea153aa69aa0ef50"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/oracle/Satpathy.csv",
+      "bytes": 12864,
+      "sha256": "7367fb47e493a7b202759739bd4b256b9a94d6507c5cfc959b19e9fd6a960b3e"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/oracle/Vasaikar.csv",
+      "bytes": 7249,
+      "sha256": "71e6fc54d9141dc26d128afd996f661f4315e197fbf45a300efb9dc257c670f5"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/oracle/Wang.csv",
+      "bytes": 13198,
+      "sha256": "993b90527cfd73974be5f377fe7d19052ddb0c03644f6ec9b3acddd2ea19017b"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/original/Cao.csv",
+      "bytes": 21016,
+      "sha256": "5f9aebdb10c594dc1e0c2c3f2e0d9dd1dbbba283e17c71627a26990fab581df5"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/original/Clark.csv",
+      "bytes": 4512,
+      "sha256": "d23f100bdf94b483214a4412a1461fde60fa43096942c581f9c6ae6344b93bc1"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/original/Dou.csv",
+      "bytes": 5408,
+      "sha256": "1bb70931266d04f4bd6717ded0c64613507d2dc5e4daede362a3d04a80b5a43d"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/original/Gillette.csv",
+      "bytes": 16813,
+      "sha256": "38332a7478fb022d410c94ce5ccdc499c463132ad6a000373b9c92be5455ea06"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/original/Huang.csv",
+      "bytes": 9795,
+      "sha256": "d66dc00fad1453968399fc9d2dc57b6cd9d20d34260338bda422b1cf2db7b280"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/original/Krug.csv",
+      "bytes": 674,
+      "sha256": "c7a81d950a74bf01a217acd82024374891753a6640077bac8b860d93b39c8fa7"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/original/McDermott.csv",
+      "bytes": 4264,
+      "sha256": "8b838d22a84dd7ab5b18f41f7bef5dab23b9550e6b55914e1f993fe9970aa12d"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/original/Satpathy.csv",
+      "bytes": 8269,
+      "sha256": "746ba42fd4ecd4b9f14e95c1b89d203d6605063659a7ac65ac171f037d8cda4e"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/original/Vasaikar.csv",
+      "bytes": 4938,
+      "sha256": "754e29145840ff9fb4708fa28a94cbe2d9476df4aadba4df656d6f6e630eabe1"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/original/Wang.csv",
+      "bytes": 8949,
+      "sha256": "4ba4ef3b97020e237f4a87e6dfbac3d86a6d19cc8c81de01f8b4fb9b52d0e097"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.4_n200_s42/provenance.json",
+      "bytes": 207884,
+      "sha256": "ff64a596167a6f37a2670e4644fa3e9cc8ad386cc4975893d80c1b520b0a3dee"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/groundtruth.txt",
+      "bytes": 2922,
+      "sha256": "3bc828eaf6ef71f745cef13de5c1417075321fde59e14ced2aa2cfc1091e68d8"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/oracle/Cao.csv",
+      "bytes": 33227,
+      "sha256": "9b4edf016cd931a53a82eeaf4bd2ac08f57f3fd6298c59b8afd8d68e4428e417"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/oracle/Clark.csv",
+      "bytes": 6951,
+      "sha256": "66855e442681d9586d40dffd3e21f0d7b63b06e42b4ce2e194ccdcc808c10b08"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/oracle/Dou.csv",
+      "bytes": 8119,
+      "sha256": "30db355bb5ba12eca9aa3e5d2cec0712842d58d1efb7a12ed51b53988c9a8562"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/oracle/Gillette.csv",
+      "bytes": 26281,
+      "sha256": "bc49db2690320b3563e39ee9d8ec29102f3e03f131514cfbb693acd2da876eb7"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/oracle/Huang.csv",
+      "bytes": 16239,
+      "sha256": "0cf86cfcfb8c816685873de75108d5d6e9adbd253c949eff37e2e162462a1eaf"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/oracle/Krug.csv",
+      "bytes": 878,
+      "sha256": "8ba655f5f014204b3276d880f6f5e7b50467b2d9c36614549e5fb7aebf300926"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/oracle/McDermott.csv",
+      "bytes": 6808,
+      "sha256": "2e2db9169a95d9862e94ac85ca88fa7c7a2d440b215e931fea153aa69aa0ef50"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/oracle/Satpathy.csv",
+      "bytes": 12864,
+      "sha256": "7367fb47e493a7b202759739bd4b256b9a94d6507c5cfc959b19e9fd6a960b3e"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/oracle/Vasaikar.csv",
+      "bytes": 7249,
+      "sha256": "71e6fc54d9141dc26d128afd996f661f4315e197fbf45a300efb9dc257c670f5"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/oracle/Wang.csv",
+      "bytes": 13198,
+      "sha256": "993b90527cfd73974be5f377fe7d19052ddb0c03644f6ec9b3acddd2ea19017b"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/original/Cao.csv",
+      "bytes": 12205,
+      "sha256": "62d3147255b5c778b207ed7dca334a905a34d4153c1f6d20c6facc404ad3df93"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/original/Clark.csv",
+      "bytes": 2578,
+      "sha256": "2d1f03bede794908f76c19a14b09448b7a25d61a8a5c61344c6ddd480f8ade46"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/original/Dou.csv",
+      "bytes": 3396,
+      "sha256": "2c933dab8202afe4c135f18b616ce55af508ffe000ff56d2b8c956512734cfed"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/original/Gillette.csv",
+      "bytes": 9209,
+      "sha256": "02ec6118fcfd48544ed7bbacf35029fe4d35d44cdcc30d49ee0c7a46efd3f314"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/original/Huang.csv",
+      "bytes": 5513,
+      "sha256": "54f69621ec9513d9ebac57d56c08c566ca5b9eec1164451c4952e2cf47c8d0e6"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/original/Krug.csv",
+      "bytes": 576,
+      "sha256": "259c61608243ccd88760ed080141f65dea230e91393d0e36180f054d15c958cc"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/original/McDermott.csv",
+      "bytes": 2407,
+      "sha256": "8be356d4815f40d3ac482fd2a793f13c16b8ded7c221fd3951a71203b7c11791"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/original/Satpathy.csv",
+      "bytes": 4118,
+      "sha256": "a51c9d4e4cbcffb793a52764d7b9116bd747819fd4a82181f3f37c40f61ae013"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/original/Vasaikar.csv",
+      "bytes": 3117,
+      "sha256": "c5db06482dcc4d344512641e69837856cdc1d81e7448bd5525c82875a01d3b07"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/original/Wang.csv",
+      "bytes": 5043,
+      "sha256": "a315fd2a9533b8319efda08faa97dc23955cd1c5cc07212013495fc31878655c"
+    },
+    {
+      "path": "data/GDC_MCAR_Pilot/GDC_clinical_mcar_r0.7_n200_s42/provenance.json",
+      "bytes": 354479,
+      "sha256": "76b5f97e845005801745b5938de9ceef5d3ba881b07dbf2c5176aad62fa9e455"
+    },
+    {
+      "path": "data/MaDI/games_pilot300/groundtruth.txt",
+      "bytes": 667,
+      "sha256": "a696761ddefe7ff8d28efdad4907862dc0c7175162b59841da25b8b0d62243f9"
+    },
+    {
+      "path": "data/MaDI/games_pilot300/original/dbpedia.csv",
+      "bytes": 26314,
+      "sha256": "15b813a4531a05156aeed6ad70d069c4930d3592a1dba177ba5fe92aa24138e6"
+    },
+    {
+      "path": "data/MaDI/games_pilot300/original/metacritic.csv",
+      "bytes": 31764,
+      "sha256": "54a3d3c621fa1b7692e3ef192013900085056eb1e93422b3bb5e88a74637c1af"
+    },
+    {
+      "path": "data/MaDI/games_pilot300/original/sales.csv",
+      "bytes": 26420,
+      "sha256": "73480de8efc48d1721eade2e0d6238ac3a3f24e03ad271c3ee754e17af3a1da9"
+    },
+    {
+      "path": "data/MaDI/games_pilot300/provenance.json",
+      "bytes": 3514,
+      "sha256": "507312375865cb27f83908b131c9fa334495901ed96aeb332d1428bdaca7b1b6"
+    },
+    {
+      "path": "data/MaDI/music_pilot300/groundtruth.txt",
+      "bytes": 570,
+      "sha256": "f5fac413b6b87c66f3d0e5e3a4eb38c995726880af55fee7477ad249eafe7ba0"
+    },
+    {
+      "path": "data/MaDI/music_pilot300/original/discogs.csv",
+      "bytes": 88276,
+      "sha256": "9c46d3f7dbe5b5e24c77209b7d8f3f8243c522114c4f5440bd485b9b8639cb4d"
+    },
+    {
+      "path": "data/MaDI/music_pilot300/original/lastfm.csv",
+      "bytes": 40787,
+      "sha256": "accae4cb10b3a3c7c9d8bf5a99b9b3bade568e0d06d9126ed266bdf2a45ecae0"
+    },
+    {
+      "path": "data/MaDI/music_pilot300/original/musicbrainz.csv",
+      "bytes": 83397,
+      "sha256": "a83f648c49e992d4bba5759e46df5944dc068b6d6b307df2486140eeea86d633"
+    },
+    {
+      "path": "data/MaDI/music_pilot300/provenance.json",
+      "bytes": 3307,
+      "sha256": "eb1e4f975daf4fae691352663d97976f7e7d61a398f11b9ceec18b2668f7f94f"
+    },
+    {
+      "path": "data/MaDI/papers_pilot300/groundtruth.txt",
+      "bytes": 944,
+      "sha256": "02575448be371bca6f3f909877a9fcec03e4f510cc6b57c35bb4c507ff2e1b30"
+    },
+    {
+      "path": "data/MaDI/papers_pilot300/original/crossref.csv",
+      "bytes": 68390,
+      "sha256": "4b79628c50daf119d374c82b542ae296308d47caf1a433d2ff0b1e07d82d6d87"
+    },
+    {
+      "path": "data/MaDI/papers_pilot300/original/dblp.csv",
+      "bytes": 61754,
+      "sha256": "a414e0a3923496dc50239d4c0c19ada5c423f8e23cfbe45fc71ec9d48650cc90"
+    },
+    {
+      "path": "data/MaDI/papers_pilot300/original/open_alex.csv",
+      "bytes": 64324,
+      "sha256": "27aa99607e42531e27d14f32c7ad1b160b5d586ea0236674d9f8267770009f27"
+    },
+    {
+      "path": "data/MaDI/papers_pilot300/provenance.json",
+      "bytes": 4197,
+      "sha256": "16ce29e13a30f8cae2d7f27cd0e8375b43a8371a02db6c15b749b29ec6b950de"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_01_Event/groundtruth.txt",
+      "bytes": 559,
+      "sha256": "4714177c834b071fa3df57f06acef576fccc0904ebc327b5c9960e6d439ff507"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_01_Event/original/t_b426ebb27351.csv",
+      "bytes": 608,
+      "sha256": "f66690da625a3f6703e773cf3ec4fcad57df89b91dabe2a896e32e7e31a7d4da"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_01_Event/original/t_df1d1febe946.csv",
+      "bytes": 3240,
+      "sha256": "199231ef9ac2862bac93d8b327b1aa7d2194aa88a3a7bc5860a379b218fe84c6"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_01_Event/original/t_ece43db38541.csv",
+      "bytes": 18947,
+      "sha256": "b34d71eadfa6cc649ad064dc5d8fca518407136576c90b8b7e0ba082ea8fc38e"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_02_Hotel/groundtruth.txt",
+      "bytes": 507,
+      "sha256": "9ab845af6acce1ce16258b77f501391ff029619194e6752be8249db292f8c36e"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_02_Hotel/original/t_149c4549527d.csv",
+      "bytes": 34411,
+      "sha256": "2b84f34b0f08b69ef8ef22426ee3e0525fd4b21f4b9197f7a193780787428859"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_02_Hotel/original/t_3c965fd9555d.csv",
+      "bytes": 4662,
+      "sha256": "c0367cd0e83f1b0171afc2da398818df667bf0cab5ec73e11948f87d5ab060ed"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_02_Hotel/original/t_4896c4a8a50f.csv",
+      "bytes": 26571,
+      "sha256": "7d774915c9a71a02f7d59d6c4d51b91f2897cff99e5a4eb33effb1f3d298cc07"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_03_LocalBusiness/groundtruth.txt",
+      "bytes": 456,
+      "sha256": "7457084c38d08e9f9967ad926c716a4d9d0bdae047dc9f5a7af46349fb7fd911"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_03_LocalBusiness/original/t_5e8c2e888ab0.csv",
+      "bytes": 8717,
+      "sha256": "a0cfa650576eaf4186f2ff535ac4f1d60651464839290ef40e9e10ade4328835"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_03_LocalBusiness/original/t_7cfefd8936fd.csv",
+      "bytes": 4834,
+      "sha256": "6e8b16aceaf11477d51e32c641b0aa972b428f7419985e1ee74d7226aeedb66c"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_03_LocalBusiness/original/t_b675ff967a70.csv",
+      "bytes": 12685,
+      "sha256": "5623d46d349c6a6ec7f8ef78eb6d468f3a7f400b89cac6c3cb1e42b2d5349fd6"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_04_Product/groundtruth.txt",
+      "bytes": 412,
+      "sha256": "e6c76ada8d7dab590c03f2324cc30856de41d78806833135500f22a08c6cb4a5"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_04_Product/original/t_1733f4e94649.csv",
+      "bytes": 4586,
+      "sha256": "26a142d4c1766d0d9445eea492cfe12b6c195d2f313e01cc1bec4dfb0b5294ee"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_04_Product/original/t_5787ddd71257.csv",
+      "bytes": 33007,
+      "sha256": "ecc850ca4dcd3c375e50f954195b0a8e26666898463ca4a400d386bedb52d369"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_04_Product/original/t_66efa8f36bfa.csv",
+      "bytes": 59178,
+      "sha256": "7ca8193614a8eb24d25d742d70324f2a323d63a282c141540f733cd2bafdc2d2"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_05_Recipe/groundtruth.txt",
+      "bytes": 590,
+      "sha256": "025cd6d6a3920abaf37d39d05b79dc18aaec9a2de192b4a2b95e47661b5eafdf"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_05_Recipe/original/t_04fc74833a82.csv",
+      "bytes": 462,
+      "sha256": "717610b3d5de8022e6923dced981d4e6cc51a67c42196e85a9715526fd85fade"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_05_Recipe/original/t_84ae79ecf15f.csv",
+      "bytes": 50457,
+      "sha256": "ea9f7dce8fd11ff5950c8d21047463fc116bb1c0da76be643a97372f6618b631"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_05_Recipe/original/t_bfc9e5ca92e6.csv",
+      "bytes": 5034,
+      "sha256": "2e0e06c6935790247f152b58a3995eb330fd7cec5a52bc85445e43ac1c9bb923"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_06_Hotel/groundtruth.txt",
+      "bytes": 742,
+      "sha256": "d4aaae5d7a1c9ff9d7ef240964bef77fe594641ea1386bdac196ec6d4dde950b"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_06_Hotel/original/t_2334176c61d5.csv",
+      "bytes": 44722,
+      "sha256": "edf1daec694136921aa61cf736d23bd173213141640253c6b7e84969612c4b2e"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_06_Hotel/original/t_d03e174a25fa.csv",
+      "bytes": 109288,
+      "sha256": "180a3e7365003adad6466a998a4d545d09e9a681ff711a7a167bd82d864c153a"
+    },
+    {
+      "path": "data/SOTAB_CPA/fit_06_Hotel/original/t_ee2b23c4b9e9.csv",
+      "bytes": 188307,
+      "sha256": "c4eb417324f80a7294533750f2fcc00e99dda6522a890ceee3a46705b78e146a"
+    },
+    {
+      "path": "data/SOTAB_CPA/provenance.json",
+      "bytes": 70276,
+      "sha256": "dfab8cabf527c933e736e4f799379efb07dc7f4ffe8ba80865edab02b958c63c"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_01_Book/groundtruth.txt",
+      "bytes": 481,
+      "sha256": "2a15d29c29686fae4fb587d34ca6963f7b2d8742d2119e64b4ee83745a278ae2"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_01_Book/original/t_5d1b2f1f5916.csv",
+      "bytes": 5343,
+      "sha256": "c5c08a0f8180df7139e33842d2e7970b9c74c5e9f138bfbb31e8f0bca2302cc5"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_01_Book/original/t_7b0d9b8882f4.csv",
+      "bytes": 29046,
+      "sha256": "216e03c161ae05680fb16e7d1f13c9e3faaddc002b6f9873f65d54d1c0361f56"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_01_Book/original/t_e1feeba24cfd.csv",
+      "bytes": 17265,
+      "sha256": "444025ce2fc55166e405b11acbe050cce3f8673b99083112f1c30fec1f2706da"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_02_Event/groundtruth.txt",
+      "bytes": 509,
+      "sha256": "773a40ed9620fffac8d87c1e50c579e0dcf356981b93ac1072551a25f99fb571"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_02_Event/original/t_6b8650cc8697.csv",
+      "bytes": 1814,
+      "sha256": "da24685e82d7f5a0e1084387ebf4d27154a0ca15f63b781cecad5ef5a6f1b1e5"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_02_Event/original/t_8d79733b5dad.csv",
+      "bytes": 4982,
+      "sha256": "2bf299f8953d70d784915a6b3aeb8277ebd5ef07fd90444611424bb40af1c9ba"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_02_Event/original/t_bb56159bbfec.csv",
+      "bytes": 1856,
+      "sha256": "f853a44c5e10b8ada601c8cfa5aaac0fa2cb97c132c40e83e222cd564c1f378f"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_03_Hotel/groundtruth.txt",
+      "bytes": 684,
+      "sha256": "c3c6a31e0264c631913e8798172d15b7f90bca550b964e4105ed968895ef6c4d"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_03_Hotel/original/t_3b60ead90402.csv",
+      "bytes": 14990,
+      "sha256": "aaf5585798f30f45d0e4befce7dbd48aaa1817aa88a443b3953adb5e417d86dd"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_03_Hotel/original/t_5641db94a3d9.csv",
+      "bytes": 137177,
+      "sha256": "ec1f491866552f168f9c4243be631ce9507d55233d69748f5d56d5942417c5cf"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_03_Hotel/original/t_db64352b977c.csv",
+      "bytes": 7482,
+      "sha256": "5c711291a646e31e03bb8b08794ce1e5baae662875070e18f43250c4635236dc"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_04_LocalBusiness/groundtruth.txt",
+      "bytes": 432,
+      "sha256": "95d867b8beb515d95f8531bc6b258e82d4f2a10509ddb0b6eaa2e2a88a1b33ac"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_04_LocalBusiness/original/t_190940639e97.csv",
+      "bytes": 664,
+      "sha256": "0b3b8899608087859acbcddb2344c22bb7295348f807af4ef977886ce27f19a7"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_04_LocalBusiness/original/t_36532b947570.csv",
+      "bytes": 2773,
+      "sha256": "e9864435779094bb771f6b1d130357d663ddca4ffe06d1f1412c10c9e18dc01b"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_04_LocalBusiness/original/t_799f8775d3fa.csv",
+      "bytes": 10764,
+      "sha256": "aa65128468b7788d086d880a4d87039dc9d47c338b1107f0ff10c34ad75e83b7"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_05_Movie/groundtruth.txt",
+      "bytes": 435,
+      "sha256": "e1283a51f8e81854d57709ebe6d2113f80022c32f656f0faf14dcebe0e7d51a1"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_05_Movie/original/t_536350629d54.csv",
+      "bytes": 29887,
+      "sha256": "061e8552cc0fbc80b88357bc1bf3042dcad45de35dc5be6727cbc774e0c41a0a"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_05_Movie/original/t_5e4426da8317.csv",
+      "bytes": 23616,
+      "sha256": "0499d4e68f6c51f906fe08af8fe6b885187e3754b213108f80f4763e484d2c95"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_05_Movie/original/t_e15c2e87aa2b.csv",
+      "bytes": 81347,
+      "sha256": "8b9dc1cc71f889c1da7a31f95565a14da899d3b7e6234667246642e9dd121bb9"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_06_Person/groundtruth.txt",
+      "bytes": 372,
+      "sha256": "607c18ca294a5c1b709c36d53344c50e6b8be8f9e4f3593186141023c47fe66b"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_06_Person/original/t_1eb61b94456f.csv",
+      "bytes": 2900,
+      "sha256": "345fd079700739e0e8ade221f5f64fc83746851a802e8b634225c62663de88dd"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_06_Person/original/t_5eaae12454c7.csv",
+      "bytes": 3389,
+      "sha256": "6ed46dcdabc46f14145db7fa6f207a8d28bcb7db55f6c0db843b100aefe137ab"
+    },
+    {
+      "path": "data/SOTAB_CPA/test_06_Person/original/t_f5cde0b20847.csv",
+      "bytes": 2168,
+      "sha256": "3226a26fe7b634fcff6cc3a09eea287af7841aba72f1bb8a6a9eee5c189b0068"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_01_Hotel/groundtruth.txt",
+      "bytes": 905,
+      "sha256": "0a91d773ce455ee5bdfd39ec0552a22d5c5b87fc710d83564c5b6a81520cccb5"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_01_Hotel/original/t_03ea9f0d6517.csv",
+      "bytes": 7773,
+      "sha256": "0210178730ef8895eb46cac4e99b42fd407f81e250b920979916e96b465aa50f"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_01_Hotel/original/t_773c09dd023c.csv",
+      "bytes": 93005,
+      "sha256": "9271472bd8ec6aa8da1b59f84f2a380c6cee41d8f0198556c211c15523987d98"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_01_Hotel/original/t_b97f62c4ab6f.csv",
+      "bytes": 23633,
+      "sha256": "969bd0f9451c8067ee2232d0aaf754d0e074a744667db149b4c97e3955842f22"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_02_LocalBusiness/groundtruth.txt",
+      "bytes": 385,
+      "sha256": "579b9c4697517d5e7604e266e234a288bf41f946e2db5e49ecb09ddfb6c3f72f"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_02_LocalBusiness/original/t_3e8fb1347000.csv",
+      "bytes": 32949,
+      "sha256": "3c3d3122ee8e93f3e99a079bc77a87e6f7e594e280b8378a8f4f3a4f3cde2f19"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_02_LocalBusiness/original/t_e56d218214e6.csv",
+      "bytes": 47930,
+      "sha256": "fcf48ab517cfe9f779825fecd74aa115557e7d14332e47cfeadafa3d30ab88db"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_02_LocalBusiness/original/t_f518c0964314.csv",
+      "bytes": 348637,
+      "sha256": "679c1ec0f8d093fc53e560d6ee3f06d1d5929a1bec8cab2c8216a496ab7ebe5f"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_03_Movie/groundtruth.txt",
+      "bytes": 580,
+      "sha256": "6126550a84620e32840f149583b3741b6529f97b73665012a5e9053e9e414b39"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_03_Movie/original/t_978006ea9313.csv",
+      "bytes": 9964,
+      "sha256": "3eb1df3b6ac000320f57063734ff9416c207f01cc3b43b20452f7083724055aa"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_03_Movie/original/t_aaa349f13d0a.csv",
+      "bytes": 8391,
+      "sha256": "be80be0f10d812fe2853acbd3bba6c6b514b815717b18af1dbc77d32e03e08cb"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_03_Movie/original/t_f546ce0112eb.csv",
+      "bytes": 17145,
+      "sha256": "e63dbaf6ac85464052398da2c7ff0ae42708b8cf3706b36f34f03dab28b2e7b7"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_04_Person/groundtruth.txt",
+      "bytes": 408,
+      "sha256": "620ab0cbdc7605e244a5bf80e320158c99e62402ee66dc636bf51fd5a5b152fe"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_04_Person/original/t_43e8603e39be.csv",
+      "bytes": 5094,
+      "sha256": "0decc8eb92946faffd7a8cda706482d2d72ddf2f9751937db102120afeba4937"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_04_Person/original/t_496151e2dc37.csv",
+      "bytes": 30816,
+      "sha256": "7050a0b81b91666a419dceaff988b34f32acf7768946efae791af3ffae724457"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_04_Person/original/t_5818d7b40fe0.csv",
+      "bytes": 12052,
+      "sha256": "2d8518dd5deff63b5fcafc09ed94805e8f61884ef7a2f4d1e9f7b38b31714017"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_05_Product/groundtruth.txt",
+      "bytes": 348,
+      "sha256": "abcd241609c2ecbafaf2cbe57d75bfa2f324d206143705c92abbfaa867505d2a"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_05_Product/original/t_579160badc72.csv",
+      "bytes": 7707,
+      "sha256": "793fbdb88cc764fe0ed588ae957f287dd05d8dd99db560d8962c4c246abdaf7f"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_05_Product/original/t_9db8af3a6a8a.csv",
+      "bytes": 7901,
+      "sha256": "fa90d500a5612a3ef5529f2bd33e2677abf3b754008344593f52d87f50798255"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_05_Product/original/t_e716154ef031.csv",
+      "bytes": 25094,
+      "sha256": "c35b4994a416e1e5e1204425f2966e74b2bbb579e839abc0b574f4d92be00086"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_06_Recipe/groundtruth.txt",
+      "bytes": 505,
+      "sha256": "2a45f54754b148edbfe04fcbe64a2cc4b0bc657632a5bd1717cdbda42dc58b44"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_06_Recipe/original/t_3965ee2a2e74.csv",
+      "bytes": 8920,
+      "sha256": "3bb62620a0e8df6cf9d57fcb986b3d2244cb24d6bf74333e53dcb13839921a7c"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_06_Recipe/original/t_5f5ae1bc6f7c.csv",
+      "bytes": 48135,
+      "sha256": "36743623c9a84d5170193221099fa46646dc9b962421a03459931b157a86c84d"
+    },
+    {
+      "path": "data/SOTAB_CPA/validation_06_Recipe/original/t_ffdb5887c499.csv",
+      "bytes": 35709,
+      "sha256": "203d29b013b15a083200266e9a3d8d71f0078ed8e30f82c0f50c7fadb7dd1315"
+    },
+    {
+      "path": "data/SOTAB_K12/provenance.json",
+      "bytes": 27267,
+      "sha256": "717740852d0d91d871e3239fcc050e37b38340971226fb127558c5b25479d068"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/groundtruth.txt",
+      "bytes": 1817,
+      "sha256": "115c07bf50c3bbe92815f7a12b1c2d975331d0e66f3d2e1dfb29e4aeea50b6e1"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_3d9deef3bbd9.csv",
+      "bytes": 6085,
+      "sha256": "8ea6b7f13dba83b27bd2f50cf79024625a727b68bcf30c034e82313ec491c262"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_4bb60d322d0f.csv",
+      "bytes": 91487,
+      "sha256": "dee19d01d2f7100d93d1a75510d0132caa51991cb62a7746c1f3bc76ff3c5ef4"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_51340f4bf511.csv",
+      "bytes": 20941,
+      "sha256": "f5da797868c740de0f3e7b42f0fc01b8558b3ffaed30a2054471e24e45d53ba5"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_536350629d54.csv",
+      "bytes": 29887,
+      "sha256": "061e8552cc0fbc80b88357bc1bf3042dcad45de35dc5be6727cbc774e0c41a0a"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_5e4426da8317.csv",
+      "bytes": 23616,
+      "sha256": "0499d4e68f6c51f906fe08af8fe6b885187e3754b213108f80f4763e484d2c95"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_5e8ea996075e.csv",
+      "bytes": 8300,
+      "sha256": "b7fe0984d3cef95dd968e686e202a70e086af28fd96261189bcce270fba1d29d"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_9741582f0699.csv",
+      "bytes": 55240,
+      "sha256": "0647927f1837f2d7738ebcbb7abff138044fb365fa54b01f35f62a36b9461080"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_d54fec472a68.csv",
+      "bytes": 44715,
+      "sha256": "fb125d643eaad688dfd39f353b861f704a76c4d8b1964ba8ec23c00939d7b044"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_e15c2e87aa2b.csv",
+      "bytes": 81347,
+      "sha256": "8b9dc1cc71f889c1da7a31f95565a14da899d3b7e6234667246642e9dd121bb9"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_e45c66310457.csv",
+      "bytes": 12805,
+      "sha256": "e6ca0c2b61d6293c446e7bc48ce4e7a30b786761ccdcbb938d0d4322f4bc5188"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_ef59e86a0fb0.csv",
+      "bytes": 53981,
+      "sha256": "d777e32a2012914b6235d3c6c008b9c010e50096c9be741439aae291ceafb607"
+    },
+    {
+      "path": "data/SOTAB_K12/test_01_Movie/original/t_f663ba64ef37.csv",
+      "bytes": 21224,
+      "sha256": "f096bc48f69c40dc943fd9f152d55635a5360587518b0e709b60043c0445ee27"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/groundtruth.txt",
+      "bytes": 1205,
+      "sha256": "c802fbfc006bcee2dfdfbac0e6780bec24b519bfe9bd6d7de5355f467af0ed42"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_1eb61b94456f.csv",
+      "bytes": 2900,
+      "sha256": "345fd079700739e0e8ade221f5f64fc83746851a802e8b634225c62663de88dd"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_5a177e9e42c5.csv",
+      "bytes": 1308,
+      "sha256": "fe8dc17ba1b7e63fdcb4af544fe9f71efdaa17b7c8ee562263e2c17afe823ff3"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_5eaae12454c7.csv",
+      "bytes": 3389,
+      "sha256": "6ed46dcdabc46f14145db7fa6f207a8d28bcb7db55f6c0db843b100aefe137ab"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_6c29f65fa0c3.csv",
+      "bytes": 3652,
+      "sha256": "7714d82de03ad3b147369fc9ba416c84b00812c84646b36b6de7258e79587106"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_798b4797523a.csv",
+      "bytes": 2090,
+      "sha256": "a985e474430ad8915e64f5685599a981cf3bb8fad7698f42c0a2f30e5a18bea8"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_88d85226b0ba.csv",
+      "bytes": 2043,
+      "sha256": "533e6de7897ac895b66d08e4d21ffea0471c92112e35ad29ff52cedc89ebc0ce"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_899de9062913.csv",
+      "bytes": 12211,
+      "sha256": "90d2af4ffb50d08aa834f09637aae94219a59fa9dce1e9ec3f3168be7b2c8f91"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_8a0ccaf1b40f.csv",
+      "bytes": 3089,
+      "sha256": "69c92e01e628b4fcd71ede87a64d0268d390dcf682dca7e07c52ba6c914e752f"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_aa801414824f.csv",
+      "bytes": 9388,
+      "sha256": "967a713154d6bd1954b2156c117d1a9540ce952611d78c6825b8cc5400049fe9"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_d4144c54f9a0.csv",
+      "bytes": 1586,
+      "sha256": "11ed81837faea3df481a7596e1c18378791f45f42d19f63e49f11d5efba4e8c2"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_e12e801ffe3c.csv",
+      "bytes": 5709,
+      "sha256": "25a265c5dafb514280a5d591d823e3cb876f26f09ce69441430f864f9f94c7b4"
+    },
+    {
+      "path": "data/SOTAB_K12/test_02_Person/original/t_f5cde0b20847.csv",
+      "bytes": 2168,
+      "sha256": "3226a26fe7b634fcff6cc3a09eea287af7841aba72f1bb8a6a9eee5c189b0068"
+    },
+    {
+      "path": "data/SOTAB_K5/provenance.json",
+      "bytes": 36567,
+      "sha256": "d4448f92068dc74feb592b5ee566603deac8fa0114aa472a22f4680b09e89d90"
+    },
+    {
+      "path": "data/SOTAB_K5/test_01_Book/groundtruth.txt",
+      "bytes": 734,
+      "sha256": "1df0a866c5684b9146e9f38f072fd32e1d6d862a1143dc6b9933fd2e5fc3fdb2"
+    },
+    {
+      "path": "data/SOTAB_K5/test_01_Book/original/t_5d1b2f1f5916.csv",
+      "bytes": 5343,
+      "sha256": "c5c08a0f8180df7139e33842d2e7970b9c74c5e9f138bfbb31e8f0bca2302cc5"
+    },
+    {
+      "path": "data/SOTAB_K5/test_01_Book/original/t_7b0d9b8882f4.csv",
+      "bytes": 29046,
+      "sha256": "216e03c161ae05680fb16e7d1f13c9e3faaddc002b6f9873f65d54d1c0361f56"
+    },
+    {
+      "path": "data/SOTAB_K5/test_01_Book/original/t_b7e230e09115.csv",
+      "bytes": 26983,
+      "sha256": "509407d84acc52eb1d56f33faeddde6b275b33117dd68479dad61d6c61595a6e"
+    },
+    {
+      "path": "data/SOTAB_K5/test_01_Book/original/t_e1feeba24cfd.csv",
+      "bytes": 17265,
+      "sha256": "444025ce2fc55166e405b11acbe050cce3f8673b99083112f1c30fec1f2706da"
+    },
+    {
+      "path": "data/SOTAB_K5/test_01_Book/original/t_f2955d450e86.csv",
+      "bytes": 17119,
+      "sha256": "ca97f1cc9d4862d09a7a6ae6c04da7a07fc1faa128ce5f852095a6adedf70d7a"
+    },
+    {
+      "path": "data/SOTAB_K5/test_02_Event/groundtruth.txt",
+      "bytes": 779,
+      "sha256": "31c1e29068d3ad826d18075d3d7d2ada53c695a758b5c695e2b0f42b6832784f"
+    },
+    {
+      "path": "data/SOTAB_K5/test_02_Event/original/t_0d9b55c04010.csv",
+      "bytes": 1571,
+      "sha256": "7041a413e6d18bef1adab46074f3f35255e0081c09ff26759ff5ff39659f3aed"
+    },
+    {
+      "path": "data/SOTAB_K5/test_02_Event/original/t_6b8650cc8697.csv",
+      "bytes": 1814,
+      "sha256": "da24685e82d7f5a0e1084387ebf4d27154a0ca15f63b781cecad5ef5a6f1b1e5"
+    },
+    {
+      "path": "data/SOTAB_K5/test_02_Event/original/t_72ddbf5a47d8.csv",
+      "bytes": 1100,
+      "sha256": "91bbb61670fe80efae0f1be484b7e06a85fd6c362b099590be2e5e9e5bd82eda"
+    },
+    {
+      "path": "data/SOTAB_K5/test_02_Event/original/t_8d79733b5dad.csv",
+      "bytes": 4982,
+      "sha256": "2bf299f8953d70d784915a6b3aeb8277ebd5ef07fd90444611424bb40af1c9ba"
+    },
+    {
+      "path": "data/SOTAB_K5/test_02_Event/original/t_e98fc74b9f85.csv",
+      "bytes": 4765,
+      "sha256": "e93eed4200257ddd2e441158000356e19a5e9b68f8d7f3c034d2c1e57be3fa9f"
+    },
+    {
+      "path": "data/SOTAB_K5/test_03_Hotel/groundtruth.txt",
+      "bytes": 1026,
+      "sha256": "4a560958e9d0434f59ceb1532fc4e9002d82d10fe42fa1dfb4ecf8c5bdfd9e7a"
+    },
+    {
+      "path": "data/SOTAB_K5/test_03_Hotel/original/t_342a2f704f8a.csv",
+      "bytes": 37875,
+      "sha256": "fbd68f7fe8214506a4bbab5faceac29e0fae6a4d579ffd663a838b0c28147b95"
+    },
+    {
+      "path": "data/SOTAB_K5/test_03_Hotel/original/t_3b60ead90402.csv",
+      "bytes": 14990,
+      "sha256": "aaf5585798f30f45d0e4befce7dbd48aaa1817aa88a443b3953adb5e417d86dd"
+    },
+    {
+      "path": "data/SOTAB_K5/test_03_Hotel/original/t_5641db94a3d9.csv",
+      "bytes": 137177,
+      "sha256": "ec1f491866552f168f9c4243be631ce9507d55233d69748f5d56d5942417c5cf"
+    },
+    {
+      "path": "data/SOTAB_K5/test_03_Hotel/original/t_82865667b04d.csv",
+      "bytes": 30240,
+      "sha256": "12c690976f7c1a5f1a70eed5159db553b61e04e352ce526633ce230c589adabe"
+    },
+    {
+      "path": "data/SOTAB_K5/test_03_Hotel/original/t_db64352b977c.csv",
+      "bytes": 7482,
+      "sha256": "5c711291a646e31e03bb8b08794ce1e5baae662875070e18f43250c4635236dc"
+    },
+    {
+      "path": "data/SOTAB_K5/test_04_LocalBusiness/groundtruth.txt",
+      "bytes": 823,
+      "sha256": "bb7052c4e6d5f405a939cdbed7d2a19406bcc86c4b327b0b0007153099572a6e"
+    },
+    {
+      "path": "data/SOTAB_K5/test_04_LocalBusiness/original/t_190940639e97.csv",
+      "bytes": 664,
+      "sha256": "0b3b8899608087859acbcddb2344c22bb7295348f807af4ef977886ce27f19a7"
+    },
+    {
+      "path": "data/SOTAB_K5/test_04_LocalBusiness/original/t_36532b947570.csv",
+      "bytes": 2773,
+      "sha256": "e9864435779094bb771f6b1d130357d663ddca4ffe06d1f1412c10c9e18dc01b"
+    },
+    {
+      "path": "data/SOTAB_K5/test_04_LocalBusiness/original/t_718f8ce68a9b.csv",
+      "bytes": 20000,
+      "sha256": "cd9d622d39e10908e242ae04ad305fff3072af7fae62bf471378dc9112a7bf95"
+    },
+    {
+      "path": "data/SOTAB_K5/test_04_LocalBusiness/original/t_799f8775d3fa.csv",
+      "bytes": 10764,
+      "sha256": "aa65128468b7788d086d880a4d87039dc9d47c338b1107f0ff10c34ad75e83b7"
+    },
+    {
+      "path": "data/SOTAB_K5/test_04_LocalBusiness/original/t_85f138af8b2f.csv",
+      "bytes": 303577,
+      "sha256": "b69dfb51dc51510fd26750d4aa6dfd4220e2bb40fea6e38269a3362534d28204"
+    },
+    {
+      "path": "data/SOTAB_K5/test_05_Movie/groundtruth.txt",
+      "bytes": 775,
+      "sha256": "29b9dffb3ba9035d2cba71433e65a1148f995b20dcc9cda53443751795c197b2"
+    },
+    {
+      "path": "data/SOTAB_K5/test_05_Movie/original/t_536350629d54.csv",
+      "bytes": 29887,
+      "sha256": "061e8552cc0fbc80b88357bc1bf3042dcad45de35dc5be6727cbc774e0c41a0a"
+    },
+    {
+      "path": "data/SOTAB_K5/test_05_Movie/original/t_5e4426da8317.csv",
+      "bytes": 23616,
+      "sha256": "0499d4e68f6c51f906fe08af8fe6b885187e3754b213108f80f4763e484d2c95"
+    },
+    {
+      "path": "data/SOTAB_K5/test_05_Movie/original/t_d54fec472a68.csv",
+      "bytes": 44715,
+      "sha256": "fb125d643eaad688dfd39f353b861f704a76c4d8b1964ba8ec23c00939d7b044"
+    },
+    {
+      "path": "data/SOTAB_K5/test_05_Movie/original/t_e15c2e87aa2b.csv",
+      "bytes": 81347,
+      "sha256": "8b9dc1cc71f889c1da7a31f95565a14da899d3b7e6234667246642e9dd121bb9"
+    },
+    {
+      "path": "data/SOTAB_K5/test_05_Movie/original/t_f663ba64ef37.csv",
+      "bytes": 21224,
+      "sha256": "f096bc48f69c40dc943fd9f152d55635a5360587518b0e709b60043c0445ee27"
+    },
+    {
+      "path": "data/SOTAB_K5/test_06_Person/groundtruth.txt",
+      "bytes": 494,
+      "sha256": "27377bf0f8995f440cb5b8df26c60c07d9e4efa3ac7f1a0320bb566f87f408b8"
+    },
+    {
+      "path": "data/SOTAB_K5/test_06_Person/original/t_1eb61b94456f.csv",
+      "bytes": 2900,
+      "sha256": "345fd079700739e0e8ade221f5f64fc83746851a802e8b634225c62663de88dd"
+    },
+    {
+      "path": "data/SOTAB_K5/test_06_Person/original/t_6c29f65fa0c3.csv",
+      "bytes": 3652,
+      "sha256": "7714d82de03ad3b147369fc9ba416c84b00812c84646b36b6de7258e79587106"
+    },
+    {
+      "path": "data/SOTAB_K5/test_06_Person/original/t_798b4797523a.csv",
+      "bytes": 2090,
+      "sha256": "a985e474430ad8915e64f5685599a981cf3bb8fad7698f42c0a2f30e5a18bea8"
+    },
+    {
+      "path": "data/SOTAB_K5/test_06_Person/original/t_e12e801ffe3c.csv",
+      "bytes": 5709,
+      "sha256": "25a265c5dafb514280a5d591d823e3cb876f26f09ce69441430f864f9f94c7b4"
+    },
+    {
+      "path": "data/SOTAB_K5/test_06_Person/original/t_f5cde0b20847.csv",
+      "bytes": 2168,
+      "sha256": "3226a26fe7b634fcff6cc3a09eea287af7841aba72f1bb8a6a9eee5c189b0068"
+    },
+    {
+      "path": "data/SOTAB_K8/provenance.json",
+      "bytes": 58360,
+      "sha256": "ece3b7543c24c9ab958678ef50c35a1c689a85c5fe602859d09a936f66d490d2"
+    },
+    {
+      "path": "data/SOTAB_K8/test_01_Book/groundtruth.txt",
+      "bytes": 1216,
+      "sha256": "057471b60ac5f58cd5ebaeff3c4fe711e6b178b113ed80c3664898d607c35b4b"
+    },
+    {
+      "path": "data/SOTAB_K8/test_01_Book/original/t_5a230415cd54.csv",
+      "bytes": 8508,
+      "sha256": "f74f9eb607f91cc0791944af10cf564ce7cbfea5dfee6266dd4f946b2b5c4a01"
+    },
+    {
+      "path": "data/SOTAB_K8/test_01_Book/original/t_5d1b2f1f5916.csv",
+      "bytes": 5343,
+      "sha256": "c5c08a0f8180df7139e33842d2e7970b9c74c5e9f138bfbb31e8f0bca2302cc5"
+    },
+    {
+      "path": "data/SOTAB_K8/test_01_Book/original/t_7b0d9b8882f4.csv",
+      "bytes": 29046,
+      "sha256": "216e03c161ae05680fb16e7d1f13c9e3faaddc002b6f9873f65d54d1c0361f56"
+    },
+    {
+      "path": "data/SOTAB_K8/test_01_Book/original/t_b7e230e09115.csv",
+      "bytes": 26983,
+      "sha256": "509407d84acc52eb1d56f33faeddde6b275b33117dd68479dad61d6c61595a6e"
+    },
+    {
+      "path": "data/SOTAB_K8/test_01_Book/original/t_d148560707e3.csv",
+      "bytes": 321342,
+      "sha256": "c530c1e44056d93c051a7ed9edfc8dd3351cbe05afe104f4d09f226b91ed13f3"
+    },
+    {
+      "path": "data/SOTAB_K8/test_01_Book/original/t_d1a6076ae33a.csv",
+      "bytes": 14878,
+      "sha256": "4afb13a0275cee79d1c6c06a24c918e7858c0d26436381d713df8d09b7d81465"
+    },
+    {
+      "path": "data/SOTAB_K8/test_01_Book/original/t_e1feeba24cfd.csv",
+      "bytes": 17265,
+      "sha256": "444025ce2fc55166e405b11acbe050cce3f8673b99083112f1c30fec1f2706da"
+    },
+    {
+      "path": "data/SOTAB_K8/test_01_Book/original/t_f2955d450e86.csv",
+      "bytes": 17119,
+      "sha256": "ca97f1cc9d4862d09a7a6ae6c04da7a07fc1faa128ce5f852095a6adedf70d7a"
+    },
+    {
+      "path": "data/SOTAB_K8/test_02_Event/groundtruth.txt",
+      "bytes": 1279,
+      "sha256": "1b12323aa99bc15cad9a46f9b9bf6ce21c46e0e53655d23278e942b30c818c6e"
+    },
+    {
+      "path": "data/SOTAB_K8/test_02_Event/original/t_0d9b55c04010.csv",
+      "bytes": 1571,
+      "sha256": "7041a413e6d18bef1adab46074f3f35255e0081c09ff26759ff5ff39659f3aed"
+    },
+    {
+      "path": "data/SOTAB_K8/test_02_Event/original/t_6b8650cc8697.csv",
+      "bytes": 1814,
+      "sha256": "da24685e82d7f5a0e1084387ebf4d27154a0ca15f63b781cecad5ef5a6f1b1e5"
+    },
+    {
+      "path": "data/SOTAB_K8/test_02_Event/original/t_72ddbf5a47d8.csv",
+      "bytes": 1100,
+      "sha256": "91bbb61670fe80efae0f1be484b7e06a85fd6c362b099590be2e5e9e5bd82eda"
+    },
+    {
+      "path": "data/SOTAB_K8/test_02_Event/original/t_8d79733b5dad.csv",
+      "bytes": 4982,
+      "sha256": "2bf299f8953d70d784915a6b3aeb8277ebd5ef07fd90444611424bb40af1c9ba"
+    },
+    {
+      "path": "data/SOTAB_K8/test_02_Event/original/t_a829f4a92e0c.csv",
+      "bytes": 3123,
+      "sha256": "1e59a11085128ec06d0d421f207c11029a3ed5559805ef1844e61545cd7d24c4"
+    },
+    {
+      "path": "data/SOTAB_K8/test_02_Event/original/t_bb56159bbfec.csv",
+      "bytes": 1856,
+      "sha256": "f853a44c5e10b8ada601c8cfa5aaac0fa2cb97c132c40e83e222cd564c1f378f"
+    },
+    {
+      "path": "data/SOTAB_K8/test_02_Event/original/t_e98fc74b9f85.csv",
+      "bytes": 4765,
+      "sha256": "e93eed4200257ddd2e441158000356e19a5e9b68f8d7f3c034d2c1e57be3fa9f"
+    },
+    {
+      "path": "data/SOTAB_K8/test_02_Event/original/t_f734095f6977.csv",
+      "bytes": 5124,
+      "sha256": "91a5941f9aed6994efe375d1addd30f15bead2152bc0fbf802b4acb67c4e2a85"
+    },
+    {
+      "path": "data/SOTAB_K8/test_03_LocalBusiness/groundtruth.txt",
+      "bytes": 1173,
+      "sha256": "68df69ff733a53f01953d1bbec51d11aa23255bb55ea0a249d29756b3adf1eda"
+    },
+    {
+      "path": "data/SOTAB_K8/test_03_LocalBusiness/original/t_190940639e97.csv",
+      "bytes": 664,
+      "sha256": "0b3b8899608087859acbcddb2344c22bb7295348f807af4ef977886ce27f19a7"
+    },
+    {
+      "path": "data/SOTAB_K8/test_03_LocalBusiness/original/t_36532b947570.csv",
+      "bytes": 2773,
+      "sha256": "e9864435779094bb771f6b1d130357d663ddca4ffe06d1f1412c10c9e18dc01b"
+    },
+    {
+      "path": "data/SOTAB_K8/test_03_LocalBusiness/original/t_718f8ce68a9b.csv",
+      "bytes": 20000,
+      "sha256": "cd9d622d39e10908e242ae04ad305fff3072af7fae62bf471378dc9112a7bf95"
+    },
+    {
+      "path": "data/SOTAB_K8/test_03_LocalBusiness/original/t_799f8775d3fa.csv",
+      "bytes": 10764,
+      "sha256": "aa65128468b7788d086d880a4d87039dc9d47c338b1107f0ff10c34ad75e83b7"
+    },
+    {
+      "path": "data/SOTAB_K8/test_03_LocalBusiness/original/t_85f138af8b2f.csv",
+      "bytes": 303577,
+      "sha256": "b69dfb51dc51510fd26750d4aa6dfd4220e2bb40fea6e38269a3362534d28204"
+    },
+    {
+      "path": "data/SOTAB_K8/test_03_LocalBusiness/original/t_88203cbe1fe8.csv",
+      "bytes": 18424,
+      "sha256": "f07c6d8f2a513a50a6998eb7915b3e9e0fdf631d898b33e10c6a87b63976b744"
+    },
+    {
+      "path": "data/SOTAB_K8/test_03_LocalBusiness/original/t_c841e5c82a97.csv",
+      "bytes": 1394,
+      "sha256": "072aa09fd1cb36530932f361672a28bab0fd9f8f51af650bb4e7432aebf920c2"
+    },
+    {
+      "path": "data/SOTAB_K8/test_03_LocalBusiness/original/t_e1f8549edd11.csv",
+      "bytes": 2423,
+      "sha256": "16cd3e959fef1cbe173fb5a231a09cb5a4150b73528c9cb25fd3fa544f3e4274"
+    },
+    {
+      "path": "data/SOTAB_K8/test_04_Movie/groundtruth.txt",
+      "bytes": 1322,
+      "sha256": "15f053761e39f3f0bb35a33fce2366e3d3d2129ff968f54b6080deef0047b200"
+    },
+    {
+      "path": "data/SOTAB_K8/test_04_Movie/original/t_536350629d54.csv",
+      "bytes": 29887,
+      "sha256": "061e8552cc0fbc80b88357bc1bf3042dcad45de35dc5be6727cbc774e0c41a0a"
+    },
+    {
+      "path": "data/SOTAB_K8/test_04_Movie/original/t_5e4426da8317.csv",
+      "bytes": 23616,
+      "sha256": "0499d4e68f6c51f906fe08af8fe6b885187e3754b213108f80f4763e484d2c95"
+    },
+    {
+      "path": "data/SOTAB_K8/test_04_Movie/original/t_5e8ea996075e.csv",
+      "bytes": 8300,
+      "sha256": "b7fe0984d3cef95dd968e686e202a70e086af28fd96261189bcce270fba1d29d"
+    },
+    {
+      "path": "data/SOTAB_K8/test_04_Movie/original/t_d54fec472a68.csv",
+      "bytes": 44715,
+      "sha256": "fb125d643eaad688dfd39f353b861f704a76c4d8b1964ba8ec23c00939d7b044"
+    },
+    {
+      "path": "data/SOTAB_K8/test_04_Movie/original/t_e15c2e87aa2b.csv",
+      "bytes": 81347,
+      "sha256": "8b9dc1cc71f889c1da7a31f95565a14da899d3b7e6234667246642e9dd121bb9"
+    },
+    {
+      "path": "data/SOTAB_K8/test_04_Movie/original/t_e45c66310457.csv",
+      "bytes": 12805,
+      "sha256": "e6ca0c2b61d6293c446e7bc48ce4e7a30b786761ccdcbb938d0d4322f4bc5188"
+    },
+    {
+      "path": "data/SOTAB_K8/test_04_Movie/original/t_ef59e86a0fb0.csv",
+      "bytes": 53981,
+      "sha256": "d777e32a2012914b6235d3c6c008b9c010e50096c9be741439aae291ceafb607"
+    },
+    {
+      "path": "data/SOTAB_K8/test_04_Movie/original/t_f663ba64ef37.csv",
+      "bytes": 21224,
+      "sha256": "f096bc48f69c40dc943fd9f152d55635a5360587518b0e709b60043c0445ee27"
+    },
+    {
+      "path": "data/SOTAB_K8/test_05_Person/groundtruth.txt",
+      "bytes": 821,
+      "sha256": "f53248f8a120c4ea42aa36b9b6488e6bd701e36216b2e2fe0e5f50def1ad1387"
+    },
+    {
+      "path": "data/SOTAB_K8/test_05_Person/original/t_1eb61b94456f.csv",
+      "bytes": 2900,
+      "sha256": "345fd079700739e0e8ade221f5f64fc83746851a802e8b634225c62663de88dd"
+    },
+    {
+      "path": "data/SOTAB_K8/test_05_Person/original/t_5a177e9e42c5.csv",
+      "bytes": 1308,
+      "sha256": "fe8dc17ba1b7e63fdcb4af544fe9f71efdaa17b7c8ee562263e2c17afe823ff3"
+    },
+    {
+      "path": "data/SOTAB_K8/test_05_Person/original/t_5eaae12454c7.csv",
+      "bytes": 3389,
+      "sha256": "6ed46dcdabc46f14145db7fa6f207a8d28bcb7db55f6c0db843b100aefe137ab"
+    },
+    {
+      "path": "data/SOTAB_K8/test_05_Person/original/t_6c29f65fa0c3.csv",
+      "bytes": 3652,
+      "sha256": "7714d82de03ad3b147369fc9ba416c84b00812c84646b36b6de7258e79587106"
+    },
+    {
+      "path": "data/SOTAB_K8/test_05_Person/original/t_798b4797523a.csv",
+      "bytes": 2090,
+      "sha256": "a985e474430ad8915e64f5685599a981cf3bb8fad7698f42c0a2f30e5a18bea8"
+    },
+    {
+      "path": "data/SOTAB_K8/test_05_Person/original/t_aa801414824f.csv",
+      "bytes": 9388,
+      "sha256": "967a713154d6bd1954b2156c117d1a9540ce952611d78c6825b8cc5400049fe9"
+    },
+    {
+      "path": "data/SOTAB_K8/test_05_Person/original/t_e12e801ffe3c.csv",
+      "bytes": 5709,
+      "sha256": "25a265c5dafb514280a5d591d823e3cb876f26f09ce69441430f864f9f94c7b4"
+    },
+    {
+      "path": "data/SOTAB_K8/test_05_Person/original/t_f5cde0b20847.csv",
+      "bytes": 2168,
+      "sha256": "3226a26fe7b634fcff6cc3a09eea287af7841aba72f1bb8a6a9eee5c189b0068"
+    },
+    {
+      "path": "data/SOTAB_K8/test_06_Recipe/groundtruth.txt",
+      "bytes": 1309,
+      "sha256": "af5fd7e198534ac3d9b8d5165c40ce806fc4c813ace99695c1ab0edc71842011"
+    },
+    {
+      "path": "data/SOTAB_K8/test_06_Recipe/original/t_35430c98d74b.csv",
+      "bytes": 178992,
+      "sha256": "1069a15eba6abb2be3ee27e2d7ab807b24257bcb54e5b69ca2fd42a107ba403c"
+    },
+    {
+      "path": "data/SOTAB_K8/test_06_Recipe/original/t_55a429bbf926.csv",
+      "bytes": 3957,
+      "sha256": "31eab332646368b120b51529192a8faeb687cce165cb5204153ef1b69ce9fe86"
+    },
+    {
+      "path": "data/SOTAB_K8/test_06_Recipe/original/t_5617017ea097.csv",
+      "bytes": 772582,
+      "sha256": "453588453dc5fdcdcacdf9f2aee824221866b6f2d5d7a96b770fc59cc1316659"
+    },
+    {
+      "path": "data/SOTAB_K8/test_06_Recipe/original/t_5dd5d967da44.csv",
+      "bytes": 49197,
+      "sha256": "ebcd41bac19cac2136314586fa64852077a2c90fa122d6972820ce21eddd033b"
+    },
+    {
+      "path": "data/SOTAB_K8/test_06_Recipe/original/t_5e5befdaca25.csv",
+      "bytes": 5693,
+      "sha256": "cb040725d05384960df04bc1fe9d342bd45dbe5684248d3ef1b66a0fbc19376e"
+    },
+    {
+      "path": "data/SOTAB_K8/test_06_Recipe/original/t_7fd6584dedd5.csv",
+      "bytes": 193980,
+      "sha256": "b5975c70cea0eb64c704fc41905aa8425b835062f9acbce2f4006dde6ba966e4"
+    },
+    {
+      "path": "data/SOTAB_K8/test_06_Recipe/original/t_8eca38a7b7d2.csv",
+      "bytes": 22036,
+      "sha256": "4ae87fb68042b653fcea832f9415351ec2cb96f4c1e08f9593e927fbf8012903"
+    },
+    {
+      "path": "data/SOTAB_K8/test_06_Recipe/original/t_f686ad6a31b5.csv",
+      "bytes": 2368,
+      "sha256": "712fd0777d43b29e7fdeae1360624aed71b73db07b5e863e128a90981b905644"
+    }
+  ],
+  "file_count": 587,
+  "total_bytes": 19613672,
+  "datasets": {
+    "Alaska_full": {
+      "files": 170,
+      "bytes": 6884493
+    },
+    "Alaska_Partition": {
+      "files": 154,
+      "bytes": 5362748
+    },
+    "GDC": {
+      "files": 12,
+      "bytes": 170463
+    },
+    "GDC_MCAR_Pilot": {
+      "files": 44,
+      "bytes": 964635
+    },
+    "MaDI": {
+      "files": 15,
+      "bytes": 504625
+    },
+    "SOTAB_CPA": {
+      "files": 73,
+      "bytes": 1837620
+    },
+    "SOTAB_K12": {
+      "files": 27,
+      "bytes": 529450
+    },
+    "SOTAB_K5": {
+      "files": 37,
+      "bytes": 934036
+    },
+    "SOTAB_K8": {
+      "files": 55,
+      "bytes": 2425602
+    }
+  }
+}

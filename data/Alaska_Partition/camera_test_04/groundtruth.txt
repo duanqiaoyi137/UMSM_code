@@ -1,0 +1,197 @@
+Cluster 1:
+  www.cambuy.com.au.csv.af assist beam
+  www.camerafarm.com.au.csv.af assist beam
+  www.ebay.com.csv.af assist lamp
+
+Cluster 2:
+  www.cambuy.com.au.csv.af modes
+  www.camerafarm.com.au.csv.focus modes
+
+Cluster 3:
+  www.cambuy.com.au.csv.afarea mode
+  www.camerafarm.com.au.csv.af system points
+  www.ebay.com.csv.focus point
+
+Cluster 4:
+  www.cambuy.com.au.csv.autofocus af
+  www.camerafarm.com.au.csv.autofocus system
+
+Cluster 5:
+  www.ebay.com.csv.battery chemistry
+
+Cluster 6:
+  www.cambuy.com.au.csv.battery life
+
+Cluster 7:
+  www.camerafarm.com.au.csv.brand
+  www.ebay.com.csv.brand
+  www.ukdigitalcameras.co.uk.csv.brand
+
+Cluster 8:
+  www.cambuy.com.au.csv.camera type
+  www.ebay.com.csv.body type
+
+Cluster 9:
+  www.ebay.com.csv.camera colour
+  www.ukdigitalcameras.co.uk.csv.colour
+  www.wexphotographic.com.csv.colour
+
+Cluster 10:
+  www.cambuy.com.au.csv.colour filter type
+  www.camerafarm.com.au.csv.color filter
+  www.ebay.com.csv.color filter system
+
+Cluster 11:
+  www.cambuy.com.au.csv.exposure compensation
+  www.camerafarm.com.au.csv.exposure compensation
+  www.ebay.com.csv.compensation
+  www.wexphotographic.com.csv.exposure control
+
+Cluster 12:
+  www.cambuy.com.au.csv.exposure mode
+  www.camerafarm.com.au.csv.exposure modes
+  www.wexphotographic.com.csv.exposure modes
+
+Cluster 13:
+  www.camerafarm.com.au.csv.card slot
+  www.ebay.com.csv.storage memory
+  www.garricks.com.au.csv.memory type
+  www.wexphotographic.com.csv.card format
+
+Cluster 14:
+  www.cambuy.com.au.csv.file system
+  www.camerafarm.com.au.csv.file system
+  www.ebay.com.csv.file system
+
+Cluster 15:
+  www.wexphotographic.com.csv.focal length tele
+
+Cluster 16:
+  www.wexphotographic.com.csv.focal length wide
+
+Cluster 17:
+  www.cambuy.com.au.csv.still image type
+  www.camerafarm.com.au.csv.still image type
+  www.ebay.com.csv.still image format
+
+Cluster 18:
+  www.cambuy.com.au.csv.effective pixels
+  www.camerafarm.com.au.csv.effective pixels
+  www.ebay.com.csv.megapixels
+  www.garricks.com.au.csv.resolution
+  www.ukdigitalcameras.co.uk.csv.camera resolution
+  www.wexphotographic.com.csv.megapixels
+
+Cluster 19:
+  www.ebay.com.csv.highest standard iso sensitivity
+  www.wexphotographic.com.csv.iso max
+
+Cluster 20:
+  www.ebay.com.csv.lowest standard iso sensitivity
+  www.wexphotographic.com.csv.iso min
+
+Cluster 21:
+  www.cambuy.com.au.csv.lens mount
+  www.camerafarm.com.au.csv.lens mount
+  www.garricks.com.au.csv.lens mount
+
+Cluster 22:
+  www.cambuy.com.au.csv.audio recording device
+  www.camerafarm.com.au.csv.movie audio recording device
+  www.ebay.com.csv.microphone  speaker
+
+Cluster 23:
+  www.cambuy.com.au.csv.picture control system
+  www.camerafarm.com.au.csv.picture control
+  www.ebay.com.csv.picture control system
+
+Cluster 24:
+  www.cambuy.com.au.csv.redeye reduction
+  www.ebay.com.csv.red eye reduction
+
+Cluster 25:
+  www.cambuy.com.au.csv.monitor size
+  www.ebay.com.csv.screen size
+  www.ukdigitalcameras.co.uk.csv.lcd size
+  www.wexphotographic.com.csv.screen size inches
+
+Cluster 26:
+  www.ebay.com.csv.display screen type
+
+Cluster 27:
+  www.cambuy.com.au.csv.selftimer
+  www.camerafarm.com.au.csv.selftimer
+  www.ebay.com.csv.self timer delay
+
+Cluster 28:
+  www.cambuy.com.au.csv.image sensor size
+  www.camerafarm.com.au.csv.sensor size
+  www.wexphotographic.com.csv.sensor size
+
+Cluster 29:
+  www.camerafarm.com.au.csv.image sensor format
+  www.garricks.com.au.csv.image format
+
+Cluster 30:
+  www.camerafarm.com.au.csv.image sensor type
+  www.wexphotographic.com.csv.sensor type
+
+Cluster 31:
+  www.camerafarm.com.au.csv.fastest shutter speed
+  www.ebay.com.csv.shutter speed (maximum)
+  www.wexphotographic.com.csv.shutter speed max
+
+Cluster 32:
+  www.camerafarm.com.au.csv.slowest shutter speed
+  www.ebay.com.csv.minimum shutter speed
+  www.wexphotographic.com.csv.shutter speed min
+
+Cluster 33:
+  www.cambuy.com.au.csv.shutter
+  www.camerafarm.com.au.csv.shutter type
+
+Cluster 34:
+  www.cambuy.com.au.csv.aspect ratio
+  www.ebay.com.csv.image ratio wh
+
+Cluster 35:
+  www.cambuy.com.au.csv.audio recording format
+  www.camerafarm.com.au.csv.movie audio recording format
+  www.ebay.com.csv.movie audio recording format
+
+Cluster 36:
+  www.cambuy.com.au.csv.supported languages
+  www.camerafarm.com.au.csv.supported languages
+  www.ebay.com.csv.languages
+
+Cluster 37:
+  www.camerafarm.com.au.csv.movie file format
+  www.garricks.com.au.csv.video recording format
+
+Cluster 38:
+  www.cambuy.com.au.csv.1280 x 720 hd
+  www.ebay.com.csv.max. resolution
+  www.wexphotographic.com.csv.movie mode
+
+Cluster 39:
+  www.ebay.com.csv.warranty - labor
+
+Cluster 40:
+  www.cambuy.com.au.csv.white balance
+  www.ebay.com.csv.white balance control
+
+Cluster 41:
+  www.cambuy.com.au.csv.humidity
+  www.ebay.com.csv.humidity
+
+Cluster 42:
+  www.cambuy.com.au.csv.digital zoom
+  www.ebay.com.csv.zoom:
+
+Cluster 43:
+  www.cambuy.com.au.csv.optical zoom
+  www.ebay.com.csv.optical zoom
+  www.garricks.com.au.csv.zoom range
+  www.ukdigitalcameras.co.uk.csv.optical zoom
+  www.wexphotographic.com.csv.optical zoom x
+

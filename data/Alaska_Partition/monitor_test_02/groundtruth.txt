@@ -1,0 +1,246 @@
+Cluster 1:
+  www.makingbuyingeasy.co.uk.csv.bluetooth
+  www.mrhightech.com.csv.bluetooth
+
+Cluster 2:
+  ca.pcpartpicker.com.csv.manufacturer
+  www.officedepot.com.csv.brand name
+
+Cluster 3:
+  www.makingbuyingeasy.co.uk.csv.colour of product
+  www.mrhightech.com.csv.colour of product
+  www.officedepot.com.csv.color
+  www.vology.com.csv.color
+
+Cluster 4:
+  www.makingbuyingeasy.co.uk.csv.contrast ratio dynamic
+  www.mrhightech.com.csv.contrast ratio dynamic
+
+Cluster 5:
+  ca.pcpartpicker.com.csv.contrast ratio
+  catalog.com.csv.contrast ratio
+  www.makingbuyingeasy.co.uk.csv.contrast ratio typical
+  www.mrhightech.com.csv.contrast ratio typical
+  www.officedepot.com.csv.contrast ratio
+
+Cluster 6:
+  ca.pcpartpicker.com.csv.displayport
+  www.makingbuyingeasy.co.uk.csv.displayports quantity
+  www.mrhightech.com.csv.displayports quantity
+
+Cluster 7:
+  ca.pcpartpicker.com.csv.dvi
+
+Cluster 8:
+  ca.pcpartpicker.com.csv.dvid duallink
+  www.makingbuyingeasy.co.uk.csv.dvid ports quantity
+  www.mrhightech.com.csv.dvid ports quantity
+
+Cluster 9:
+  www.mrhightech.com.csv.dvii ports quantity
+
+Cluster 10:
+  www.makingbuyingeasy.co.uk.csv.ethernet lan rj45 ports
+
+Cluster 11:
+  www.officedepot.com.csv.displayport
+
+Cluster 12:
+  www.makingbuyingeasy.co.uk.csv.dvi port
+  www.mrhightech.com.csv.dvi port
+  www.officedepot.com.csv.dvi
+
+Cluster 13:
+  www.makingbuyingeasy.co.uk.csv.ethernet lan
+  www.mrhightech.com.csv.ethernet lan
+  www.officedepot.com.csv.network rj45
+
+Cluster 14:
+  www.makingbuyingeasy.co.uk.csv.full hd
+
+Cluster 15:
+  www.officedepot.com.csv.hdmi
+
+Cluster 16:
+  www.makingbuyingeasy.co.uk.csv.headphone out
+  www.officedepot.com.csv.headphone jack
+
+Cluster 17:
+  www.makingbuyingeasy.co.uk.csv.microphone in
+  www.mrhightech.com.csv.microphone in
+
+Cluster 18:
+  ca.pcpartpicker.com.csv.builtin speakers
+  www.makingbuyingeasy.co.uk.csv.builtin speakers
+  www.officedepot.com.csv.speakers
+
+Cluster 19:
+  www.makingbuyingeasy.co.uk.csv.usb required
+  www.officedepot.com.csv.usb
+
+Cluster 20:
+  www.officedepot.com.csv.vga
+
+Cluster 21:
+  www.makingbuyingeasy.co.uk.csv.hd type
+  www.mrhightech.com.csv.hd type
+  www.officedepot.com.csv.screen mode
+
+Cluster 22:
+  ca.pcpartpicker.com.csv.hdmi
+  www.makingbuyingeasy.co.uk.csv.hdmi ports quantity
+  www.mrhightech.com.csv.hdmi ports quantity
+
+Cluster 23:
+  www.makingbuyingeasy.co.uk.csv.headphone outputs
+  www.mrhightech.com.csv.headphone out
+
+Cluster 24:
+  www.makingbuyingeasy.co.uk.csv.headphone connectivity
+  www.mrhightech.com.csv.headphone connectivity
+
+Cluster 25:
+  www.makingbuyingeasy.co.uk.csv.input frequency
+  www.mrhightech.com.csv.input frequency
+
+Cluster 26:
+  ca.pcpartpicker.com.csv.minidisplay port
+  www.makingbuyingeasy.co.uk.csv.mini displayport quantity
+
+Cluster 27:
+  www.makingbuyingeasy.co.uk.csv.weight
+  www.mrhightech.com.csv.weight
+  www.officedepot.com.csv.weight
+  www.vology.com.csv.weight
+
+Cluster 28:
+  www.makingbuyingeasy.co.uk.csv.weight with stand
+  www.mrhightech.com.csv.weight with stand
+  www.officedepot.com.csv.weight with stand approximate
+
+Cluster 29:
+  www.officedepot.com.csv.mount type
+
+Cluster 30:
+  www.mrhightech.com.csv.nonoperating altitude
+
+Cluster 31:
+  ca.pcpartpicker.com.csv.display colors
+  www.makingbuyingeasy.co.uk.csv.display number of colours
+  www.mrhightech.com.csv.display number of colours
+  www.officedepot.com.csv.color supported
+  www.vology.com.csv.color support
+
+Cluster 32:
+  www.makingbuyingeasy.co.uk.csv.operating altitude
+  www.mrhightech.com.csv.operating altitude
+
+Cluster 33:
+  www.mrhightech.com.csv.package weight
+
+Cluster 34:
+  www.makingbuyingeasy.co.uk.csv.pixel pitch
+  www.mrhightech.com.csv.pixel pitch
+  www.vology.com.csv.pixel pitch
+
+Cluster 35:
+  www.makingbuyingeasy.co.uk.csv.energy efficiency class
+  www.mrhightech.com.csv.energy efficiency class
+
+Cluster 36:
+  www.makingbuyingeasy.co.uk.csv.power consumption typical
+  www.mrhightech.com.csv.power consumption typical
+  www.officedepot.com.csv.operating power consumption
+  www.vology.com.csv.power consumption operational
+
+Cluster 37:
+  www.makingbuyingeasy.co.uk.csv.power consumption standby
+  www.mrhightech.com.csv.power consumption standby
+  www.officedepot.com.csv.standby power consumption
+  www.vology.com.csv.power consumption stand by  sleep
+
+Cluster 38:
+  ca.pcpartpicker.com.csv.response time
+  www.makingbuyingeasy.co.uk.csv.response time
+  www.mrhightech.com.csv.response time
+  www.officedepot.com.csv.response time
+  www.vology.com.csv.response time
+
+Cluster 39:
+  ca.pcpartpicker.com.csv.brightness
+  www.makingbuyingeasy.co.uk.csv.display brightness
+  www.mrhightech.com.csv.display brightness
+  www.officedepot.com.csv.brightness
+  www.vology.com.csv.brightness
+
+Cluster 40:
+  ca.pcpartpicker.com.csv.screen size
+  www.makingbuyingeasy.co.uk.csv.display diagonal
+  www.mrhightech.com.csv.display diagonal
+  www.officedepot.com.csv.screen size
+  www.vology.com.csv.diagonal size
+
+Cluster 41:
+  catalog.com.csv.display technology
+  www.makingbuyingeasy.co.uk.csv.display
+  www.mrhightech.com.csv.display
+  www.officedepot.com.csv.product type
+  www.vology.com.csv.display type
+
+Cluster 42:
+  www.makingbuyingeasy.co.uk.csv.number of loudspeakers
+  www.officedepot.com.csv.number of speakers
+
+Cluster 43:
+  ca.pcpartpicker.com.csv.aspect ratio
+  catalog.com.csv.aspect ratio
+  www.makingbuyingeasy.co.uk.csv.aspect ratio
+  www.mrhightech.com.csv.aspect ratio
+  www.officedepot.com.csv.aspect ratio
+  www.vology.com.csv.aspect ratio
+
+Cluster 44:
+  www.makingbuyingeasy.co.uk.csv.on screen display osd languages
+  www.vology.com.csv.osd languages
+
+Cluster 45:
+  www.makingbuyingeasy.co.uk.csv.number of osd languages
+
+Cluster 46:
+  ca.pcpartpicker.com.csv.recommended resolution
+  catalog.com.csv.max resolution
+  www.makingbuyingeasy.co.uk.csv.display resolution
+  www.mrhightech.com.csv.display resolution
+  www.officedepot.com.csv.maximum resolution
+  www.vology.com.csv.native resolution
+
+Cluster 47:
+  www.makingbuyingeasy.co.uk.csv.usb 20 ports quantity
+  www.mrhightech.com.csv.usb 20 ports quantity
+
+Cluster 48:
+  www.makingbuyingeasy.co.uk.csv.usb 30 ports quantity
+  www.mrhightech.com.csv.usb 30 ports quantity
+
+Cluster 49:
+  www.makingbuyingeasy.co.uk.csv.usb version
+  www.officedepot.com.csv.usb standard
+
+Cluster 50:
+  ca.pcpartpicker.com.csv.vga
+  www.makingbuyingeasy.co.uk.csv.vga dsub ports quantity
+  www.mrhightech.com.csv.vga dsub ports quantity
+
+Cluster 51:
+  www.officedepot.com.csv.warranty length
+  www.vology.com.csv.manufacturer warranty
+
+Cluster 52:
+  www.makingbuyingeasy.co.uk.csv.wifi
+  www.mrhightech.com.csv.wifi
+
+Cluster 53:
+  www.makingbuyingeasy.co.uk.csv.operating relative humidity hh
+  www.mrhightech.com.csv.operating relative humidity hh
+  www.vology.com.csv.humidity range operating
+

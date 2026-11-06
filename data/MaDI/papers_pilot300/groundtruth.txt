@@ -1,0 +1,53 @@
+Cluster 1:
+  crossref.csv.contributor_names
+  dblp.csv.author_list
+  open_alex.csv.authors_list
+
+Cluster 2:
+  crossref.csv.cited_total
+  open_alex.csv.citations_count
+
+Cluster 3:
+  crossref.csv.page_first
+  dblp.csv.page_start
+  open_alex.csv.start_page
+
+Cluster 4:
+  crossref.csv.issue_id
+  dblp.csv.issue_no
+  open_alex.csv.issue_tag
+
+Cluster 5:
+  crossref.csv.container_title
+  dblp.csv.venue_name
+  open_alex.csv.source_name
+
+Cluster 6:
+  crossref.csv.page_last
+  dblp.csv.page_finish
+  open_alex.csv.end_page
+
+Cluster 7:
+  crossref.csv.issued_year
+  dblp.csv.pub_year
+  open_alex.csv.year_published
+
+Cluster 8:
+  crossref.csv.reference_total
+  open_alex.csv.refs_count
+
+Cluster 9:
+  crossref.csv.title_text
+  dblp.csv.publication_title
+  open_alex.csv.display_title
+
+Cluster 10:
+  crossref.csv.work_type
+  dblp.csv.entry_type
+  open_alex.csv.work_kind
+
+Cluster 11:
+  crossref.csv.volume_id
+  dblp.csv.volume_no
+  open_alex.csv.volume_tag
+

@@ -1,0 +1,166 @@
+{
+  "protocol": {
+    "adapter_version": 1,
+    "construction": "natural_disjoint_source_partition",
+    "source_dataset": "Alaska_full",
+    "source_set": "Alaska_full/camera",
+    "source_task_fingerprint": "8e7708491a219d5117cf159c7c00a16fb6bcbdfb339c5de16d267fbcc8f6a369",
+    "source_fingerprint": "0b163711d98c4c51d52f6557821019d0685018c46a15bdaa046e15f0a919c271",
+    "source_sites": [
+      "alibaba.com",
+      "canon-europe.com",
+      "eglobalcentral.co.uk",
+      "mypriceindia.com",
+      "pricedekho.com",
+      "priceme.co.nz"
+    ],
+    "seed": 2026,
+    "min_tables": 6,
+    "domain": "camera",
+    "missingness": "unchanged natural missingness",
+    "site_policy": "normalized exact hostname, first domain owns duplicated sites"
+  },
+  "tables": [
+    {
+      "table": "www.alibaba.com.csv",
+      "rows": 300,
+      "columns": 8,
+      "missing_rate": 0.8695833333333334,
+      "column_missing_rates": {
+        "frame rate": 0.6566666666666666,
+        "lens mount": 0.73,
+        "max image resolution": 0.75,
+        "focus control": 0.93,
+        "white balance": 0.8966666666666666,
+        "warranty time": 1.0,
+        "picture control system": 0.9966666666666667,
+        "focus point": 0.9966666666666667
+      }
+    },
+    {
+      "table": "www.canon-europe.com.csv",
+      "rows": 164,
+      "columns": 10,
+      "missing_rate": 0.21707317073170732,
+      "column_missing_rates": {
+        "af assist beam": 0.35365853658536583,
+        "af modes": 0.4329268292682927,
+        "af point selection": 0.38414634146341464,
+        "af system points": 0.5121951219512195,
+        "exposure compensation": 0.0,
+        "menu languages": 0.18292682926829268,
+        "photo effects": 0.0975609756097561,
+        "redeye reduction": 0.03048780487804878,
+        "self timer": 0.17682926829268292,
+        "still image type": 0.0
+      }
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "rows": 300,
+      "columns": 11,
+      "missing_rate": 0.8318181818181818,
+      "column_missing_rates": {
+        "aspect ratio": 0.7366666666666667,
+        "focal length": 0.7466666666666667,
+        "focus type": 0.9566666666666667,
+        "lens mount": 0.8066666666666666,
+        "max resolution": 0.72,
+        "resolution": 0.9233333333333333,
+        "effective pixels": 0.78,
+        "lcd screen size inch": 0.8933333333333333,
+        "microphone": 0.8666666666666667,
+        "storage type": 0.79,
+        "optical zoom": 0.93
+      }
+    },
+    {
+      "table": "www.mypriceindia.com.csv",
+      "rows": 300,
+      "columns": 22,
+      "missing_rate": 0.351969696969697,
+      "column_missing_rates": {
+        "audio formats": 0.37666666666666665,
+        "camera resolution": 0.023333333333333334,
+        "digital zoom": 0.36666666666666664,
+        "image format": 0.09666666666666666,
+        "lens type": 0.13333333333333333,
+        "max resolution": 0.36,
+        "maximum shutter speed": 0.06666666666666667,
+        "microphone": 0.63,
+        "minimum shutter speed": 0.07,
+        "other focus features": 0.48,
+        "self timer": 0.09,
+        "sensor size": 0.3566666666666667,
+        "sensor type": 0.3566666666666667,
+        "video format": 0.07333333333333333,
+        "white balancing": 0.13,
+        "image ratio wh": 0.6766666666666666,
+        "optical zoom": 0.3466666666666667,
+        "red eye reduction": 0.44333333333333336,
+        "color filter": 0.5566666666666666,
+        "picture angle": 0.72,
+        "video resolution": 0.45,
+        "memory card type": 0.94
+      }
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "rows": 300,
+      "columns": 26,
+      "missing_rate": 0.661025641025641,
+      "column_missing_rates": {
+        "dimension": 0.6066666666666667,
+        "pixels": 0.6,
+        "brand": 0.75,
+        "color": 0.54,
+        "digital zoom": 0.6133333333333333,
+        "display type": 0.6466666666666666,
+        "image format": 0.5966666666666667,
+        "lens type": 0.6666666666666666,
+        "maximum shutter speed": 0.6,
+        "minimum shutter speed": 0.5733333333333334,
+        "optical zoom": 0.6,
+        "screen size": 0.41333333333333333,
+        "self timer": 0.54,
+        "sensor size": 0.5466666666666666,
+        "sensor type": 0.5466666666666666,
+        "video display resolution": 0.6366666666666667,
+        "video format": 0.6033333333333334,
+        "color filter": 0.7633333333333333,
+        "red eye reduction": 0.61,
+        "white balancing": 0.5933333333333334,
+        "microphone": 0.7333333333333333,
+        "supported aspect ratio": 0.8633333333333333,
+        "audio formats": 0.8366666666666667,
+        "exposure compensation": 0.96,
+        "picture angle": 0.8533333333333334,
+        "inbuilt memory": 0.8933333333333333
+      }
+    },
+    {
+      "table": "www.priceme.co.nz.csv",
+      "rows": 300,
+      "columns": 6,
+      "missing_rate": 0.45111111111111113,
+      "column_missing_rates": {
+        "max image resolution": 0.08666666666666667,
+        "optical sensor": 0.33666666666666667,
+        "still image format": 0.043333333333333335,
+        "max focal length": 0.63,
+        "min focal length": 0.63,
+        "colour": 0.98
+      }
+    }
+  ],
+  "gt_pairs": 66,
+  "files": {
+    "groundtruth.txt": "0f97d87fe112ae42830b35d0d682b8970914eff1db572c79c198b1e36ffa72ab",
+    "original/www.pricedekho.com.csv": "f03edbfaf3e3fd8923aea639050a21fa8c521f138a9e4c6a60214b69094f642a",
+    "original/www.canon-europe.com.csv": "c1fc6fd13ee210c5070d9cffc6ddbae096fa75dc1eb2252f03ce1f8159b75460",
+    "original/www.mypriceindia.com.csv": "1f21f4c94cfea4ec59e1fc97f4ac1d1d27afc2b811a862f0558f4454035c9ee1",
+    "original/www.priceme.co.nz.csv": "ddf37fba596dbe1436809520debebd11f60f44cca611fe50f927b19d9d98cfa1",
+    "original/www.eglobalcentral.co.uk.csv": "adc7e33db5c99a71a111f987eba9a1b6bb97745ea77323a01bbfd6755984d698",
+    "original/www.alibaba.com.csv": "c2b0218a2a53c37551eabcc5f246b937f06ac92b4f347c040818a417c3e3ca2d"
+  }
+}

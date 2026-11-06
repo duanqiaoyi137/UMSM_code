@@ -1,0 +1,159 @@
+Cluster 1:
+  www.alibaba.com.csv.focus control
+  www.eglobalcentral.co.uk.csv.focus type
+
+Cluster 2:
+  www.canon-europe.com.csv.af assist beam
+
+Cluster 3:
+  www.canon-europe.com.csv.af modes
+
+Cluster 4:
+  www.alibaba.com.csv.focus point
+  www.canon-europe.com.csv.af system points
+  www.mypriceindia.com.csv.other focus features
+
+Cluster 5:
+  www.canon-europe.com.csv.af point selection
+
+Cluster 6:
+  www.pricedekho.com.csv.brand
+
+Cluster 7:
+  www.pricedekho.com.csv.dimension
+
+Cluster 8:
+  www.pricedekho.com.csv.color
+  www.priceme.co.nz.csv.colour
+
+Cluster 9:
+  www.mypriceindia.com.csv.color filter
+  www.pricedekho.com.csv.color filter
+
+Cluster 10:
+  www.canon-europe.com.csv.exposure compensation
+  www.pricedekho.com.csv.exposure compensation
+
+Cluster 11:
+  www.eglobalcentral.co.uk.csv.storage type
+  www.mypriceindia.com.csv.memory card type
+
+Cluster 12:
+  www.priceme.co.nz.csv.max focal length
+
+Cluster 13:
+  www.eglobalcentral.co.uk.csv.focal length
+  www.priceme.co.nz.csv.min focal length
+
+Cluster 14:
+  www.canon-europe.com.csv.still image type
+  www.mypriceindia.com.csv.image format
+  www.pricedekho.com.csv.image format
+  www.priceme.co.nz.csv.still image format
+
+Cluster 15:
+  www.eglobalcentral.co.uk.csv.effective pixels
+  www.mypriceindia.com.csv.camera resolution
+  www.pricedekho.com.csv.pixels
+
+Cluster 16:
+  www.alibaba.com.csv.max image resolution
+  www.eglobalcentral.co.uk.csv.max resolution
+  www.mypriceindia.com.csv.max resolution
+  www.priceme.co.nz.csv.max image resolution
+
+Cluster 17:
+  www.pricedekho.com.csv.inbuilt memory
+
+Cluster 18:
+  www.alibaba.com.csv.lens mount
+  www.eglobalcentral.co.uk.csv.lens mount
+  www.mypriceindia.com.csv.lens type
+  www.pricedekho.com.csv.lens type
+
+Cluster 19:
+  www.eglobalcentral.co.uk.csv.microphone
+  www.mypriceindia.com.csv.microphone
+  www.pricedekho.com.csv.microphone
+
+Cluster 20:
+  www.mypriceindia.com.csv.picture angle
+  www.pricedekho.com.csv.picture angle
+
+Cluster 21:
+  www.alibaba.com.csv.picture control system
+  www.canon-europe.com.csv.photo effects
+
+Cluster 22:
+  www.canon-europe.com.csv.redeye reduction
+  www.mypriceindia.com.csv.red eye reduction
+  www.pricedekho.com.csv.red eye reduction
+
+Cluster 23:
+  www.eglobalcentral.co.uk.csv.lcd screen size inch
+  www.pricedekho.com.csv.screen size
+
+Cluster 24:
+  www.pricedekho.com.csv.display type
+
+Cluster 25:
+  www.canon-europe.com.csv.self timer
+  www.mypriceindia.com.csv.self timer
+  www.pricedekho.com.csv.self timer
+
+Cluster 26:
+  www.mypriceindia.com.csv.sensor size
+  www.pricedekho.com.csv.sensor size
+
+Cluster 27:
+  www.mypriceindia.com.csv.sensor type
+  www.pricedekho.com.csv.sensor type
+  www.priceme.co.nz.csv.optical sensor
+
+Cluster 28:
+  www.mypriceindia.com.csv.maximum shutter speed
+  www.pricedekho.com.csv.maximum shutter speed
+
+Cluster 29:
+  www.mypriceindia.com.csv.minimum shutter speed
+  www.pricedekho.com.csv.minimum shutter speed
+
+Cluster 30:
+  www.eglobalcentral.co.uk.csv.aspect ratio
+  www.mypriceindia.com.csv.image ratio wh
+  www.pricedekho.com.csv.supported aspect ratio
+
+Cluster 31:
+  www.mypriceindia.com.csv.audio formats
+  www.pricedekho.com.csv.audio formats
+
+Cluster 32:
+  www.canon-europe.com.csv.menu languages
+
+Cluster 33:
+  www.mypriceindia.com.csv.video format
+  www.pricedekho.com.csv.video format
+
+Cluster 34:
+  www.alibaba.com.csv.frame rate
+  www.eglobalcentral.co.uk.csv.resolution
+  www.mypriceindia.com.csv.video resolution
+  www.pricedekho.com.csv.video display resolution
+
+Cluster 35:
+  www.alibaba.com.csv.warranty time
+
+Cluster 36:
+  www.alibaba.com.csv.white balance
+  www.mypriceindia.com.csv.white balancing
+  www.pricedekho.com.csv.white balancing
+
+Cluster 37:
+  www.mypriceindia.com.csv.digital zoom
+  www.pricedekho.com.csv.digital zoom
+
+Cluster 38:
+  www.eglobalcentral.co.uk.csv.optical zoom
+  www.mypriceindia.com.csv.optical zoom
+  www.pricedekho.com.csv.optical zoom
+

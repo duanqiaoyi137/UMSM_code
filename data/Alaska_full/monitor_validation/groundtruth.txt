@@ -1,0 +1,301 @@
+Cluster 1:
+  www.makingbuyingeasy.co.uk.csv.bluetooth
+
+Cluster 2:
+  ca.pcpartpicker.com.csv.manufacturer
+  www.itenergy.co.uk.csv.brand name
+  www.kingsfieldcomputers.co.uk.csv.brand name
+  www.odsi.co.uk.csv.manufacturer
+  www.pc-canada.com.csv.brand name
+  www.shopmania.com.csv.product name
+
+Cluster 3:
+  www.best-deal-items.com.csv.colour
+  www.itenergy.co.uk.csv.colour
+  www.kingsfieldcomputers.co.uk.csv.colour
+  www.makingbuyingeasy.co.uk.csv.colour of product
+  www.odsi.co.uk.csv.colour
+  www.pc-canada.com.csv.color
+
+Cluster 4:
+  www.makingbuyingeasy.co.uk.csv.contrast ratio dynamic
+  www.shopmania.com.csv.dynamic contrast ratio
+
+Cluster 5:
+  ca.pcpartpicker.com.csv.contrast ratio
+  www.itenergy.co.uk.csv.contrast ratio
+  www.kingsfieldcomputers.co.uk.csv.contrast ratio
+  www.makingbuyingeasy.co.uk.csv.contrast ratio typical
+  www.odsi.co.uk.csv.image contrast ratio
+  www.pc-canada.com.csv.contrast ratio
+  www.shopmania.com.csv.contrast ratio
+
+Cluster 6:
+  ca.pcpartpicker.com.csv.displayport
+  www.makingbuyingeasy.co.uk.csv.displayports quantity
+
+Cluster 7:
+  ca.pcpartpicker.com.csv.dvi
+
+Cluster 8:
+  ca.pcpartpicker.com.csv.dvid duallink
+  www.best-deal-items.com.csv.dvid ports
+  www.makingbuyingeasy.co.uk.csv.dvid ports quantity
+
+Cluster 9:
+  www.makingbuyingeasy.co.uk.csv.ethernet lan rj45 ports
+
+Cluster 10:
+  www.itenergy.co.uk.csv.displayport
+  www.kingsfieldcomputers.co.uk.csv.displayport
+  www.pc-canada.com.csv.displayport
+
+Cluster 11:
+  www.best-deal-items.com.csv.dvi
+  www.itenergy.co.uk.csv.dvi
+  www.kingsfieldcomputers.co.uk.csv.dvi
+  www.makingbuyingeasy.co.uk.csv.dvi port
+  www.pc-canada.com.csv.dvi
+
+Cluster 12:
+  www.best-deal-items.com.csv.network rj45
+  www.itenergy.co.uk.csv.network rj45
+  www.kingsfieldcomputers.co.uk.csv.network rj45
+  www.makingbuyingeasy.co.uk.csv.ethernet lan
+
+Cluster 13:
+  www.makingbuyingeasy.co.uk.csv.full hd
+
+Cluster 14:
+  www.itenergy.co.uk.csv.hdmi
+  www.kingsfieldcomputers.co.uk.csv.hdmi
+  www.pc-canada.com.csv.hdmi
+
+Cluster 15:
+  www.itenergy.co.uk.csv.headphone
+  www.kingsfieldcomputers.co.uk.csv.headphone
+  www.makingbuyingeasy.co.uk.csv.headphone out
+  www.pc-canada.com.csv.headphone
+
+Cluster 16:
+  www.makingbuyingeasy.co.uk.csv.microphone in
+
+Cluster 17:
+  ca.pcpartpicker.com.csv.builtin speakers
+  www.best-deal-items.com.csv.builtin speakers
+  www.getprice.com.au.csv.speakers
+  www.itenergy.co.uk.csv.speakers
+  www.kingsfieldcomputers.co.uk.csv.speakers
+  www.makingbuyingeasy.co.uk.csv.builtin speakers
+  www.pc-canada.com.csv.speakers
+
+Cluster 18:
+  www.itenergy.co.uk.csv.usb
+  www.kingsfieldcomputers.co.uk.csv.usb
+  www.makingbuyingeasy.co.uk.csv.usb required
+  www.pc-canada.com.csv.usb
+
+Cluster 19:
+  www.best-deal-items.com.csv.vga
+  www.itenergy.co.uk.csv.vga
+  www.kingsfieldcomputers.co.uk.csv.vga
+  www.pc-canada.com.csv.vga
+
+Cluster 20:
+  www.best-deal-items.com.csv.hd type
+  www.itenergy.co.uk.csv.screen mode
+  www.kingsfieldcomputers.co.uk.csv.screen mode
+  www.makingbuyingeasy.co.uk.csv.hd type
+  www.pc-canada.com.csv.screen mode
+
+Cluster 21:
+  ca.pcpartpicker.com.csv.hdmi
+  www.makingbuyingeasy.co.uk.csv.hdmi ports quantity
+  www.odsi.co.uk.csv.hdmi ports qty
+  www.shopmania.com.csv.hdmi ports
+
+Cluster 22:
+  www.makingbuyingeasy.co.uk.csv.headphone outputs
+
+Cluster 23:
+  www.makingbuyingeasy.co.uk.csv.headphone connectivity
+
+Cluster 24:
+  www.makingbuyingeasy.co.uk.csv.input frequency
+
+Cluster 25:
+  ca.pcpartpicker.com.csv.minidisplay port
+  www.makingbuyingeasy.co.uk.csv.mini displayport quantity
+
+Cluster 26:
+  www.itenergy.co.uk.csv.weight approximate
+  www.kingsfieldcomputers.co.uk.csv.weight approximate
+  www.makingbuyingeasy.co.uk.csv.weight
+  www.odsi.co.uk.csv.weight
+  www.pc-canada.com.csv.weight approximate
+  www.shopmania.com.csv.weight
+
+Cluster 27:
+  www.itenergy.co.uk.csv.weight with stand approximate
+  www.kingsfieldcomputers.co.uk.csv.weight with stand approximate
+  www.makingbuyingeasy.co.uk.csv.weight with stand
+  www.pc-canada.com.csv.weight with stand approximate
+
+Cluster 28:
+  www.itenergy.co.uk.csv.mount type
+  www.kingsfieldcomputers.co.uk.csv.mount type
+  www.pc-canada.com.csv.mount type
+
+Cluster 29:
+  ca.pcpartpicker.com.csv.display colors
+  www.best-deal-items.com.csv.color supported
+  www.itenergy.co.uk.csv.colour support
+  www.kingsfieldcomputers.co.uk.csv.colour support
+  www.makingbuyingeasy.co.uk.csv.display number of colours
+  www.odsi.co.uk.csv.colour support
+  www.pc-canada.com.csv.color supported
+  www.shopmania.com.csv.color depth
+
+Cluster 30:
+  www.makingbuyingeasy.co.uk.csv.operating altitude
+
+Cluster 31:
+  www.makingbuyingeasy.co.uk.csv.pixel pitch
+  www.odsi.co.uk.csv.pixel pitch
+  www.shopmania.com.csv.dot pitch
+
+Cluster 32:
+  www.itenergy.co.uk.csv.energy efficiency class
+  www.kingsfieldcomputers.co.uk.csv.energy efficiency class
+  www.makingbuyingeasy.co.uk.csv.energy efficiency class
+  www.odsi.co.uk.csv.energy class
+
+Cluster 33:
+  www.itenergy.co.uk.csv.operating power consumption
+  www.kingsfieldcomputers.co.uk.csv.operating power consumption
+  www.makingbuyingeasy.co.uk.csv.power consumption typical
+  www.odsi.co.uk.csv.power consumption operational
+  www.pc-canada.com.csv.operating power consumption
+  www.shopmania.com.csv.power consumption operational
+
+Cluster 34:
+  www.best-deal-items.com.csv.power consumption stand by  sleep
+  www.itenergy.co.uk.csv.standby power consumption
+  www.kingsfieldcomputers.co.uk.csv.standby power consumption
+  www.makingbuyingeasy.co.uk.csv.power consumption standby
+  www.odsi.co.uk.csv.power consumption stand by
+  www.pc-canada.com.csv.standby power consumption
+  www.shopmania.com.csv.power consumption stand by
+
+Cluster 35:
+  ca.pcpartpicker.com.csv.response time
+  www.getprice.com.au.csv.response time
+  www.itenergy.co.uk.csv.response time
+  www.kingsfieldcomputers.co.uk.csv.response time
+  www.makingbuyingeasy.co.uk.csv.response time
+  www.odsi.co.uk.csv.response time
+  www.pc-canada.com.csv.response time
+  www.shopmania.com.csv.response time
+
+Cluster 36:
+  ca.pcpartpicker.com.csv.brightness
+  www.best-deal-items.com.csv.brightness typical
+  www.itenergy.co.uk.csv.brightness
+  www.kingsfieldcomputers.co.uk.csv.brightness
+  www.makingbuyingeasy.co.uk.csv.display brightness
+  www.odsi.co.uk.csv.brightness
+  www.pc-canada.com.csv.brightness
+  www.shopmania.com.csv.brightness
+
+Cluster 37:
+  ca.pcpartpicker.com.csv.screen size
+  www.itenergy.co.uk.csv.screen size
+  www.kingsfieldcomputers.co.uk.csv.screen size
+  www.makingbuyingeasy.co.uk.csv.display diagonal
+  www.odsi.co.uk.csv.diagonal size
+  www.pc-canada.com.csv.screen size
+  www.shopmania.com.csv.diagonal size
+
+Cluster 38:
+  www.getprice.com.au.csv.monitor type
+  www.itenergy.co.uk.csv.product type
+  www.kingsfieldcomputers.co.uk.csv.product type
+  www.makingbuyingeasy.co.uk.csv.display
+  www.odsi.co.uk.csv.display type
+  www.pc-canada.com.csv.product type
+  www.shopmania.com.csv.display type
+
+Cluster 39:
+  www.best-deal-items.com.csv.number of loudspeakers
+  www.itenergy.co.uk.csv.number of speakers
+  www.kingsfieldcomputers.co.uk.csv.number of speakers
+  www.makingbuyingeasy.co.uk.csv.number of loudspeakers
+  www.odsi.co.uk.csv.speakers
+  www.pc-canada.com.csv.number of speakers
+  www.shopmania.com.csv.number of speakers
+
+Cluster 40:
+  ca.pcpartpicker.com.csv.aspect ratio
+  www.best-deal-items.com.csv.aspect ratio
+  www.itenergy.co.uk.csv.aspect ratio
+  www.kingsfieldcomputers.co.uk.csv.aspect ratio
+  www.makingbuyingeasy.co.uk.csv.aspect ratio
+  www.odsi.co.uk.csv.aspect ratio
+  www.pc-canada.com.csv.aspect ratio
+  www.shopmania.com.csv.aspect ratio
+
+Cluster 41:
+  www.makingbuyingeasy.co.uk.csv.on screen display osd languages
+  www.odsi.co.uk.csv.osd languages
+
+Cluster 42:
+  www.makingbuyingeasy.co.uk.csv.number of osd languages
+
+Cluster 43:
+  ca.pcpartpicker.com.csv.recommended resolution
+  www.best-deal-items.com.csv.display resolution
+  www.getprice.com.au.csv.display resolution
+  www.itenergy.co.uk.csv.maximum resolution
+  www.kingsfieldcomputers.co.uk.csv.maximum resolution
+  www.makingbuyingeasy.co.uk.csv.display resolution
+  www.odsi.co.uk.csv.native resolution
+  www.pc-canada.com.csv.maximum resolution
+  www.shopmania.com.csv.resolution
+
+Cluster 44:
+  www.best-deal-items.com.csv.usb 20 ports quantity
+  www.makingbuyingeasy.co.uk.csv.usb 20 ports quantity
+
+Cluster 45:
+  www.makingbuyingeasy.co.uk.csv.usb 30 ports quantity
+
+Cluster 46:
+  www.best-deal-items.com.csv.number of usb ports
+  www.shopmania.com.csv.usb ports
+
+Cluster 47:
+  www.itenergy.co.uk.csv.usb standard
+  www.kingsfieldcomputers.co.uk.csv.usb standard
+  www.makingbuyingeasy.co.uk.csv.usb version
+  www.pc-canada.com.csv.usb standard
+
+Cluster 48:
+  ca.pcpartpicker.com.csv.vga
+  www.best-deal-items.com.csv.vga dsub ports
+  www.makingbuyingeasy.co.uk.csv.vga dsub ports quantity
+
+Cluster 49:
+  www.best-deal-items.com.csv.limited warranty
+  www.itenergy.co.uk.csv.limited warranty
+  www.kingsfieldcomputers.co.uk.csv.limited warranty
+  www.odsi.co.uk.csv.service  support
+  www.pc-canada.com.csv.limited warranty
+
+Cluster 50:
+  www.makingbuyingeasy.co.uk.csv.wifi
+
+Cluster 51:
+  www.best-deal-items.com.csv.operating relative humidity hh
+  www.makingbuyingeasy.co.uk.csv.operating relative humidity hh
+  www.odsi.co.uk.csv.humidity range operating
+

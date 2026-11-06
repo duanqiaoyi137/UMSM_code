@@ -1,0 +1,245 @@
+Cluster 1:
+  www.flipkart.com.csv.focus
+
+Cluster 2:
+  www.ebay.com.csv.af assist lamp
+
+Cluster 3:
+  www.flipkart.com.csv.focus mode
+  www.price-hunt.com.csv.focusing sysetm
+
+Cluster 4:
+  www.ebay.com.csv.focus point
+  www.flipkart.com.csv.focusing sysetm
+
+Cluster 5:
+  www.ebay.com.csv.battery chemistry
+  www.pcconnection.com.csv.battery technology
+
+Cluster 6:
+  www.ebay.com.csv.brand
+  www.flipkart.com.csv.brand
+  www.price-hunt.com.csv.brand
+  www.pricedekho.com.csv.brand
+
+Cluster 7:
+  www.ebay.com.csv.body type
+  www.pcconnection.com.csv.camera type
+  www.shopbot.com.au.csv.camera type
+
+Cluster 8:
+  www.pricedekho.com.csv.dimension
+
+Cluster 9:
+  www.ebay.com.csv.camera colour
+  www.flipkart.com.csv.color
+  www.pcconnection.com.csv.color
+  www.price-hunt.com.csv.color
+  www.pricedekho.com.csv.color
+  www.priceme.co.nz.csv.colour
+  www.wexphotographic.com.csv.colour
+
+Cluster 10:
+  www.ebay.com.csv.color filter system
+  www.flipkart.com.csv.color filter
+  www.price-hunt.com.csv.color filter
+  www.pricedekho.com.csv.color filter
+
+Cluster 11:
+  www.ebay.com.csv.compensation
+  www.flipkart.com.csv.exposure compensation
+  www.price-hunt.com.csv.exposure compensation
+  www.pricedekho.com.csv.exposure compensation
+  www.wexphotographic.com.csv.exposure control
+
+Cluster 12:
+  www.flipkart.com.csv.exposure modes
+  www.price-hunt.com.csv.exposure modes
+  www.wexphotographic.com.csv.exposure modes
+
+Cluster 13:
+  www.ebay.com.csv.storage memory
+  www.flipkart.com.csv.memory card type
+  www.pcconnection.com.csv.flash memory form factor
+  www.price-hunt.com.csv.memory card type
+  www.wexphotographic.com.csv.card format
+
+Cluster 14:
+  www.ebay.com.csv.file system
+
+Cluster 15:
+  www.flipkart.com.csv.maximum focal length
+  www.pcconnection.com.csv.35mm equivalent focal length max
+  www.priceme.co.nz.csv.max focal length
+  www.wexphotographic.com.csv.focal length tele
+
+Cluster 16:
+  www.pcconnection.com.csv.35mm equivalent focal length min
+  www.priceme.co.nz.csv.min focal length
+  www.wexphotographic.com.csv.focal length wide
+
+Cluster 17:
+  www.ebay.com.csv.still image format
+  www.flipkart.com.csv.image format
+  www.pcconnection.com.csv.still image format
+  www.price-hunt.com.csv.image format
+  www.pricedekho.com.csv.image format
+  www.priceme.co.nz.csv.still image format
+
+Cluster 18:
+  www.ebay.com.csv.megapixels
+  www.flipkart.com.csv.optical sensor resolution in megapixel
+  www.pcconnection.com.csv.megapixels
+  www.price-hunt.com.csv.optical sensor resolution in megapixel
+  www.pricedekho.com.csv.pixels
+  www.shopbot.com.au.csv.sensor resolution
+  www.wexphotographic.com.csv.megapixels
+
+Cluster 19:
+  www.priceme.co.nz.csv.max image resolution
+
+Cluster 20:
+  www.price-hunt.com.csv.inbuilt memory
+  www.pricedekho.com.csv.inbuilt memory
+
+Cluster 21:
+  www.ebay.com.csv.highest standard iso sensitivity
+  www.price-hunt.com.csv.maximum expandable iso sensitivity
+  www.wexphotographic.com.csv.iso max
+
+Cluster 22:
+  www.ebay.com.csv.lowest standard iso sensitivity
+  www.wexphotographic.com.csv.iso min
+
+Cluster 23:
+  www.flipkart.com.csv.lens type
+  www.price-hunt.com.csv.lens type
+  www.pricedekho.com.csv.lens type
+
+Cluster 24:
+  www.ebay.com.csv.microphone  speaker
+  www.flipkart.com.csv.microphone
+  www.price-hunt.com.csv.microphone
+  www.pricedekho.com.csv.microphone
+
+Cluster 25:
+  www.price-hunt.com.csv.picture angle
+  www.pricedekho.com.csv.picture angle
+
+Cluster 26:
+  www.ebay.com.csv.picture control system
+  www.pcconnection.com.csv.special effects
+
+Cluster 27:
+  www.ebay.com.csv.red eye reduction
+  www.flipkart.com.csv.red eye reduction
+  www.pcconnection.com.csv.red eye reduction
+  www.price-hunt.com.csv.red eye reduction
+  www.pricedekho.com.csv.red eye reduction
+
+Cluster 28:
+  www.ebay.com.csv.screen size
+  www.flipkart.com.csv.lcd screen size
+  www.pcconnection.com.csv.display size
+  www.price-hunt.com.csv.lcd screen size
+  www.pricedekho.com.csv.screen size
+  www.shopbot.com.au.csv.lcd size
+  www.wexphotographic.com.csv.screen size inches
+
+Cluster 29:
+  www.ebay.com.csv.display screen type
+  www.flipkart.com.csv.lcd display
+  www.pcconnection.com.csv.display technology
+  www.price-hunt.com.csv.lcd display
+  www.pricedekho.com.csv.display type
+
+Cluster 30:
+  www.ebay.com.csv.self timer delay
+  www.flipkart.com.csv.self timer
+  www.price-hunt.com.csv.self timer
+  www.pricedekho.com.csv.self timer
+
+Cluster 31:
+  www.pcconnection.com.csv.optical sensor size
+  www.price-hunt.com.csv.sensor size
+  www.pricedekho.com.csv.sensor size
+  www.wexphotographic.com.csv.sensor size
+
+Cluster 32:
+  www.pcconnection.com.csv.optical sensor type
+  www.price-hunt.com.csv.sensor type
+  www.pricedekho.com.csv.sensor type
+  www.priceme.co.nz.csv.optical sensor
+  www.wexphotographic.com.csv.sensor type
+
+Cluster 33:
+  www.ebay.com.csv.shutter speed (maximum)
+  www.price-hunt.com.csv.maximum shutter speed
+  www.pricedekho.com.csv.maximum shutter speed
+  www.wexphotographic.com.csv.shutter speed max
+
+Cluster 34:
+  www.ebay.com.csv.minimum shutter speed
+  www.price-hunt.com.csv.minimum shutter speed
+  www.pricedekho.com.csv.minimum shutter speed
+  www.wexphotographic.com.csv.shutter speed min
+
+Cluster 35:
+  www.price-hunt.com.csv.shutter type
+
+Cluster 36:
+  www.ebay.com.csv.image ratio wh
+  www.flipkart.com.csv.supported aspect ratio
+  www.price-hunt.com.csv.supported aspect ratio
+  www.pricedekho.com.csv.supported aspect ratio
+
+Cluster 37:
+  www.ebay.com.csv.movie audio recording format
+  www.flipkart.com.csv.audio formats
+  www.price-hunt.com.csv.audio formats
+  www.pricedekho.com.csv.audio formats
+
+Cluster 38:
+  www.ebay.com.csv.languages
+
+Cluster 39:
+  www.price-hunt.com.csv.video format
+  www.pricedekho.com.csv.video format
+
+Cluster 40:
+  www.ebay.com.csv.max. resolution
+  www.flipkart.com.csv.video display resolution
+  www.price-hunt.com.csv.video display resolution
+  www.pricedekho.com.csv.video display resolution
+  www.shopbot.com.au.csv.video resolution
+  www.wexphotographic.com.csv.movie mode
+
+Cluster 41:
+  www.ebay.com.csv.warranty - labor
+  www.flipkart.com.csv.warranty summary
+  www.pcconnection.com.csv.warranty  labor
+  www.price-hunt.com.csv.warranty summary
+
+Cluster 42:
+  www.ebay.com.csv.white balance control
+  www.flipkart.com.csv.white balancing
+  www.price-hunt.com.csv.white balancing
+  www.pricedekho.com.csv.white balancing
+
+Cluster 43:
+  www.ebay.com.csv.humidity
+  www.flipkart.com.csv.humidity
+  www.price-hunt.com.csv.humidity
+
+Cluster 44:
+  www.ebay.com.csv.zoom:
+  www.price-hunt.com.csv.digital zoom
+  www.pricedekho.com.csv.digital zoom
+
+Cluster 45:
+  www.ebay.com.csv.optical zoom
+  www.pcconnection.com.csv.optical zoom
+  www.price-hunt.com.csv.optical zoom
+  www.pricedekho.com.csv.optical zoom
+  www.wexphotographic.com.csv.optical zoom x
+

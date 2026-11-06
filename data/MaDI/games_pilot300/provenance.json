@@ -1,0 +1,118 @@
+{
+  "protocol": {
+    "adapter_version": 1,
+    "repository": "https://github.com/wbsg-uni-mannheim/MaDI-Bench",
+    "revision": "062058d09c8abd97026e6d4e9908b433753f58d3",
+    "domain": "games",
+    "max_rows": 300,
+    "seed": 42,
+    "feature_policy": "all gold-annotated non-ID source columns; original column names",
+    "missing_policy": "preserve nulls; empty lists and null placeholders become empty cells",
+    "task": "derived multi-table schema matching; canonical targets used only for ground truth"
+  },
+  "upstream_sha256": {
+    "use cases/games/base/input/schemamatching/sm_mapping_gold.json": "4dd6e0f099879d803b8a4257ebd482fb56874a1d23baafe5700e17b84549c01b",
+    "use cases/games/base/input/data/dbpedia.csv": "e7c7e4677e8dc95b245c83ab320428b5ec3fca65217143a7c90e7871221ea4c0",
+    "use cases/games/base/input/data/metacritic.csv": "08e1dfa5d8c00a9196a0c4de285eac44977acb37f95fdbdd4c56ebd8064a572e",
+    "use cases/games/base/input/data/sales.csv": "184d4c4fc93c0775b5f283c6cda7118f4fe5bf22fa4ca579ada06701dc3cc5fd"
+  },
+  "files": {
+    "groundtruth.txt": "a696761ddefe7ff8d28efdad4907862dc0c7175162b59841da25b8b0d62243f9",
+    "original/dbpedia.csv": "15b813a4531a05156aeed6ad70d069c4930d3592a1dba177ba5fe92aa24138e6",
+    "original/metacritic.csv": "54a3d3c621fa1b7692e3ef192013900085056eb1e93422b3bb5e88a74637c1af",
+    "original/sales.csv": "73480de8efc48d1721eade2e0d6238ac3a3f24e03ad271c3ee754e17af3a1da9"
+  },
+  "tables": [
+    {
+      "table": "dbpedia.csv",
+      "original_rows": 46580,
+      "rows": 300,
+      "columns": [
+        "title",
+        "launch_yr",
+        "studio",
+        "system",
+        "genre",
+        "franchise"
+      ],
+      "excluded_columns": [
+        "wiki_ref"
+      ],
+      "missing_cells": 162,
+      "missing_rate": 0.09,
+      "column_missing_rates": {
+        "title": 0.0,
+        "launch_yr": 0.023333333333333334,
+        "studio": 0.03,
+        "system": 0.013333333333333334,
+        "genre": 0.0033333333333333335,
+        "franchise": 0.47
+      }
+    },
+    {
+      "table": "metacritic.csv",
+      "original_rows": 20494,
+      "rows": 300,
+      "columns": [
+        "game_title",
+        "year_published",
+        "made_by",
+        "console",
+        "genres",
+        "press_rating",
+        "player_rating",
+        "age_rating"
+      ],
+      "excluded_columns": [
+        "mc_id"
+      ],
+      "missing_cells": 61,
+      "missing_rate": 0.025416666666666667,
+      "column_missing_rates": {
+        "game_title": 0.0,
+        "year_published": 0.0,
+        "made_by": 0.0,
+        "console": 0.0,
+        "genres": 0.0,
+        "press_rating": 0.0033333333333333335,
+        "player_rating": 0.07333333333333333,
+        "age_rating": 0.12666666666666668
+      }
+    },
+    {
+      "table": "sales.csv",
+      "original_rows": 7877,
+      "rows": 300,
+      "columns": [
+        "prod_title",
+        "launch_dt",
+        "studio",
+        "dist",
+        "hw",
+        "genre",
+        "press_score",
+        "comm_rating",
+        "age_classification"
+      ],
+      "excluded_columns": [
+        "rec_id",
+        "units_sold_mm"
+      ],
+      "missing_cells": 36,
+      "missing_rate": 0.013333333333333334,
+      "column_missing_rates": {
+        "prod_title": 0.0,
+        "launch_dt": 0.0,
+        "studio": 0.0,
+        "dist": 0.0,
+        "hw": 0.0,
+        "genre": 0.0,
+        "press_score": 0.0,
+        "comm_rating": 0.12,
+        "age_classification": 0.0
+      }
+    }
+  ],
+  "gt_groups": 10,
+  "gt_pairs": 18
+}

@@ -1,0 +1,246 @@
+Cluster 1:
+  www.hardware-planet.it.csv.bluetooth
+
+Cluster 2:
+  ce.yikus.com.csv.label
+  www.itenergy.co.uk.csv.brand name
+  www.nexus-t.co.uk.csv.manufacturer
+  www.pc-canada.com.csv.brand name
+
+Cluster 3:
+  ce.yikus.com.csv.color
+  www.hardware-planet.it.csv.colore del prodotto
+  www.itenergy.co.uk.csv.colour
+  www.ohc24.ch.csv.colour
+  www.pc-canada.com.csv.color
+
+Cluster 4:
+  www.hardware-planet.it.csv.colore piedi
+
+Cluster 5:
+  www.hardware-planet.it.csv.rapporto di contrasto dinamico
+  www.nexus-t.co.uk.csv.dynamic contrast ratio
+
+Cluster 6:
+  www.hardware-planet.it.csv.rapporto di contrasto
+  www.itenergy.co.uk.csv.contrast ratio
+  www.nexus-t.co.uk.csv.contrast ratio
+  www.pc-canada.com.csv.contrast ratio
+
+Cluster 7:
+  www.hardware-planet.it.csv.quantità displayports
+  www.nexus-t.co.uk.csv.displayports
+
+Cluster 8:
+  www.hardware-planet.it.csv.quantità porte dvid
+  www.nexus-t.co.uk.csv.dvid ports
+
+Cluster 9:
+  www.itenergy.co.uk.csv.displayport
+  www.pc-canada.com.csv.displayport
+
+Cluster 10:
+  www.hardware-planet.it.csv.porta dvi
+  www.itenergy.co.uk.csv.dvi
+  www.pc-canada.com.csv.dvi
+
+Cluster 11:
+  www.hardware-planet.it.csv.collegamento ethernet lan
+  www.itenergy.co.uk.csv.network rj45
+
+Cluster 12:
+  www.hardware-planet.it.csv.full hd
+
+Cluster 13:
+  www.hardware-planet.it.csv.hdmi
+  www.itenergy.co.uk.csv.hdmi
+  www.pc-canada.com.csv.hdmi
+
+Cluster 14:
+  www.itenergy.co.uk.csv.headphone
+  www.pc-canada.com.csv.headphone
+
+Cluster 15:
+  www.hardware-planet.it.csv.microfono incorporato
+
+Cluster 16:
+  www.hardware-planet.it.csv.microfono spinotto dingresso
+
+Cluster 17:
+  www.hardware-planet.it.csv.altoparlanti incorporati
+  www.itenergy.co.uk.csv.speakers
+  www.nexus-t.co.uk.csv.speakers
+  www.pc-canada.com.csv.speakers
+
+Cluster 18:
+  www.hardware-planet.it.csv.altoparlante  cuffia  spinotto di uscita
+
+Cluster 19:
+  www.hardware-planet.it.csv.subwoofer incorporato
+
+Cluster 20:
+  www.itenergy.co.uk.csv.usb
+  www.pc-canada.com.csv.usb
+
+Cluster 21:
+  www.itenergy.co.uk.csv.vga
+  www.pc-canada.com.csv.vga
+
+Cluster 22:
+  www.hardware-planet.it.csv.tipologia hd
+  www.itenergy.co.uk.csv.screen mode
+  www.nexus-t.co.uk.csv.screen features
+  www.pc-canada.com.csv.screen mode
+
+Cluster 23:
+  www.hardware-planet.it.csv.quantità porte hdmi
+  www.nexus-t.co.uk.csv.hdmi ports
+  www.ohc24.ch.csv.hdmi ports qty
+
+Cluster 24:
+  www.nexus-t.co.uk.csv.headphone jacks
+
+Cluster 25:
+  www.hardware-planet.it.csv.connessione cuffia
+
+Cluster 26:
+  www.hardware-planet.it.csv.frequenza di ingresso
+
+Cluster 27:
+  www.hardware-planet.it.csv.peso
+  www.itenergy.co.uk.csv.weight approximate
+  www.nexus-t.co.uk.csv.net weight
+  www.pc-canada.com.csv.weight approximate
+
+Cluster 28:
+  www.hardware-planet.it.csv.peso prodotto con supporto
+  www.itenergy.co.uk.csv.weight with stand approximate
+  www.ohc24.ch.csv.weight
+  www.pc-canada.com.csv.weight with stand approximate
+
+Cluster 29:
+  www.nexus-t.co.uk.csv.wall mount
+
+Cluster 30:
+  www.itenergy.co.uk.csv.mount type
+  www.pc-canada.com.csv.mount type
+
+Cluster 31:
+  www.hardware-planet.it.csv.colori del display
+  www.itenergy.co.uk.csv.colour support
+  www.nexus-t.co.uk.csv.colours
+  www.ohc24.ch.csv.colour support
+  www.pc-canada.com.csv.color supported
+
+Cluster 32:
+  www.hardware-planet.it.csv.peso incluso imballo
+  www.nexus-t.co.uk.csv.gross weight
+
+Cluster 33:
+  www.hardware-planet.it.csv.dot pitch
+  www.nexus-t.co.uk.csv.pixel pitch
+  www.ohc24.ch.csv.pixel pitch
+
+Cluster 34:
+  www.hardware-planet.it.csv.classe efficienza energetica
+  www.itenergy.co.uk.csv.energy efficiency class
+  www.ohc24.ch.csv.energy class
+
+Cluster 35:
+  www.hardware-planet.it.csv.consumi
+  www.itenergy.co.uk.csv.operating power consumption
+  www.nexus-t.co.uk.csv.normal power consumption
+  www.pc-canada.com.csv.operating power consumption
+
+Cluster 36:
+  www.hardware-planet.it.csv.consumi modalità standby
+  www.itenergy.co.uk.csv.standby power consumption
+  www.nexus-t.co.uk.csv.standby power consumption
+  www.pc-canada.com.csv.standby power consumption
+
+Cluster 37:
+  www.hardware-planet.it.csv.tempo di risposta
+  www.itenergy.co.uk.csv.response time
+  www.nexus-t.co.uk.csv.response time
+  www.ohc24.ch.csv.response time
+  www.pc-canada.com.csv.response time
+
+Cluster 38:
+  www.hardware-planet.it.csv.luminosità schermo
+  www.itenergy.co.uk.csv.brightness
+  www.nexus-t.co.uk.csv.brightness
+  www.ohc24.ch.csv.brightness
+  www.pc-canada.com.csv.brightness
+
+Cluster 39:
+  ce.yikus.com.csv.size
+  www.hardware-planet.it.csv.dimensioni schermo
+  www.itenergy.co.uk.csv.screen size
+  www.nexus-t.co.uk.csv.screen size
+  www.pc-canada.com.csv.screen size
+
+Cluster 40:
+  www.hardware-planet.it.csv.tipologia display
+  www.itenergy.co.uk.csv.product type
+  www.nexus-t.co.uk.csv.screen type
+  www.pc-canada.com.csv.product type
+
+Cluster 41:
+  www.hardware-planet.it.csv.numero di altoparlanti
+  www.itenergy.co.uk.csv.number of speakers
+  www.ohc24.ch.csv.speaker system
+  www.pc-canada.com.csv.number of speakers
+
+Cluster 42:
+  ce.yikus.com.csv.aspectratio
+  www.hardware-planet.it.csv.formato
+  www.itenergy.co.uk.csv.aspect ratio
+  www.nexus-t.co.uk.csv.aspect ratio
+  www.ohc24.ch.csv.aspect ratio
+  www.pc-canada.com.csv.aspect ratio
+
+Cluster 43:
+  www.hardware-planet.it.csv.lingue osd
+
+Cluster 44:
+  www.hardware-planet.it.csv.numero di lingue osd
+
+Cluster 45:
+  www.hardware-planet.it.csv.risoluzione
+  www.itenergy.co.uk.csv.maximum resolution
+  www.nexus-t.co.uk.csv.recommend resolution
+  www.ohc24.ch.csv.native resolution
+  www.pc-canada.com.csv.maximum resolution
+
+Cluster 46:
+  www.hardware-planet.it.csv.quantità porte usb 20
+  www.nexus-t.co.uk.csv.usb 20 downstream ports
+
+Cluster 47:
+  www.nexus-t.co.uk.csv.usb 20 upstream ports
+
+Cluster 48:
+  www.hardware-planet.it.csv.quantità porte usb 30
+  www.nexus-t.co.uk.csv.usb 30 downstream ports
+
+Cluster 49:
+  www.nexus-t.co.uk.csv.usb 30 upstream ports
+
+Cluster 50:
+  www.itenergy.co.uk.csv.usb standard
+  www.pc-canada.com.csv.usb standard
+
+Cluster 51:
+  www.hardware-planet.it.csv.quantità porte vga dsub
+  www.nexus-t.co.uk.csv.vga ports
+
+Cluster 52:
+  ce.yikus.com.csv.warranty
+  www.itenergy.co.uk.csv.limited warranty
+  www.nexus-t.co.uk.csv.warranty direct with manufacturer
+  www.ohc24.ch.csv.manufacturer warranty
+  www.pc-canada.com.csv.limited warranty
+
+Cluster 53:
+  www.hardware-planet.it.csv.range di umidità di funzionamento
+

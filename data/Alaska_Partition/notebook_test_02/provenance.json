@@ -1,0 +1,205 @@
+{
+  "protocol": {
+    "adapter_version": 1,
+    "construction": "natural_disjoint_source_partition",
+    "source_dataset": "Alaska_full",
+    "source_set": "Alaska_full/notebook",
+    "source_task_fingerprint": "25582083873f4cfdf347011dba826c485096c8ca6df05c81c41d12e55f8d734b",
+    "source_fingerprint": "625b92fb7365d257b9115c762d6e652c333a106968dd62b50a7245f982688b32",
+    "source_sites": [
+      "bhphotovideo.com",
+      "bidorbuy.co.za",
+      "directdial.com",
+      "isupplyhub.com",
+      "mygofer.com",
+      "staples.com",
+      "tigerdirect.com",
+      "topendelectronic.co.uk"
+    ],
+    "seed": 2026,
+    "min_tables": 6,
+    "domain": "notebook",
+    "missingness": "unchanged natural missingness",
+    "site_policy": "normalized exact hostname, first domain owns duplicated sites"
+  },
+  "tables": [
+    {
+      "table": "www.bhphotovideo.com.csv",
+      "rows": 196,
+      "columns": 1,
+      "missing_rate": 0.0,
+      "column_missing_rates": {
+        "weight": 0.0
+      }
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "rows": 157,
+      "columns": 3,
+      "missing_rate": 0.6369426751592356,
+      "column_missing_rates": {
+        "weight": 0.1337579617834395,
+        "manufacturer warranty": 0.7961783439490446,
+        "screen size diagonal": 0.9808917197452229
+      }
+    },
+    {
+      "table": "www.directdial.com.csv",
+      "rows": 157,
+      "columns": 21,
+      "missing_rate": 0.39672429481346677,
+      "column_missing_rates": {
+        "64bit processing": 0.16560509554140126,
+        "brand name": 0.0,
+        "cache": 0.21019108280254778,
+        "graphics controller manufacturer": 0.15286624203821655,
+        "graphics controller model": 0.17197452229299362,
+        "limited warranty": 0.21019108280254778,
+        "maximum memory": 0.24203821656050956,
+        "memory card reader": 0.5859872611464968,
+        "memory technology": 0.18471337579617833,
+        "number of usb 20 ports": 0.45222929936305734,
+        "number of usb 30 ports": 0.1910828025477707,
+        "processor speed": 0.18471337579617833,
+        "processor type": 0.19745222929936307,
+        "vga": 0.267515923566879,
+        "weight approximate": 0.17834394904458598,
+        "screen size": 0.7898089171974523,
+        "total hard drive capacity": 0.45222929936305734,
+        "hdmi": 0.8280254777070064,
+        "ssd cache capacity": 0.9044585987261147,
+        "flash memory": 0.9808917197452229,
+        "standby power consumption": 0.9808917197452229
+      }
+    },
+    {
+      "table": "www.isupplyhub.com.csv",
+      "rows": 300,
+      "columns": 12,
+      "missing_rate": 0.5255555555555556,
+      "column_missing_rates": {
+        "brand name": 0.11333333333333333,
+        "batteries": 0.6633333333333333,
+        "computer memory type": 0.4033333333333333,
+        "hard drive": 0.21666666666666667,
+        "item weight": 0.19,
+        "number of usb 30 ports": 0.6333333333333333,
+        "processor brand": 0.5066666666666667,
+        "screen size": 0.24333333333333335,
+        "chipset brand": 0.9133333333333333,
+        "flash memory size": 0.8533333333333334,
+        "number of usb 20 ports": 0.74,
+        "average battery life in hours": 0.83
+      }
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "rows": 159,
+      "columns": 17,
+      "missing_rate": 0.09914909359970403,
+      "column_missing_rates": {
+        "battery life range": 0.031446540880503145,
+        "battery type": 0.025157232704402517,
+        "cpu brand": 0.006289308176100629,
+        "cpu cache mb": 0.025157232704402517,
+        "cpu speed": 0.0,
+        "depth in": 0.006289308176100629,
+        "gpu chipset": 0.031446540880503145,
+        "hard drive capacity range": 0.006289308176100629,
+        "hdmi outputs": 0.031446540880503145,
+        "item weight lbs": 0.0,
+        "maximum memory supported": 0.025157232704402517,
+        "memory range": 0.006289308176100629,
+        "memory type": 0.031446540880503145,
+        "screen size range": 0.006289308176100629,
+        "vga out": 0.006289308176100629,
+        "aspect ratio": 0.8301886792452831,
+        "general warranty": 0.6163522012578616
+      }
+    },
+    {
+      "table": "www.staples.com.csv",
+      "rows": 136,
+      "columns": 9,
+      "missing_rate": 0.3684640522875817,
+      "column_missing_rates": {
+        "hard drive capacity": 0.22794117647058823,
+        "processor speed up to ghz": 0.27941176470588236,
+        "ram capacity": 0.22058823529411764,
+        "cpu cache": 0.5441176470588235,
+        "laptop screen size inches": 0.3088235294117647,
+        "laptop warranty": 0.3382352941176471,
+        "laptop weight filter": 0.40441176470588236,
+        "laptop battery life": 0.4852941176470588,
+        "laptop battery type": 0.5073529411764706
+      }
+    },
+    {
+      "table": "www.tigerdirect.com.csv",
+      "rows": 142,
+      "columns": 15,
+      "missing_rate": 0.4708920187793427,
+      "column_missing_rates": {
+        "capacity": 0.1619718309859155,
+        "hard drive speed": 0.7676056338028169,
+        "memory type": 0.014084507042253521,
+        "processor brand": 0.07746478873239436,
+        "processor class": 0.09154929577464789,
+        "processor speed": 0.08450704225352113,
+        "screen size": 0.2605633802816901,
+        "weight": 0.4225352112676056,
+        "battery type": 0.5563380281690141,
+        "total memory size": 0.09859154929577464,
+        "battery life": 0.9014084507042254,
+        "ram speed": 0.7887323943661971,
+        "processor cache": 0.9084507042253521,
+        "lenovo": 0.9647887323943662,
+        "aspect ratio": 0.9647887323943662
+      }
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "rows": 289,
+      "columns": 24,
+      "missing_rate": 0.7282295271049596,
+      "column_missing_rates": {
+        "aspect ratio": 0.5397923875432526,
+        "battery": 0.31833910034602075,
+        "cache": 0.5813148788927336,
+        "memory": 0.314878892733564,
+        "weight": 0.6366782006920415,
+        "graphics controller manufacturer": 0.7508650519031141,
+        "graphics controller model": 0.7577854671280276,
+        "maximum battery run time": 0.8858131487889274,
+        "memory card reader": 0.8096885813148789,
+        "memory technology": 0.7716262975778547,
+        "number of usb 30 ports": 0.7681660899653979,
+        "processor manufacturer": 0.8408304498269896,
+        "processor speed": 0.740484429065744,
+        "processor type": 0.7474048442906575,
+        "screen size": 0.42560553633217996,
+        "vga": 0.8442906574394463,
+        "brand": 0.5916955017301038,
+        "ssd": 0.9065743944636678,
+        "64bit processing": 0.8512110726643599,
+        "battery capacity": 0.8996539792387543,
+        "interfacesports": 0.9204152249134948,
+        "number of usb 20 ports": 0.8373702422145328,
+        "hdd": 0.754325259515571,
+        "hdd rpm": 0.9826989619377162
+      }
+    }
+  ],
+  "gt_pairs": 169,
+  "files": {
+    "groundtruth.txt": "bf09d2a1da09cbfad397bfa3ae3a57ee75240a4f86d242e468ec53b6306581e4",
+    "original/www.bhphotovideo.com.csv": "0b6993eec4d901cd616a847d7ef4c8114599e53bb4002af34ab5135278100c18",
+    "original/www.tigerdirect.com.csv": "9519e7f0b91f5955602fb29a8e47e0de45b7d97c36f4d67da6aaee53eb182790",
+    "original/www.staples.com.csv": "5ac17c9cc9a79deee315d57e8b4f4b4e71f5f8cae3374c4197bb6a24d0ee1544",
+    "original/www.bidorbuy.co.za.csv": "e98c9d2fb6f2e60306e874421d20687be904d1aae39074d196875c17916cce69",
+    "original/www.topendelectronic.co.uk.csv": "8bc26051dd116437f0816d858bf21953d02621e84c0329c6347d45f7ffd1f30b",
+    "original/www.mygofer.com.csv": "afba93a856ebcfafd609f0ed27063656e2858eb01c31f3ee0d6c0311bb41f6ce",
+    "original/www.isupplyhub.com.csv": "ecc71cc5c3268fd60b319e98f2c3655f9842dde055c3dea8af3e163142284a29",
+    "original/www.directdial.com.csv": "faf474ae4ef58fae1d9c6904452d7a502c767a40c15799f385a424b5911833d2"
+  }
+}

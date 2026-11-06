@@ -1,0 +1,5114 @@
+{
+  "protocol": {
+    "adapter_version": 1,
+    "source": "https://github.com/merialdo/research.alaska",
+    "revision": "fb452aef32cd648eae4bcbdc984789b7f6f07960",
+    "domain": "notebook",
+    "role": "fit",
+    "max_rows": 300,
+    "seed": 42,
+    "alias_policy": "most_observed",
+    "ambiguous_source_policy": "drop source attributes mapping to multiple targets",
+    "features": "annotated source names/values only; target names are labels only",
+    "missingness": "natural JSON attribute absence and original nulls"
+  },
+  "archive_sha256": "659d2350b8106faa032bc942689afab616b9d34fabd73c332b9b6d9364be7a59",
+  "annotation_audit": [
+    {
+      "table": "www.ebay.com.csv",
+      "column": "service support",
+      "target": "warranty_duration",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "service support details",
+      "target": "warranty_duration",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "warranty terms labor",
+      "target": "warranty_duration",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "warranty terms parts",
+      "target": "warranty_duration",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "capacity",
+      "target": "hdd_capacity",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "depth",
+      "target": "dimensions_depth",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "depth",
+      "target": "dimensions",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "flash memory",
+      "target": "flash_capacity",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "main storage",
+      "target": "ssd_capacity",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "ssd cache",
+      "target": "ssd_cache_capacity",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "technology",
+      "target": "ram_type",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "width",
+      "target": "dimensions_width",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "width",
+      "target": "dimensions",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "64bit computing processor chipset",
+      "target": "is_cpu_64bit",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "chipset processor chipset",
+      "target": "cpu_brand",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "chipset processor chipset",
+      "target": "cpu_model",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "cpu processor chipset",
+      "target": "cpu_brand",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "cpu processor chipset",
+      "target": "cpu_frequency",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "cpu processor chipset",
+      "target": "cpu_model",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "cpu processor chipset",
+      "target": "cpu_type",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "depth dimensions weight",
+      "target": "dimensions_depth",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "front side bus processor chipset",
+      "target": "cpu_frequency",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "graphics processor audio video",
+      "target": "gpu_brand",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "graphics processor audio video",
+      "target": "gpu_model",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "image aspect ratio display",
+      "target": "aspect_ratio",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "interfaces connections expansion",
+      "target": "usb_port2_quantity",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "main storage storage",
+      "target": "hdd_capacity",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "main storage storage",
+      "target": "hdd_speed",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "main storage storage",
+      "target": "ssd_capacity",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "manufacturer warranty labor",
+      "target": "warranty_duration",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "manufacturer warranty software",
+      "target": "warranty_duration",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "max turbo speed processor chipset",
+      "target": "cpu_frequency",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "platform technology processor chipset",
+      "target": "cpu_brand",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "platform technology processor chipset",
+      "target": "cpu_type",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "ram memory",
+      "target": "ram_capacity",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "run time battery",
+      "target": "battery_life",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "service support details manufacturer warranty",
+      "target": "warranty_duration",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "technology memory",
+      "target": "ram_type",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "weight dimensions weight",
+      "target": "weight",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "width dimensions weight",
+      "target": "dimensions_width",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "manufacturer",
+      "target": "brand",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "brand",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "display_size",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "cpu_type",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "cpu_brand",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "cpu_model",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "cpu_frequency",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "ram_capacity",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "hdd_capacity",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "ssd_capacity",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "display_resolution",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "is_cpu_64bit",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.pricequebec.com.csv",
+      "column": "product",
+      "target": "display_type",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "processor system bus",
+      "target": "cpu_brand",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "weight metric",
+      "target": "weight",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "display graphics",
+      "target": "display_size",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "processor chipset",
+      "target": "cpu_brand",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "dimensions weight",
+      "target": "dimensions_width",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "dimensions weight",
+      "target": "dimensions_depth",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "dimensions weight",
+      "target": "dimensions_height",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "dimensions weight",
+      "target": "weight",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "dimensions weight details",
+      "target": "weight",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "processor chipset",
+      "target": "cpu_brand",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "processor chipset",
+      "target": "cpu_cache",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "processor chipset",
+      "target": "cpu_frequency",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "processor chipset",
+      "target": "cpu_model",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "processor chipset",
+      "target": "cpu_type",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "service support",
+      "target": "warranty_duration",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "service support details",
+      "target": "warranty_duration",
+      "reason": "annotation_absent_from_source"
+    },
+    {
+      "table": "buy.net.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth"
+      ]
+    },
+    {
+      "table": "buy.net.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "buy.net.csv",
+      "column": "interface connection",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "has_hdmi_port",
+        "usb_port2_quantity",
+        "usb_port3_quantity"
+      ]
+    },
+    {
+      "table": "buy.net.csv",
+      "column": "processor class",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "buy.net.csv",
+      "column": "processor model",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "buy.net.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "livehotdeals.com.csv",
+      "column": "display",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "livehotdeals.com.csv",
+      "column": "hard drives",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "livehotdeals.com.csv",
+      "column": "memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "livehotdeals.com.csv",
+      "column": "processors",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "wallmartphoto.com.csv",
+      "column": "processor type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "wallmartphoto.com.csv",
+      "column": "product in inches l x w x h",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "13battery",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_capacity",
+        "battery_life"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "2 dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "5cpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "7memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "9tft monitor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution",
+        "display_size"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "basic parameter",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "basic specifications",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "battery",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_capacity",
+        "battery_chemistry"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "battery capacity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_capacity",
+        "battery_chemistry"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "battery pack",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_capacity",
+        "battery_chemistry"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "battery type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_capacity",
+        "battery_chemistry"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "battery working time",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_capacity",
+        "battery_life"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "body",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "body size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "bodypack size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "capacity of ram",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_capacity_max"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "carton",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "carton dimension",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "caton size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "configuration",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "ram_capacity"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "core",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "coretm i53317u  170ghz",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "coretm i53427u  180ghz",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "coretm i73517u  190ghz",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "coretm i73667u  20ghz",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "cpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "cpu support",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "ddr3",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "demension",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "dimension",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "dimension lwh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "dimension mm",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "dimension wdh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "dimensions w x d x h",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "dimensionsmm",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "dimensionwdh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "dimention",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "display",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "display screen",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "display system",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "exterior",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "fixed disk",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "gift box",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "gift box packing size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "giftbox",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "giftboxdimension",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "giftboxwdh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "graphic card",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "hardware",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "hd",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "internal storage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_capacity_max"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "io ports",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "usb_port2_quantity",
+        "usb_port3_quantity"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "item dimensions wdh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "lcd",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "lcd device",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "lcd display",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "lcd display screen",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "lcd resolution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_resolution",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "lcd screen",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "lcd screen size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "lcd size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "lcdsize",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "lwh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "machine size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "master carton size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "md36atrix",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution",
+        "display_size"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "mechanical size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "name",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_type",
+        "display_size"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "pack details",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width",
+        "packaging_weight"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "pack size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "package size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "packing",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "packing box",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "pc dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "physical sizeweight",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width",
+        "weight"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "pixel",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "power  battery",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_capacity",
+        "battery_chemistry"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "power type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_capacity",
+        "battery_chemistry"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "processor brand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "processor core",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "processor manufacturer model",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "processor model",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "processor type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "product",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "product dimension",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "product dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "product size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "ram",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "ram installed size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "ram technology",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "resolution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_resolution",
+        "display_size"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "resolution ratio",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "screen",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "screen display",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "screen sizeresolution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "sd ram",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "sdram",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "shipping dimensions wdh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "packaging_dimensions",
+        "packaging_dimensions_depth",
+        "packaging_dimensions_height",
+        "packaging_dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "size type resolution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "sizetyperesolution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "sizewdh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "sizeweight",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width",
+        "weight"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "solution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "storage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "flash_capacity",
+        "hdd_capacity",
+        "hdd_capacity_max",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "storage device",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "flash_capacity",
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "support processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "system memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "systerm memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_capacity_max",
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "tft lcd panel",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "unit dimension",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "web vedio with the iconram",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.amazon.com.csv",
+      "column": "item dimensions l x w x h",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.amazon.com.csv",
+      "column": "processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.amazon.com.csv",
+      "column": "processor brand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.amazon.com.csv",
+      "column": "product dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.amazon.com.csv",
+      "column": "ram",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.bhphotovideo.com.csv",
+      "column": "battery",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_life"
+      ]
+    },
+    {
+      "table": "www.bhphotovideo.com.csv",
+      "column": "dimensions wxhxd",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "column": "cpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "column": "dimensions wd",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "column": "hard drive",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "column": "hdd",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "ssd_capacity"
+      ]
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "column": "memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "column": "processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_cache",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "column": "ram memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "column": "storage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.directdial.com.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth"
+      ]
+    },
+    {
+      "table": "www.directdial.com.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.directdial.com.csv",
+      "column": "memory standard",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.directdial.com.csv",
+      "column": "processor model",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "16gb",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "4gb",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "4th generation",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_cache",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "4th generation intelr coretm i74700mq",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_cache",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "4th generation intelr coretm i74710mq",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_cache",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "4th generation intelr coretm i74800mq",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_cache",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "500gb",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "750gb",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "8gb ddr3 1600mhz",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "additional ports",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "has_hdmi_port",
+        "has_vga_port"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "batteries",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_capacity",
+        "battery_chemistry"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "chip type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "connectors",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "usb_port2_quantity",
+        "usb_port3_quantity"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "cpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_cache",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "cpu  processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_cache",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "cpu speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_model"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "cpu type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "dimensions  weight",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "weight"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "display  graphics",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "gpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "gpuvpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "graphic",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "graphic card",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "graphics",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "graphics card",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "graphics cards",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "graphics controller",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "graphics processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "graphics processor  vendor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "hard disk",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "ssd_capacity"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "hard disk drive",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "height front",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "interfacesports",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "has_hdmi_port",
+        "has_vga_port"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "io ports",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "usb_port2_quantity",
+        "usb_port3_quantity"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "item dimensions l x w x h",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "laptop battery type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_capacity",
+        "battery_chemistry"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "laptop hard drive capacity gb",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "laptop memory type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "laptop processor type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "laptop processor type details",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "lcd screen size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "memory standard",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "native resolution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "powerful intel core i5 processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type",
+        "hdd_capacity",
+        "ram_capacity"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "processor model",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "processor number",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "processor type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "processors available",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "product description",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "brand",
+        "cpu_brand",
+        "cpu_model",
+        "cpu_type",
+        "display_size",
+        "hdd_capacity",
+        "is_cpu_64bit",
+        "ram_capacity",
+        "ssd_capacity"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "product details",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_model",
+        "cpu_type",
+        "ram_capacity",
+        "ram_frequency"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "product in inches l x w x h",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "product title",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "brand",
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type",
+        "display_resolution",
+        "display_size",
+        "display_type",
+        "gpu_brand",
+        "gpu_model",
+        "is_cpu_64bit",
+        "ram_capacity",
+        "ssd_capacity"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "quadcore",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "ram",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "screen",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "ram_frequency"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "standard memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "system memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "system memory ram",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "usb 20 ports",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "usb_port2_quantity",
+        "usb_port3_quantity"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "usb ports",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "usb_port2_quantity",
+        "usb_port3_quantity"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "usb ports total",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "usb_port2_quantity",
+        "usb_port3_quantity"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "weights and measurements",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width",
+        "weight"
+      ]
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "graphics",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "graphics card",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "graphics controller",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "monitor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_cache",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "processor model",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "ram",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_capacity_max",
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "column": "storage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.gosale.com.csv",
+      "column": "battery",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_life"
+      ]
+    },
+    {
+      "table": "www.gosale.com.csv",
+      "column": "graphics",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.gosale.com.csv",
+      "column": "memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.gosale.com.csv",
+      "column": "processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.gosale.com.csv",
+      "column": "processor type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.gosale.com.csv",
+      "column": "product name",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type",
+        "display_size",
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.gosale.com.csv",
+      "column": "storage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.isupplyhub.com.csv",
+      "column": "card description",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.isupplyhub.com.csv",
+      "column": "graphics coprocessor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.isupplyhub.com.csv",
+      "column": "item dimensions l x w x h",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.isupplyhub.com.csv",
+      "column": "processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.isupplyhub.com.csv",
+      "column": "product dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.isupplyhub.com.csv",
+      "column": "ram",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "cpu series",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "column": "height in",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.overstock.com.csv",
+      "column": "cpu type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.overstock.com.csv",
+      "column": "processor brand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "depth with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "height with stand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "memory standard",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "column": "processor model",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_model"
+      ]
+    },
+    {
+      "table": "www.staples.com.csv",
+      "column": "desktop processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.staples.com.csv",
+      "column": "desktop processor details",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.staples.com.csv",
+      "column": "laptop memory type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.staples.com.csv",
+      "column": "laptop processor type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.staples.com.csv",
+      "column": "laptop processor type details",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.staples.com.csv",
+      "column": "processor type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.staples.com.csv",
+      "column": "t desktop memory type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "cpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "dimensions d x w x h",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "graphics engine",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "memory clock",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_cache",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "product dimensions w x d x h 35 x 78 x 075 in",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width",
+        "weight"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "product dimensions w x d x h 544 x 90 x 1163 in",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width",
+        "weight"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "product dimensions w x d x h 6 x 675 x 613 in",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width",
+        "weight"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "product dimensions w x d x h 65 x 7 x 65 in",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width",
+        "weight"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "product dimensions w x d x h 663 x 7 x 65 in",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width",
+        "weight"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "product dimensions w x d x h 763 x 111 x 1125 in",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width",
+        "weight"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "product dimensions w x d x h 98 x 85 x 25 in",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width",
+        "weight"
+      ]
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "column": "vga",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "has_vga_port"
+      ]
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth"
+      ]
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "column": "height front",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "column": "height rear",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "column": "memory standard",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "column": "processor model",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.tigerdirect.com.csv",
+      "column": "cpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.tigerdirect.com.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth"
+      ]
+    },
+    {
+      "table": "www.tigerdirect.com.csv",
+      "column": "gpuvpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.tigerdirect.com.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.tigerdirect.com.csv",
+      "column": "memory speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.tinydeal.com.csv",
+      "column": "cpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "cpu speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_frequency",
+        "cpu_model"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "cpu type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "gpuvpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "hard drive",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "height front",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "height rear",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "memory size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "memory speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "memory standard",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "performance",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "processor model",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "storage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "ssd_capacity"
+      ]
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "column": "tech description",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "battery_capacity",
+        "battery_chemistry",
+        "battery_life",
+        "cpu_brand",
+        "cpu_cache",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type",
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width",
+        "display_resolution",
+        "display_size",
+        "display_type",
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "cpu",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "depth",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "dimensions wxdxh",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_depth",
+        "dimensions_height",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "display",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "graphics",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "graphics processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "gpu_brand",
+        "gpu_model"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "hard drive",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed",
+        "ssd_capacity"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "hard drive 2nd",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed",
+        "ssd_capacity"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "height",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_height"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "installed size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_capacity_max"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "main storage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed",
+        "ssd_capacity"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "memory",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ram_capacity",
+        "ram_capacity_max",
+        "ram_frequency",
+        "ram_type"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "monitor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "aspect_ratio",
+        "display_resolution",
+        "display_size",
+        "display_type"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "processor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "cpu_brand",
+        "cpu_cache",
+        "cpu_frequency",
+        "cpu_model",
+        "cpu_type"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "product description",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "brand",
+        "cpu_model",
+        "cpu_type",
+        "display_size",
+        "hdd_capacity",
+        "ram_capacity"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "secondary storage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed",
+        "ssd_capacity"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "storage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "hdd_capacity",
+        "hdd_speed"
+      ]
+    },
+    {
+      "table": "www.vology.com.csv",
+      "column": "width",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "dimensions",
+        "dimensions_width"
+      ]
+    },
+    {
+      "table": "buy.net.csv",
+      "target": "cpu_frequency",
+      "kept": "processor speed",
+      "excluded": [
+        "normalizedprocessor speed"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "buy.net.csv",
+      "target": "dimensions_height",
+      "kept": "height",
+      "excluded": [
+        "normalizedheight"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "buy.net.csv",
+      "target": "display_size",
+      "kept": "display size",
+      "excluded": [
+        "normalizeddisplay size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "buy.net.csv",
+      "target": "hdd_capacity",
+      "kept": "hard drive capacity",
+      "excluded": [
+        "normalizedhard drive capacity",
+        "number of hard drives included"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "buy.net.csv",
+      "target": "ram_capacity",
+      "kept": "installed memory",
+      "excluded": [
+        "normalizedinstalled memory"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "buy.net.csv",
+      "target": "ram_type",
+      "kept": "memory technology",
+      "excluded": [
+        "graphics memory technology"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "buy.net.csv",
+      "target": "weight",
+      "kept": "weight",
+      "excluded": [
+        "normalizedweight"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "wallmartphoto.com.csv",
+      "target": "battery_chemistry",
+      "kept": "battery type",
+      "excluded": [
+        "accessories included"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "wallmartphoto.com.csv",
+      "target": "display_size",
+      "kept": "laptop screen size",
+      "excluded": [
+        "monitor size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "aspect_ratio",
+      "kept": "aspect ratio",
+      "excluded": [
+        "proportion"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "battery_capacity",
+      "kept": "capacity",
+      "excluded": [
+        "battery parameter",
+        "liion battery",
+        "the battery"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "battery_chemistry",
+      "kept": "lithium battery",
+      "excluded": [
+        "battery power"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "battery_life",
+      "kept": "battery life",
+      "excluded": [
+        "battery  run time up to",
+        "battery  run timeup to",
+        "battery time",
+        "lasting time",
+        "max battery time"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "brand",
+      "kept": "brand",
+      "excluded": [
+        "brand name"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "cpu_brand",
+      "kept": "cpu manufacturer",
+      "excluded": [
+        "processor manufacture"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "cpu_frequency",
+      "kept": "processor frequency",
+      "excluded": [
+        "cpu frequency",
+        "cpu speed",
+        "cpu speedprocessor clock speed",
+        "cup processor",
+        "processor clock speed",
+        "processor main frequency",
+        "processor speed",
+        "system",
+        "system processor"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "cpu_type",
+      "kept": "processor family",
+      "excluded": [
+        "cpu type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "display_resolution",
+      "kept": "display resolution",
+      "excluded": [
+        "display resolutin",
+        "max resolution",
+        "resoultion",
+        "screen resolution"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "display_size",
+      "kept": "screen size",
+      "excluded": [
+        "display diagonal size",
+        "netbook screen size",
+        "panel size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "display_type",
+      "kept": "display technology",
+      "excluded": [
+        "panel type",
+        "screen description",
+        "screen type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "flash_capacity",
+      "kept": "flash",
+      "excluded": [
+        "8nand flash",
+        "builtin nand flash",
+        "nand flash",
+        "nandflash",
+        "rom",
+        "rommemory",
+        "romstorage"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "hdd_capacity",
+      "kept": "hdd",
+      "excluded": [
+        "hard disc",
+        "hard disk",
+        "hard disk capacity",
+        "hard drive",
+        "hard drive capacity",
+        "harddisk",
+        "hdd capacity",
+        "hdd storage",
+        "hddhard disk drive",
+        "storagehdd"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "hdd_speed",
+      "kept": "hard drive speed",
+      "excluded": [
+        "hard drive spindle speed",
+        "maximum speed",
+        "roll speed",
+        "rotationl speed"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "packaging_weight",
+      "kept": "master carton weight",
+      "excluded": [
+        "full package weight",
+        "gift box packing weight",
+        "package",
+        "package weight",
+        "unit packing weight"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "ram_capacity",
+      "kept": "graphics memory",
+      "excluded": [
+        "memory capacity",
+        "memory size",
+        "ram memory",
+        "ramrandom access memory",
+        "system ram"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "ram_capacity_max",
+      "kept": "maximum memory capacity",
+      "excluded": [
+        "maxmemory capacity",
+        "ram max supported size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "ram_type",
+      "kept": "memory type",
+      "excluded": [
+        "ddr type",
+        "ramrom",
+        "ramtechnology"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "ssd_capacity",
+      "kept": "ssd",
+      "excluded": [
+        "ssdoptional"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "usb_port2_quantity",
+      "kept": "interface",
+      "excluded": [
+        "external port and slots",
+        "i0",
+        "input  output port",
+        "inputoutput",
+        "standard interface",
+        "surface interface"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "warranty_duration",
+      "kept": "warranty",
+      "excluded": [
+        "service",
+        "warranty time",
+        "warranty validity"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "weight",
+      "kept": "weight",
+      "excluded": [
+        "gross weight",
+        "laptop weight",
+        "product weight",
+        "unit weight",
+        "weight with battery",
+        "weight with cdrom",
+        "weightkg",
+        "weights",
+        "weigth"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.amazon.com.csv",
+      "target": "battery_chemistry",
+      "kept": "batteries",
+      "excluded": [
+        "battery type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.amazon.com.csv",
+      "target": "hdd_capacity",
+      "kept": "hard drive",
+      "excluded": [
+        "size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "target": "warranty_duration",
+      "kept": "manufacturer warranty",
+      "excluded": [
+        "warranty"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "target": "weight",
+      "kept": "weight",
+      "excluded": [
+        "system weight  weight with ac adapter"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.directdial.com.csv",
+      "target": "brand",
+      "kept": "brand name",
+      "excluded": [
+        "manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.directdial.com.csv",
+      "target": "cpu_cache",
+      "kept": "cache",
+      "excluded": [
+        "l3 cache"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.directdial.com.csv",
+      "target": "hdd_capacity",
+      "kept": "total hard drive capacity",
+      "excluded": [
+        "hybrid hard drive capacity"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.directdial.com.csv",
+      "target": "ram_type",
+      "kept": "memory technology",
+      "excluded": [
+        "graphics memory technology"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "aspect_ratio",
+      "kept": "aspect ratio",
+      "excluded": [
+        "display aspect ratio",
+        "image aspect ratio"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "battery_capacity",
+      "kept": "battery capacity",
+      "excluded": [
+        "battery information"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "battery_chemistry",
+      "kept": "battery",
+      "excluded": [
+        "accessories included",
+        "battery chemistry",
+        "battery type",
+        "primary battery"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "battery_life",
+      "kept": "battery life",
+      "excluded": [
+        "average battery life in hours",
+        "laptop battery life",
+        "maximum battery life",
+        "maximum battery run time",
+        "thelife time",
+        "typical battery life"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "brand",
+      "kept": "brand",
+      "excluded": [
+        "brand name",
+        "header",
+        "title"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "cpu_brand",
+      "kept": "processor brand",
+      "excluded": [
+        "processor manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "cpu_cache",
+      "kept": "cache",
+      "excluded": [
+        "cache memory"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "cpu_frequency",
+      "kept": "processor speed",
+      "excluded": [
+        "laptop processor speed",
+        "processor speed per core",
+        "processor turbo speed"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "cpu_type",
+      "kept": "processor class",
+      "excluded": [
+        "mobile technology"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "display_size",
+      "kept": "screen size",
+      "excluded": [
+        "diagonal screen size",
+        "display size",
+        "laptop screen size",
+        "laptop screen size inches",
+        "laptop size",
+        "screen size measured diagonally",
+        "technical information"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "flash_capacity",
+      "kept": "flash",
+      "excluded": [
+        "flash memory size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "gpu_brand",
+      "kept": "graphics controller manufacturer",
+      "excluded": [
+        "graphics chip",
+        "graphics coprocessor"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "has_hdmi_port",
+      "kept": "hdmi",
+      "excluded": [
+        "hdmi output",
+        "hdmi port"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "has_vga_port",
+      "kept": "vga",
+      "excluded": [
+        "vga port"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "hdd_capacity",
+      "kept": "hard drive capacity",
+      "excluded": [
+        "capacity",
+        "computer hard drive size",
+        "drive capacity",
+        "hard disk capacity",
+        "hard drive",
+        "hard drive size",
+        "hddssd drives included",
+        "hybrid hard drive capacity"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "hdd_speed",
+      "kept": "hard drive speed",
+      "excluded": [
+        "hard drive rotational speed",
+        "hard drive rpm"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "is_cpu_64bit",
+      "kept": "64bit processing",
+      "excluded": [
+        "64bit computing"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "power_consumption_standby",
+      "kept": "power consumption",
+      "excluded": [
+        "standby power consumption"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "ram_capacity",
+      "kept": "memory ram",
+      "excluded": [
+        "cpu brand",
+        "laptop memory ram",
+        "laptop memory ram gb",
+        "memory configuration",
+        "memory size",
+        "system ram",
+        "total memory size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "ram_capacity_max",
+      "kept": "max ram supported",
+      "excluded": [
+        "system memory ram expandable to"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "ram_type",
+      "kept": "memory type",
+      "excluded": [
+        "computer memory type",
+        "memory technology",
+        "technology",
+        "type of memory ram"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "ssd_capacity",
+      "kept": "128gb ssd",
+      "excluded": [
+        "256gb ssd",
+        "hard drivessd"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "usb_port2_quantity",
+      "kept": "number of usb 20 ports",
+      "excluded": [
+        "2 superspeed usb 30",
+        "usb 30",
+        "usb port 20"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "usb_port3_quantity",
+      "kept": "ports",
+      "excluded": [
+        "io input  output ports",
+        "number of usb 30 ports",
+        "usb port 30"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "warranty_duration",
+      "kept": "warranty",
+      "excluded": [
+        "100 working item",
+        "includes",
+        "laptop warranty",
+        "limited warranty",
+        "manufacturer warranty",
+        "service and warranty information",
+        "warranty length"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "weight",
+      "kept": "weight",
+      "excluded": [
+        "item weight",
+        "laptop weight",
+        "net weight",
+        "weight approximate",
+        "weight net"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "battery_chemistry",
+      "kept": "battery type",
+      "excluded": [
+        "battery chemistry"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "battery_life",
+      "kept": "battery life",
+      "excluded": [
+        "battery run time",
+        "maximum battery run time"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "cpu_brand",
+      "kept": "processor brand",
+      "excluded": [
+        "processor manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "cpu_frequency",
+      "kept": "processor speed",
+      "excluded": [
+        "processor clock speed",
+        "processor turbo speed"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "display_size",
+      "kept": "screen size measured diagonally",
+      "excluded": [
+        "screen size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "gpu_brand",
+      "kept": "graphics chip",
+      "excluded": [
+        "graphics controller manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "has_hdmi_port",
+      "kept": "hdmi output",
+      "excluded": [
+        "hdmi",
+        "hdmi input"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "has_vga_port",
+      "kept": "vga input",
+      "excluded": [
+        "vga"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "hdd_capacity",
+      "kept": "drive capacity",
+      "excluded": [
+        "computer hard drive size",
+        "hard drive",
+        "hard drive capacity",
+        "hard drive size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "ram_capacity",
+      "kept": "system memory ram",
+      "excluded": [
+        "standard memory"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "ram_type",
+      "kept": "type of memory ram",
+      "excluded": [
+        "graphics memory technology",
+        "memory technology"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "target": "weight",
+      "kept": "weight",
+      "excluded": [
+        "laptop weight"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.isupplyhub.com.csv",
+      "target": "battery_chemistry",
+      "kept": "batteries",
+      "excluded": [
+        "battery type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.isupplyhub.com.csv",
+      "target": "weight",
+      "kept": "item weight",
+      "excluded": [
+        "shipping weight"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "target": "cpu_frequency",
+      "kept": "cpu speed",
+      "excluded": [
+        "cpu speed range"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "target": "display_size",
+      "kept": "screen size range",
+      "excluded": [
+        "screen size by diagonal measure"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "target": "gpu_brand",
+      "kept": "gpu chipset",
+      "excluded": [
+        "gpu video type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.mygofer.com.csv",
+      "target": "hdd_capacity",
+      "kept": "hard drive capacity range",
+      "excluded": [
+        "hard drive capacity"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "target": "battery_life",
+      "kept": "maximum battery run time",
+      "excluded": [
+        "maximum standby battery time",
+        "maximum video battery time",
+        "maximum web surfing battery time"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "target": "cpu_type",
+      "kept": "processor core",
+      "excluded": [
+        "processor type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "target": "display_size",
+      "kept": "screen size",
+      "excluded": [
+        "display size supported",
+        "maximum screen size supported",
+        "minimum screen size supported"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "target": "flash_capacity",
+      "kept": "flash memory capacity",
+      "excluded": [
+        "flash memory"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "target": "hdd_capacity",
+      "kept": "total hard drive capacity",
+      "excluded": [
+        "hard drive capacity",
+        "hard drive configuration",
+        "hybrid hard drive capacity",
+        "storage capacity"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "target": "power_consumption_standby",
+      "kept": "standby power consumption",
+      "excluded": [
+        "offmode power consumption"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "target": "ram_type",
+      "kept": "memory technology",
+      "excluded": [
+        "graphics memory technology"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.staples.com.csv",
+      "target": "cpu_cache",
+      "kept": "cpu cache",
+      "excluded": [
+        "desktop cpu cache"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.staples.com.csv",
+      "target": "cpu_frequency",
+      "kept": "processor speed up to ghz",
+      "excluded": [
+        "laptop processor speed",
+        "speed desktop processor speed"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.staples.com.csv",
+      "target": "display_size",
+      "kept": "laptop screen size inches",
+      "excluded": [
+        "screen size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.staples.com.csv",
+      "target": "hdd_capacity",
+      "kept": "hard drive capacity",
+      "excluded": [
+        "laptop hard drive capacity gb"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.staples.com.csv",
+      "target": "ram_capacity",
+      "kept": "ram capacity",
+      "excluded": [
+        "laptop memory ram gb",
+        "ram desktop memory gb"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.staples.com.csv",
+      "target": "warranty_duration",
+      "kept": "laptop warranty",
+      "excluded": [
+        "desktop warranty"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.staples.com.csv",
+      "target": "weight",
+      "kept": "laptop weight filter",
+      "excluded": [
+        "desktop weight",
+        "desktop weight details",
+        "laptop weight"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "target": "hdd_capacity",
+      "kept": "storage",
+      "excluded": [
+        "capacity native",
+        "storage capacity"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "target": "power_consumption",
+      "kept": "power consumption",
+      "excluded": [
+        "power consumption lamp on"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "target": "warranty_duration",
+      "kept": "warranty",
+      "excluded": [
+        "lamp warranty",
+        "projector warranty",
+        "standard warranty"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "target": "weight",
+      "kept": "weight",
+      "excluded": [
+        "net weight",
+        "weight approximate",
+        "weight imperial",
+        "weight without hard drive"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "target": "battery_life",
+      "kept": "maximum battery run time",
+      "excluded": [
+        "maximum standby battery time",
+        "maximum video battery time",
+        "maximum web surfing battery time"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "target": "brand",
+      "kept": "brand name",
+      "excluded": [
+        "manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "target": "display_size",
+      "kept": "screen size",
+      "excluded": [
+        "maximum screen size supported",
+        "minimum screen size supported"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "target": "hdd_capacity",
+      "kept": "hard drive capacity",
+      "excluded": [
+        "hard drive configuration",
+        "total hard drive capacity"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "target": "ram_type",
+      "kept": "memory technology",
+      "excluded": [
+        "graphics memory technology"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.tigerdirect.com.csv",
+      "target": "battery_life",
+      "kept": "battery life",
+      "excluded": [
+        "battery run time"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.tigerdirect.com.csv",
+      "target": "cpu_brand",
+      "kept": "processor brand",
+      "excluded": [
+        "cpu type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.tigerdirect.com.csv",
+      "target": "display_size",
+      "kept": "screen size",
+      "excluded": [
+        "display size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.tigerdirect.com.csv",
+      "target": "hdd_capacity",
+      "kept": "capacity",
+      "excluded": [
+        "hddssd drives included",
+        "storage capacity",
+        "total storage included"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.tigerdirect.com.csv",
+      "target": "ram_capacity",
+      "kept": "total memory size",
+      "excluded": [
+        "memory capacity",
+        "memory configuration"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "target": "battery_chemistry",
+      "kept": "battery",
+      "excluded": [
+        "battery chemistry",
+        "battery type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "target": "battery_life",
+      "kept": "maximum battery run time",
+      "excluded": [
+        "battery life"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "target": "brand",
+      "kept": "brand",
+      "excluded": [
+        "brand name",
+        "manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "target": "cpu_cache",
+      "kept": "cache",
+      "excluded": [
+        "cpu support"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "target": "cpu_type",
+      "kept": "processor type",
+      "excluded": [
+        "processor core"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "target": "hdd_capacity",
+      "kept": "hdd",
+      "excluded": [
+        "hard disk",
+        "hard drive capacity",
+        "hhd",
+        "storage size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "target": "ram_type",
+      "kept": "memory technology",
+      "excluded": [
+        "graphics memory technology"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.topendelectronic.co.uk.csv",
+      "target": "weight",
+      "kept": "weight",
+      "excluded": [
+        "weight approximate"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "target": "battery_chemistry",
+      "kept": "technology",
+      "excluded": [
+        "battery",
+        "included accessories"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "target": "battery_life",
+      "kept": "run time",
+      "excluded": [
+        "run time with included additional battery"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "target": "cpu_cache",
+      "kept": "cache",
+      "excluded": [
+        "cache memory",
+        "cache per processor"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "target": "display_resolution",
+      "kept": "resolution",
+      "excluded": [
+        "native resolution"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "target": "ram_capacity",
+      "kept": "ram",
+      "excluded": [
+        "max allocated ram size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.vology.com.csv",
+      "target": "ram_frequency",
+      "kept": "speed",
+      "excluded": [
+        "memory speed"
+      ],
+      "reason": "same_table_alias"
+    }
+  ],
+  "source_tables": [
+    "www.thenerds.net.csv",
+    "www.flexshopper.com.csv",
+    "www.techbuy.com.au.csv",
+    "www.vology.com.csv",
+    "www.staples.com.csv",
+    "www.softwarecity.ca.csv",
+    "www.bidorbuy.co.za.csv",
+    "www.bhphotovideo.com.csv"
+  ],
+  "original_rows": {
+    "buy.net.csv": 350,
+    "catalog.com.csv": 214,
+    "livehotdeals.com.csv": 116,
+    "wallmartphoto.com.csv": 196,
+    "www.alibaba.com.csv": 2404,
+    "www.amazon.com.csv": 1173,
+    "www.bhphotovideo.com.csv": 196,
+    "www.bidorbuy.co.za.csv": 157,
+    "www.directdial.com.csv": 157,
+    "www.ebay.com.csv": 8257,
+    "www.flexshopper.com.csv": 1328,
+    "www.gosale.com.csv": 173,
+    "www.isupplyhub.com.csv": 1026,
+    "www.mygofer.com.csv": 159,
+    "www.overstock.com.csv": 116,
+    "www.softwarecity.ca.csv": 559,
+    "www.staples.com.csv": 136,
+    "www.techbuy.com.au.csv": 504,
+    "www.thenerds.net.csv": 300,
+    "www.tigerdirect.com.csv": 142,
+    "www.tinydeal.com.csv": 141,
+    "www.topendelectronic.co.uk.csv": 289,
+    "www.vology.com.csv": 4011
+  },
+  "tables": [
+    {
+      "table": "www.bhphotovideo.com.csv",
+      "rows": 196,
+      "columns": 1,
+      "missing_rate": 0.0,
+      "column_missing_rates": {
+        "weight": 0.0
+      }
+    },
+    {
+      "table": "www.bidorbuy.co.za.csv",
+      "rows": 157,
+      "columns": 3,
+      "missing_rate": 0.6369426751592356,
+      "column_missing_rates": {
+        "weight": 0.1337579617834395,
+        "manufacturer warranty": 0.7961783439490446,
+        "screen size diagonal": 0.9808917197452229
+      }
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "rows": 300,
+      "columns": 22,
+      "missing_rate": 0.9124242424242425,
+      "column_missing_rates": {
+        "cache per processor": 0.97,
+        "manufacturer warranty": 0.74,
+        "weight": 0.6966666666666667,
+        "drive capacity": 0.8566666666666667,
+        "hdmi output": 0.8633333333333333,
+        "processor brand": 0.8666666666666667,
+        "processor speed": 0.86,
+        "screen size measured diagonally": 0.8766666666666667,
+        "system memory ram": 0.8633333333333333,
+        "system memory ram expandable to": 0.8966666666666666,
+        "type of memory ram": 0.8866666666666667,
+        "aspect ratio": 0.9566666666666667,
+        "battery life": 0.9433333333333334,
+        "battery type": 0.91,
+        "graphics chip": 0.9233333333333333,
+        "battery capacity": 0.9933333333333333,
+        "memory card reader": 0.9933333333333333,
+        "number of usb 30 ports": 0.9966666666666667,
+        "processor type": 0.9933333333333333,
+        "number of usb 20 ports": 1.0,
+        "power consumption": 0.9966666666666667,
+        "vga input": 0.99
+      }
+    },
+    {
+      "table": "www.softwarecity.ca.csv",
+      "rows": 300,
+      "columns": 26,
+      "missing_rate": 0.6164102564102564,
+      "column_missing_rates": {
+        "brand name": 0.0033333333333333335,
+        "limited warranty": 0.35333333333333333,
+        "weight approximate": 0.21,
+        "64bit processing": 0.47333333333333333,
+        "aspect ratio": 0.6566666666666666,
+        "battery chemistry": 0.7233333333333334,
+        "cache": 0.48,
+        "graphics controller manufacturer": 0.5033333333333333,
+        "graphics controller model": 0.5033333333333333,
+        "hdmi": 0.8233333333333334,
+        "maximum battery run time": 0.7766666666666666,
+        "memory card reader": 0.6266666666666667,
+        "memory technology": 0.42333333333333334,
+        "number of usb 30 ports": 0.52,
+        "processor core": 0.45,
+        "processor manufacturer": 0.44666666666666666,
+        "processor speed": 0.4633333333333333,
+        "screen size": 0.6533333333333333,
+        "number of usb 20 ports": 0.64,
+        "ssd cache capacity": 0.96,
+        "vga": 0.58,
+        "total hard drive capacity": 0.86,
+        "battery capacity": 0.9733333333333334,
+        "flash memory capacity": 0.98,
+        "operating power consumption": 0.97,
+        "standby power consumption": 0.9733333333333334
+      }
+    },
+    {
+      "table": "www.staples.com.csv",
+      "rows": 136,
+      "columns": 9,
+      "missing_rate": 0.3684640522875817,
+      "column_missing_rates": {
+        "hard drive capacity": 0.22794117647058823,
+        "processor speed up to ghz": 0.27941176470588236,
+        "ram capacity": 0.22058823529411764,
+        "cpu cache": 0.5441176470588235,
+        "laptop screen size inches": 0.3088235294117647,
+        "laptop warranty": 0.3382352941176471,
+        "laptop weight filter": 0.40441176470588236,
+        "laptop battery life": 0.4852941176470588,
+        "laptop battery type": 0.5073529411764706
+      }
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "rows": 300,
+      "columns": 11,
+      "missing_rate": 0.9209090909090909,
+      "column_missing_rates": {
+        "battery": 0.9566666666666667,
+        "memory": 0.82,
+        "storage": 0.8066666666666666,
+        "weight": 0.7833333333333333,
+        "power consumption": 0.91,
+        "warranty": 0.9566666666666667,
+        "multigpu support": 0.9333333333333333,
+        "screen size": 0.99,
+        "power consumption standby": 0.9933333333333333,
+        "brand name": 0.98,
+        "flash memory": 1.0
+      }
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "rows": 300,
+      "columns": 23,
+      "missing_rate": 0.32971014492753625,
+      "column_missing_rates": {
+        "64bit processing": 0.19333333333333333,
+        "aspect ratio": 0.16666666666666666,
+        "battery capacity": 0.6333333333333333,
+        "battery chemistry": 0.3,
+        "brand name": 0.0,
+        "cache": 0.15666666666666668,
+        "graphics controller manufacturer": 0.19333333333333333,
+        "graphics controller model": 0.22333333333333333,
+        "hard drive capacity": 0.5733333333333334,
+        "hdmi": 0.43666666666666665,
+        "maximum battery run time": 0.51,
+        "memory card reader": 0.18666666666666668,
+        "memory technology": 0.14,
+        "number of usb 30 ports": 0.32,
+        "processor manufacturer": 0.10666666666666667,
+        "processor speed": 0.09333333333333334,
+        "processor type": 0.12666666666666668,
+        "screen size": 0.13333333333333333,
+        "weight approximate": 0.19333333333333333,
+        "number of usb 20 ports": 0.5,
+        "vga": 0.52,
+        "flash memory capacity": 0.8866666666666667,
+        "solid state drive configuration": 0.99
+      }
+    },
+    {
+      "table": "www.vology.com.csv",
+      "rows": 300,
+      "columns": 16,
+      "missing_rate": 0.3545833333333333,
+      "column_missing_rates": {
+        "64bit computing": 0.0,
+        "cache": 0.0,
+        "manufacturer warranty": 0.07666666666666666,
+        "max ram supported": 0.11666666666666667,
+        "ram": 0.0,
+        "resolution": 0.0033333333333333335,
+        "run time": 0.19333333333333333,
+        "speed": 0.05,
+        "technology": 0.0,
+        "weight": 0.0,
+        "image aspect ratio": 0.4033333333333333,
+        "ssd cache": 0.9233333333333333,
+        "video system features": 0.9066666666666666,
+        "diagonal size": 1.0,
+        "monitor type": 1.0,
+        "spindle speed": 1.0
+      }
+    }
+  ],
+  "gt_pairs": 177,
+  "files": {
+    "groundtruth.txt": "4d2a8d759f6c68a5e61bb66f6e8c0d3b4b23eedc844184d4879193d7225212be",
+    "original/www.bhphotovideo.com.csv": "0b6993eec4d901cd616a847d7ef4c8114599e53bb4002af34ab5135278100c18",
+    "original/www.staples.com.csv": "d02b7ece4b6446be6f9738b4c82ccdccec021742c499e0706b481a8dec8ed4e5",
+    "original/www.bidorbuy.co.za.csv": "e98c9d2fb6f2e60306e874421d20687be904d1aae39074d196875c17916cce69",
+    "original/www.softwarecity.ca.csv": "526fa2eac5822f53dd3607d2949cdf77ecba6af6ac673b6e401ffe9145696240",
+    "original/www.techbuy.com.au.csv": "ef78377cfc1f8e00730f11acb156dd705261738b5755e86cdecc75c7e7d07a3d",
+    "original/www.flexshopper.com.csv": "244dac92601076fa697db643af4ebadbce169cf04e621b73fa981c024c4142ad",
+    "original/www.vology.com.csv": "986e8c6012f84a06938a893bb3c35c30af59e843d6a9889004af8e077aeb9b9c",
+    "original/www.thenerds.net.csv": "f1cc857972566f8ec4b45608b3c84517ca4f8714287530fe2a1065670f59a926"
+  }
+}

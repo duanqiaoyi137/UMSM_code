@@ -1,0 +1,270 @@
+Cluster 1:
+  www.mediashopuk.com.csv.bluetooth
+  www.mrhightech.com.csv.bluetooth
+
+Cluster 2:
+  ce.yikus.com.csv.label
+  www.imldirect.it.csv.brand name
+  www.softwarecity.ca.csv.brand name
+
+Cluster 3:
+  ce.yikus.com.csv.color
+  www.cleverboxes.com.csv.case colour
+  www.imldirect.it.csv.colour
+  www.mediashopuk.com.csv.colour of product
+  www.mrhightech.com.csv.colour of product
+  www.softwarecity.ca.csv.color
+  www.vology.com.csv.color
+
+Cluster 4:
+  www.mediashopuk.com.csv.contrast ratio dynamic
+  www.mrhightech.com.csv.contrast ratio dynamic
+
+Cluster 5:
+  catalog.com.csv.contrast ratio
+  www.imldirect.it.csv.contrast ratio
+  www.mediashopuk.com.csv.contrast ratio typical
+  www.mrhightech.com.csv.contrast ratio typical
+  www.softwarecity.ca.csv.contrast ratio
+
+Cluster 6:
+  www.cleverboxes.com.csv.displayport in
+  www.mediashopuk.com.csv.displayports quantity
+  www.mrhightech.com.csv.displayports quantity
+
+Cluster 7:
+  www.mediashopuk.com.csv.dvid ports quantity
+  www.mrhightech.com.csv.dvid ports quantity
+
+Cluster 8:
+  www.mediashopuk.com.csv.dvii ports quantity
+  www.mrhightech.com.csv.dvii ports quantity
+
+Cluster 9:
+  www.imldirect.it.csv.displayport
+  www.softwarecity.ca.csv.displayport
+
+Cluster 10:
+  www.cleverboxes.com.csv.dvi
+  www.imldirect.it.csv.dvi
+  www.mediashopuk.com.csv.dvi port
+  www.mrhightech.com.csv.dvi port
+  www.softwarecity.ca.csv.dvi
+
+Cluster 11:
+  www.imldirect.it.csv.network rj45
+  www.mediashopuk.com.csv.ethernet lan
+  www.mrhightech.com.csv.ethernet lan
+  www.softwarecity.ca.csv.network rj45
+
+Cluster 12:
+  www.cleverboxes.com.csv.hdmi
+  www.imldirect.it.csv.hdmi
+  www.softwarecity.ca.csv.hdmi
+
+Cluster 13:
+  www.imldirect.it.csv.headphone
+  www.softwarecity.ca.csv.headphone
+
+Cluster 14:
+  www.mediashopuk.com.csv.microphone in
+  www.mrhightech.com.csv.microphone in
+
+Cluster 15:
+  www.imldirect.it.csv.speakers
+  www.softwarecity.ca.csv.speakers
+
+Cluster 16:
+  www.imldirect.it.csv.usb
+  www.softwarecity.ca.csv.usb
+
+Cluster 17:
+  www.cleverboxes.com.csv.vga
+  www.imldirect.it.csv.vga
+  www.softwarecity.ca.csv.vga
+
+Cluster 18:
+  www.imldirect.it.csv.screen mode
+  www.mediashopuk.com.csv.hd type
+  www.mrhightech.com.csv.hd type
+  www.softwarecity.ca.csv.screen mode
+
+Cluster 19:
+  www.cleverboxes.com.csv.hdmi ports
+  www.mediashopuk.com.csv.hdmi ports quantity
+  www.mrhightech.com.csv.hdmi ports quantity
+
+Cluster 20:
+  www.mediashopuk.com.csv.headphone out
+  www.mrhightech.com.csv.headphone out
+
+Cluster 21:
+  www.mediashopuk.com.csv.headphone connectivity
+  www.mrhightech.com.csv.headphone connectivity
+
+Cluster 22:
+  www.mediashopuk.com.csv.input frequency
+  www.mrhightech.com.csv.input frequency
+
+Cluster 23:
+  www.imldirect.it.csv.weight approximate
+  www.mediashopuk.com.csv.weight
+  www.mrhightech.com.csv.weight
+  www.softwarecity.ca.csv.weight approximate
+  www.vology.com.csv.weight
+
+Cluster 24:
+  www.imldirect.it.csv.weight with stand approximate
+  www.mediashopuk.com.csv.weight with stand
+  www.mrhightech.com.csv.weight with stand
+  www.softwarecity.ca.csv.weight with stand approximate
+
+Cluster 25:
+  www.cleverboxes.com.csv.wall mount
+
+Cluster 26:
+  www.imldirect.it.csv.mount type
+  www.softwarecity.ca.csv.mount type
+
+Cluster 27:
+  www.mediashopuk.com.csv.nonoperating altitude
+  www.mrhightech.com.csv.nonoperating altitude
+
+Cluster 28:
+  www.cleverboxes.com.csv.colour support
+  www.imldirect.it.csv.colour support
+  www.mediashopuk.com.csv.display number of colours
+  www.mrhightech.com.csv.display number of colours
+  www.softwarecity.ca.csv.color supported
+  www.vology.com.csv.color support
+
+Cluster 29:
+  www.mediashopuk.com.csv.operating altitude
+  www.mrhightech.com.csv.operating altitude
+
+Cluster 30:
+  www.mediashopuk.com.csv.package weight
+  www.mrhightech.com.csv.package weight
+
+Cluster 31:
+  www.cleverboxes.com.csv.pixel pitch
+  www.mediashopuk.com.csv.pixel pitch
+  www.mrhightech.com.csv.pixel pitch
+  www.vology.com.csv.pixel pitch
+
+Cluster 32:
+  www.imldirect.it.csv.energy efficiency class
+  www.mediashopuk.com.csv.energy efficiency class
+  www.mrhightech.com.csv.energy efficiency class
+
+Cluster 33:
+  www.imldirect.it.csv.operating power consumption
+  www.mediashopuk.com.csv.power consumption typical
+  www.mrhightech.com.csv.power consumption typical
+  www.softwarecity.ca.csv.operating power consumption
+  www.vology.com.csv.power consumption operational
+
+Cluster 34:
+  www.imldirect.it.csv.standby power consumption
+  www.mediashopuk.com.csv.power consumption standby
+  www.mrhightech.com.csv.power consumption standby
+  www.softwarecity.ca.csv.standby power consumption
+  www.vology.com.csv.power consumption stand by  sleep
+
+Cluster 35:
+  www.cleverboxes.com.csv.response time
+  www.imldirect.it.csv.response time
+  www.mediashopuk.com.csv.response time
+  www.mrhightech.com.csv.response time
+  www.softwarecity.ca.csv.response time
+  www.vology.com.csv.response time
+
+Cluster 36:
+  www.cleverboxes.com.csv.brightness
+  www.imldirect.it.csv.brightness
+  www.mediashopuk.com.csv.display brightness
+  www.mrhightech.com.csv.display brightness
+  www.softwarecity.ca.csv.brightness
+  www.vology.com.csv.brightness
+
+Cluster 37:
+  ce.yikus.com.csv.size
+  www.cleverboxes.com.csv.screen dimensions
+  www.imldirect.it.csv.screen size
+  www.mediashopuk.com.csv.display diagonal
+  www.mrhightech.com.csv.display diagonal
+  www.softwarecity.ca.csv.screen size
+  www.vology.com.csv.diagonal size
+
+Cluster 38:
+  catalog.com.csv.display technology
+  www.cleverboxes.com.csv.product type
+  www.imldirect.it.csv.product type
+  www.mediashopuk.com.csv.display
+  www.mrhightech.com.csv.display
+  www.softwarecity.ca.csv.product type
+  www.vology.com.csv.display type
+
+Cluster 39:
+  www.cleverboxes.com.csv.audio capabilities
+  www.imldirect.it.csv.number of speakers
+  www.softwarecity.ca.csv.number of speakers
+
+Cluster 40:
+  catalog.com.csv.aspect ratio
+  ce.yikus.com.csv.aspectratio
+  www.cleverboxes.com.csv.aspect ratio
+  www.imldirect.it.csv.aspect ratio
+  www.mediashopuk.com.csv.aspect ratio
+  www.mrhightech.com.csv.aspect ratio
+  www.softwarecity.ca.csv.aspect ratio
+  www.vology.com.csv.aspect ratio
+
+Cluster 41:
+  www.vology.com.csv.osd languages
+
+Cluster 42:
+  www.cleverboxes.com.csv.language selection
+
+Cluster 43:
+  catalog.com.csv.max resolution
+  www.cleverboxes.com.csv.resolution maximum
+  www.imldirect.it.csv.maximum resolution
+  www.mediashopuk.com.csv.display resolution
+  www.mrhightech.com.csv.display resolution
+  www.softwarecity.ca.csv.maximum resolution
+  www.vology.com.csv.native resolution
+
+Cluster 44:
+  www.mediashopuk.com.csv.usb 20 ports quantity
+  www.mrhightech.com.csv.usb 20 ports quantity
+
+Cluster 45:
+  www.mediashopuk.com.csv.usb 30 ports quantity
+  www.mrhightech.com.csv.usb 30 ports quantity
+
+Cluster 46:
+  www.imldirect.it.csv.usb standard
+  www.softwarecity.ca.csv.usb standard
+
+Cluster 47:
+  www.cleverboxes.com.csv.vga in
+  www.mediashopuk.com.csv.vga dsub ports quantity
+  www.mrhightech.com.csv.vga dsub ports quantity
+
+Cluster 48:
+  ce.yikus.com.csv.warranty
+  www.cleverboxes.com.csv.warranty
+  www.imldirect.it.csv.limited warranty
+  www.softwarecity.ca.csv.limited warranty
+  www.vology.com.csv.manufacturer warranty
+
+Cluster 49:
+  www.mediashopuk.com.csv.wifi
+  www.mrhightech.com.csv.wifi
+
+Cluster 50:
+  www.mediashopuk.com.csv.operating relative humidity hh
+  www.mrhightech.com.csv.operating relative humidity hh
+  www.vology.com.csv.humidity range operating
+

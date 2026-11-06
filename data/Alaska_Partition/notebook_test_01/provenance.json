@@ -1,0 +1,188 @@
+{
+  "protocol": {
+    "adapter_version": 1,
+    "construction": "natural_disjoint_source_partition",
+    "source_dataset": "Alaska_full",
+    "source_set": "Alaska_full/notebook",
+    "source_task_fingerprint": "25582083873f4cfdf347011dba826c485096c8ca6df05c81c41d12e55f8d734b",
+    "source_fingerprint": "febec0d7804c2ceb7d325842e4b1397ccd8d82783893315c6a2b1fa97f0bba3b",
+    "source_sites": [
+      "amazon.com",
+      "flexshopper.com",
+      "livehotdeals.com",
+      "overstock.com",
+      "techbuy.com.au",
+      "thenerds.net",
+      "tinydeal.com",
+      "wallmartphoto.com"
+    ],
+    "seed": 2026,
+    "min_tables": 6,
+    "domain": "notebook",
+    "missingness": "unchanged natural missingness",
+    "site_policy": "normalized exact hostname, first domain owns duplicated sites"
+  },
+  "tables": [
+    {
+      "table": "livehotdeals.com.csv",
+      "rows": 116,
+      "columns": 1,
+      "missing_rate": 0.017241379310344827,
+      "column_missing_rates": {
+        "support": 0.017241379310344827
+      }
+    },
+    {
+      "table": "wallmartphoto.com.csv",
+      "rows": 196,
+      "columns": 11,
+      "missing_rate": 0.19294990723562153,
+      "column_missing_rates": {
+        "battery life": 0.4489795918367347,
+        "battery type": 0.05612244897959184,
+        "hard drive size": 0.0,
+        "laptop screen size": 0.18877551020408162,
+        "maximum memory expansion": 0.49489795918367346,
+        "processor brand": 0.17857142857142858,
+        "processor speed": 0.22959183673469388,
+        "resolution": 0.22448979591836735,
+        "screen type": 0.24489795918367346,
+        "shipping weight in pounds": 0.0,
+        "system ram": 0.05612244897959184
+      }
+    },
+    {
+      "table": "www.amazon.com.csv",
+      "rows": 300,
+      "columns": 11,
+      "missing_rate": 0.5051515151515151,
+      "column_missing_rates": {
+        "brand name": 0.14666666666666667,
+        "item weight": 0.3,
+        "computer memory type": 0.44666666666666666,
+        "hard drive": 0.11333333333333333,
+        "number of usb 20 ports": 0.5933333333333334,
+        "screen size": 0.11666666666666667,
+        "average battery life in hours": 0.74,
+        "batteries": 0.6533333333333333,
+        "number of usb 30 ports": 0.6333333333333333,
+        "flash memory size": 0.91,
+        "shipping weight": 0.9033333333333333
+      }
+    },
+    {
+      "table": "www.flexshopper.com.csv",
+      "rows": 300,
+      "columns": 22,
+      "missing_rate": 0.9124242424242425,
+      "column_missing_rates": {
+        "cache per processor": 0.97,
+        "manufacturer warranty": 0.74,
+        "weight": 0.6966666666666667,
+        "drive capacity": 0.8566666666666667,
+        "hdmi output": 0.8633333333333333,
+        "processor brand": 0.8666666666666667,
+        "processor speed": 0.86,
+        "screen size measured diagonally": 0.8766666666666667,
+        "system memory ram": 0.8633333333333333,
+        "system memory ram expandable to": 0.8966666666666666,
+        "type of memory ram": 0.8866666666666667,
+        "aspect ratio": 0.9566666666666667,
+        "battery life": 0.9433333333333334,
+        "battery type": 0.91,
+        "graphics chip": 0.9233333333333333,
+        "battery capacity": 0.9933333333333333,
+        "memory card reader": 0.9933333333333333,
+        "number of usb 30 ports": 0.9966666666666667,
+        "processor type": 0.9933333333333333,
+        "number of usb 20 ports": 1.0,
+        "power consumption": 0.9966666666666667,
+        "vga input": 0.99
+      }
+    },
+    {
+      "table": "www.overstock.com.csv",
+      "rows": 116,
+      "columns": 4,
+      "missing_rate": 0.5948275862068966,
+      "column_missing_rates": {
+        "hard drive capacity": 0.02586206896551724,
+        "screen size": 0.5344827586206896,
+        "installed ram": 0.853448275862069,
+        "laptop weight": 0.9655172413793104
+      }
+    },
+    {
+      "table": "www.techbuy.com.au.csv",
+      "rows": 300,
+      "columns": 11,
+      "missing_rate": 0.9209090909090909,
+      "column_missing_rates": {
+        "battery": 0.9566666666666667,
+        "memory": 0.82,
+        "storage": 0.8066666666666666,
+        "weight": 0.7833333333333333,
+        "power consumption": 0.91,
+        "warranty": 0.9566666666666667,
+        "multigpu support": 0.9333333333333333,
+        "screen size": 0.99,
+        "power consumption standby": 0.9933333333333333,
+        "brand name": 0.98,
+        "flash memory": 1.0
+      }
+    },
+    {
+      "table": "www.thenerds.net.csv",
+      "rows": 300,
+      "columns": 23,
+      "missing_rate": 0.32971014492753625,
+      "column_missing_rates": {
+        "64bit processing": 0.19333333333333333,
+        "aspect ratio": 0.16666666666666666,
+        "battery capacity": 0.6333333333333333,
+        "battery chemistry": 0.3,
+        "brand name": 0.0,
+        "cache": 0.15666666666666668,
+        "graphics controller manufacturer": 0.19333333333333333,
+        "graphics controller model": 0.22333333333333333,
+        "hard drive capacity": 0.5733333333333334,
+        "hdmi": 0.43666666666666665,
+        "maximum battery run time": 0.51,
+        "memory card reader": 0.18666666666666668,
+        "memory technology": 0.14,
+        "number of usb 30 ports": 0.32,
+        "processor manufacturer": 0.10666666666666667,
+        "processor speed": 0.09333333333333334,
+        "processor type": 0.12666666666666668,
+        "screen size": 0.13333333333333333,
+        "weight approximate": 0.19333333333333333,
+        "number of usb 20 ports": 0.5,
+        "vga": 0.52,
+        "flash memory capacity": 0.8866666666666667,
+        "solid state drive configuration": 0.99
+      }
+    },
+    {
+      "table": "www.tinydeal.com.csv",
+      "rows": 141,
+      "columns": 2,
+      "missing_rate": 0.6631205673758865,
+      "column_missing_rates": {
+        "builtin rechargeable polymer battery": 0.6595744680851063,
+        "weight": 0.6666666666666666
+      }
+    }
+  ],
+  "gt_pairs": 104,
+  "files": {
+    "groundtruth.txt": "992f52a7d184df4edf2c2361ac803ff3b1979dfeba7200b698d747a1bb31b85e",
+    "original/www.overstock.com.csv": "e7bf2b25c8f76c2ede87b5247371e553838f365e392ba5f66797267c606a780b",
+    "original/www.techbuy.com.au.csv": "ef78377cfc1f8e00730f11acb156dd705261738b5755e86cdecc75c7e7d07a3d",
+    "original/www.flexshopper.com.csv": "12afa00057f952a9adef8bbd9f34cf5891890ca07d26bad57d6add96dd34afc2",
+    "original/www.amazon.com.csv": "fdc94b7b4da618cef48418c51ed2ce0a367ccd300b97a6e865b6ff27a8d151be",
+    "original/www.tinydeal.com.csv": "50477c62566b55622a726849509185b32ec722710e76ba02d8e58e2b0c1c86ac",
+    "original/wallmartphoto.com.csv": "a40f51ee92002647a616c5ab55cd33f4a663d333ea779651e605ed021e588f1d",
+    "original/livehotdeals.com.csv": "1bf9410670c299da155df387b969d82bf3ac3b7420766891441cd2f2dab261fb",
+    "original/www.thenerds.net.csv": "f8235a1de38d6864426606573cf0ab7a6b4f948126690f0fd3a7b421689a87d4"
+  }
+}

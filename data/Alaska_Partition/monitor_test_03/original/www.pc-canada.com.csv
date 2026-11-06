@@ -1,0 +1,121 @@
+aspect ratio,brand name,brightness,color,color supported,contrast ratio,displayport,dvi,hdmi,limited warranty,maximum resolution,mount type,product type,response time,screen mode,screen size,speakers,vga,operating power consumption,standby power consumption,weight approximate,weight with stand approximate,usb,usb standard,headphone,number of speakers
+16:9,AOC,250 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",No,Yes,No,1 Year,1920 x 1080,Wall Mountable,LCD Monitor,5 ms,Full HD,"21.5""",Yes,Yes,,,,,,,,
+16:9,LG,200 cd/mÂ²,Black,16.7 Million Colors,"5,000,000:1",,Yes,,,1920 x 1080,,LCD Monitor,5 ms,Full HD,"24""",,Yes,19 W,300 mW,2.70 kg,3 kg,,,,
+16:9,Acer,300 cd/mÂ²,Dark Gray,16.7 Million Colors,"100,000,000:1",Yes,Yes,Yes,,3840 x 2160,,LCD Monitor,1 ms,4K UHD,"28""",Yes,,39 W,,,,Yes,,,
+16:10,Eizo,320 cd/mÂ²,"Black, Gray",16.7 Million Colors (24-bit),"1,000:1",Yes,Yes,,,1920 x 1200,Wall Mountable,LCD Monitor,13 ms,WUXGA,"24.1""",,,,900 mW,7.10 kg,10.70 kg,Yes,,,
+16:9,NEC Display,250 cd/mÂ²,,,"1,000:1",Yes,Yes,,3 Year,1600 x 900,,LCD Monitor,5 ms,,"20""",,Yes,25 W,420 mW,5.40 kg,,,,,
+16:9,HP,250 cd/mÂ²,Black,,"1,000:1",Yes,Yes,,,1920 x 1080,,LCD Monitor,7 ms,Full HD,"21.5""",Yes,Yes,42 W,400 mW,,5.40 kg,Yes,USB 2.0,,
+5:4,Lenovo,250 cd/mÂ²,Business Black,16.7 Million Colors,"1,000:1",,Yes,,3 Year,1280 x 1024,,LCD Monitor,5 ms,SXGA,"17""",,Yes,,,3.60 kg,,,,,
+16:9,LG,250 cd/mÂ²,,16.7 Million Colors,"1,000:1",,,Yes,,1920 x 1080,,LCD Monitor,5 ms,Full HD,"23""",Yes,Yes,21 W,300 mW,3.05 kg,3.95 kg,,,Yes,2.0
+16:9,Acer,250 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",,,Yes,,1920 x 1080,,LCD Monitor,6 ms,Full HD,"23""",,Yes,25 W,490 mW,,,,,,
+16:9,HP,250 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",Yes,Yes,,3 Year,1920 x 1080,,LCD Monitor,5 ms,Full HD,"23""",No,Yes,36 W,500 mW,3.90 kg,,Yes,USB 2.0,,
+16:9,LG,400 cd/mÂ²,Black,16.7 Million Colors,"1,300:1",,Yes,Yes,3 Year,1920 x 1080,,LCD Monitor,25 ms,Full HD,"32""",Yes,Yes,65 W,,7.89 kg,8.66 kg,Yes,,,2.0
+16:9,Acer,300 Nit,Dark Gray,1.07 Billion Colors,"100,000,000:1",Yes,Yes,Yes,,2560 x 1440,,LCD Monitor,6 ms,WQHD,"32""",Yes,,45 W,,,,Yes,,,
+16:9,Viewsonic,,,,"1,000,000:1",,Yes,,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,5 ms,Full HD,"24""",Yes,Yes,34 W,,3.70 kg,4.10 kg,,,,
+16:10,HP,250 cd/mÂ²,Gray,16.7 Million Colors,"5,000,000:1",Yes,Yes,,3 Year,1920 x 1200,,LCD Monitor,8 ms,WUXGA,"24""",,Yes,35 W,500 mW,4.13 kg,6.58 kg,Yes,USB 2.0,,
+16:9,AOC,300 cd/mÂ²,Black,16.7 Million Colors,"20,000,000:1",,Yes,Yes,1 Year,1920 x 1080,Wall Mountable,LCD Monitor,5 ms,Full HD,"27""",Yes,Yes,40 W,600 mW,5.29 kg,,,,,2.0
+,Viewsonic,300 cd/mÂ²,Black,1.07 Billion Colors,"50,000,000:1",Yes,Yes,Yes,,3840 x 2160,Wall Mountable,LCD Monitor,5 ms,QFHD,"28""",Yes,,,,,,,,,2.0
+16:9,Acer,250 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",Yes,Yes,,,1920 x 1080,,LCD Monitor,8 ms,Full HD,"21.5""",Yes,Yes,19.50 W,350 mW,3.24 kg,3.66 kg,,,,
+16:10,Acer,250 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",,Yes,,,1680 x 1050,,LCD Monitor,5 ms,WXGA+,"22""",,Yes,24.20 W,450 mW,3.09 kg,3.52 kg,,,,
+16:9,BenQ,250 cd/mÂ²,Black,16.7 Million Colors,"5,000:1",Yes,Yes,No,,1920 x 1080,Wall Mountable,LCD Monitor,4 ms,Full HD,"24""",,Yes,23 W,200 mW,6.70 kg,,Yes,USB 3.0,Yes,
+16:9,Asus,200 cd/mÂ²,"Black, Silver",,500:1,,,,3 Year,1366 x 768,,LCD Monitor,11 ms,HD,"15.6""",,,5 W,0 mW,800 g,,Yes,USB 3.0,,
+16:9,Asus,250 cd/mÂ²,Black,16.7 Million Colors,"50,000,000:1",,,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,5 ms,Full HD,"21.5""",,Yes,25 W,500 mW,3.10 kg,,,,Yes,
+16:10,Asus,300 cd/mÂ²,Black,16.7 Million Colors,"80,000,000:1",Yes,Yes,Yes,3 Year,1920 x 1200,Wall Mountable,LCD Monitor,6 ms,WUXGA,"24""",,Yes,75 W,1 W,,,Yes,USB 3.0,Yes,
+16:9,HP,250 cd/mÂ²,,,"5,000,000:1",Yes,,,3 Year,1920 x 1080,,LCD Monitor,7 ms,Full HD,"23""",,Yes,60 W,,6.12 kg,,Yes,USB 3.0,Yes,
+16:9,Asus,250 cd/mÂ²,Black,16.7 Million Colors,"50,000,000:1",,Yes,No,3 Year,1600 x 900,Wall Mountable,LCD Monitor,5 ms,HD+,"20""",,Yes,14 W,500 mW,2.50 kg,,,,,
+21:9,LG,,Black,,,Yes,Yes,Yes,,2560 x 1080,,LCD Monitor,5 ms,UW-UXGA,"25""",Yes,,,,,,Yes,USB 3.0,,2.0
+16:10,Philips,300 cd/mÂ²,White,16.7 Million Colors,"1,000:1",Yes,Yes,,,1920 x 1200,,LCD Monitor,14 ms,WUXGA,"24""",Yes,Yes,17.40 W,400 mW,4.64 kg,6.97 kg,Yes,USB 2.0,Yes,2.0
+,POS-X,220 cd/mÂ²,Black,,,,,,3 Year,800 x 600,,LCD Monitor,,SVGA,"8.4""",,Yes,,,,,,,,
+16:9,Asus,,Black,16.7 Million Colors,"80,000,000:1",,,,3 Year,1600 x 900,Wall Mountable,LCD Monitor,5 ms,HD+,"19.5""",,Yes,25 W,500 mW,2.59 kg,,,,,
+16:10,Lenovo,300 cd/mÂ²,Business Black,1.07 Billion Colors,"1,000:1",Yes,Yes,Yes,3 Year,2560 x 1600,,LCD Monitor,6 ms,WQXGA,"30""",,Yes,130 W,1.20 W,11.50 kg,,Yes,USB 3.0,,
+16:9,HP,250 cd/mÂ²,,,"1,000:1",,Yes,Yes,,1920 x 1080,,LCD Monitor,7 ms,Full HD,"23""",,Yes,,,,,,,,
+16:9,HP,180 cd/mÂ²,Black,,500:1,,,,3 Year,1366 x 768,,LCD Monitor,12 ms,HD,"15.6""",No,,5 W,500 mW,1.54 kg,,Yes,USB 2.0,,
+16:10,Asus,250 cd/mÂ²,Black,16.7 Million Colors,"50,000,000:1",,Yes,,3 Year,1680 x 1050,Wall Mountable,LCD Monitor,5 ms,WSXGA+,"22""",Yes,Yes,33 W,500 mW,3.90 kg,,,,,2.0
+,AG Neovo,250 cd/mÂ²,,16.7 Million Colors,"1,000:1",,Yes,,,1280 x 1024,Wall Mountable,LCD Monitor,3 ms,SXGA,"19""",Yes,Yes,33.99 W,,7.40 kg,,,,,2.0
+16:9,BenQ,250 cd/mÂ²,Glossy Black,16.7 Million Colors,"1,000:1",,Yes,Yes,,1920 x 1080,Wall Mountable,LCD Monitor,2 ms,Full HD,"24""",Yes,Yes,23 W,300 mW,4.30 kg,,,,Yes,2.0
+16:9,Viewsonic,250 cd/mÂ²,,,"1,000:1",,Yes,,3 Year,1600 x 900,Wall Mountable,LCD Monitor,5 ms,HD+,"20""",Yes,Yes,30 W,1 W,3.49 kg,4.22 kg,,,,2.0
+16:10,Lenovo,300 cd/mÂ²,Business Black,16.7 Million Colors,"1,000:1",Yes,Yes,,3 Year,1920 x 1200,,LCD Monitor,7 ms,WUXGA,"24""",,Yes,40 W,500 mW,6.67 kg,,,,,
+16:9,Asus,250 cd/mÂ²,Black,16.7 Million Colors,"80,000,000:1",,Yes,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,5 ms,Full HD,"21.5""",Yes,Yes,25 W,500 mW,3.10 kg,,Yes,,Yes,2.0
+16:9,LG,,,,,,Yes,,,1920 x 1080,Wall Mountable,LCD Monitor,,Full HD,"23.8""",Yes,Yes,23 W,300 mW,5.10 kg,,,,,2.0
+16:9,BenQ,300 cd/mÂ²,Glossy Black,16.7 Million Colors,"20,000,000:1",,Yes,Yes,,1920 x 1080,Wall Mountable,LCD Monitor,4 ms,Full HD,"27""",Yes,Yes,27 W,,4.50 kg,,,,Yes,2.0
+16:9,HP,250 cd/mÂ²,Black,,"1,000:1",,Yes,,3 Year,1600 x 900,,LCD Monitor,5 ms,HD+,"20""",,Yes,22 W,500 mW,3.50 kg,,,,,
+16:9,HP,250 cd/mÂ²,Black,,"1,000:1",,Yes,,3 Year,1600 x 900,,LCD Monitor,5 ms,HD+,"20""",,Yes,22 W,500 mW,3.50 kg,,,,,
+16:9,Asus,250 cd/mÂ²,Black,16.7 Million Colors,"50,000,000:1",,Yes,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,2 ms,Full HD,"23""",Yes,Yes,25 W,500 mW,4.30 kg,,,,Yes,2.0
+16:9,BenQ,350 cd/mÂ²,Black,1.07 Billion Colors,"1,000:1",Yes,Yes,Yes,,2560 x 1440,Wall Mountable,LCD Monitor,4 ms,WQHD,"27""",,Yes,,,8.20 kg,,Yes,USB 3.0,Yes,
+16:9,Viewsonic,250 cd/mÂ²,Black,,"1,000:1",,Yes,,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,5 ms,Full HD,"23""",,Yes,22 W,,2.27 kg,2.54 kg,,,,
+16:9,Asus,250 cd/mÂ²,Black,16.7 Million Colors,"50,000,000:1",,,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,2 ms,Full HD,"23""",,Yes,27 W,500 mW,3.40 kg,,,,,
+16:9,HP,250 cd/mÂ²,Black,,"1,000:1",,Yes,,3 Year,1920 x 1080,,LCD Monitor,5 ms,Full HD,"21.5""",No,Yes,28 W,500 mW,3.99 kg,,,,,
+16:9,Asus,250 cd/mÂ²,"Black, Silver",16.7 Million Colors,"80,000,000:1",,,Yes,,1920 x 1080,,LCD Monitor,5 ms,Full HD,"27""",Yes,Yes,37 W,500 mW,5.20 kg,,,,Yes,2.0
+16:9,Asus,300 cd/mÂ²,Black,16.7 Million Colors,"10,000,000:1",,Yes,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,2 ms,Full HD,"23.6""",Yes,Yes,34.90 W,900 mW,4.40 kg,,,,,2.0
+,Planar,1600 cd/mÂ²,,,600:1,,,,1 Year,1024 x 768,,Open-frame LCD Monitor,8 ms,XGA,"15""",,Yes,20 W,,1 kg,,,,,
+5:4,HP,250 cd/mÂ²,Black,16.7 Million Colors,"3,000,000:1",Yes,Yes,,3 Year,1280 x 1024,"Arm-mountable, Wall Mountable",LCD Monitor,,SXGA,"18.9""",,Yes,28 W,500 mW,3 kg,4.90 kg,Yes,USB 2.0,,
+16:9,Asus,250 cd/mÂ²,"Black, Silver",16.7 Million Colors,"80,000,000:1",,,Yes,,1920 x 1080,,LCD Monitor,5 ms,Full HD,"23""",Yes,Yes,33 W,500 mW,3.70 kg,,,,Yes,2.0
+16:9,Lenovo,250 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",Yes,,Yes,3 Year,1600 x 900,,LCD Monitor,5 ms,HD+,"19.5""",,Yes,36 W,1 W,4.40 kg,,Yes,USB 2.0,,
+16:9,AOC,350 cd/mÂ²,Black,16.7 Million Colors,"80,000,000:1",Yes,Yes,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,1 ms,Full HD,"24""",Yes,Yes,33 W,500 mW,6.29 kg,,Yes,,Yes,2.0
+16:9,Lenovo,,Business Black,16.7 Million Colors,,Yes,,Yes,3 Year,1920 x 1080,,LCD Monitor,,Full HD,"21.5""",,Yes,8 W,500 mW,4.96 kg,,Yes,USB 2.0,,
+16:9,Asus,300 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",Yes,,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,5 ms,Full HD,"27""",Yes,Yes,35 W,500 mW,6.10 kg,,,,Yes,2.0
+16:9,HP,250 cd/mÂ²,Black,,"4,000,000:1",Yes,Yes,,3 Year,1920 x 1080,,LCD Monitor,8 ms,Full HD,"21.5""",,Yes,31 W,,5.82 kg,,Yes,USB 2.0,,
+5:4,HP,250 cd/mÂ²,Black,,"1,000:1",,,,3 Year,1280 x 1024,"Wall Mountable, Arm-mountable",LCD Monitor,5 ms,SXGA,"19""",No,Yes,25 W,500 mW,3.50 kg,,,,,
+16:9,BenQ,250 cd/mÂ²,"Black, Red",16.7 Million Colors,"1,000:1",,Yes,Yes,3 Year,1920 x 1080,,LCD Monitor,1 ms,Full HD,"24""",Yes,Yes,27 W,500 mW,4.10 kg,,,,Yes,2.0
+16:9,Acer,300 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",,Yes,Yes,,1920 x 1080,,LCD Monitor,6 ms,Full HD,"27""",,Yes,,,,,,,,
+,Nanov,400 cd/mÂ²,,16.7 Million Colors,600:1,,,,1 Year,1280 x 1024,"Wall Mountable, Ceiling Mountable",LCD Monitor,8 ms,SXGA,"19""",Yes,Yes,45 W,5 W,,,,,,2.0
+16:10,Lenovo,250 cd/mÂ²,Black,,"1,000:1",Yes,Yes,,3 Year,1440 x 900,"Wall Mountable, Desk Mountable",LCD Monitor,5 ms,WXGA+,"19""",,Yes,26 W,500 mW,4.30 kg,,,,,
+16:9,HP,250 cd/mÂ²,Black,,"1,000:1",,,,3 Year,1366 x 768,,LCD Monitor,5 ms,WXGA,"18.5""",Yes,Yes,20 W,500 mW,3.20 kg,,Yes,,,
+16:10,Asus,250 cd/mÂ²,Black,16.7 Million Colors,"50,000,000:1",No,No,No,,1440 x 900,Wall Mountable,LCD Monitor,5 ms,WXGA+,"19""",No,Yes,25 W,500 mW,2.70 kg,,,,,
+,HP,300 cd/mÂ²,,,"1,000:1",Yes,Yes,,3 Year,1920 x 1200,Arm-mountable,LCD Monitor,8 ms,WUXGA,"24""",No,Yes,55 W,,,,,,,
+,Asus,250 cd/mÂ²,,,"80,000,000:1",,,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,1 ms,Full HD,"23.6""",Yes,Yes,,,,,,,,
+16:9,Asus,300 cd/mÂ²,Glossy Piano Black,16.7 Million Colors,"2,000:1",,Yes,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,2 ms,Full HD,"24""",Yes,Yes,60 W,2 W,5.50 kg,,Yes,,Yes,2.0
+16:10,HP,250 cd/mÂ²,Silver,,"5,000,000:1",Yes,Yes,,,1920 x 1200,,LCD Monitor,8 ms,WUXGA,"24""",,Yes,40 W,35 W,,6.58 kg,Yes,USB 2.0,,
+16:9,HP,250 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",,Yes,,3 Year,1920 x 1080,"Desk Mountable, Wall Mountable, Arm-mountable",LCD Monitor,5 ms,Full HD,"23""",,Yes,31 W,500 mW,3.85 kg,,,,,
+16:10,HP,350 cd/mÂ²,Black,1.07 Billion Colors,"5,000,000:1",Yes,Yes,Yes,3 Year,1920 x 1200,,LCD Monitor,12 ms,WUXGA,"24""",,,84 W,500 mW,,6.98 kg,Yes,USB 3.0,,
+16:9,BenQ,250 cd/mÂ²,White,16.7 Million Colors,"3,000:1",,Yes,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,4 ms,Full HD,"24""",No,Yes,40 W,300 mW,4.50 kg,,,,Yes,
+,LG,,,,,,Yes,,,1680 x 1050,,LCD Monitor,5 ms,WSXGA+,"22""",,Yes,,,,,,,,
+16:9,Asus,250 cd/mÂ²,Black,16.7 Million Colors,"80,000,000:1",Yes,Yes,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,6 ms,Full HD,"23""",Yes,Yes,,500 mW,5.50 kg,,Yes,USB 2.0,,2.0
+16:10,NEC Display,340 cd/mÂ²,Black,1.07 Billion Colors,"1,000:1",Yes,Yes,Yes,4 Year,1920 x 1200,Desk Mountable,LCD Monitor,8 ms,WUXGA,"24.1""",,,56 W,200 mW,7.39 kg,10.61 kg,Yes,,,
+,LG,,,16.7 Million Colors,"5,000,000:1",,Yes,,,1600 x 900,,LCD Monitor,5 ms,HD+,"19.5""",,Yes,,,,,,,,
+16:9,Lenovo,250 cd/mÂ²,Raven Black,16.7 Million Colors,"1,000:1",Yes,Yes,,3 Year,1920 x 1080,,LCD Monitor,5 ms,Full HD,"23""",,Yes,38 W,500 mW,5.74 kg,,Yes,USB 2.0,,
+16:9,HP,250 cd/mÂ²,"Iridium Silver, Jack Black",,"1,000:1",,Yes,Yes,,1920 x 1080,,LCD Monitor,7 ms,Full HD,"25""",,Yes,30 W,500 mW,4.40 kg,,,,,
+16:9,Asus,250 cd/mÂ²,Glossy Black,16.7 Million Colors,"50,000,000:1",,Yes,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,2 ms,Full HD,"24""",,Yes,32 W,500 mW,4.10 kg,,,,Yes,
+21:9,Asus,300 cd/mÂ²,Black,16.7 Million Colors,"80,000,000:1",Yes,Yes,Yes,3 Year,2560 x 1080,,LCD Monitor,5 ms,UW-UXGA,"29""",Yes,,31.70 W,500 mW,8.50 kg,,,,Yes,2.0
+16:9,HP,250 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",,Yes,,3 Year,1920 x 1080,"Desk Mountable, Wall Mountable, Arm-mountable",LCD Monitor,5 ms,Full HD,"23.6""",,Yes,30 W,500 mW,3.72 kg,,,,,
+16:9,Asus,300 cd/mÂ²,Black,16.7 Million Colors,"1,200:1",,,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,2 ms,Full HD,"27""",Yes,Yes,45 W,500 mW,6 kg,,,,Yes,2.0
+5:4,Acer,250 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",,,,,1280 x 1024,,LCD Monitor,5 ms,SXGA,"17""",,Yes,13 W,450 mW,2.20 kg,2.60 kg,,,,
+16:9,NEC Display,250 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",Yes,Yes,Yes,3 Year,1920 x 1080,,LCD Monitor,14 ms,Full HD,"22""",Yes,Yes,26 W,430 mW,3.72 kg,5.99 kg,Yes,USB 2.0,Yes,
+16:9,HP,250 cd/mÂ²,Black,16.7 Million Colors,"4,000,000:1",,Yes,,3 Year,1920 x 1080,"Arm-mountable, Wall Mountable",LCD Monitor,5 ms,Full HD,"23""",,Yes,31 W,500 mW,3.25 kg,,,,,
+16:9,HP,300 cd/mÂ²,,1.07 Billion Colors,"1,000:1",Yes,,Yes,3 Year,2560 x 1440,,LCD Monitor,12 ms,WQHD,"27""",No,,110 W,,8.80 kg,,Yes,USB 3.0,,
+16:9,Lenovo,250 cd/mÂ²,Business Black,16.7 Million Colors,"1,000:1",,,,3 Year,1366 x 768,,LCD Monitor,5 ms,WXGA,"18.5""",,Yes,24 W,1 W,2.97 kg,,,,,
+16:9,Viewsonic,250 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",,Yes,,3 Year,1920 x 1080,,LCD Monitor,6 ms,Full HD,"23""",,Yes,45 W,,3.30 kg,5.40 kg,Yes,,,
+,Lenovo,250 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",,Yes,,3 Year,1280 x 1024,,LCD Monitor,7 ms,SXGA,"19""",,Yes,,,4.55 kg,,,,,
+16:9,HP,250 cd/mÂ²,Black,,"1,000:1",Yes,Yes,,3 Year,1920 x 1080,,LCD Monitor,7 ms,Full HD,"27""",,Yes,40 W,500 mW,4.90 kg,7.70 kg,Yes,USB 2.0,,
+16:10,Asus,250 cd/mÂ²,Black,16.7 Million Colors,"10,000,000:1",,Yes,,,1440 x 900,Wall Mountable,LCD Monitor,5 ms,WSXGA,"19""",Yes,Yes,25 W,,3.20 kg,,,,,2.0
+16:10,Asus,350 cd/mÂ²,Black,1073.7 Million Colors (10-bit),"80,000,000:1",Yes,Yes,Yes,3 Year,1920 x 1200,Wall Mountable,LCD Monitor,6 ms,WUXGA,"24""",,Yes,72 W,1 W,6.60 kg,,Yes,USB 3.0,Yes,
+16:9,AOC,200 cd/mÂ²,Glossy Piano Black,16.7 Million Colors,500:1,,,,1 Year,1366 x 768,"Wall Mountable, Arm-mountable",LCD Monitor,8 ms,HD,"16""",No,,8 W,1 W,1.09 kg,,Yes,USB 3.0,,
+16:9,Viewsonic,250 cd/mÂ²,,Grayscale,"1,000:1",,Yes,,,1920 x 1080,,LCD Monitor,5 ms,Full HD,"22""",Yes,Yes,26 W,,4.40 kg,,Yes,USB 2.0,,2.0
+,AG Neovo,250 cd/mÂ²,,16.7 Million Colors,"1,000:1",,Yes,Yes,3 Year,1920 x 1080,,LCD Monitor,3 ms,Full HD,"21.5""",Yes,Yes,25 W,500 mW,6.90 kg,,,,,2.0
+16:9,Acer,200 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",,Yes,,,1920 x 1080,,LCD Monitor,5 ms,Full HD,"21.5""",,Yes,22 W,450 mW,1.90 kg,2 kg,,,,
+16:9,Lenovo,250 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",,,Yes,3 Year,1920 x 1080,,LCD Monitor,5 ms,Full HD,"24""",Yes,Yes,21 W,500 mW,3.76 kg,,,,,2.0
+16:9,LG,,Black,,"50,000,000:1",,,Yes,,1920 x 1080,,LCD Monitor,5 ms,,"27""",,Yes,,,4.80 kg,,,,,
+5:4,NEC Display,250 cd/mÂ²,Black,,"1,000:1",,Yes,,3 Year,1280 x 1024,Desk Mountable,LCD Monitor,5 ms,SXGA,"17""",,Yes,11 W,150 mW,2.90 kg,3.30 kg,,,,
+16:9,HP,250 cd/mÂ²,,,"1,000:1",,Yes,Yes,,1920 x 1080,,LCD Monitor,7 ms,Full HD,"21.5""",,Yes,28 W,500 mW,3 kg,,,,,
+21:9,LG,,,,,,Yes,Yes,,2560 x 1080,,LCD Monitor,,UW-UXGA,"29""",,,,,,,,,,
+,,350 cd/mÂ²,,,"1,000:1",,,,,2560 x 1600,,,,WQXGA,,,,,,,9.96 kg,,,,
+16:9,NEC Display,250 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",Yes,Yes,,3 Year,1920 x 1080,Desk Mountable,LCD Monitor,6 ms,Full HD,"21.5""",,Yes,26 W,400 mW,3.90 kg,5.90 kg,,,,
+16:9,Asus,250 cd/mÂ²,Black,16.7 Million Colors,"10,000,000:1",,Yes,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,5 ms,Full HD,"21.5""",Yes,Yes,29 W,900 mW,4.10 kg,,,,,2.0
+16:9,HP,250 cd/mÂ²,,,"1,000:1",,Yes,,,1600 x 900,,LCD Monitor,7 ms,HD+,"20""",,Yes,,,2.80 kg,,,,,
+16:9,Asus,250 cd/mÂ²,Black,16.7 Million Colors,"10,000,000:1",,Yes,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,2 ms,Full HD,"24""",Yes,Yes,34 W,990 mW,4.40 kg,,,,,2.0
+16:9,AOC,300 cd/mÂ²,Textured Black,16.7 Million Colors,"20,000,000:1",Yes,Yes,Yes,,2560 x 1440,Wall Mountable,LCD Monitor,5 ms,WQHD,"27""",Yes,Yes,18 W,500 mW,8 kg,,Yes,USB 3.0,Yes,2.0
+,AG Neovo,250 cd/mÂ²,,16.7 Million Colors,"1,000:1",,Yes,,,1280 x 1024,Wall Mountable,LCD Monitor,3 ms,SXGA,"17""",Yes,Yes,31.99 W,990 mW,6.70 kg,,,,,2.0
+16:9,Acer,200 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",,,,,1366 x 768,,LCD Monitor,5 ms,WXGA,"18.5""",,Yes,15 W,450 mW,1.70 kg,2.23 kg,,,,
+21:9,Acer,300 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",Yes,Yes,Yes,,2560 x 1080,,LCD Monitor,8 ms,Full HD,"29""",Yes,,,,,,Yes,USB 3.0,,
+16:9,HP,250 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",Yes,Yes,,3 Year,1600 x 900,"Arm-mountable, Wall Mountable",LCD Monitor,5 ms,HD+,"20""",No,Yes,30 W,500 mW,3 kg,,Yes,USB 2.0,,
+16:9,LG,250 cd/mÂ²,Black,16.77 Million Colors,"5,000,000:1",,Yes,Yes,,1920 x 1080,,LCD Monitor,2 ms,Full HD,"24""",,Yes,28 W,,2.70 kg,3 kg,,,Yes,
+16:9,Asus,300 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",Yes,,Yes,3 Year,1920 x 1080,Wall Mountable,LCD Monitor,5 ms,Full HD,"27""",Yes,Yes,35 W,500 mW,,,,,Yes,2.0
+16:9,Acer,250 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",,Yes,,,1920 x 1080,,LCD Monitor,8 ms,Full HD,"21.5""",Yes,Yes,19.50 W,350 mW,3.24 kg,3.66 kg,,,,
+4:3,Viewsonic,250 cd/mÂ²,,,"1,000:1",,Yes,,3 Year,1280 x 1024,,LCD Monitor,5 ms,SXGA,"19""",Yes,Yes,18 W,,3.20 kg,4.20 kg,,,,2.0
+16:9,LG,,,,,,,Yes,,1920 x 1080,Wall Mountable,LCD Monitor,5 ms,Full HD,"23.8""",,Yes,22 W,300 mW,3.10 kg,,,,,
+16:10,NEC Display,340 cd/mÂ²,White,1.07 Billion Colors,"1,000:1",Yes,Yes,Yes,4 Year,2560 x 1440,,LCD Monitor,6 ms,WQHD,"27""",,,73 W,1.40 W,8.89 kg,12.88 kg,Yes,,,
+16:9,LG,250 cd/mÂ²,Black,16.7 Million Colors,"5,000,000:1",,Yes,,,1920 x 1080,Wall Mountable,LCD Monitor,5 ms,Full HD,"21.5""",,Yes,21 W,300 mW,2.20 kg,2.60 kg,,,,
+16:9,HP,250 cd/mÂ²,Black,,"1,000:1",,Yes,,3 Year,1920 x 1080,,LCD Monitor,5 ms,Full HD,"21.5""",Yes,Yes,28 W,500 mW,4 kg,,,,,
+16:9,Acer,350 cd/mÂ²,Black,16.7 Million Colors,"100,000,000:1",,Yes,Yes,,1920 x 1080,,LCD Monitor,1 ms,Full HD,"24""",No,Yes,23 W,490 mW,3.07 kg,3.52 kg,,,,
+16:10,Lenovo,250 cd/mÂ²,,,"1,000:1",Yes,Yes,,,1680 x 1050,,LCD Monitor,5 ms,WSXGA+,"22""",,Yes,26 W,500 mW,5.14 kg,,,,,
+16:10,Eizo,300 cd/mÂ²,Black,16.7 Million Colors,"1,000:1",Yes,Yes,,5 Year,1920 x 1200,,LCD Monitor,6 ms,WUXGA,"24""",Yes,Yes,60 W,300 mW,4.10 kg,6.70 kg,Yes,USB 2.0,Yes,2.0

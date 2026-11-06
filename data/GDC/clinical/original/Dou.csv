@@ -1,0 +1,154 @@
+Proteomics_Tumor_Normal,Histologic_Grade_FIGO,Histologic_type,Treatment_naive,Tumor_purity,FIGO_stage,BMI,Race,Ethnicity,Gender,Tumor_Focality
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,38.88,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,39.76,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,51.19,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,,Carcinosarcoma,YES,Normal,,,,,,
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,32.69,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,,Serous,YES,Normal,IA,20.28,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,55.67,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,25.68,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,,Serous,YES,Normal,IIIA,21.57,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,34.26,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,36.57,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,27.83,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,,Clear cell,YES,Normal,IIIC2,34.84,White,Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IB,68.39, White,Hispanic or Latino,Female,Unifocal
+Tumor,,Carcinosarcoma,YES,Normal,IA,25.37,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,,Serous,YES,Normal,IB,26.22,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,42.98,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,55.86,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,II,42.19,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,27.82,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,34.72,Asian,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IIIC2,21.45,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,25.03,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,38.54,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,65.71,White,Not-Hispanic or Latino,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IB,46.64,White,Not reported,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,45.83,White,Not-Hispanic or Latino,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IIIA,22.86,White,Not-Hispanic or Latino,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,46.41,White,Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 3,Endometrioid,YES,Normal,II,71.09,White,Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 3,Endometrioid,YES,Normal,IIIC1,44.81,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,43.0,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,II,32.32,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,47.82,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Low,IB,45.53,White,Not reported,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,31.58,White,Not reported,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IB,17.64,White,Not reported,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,36.84,White,Not reported,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,37.69,White,Not reported,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,28.5,White,Not reported,Female,Multifocal
+Tumor,,Serous,YES,Normal,IB,34.89,White,Not reported,Female,Unifocal
+Tumor,,Serous,YES,Normal,IA,39.14,White,Not reported,Female,Unifocal
+Tumor,,Serous,YES,Low,IIIC1,38.44,White,Not reported,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IB,59.78,White,Not reported,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,38.89,White,Not reported,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,38.41,White,Not reported,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Low,IB,31.83,White,Not reported,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IB,34.37,White,Not reported,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,17.11,White,Not reported,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IB,32.06,Not Reported,Not reported,Female,Unifocal
+Tumor,FIGO grade 3,Endometrioid,YES,Normal,IA,31.96,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,,Carcinosarcoma,YES,Normal,,,,,,
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,41.44,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 3,Endometrioid,YES,Normal,IVB,31.63,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,37.11,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,31.96,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,46.45,White,Not reported,Female,Unifocal
+Tumor,,Serous,YES,Normal,IVB,27.66,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IB,27.1,,,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IIIC1,46.85,Black or African American,Not-Hispanic or Latino,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,26.0,,,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,31.0,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,27.0,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,II,35.0,,,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,35.0,,,Female,Multifocal
+Tumor,FIGO grade 3,Endometrioid,YES,Normal,IB,31.22,,,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,31.0,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,32.83,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,29.52,,,Female,Multifocal
+Tumor,FIGO grade 3,Endometrioid,YES,Normal,IB,29.07,,,Female,Multifocal
+Tumor,,Serous,YES,Normal,IA,21.83,,,Female,Multifocal
+Tumor,,Serous,YES,Normal,IIIC1,27.0,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,34.0,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,36.81,,,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,46.0,,,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,27.31,,,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,20.55,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IB,17.85,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IB,29.62,White,Not-Hispanic or Latino,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IIIA,38.97,White,Not-Hispanic or Latino,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,48.46,Black or African American,Not-Hispanic or Latino,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,30.47,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IIIA,34.53,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,33.65,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,28.84,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IIIB,36.0,,,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IA,23.88,White,Not-Hispanic or Latino,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,27.0,,,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,NO,Normal,II,44.0,,,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IVB,31.0,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,II,39.2,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IIIA,30.48,,,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,IB,36.2,,,Female,Multifocal
+Tumor,FIGO grade 3,Endometrioid,YES,Normal,IIIA,26.14,,,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IIIC1,30.85,,,Female,Multifocal
+Tumor,,Serous,YES,Normal,IIIC2,34.0,,,Female,Unifocal
+Tumor,,Serous,YES,Normal,IB,31.0,,,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,II,40.72,White,Not-Hispanic or Latino,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,IA,29.37,,,Female,Multifocal
+Tumor,FIGO grade 3,Endometrioid,YES,Normal,IA,29.4,,,Female,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,II,35.42,,,Female,Unifocal
+Tumor,,Serous,YES,Normal,II,24.32,Black or African American,Not-Hispanic or Latino,Female,Unifocal
+Tumor,,Serous,YES,Normal,IA,34.06,,,Female,Unifocal
+Tumor,,Serous,YES,Normal,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Adjacent_normal,,,,,,,,,,
+Myometrium_normal,,,,,,,,,,
+Myometrium_normal,,,,,,,,,,
+Myometrium_normal,,,,,,,,,,
+Myometrium_normal,,,,,,,,,,
+Myometrium_normal,,,,,,,,,,
+Myometrium_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,
+Enriched_normal,,,,,,,,,,

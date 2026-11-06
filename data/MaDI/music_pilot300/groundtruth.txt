@@ -1,0 +1,34 @@
+Cluster 1:
+  discogs.csv.performer
+  lastfm.csv.band
+  musicbrainz.csv.Attribute_3
+
+Cluster 2:
+  discogs.csv.duration
+  lastfm.csv.album_length
+  musicbrainz.csv.Attribute_6
+
+Cluster 3:
+  discogs.csv.category
+
+Cluster 4:
+  discogs.csv.imprint
+
+Cluster 5:
+  discogs.csv.title_str
+  lastfm.csv.album_title
+  musicbrainz.csv.Attribute_2
+
+Cluster 6:
+  discogs.csv.origin_loc
+  musicbrainz.csv.Attribute_5
+
+Cluster 7:
+  discogs.csv.pub_dt
+  musicbrainz.csv.Attribute_4
+
+Cluster 8:
+  discogs.csv.tracks_track-name
+  lastfm.csv.tracks_track-name
+  musicbrainz.csv.Attribute_9
+

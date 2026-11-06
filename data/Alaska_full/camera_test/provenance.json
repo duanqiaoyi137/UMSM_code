@@ -1,0 +1,2204 @@
+{
+  "protocol": {
+    "adapter_version": 1,
+    "source": "https://github.com/merialdo/research.alaska",
+    "revision": "fb452aef32cd648eae4bcbdc984789b7f6f07960",
+    "domain": "camera",
+    "role": "test",
+    "max_rows": 300,
+    "seed": 42,
+    "alias_policy": "most_observed",
+    "ambiguous_source_policy": "drop source attributes mapping to multiple targets",
+    "features": "annotated source names/values only; target names are labels only",
+    "missingness": "natural JSON attribute absence and original nulls"
+  },
+  "archive_sha256": "2c22d05c7e161d788c4366eff68f9cf40fa59d50317beb7fbb6f2081818c1e44",
+  "annotation_audit": [
+    {
+      "table": "buy.net.csv",
+      "column": "focal length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "buy.net.csv",
+      "column": "focal length 35mm equivalent",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "cammarkt.com.csv",
+      "column": "battery type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "cammarkt.com.csv",
+      "column": "camera resolution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_resolution",
+        "image_resolution_lw"
+      ]
+    },
+    {
+      "table": "cammarkt.com.csv",
+      "column": "focal length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "cammarkt.com.csv",
+      "column": "screen size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "cammarkt.com.csv",
+      "column": "shutter speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "effective pixels",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_resolution",
+        "image_resolution_lw"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "image sensor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_resolution",
+        "sensor_size",
+        "sensor_type"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "resolution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_resolution",
+        "video_resolution"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "shutter time",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "column": "total pixel no",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_resolution_lw",
+        "video_resolution"
+      ]
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "column": "compatible battery",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "column": "focus modes",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "auto_focus_automatic",
+        "auto_focus_points",
+        "auto_focus_type"
+      ]
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "column": "movie mode",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "video_format",
+        "video_resolution"
+      ]
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "column": "shutter speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "autofocus",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "auto_focus_points",
+        "auto_focus_type"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "batteries",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "battery",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "colour filter size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "color_filter",
+        "sensor_size_class"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "dimensions w x h x d",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "dimensions wxhxd",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "exposure control",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "exposure_compensation",
+        "exposure_mode"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "file format",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_format",
+        "video_format"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "file formats",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_format",
+        "video_format"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "focal length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "focusarea selection",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "auto_focus_mode",
+        "auto_focus_points"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "image sensor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "sensor_size",
+        "sensor_type"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "image size pixels",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_resolution",
+        "image_resolution_lw"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "imaging sensor  effective pixels",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_resolution",
+        "sensor_type"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "iso sensitivity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "iso sensitivity recommended exposure index",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "iso sensitivity standard output sensitivity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "iso speed range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "lcd monitor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "lens",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "lens_mount_type",
+        "zoom_optical"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "menu languages",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "supported_languages",
+        "supported_languages_number"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "monitor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "screen_size",
+        "screen_type"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "movies",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "video_format",
+        "video_resolution"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "shutter speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "column": "zoom",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "zoom_combined",
+        "zoom_digital",
+        "zoom_optical"
+      ]
+    },
+    {
+      "table": "www.camerafarm.com.au.csv",
+      "column": "file format",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_format",
+        "video_format"
+      ]
+    },
+    {
+      "table": "www.camerafarm.com.au.csv",
+      "column": "iso sensitivity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.camerafarm.com.au.csv",
+      "column": "menu languages",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "supported_languages",
+        "supported_languages_number"
+      ]
+    },
+    {
+      "table": "www.camerafarm.com.au.csv",
+      "column": "shutter",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_min",
+        "shutter_type"
+      ]
+    },
+    {
+      "table": "www.camerafarm.com.au.csv",
+      "column": "shutter speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.canon-europe.com.csv",
+      "column": "batteries",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "www.canon-europe.com.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.canon-europe.com.csv",
+      "column": "dimensions wxhxd",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.canon-europe.com.csv",
+      "column": "focal length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "www.canon-europe.com.csv",
+      "column": "iso sensitivity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.canon-europe.com.csv",
+      "column": "zoom",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "zoom_combined",
+        "zoom_digital",
+        "zoom_optical"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "interface languages",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "supported_languages",
+        "supported_languages_number"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "iso range",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "iso speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "pixel resolution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_resolution_lw",
+        "video_resolution"
+      ]
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "column": "sensor type  size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "sensor_size",
+        "sensor_type"
+      ]
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "column": "battery",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "column": "dimensions approx",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "column": "dimensions w x h x d",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "column": "iso sensitivity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "column": "sensor size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "sensor_size",
+        "sensor_size_class"
+      ]
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "column": "sensor type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "sensor_size_class",
+        "sensor_type"
+      ]
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "column": "sensor type  size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "sensor_size",
+        "sensor_type"
+      ]
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "column": "shutter speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.flipkart.com.csv",
+      "column": "auto focus",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "auto_focus_type",
+        "has_auto_focus"
+      ]
+    },
+    {
+      "table": "www.flipkart.com.csv",
+      "column": "focal length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "www.flipkart.com.csv",
+      "column": "iso rating",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.flipkart.com.csv",
+      "column": "supported languages",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "supported_languages",
+        "supported_languages_number"
+      ]
+    },
+    {
+      "table": "www.flipkart.com.csv",
+      "column": "zoom",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "zoom_digital",
+        "zoom_optical"
+      ]
+    },
+    {
+      "table": "www.garricks.com.au.csv",
+      "column": "sensor details",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_resolution",
+        "sensor_type"
+      ]
+    },
+    {
+      "table": "www.gosale.com.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.henrys.com.csv",
+      "column": "battery",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "www.henrys.com.csv",
+      "column": "dimensions wxhxd",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.henrys.com.csv",
+      "column": "file formats",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_format",
+        "video_format"
+      ]
+    },
+    {
+      "table": "www.henrys.com.csv",
+      "column": "iso sensitivity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.henrys.com.csv",
+      "column": "sensor typesize",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "sensor_size",
+        "sensor_type"
+      ]
+    },
+    {
+      "table": "www.henrys.com.csv",
+      "column": "shutter",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "column": "battery type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "column": "camera shutter speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "column": "camera shutter speed max",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "column": "camera shutter speed min",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "column": "dimensions w x d x h",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "column": "focal length range ff",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "column": "iso sensitivity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "column": "light exposure control",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "exposure_compensation",
+        "exposure_mode"
+      ]
+    },
+    {
+      "table": "www.mypriceindia.com.csv",
+      "column": "auto focus",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "auto_focus_type",
+        "has_auto_focus"
+      ]
+    },
+    {
+      "table": "www.mypriceindia.com.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.mypriceindia.com.csv",
+      "column": "focal length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "www.mypriceindia.com.csv",
+      "column": "iso rating",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.mypriceindia.com.csv",
+      "column": "supported languages",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "supported_languages",
+        "supported_languages_number"
+      ]
+    },
+    {
+      "table": "www.pcconnection.com.csv",
+      "column": "physical dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.pcconnection.com.csv",
+      "column": "shutter speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "column": "auto focus",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "auto_focus_type",
+        "has_auto_focus"
+      ]
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "column": "battery type",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "column": "focal length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "column": "focus",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "auto_focus_automatic",
+        "auto_focus_type"
+      ]
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "column": "focus mode",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "auto_focus_automatic",
+        "auto_focus_type"
+      ]
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "column": "iso rating",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "column": "other resolution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_resolution",
+        "image_resolution_lw",
+        "video_resolution"
+      ]
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "column": "supported languages",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "supported_languages",
+        "supported_languages_number"
+      ]
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "column": "auto focus",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "auto_focus_type",
+        "has_auto_focus"
+      ]
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "column": "focal length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "column": "iso rating",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "column": "sensor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "sensor_size",
+        "sensor_type"
+      ]
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "column": "shutter speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "column": "supplied battery",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "column": "supported languages",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "supported_languages",
+        "supported_languages_number"
+      ]
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "column": "zoom",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "zoom_digital",
+        "zoom_optical"
+      ]
+    },
+    {
+      "table": "www.priceme.co.nz.csv",
+      "column": "light sensitivity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.priceme.co.nz.csv",
+      "column": "shutter speed",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "shutter_speed_max",
+        "shutter_speed_min"
+      ]
+    },
+    {
+      "table": "www.shopbot.com.au.csv",
+      "column": "dimensions",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.shopbot.com.au.csv",
+      "column": "zoom",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "zoom_digital",
+        "zoom_optical"
+      ]
+    },
+    {
+      "table": "www.shopmania.in.csv",
+      "column": "autofocus",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "auto_focus_mode",
+        "auto_focus_type"
+      ]
+    },
+    {
+      "table": "www.shopmania.in.csv",
+      "column": "battery",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "www.shopmania.in.csv",
+      "column": "focal length",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "www.shopmania.in.csv",
+      "column": "focal length equivalent to 35mm",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "www.shopmania.in.csv",
+      "column": "light sensitivity iso",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "iso_sensitivity_max",
+        "iso_sensitivity_min"
+      ]
+    },
+    {
+      "table": "www.walmart.com.csv",
+      "column": "focal length equivalent to 35mm camera",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "focal_length_max",
+        "focal_length_min"
+      ]
+    },
+    {
+      "table": "www.walmart.com.csv",
+      "column": "product in inches l x w x h",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "www.wexphotographic.com.csv",
+      "column": "battery model",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "battery_chemistry",
+        "battery_type"
+      ]
+    },
+    {
+      "table": "www.wexphotographic.com.csv",
+      "column": "file formats",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_format",
+        "video_format"
+      ]
+    },
+    {
+      "table": "www.wexphotographic.com.csv",
+      "column": "resolution",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "image_resolution_lw",
+        "video_resolution"
+      ]
+    },
+    {
+      "table": "www.wexphotographic.com.csv",
+      "column": "size",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "camera_depth",
+        "camera_height",
+        "camera_width"
+      ]
+    },
+    {
+      "table": "buy.net.csv",
+      "target": "image_resolution",
+      "kept": "effective megapixels",
+      "excluded": [
+        "total pixels"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "buy.net.csv",
+      "target": "zoom_digital",
+      "kept": "digital zoom",
+      "excluded": [
+        "normalizeddigital zoom"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "buy.net.csv",
+      "target": "zoom_optical",
+      "kept": "optical zoom",
+      "excluded": [
+        "normalizedoptical zoom"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "cammarkt.com.csv",
+      "target": "brand",
+      "kept": "brand",
+      "excluded": [
+        "manufacturer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "cammarkt.com.csv",
+      "target": "image_resolution",
+      "kept": "resolution",
+      "excluded": [
+        "megapixels"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "cammarkt.com.csv",
+      "target": "video_resolution",
+      "kept": "hd recording format",
+      "excluded": [
+        "video format",
+        "video resolutions"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "target": "auto_focus_automatic",
+      "kept": "focus control",
+      "excluded": [
+        "auto focus",
+        "focusing system"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "target": "camera_type",
+      "kept": "camera style",
+      "excluded": [
+        "camera type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "target": "color",
+      "kept": "camera color",
+      "excluded": [
+        "color"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "target": "external_memory_type",
+      "kept": "storage media type",
+      "excluded": [
+        "card slot",
+        "memory type",
+        "removable memory type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "target": "image_format",
+      "kept": "image format",
+      "excluded": [
+        "image formats",
+        "still image file formats"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "target": "image_resolution",
+      "kept": "megapixels",
+      "excluded": [
+        "camera pixel count",
+        "effective megapixel count",
+        "pixel count",
+        "resolution"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "target": "internal_memory_capacity",
+      "kept": "builtin memory",
+      "excluded": [
+        "internal memory"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "target": "screen_size",
+      "kept": "lcd viewer",
+      "excluded": [
+        "display screen",
+        "lcd display size inches",
+        "screen size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.buzzillions.com.csv",
+      "target": "warranty_duration",
+      "kept": "standard warranty",
+      "excluded": [
+        "manufacturers warranty  hardware"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "auto_focus_beam",
+      "kept": "af assist beam",
+      "excluded": [
+        "af assist lamp"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "auto_focus_mode",
+      "kept": "af modes",
+      "excluded": [
+        "focus"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "auto_focus_points",
+      "kept": "afarea mode",
+      "excluded": [
+        "af point selection",
+        "af points",
+        "af system points",
+        "focus point"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "battery_duration_shots",
+      "kept": "battery life",
+      "excluded": [
+        "battery life cipa standard"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "color_filter",
+      "kept": "colour filter type",
+      "excluded": [
+        "colour filter"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "exposure_compensation",
+      "kept": "exposure compensation",
+      "excluded": [
+        "exposure compansation"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "exposure_mode",
+      "kept": "exposure mode",
+      "excluded": [
+        "exposure parameters"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "image_resolution",
+      "kept": "effective pixels",
+      "excluded": [
+        "number of effective pixels",
+        "raw",
+        "total pixels"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "lens_mount_type",
+      "kept": "lens mount",
+      "excluded": [
+        "compatible lenses"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "microphone_type",
+      "kept": "audio recording device",
+      "excluded": [
+        "audio"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "picture_styles",
+      "kept": "picture control system",
+      "excluded": [
+        "photo effects"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "red_eye_reduction",
+      "kept": "redeye reduction",
+      "excluded": [
+        "redeye correction"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "self_timer",
+      "kept": "selftimer",
+      "excluded": [
+        "self timer"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "sensor_size",
+      "kept": "image sensor size",
+      "excluded": [
+        "effective sensor size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "supported_aspect_ratio",
+      "kept": "aspect ratio",
+      "excluded": [
+        "still picture aspect ratios"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "video_resolution",
+      "kept": "1280 x 720 hd",
+      "excluded": [
+        "1920 x 1080 full hd",
+        "640 x 480 hd"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "target": "working_humidity",
+      "kept": "humidity",
+      "excluded": [
+        "operating environment  humidity",
+        "operating humidity",
+        "operating humidity range"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.camerafarm.com.au.csv",
+      "target": "auto_focus_beam",
+      "kept": "af assist beam",
+      "excluded": [
+        "afassist lamp"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.camerafarm.com.au.csv",
+      "target": "auto_focus_points",
+      "kept": "af system points",
+      "excluded": [
+        "dynamic af mode",
+        "focus point"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.camerafarm.com.au.csv",
+      "target": "color_filter",
+      "kept": "color filter",
+      "excluded": [
+        "colour filter type"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.camerafarm.com.au.csv",
+      "target": "exposure_compensation",
+      "kept": "exposure compensation",
+      "excluded": [
+        "exposure control"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.camerafarm.com.au.csv",
+      "target": "image_resolution",
+      "kept": "effective pixels",
+      "excluded": [
+        "total pixels"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.canon-europe.com.csv",
+      "target": "auto_focus_points",
+      "kept": "af system points",
+      "excluded": [
+        "af system  points"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.canon-europe.com.csv",
+      "target": "red_eye_reduction",
+      "kept": "redeye reduction",
+      "excluded": [
+        "redeye correction"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "auto_focus_beam",
+      "kept": "af assist lamp",
+      "excluded": [
+        "auto focus assist light",
+        "autofocus assist lamp"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "auto_focus_points",
+      "kept": "focus point",
+      "excluded": [
+        "afarea mode",
+        "afarea modes",
+        "dynamic af mode"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "file_system",
+      "kept": "file system",
+      "excluded": [
+        "storage file system"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "image_resolution",
+      "kept": "megapixels",
+      "excluded": [
+        "mã©gapixels",
+        "photo resolution",
+        "pixel",
+        "resolution (megapixels)"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "microphone_type",
+      "kept": "microphone  speaker",
+      "excluded": [
+        "audio recording device",
+        "microphonespeaker"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "picture_styles",
+      "kept": "picture control system",
+      "excluded": [
+        "photo effects",
+        "picture control"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "red_eye_reduction",
+      "kept": "red eye reduction",
+      "excluded": [
+        "redeye reduction"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "screen_size",
+      "kept": "screen size",
+      "excluded": [
+        "lcd display size (inches)",
+        "lcd size inches",
+        "screen size (in.)",
+        "screensize"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "shutter_speed_min",
+      "kept": "minimum shutter speed",
+      "excluded": [
+        "slowest shutter speed"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "supported_audio_formats",
+      "kept": "movie audio recording format",
+      "excluded": [
+        "audio formats"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "supported_languages",
+      "kept": "languages",
+      "excluded": [
+        "language support",
+        "language supported",
+        "languages supported",
+        "supported languages"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "video_resolution",
+      "kept": "max. resolution",
+      "excluded": [
+        "frame rate",
+        "max video resolution24 fps minimum",
+        "maximum video resolution",
+        "resolutions",
+        "video size"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "warranty_duration",
+      "kept": "warranty - labor",
+      "excluded": [
+        "warranty - parts",
+        "warranty:"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "working_humidity",
+      "kept": "humidity",
+      "excluded": [
+        "working humidity"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ebay.com.csv",
+      "target": "zoom_optical",
+      "kept": "optical zoom",
+      "excluded": [
+        "zoom optique"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "target": "auto_focus_automatic",
+      "kept": "focus type",
+      "excluded": [
+        "focus"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "target": "image_resolution",
+      "kept": "effective pixels",
+      "excluded": [
+        "total pixels"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "target": "video_resolution",
+      "kept": "resolution",
+      "excluded": [
+        "frame rate"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flipkart.com.csv",
+      "target": "supported_aspect_ratio",
+      "kept": "supported aspect ratio",
+      "excluded": [
+        "image size at aspect ratio"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.flipkart.com.csv",
+      "target": "video_resolution",
+      "kept": "video display resolution",
+      "excluded": [
+        "full hd"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.gosale.com.csv",
+      "target": "image_resolution",
+      "kept": "megapixels",
+      "excluded": [
+        "megapixel range"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "target": "exposure_compensation",
+      "kept": "light exposure correction",
+      "excluded": [
+        "flash exposure correction"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "target": "image_format",
+      "kept": "image formats supported",
+      "excluded": [
+        "recording format"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "target": "image_resolution",
+      "kept": "megapixel",
+      "excluded": [
+        "total megapixels"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "target": "image_resolution_lw",
+      "kept": "still image resolutions",
+      "excluded": [
+        "maximum image resolution"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "target": "sensor_size",
+      "kept": "image sensor size",
+      "excluded": [
+        "image sensor size w x h"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "target": "video_resolution",
+      "kept": "maximum video resolution",
+      "excluded": [
+        "frame rate",
+        "motion jpeg frame rate",
+        "resolution at capture speed",
+        "video resolutions"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.pcconnection.com.csv",
+      "target": "focal_length_max",
+      "kept": "35mm equivalent focal length max",
+      "excluded": [
+        "focal length max"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.pcconnection.com.csv",
+      "target": "focal_length_min",
+      "kept": "35mm equivalent focal length min",
+      "excluded": [
+        "focal length min"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.pcconnection.com.csv",
+      "target": "warranty_duration",
+      "kept": "warranty  labor",
+      "excluded": [
+        "warranty  parts"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "target": "image_resolution",
+      "kept": "optical sensor resolution in megapixel",
+      "excluded": [
+        "total pixelgross pixel"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "target": "sensor_size",
+      "kept": "sensor size",
+      "excluded": [
+        "sensor format"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "target": "supported_aspect_ratio",
+      "kept": "supported aspect ratio",
+      "excluded": [
+        "image size at aspect ratio"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "target": "video_resolution",
+      "kept": "video display resolution",
+      "excluded": [
+        "frame ratevideo modes"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.price-hunt.com.csv",
+      "target": "zoom_optical",
+      "kept": "optical zoom",
+      "excluded": [
+        "all"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "target": "image_resolution",
+      "kept": "pixels",
+      "excluded": [
+        "optical sensor resolution in megapixel",
+        "other resolution"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.pricedekho.com.csv",
+      "target": "screen_size",
+      "kept": "screen size",
+      "excluded": [
+        "display"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.shopmania.in.csv",
+      "target": "brand",
+      "kept": "brand",
+      "excluded": [
+        "product name"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.shopmania.in.csv",
+      "target": "white_balance",
+      "kept": "white balance presets",
+      "excluded": [
+        "white balance"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.ukdigitalcameras.co.uk.csv",
+      "target": "zoom_optical",
+      "kept": "optical zoom",
+      "excluded": [
+        "optical zoom range"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "www.wexphotographic.com.csv",
+      "target": "video_resolution",
+      "kept": "movie mode",
+      "excluded": [
+        "hd movie mode"
+      ],
+      "reason": "same_table_alias"
+    }
+  ],
+  "source_tables": [
+    "www.mypriceindia.com.csv",
+    "www.walmart.com.csv",
+    "www.alibaba.com.csv",
+    "www.cambuy.com.au.csv",
+    "www.ukdigitalcameras.co.uk.csv",
+    "cammarkt.com.csv",
+    "www.ilgs.net.csv",
+    "www.eglobalcentral.co.uk.csv"
+  ],
+  "original_rows": {
+    "buy.net.csv": 358,
+    "cammarkt.com.csv": 198,
+    "www.alibaba.com.csv": 7972,
+    "www.buzzillions.com.csv": 832,
+    "www.cambuy.com.au.csv": 118,
+    "www.camerafarm.com.au.csv": 120,
+    "www.canon-europe.com.csv": 164,
+    "www.ebay.com.csv": 14274,
+    "www.eglobalcentral.co.uk.csv": 571,
+    "www.flipkart.com.csv": 157,
+    "www.garricks.com.au.csv": 130,
+    "www.gosale.com.csv": 1002,
+    "www.henrys.com.csv": 181,
+    "www.ilgs.net.csv": 102,
+    "www.mypriceindia.com.csv": 347,
+    "www.pcconnection.com.csv": 211,
+    "www.price-hunt.com.csv": 327,
+    "www.pricedekho.com.csv": 366,
+    "www.priceme.co.nz.csv": 740,
+    "www.shopbot.com.au.csv": 516,
+    "www.shopmania.in.csv": 630,
+    "www.ukdigitalcameras.co.uk.csv": 129,
+    "www.walmart.com.csv": 195,
+    "www.wexphotographic.com.csv": 147
+  },
+  "tables": [
+    {
+      "table": "cammarkt.com.csv",
+      "rows": 198,
+      "columns": 21,
+      "missing_rate": 0.5197210197210197,
+      "column_missing_rates": {
+        "brand": 0.0,
+        "color": 0.3939393939393939,
+        "hd recording format": 0.6717171717171717,
+        "image resolutions": 0.36363636363636365,
+        "image sensor type": 0.21212121212121213,
+        "lcd screen size": 0.2878787878787879,
+        "resolution": 0.23232323232323232,
+        "focus type": 0.5909090909090909,
+        "camera type": 0.4292929292929293,
+        "digital zoom": 0.7676767676767676,
+        "display type": 0.35858585858585856,
+        "iso speeds": 0.5151515151515151,
+        "memory type": 0.5050505050505051,
+        "self timer": 0.6111111111111112,
+        "white balance": 0.51010101010101,
+        "width": 0.3434343434343434,
+        "builtin microphone": 0.7323232323232324,
+        "light sensitivity max": 0.9191919191919192,
+        "optical zoom": 0.7727272727272727,
+        "warranty": 0.8585858585858586,
+        "battery life": 0.8383838383838383
+      }
+    },
+    {
+      "table": "www.alibaba.com.csv",
+      "rows": 300,
+      "columns": 8,
+      "missing_rate": 0.8695833333333334,
+      "column_missing_rates": {
+        "frame rate": 0.6566666666666666,
+        "lens mount": 0.73,
+        "max image resolution": 0.75,
+        "focus control": 0.93,
+        "white balance": 0.8966666666666666,
+        "warranty time": 1.0,
+        "picture control system": 0.9966666666666667,
+        "focus point": 0.9966666666666667
+      }
+    },
+    {
+      "table": "www.cambuy.com.au.csv",
+      "rows": 118,
+      "columns": 28,
+      "missing_rate": 0.7602905569007264,
+      "column_missing_rates": {
+        "afarea mode": 0.8135593220338984,
+        "audio recording device": 0.847457627118644,
+        "audio recording format": 0.8389830508474576,
+        "effective pixels": 0.5169491525423728,
+        "exposure compensation": 0.3983050847457627,
+        "file system": 0.6101694915254238,
+        "humidity": 0.6610169491525424,
+        "lens mount": 0.652542372881356,
+        "picture control system": 0.8135593220338984,
+        "selftimer": 0.576271186440678,
+        "supported languages": 0.6101694915254238,
+        "white balance": 0.5932203389830508,
+        "camera type": 0.8983050847457628,
+        "digital zoom": 0.8135593220338984,
+        "optical zoom": 0.8728813559322034,
+        "image sensor size": 0.8389830508474576,
+        "1280 x 720 hd": 0.8983050847457628,
+        "aspect ratio": 0.864406779661017,
+        "exposure mode": 0.8813559322033898,
+        "monitor size": 0.8983050847457628,
+        "af assist beam": 0.8050847457627118,
+        "af modes": 0.8050847457627118,
+        "battery life": 0.8050847457627118,
+        "colour filter type": 0.8050847457627118,
+        "redeye reduction": 0.7966101694915254,
+        "still image type": 0.8050847457627118,
+        "autofocus af": 0.7966101694915254,
+        "shutter": 0.7711864406779662
+      }
+    },
+    {
+      "table": "www.eglobalcentral.co.uk.csv",
+      "rows": 300,
+      "columns": 11,
+      "missing_rate": 0.8318181818181818,
+      "column_missing_rates": {
+        "aspect ratio": 0.7366666666666667,
+        "focal length": 0.7466666666666667,
+        "focus type": 0.9566666666666667,
+        "lens mount": 0.8066666666666666,
+        "max resolution": 0.72,
+        "resolution": 0.9233333333333333,
+        "effective pixels": 0.78,
+        "lcd screen size inch": 0.8933333333333333,
+        "microphone": 0.8666666666666667,
+        "storage type": 0.79,
+        "optical zoom": 0.93
+      }
+    },
+    {
+      "table": "www.ilgs.net.csv",
+      "rows": 102,
+      "columns": 43,
+      "missing_rate": 0.5788873689010487,
+      "column_missing_rates": {
+        "audio formats supported": 0.7941176470588235,
+        "auto focusing af modes": 0.47058823529411764,
+        "battery life cipa standard": 0.5490196078431373,
+        "battery life max": 0.8529411764705882,
+        "builtin microphone": 0.6666666666666666,
+        "camera shutter type": 0.8333333333333334,
+        "camera type": 0.47058823529411764,
+        "colour of product": 0.24509803921568626,
+        "compatible memory cards": 0.2549019607843137,
+        "depth": 0.45098039215686275,
+        "display": 0.43137254901960786,
+        "height": 0.45098039215686275,
+        "iso sensitivity max": 0.5196078431372549,
+        "iso sensitivity min": 0.5196078431372549,
+        "lens mount interface": 0.8137254901960784,
+        "light exposure correction": 0.5098039215686274,
+        "manufacturer": 0.09803921568627451,
+        "maximum video resolution": 0.47058823529411764,
+        "megapixel": 0.24509803921568626,
+        "operating relative humidity hh": 0.6372549019607843,
+        "sensor type": 0.29411764705882354,
+        "still image resolutions": 0.45098039215686275,
+        "video formats supported": 0.5196078431372549,
+        "white balance": 0.4215686274509804,
+        "width": 0.45098039215686275,
+        "digital zoom": 0.6176470588235294,
+        "image sensor size": 0.7058823529411765,
+        "internal memory": 0.7450980392156863,
+        "optical zoom": 0.5098039215686274,
+        "lcd screen size": 0.5294117647058824,
+        "warranty": 0.7156862745098039,
+        "auto focus af points": 0.8235294117647058,
+        "battery technology": 0.6274509803921569,
+        "image formats supported": 0.6078431372549019,
+        "light exposure modes": 0.6666666666666666,
+        "selftimer": 0.5980392156862745,
+        "supported aspect ratios": 0.6666666666666666,
+        "auto focus af assist beam": 0.7254901960784313,
+        "photo effects": 0.696078431372549,
+        "auto focus af points selection": 0.9215686274509803,
+        "languages support": 0.8823529411764706,
+        "maximum focal length 35mm film equiv": 0.7156862745098039,
+        "minimum focal length 35mm film equiv": 0.7156862745098039
+      }
+    },
+    {
+      "table": "www.mypriceindia.com.csv",
+      "rows": 300,
+      "columns": 22,
+      "missing_rate": 0.351969696969697,
+      "column_missing_rates": {
+        "audio formats": 0.37666666666666665,
+        "camera resolution": 0.023333333333333334,
+        "digital zoom": 0.36666666666666664,
+        "image format": 0.09666666666666666,
+        "lens type": 0.13333333333333333,
+        "max resolution": 0.36,
+        "maximum shutter speed": 0.06666666666666667,
+        "microphone": 0.63,
+        "minimum shutter speed": 0.07,
+        "other focus features": 0.48,
+        "self timer": 0.09,
+        "sensor size": 0.3566666666666667,
+        "sensor type": 0.3566666666666667,
+        "video format": 0.07333333333333333,
+        "white balancing": 0.13,
+        "image ratio wh": 0.6766666666666666,
+        "optical zoom": 0.3466666666666667,
+        "red eye reduction": 0.44333333333333336,
+        "color filter": 0.5566666666666666,
+        "picture angle": 0.72,
+        "video resolution": 0.45,
+        "memory card type": 0.94
+      }
+    },
+    {
+      "table": "www.ukdigitalcameras.co.uk.csv",
+      "rows": 129,
+      "columns": 5,
+      "missing_rate": 0.015503875968992248,
+      "column_missing_rates": {
+        "brand": 0.0,
+        "camera resolution": 0.0,
+        "colour": 0.0,
+        "lcd size": 0.0,
+        "optical zoom": 0.07751937984496124
+      }
+    },
+    {
+      "table": "www.walmart.com.csv",
+      "rows": 195,
+      "columns": 8,
+      "missing_rate": 0.6230769230769231,
+      "column_missing_rates": {
+        "battery type": 0.6923076923076923,
+        "digital zoom": 0.517948717948718,
+        "lcd screen size": 0.7076923076923077,
+        "optical zoom": 0.4153846153846154,
+        "primary color": 0.7025641025641025,
+        "resolution megapixels": 0.717948717948718,
+        "lens system mounting": 0.7692307692307693,
+        "self timer delay": 0.46153846153846156
+      }
+    }
+  ],
+  "gt_pairs": 207,
+  "files": {
+    "groundtruth.txt": "d0b280a17bf486af6ca3557b74c51cf6e3aba8b1d9566d4ecd0ab44468a7c928",
+    "original/cammarkt.com.csv": "3563c9a567fa1c92e268b8d681219e3d889ca9cd09d3ffa332b2fdb8c4e82acb",
+    "original/www.ukdigitalcameras.co.uk.csv": "6a9005aa5e25f14a86cb3062455864d621abb813a1cfdddafa504231a83f19b7",
+    "original/www.cambuy.com.au.csv": "15b2d424ed7d34753e89961fb27db40a3f93e9e1f2807078b3c4a0867f183cdf",
+    "original/www.mypriceindia.com.csv": "1f21f4c94cfea4ec59e1fc97f4ac1d1d27afc2b811a862f0558f4454035c9ee1",
+    "original/www.eglobalcentral.co.uk.csv": "bd027d0bb8be795bd1d860362dadfac3eef59e90b29b693af3459adb78af2cd8",
+    "original/www.walmart.com.csv": "651a55b448b86b488c6daf160bcf586cdef5300843b3bbe04f9b370d3bd3a30b",
+    "original/www.alibaba.com.csv": "c2b0218a2a53c37551eabcc5f246b937f06ac92b4f347c040818a417c3e3ca2d",
+    "original/www.ilgs.net.csv": "208dadf8b8ec838afec70226f94cbb01ac8bef5747d2f666cd94b5329db33e43"
+  }
+}

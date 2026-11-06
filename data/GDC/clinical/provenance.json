@@ -1,0 +1,917 @@
+{
+  "protocol": {
+    "adapter_version": 1,
+    "source": "https://doi.org/10.5281/zenodo.14963588",
+    "max_rows": 300,
+    "seed": 42,
+    "alias_policy": "most_observed",
+    "task": "derived source-source partition; not official source-to-736-column benchmark",
+    "ambiguous_source_policy": "drop multi-target source columns; never join target aliases transitively",
+    "source_conversion": "official sheet selection and four documented cleanups; preserve other values"
+  },
+  "archive_sha256": "cf5461feed28f4cdc263d68ddd910b25ebd16bf32be3aa0c7c00629abacc4a4a",
+  "metadata_sha256": "d360be3f17e68f37123a2b3f2f64556f611d23361697bd3ddcdf919dccb2ebd7",
+  "source_files": {
+    "Cao.csv": {
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867421009971-mmc1.xlsx",
+      "sha256": "ceb984e2c29cf197bfff3514e3d4267be69d8b8402afdb4c53739daaf453d9d7",
+      "sheet": "Clinical_data"
+    },
+    "Clark.csv": {
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867419311237-mmc1.xlsx",
+      "sha256": "3174a83fa98e0416bedaf28e4f7526b8a70f0fe1954da5994dbabe470f6fd078",
+      "sheet": "ccrcc_clinical_characteristics"
+    },
+    "Dou.csv": {
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867420301070-mmc1.xlsx",
+      "sha256": "cefdda0a26bbf667639f8787f426f046545453cb911252e05f5e3a16dcc9c9d2",
+      "sheet": "UCEC_CPTAC3_meta_table_V2.1"
+    },
+    "Gillette.csv": {
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867420307443-mmc1.xlsx",
+      "sha256": "00ef1caa741c211546d9d2c6c3051fa3febf5a040d1cd5d6fc98955a326af56a",
+      "sheet": "Annotions_S1A"
+    },
+    "Huang.csv": {
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1535610820306553-mmc2.xlsx",
+      "sha256": "fccbd91635d2eb9b368ca5da705ef7fea4e6bb61c341120c1b852c372a969086",
+      "sheet": "Meta table"
+    },
+    "Krug.csv": {
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867420314008-mmc1.xlsx",
+      "sha256": "9c0fb08c65541d8c24a71a8d5737d9a0389135c17d5e2456c3da3806f9029526",
+      "sheet": "A) Metadata"
+    },
+    "McDermott.csv": {
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S2666379120300045-mmc2.xlsx",
+      "sha256": "1dbb62061c3d8e0f86a0c90cbec999ccceed2fdaecbd08ac6f8e52381c256e03",
+      "sheet": "BaselineClinicalData"
+    },
+    "Satpathy.csv": {
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867421008576-mmc1.xlsx",
+      "sha256": "8cdff61042eca53c09c42ea9fef2340e22e3eca1d6d7c8eaa96c6e2cca768fde",
+      "sheet": "Table S1A"
+    },
+    "Vasaikar.csv": {
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867419302922-mmc1.xlsx",
+      "sha256": "dc9c970097d6b4aaf51e0e74ae900fbce2bd0a60b5ccd9a61c037e6e05a91c76",
+      "sheet": "B-ClinicalData"
+    },
+    "Wang.csv": {
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1535610821000507-mmc2.xlsx",
+      "sha256": "c1fa2a7c67136dde22700dcbf648f659a3e7630e47b0524b3644731d3617de65",
+      "sheet": "clinical_data"
+    }
+  },
+  "annotation_audit": [
+    {
+      "table": "Cao.csv",
+      "column": "age",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "age_at_diagnosis",
+        "age_at_index",
+        "days_to_birth"
+      ]
+    },
+    {
+      "table": "Cao.csv",
+      "column": "clinical_staging_distant_metastasis_cm",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_clinical_m",
+        "uicc_clinical_m"
+      ]
+    },
+    {
+      "table": "Cao.csv",
+      "column": "lymph_vascular_invasion",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "lymphatic_invasion_present",
+        "vascular_invasion_present"
+      ]
+    },
+    {
+      "table": "Cao.csv",
+      "column": "participant_country",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "country_of_birth",
+        "country_of_residence_at_enrollment"
+      ]
+    },
+    {
+      "table": "Cao.csv",
+      "column": "pathologic_staging_distant_metastasis_pm",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_m",
+        "uicc_pathologic_m"
+      ]
+    },
+    {
+      "table": "Cao.csv",
+      "column": "pathologic_staging_primary_tumor_pt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_t",
+        "uicc_pathologic_t"
+      ]
+    },
+    {
+      "table": "Cao.csv",
+      "column": "pathologic_staging_regional_lymph_nodes_pn",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_n",
+        "uicc_pathologic_n"
+      ]
+    },
+    {
+      "table": "Cao.csv",
+      "column": "residual_tumor",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "residual_disease",
+        "residual_tumor"
+      ]
+    },
+    {
+      "table": "Cao.csv",
+      "column": "tumor_site",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "site_of_resection_or_biopsy",
+        "tissue_or_organ_of_origin"
+      ]
+    },
+    {
+      "table": "Cao.csv",
+      "column": "tumor_size_cm",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "greatest_tumor_dimension",
+        "tumor_largest_dimension_diameter",
+        "tumor_length_measurement",
+        "tumor_width_measurement"
+      ]
+    },
+    {
+      "table": "Cao.csv",
+      "column": "tumor_stage_pathological",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_stage",
+        "uicc_pathologic_stage"
+      ]
+    },
+    {
+      "table": "Clark.csv",
+      "column": "Age",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "age_at_diagnosis",
+        "age_at_index",
+        "days_to_birth"
+      ]
+    },
+    {
+      "table": "Clark.csv",
+      "column": "Ethnicity_Self_Identify",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ethnicity",
+        "race"
+      ]
+    },
+    {
+      "table": "Clark.csv",
+      "column": "Path_Stage_Primary_Tumor_pT",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_t",
+        "uicc_pathologic_t"
+      ]
+    },
+    {
+      "table": "Clark.csv",
+      "column": "Path_Stage_Reg_Lymph_Nodes_pN",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_n",
+        "uicc_pathologic_n"
+      ]
+    },
+    {
+      "table": "Clark.csv",
+      "column": "Tumor_Site",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "primary_site",
+        "site_of_resection_or_biopsy",
+        "tissue_or_organ_of_origin"
+      ]
+    },
+    {
+      "table": "Clark.csv",
+      "column": "Tumor_Size_cm",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "greatest_tumor_dimension",
+        "tumor_largest_dimension_diameter",
+        "tumor_length_measurement",
+        "tumor_width_measurement"
+      ]
+    },
+    {
+      "table": "Clark.csv",
+      "column": "Tumor_Stage_Pathological",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_stage",
+        "uicc_pathologic_stage"
+      ]
+    },
+    {
+      "table": "Dou.csv",
+      "column": "Age",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "age_at_diagnosis",
+        "age_at_index",
+        "days_to_birth"
+      ]
+    },
+    {
+      "table": "Dou.csv",
+      "column": "Clin_Stage_Dist_Mets-cM",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_clinical_m",
+        "uicc_clinical_m"
+      ]
+    },
+    {
+      "table": "Dou.csv",
+      "column": "Country",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "country_of_birth",
+        "country_of_residence_at_enrollment"
+      ]
+    },
+    {
+      "table": "Dou.csv",
+      "column": "Path_Stage_Dist_Mets-pM",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_m",
+        "uicc_pathologic_m"
+      ]
+    },
+    {
+      "table": "Dou.csv",
+      "column": "Path_Stage_Primary_Tumor-pT",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_t",
+        "uicc_pathologic_t"
+      ]
+    },
+    {
+      "table": "Dou.csv",
+      "column": "Path_Stage_Reg_Lymph_Nodes-pN",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_n",
+        "uicc_pathologic_n"
+      ]
+    },
+    {
+      "table": "Dou.csv",
+      "column": "Tumor_Site",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "site_of_resection_or_biopsy",
+        "tissue_or_organ_of_origin"
+      ]
+    },
+    {
+      "table": "Dou.csv",
+      "column": "Tumor_Size_cm",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "greatest_tumor_dimension",
+        "tumor_largest_dimension_diameter",
+        "tumor_length_measurement",
+        "tumor_width_measurement"
+      ]
+    },
+    {
+      "table": "Dou.csv",
+      "column": "tumor_Stage-Pathological",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_stage",
+        "uicc_pathologic_stage"
+      ]
+    },
+    {
+      "table": "Gillette.csv",
+      "column": "Age",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "age_at_diagnosis",
+        "age_at_index",
+        "days_to_birth"
+      ]
+    },
+    {
+      "table": "Gillette.csv",
+      "column": "Ethnicity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ethnicity",
+        "race"
+      ]
+    },
+    {
+      "table": "Gillette.csv",
+      "column": "Stage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_clinical_stage",
+        "ajcc_pathologic_stage",
+        "figo_stage",
+        "uicc_clinical_stage",
+        "uicc_pathologic_stage"
+      ]
+    },
+    {
+      "table": "Huang.csv",
+      "column": "age",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "age_at_diagnosis",
+        "age_at_index",
+        "days_to_birth"
+      ]
+    },
+    {
+      "table": "Huang.csv",
+      "column": "alcohol_consum",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "alcohol_days_per_week",
+        "alcohol_intensity"
+      ]
+    },
+    {
+      "table": "Huang.csv",
+      "column": "clinic_staging_dist_metas",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_clinical_m",
+        "uicc_clinical_m"
+      ]
+    },
+    {
+      "table": "Huang.csv",
+      "column": "country",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "country_of_birth",
+        "country_of_residence_at_enrollment"
+      ]
+    },
+    {
+      "table": "Huang.csv",
+      "column": "patho_staging_pn",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_n",
+        "uicc_pathologic_n"
+      ]
+    },
+    {
+      "table": "Huang.csv",
+      "column": "patho_staging_pt",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_t",
+        "uicc_pathologic_t"
+      ]
+    },
+    {
+      "table": "Huang.csv",
+      "column": "smoking_second_hand",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "environmental_tobacco_smoke_exposure",
+        "secondhand_smoke_as_child"
+      ]
+    },
+    {
+      "table": "Huang.csv",
+      "column": "tumor_site_curated",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "primary_site",
+        "site_of_resection_or_biopsy",
+        "tissue_or_organ_of_origin"
+      ]
+    },
+    {
+      "table": "Huang.csv",
+      "column": "tumor_site_original",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "primary_site",
+        "site_of_resection_or_biopsy",
+        "tissue_or_organ_of_origin"
+      ]
+    },
+    {
+      "table": "Huang.csv",
+      "column": "tumor_size_cm",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "greatest_tumor_dimension",
+        "tumor_largest_dimension_diameter",
+        "tumor_length_measurement",
+        "tumor_width_measurement"
+      ]
+    },
+    {
+      "table": "Huang.csv",
+      "column": "tumor_stage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_stage",
+        "uicc_pathologic_stage"
+      ]
+    },
+    {
+      "table": "Krug.csv",
+      "column": "Age.in.Month",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "age_at_diagnosis",
+        "age_at_index",
+        "days_to_birth"
+      ]
+    },
+    {
+      "table": "Krug.csv",
+      "column": "Ethnicity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ethnicity",
+        "race"
+      ]
+    },
+    {
+      "table": "Krug.csv",
+      "column": "Ischemia.Time.in.Minutes",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "time_between_clamping_and_freezing",
+        "time_between_excision_and_freezing"
+      ]
+    },
+    {
+      "table": "Krug.csv",
+      "column": "Tumor.Stage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_stage",
+        "uicc_pathologic_stage"
+      ]
+    },
+    {
+      "table": "McDermott.csv",
+      "column": "Age in Months at Time of Tissue Procurement",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "age_at_diagnosis",
+        "age_at_index",
+        "days_to_birth"
+      ]
+    },
+    {
+      "table": "McDermott.csv",
+      "column": "Anatomic Lateral Position of Tumor Specimen",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "biospecimen_laterality",
+        "laterality"
+      ]
+    },
+    {
+      "table": "McDermott.csv",
+      "column": "Anatomic site of Tumor Specimen",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "biospecimen_anatomic_site",
+        "site_of_resection_or_biopsy"
+      ]
+    },
+    {
+      "table": "McDermott.csv",
+      "column": "Histological Subtype",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "disease_type",
+        "primary_diagnosis"
+      ]
+    },
+    {
+      "table": "McDermott.csv",
+      "column": "Ischemia Time for Tumor Tissue",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "time_between_clamping_and_freezing",
+        "time_between_excision_and_freezing"
+      ]
+    },
+    {
+      "table": "McDermott.csv",
+      "column": "Site of Disease",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "primary_site",
+        "tissue_or_organ_of_origin"
+      ]
+    },
+    {
+      "table": "Satpathy.csv",
+      "column": "Age",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "age_at_diagnosis",
+        "age_at_index",
+        "days_to_birth"
+      ]
+    },
+    {
+      "table": "Satpathy.csv",
+      "column": "Country.of.Origin",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "country_of_birth",
+        "country_of_residence_at_enrollment"
+      ]
+    },
+    {
+      "table": "Satpathy.csv",
+      "column": "Ethnicity",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ethnicity",
+        "race"
+      ]
+    },
+    {
+      "table": "Satpathy.csv",
+      "column": "Ethnicity_mod",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ethnicity",
+        "race"
+      ]
+    },
+    {
+      "table": "Satpathy.csv",
+      "column": "Secondhand.Smoke",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "environmental_tobacco_smoke_exposure",
+        "secondhand_smoke_as_child"
+      ]
+    },
+    {
+      "table": "Satpathy.csv",
+      "column": "Stage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_clinical_stage",
+        "ajcc_pathologic_stage",
+        "figo_stage",
+        "uicc_clinical_stage",
+        "uicc_pathologic_stage"
+      ]
+    },
+    {
+      "table": "Vasaikar.csv",
+      "column": "Age",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "age_at_diagnosis",
+        "age_at_index",
+        "days_to_birth"
+      ]
+    },
+    {
+      "table": "Vasaikar.csv",
+      "column": "PN",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_n",
+        "uicc_pathologic_n"
+      ]
+    },
+    {
+      "table": "Vasaikar.csv",
+      "column": "PT",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_t",
+        "uicc_pathologic_t"
+      ]
+    },
+    {
+      "table": "Vasaikar.csv",
+      "column": "Stage",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "ajcc_pathologic_stage",
+        "uicc_pathologic_stage"
+      ]
+    },
+    {
+      "table": "Wang.csv",
+      "column": "age",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "age_at_diagnosis",
+        "age_at_index",
+        "days_to_birth"
+      ]
+    },
+    {
+      "table": "Wang.csv",
+      "column": "country_of_origin",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "country_of_birth",
+        "country_of_residence_at_enrollment"
+      ]
+    },
+    {
+      "table": "Wang.csv",
+      "column": "secondhand_smoke_exposure",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "environmental_tobacco_smoke_exposure",
+        "secondhand_smoke_as_child"
+      ]
+    },
+    {
+      "table": "Wang.csv",
+      "column": "tumor_laterality",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "biospecimen_laterality",
+        "laterality"
+      ]
+    },
+    {
+      "table": "Wang.csv",
+      "column": "tumor_site_curated",
+      "reason": "source_column_has_multiple_targets",
+      "targets": [
+        "site_of_resection_or_biopsy",
+        "supratentorial_localization",
+        "tissue_or_organ_of_origin"
+      ]
+    },
+    {
+      "table": "Gillette.csv",
+      "target": "tobacco_smoking_status",
+      "kept": "Smoking.History",
+      "excluded": [
+        "Smoking.Status"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "Satpathy.csv",
+      "target": "tobacco_smoking_status",
+      "kept": "Smoking.History",
+      "excluded": [
+        "Smoking.History_modified"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "Vasaikar.csv",
+      "target": "msi_status",
+      "kept": "MSmutectFishercall",
+      "excluded": [
+        "MSI_PCR_Result"
+      ],
+      "reason": "same_table_alias"
+    },
+    {
+      "table": "Wang.csv",
+      "target": "ethnicity",
+      "kept": "ethnicity_self_identify",
+      "excluded": [
+        "ethnicity"
+      ],
+      "reason": "same_table_alias"
+    }
+  ],
+  "tables": [
+    {
+      "table": "Cao.csv",
+      "rows": 140,
+      "columns": 18,
+      "missing_rate": 0.05476190476190476,
+      "column_missing_rates": {
+        "histology_diagnosis": 0.0,
+        "sex": 0.0,
+        "race": 0.7642857142857142,
+        "tumor_focality": 0.014285714285714285,
+        "tumor_necrosis": 0.014285714285714285,
+        "perineural_invasion": 0.014285714285714285,
+        "number_of_lymph_nodes_examined": 0.014285714285714285,
+        "number_of_lymph_nodes_positive_for_tumor": 0.014285714285714285,
+        "additional_pathologic_findings": 0.014285714285714285,
+        "bmi": 0.014285714285714285,
+        "alcohol_consumption": 0.014285714285714285,
+        "tobacco_smoking_history": 0.014285714285714285,
+        "Stromal_fraction": 0.0,
+        "Inflammation_fraction": 0.0,
+        "follow_up_days": 0.03571428571428571,
+        "vital_status": 0.02857142857142857,
+        "is_this_patient_lost_to_follow_up": 0.02857142857142857,
+        "cause_of_death": 0.0
+      }
+    },
+    {
+      "table": "Clark.csv",
+      "rows": 110,
+      "columns": 7,
+      "missing_rate": 0.05974025974025974,
+      "column_missing_rates": {
+        "Tumor/Normal": 0.0,
+        "Gender": 0.0,
+        "BMI": 0.0,
+        "Race": 0.41818181818181815,
+        "Tumor_Focality": 0.0,
+        "Histologic_Type": 0.0,
+        "Grade": 0.0
+      }
+    },
+    {
+      "table": "Dou.csv",
+      "rows": 153,
+      "columns": 11,
+      "missing_rate": 0.35769459298871065,
+      "column_missing_rates": {
+        "Proteomics_Tumor_Normal": 0.0,
+        "Histologic_Grade_FIGO": 0.43790849673202614,
+        "Histologic_type": 0.3202614379084967,
+        "Treatment_naive": 0.3202614379084967,
+        "Tumor_purity": 0.3202614379084967,
+        "FIGO_stage": 0.33986928104575165,
+        "BMI": 0.33986928104575165,
+        "Race": 0.5882352941176471,
+        "Ethnicity": 0.5882352941176471,
+        "Gender": 0.33986928104575165,
+        "Tumor_Focality": 0.33986928104575165
+      }
+    },
+    {
+      "table": "Gillette.csv",
+      "rows": 225,
+      "columns": 11,
+      "missing_rate": 0.141010101010101,
+      "column_missing_rates": {
+        "Type": 0.044444444444444446,
+        "Region.of.Origin": 0.044444444444444446,
+        "Country.of.Origin": 0.044444444444444446,
+        "Gender": 0.044444444444444446,
+        "Height.cm": 0.05333333333333334,
+        "Weight.kg": 0.05333333333333334,
+        "BMI": 0.044444444444444446,
+        "Cigarettes.per.Day": 0.5155555555555555,
+        "Pack.Years.Smoked": 0.56,
+        "Smoking.History": 0.044444444444444446,
+        "Secondhand.Smoke": 0.10222222222222223
+      }
+    },
+    {
+      "table": "Huang.csv",
+      "rows": 110,
+      "columns": 10,
+      "missing_rate": 0.21545454545454545,
+      "column_missing_rates": {
+        "gender": 0.0,
+        "smoking_history": 0.0,
+        "smoke_age_start": 0.41818181818181815,
+        "smoke_age_stop": 0.7818181818181819,
+        "num_smoke_per_day": 0.4090909090909091,
+        "num_pack_years_sm": 0.509090909090909,
+        "tumor_focality": 0.0,
+        "histologic_type": 0.03636363636363636,
+        "histologic_grade": 0.0,
+        "tumor_necrosis": 0.0
+      }
+    },
+    {
+      "table": "Krug.csv",
+      "rows": 122,
+      "columns": 1,
+      "missing_rate": 0.0,
+      "column_missing_rates": {
+        "Gender": 0.0
+      }
+    },
+    {
+      "table": "McDermott.csv",
+      "rows": 93,
+      "columns": 8,
+      "missing_rate": 0.07526881720430108,
+      "column_missing_rates": {
+        "Gender": 0.0,
+        "Race": 0.0,
+        "Ethnicity": 0.0,
+        "Method of Initial Pathologic Diagnosis": 0.010752688172043012,
+        "Tumor Stage (Pathological) Ovary FIGO Staging System": 0.010752688172043012,
+        "Tumor Grade": 0.021505376344086023,
+        "Tumor Residual Disease (for the max diameter of the largest remaining tumor nodule)": 0.5591397849462365,
+        "History of Other Malignancy?": 0.0
+      }
+    },
+    {
+      "table": "Satpathy.csv",
+      "rows": 207,
+      "columns": 5,
+      "missing_rate": 0.157487922705314,
+      "column_missing_rates": {
+        "Type": 0.0,
+        "Smoking.History": 0.04830917874396135,
+        "Gender": 0.0,
+        "Cigarettes.per.Day": 0.2608695652173913,
+        "Pack.Years.Smoked": 0.4782608695652174
+      }
+    },
+    {
+      "table": "Vasaikar.csv",
+      "rows": 110,
+      "columns": 10,
+      "missing_rate": 0.04454545454545455,
+      "column_missing_rates": {
+        "Gender": 0.0,
+        "Subsite": 0.00909090909090909,
+        "Vascular_Invasion": 0.07272727272727272,
+        "Lymphatic_Invasion": 0.06363636363636363,
+        "Perineural_Invasion": 0.10909090909090909,
+        "Synchronous_Tumors": 0.03636363636363636,
+        "Vital.Status": 0.01818181818181818,
+        "Tumor.Status": 0.06363636363636363,
+        "MSmutectFishercall": 0.03636363636363636,
+        "TumorPurity": 0.03636363636363636
+      }
+    },
+    {
+      "table": "Wang.csv",
+      "rows": 110,
+      "columns": 14,
+      "missing_rate": 0.21818181818181817,
+      "column_missing_rates": {
+        "gender": 0.0,
+        "height": 0.0,
+        "weight": 0.0,
+        "bmi": 0.0,
+        "race": 0.6454545454545455,
+        "ethnicity_self_identify": 0.09090909090909091,
+        "smoking_history": 0.18181818181818182,
+        "vital_status": 0.01818181818181818,
+        "path_diag_to_last_contact_days": 0.10909090909090909,
+        "path_diag_to_death_days": 0.42727272727272725,
+        "cause_of_death": 0.39090909090909093,
+        "lost_to_follow_up": 0.10909090909090909,
+        "tumor_reoccur_after_treatment": 0.36363636363636365,
+        "path_diag_to_tumor_reoccur_days": 0.7181818181818181
+      }
+    }
+  ],
+  "gt_pairs": 124,
+  "files": {
+    "groundtruth.txt": "9107e6e7b4e1d2dde1d1a458c69363797798d3963943522c1d90717be9c7714d",
+    "original/McDermott.csv": "34c096ea793d86bfb8534955ac2f97d7c3e19214244c1dcba57699af899028d9",
+    "original/Huang.csv": "bb601f129333afb8a7b0050bb8b34db83637fc1c3d9ddd43d0ea73fe8fd504e8",
+    "original/Wang.csv": "dfbbf4d1507433e940773289a7a5fb07258877a6f939bcb22782aec3f1e49dca",
+    "original/Cao.csv": "243f32026bb91794c0020652c13f9eb433c2137778da8cfeb4147db8695275ca",
+    "original/Gillette.csv": "0c9e336860001dfd73b7366578cd5fd0939bf372b50ad1fb8ffde2df36fab9cb",
+    "original/Clark.csv": "66855e442681d9586d40dffd3e21f0d7b63b06e42b4ce2e194ccdcc808c10b08",
+    "original/Satpathy.csv": "234eacad550c84d355f43e1081885d3788f726ae062f716ac36171bf5a4243f8",
+    "original/Vasaikar.csv": "71e6fc54d9141dc26d128afd996f661f4315e197fbf45a300efb9dc257c670f5",
+    "original/Krug.csv": "8ba655f5f014204b3276d880f6f5e7b50467b2d9c36614549e5fb7aebf300926",
+    "original/Dou.csv": "23241d0f6fdedf9cd379ce2294e701c664a3d47c7fc479a1a9239cf72d15b311"
+  }
+}

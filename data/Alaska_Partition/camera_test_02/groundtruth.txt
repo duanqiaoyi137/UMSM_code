@@ -1,0 +1,230 @@
+Cluster 1:
+  cammarkt.com.csv.focus type
+
+Cluster 2:
+  www.ilgs.net.csv.auto focus af assist beam
+
+Cluster 3:
+  www.ilgs.net.csv.auto focusing af modes
+  www.price-hunt.com.csv.focusing sysetm
+
+Cluster 4:
+  www.ilgs.net.csv.auto focus af points
+
+Cluster 5:
+  www.ilgs.net.csv.auto focus af points selection
+
+Cluster 6:
+  www.ilgs.net.csv.battery technology
+  www.walmart.com.csv.battery type
+
+Cluster 7:
+  www.ilgs.net.csv.battery life max
+
+Cluster 8:
+  cammarkt.com.csv.battery life
+  www.ilgs.net.csv.battery life cipa standard
+
+Cluster 9:
+  buy.net.csv.battery model supported
+
+Cluster 10:
+  buy.net.csv.brand name
+  cammarkt.com.csv.brand
+  www.gosale.com.csv.manufacturer
+  www.ilgs.net.csv.manufacturer
+  www.price-hunt.com.csv.brand
+
+Cluster 11:
+  buy.net.csv.depth
+  www.ilgs.net.csv.depth
+
+Cluster 12:
+  www.ilgs.net.csv.height
+
+Cluster 13:
+  buy.net.csv.camera type
+  cammarkt.com.csv.camera type
+  www.gosale.com.csv.camera type
+  www.ilgs.net.csv.camera type
+
+Cluster 14:
+  buy.net.csv.width
+  cammarkt.com.csv.width
+  www.ilgs.net.csv.width
+
+Cluster 15:
+  cammarkt.com.csv.color
+  www.ilgs.net.csv.colour of product
+  www.price-hunt.com.csv.color
+  www.walmart.com.csv.primary color
+
+Cluster 16:
+  www.price-hunt.com.csv.color filter
+
+Cluster 17:
+  www.ilgs.net.csv.light exposure correction
+  www.price-hunt.com.csv.exposure compensation
+
+Cluster 18:
+  buy.net.csv.exposure control
+  www.ilgs.net.csv.light exposure modes
+  www.price-hunt.com.csv.exposure modes
+
+Cluster 19:
+  buy.net.csv.memory card support
+  cammarkt.com.csv.memory type
+  www.ilgs.net.csv.compatible memory cards
+  www.price-hunt.com.csv.memory card type
+
+Cluster 20:
+  www.ilgs.net.csv.maximum focal length 35mm film equiv
+
+Cluster 21:
+  www.ilgs.net.csv.minimum focal length 35mm film equiv
+
+Cluster 22:
+  www.ilgs.net.csv.image formats supported
+  www.price-hunt.com.csv.image format
+
+Cluster 23:
+  buy.net.csv.effective megapixels
+  cammarkt.com.csv.resolution
+  www.gosale.com.csv.megapixels
+  www.ilgs.net.csv.megapixel
+  www.price-hunt.com.csv.optical sensor resolution in megapixel
+  www.walmart.com.csv.resolution megapixels
+
+Cluster 24:
+  cammarkt.com.csv.image resolutions
+  www.ilgs.net.csv.still image resolutions
+
+Cluster 25:
+  buy.net.csv.installed memory
+  www.ilgs.net.csv.internal memory
+  www.price-hunt.com.csv.inbuilt memory
+
+Cluster 26:
+  buy.net.csv.iso sensitivity
+  cammarkt.com.csv.light sensitivity max
+  www.ilgs.net.csv.iso sensitivity max
+  www.price-hunt.com.csv.maximum expandable iso sensitivity
+
+Cluster 27:
+  cammarkt.com.csv.iso speeds
+  www.ilgs.net.csv.iso sensitivity min
+
+Cluster 28:
+  buy.net.csv.lens mount
+  www.ilgs.net.csv.lens mount interface
+  www.price-hunt.com.csv.lens type
+  www.walmart.com.csv.lens system mounting
+
+Cluster 29:
+  cammarkt.com.csv.builtin microphone
+  www.ilgs.net.csv.builtin microphone
+  www.price-hunt.com.csv.microphone
+
+Cluster 30:
+  www.price-hunt.com.csv.picture angle
+
+Cluster 31:
+  www.ilgs.net.csv.photo effects
+
+Cluster 32:
+  www.gosale.com.csv.redeye reduction
+  www.price-hunt.com.csv.red eye reduction
+
+Cluster 33:
+  buy.net.csv.lcd screen size
+  cammarkt.com.csv.lcd screen size
+  www.gosale.com.csv.lcd screen size
+  www.ilgs.net.csv.lcd screen size
+  www.price-hunt.com.csv.lcd screen size
+  www.walmart.com.csv.lcd screen size
+
+Cluster 34:
+  cammarkt.com.csv.display type
+  www.ilgs.net.csv.display
+  www.price-hunt.com.csv.lcd display
+
+Cluster 35:
+  cammarkt.com.csv.self timer
+  www.ilgs.net.csv.selftimer
+  www.price-hunt.com.csv.self timer
+  www.walmart.com.csv.self timer delay
+
+Cluster 36:
+  www.ilgs.net.csv.image sensor size
+  www.price-hunt.com.csv.sensor size
+
+Cluster 37:
+  buy.net.csv.image sensor
+  cammarkt.com.csv.image sensor type
+  www.ilgs.net.csv.sensor type
+  www.price-hunt.com.csv.sensor type
+
+Cluster 38:
+  buy.net.csv.shortest shutter speed
+  www.price-hunt.com.csv.maximum shutter speed
+
+Cluster 39:
+  buy.net.csv.longest shutter speed
+  www.price-hunt.com.csv.minimum shutter speed
+
+Cluster 40:
+  www.ilgs.net.csv.camera shutter type
+  www.price-hunt.com.csv.shutter type
+
+Cluster 41:
+  www.ilgs.net.csv.supported aspect ratios
+  www.price-hunt.com.csv.supported aspect ratio
+
+Cluster 42:
+  www.ilgs.net.csv.audio formats supported
+  www.price-hunt.com.csv.audio formats
+
+Cluster 43:
+  www.ilgs.net.csv.languages support
+
+Cluster 44:
+  www.ilgs.net.csv.video formats supported
+  www.price-hunt.com.csv.video format
+
+Cluster 45:
+  buy.net.csv.maximum video capture resolution
+  cammarkt.com.csv.hd recording format
+  www.ilgs.net.csv.maximum video resolution
+  www.price-hunt.com.csv.video display resolution
+
+Cluster 46:
+  buy.net.csv.warranty information
+  cammarkt.com.csv.warranty
+  www.ilgs.net.csv.warranty
+  www.price-hunt.com.csv.warranty summary
+
+Cluster 47:
+  buy.net.csv.white balance modes
+  cammarkt.com.csv.white balance
+  www.ilgs.net.csv.white balance
+  www.price-hunt.com.csv.white balancing
+
+Cluster 48:
+  www.ilgs.net.csv.operating relative humidity hh
+  www.price-hunt.com.csv.humidity
+
+Cluster 49:
+  buy.net.csv.digital zoom
+  cammarkt.com.csv.digital zoom
+  www.ilgs.net.csv.digital zoom
+  www.price-hunt.com.csv.digital zoom
+  www.walmart.com.csv.digital zoom
+
+Cluster 50:
+  buy.net.csv.optical zoom
+  cammarkt.com.csv.optical zoom
+  www.gosale.com.csv.optical zoom
+  www.ilgs.net.csv.optical zoom
+  www.price-hunt.com.csv.optical zoom
+  www.walmart.com.csv.optical zoom
+

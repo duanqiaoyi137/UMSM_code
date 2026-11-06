@@ -1,0 +1,33 @@
+Cluster 1:
+  t_3965ee2a2e74.csv.c10
+  t_5f5ae1bc6f7c.csv.c3
+  t_ffdb5887c499.csv.c4
+
+Cluster 2:
+  t_3965ee2a2e74.csv.c4
+  t_5f5ae1bc6f7c.csv.c7
+  t_ffdb5887c499.csv.c3
+
+Cluster 3:
+  t_3965ee2a2e74.csv.c7
+  t_ffdb5887c499.csv.c8
+
+Cluster 4:
+  t_3965ee2a2e74.csv.c8
+  t_ffdb5887c499.csv.c7
+
+Cluster 5:
+  t_3965ee2a2e74.csv.c5
+
+Cluster 6:
+  t_5f5ae1bc6f7c.csv.c1
+  t_ffdb5887c499.csv.c1
+
+Cluster 7:
+  t_5f5ae1bc6f7c.csv.c6
+
+Cluster 8:
+  t_3965ee2a2e74.csv.c6
+  t_5f5ae1bc6f7c.csv.c4
+  t_ffdb5887c499.csv.c5
+

@@ -1,0 +1,391 @@
+Cluster 1:
+  www.ebay.com.csv.bluetooth
+  www.hardware-planet.it.csv.bluetooth
+  www.planet-computer.it.csv.bluetooth
+  www.xpcpro.com.csv.bluetooth
+
+Cluster 2:
+  www.ebay.com.csv.brand
+  www.jrlinton.co.uk.csv.brand name
+  www.nexus-t.co.uk.csv.manufacturer
+  www.officedepot.com.csv.brand name
+
+Cluster 3:
+  www.ebay.com.csv.product color
+  www.hardware-planet.it.csv.colore del prodotto
+  www.jrlinton.co.uk.csv.colour
+  www.officedepot.com.csv.color
+  www.ohc24.ch.csv.colour
+  www.pcconnection.com.csv.color
+  www.planet-computer.it.csv.colore del prodotto
+  www.xpcpro.com.csv.colour of product
+
+Cluster 4:
+  www.hardware-planet.it.csv.colore piedi
+  www.planet-computer.it.csv.colore del piede
+  www.xpcpro.com.csv.feet colour
+
+Cluster 5:
+  www.hardware-planet.it.csv.rapporto di contrasto dinamico
+  www.nexus-t.co.uk.csv.dynamic contrast ratio
+  www.planet-computer.it.csv.rapporto di contrasto dinamico
+  www.xpcpro.com.csv.contrast ratio dynamic
+
+Cluster 6:
+  www.ebay.com.csv.contrast ratio
+  www.hardware-planet.it.csv.rapporto di contrasto
+  www.jrlinton.co.uk.csv.contrast ratio
+  www.nexus-t.co.uk.csv.contrast ratio
+  www.officedepot.com.csv.contrast ratio
+  www.pcconnection.com.csv.contrast ratio
+  www.planet-computer.it.csv.rapporto di contrasto
+  www.xpcpro.com.csv.contrast ratio typical
+
+Cluster 7:
+  www.hardware-planet.it.csv.quantità displayports
+  www.nexus-t.co.uk.csv.displayports
+  www.planet-computer.it.csv.quantità displayports
+  www.xpcpro.com.csv.displayports quantity
+
+Cluster 8:
+  www.ebay.com.csv.number of dvi
+
+Cluster 9:
+  www.hardware-planet.it.csv.quantità porte dvid
+  www.nexus-t.co.uk.csv.dvid ports
+  www.planet-computer.it.csv.quantità porte dvid
+  www.xpcpro.com.csv.dvid ports quantity
+
+Cluster 10:
+  www.xpcpro.com.csv.dvii ports quantity
+
+Cluster 11:
+  www.planet-computer.it.csv.quantità porte ethernet lan rj45
+
+Cluster 12:
+  www.jrlinton.co.uk.csv.displayport
+  www.officedepot.com.csv.displayport
+
+Cluster 13:
+  www.hardware-planet.it.csv.porta dvi
+  www.jrlinton.co.uk.csv.dvi
+  www.officedepot.com.csv.dvi
+  www.planet-computer.it.csv.porta dvi
+  www.xpcpro.com.csv.dvi port
+
+Cluster 14:
+  www.ebay.com.csv.dvid input
+
+Cluster 15:
+  www.hardware-planet.it.csv.collegamento ethernet lan
+  www.jrlinton.co.uk.csv.network rj45
+  www.officedepot.com.csv.network rj45
+  www.planet-computer.it.csv.collegamento ethernet lan
+  www.xpcpro.com.csv.ethernet lan
+
+Cluster 16:
+  www.hardware-planet.it.csv.full hd
+  www.planet-computer.it.csv.full hd
+  www.xpcpro.com.csv.full hd
+
+Cluster 17:
+  www.ebay.com.csv.hdmi input
+  www.hardware-planet.it.csv.hdmi
+  www.jrlinton.co.uk.csv.hdmi
+  www.officedepot.com.csv.hdmi
+  www.planet-computer.it.csv.hdmi
+  www.xpcpro.com.csv.hdmi
+
+Cluster 18:
+  www.ebay.com.csv.headphone
+  www.jrlinton.co.uk.csv.headphone
+  www.officedepot.com.csv.headphone jack
+
+Cluster 19:
+  www.ebay.com.csv.microphone
+  www.hardware-planet.it.csv.microfono incorporato
+  www.planet-computer.it.csv.microfono incorporato
+
+Cluster 20:
+  www.hardware-planet.it.csv.microfono spinotto dingresso
+  www.planet-computer.it.csv.microfono spinotto dingresso
+  www.xpcpro.com.csv.microphone in
+
+Cluster 21:
+  www.ebay.com.csv.built in speakers
+  www.hardware-planet.it.csv.altoparlanti incorporati
+  www.jrlinton.co.uk.csv.speakers
+  www.nexus-t.co.uk.csv.speakers
+  www.officedepot.com.csv.speakers
+  www.planet-computer.it.csv.altoparlanti incorporati
+  www.xpcpro.com.csv.builtin speakers
+
+Cluster 22:
+  www.hardware-planet.it.csv.altoparlante  cuffia  spinotto di uscita
+  www.planet-computer.it.csv.altoparlante  cuffia  spinotto di uscita
+
+Cluster 23:
+  www.hardware-planet.it.csv.subwoofer incorporato
+  www.planet-computer.it.csv.subwoofer incorporato
+
+Cluster 24:
+  www.jrlinton.co.uk.csv.usb
+  www.officedepot.com.csv.usb
+  www.xpcpro.com.csv.usb powered
+
+Cluster 25:
+  www.ebay.com.csv.vga input
+  www.jrlinton.co.uk.csv.vga
+  www.officedepot.com.csv.vga
+
+Cluster 26:
+  www.hardware-planet.it.csv.tipologia hd
+  www.jrlinton.co.uk.csv.screen mode
+  www.nexus-t.co.uk.csv.screen features
+  www.officedepot.com.csv.screen mode
+  www.planet-computer.it.csv.tipologia hd
+  www.xpcpro.com.csv.hd type
+
+Cluster 27:
+  www.ebay.com.csv.hdmi ports qty
+  www.hardware-planet.it.csv.quantità porte hdmi
+  www.nexus-t.co.uk.csv.hdmi ports
+  www.ohc24.ch.csv.hdmi ports qty
+  www.planet-computer.it.csv.quantità porte hdmi
+  www.xpcpro.com.csv.hdmi ports quantity
+
+Cluster 28:
+  www.nexus-t.co.uk.csv.headphone jacks
+  www.xpcpro.com.csv.headphone outputs
+
+Cluster 29:
+  www.hardware-planet.it.csv.connessione cuffia
+  www.planet-computer.it.csv.connessione cuffia
+  www.xpcpro.com.csv.headphone connectivity
+
+Cluster 30:
+  www.hardware-planet.it.csv.frequenza di ingresso
+  www.planet-computer.it.csv.frequenza di ingresso
+  www.xpcpro.com.csv.input frequency
+
+Cluster 31:
+  www.hardware-planet.it.csv.peso
+  www.jrlinton.co.uk.csv.weight approximate
+  www.nexus-t.co.uk.csv.net weight
+  www.officedepot.com.csv.weight
+  www.pcconnection.com.csv.actual weight
+  www.planet-computer.it.csv.peso
+  www.xpcpro.com.csv.weight
+
+Cluster 32:
+  www.hardware-planet.it.csv.peso prodotto con supporto
+  www.jrlinton.co.uk.csv.weight with stand approximate
+  www.officedepot.com.csv.weight with stand approximate
+  www.ohc24.ch.csv.weight
+  www.planet-computer.it.csv.peso prodotto con supporto
+  www.xpcpro.com.csv.weight with stand
+
+Cluster 33:
+  www.nexus-t.co.uk.csv.wall mount
+
+Cluster 34:
+  www.jrlinton.co.uk.csv.mount type
+  www.officedepot.com.csv.mount type
+  www.pcconnection.com.csv.product type
+
+Cluster 35:
+  www.planet-computer.it.csv.altitudine di nonfunzionamento
+  www.xpcpro.com.csv.nonoperating altitude
+
+Cluster 36:
+  www.ebay.com.csv.maximum colors
+  www.hardware-planet.it.csv.colori del display
+  www.jrlinton.co.uk.csv.colour support
+  www.nexus-t.co.uk.csv.colours
+  www.officedepot.com.csv.color supported
+  www.ohc24.ch.csv.colour support
+  www.pcconnection.com.csv.color support
+  www.planet-computer.it.csv.colori del display
+  www.xpcpro.com.csv.display number of colours
+
+Cluster 37:
+  www.planet-computer.it.csv.altitudine di funzionamento
+
+Cluster 38:
+  www.hardware-planet.it.csv.peso incluso imballo
+  www.nexus-t.co.uk.csv.gross weight
+  www.planet-computer.it.csv.peso incluso imballo
+  www.xpcpro.com.csv.package weight
+
+Cluster 39:
+  www.hardware-planet.it.csv.dot pitch
+  www.nexus-t.co.uk.csv.pixel pitch
+  www.ohc24.ch.csv.pixel pitch
+  www.pcconnection.com.csv.dot pitch
+  www.planet-computer.it.csv.dot pitch
+  www.xpcpro.com.csv.pixel pitch
+
+Cluster 40:
+  www.hardware-planet.it.csv.classe efficienza energetica
+  www.jrlinton.co.uk.csv.energy efficiency class
+  www.ohc24.ch.csv.energy class
+  www.planet-computer.it.csv.classe efficienza energetica
+  www.xpcpro.com.csv.energy efficiency class
+
+Cluster 41:
+  www.hardware-planet.it.csv.consumi
+  www.jrlinton.co.uk.csv.operating power consumption
+  www.nexus-t.co.uk.csv.normal power consumption
+  www.officedepot.com.csv.operating power consumption
+  www.planet-computer.it.csv.consumi
+  www.xpcpro.com.csv.power consumption typical
+
+Cluster 42:
+  www.ebay.com.csv.standby power consumption
+  www.hardware-planet.it.csv.consumi modalità standby
+  www.jrlinton.co.uk.csv.standby power consumption
+  www.nexus-t.co.uk.csv.standby power consumption
+  www.officedepot.com.csv.standby power consumption
+  www.planet-computer.it.csv.consumi modalità standby
+  www.xpcpro.com.csv.power consumption standby
+
+Cluster 43:
+  www.ebay.com.csv.response time
+  www.hardware-planet.it.csv.tempo di risposta
+  www.jrlinton.co.uk.csv.response time
+  www.nexus-t.co.uk.csv.response time
+  www.officedepot.com.csv.response time
+  www.ohc24.ch.csv.response time
+  www.pcconnection.com.csv.response timerate
+  www.planet-computer.it.csv.tempo di risposta
+  www.xpcpro.com.csv.response time
+
+Cluster 44:
+  www.ebay.com.csv.brightness
+  www.hardware-planet.it.csv.luminosità schermo
+  www.jrlinton.co.uk.csv.brightness
+  www.nexus-t.co.uk.csv.brightness
+  www.officedepot.com.csv.brightness
+  www.ohc24.ch.csv.brightness
+  www.pcconnection.com.csv.image brightness
+  www.planet-computer.it.csv.luminosità schermo
+  www.xpcpro.com.csv.display brightness
+
+Cluster 45:
+  www.ebay.com.csv.screen size
+  www.hardware-planet.it.csv.dimensioni schermo
+  www.jrlinton.co.uk.csv.screen size
+  www.nexus-t.co.uk.csv.screen size
+  www.officedepot.com.csv.screen size
+  www.pcconnection.com.csv.display size
+  www.planet-computer.it.csv.dimensioni schermo
+  www.xpcpro.com.csv.display diagonal
+
+Cluster 46:
+  www.planet-computer.it.csv.dimensione visibile orizzontale
+
+Cluster 47:
+  www.planet-computer.it.csv.dimensione visibile verticale
+
+Cluster 48:
+  www.ebay.com.csv.display technology
+  www.hardware-planet.it.csv.tipologia display
+  www.nexus-t.co.uk.csv.screen type
+  www.officedepot.com.csv.product type
+  www.pcconnection.com.csv.display technology
+  www.planet-computer.it.csv.tipologia display
+  www.xpcpro.com.csv.display
+
+Cluster 49:
+  www.ebay.com.csv.number of speakers
+  www.hardware-planet.it.csv.numero di altoparlanti
+  www.jrlinton.co.uk.csv.number of speakers
+  www.officedepot.com.csv.number of speakers
+  www.ohc24.ch.csv.speaker system
+  www.pcconnection.com.csv.speakers included
+  www.planet-computer.it.csv.numero di altoparlanti
+  www.xpcpro.com.csv.number of loudspeakers
+
+Cluster 50:
+  www.ebay.com.csv.aspect ratio
+  www.hardware-planet.it.csv.formato
+  www.jrlinton.co.uk.csv.aspect ratio
+  www.nexus-t.co.uk.csv.aspect ratio
+  www.officedepot.com.csv.aspect ratio
+  www.ohc24.ch.csv.aspect ratio
+  www.pcconnection.com.csv.image aspect ratio
+  www.planet-computer.it.csv.formato
+  www.xpcpro.com.csv.aspect ratio
+
+Cluster 51:
+  www.hardware-planet.it.csv.lingue osd
+  www.planet-computer.it.csv.lingue osd
+  www.xpcpro.com.csv.on screen display osd languages
+
+Cluster 52:
+  www.hardware-planet.it.csv.numero di lingue osd
+  www.planet-computer.it.csv.numero di lingue osd
+  www.xpcpro.com.csv.number of osd languages
+
+Cluster 53:
+  www.ebay.com.csv.max resolution
+  www.hardware-planet.it.csv.risoluzione
+  www.jrlinton.co.uk.csv.maximum resolution
+  www.nexus-t.co.uk.csv.recommend resolution
+  www.officedepot.com.csv.maximum resolution
+  www.ohc24.ch.csv.native resolution
+  www.pcconnection.com.csv.internal resolution max
+  www.planet-computer.it.csv.risoluzione
+  www.xpcpro.com.csv.display resolution
+
+Cluster 54:
+  www.hardware-planet.it.csv.quantità porte usb 20
+  www.nexus-t.co.uk.csv.usb 20 downstream ports
+  www.planet-computer.it.csv.quantità porte usb 20
+  www.xpcpro.com.csv.usb 20 ports quantity
+
+Cluster 55:
+  www.nexus-t.co.uk.csv.usb 20 upstream ports
+
+Cluster 56:
+  www.ebay.com.csv.number of usb 30 ports
+  www.hardware-planet.it.csv.quantità porte usb 30
+  www.nexus-t.co.uk.csv.usb 30 downstream ports
+  www.planet-computer.it.csv.quantità porte usb 30
+  www.xpcpro.com.csv.usb 30 ports quantity
+
+Cluster 57:
+  www.nexus-t.co.uk.csv.usb 30 upstream ports
+
+Cluster 58:
+  www.ebay.com.csv.number of usb ports
+
+Cluster 59:
+  www.ebay.com.csv.usb standard
+  www.jrlinton.co.uk.csv.usb standard
+  www.officedepot.com.csv.usb standard
+
+Cluster 60:
+  www.hardware-planet.it.csv.quantità porte vga dsub
+  www.nexus-t.co.uk.csv.vga ports
+  www.planet-computer.it.csv.quantità porte vga dsub
+  www.xpcpro.com.csv.vga dsub ports quantity
+
+Cluster 61:
+  www.ebay.com.csv.service  support
+  www.jrlinton.co.uk.csv.limited warranty
+  www.nexus-t.co.uk.csv.warranty direct with manufacturer
+  www.officedepot.com.csv.warranty length
+  www.ohc24.ch.csv.manufacturer warranty
+  www.pcconnection.com.csv.warranty  labor
+
+Cluster 62:
+  www.planet-computer.it.csv.wifi
+  www.xpcpro.com.csv.wifi
+
+Cluster 63:
+  www.ebay.com.csv.humidity range operating
+  www.hardware-planet.it.csv.range di umidità di funzionamento
+  www.planet-computer.it.csv.range di umidità di funzionamento
+  www.xpcpro.com.csv.operating relative humidity range
+

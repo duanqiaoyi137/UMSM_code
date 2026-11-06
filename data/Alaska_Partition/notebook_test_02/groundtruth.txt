@@ -1,0 +1,164 @@
+Cluster 1:
+  www.mygofer.com.csv.aspect ratio
+  www.tigerdirect.com.csv.aspect ratio
+  www.topendelectronic.co.uk.csv.aspect ratio
+
+Cluster 2:
+  www.topendelectronic.co.uk.csv.battery capacity
+
+Cluster 3:
+  www.isupplyhub.com.csv.batteries
+  www.mygofer.com.csv.battery type
+  www.staples.com.csv.laptop battery type
+  www.tigerdirect.com.csv.battery type
+  www.topendelectronic.co.uk.csv.battery
+
+Cluster 4:
+  www.isupplyhub.com.csv.average battery life in hours
+  www.mygofer.com.csv.battery life range
+  www.staples.com.csv.laptop battery life
+  www.tigerdirect.com.csv.battery life
+  www.topendelectronic.co.uk.csv.maximum battery run time
+
+Cluster 5:
+  www.directdial.com.csv.brand name
+  www.isupplyhub.com.csv.brand name
+  www.topendelectronic.co.uk.csv.brand
+
+Cluster 6:
+  www.isupplyhub.com.csv.processor brand
+  www.mygofer.com.csv.cpu brand
+  www.tigerdirect.com.csv.processor brand
+  www.topendelectronic.co.uk.csv.processor manufacturer
+
+Cluster 7:
+  www.directdial.com.csv.cache
+  www.mygofer.com.csv.cpu cache mb
+  www.staples.com.csv.cpu cache
+  www.tigerdirect.com.csv.processor cache
+  www.topendelectronic.co.uk.csv.cache
+
+Cluster 8:
+  www.directdial.com.csv.processor speed
+  www.mygofer.com.csv.cpu speed
+  www.staples.com.csv.processor speed up to ghz
+  www.tigerdirect.com.csv.processor speed
+  www.topendelectronic.co.uk.csv.processor speed
+
+Cluster 9:
+  www.directdial.com.csv.processor type
+  www.tigerdirect.com.csv.processor class
+  www.topendelectronic.co.uk.csv.processor type
+
+Cluster 10:
+  www.mygofer.com.csv.depth in
+
+Cluster 11:
+  www.bidorbuy.co.za.csv.screen size diagonal
+  www.directdial.com.csv.screen size
+  www.isupplyhub.com.csv.screen size
+  www.mygofer.com.csv.screen size range
+  www.staples.com.csv.laptop screen size inches
+  www.tigerdirect.com.csv.screen size
+  www.topendelectronic.co.uk.csv.screen size
+
+Cluster 12:
+  www.directdial.com.csv.flash memory
+  www.isupplyhub.com.csv.flash memory size
+
+Cluster 13:
+  www.directdial.com.csv.graphics controller manufacturer
+  www.isupplyhub.com.csv.chipset brand
+  www.mygofer.com.csv.gpu chipset
+  www.topendelectronic.co.uk.csv.graphics controller manufacturer
+
+Cluster 14:
+  www.directdial.com.csv.graphics controller model
+  www.topendelectronic.co.uk.csv.graphics controller model
+
+Cluster 15:
+  www.directdial.com.csv.hdmi
+  www.mygofer.com.csv.hdmi outputs
+  www.topendelectronic.co.uk.csv.interfacesports
+
+Cluster 16:
+  www.directdial.com.csv.memory card reader
+  www.topendelectronic.co.uk.csv.memory card reader
+
+Cluster 17:
+  www.directdial.com.csv.vga
+  www.mygofer.com.csv.vga out
+  www.topendelectronic.co.uk.csv.vga
+
+Cluster 18:
+  www.directdial.com.csv.total hard drive capacity
+  www.isupplyhub.com.csv.hard drive
+  www.mygofer.com.csv.hard drive capacity range
+  www.staples.com.csv.hard drive capacity
+  www.tigerdirect.com.csv.capacity
+  www.topendelectronic.co.uk.csv.hdd
+
+Cluster 19:
+  www.tigerdirect.com.csv.hard drive speed
+  www.topendelectronic.co.uk.csv.hdd rpm
+
+Cluster 20:
+  www.directdial.com.csv.64bit processing
+  www.topendelectronic.co.uk.csv.64bit processing
+
+Cluster 21:
+  www.directdial.com.csv.standby power consumption
+
+Cluster 22:
+  www.mygofer.com.csv.memory range
+  www.staples.com.csv.ram capacity
+  www.tigerdirect.com.csv.total memory size
+  www.topendelectronic.co.uk.csv.memory
+
+Cluster 23:
+  www.directdial.com.csv.maximum memory
+  www.mygofer.com.csv.maximum memory supported
+
+Cluster 24:
+  www.tigerdirect.com.csv.ram speed
+
+Cluster 25:
+  www.directdial.com.csv.memory technology
+  www.isupplyhub.com.csv.computer memory type
+  www.mygofer.com.csv.memory type
+  www.tigerdirect.com.csv.memory type
+  www.topendelectronic.co.uk.csv.memory technology
+
+Cluster 26:
+  www.directdial.com.csv.ssd cache capacity
+
+Cluster 27:
+  www.topendelectronic.co.uk.csv.ssd
+
+Cluster 28:
+  www.directdial.com.csv.number of usb 20 ports
+  www.isupplyhub.com.csv.number of usb 20 ports
+  www.topendelectronic.co.uk.csv.number of usb 20 ports
+
+Cluster 29:
+  www.directdial.com.csv.number of usb 30 ports
+  www.isupplyhub.com.csv.number of usb 30 ports
+  www.topendelectronic.co.uk.csv.number of usb 30 ports
+
+Cluster 30:
+  www.bidorbuy.co.za.csv.manufacturer warranty
+  www.directdial.com.csv.limited warranty
+  www.mygofer.com.csv.general warranty
+  www.staples.com.csv.laptop warranty
+  www.tigerdirect.com.csv.lenovo
+
+Cluster 31:
+  www.bhphotovideo.com.csv.weight
+  www.bidorbuy.co.za.csv.weight
+  www.directdial.com.csv.weight approximate
+  www.isupplyhub.com.csv.item weight
+  www.mygofer.com.csv.item weight lbs
+  www.staples.com.csv.laptop weight filter
+  www.tigerdirect.com.csv.weight
+  www.topendelectronic.co.uk.csv.weight
+

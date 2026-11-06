@@ -1,0 +1,301 @@
+c1,c3,c4,c6,c7,c8,c9
+,,,,,0.0,
+,,,,,,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,4.9,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,Sandwich,,,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,PT10M,PT40M,Dessert,,5.0,PT50M
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,Cocktail,,5.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,,
+,,,,,0.0,
+,,,,,0.0,
+,,,,American,,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,5.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,5.0,
+,,,Cocktail,,,
+,,,,,0.0,
+,,,,,0.0,
+,,,Cocktail,,,
+,,,,,0.0,
+,,,,,0.0,
+,,,Breakfast,,5.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,0.0,
+,,,,,5.0,
+"[""Crushed Candy Canes"", ""4 tbsp Milk"", ""1/4 cup Cocoa Powder"", ""1/2 cup Sugar"", ""2 tbsp Mocha Coffee Creamer"", ""1/4 tsp Peppermint Extract"", ""1/4 cup Vegetable Oil"", ""1 tbsp Expresso Powder"", ""1 cup Flour"", ""1/2 tsp Baking Soda"", ""1 Egg"", ""2 cups Powdered Sugar"", ""2 tbsp Double Strength Coffee ((I used cold brewed))"", ""1/2 tsp Vanilla Extract"", ""6 tbsp Sour Cream""]",PT20M,PT10M,Dessert,Dessert,5.0,PT30M
+"[""1 Tbsp chili powder"", ""1 jalapeno, finely diced (optional)"", ""1 tomato, seeded and diced"", ""Salt and Pepper"", ""6 chicken breasts"", ""3 Tbsp lime juice"", ""1 avocado, cut into cubes"", ""6 slices Sargento Blends Southwest Cheese"", ""6 slices of bacon, cooked"", ""3 Tbsp cilantro, finely chopped"", ""1/4 cup red onion, diced"", ""2 Tbsp oil""]",PT10M,PT20M,Recipes,,,PT30M
+"[""1/2 cup arugula leaves"", ""1/2 of small watermelon (cut into small slices)"", ""3 Tbsp sugar"", ""1/2 brie wheel (rind removed)"", ""1/2 cup balsamic vinegar""]",PT15M,PT15M,,Appetizer,,PT50M
+"[""blueberries"", ""1/4 cup butter (melted)"", ""3/4 cup sugar"", ""2 cups cool whip"", ""red food coloring {optional}"", ""whipped cream"", ""16 oz cream cheese (softened)"", ""2 cups graham cracker crumbs"", ""1 Tbsp cherry juice""]",PT15M,,,,,PT255M
+"[""1/2 cup cider vinegar"", ""2 peaches (cut into large pieces)"", ""Marinade;"", ""1/3 cup lime juice"", ""3 cups pineapple chunks"", ""3 nectarines (cut into large pieces)"", ""3 cups hulled strawberries {halve large ones}"", ""3/4 cup orange juice"", ""2 cups pineapple juice"", ""3 Tbsp finely chopped mint""]",PT10M,PT30M,,,,PT40M
+"[""4 oz White Rum"", ""1 cup Sugar"", ""2 tbsp Lime Juice"", ""15-20 Mint Leaves"", ""4 oz Prosecco"", ""1 cup Water"", ""8 oz Fresh Cranberries""]",PT5M,PT15M,,,,PT20M
+"[""1 bottle honey BBQ sauce"", ""1 package cocktail sausages"", ""1 can Cherry Dr Pepper soda"", ""1 jar pepper jelly""]",PT5M,PT1H,5 Ingredients or less,American,5.0,PT1H5M
+"[""1 cup shredded cheddar cheese"", ""1 egg"", ""2 Tbsp butter (melted)"", ""1/2 cup panko crumbs"", ""1 cup cooked rice"", ""2 cups broccoli (finely chopped)""]",PT5M,PT15M,,Appetizer,,PT20M
+"[""1/3 cup water"", ""1 Tbsp cilantro (chopped)"", ""3 zucchini (sliced vertically)"", ""1 lb ground beef"", ""3 Tbsp grated cotija cheese"", ""1/2 cup enchilada sauce"", ""1 packet taco seasoning"", ""1 cup black beans (rinsed and drained)""]",PT10M,PT25M,,Casserole,,PT35M
+"[""2 Tbsp red curry paste"", ""2 bell peppers, sliced"", ""1 can coconut milk"", ""2 Tbsp avocado oil"", ""2 Tbsp grated ginger"", ""2 chicken breasts, cut into 1-inch pieces"", ""3 cloves garlic, minced"", ""1/4 cup peanut butter"", ""1 onion, sliced"", ""1 can chick peas, rinsed and drained"", ""1 can pumpkin puree""]",PT5M,PT25M,Main Dishes,,,PT30M
+"[""1 large avocado"", ""3/4 cup fresh cilantro"", ""1 15 oz can black beans, drained and rinsed"", ""1/2 onion chopped"", ""2 1/2 Tbsp agave (sugar works ok too)"", ""4 limes"", ""1 cup shredded cooked chicken"", ""1 cup quinoa cooked and cooled"", ""2 ears of corn grilled and removed from cob (or 1 small can niblets)""]",PT10M,PT20M,Salads,American,5.0,PT30M
+"[""2 oz goat cheese"", ""2 pears, (peeled and diced)"", ""fresh thyme, (chopped)"", ""1/2 lb thinly sliced prosciutto""]",PT10M,PT15M,Appetizer,Appetizer,5.0,PT25M
+"[""1/4 tsp baking powder"", ""2 cups powdered sugar"", ""3/4 cup dark chocolate chips"", ""1/4 cup vegetable oil"", ""1 Tbsp espresso powder"", ""1 cup all purpose flour"", ""1 tsp vanilla extract"", ""3/4 tsp baking soda"", ""1/2 cup sugar"", ""3 1/2 Tbsp espresso"", ""2 cups shredded zucchini"", ""1/2 cup cocoa powder"", ""1/4 cup plain Greek yogurt"", ""2 large eggs"", ""1/4 tsp salt""]",PT10M,PT55M,,Bread,5.0,PT65M
+"[""1 Tbsp dried oregano"", ""1/2 Tbsp lemon juice"", ""2 garlic cloves (minced)"", ""1/2 Tbsp olive oil"", ""1 tsp dried rosemary"", ""1/2 cup plain greek yogurt"", ""1/2 cucumber (sliced)"", ""8 sliced bread"", ""1 Tbsp red wine vinegar"", ""1/2 tsp salt"", ""4 sliced romaine lettuce"", ""1 garlic clove (minced)"", ""2 Tbsp olive oil"", ""2 boneless (skinless chicken breast)"", ""1/2 Tbsp fresh fill (chopped)"", ""1/4 cup pickled red onions"", ""1/4 cucumber (minced)""]",PT10M,PT20M,,Sandwich,,PT30M
+"[""3/4 cup White Chocolate Chips"", ""1/2 cup Crisco® Pure Vegetable Oil"", ""1/2 tsp Salt"", ""1.5 cup Flour"", ""3/4 cup Dried Cranberries"", ""2 Eggs"", ""1.5 cup Packed Light Brown Sugar"", ""1 tsp Vanilla Extract"", ""1/2 tsp Baking Powder""]",PT15M,PT45M,Dessert,Dessert,,PT60M
+"[""3 Tbsp butter"", ""1 box graham crackers"", ""3 cups milk"", ""1 tsp vanilla extract"", ""2 small packages instant vanilla pudding"", ""1/2 cup milk"", ""1 cup sugar"", ""1/3 cup unsweetened cocoa powder"", ""1 package cool whip""]",PT20M,PT5M,,Dessert,,PT90M
+"[""1 egg"", ""1/2 cup shredded cheddar cheese"", ""1 Tbsp water"", ""1/4 cup hot dog chili"", ""1 sheet puff pastry (thawed)"", ""1 14 oz package mini beef hot dogs""]",PT10M,PT15M,,Appetizer,,PT25M
+"[""1 cup farro"", ""4 cups broccoli florets"", ""1/3 cup basil pesto"", ""1/4 tsp black pepper"", ""1/4 cup grated Parmesan"", ""1/4 tsp crushed red pepper"", ""1/2 tsp salt"", ""1/4 cup chopped walnuts"", ""2 Tbsp olive oil"", ""1 15.5 oz can chickpeas, drained and rinsed""]",PT5M,PT30M,Side dishes,American,,PT35M
+"[""1/2 cup Sugar"", ""1 Egg Yolk"", ""3 tbsp Sugar"", ""1/3 cup Agave Syrup"", ""1/2 tsp Salt"", ""1/4 tsp Ground Ginger"", ""1/2 tsp Nutmeg"", ""2 Eggs"", ""30 Ginger Thin Cookies, (you can substitute 20 ginger snap cookies)"", ""3 1/2 tbsp Flour"", ""5 tbsp Butter, (melted)"", ""1 cup Pumpkin Puree"", ""1/2 tsp Cinnamon"", ""16 oz Cream Cheese, (2 bars, softened)""]",PT15M,PT40M,Dessert,American,5.0,PT55M
+"[""2 cups cubed potatoes"", ""1 Tbsp maple syrup"", ""Salt and Pepper"", ""1/8 tsp crushed red pepper"", ""2 Tbsp balsamic vinegar"", ""2 cups shaved brussels sprouts"", ""6 large Handsome Brook Farm eggs"", ""1 cup diced pancetta"", ""1 Tbsp avocado oil"", ""2 cloves garlic (minced)""]",PT10M,PT25M,Breakfast,Breakfast,5.0,PT35M
+"[""3/4 cup sugar"", ""1 cup salted caramel sauce"", ""1 tsp cinnamon"", ""10 oz cool whip or stabalized whipped cream"", ""2 gingerbread cookies, crushed"", ""1 tsp ground ginger"", ""1 gingerbread cake, cut into cubes"", ""16 oz cream cheese, softened"", ""1-2 Tbsp milk""]",PT20M,PT0S,Desserts,American,4.7,PT4H20M
+"[""8 oz spaghetti"", ""1/4 cup grated parmesan cheese"", ""1 tsp dried oregano"", ""1 tsp dried basil"", ""2 tsp olive oil"", ""1 green bell pepper (sliced)"", ""1 onion (sliced)"", ""1 red bell pepper (sliced)"", ""15 oz can tomato sauce"", ""1 tsp garlic""]",PT5M,PT20M,Main Course,Italian,,PT25M
+"[""12.75 oz jar apricot preserves"", ""1 Tbsp Sriracha"", ""3 Tbsp cooked (crumbled bacon)"", ""2 Tbsp pomegranate seeds"", ""8 oz wheel Brie (room temperature)""]",PT5M,PT5M,,Appetizer,,PT10M
+"[""3 cups Water"", ""750 ml Bottle of Cabernet Sauvignon"", ""1.25 cup Sugar"", ""1.5 tsp Citric Acid""]",PT5M,,Drinks,Cocktail,,
+"[""3/4 cup shredded cheddar cheese"", ""1/2 tsp salt"", ""1/4 tsp ground black pepper"", ""16 oz of Egg Beaters"", ""1 cup chopped broccoli (thawed)""]",PT10M,PT20M,,,,PT30M
+"[""1 box German Chocolate Cake Mix"", ""Nonstick Cooking Spray"", ""1 cup Milk"", ""1/3 cup Oil"", ""3 Eggs"", ""1/3 cup Water"", ""1/2 cup Flour""]",PT10M,PT30M,Breakfast,Breakfast,,PT40M
+"[""3 cups beet noodles"", ""1/4 cup crumbled (cooked bacon)"", ""1/2 Tbsp honey"", ""1/3 cup candied pecans"", ""1/4 cup crumbled goat cheese"", ""1/4 cup honey mustard vinaigrette"", ""1/2 cup olive oil"", ""1 Tbsp oil"", ""1 Tbsp Dijon mustard"", ""1 1/2 Tbsp white wine vinegar""]",PT5M,PT5M,,Salad,,PT10M
+"[""2 tsp Olive Oil"", ""1 medium Onion (finely diced)"", ""2 inch piece Parmesan Rind"", ""2 tsp Fresh Sage (chopped)"", ""Shaved Parmesan for Topping (optional)"", ""3 cups Vegetable Broth"", ""4 Garlic Cloves (minced)"", ""2 cups Cauliflower Florets"", ""5 oz Curly Kale (roughly chopped)"", ""2 tsp Fresh Rosemary (chopped)"", ""2 Carrots (finely diced)"", ""2 Celery Ribs (finely diced)"", ""28 oz can Stewed Tomatoes"", ""3 cups Butternut Squash (cubed)"", ""1 cup Quinoa (cooked)"", ""2 tbsp Red Wine Vinegar""]",PT10M,PT50M,Soup,Dinner,,PT60M
+"[""4 cups turkey pan drippings"", ""1/2 cup all purpose flour"", ""1/2 cup butter"", ""1/2 tsp salt"", ""1/2 tsp ground black pepper""]",PT5M,PT10M,Thanksgiving,American,4.8,PT15M
+"[""1 cup Bertolli Alfredo With Aged Parmesan Cheese"", ""1 refrigerated pizza crust"", ""1 cup Bertolli Traditional Marinara with Italian Herbs and Fresh Garlic"", ""1/2 cup cooked, Italian sausage, crumbled"", ""8 oz penne pasta"", ""2/3 cup shedded Mozzarella cheese""]",PT5M,PT26M,Main Dishes,American,,PT31M
+"[""1 Tbsp sugar"", ""3 cups cooked quinoa"", ""3/4 cup tamari"", ""1 Tbsp cold water"", ""2 Tbsp arrowroot flour"", ""1 cup cooked (shredded chicken)"", ""1/4 cup bean sprouts (chopped)"", ""1/2 cup water"", ""1/2 cup peas &amp; carrots (thawed)"", ""2 cloves garlic (minced)"", ""1/2 cup onion (finely chopped)"", ""1 tsp grated ginger"", ""1/3 cup brown sugar"", ""1 tsp sesame oil (divided)""]",PT20M,PT20M,,,,PT40M
+"[""1 cup mandarin orange slices"", ""1 Tbsp corn starch"", ""1 Tbsp cold water"", ""Salt and pepper for seasoning"", ""1/2 cup orange juice"", ""2 Tbsp Dijon mustard"", ""4-6 pork chops {I grabbed the boneless variety}"", ""2 Tbsp orange juice"", ""1 apple (cored and chopped)"", ""1 fennel bulb (sliced)"", ""2 Tbsp Star Butter Olive Oil"", ""1 Tbsp mustard"", ""1 Tbsp Star Butter Olive Oil""]",,,,,,
+"[""2 cups Cranberries"", ""1 cup Mayonnaise"", ""1/4 cup Lime Juice"", ""1 tsp Chili Powder"", ""Small Tortillas"", ""2 tbsp Sugar"", ""2 tsp Cumin"", ""1/4 cup Red Onion (chopped)"", ""1/2 cup Sour Cream"", ""1 cup Fresh Cilantro (finely chopped)"", ""1 cup Fresh Cilantro (chopped)"", ""1/2 Jalapeno (minced)"", ""1 tsp Paprika"", ""1/2 cup Green Yogurt"", ""2 cups Leftover Turkey (chopped or shredded)""]",PT15M,,Main Course,Dinner,,PT15M
+"[""1 cup heavy cream"", ""8 cups whole milk"", ""2 Tbsp honey"", ""3 Tbsp lemon juice"", ""2 Tbsp balsamic glaze"", ""2 peaches ( halved with pit removed)"", ""1 tsp salt""]",PT10M,PT25M,,Appetizer,,PT95M
+"[""3 cups all purpose flour"", ""3 Tbsp butter"", ""3/4 cup dark chocolate chips"", ""2 1/4 cups all purpose flour"", ""1 Tbsp light corn syrup"", ""1 cup dark cocoa powder"", ""4 sticks butter (softened)"", ""1 tsp vanilla extract"", ""2 cups sugar"", ""1 3/4 cup sugar"", ""2 tsp salt"", ""9 eggs"", ""1 tsp salt""]",PT15M,PT65M,Dessert,Dessert,4.5,PT140M
+"[""2 Tbsp chopped cilantro"", ""1/2 cup diced (fresh pineapple)"", ""1/4 cup diced cucumber"", ""2 Tbsp diced red bell pepper"", ""1 habanero pepper (seeded and minced)"", ""Pinch of salt"", ""1/2 Tbsp pineapple juice"", ""15 oz Blue Harbor wild Albacore tuna"", ""1/2 Tbsp fresh lime juice"", ""1 Tbsp avocado oil"", ""1 egg yolk"", ""1/4 cup whole wheat bread crumbs"", ""2 Tbsp plain Greek yogurt"", ""1 Tbsp diced red onion""]",PT10M,PT10M,,Appetizer or Light Meal,,PT50M
+"[""1 cup shredded Swiss cheese (divided)"", ""4 eggs (scrambled)"", ""1 can pizza dough"", ""1 package Smithfield Anytime Favorites Cubed Ham""]",PT5M,PT15M,Breakfast,Breakfast,5.0,PT20M
+"[""1 small Wheel of Brie"", ""1/4 cup Water"", ""1 can Biscuits (5 count)"", ""3/4 cup Sugar"", ""1 cup Cranberries""]",PT5M,PT30M,Appetizer,Appetizer or Light Meal,,PT35M
+"[""4 cups Waffle Pretzels"", ""1 package Andes Mint Chocolates (roughly chopped)"", ""1 bag White Chocolate Chips (melted)""]",PT10M,,Snack,Dessert,,PT10M
+"[""8 slices bacon (cooked and crumbled)"", ""1 bell pepper (diced)"", ""1/2 tsp cumin"", ""1/2 cup diced onion"", ""6 eggs"", ""Salt and pepper"", ""2 cups shredded potatoes"", ""1 cup shredded cheese"", ""1 tsp chili powder""]",PT10M,PT30M,,Breakfast,,PT40M
+"[""4 York peppermint patties, roughly chopped"", ""1/3 cup olive oil"", ""1/2 cup brown sugar"", ""2 oz semi-sweet chocolate, melted"", ""1 cup mint chocolate chips"", ""2 eggs"", ""2 tsp vanilla extract"", ""2 oz dark chocolate, melted"", ""1/4 cup sugar"", ""1/2 cup flour"", ""1 tsp salt""]",PT10M,PT30M,Cooking,American,,PT40M
+"[""1/4 cup grated Parmesan cheese"", ""1/2 cup marinara sauce"", ""4 ciabatta or other roll"", ""1/4 cup breadcrumbs"", ""1/2 tsp salt"", ""4 slices of whole milk mozzarella cheese"", ""3 Tbsp fresh basil (minced)"", ""1 lb ground chicken""]",,,,,,
+"[""3 Tbsp Bertolli Organic Extra Virgin Olive Oil"", ""1/2 cup grated Parmesan"", ""1 16 oz package Carando Italian Style Meatballs"", ""1 lb prepared polenta (it comes in a tube shape on the pasta aisle)"", ""1 1/2 cup Bertolli Vineyard Marinara with Burgundy Wine Sauce""]",PT10M,PT30M,,,,PT40M
+"[""1 red onion, cut into wedges"", ""2 lbs chicken breast, cut into 1 inch pieces"", ""4 Tbsp Balsamic vinegar"", ""8-10 small white potatoes"", ""3 tsp fresh rosemary, finely chopped"", ""3 cloves garlic, minced"", ""1 tsp paprika"", ""4 Tbsp Heinz yellow mustard"", ""8-10 large mushrooms, cleaned"", ""6 Tbsp lemon juice"", ""1 green pepper, cut into wedges""]",PT0S,PT0S,Main Dishes,American,,PT0S
+"[""2 Tbsp grate Parmesan cheese"", ""1/2 cup spinach artichoke dip"", ""1 package Gorton's Easy Bake Shrimp Scampi"", ""1/2 cup shredded mozzarella cheese"", ""2 pieces naan or flatbread pizza crusts"", ""2 Tbsp fresh parsley (chopped (optional))""]",PT5M,PT25M,,Pizza,5.0,PT30M
+"[""3 cups all purpose flour"", ""2 cup packed brown sugar"", ""1 cup cream cheese frosting"", ""1 10 oz can pumpkin puree"", ""2 tsp pumpkin pie spice"", ""2 eggs"", ""1 tsp baking soda"", ""1 tsp baking powder"", ""1 cup melted coconut oil"", ""1 tsp salt""]",PT20M,PT10M,,Dessert,,PT35M
+"[""1 onion, finely chopped"", ""1 lb smoked sausage, sliced"", ""2 tsp oregano"", ""1 Tbsp Hungarian paprika"", ""6 cups chicken broth"", ""4 oz tomato sauce"", ""2 Tbsp avocado oil"", ""2 carrots, peeled and sliced"", ""2 cans cannelini beans, drained and rinsed"", ""1/2 green cabbage, coarsely chopped"", ""1 15oz can diced tomatoes"", ""2 stalks fresh rosemary"", ""1 inch Parmesan rind"", ""Salt and pepper"", ""Sliced Parmesan for garnish""]",PT10M,PT25M,Soup,Polish,4.8,PT35M
+"[""1/3 cup Regular Plain Yogurt"", ""1 1/3 cup Prosecco"", ""3 Eggs"", ""1 cup Prosecco Buttercream Frosting"", ""Wilton Candy Melts"", ""Lollipop Sticks"", ""1 box Strawberry Cake Mix""]",PT15M,PT45M,Dessert,Cake,,PT60M
+"[""4 slices bacon (cooked and crumbled)"", ""1/2 cup shredded Parmesan cheese"", ""12 small potatoes"", ""Salt and pepper"", ""1 cup butter (softened)""]",PT5M,PT25M,,,,PT30M
+"[""2 1/3 cups milk"", ""2 cups powdered sugar"", ""2 tsp baking powder"", ""1 1/3 cup all purpose flour"", ""1/4 cup sprinkles (optional)"", ""3 eggs"", ""1/2 tsp salt"", ""2-3 Tbsp milk"", ""1/3 cup oil"", ""1 box Funfetti cake mix""]",PT10M,PT25M,Breakfast,Breakfast,,PT35M
+"[""1 cup + 2 Tbsp brown sugar, divided"", ""1 large apple, cut into ¼ inch chunks (Optional: peeled...I do half and half)"", ""½ cup butterscotch chips"", ""½ cup + 1 Tbsp salted butter, divided"", ""1 tsp bourbon vanilla extract"", ""⅛ tsp salt"", ""1 large egg"", ""1 cup all-purpose flour""]",PT8M,PT45M,Desserts,American,4.2,PT53M
+"[""1/4 cup quartered artichoke hearts"", ""1/4 cup sliced roasted red peppers"", ""1 cup Zesty Italian Dressing"", ""1/4 cup shredded Parmesan"", ""1/4 cup chopped red onion"", ""2 cups mini mozzarella balls"", ""1/2 tsp ground black pepper"", ""1 lb pasta (i.e. bowties, campanelle, rotini, shells, or penne)"", ""4 oz pepperoni, sliced and quartered"", ""6 oz green olives, halved""]",PT10M,PT8M,Pasta,Italian,,PT1H18M
+"[""1 cup heavy cream"", ""1/2 cup diced tomatoes"", ""Salt and Pepper"", ""14 oz chicken broth"", ""1 Tbsp taco seasoning"", ""2 Tbsp butter"", ""8 oz penne"", ""3 Tbsp grated cotija cheese"", ""2 boneless, skinless chicken breasts, (cut into cubes)"", ""1/2 cup Mexican blend cheese, (shredded)""]",PT5M,PT20M,Main Course,Pasta,5.0,PT25M
+"[""1 quart rainbow sherbert"", ""1 bottle dry sparkling wine, chilled""]",PT50M,PT0S,Drinks,American,,PT50M
+"[""small piece Parmesan rind"", ""4 Tbsp oil (divided)"", ""1 tsp oregano"", ""1 onion (diced)"", ""2 tsp Italian seasoning"", ""1 package Carando Abruzzese style meatballs"", ""3 carrots (peeled and diced)"", ""5 cups vegetable stock"", ""15 oz can navy beans (rinsed and drained)"", ""4 oz tomato paste"", ""2 cups kale (chopped)"", ""15 oz diced tomatoes"", ""1 1/2 cups small pasta"", ""2 zucchini (sliced)"", ""3 cloves garlic (minced)""]",PT10M,PT30M,,Soup,,PT40M
+"[""1/4 cup Brown Sugar"", ""1/2 tbsp Butter"", ""1/2 cup Pumpkin Butter Spread (check your seasonal aisle or make your own, optional)"", ""1/8 tsp Nutmeg"", ""1/2 cup Caramel Sauce Topping"", ""3 Granny Smith Apples (peeled and chopped finely)"", ""1/2 tsp Cinnamon"", ""1 French Bread Baguette (sliced into 1/2 in slices)""]",PT10M,PT12M,Dessert,Dessert,,PT22M
+"[""2 cups Cranberries"", ""1/2 cup Brown Sugar"", ""Pepper"", ""1/4 cup Honey"", ""1/2 cup Orange Juice"", ""1 tsp Ground Ginger"", ""1 tbsp Orange Zest"", ""4 tbsp Oil (divided)"", ""Cranberry Sage Triscuit Crackers (or cracker of choice)"", ""1 Pumpkin (cut into 1-inch pieces)"", ""12 Sage Leaves"", ""Salt""]",PT10M,PT35M,Appetizer,Appetizer,,PT45M
+"[""1 frozen deep dish pie crust"", ""2 Tbsp cornstarch"", ""1 (15 oz) can diced tomatoes, drained"", ""1 large zucchini, diced"", ""1 medium onion, chopped"", ""1 (4 oz) can sliced black olives, chopped"", ""1 tsp ground cumin"", ""1/2 tsp salt"", ""2 cups shredded cheddar cheese"", ""2/3 cup picante sauce"", ""2 cups cooked, chopped turkey breast"", ""1 clove of garlic, minced""]",PT5M,PT20M,Cooking,American,,PT25M
+"[""1/2 cup coconut milk"", ""4 sweet potatoes (peeled and cubed)"", ""Salt and pepper to taste"", ""1 onion (diced)"", ""1/2 tsp sage"", ""1/2 tsp thyme"", ""1/4 tsp crushed red pepper"", ""1 tsp garlic powder"", ""1 green bell pepper (diced)"", ""1 lb nitrate free sausage"", ""9 eggs""]",PT15M,PT60M,Breakfast,Casserole,,PT75M
+"[""2-3 cups berries"", ""1 cup heavy whipping cream"", ""3/4 cup sweetened condensed milk"", ""3 cups lemon NILLA Wafers"", ""8 oz cream cheese (softened)"", ""3 Tbsp lemon juice"", ""2 Tbsp lemon zest""]",PT10M,,,Dessert,,PT130M
+"[""2 tbsp Apple Cider Vinegar"", ""1 tbsp Avocado Oil"", ""1 tbsp Parsely (finely chopped)"", ""1/2 cup Dried Cranberries"", ""2 Cloves Garlic (minced)"", ""1 cup White Quinoa"", ""2/3 cup Chopped Walnuts"", ""1 cup Red Quinoa"", ""1 Onion (finely chopped)""]",PT10M,PT25M,Side Dish,Side Dish,,PT35M
+"[""1 Tbsp garlic powder"", ""1 cup shredded queso cheese"", ""1 onion, (diced)"", ""1 cup salsa"", ""2 cups water or broth"", ""2 1/2 cups macaroni pasta"", ""1 cup canned black beans, (rinsed and drained)"", ""1 Tbsp taco seasoning"", ""1 can canned diced tomatoes with chiles"", ""1 cup queso dip"", ""1 lb ground beef"", ""1 cup canned mexicorn, (drained)""]",PT5M,PT25M,Main Course,Pasta,,PT30M
+"[""2 tsp minced garlic"", ""2 tsp apple cider vinegar (optional)"", ""2 Tbsp fresh rosemary (chopped)"", ""1/2 cup dried cranberries"", ""1 cup farro"", ""1 cup apple juice"", ""1 tsp Herbs de Provence"", ""3 Tbsp Extra Virgin Olive Oil"", ""1 cup chicken broth"", ""1 Honeycrisp apple (chopped)"", ""1/2 tsp parsley"", ""1/2 tsp salt"", ""1/4 tsp ground black pepper"", ""1/2 cup diced onion"", ""1/2 cup chopped walnuts"", ""1 Tbsp Dijon mustard""]",PT15M,PT30M,Side Dish,Salad,5.0,PT45M
+"[""Lime soda (sprite) or seltzer water"", ""2 tsp simple syrup"", ""4 oz vodka"", ""Squeeze of fresh lime"", ""½ cup pureed watermelon juice (strain to remove any small seeds)"", ""Watermelon slice (for garnish)"", ""Crushed ice""]",,,,,5.0,
+"[""1 cup farro"", ""1 bell pepper (any color), large dice"", ""2 Tbsp balsamic vinegar"", ""2 Tbsp canned Old El Paso diced green chiles"", ""2 cups Swanson canned chicken broth"", ""1/4 cup crumbled goat cheese"", ""2 Tbsp butter"", ""1 large can Swanson chicken breast"", ""1/2 14.5oz can Del Monte chopped spinach, drained"", ""1 can Del Monte sliced carrots, drained""]",PT5M,PT25M,30 Minutes or Less,American,5.0,PT30M
+"[""30 Filo Cups"", ""2 lbs boneless (skinless chicken breasts)"", ""4 oz crumbled blue cheese"", ""1/2 cup ranch dressing"", ""1 1/2 cups hot sauce""]",PT10M,PT30M,,Appetizer,,PT40M
+"[""1/2 tsp baking soda"", ""1/2 cup powdered sugar"", ""1/2 cup buttermilk"", ""2 Tbsp vegetable oil"", ""1 cup boiling water"", ""1/4 tsp all spice"", ""1 3/4 cup all purpose flour"", ""2 tsp reserved tea"", ""2 eggs"", ""3 Tbsp orange marmalade"", ""1 tsp baking powder"", ""1 Tbsp melted butter"", ""1/4 cup chopped walnuts"", ""3 Lipton Orange Passionfruit Jasmine Green Tea bags"", ""1/2 cup sugar"", ""1/4 tsp salt""]",PT10M,PT45M,,Bread,,PT55M
+"[""1 lb hot breakfast sausage"", ""4 oz VELVEETA® (cut into small cubes)"", ""Salt and pepper to taste"", ""4 oz cream cheese (softened)"", ""1/2 Tbsp garlic powder"", ""1 package crescent rolls""]",PT10M,PT20M,,Breakfast,2.0,PT30M
+"[""1/8 tsp Ground Ginger"", ""2 tbsp Reduced Sodium Soy Sauce"", ""10 oz Orange Marmalade or Preserves"", ""Sesame Seeds for Garnish"", ""4 Green Onion (chopped)"", ""2 lbs Boneless Skinless Chicken Breasts"", ""12 Lettuce Cups (I like to use romaine or bibb)"", ""Non Stick Spray"", ""2 tsp Rice Wine Vinegar"", ""1/4 tsp Garlic Powder""]",PT10M,PT480M,Main Course,Dinner,,PT490M
+"[""3 bell peppers, halved with seeds removed"", ""2 Tbsp Wellsley Farms balsamic vinegar, divided"", ""4 Tbsp crumbled goat cheese"", ""3 tsp Wellsley Farms No Salt Herb Seasoning"", ""Salt and Pepper"", ""2 chicken breast, cut into 1-inch pieces"", ""1 Tbsp avocado oil"", ""1 cup baby spinach, torn"", ""1/2 cup farro, cooked""]",PT8M,PT25M,Main Dishes,American,5.0,PT33M
+"[""1 can Pillsbury® Sweet Rolls®"", ""1/2 cup Whole Berry Cranberry Sauce""]",PT10M,PT20M,Dessert,Dessert,,PT30M
+"[""2 Tbsp chopped cilantro"", ""15 oz tomato sauce"", ""1 tsp cumin"", ""1 1/2 cup water"", ""4 Tbsp ghee"", ""2 Tbsp water"", ""1 cup diced potatoes"", ""8 eggs (lightly beaten)"", ""1 1/2 Tbsp chipotle chili powder"", ""1 1/2 cup cooked, shredded pork"", ""2 Tbsp arrowroot powder"", ""1 cup grape tomatoes (quartered)"", ""2 cloves garlic (minced)"", ""Salt and pepper"", ""1/2 avocado (diced)"", ""1/2 Tbsp Mexican Hot chili powder"", ""1 cup enchilada sauce (divided)""]",PT10M,PT45M,Breakfast,Casserole,5.0,PT55M
+"[""3/4 cup Beef Broth"", ""1 can Diced Tomatoes with Juices"", ""2 tsp Parsley Paste"", ""1 bottle Pimento Stuffed Olives (brine reserved)"", ""2 Bell Peppers (sliced)"", ""2 tsp Cumin"", ""2 tsp Oregano"", ""1 Onion (sliced)"", ""1/4 cup Water"", ""2 lbs London Broil (or similar beef cut)""]",PT10M,PT480M,Main Course,,,PT490M
+"[""1 Tbsp Italian seaoning"", ""8 cloves garlic, (minced)"", ""1 onion, (diced)"", ""1 14.5oz can fire roasted diced tomatoes, (undrained)"", ""1 cup ditalini pasta"", ""Salt and pepper to taste"", ""2 bay leaves"", ""4 cups broth (chicken bone or vegetable)"", ""1 1/2 cup carrots, (sliced)"", ""1 15oz can white beans, (rinsed and drained)"", ""1 15oz can kidney beans, (rinsed and drained)"", ""1/2 lb ground beef"", ""1/2 lb ground Italian sausage"", ""2 sprigs fresh rosemary""]",PT10M,PT15M,Soup,Italian,5.0,PT25M
+"[""1/2 cup sour cream"", ""1/2 tsp garlic powder"", ""2 tsp cumin"", ""14 oz vegetable broth"", ""1/4 tsp ground red pepper"", ""1/2 cup water"", ""1/4 cup cilantro"", ""1 tsp oil"", ""4 oz diced green chiles, (divided)"", ""1 small onion, (diced)"", ""1 can pumpkin puree"", ""1/2 tsp chili powder""]",PT5M,PT20M,Soup,Soup,,PT25M
+"[""1/2 large Yellow Onion (finely chopped)"", ""1 pound Sweet Potatoes (peeled and roughly chopped)"", ""2 cups Vegetable Broth"", ""Salt"", ""1/3 cup Creamy Peanut Butter"", ""Pepper"", ""2 Cloves Garlic (minced)"", ""1 tbsp Coconut Oil or Ghee"", ""2 tsp Chili Garlic Sauce (use less for less spice)"", ""1.5 cups Water"", ""3 tbsp Chopped Peanuts"", ""2 tbsp Chopped Cilantro""]",PT10M,PT25M,Soup,Dinner,,PT35M
+"[""1/4 cup avocado oil"", ""2 Tbsp dried minced onion"", ""1/4 cup fresh lime juice"", ""2 Tbsp brown sugar"", ""1 Tbsp crushed red pepper"", ""1/3 cup soy sauce or tamari"", ""16 oz Dr Pepper"", ""2 Tbsp Worcestershire sauce"", ""3 cloves garlic (minced)"", ""4-6 boneless (skinless chicken breast)""]",PT5M,PT25M,,,,PT30M
+"[""2 tsp Water"", ""1 pouch Betty Crocker® Peanut Butter cookies"", ""Colored Sprinkles"", ""1 cup Dark Chocolate Chips"", ""1 Egg"", ""2 tbsp Vegetable Oil (+ 1 tsp)""]",PT5M,PT10M,Dessert,Dessert,,PT15M
+"[""1 Tbsp Coffee-mate Classic Vanilla liquid creamer"", ""2/3 cup blueberries"", ""2 Tbsp sugar"", ""2 tsp baking powder"", ""2 Tbsp butter (melted)"", ""1 Tbsp butter"", ""1 large egg"", ""1 cup Coffee-mate Classic Vanilla liquid creamer"", ""2 Tbsp brown sugar"", ""1 cup flour"", ""1 tsp salt""]",,,,Breakfast,,
+"[""Mini Marshmallows"", ""2 tbsp Honey"", ""2 cups Unsweetened Cashew Milk"", ""1/4 tsp Cayenne Pepper"", ""4 tbsp Cocoa Powder"", ""1/8 tsp Nutmeg"", ""1/2 tsp Vanilla Extract"", ""1 tsp Cinnamon (divided)""]",,PT5M,Drinks,,,PT5M
+"[""1/2 cup Kale (chopped)"", ""1 tsp Garlic Powder"", ""Salt and Pepper"", ""1 Bell Pepper (diced)"", ""3 links Al Fresco Chicken Sausage (sliced)"", ""8 Eggs"", ""1/2 cup Brussel Sprouts (shaved)"", ""1 cup Simply Potatoes Diced Potatoes and Onions""]",PT15M,PT35M,Breakfast,,,PT50M
+"[""1 Tbsp brown sugar"", ""2 tsp dry mustard"", ""1 can biscuits"", ""1/2 cup ketchup"", ""2 cups shredded cheese"", ""1 lb ground beef"", ""8 oz tomato sauce"", ""2 Tbsp Worcestershire sauce"", ""1/2 tsp onion powder"", ""2 cloves garlic (minced)""]",PT5M,PT40M,,Casserole,,PT45M
+"[""1 butternut or acorn squash, peeled and cut into cubes"", ""3 Tbsp olive oil"", ""1/2 Tbsp fresh rosemary, chopped"", ""1/2 tsp pepper"", ""3 stalks rosemary"", ""1 red onion, sliced"", ""1/4 cup mascarpone cheese"", ""1 French baguette, sliced"", ""1 tsp salt""]",PT0S,PT0S,,American,5.0,PT0S
+"[""1/4 cup grape tomatoes (quartered)"", ""2 Tbsp mashed avocado"", ""1 Tbsp Greek yogurt"", ""2 packages Blue Harbor Fish Co. tuna"", ""1 avocado (halved)"", ""Salt and Pepper"", ""1 tsp mustard"", ""1/4 cup shredded cheddar cheese""]",PT5M,PT5M,,Lunch,,PT10M
+"[""1/4 cup pepper jelly"", ""1 Tbsp grated ginger"", ""1/4 tsp cayenne pepper"", ""24 cocktail meatballs"", ""3 Tbsp balsamic vinegar"", ""1 1/2 Tbsp soy sauce"", ""3/4 cup raspberry preserves (seedless preferred)""]",PT5M,PT3H,Appetizers,American,4.9,PT3H5M
+"[""1 cup sun-dried tomatoes, drained, oil reserved"", ""2 cloves garlic, peeled"", ""1/4 cup fresh basil"", ""1 cup farro, uncooked"", ""1 cup frozen cut green beans"", ""1/4 crumbled feta, divided"", ""2 cups cup chicken broth"", ""Smithfield Roasted Garlic & Herb Marinated Fresh Pork Loin Filet"", ""1/2 cup Sun Dried Tomato Vinaigrette, divided""]",PT5M,PT25M,Main Dishes,American,5.0,PT30M
+"[""3/4 cup firmly packed brown sugar"", ""1 1/4 cups flour, unsifted"", ""1 tsp vanilla extract"", ""1 cup butter, softened"", ""2 eggs"", ""3 cups quick oats"", ""1/2 tsp salt"", ""1 tsp baking soda"", ""6 oz semi-sweet chocolate ships"", ""6 oz butterscotch morsels"", ""3/4 cup granulated sugar"", ""1/2 tsp cinnamon""]",PT10M,PT20M,Desserts,American,,PT1H
+"[""1 can crescent rolls"", ""3 Tbsp mayonnaise"", ""8 O Organics Air Chilled Chicken Tenderloins"", ""1 package taco seasoning"", ""1 Tbsp oil"", ""1/4 cup cotija cheese""]",PT5M,PT25M,Main Course,American,5.0,PT30M
+"[""1 red onion (sliced)"", ""1 tsp mustard seed"", ""1/2 tsp crushed red pepper"", ""1 cup white vinegar"", ""3-4 English cucumbers (sliced)"", ""1 green bell pepper (sliced)"", ""1 red bell pepper (sliced)"", ""1 tsp celery seed"", ""1 1/2 cups sugar"", ""1 Tbsp salt"", ""2-3 carrots (peeled and sliced)""]",PT10M,PT5M,,Salad,,PT45M
+"[""1 packet Carnation Breakfast Essentials in Vanilla"", ""3/4 cup skim milk"", ""1/2 cup peeled (sliced orange)"", ""1 cup pineapple chunks""]",,,,,,
+"[""3 Tbsp olive oil"", ""½ cup crumbled goat cheese"", ""1 tsp chipotle chili powder"", ""1/4 cup lemon juice"", ""1 tsp cumin"", ""4 cups grilled corn"", ""½ cup red onion (diced)"", ""¼ cup chopped cilantro"", ""½ tsp lemon zest"", ""2 cups cherry tomatoes (quartered)""]",PT5M,PT15M,Side Dish,Side Dish,,PT20M
+"[""1/4 cup White Sugar"", ""1 tsp Pumpkin Pie Spice"", ""1/2 tsp Salt"", ""1/2 tbsp Pumpkin Pie Spice"", ""1/4 cup Brown Sugar (packed)"", ""1/4 cup Pumpkin Puree"", ""1 loaf French Bread"", ""1 pint Half and Half"", ""8 Eggs (lightly beaten)"", ""2 tbsp Cold Butter (cut into small pieces)"", ""Cooking Spray"", ""1/3 cup Brown Sugar (packed)"", ""1/2 tsp Ground Nutmeg"", ""1 cup Skim Milk""]",PT20M,PT50M,Breakfast,,5.0,PT70M
+"[""1 can cream of mushroom or cream of celery soup"", ""1 cup shredded cheddar cheese"", ""Salt and pepper to taste"", ""2/3 cup sour cream"", ""1 can mixed vegetables, drained"", ""2 cans chunk light tuna, drained"", ""2 cups cooked egg noodles"", ""1 cup panko crumbs"", ""1/4 cup butter, melted""]",,,30 Minutes or Less,American,,PT0S
+"[""1 Smithfield Marinated Fresh Pork Roasted Garlic & Herb Sirloin, cubed"", ""3 Tbsp butter"", ""1 tsp salt, divided"", ""1/2 tsp black pepper, divided"", ""1/2 cup onion, diced"", ""1/3 cup grated Parmesan"", ""1 cup sliced cremini mushrooms"", ""2 cups Marsala Wine"", ""2 cups Chicken Broth"", ""2 Tbsp parsley, finely chopped"", ""2 cloves garlic, minced"", ""12 oz linguine"", ""1/4 cup heavy cream""]",PT5M,PT25M,Main Dishes,Italian,,PT30M
+"[""1 lb refrigerated Southwestern shredded potatoes"", ""1 cup chopped fresh spinach"", ""1 1/2 tsp cumin"", ""6 eggs"", ""1 cup shredded Gruyere cheese"", ""8 oz Smithfield Anytime Favorites Cubed Ham"", ""1/2 cup heavy cream"", ""Salt and Pepper to taste""]",PT10M,PT35M,,Breakfast,5.0,PT45M
+"[""1 cup sugar"", ""1 cup water"", ""4-6 stems of fresh thyme""]",PT2M,PT10M,,Ingredient,,PT27M
+"[""1 Tbsp soy sauce"", ""1/2 tsp black pepper"", ""3 tsp kosher salt"", ""2 tsp cumin"", ""2 chipotle peppers in adobo"", ""2 1/2 lb pork butt"", ""1 tsp garlic powder"", ""1 cup chicken broth"", ""2 bay leaves"", ""1/2 cup orange juice"", ""1/2 tsp oregano"", ""5 garlic cloves (minced)"", ""1 cinnamon stick""]",,,,,,
+"[""1 cup + 2 Tbsp brown sugar, divided"", ""1 large apple, cut into ¼ inch chunks (Optional: peeled...I do half and half)"", ""½ cup butterscotch chips"", ""½ cup + 1 Tbsp salted butter, divided"", ""1 tsp bourbon vanilla extract"", ""⅛ tsp salt"", ""1 large egg"", ""1 cup all-purpose flour""]",PT8M,PT45M,Desserts,American,4.3,PT53M
+"[""2 tsp Orange Zest"", ""2 cups Hungry Jack Complete Pancake Mix"", ""2/3 cup Milk"", ""1/2 cup Hungry Jack Pancake Syrup"", ""1/2 cup Fresh Cranberries"", ""2 Eggs""]",PT15M,PT15M,Breakfast,,,PT30M
+"[""1 onion, finely chopped"", ""2 tsp oil"", ""1 3/4 cup water"", ""1 cup French's fried onions"", ""1 lb lean ground beef"", ""2 cups shredded cheddar cheese"", ""2 cloves of garlic, minced"", ""1 32 oz package tater tots"", ""10 oz condensed cream of mushroom soup""]",PT5M,PT45M,Casseroles,American,5.0,PT50M
+"[""1 cup rice vinegar"", ""1 Tbsp sesame oil"", ""2 Tbsp salt"", ""1 Tbsp Sriracha"", ""3/4 cup water"", ""2 Tbsp avocado oil"", ""10 cloves garlic, (minced)"", ""1 onion, (thinly sliced)"", ""1 1/2 Tbsp five spice powder"", ""2 Tbsp brown sugar"", ""1 1/2 tsp cayenne pepper"", ""1/2 cup mayonnaise"", ""3 Tbsp minced ginger"", ""1 1/2 Tbsp sugar"", ""1/2 cup soy sauce"", ""2 jalapenos, (sliced)"", ""12 small tortillas"", ""2 lb pork shoulder"", ""1/4 cup rice vinegar"", ""2 cups shredded daikon radish"", ""1 cup shredded carrots"", ""1 1/2 Tbsp salt"", ""1 cup white vinegar"", ""1 small cucumber, (thinly sliced into half moons)"", ""1/2 Tbsp black pepper""]",PT15M,PT180M,Main Course,Vietnamese,5.0,PT195M
+"[""4 Tbsp butter, (melted)"", ""6 slices bacon, (cooked and crumbled)"", ""6 pieces Canadian bacon, (chopped)"", ""1 cup shredded Swiss cheese"", ""1 16 oz can homestyle biscuits, (not the flaky version)"", ""6 large eggs, (scrambled and cooled)""]",PT5M,PT40M,Breakfast,American,5.0,PT45M
+"[""6 Tbsp water"", ""3/4 cup sugar"", ""1 cup dark chocolate chips"", ""1/2 tsp vanilla extract"", ""1/3 cup light corn syrup"", ""3/4 cup powdered sugar"", ""2 1/2 tsp gelatin powder""]",PT20M,PT25M,,,,PT60M
+"[""1 gallon heavily iced water"", ""1 cup kosher salt"", ""2 tsp whole allspice berries"", ""14-16 lb thawed turkey"", ""1 gallon vegetable broth"", ""1 1/2 tsp candied ginger (chopped)"", ""2 Tbsp whole black peppercorns"", ""1/2 cup light brown sugar""]",,,Main Course,,5.0,
+"[""3 Tbsp Bailey's Irish Cream {1 airplane sized bottle}"", ""1 stick of unsalted butter (room temperature)"", ""2/3 cup heavy cream"", ""2 tsp whiskey"", ""1 1/4 cup Guinness beer"", ""3 eggs"", ""2 Tbsp butter"", ""1 box chocolate cake mix"", ""2 1/2 - 3 cups of confectioner's sugar"", ""8 oz bittersweet chocolate"", ""1/2 cup vegetable oil""]",,,,,,
+"[""24 Tater Tots (thawed)"", ""12 Bamboo Skewers"", ""1 Green pepper (cut into chunks)"", ""1 package Smithfield Hometown Original Fresh Breakfast Sausage links""]",PT10M,PT20M,,Main Dish,5.0,PT30M
+"[""4 garlic cloves, peeled and thinly slices"", ""1-2 bay leaves"", ""1 cup pitted brined green olives"", ""1 cup pitted brined black olives"", ""1 Thsp fresh rosemary"", ""Pinch of crushed red pepper flakes"", ""3 Tbsp orange zest"", ""1/2 cup extra-virgin olive oil"", ""3 Tbsp lemon zest""]",PT5M,PT10M,holidays,American,5.0,PT15M
+"[""2 Tbsp paleo sour cream"", ""Zest of 1 lemon"", ""1 1/2 tsp fresh rosemary, finely chopped"", ""1-2 Tbsp olive oil"", ""1/4 tsp crushed red pepper"", ""3 tsp garlic paste"", ""1 lb ground chicken"", ""1 tsp salt""]",PT5M,PT20M,Main Dishes,American,,PT25M
+"[""1 1/2 cup cooked Jasmine rice"", ""1 pouch Campbell's Thai green curry sauce"", ""6 to rtillas"", ""1 onion (sliced)"", ""1 red bell pepper (seeded and sliced)"", ""Green onions {optional}"", ""1 Tbsp oil"", ""1 lb chicken breast (cut into strips)""]",,,,,,
+"[""4 oz lightly sweetened iced coffee"", ""1 oz Fireball whiskey (optional)"", ""2 oz Rumchata"", ""Ice (see note)""]",PT5M,,,Drink,5.0,PT5M
+"[""1 box Red Velvet Cake Mix"", ""2 Eggs"", ""1 cup Butter (softened)"", ""3 cups Powdered Sugar"", ""Red &amp; Green M&amp;Ms"", ""1/3 cup Vegetable Oil"", ""3 tbsp Milk""]",PT15M,PT10M,Dessert,Dessert,,PT25M
+"[""2-3 tbsp Milk"", ""2 large Eggs"", ""1 box Devil's Food Cake Mix"", ""1 tsp Vanilla Extract"", ""1 cup Powdered Sugar"", ""3 Candy Canes (crushed)"", ""1/4 cup Sugar"", ""1/3 cup Vegetable Oil"", ""1/2 cup Peppermint Chocolate Chips"", ""1/4 tsp Peppermint Extract""]",PT20M,PT10M,Dessert,Dessert,,PT30M
+"[""Almond Bark (white or milk chocolate)"", ""8 oz Cream Cheese (room temperature)"", ""Peppermint Crunch Pieces"", ""1 package Peppermint Oreos""]",PT15M,PT5M,Dessert,,,PT20M
+"[""2 tsp grapeseed oil"", ""3 Tbsp brown sugar"", ""1/2 cup tamari"", ""2 eggs"", ""scallions"", ""1 cup peas and carrots"", ""2 tsp grated fresh ginger"", ""2 cups cooked quinoa"", ""1 cup diced ham""]",,,,,,
+"[""6 Hershey chocolate bars"", ""1 can refrigerated pizza crust"", ""6 graham crackers, crushed into crumbs {optional}"", ""1 bag of marshmallows""]",PT5M,PT15M,Cooking,American,4.0,PT20M
+"[""1 sheet dried seaweed (crumbled)"", ""1 Tbsp sesame seeds"", ""4 oz snow crab or lump crab"", ""1 1/2 Tbsp rice vinegar"", ""1 Tbsp mayo"", ""1 tsp Sriracha"", ""3 tsp black pepper"", ""1 avocado (sliced)"", ""4 oz tuna (diced)"", ""2 cups cooked sushi rice {I use brown}""]",,,,,,
+"[""Blueberries and Strawberries for garnish"", ""2 1/2 cups sugar"", ""1 box yellow cake mix"", ""3 eggs"", ""1 cup water"", ""1/2 cup water"", ""1/3 cup vegetable oil"", ""8 oz fresh strawberries (diced)"", ""1 large container of Cool Whip"", ""8 oz fresh blueberries""]",PT10M,PT45M,,,,PT55M
+"[""1 orange"", ""2 tsp sesame oil"", ""3 Tbsp molasses"", ""1/2 tsp pepper"", ""1/3 cup cornstarch"", ""2 tsp grated ginger"", ""1/2 tsp crushed red pepper"", ""1 Tbsp rice vinegar"", ""3 cloves garlic (minced)"", ""1/2 tsp salt"", ""1 1/2 lbs stir fry beef"", ""3 Tbsp cornstarch (divided)"", ""4 cups peanut or canola oil""]",PT10M,PT15M,Main Course,Chinese,5.0,PT25M
+"[""1 scoop pink grapefruit sorbet"", ""1 Tbsp pink sprinkles"", ""6 oz Champagne or sparkling wine""]",PT5M,,,Cocktail,,PT5M
+"[""5 cloves garlic (minced)"", ""5 Tbsp butter"", ""1/2 tsp crushed red pepper"", ""1 box angel hair or spaghetti"", ""2 tsp lemon zest"", ""1 tsp Italian seasoning"", ""1/3 cup grated Parmesan"", ""2 tsp lemon juice"", ""Salt and pepper"", ""2 Tbsp olive oil"", ""2 cups baby spinach (torn)""]",PT5M,PT15M,Main Course,Pasta,5.0,PT20M
+"[""1/2 cup Sugar"", ""8 oz Cream Cheese (softened)"", ""1/2 tsp Salt"", ""1/2 cup Butter (softened)"", ""3/4 cup Butter (softened)"", ""1/2 cup Raisins"", ""2 tbsp Milk"", ""2 Eggs"", ""1 cup Carrots (finely chopped)"", ""2.5 cups Powdered Sugar"", ""1/2 tsp Baking Powder"", ""1/2 cup White Chocolate Chips"", ""1.5 cup Oats"", ""3/4 cup Brown Sugar"", ""1.75 cup Flour"", ""1 tsp Baking Soda""]",PT20M,PT25M,Dessert,,,PT45M
+"[""1/4 cup chopped shallots"", ""3 Tbsp butter"", ""1/2 tsp pepper"", ""1/2 cup sour cream"", ""2 cups shredded Swiss cheese (divided)"", ""3 Tbsp flour"", ""2 1/2 cups chopped cabbage"", ""1 tsp mustard"", ""2 cloves garlic (minced)"", ""2 cups cooked brown rice"", ""2 1/2 cups milk"", ""2 cups cooked corned beef (chopped)"", ""1 tsp salt""]",PT15M,PT35M,,Casserole,,PT50M
+"[""2 cups cooked chicken breast (chopped)"", ""1/4 cup diced dried apricots"", ""2 tsp dried tarragon"", ""3 Tbsp plain Greek yogurt"", ""3 Tbsp diced onion"", ""2 tsp yellow mustard"", ""1 Tbsp mayonnaise""]",PT15M,,,Sandwich,,PT15M
+"[""4 cups cubed everything Italian bread"", ""2 cups milk"", ""1/2 tsp salt"", ""2 cups shredded cheddar cheese"", ""5 slices bacon (cooked and crumbled)"", ""1 cup diced ham"", ""6 large eggs"", ""1/2 lb breakfast sausage (cooked and crumbled)""]",PT15M,,,Casserole,,PT15M
+"[""1 cup fresh salsa"", ""1/2 bell pepper, diced"", ""1 1/2 cup shredded cheese"", ""2 tsp cumin"", ""1 can Mexicorn"", ""2/3 cup water"", ""1 can black beans, rinsed and drained"", ""2 Tbsp taco seasoning"", ""2 Tbsp diced green chiles"", ""1 lb ground beef"", ""16 oz shell pasta"", ""1/3 cup sour cream""]",PT5M,PT25M,Pasta,Mexican,,PT30M
+"[""1 tsp Worcestershire Paste"", ""1 tsp Oregano"", ""2 tbsp Butter"", ""1 tbsp Flour"", ""3/4 lb Potatoes (peeled and cut into 1-inch pieces)"", ""1 lb Ground Beef"", ""1 cup Frozen Peas and Carrots (thawed)"", ""1 cup Onion (diced)"", ""1 tsp Rosemary"", ""3 tbsp Tomato Paste"", ""1 tbsp Olive Oil"", ""1 tsp Thyme"", ""2 Refrigerated Pie Crusts"", ""1/4 cup Water"", ""1 clove Garlic (minced)"", ""1/4 cup Milk"", ""Salt and Pepper to taste""]",PT10M,PT50M,Appetizer,,,PT60M
+"[""1/2 cup Buttermilk"", ""1 cup Sugar"", ""1.25 cup Muesli (divided)"", ""1 stick Butter (softened)"", ""1 tsp Salt"", ""2 Eggs"", ""1 tsp Vanilla Extract"", ""2 cups Flour"", ""3 tsp Cinnamon"", ""1 tsp Baking Powder""]",PT15M,PT30M,Breakfast,,,PT45M
+"[""1 sheet puff pastry, thawed"", ""12 links breakfast sausage"", ""1/4 cup water"", ""1 cup Log Cabin® Original Syrup""]",PT5M,PT20M,Breakfast,American,5.0,PT25M
+"[""1/3 cup brussels sprouts (sliced thinly)"", ""1/2 tsp pepper"", ""1/3 cup mushrooms (sliced thinly)"", ""2 Tbsp roasted red peppers (diced)"", ""1 Tbsp low fat cream cheese"", ""4 slices Multi-Grain bread"", ""1/3 cup asparagus (cut in 1 inch pieces)"", ""1 Tbsp low fat mayonnaise"", ""1/3 cup fresh spinach leaves"", ""2 oz goat cheese"", ""1 Tbsp olive oil"", ""1/2 tsp salt"", ""butter""]",PT10M,PT30M,,Sandwich,5.0,PT40M
+"[""3/4 lb Corned Beef (shaved or thinly sliced)"", ""2 tbsp Melted Butter"", ""8 slices Swiss Cheese"", ""1/2 cup Sauerkraut"", ""1/2 cup Thousand Island Dressing"", ""1 pack Slider Buns""]",PT5M,PT20M,Appetizer,,,PT25M
+"[""20 oz Bottle of Coke"", ""Sliced Fruit"", ""1 bottle Rioja""]",PT5M,,Drinks,Cocktail,,
+"[""2 cups powdered sugar"", ""1 Tbsp caramel syrup"", ""1-2 Tbsp apple cider"", ""1 can refrigerated biscuits"", ""Toffee Bits"", ""Cinnamon Sugar"", ""2 cups vegetable oil""]",PT5M,PT15M,,,,PT20M
+"[""3 Peaches (2-3, sliced)"", ""10 Basil Slices (8-10)"", ""1 roll Crescent rolls"", ""1/2 wheel Brie""]",PT10M,PT15M,Appetizer,,,PT25M
+"[""1/4 cup finely diced carrots"", ""1 tsp onion powder"", ""1 red bell pepper, finely diced"", ""1/2 tsp coriander"", ""1 1/2 Tbsp gyro seasoning"", ""1 lb ground beef"", ""1/2 tsp salt"", ""1 Tbsp avocado oil"", ""1 tsp garlic powder"", ""1/2 cup finely diced zucchini"", ""1 tsp turmeric""]",PT5M,PT20M,30 Minutes or Less,American,,PT30M
+"[""2 cups shredded mozzarella cheese, divided"", ""1/3 cup sliced olives"", ""1 thin pizza crust"", ""2 hard-boiled eggs, sliced"", ""1/2 cup chunky pizza sauce"", ""1/2 onion, thinly sliced"", ""2/3 cup diced ham""]",PT5M,PT10M,Main Dishes,Brazilian,4.5,PT15M
+"[""1 tbsp Ghee"", ""1 Bell Pepper (diced)"", ""3 slices Bacon (cut into 1-inch pieces)"", ""2 cans Rotel Diced Tomatoes (1 drained and 1 undrained)"", ""2 cloves Garlic (minced)"", ""3 lbs Boneless Short Ribs (cubed)"", ""1 can Dark Red Kidney Beans (drained)"", ""1.5 tbsp Cumin"", ""1 tbsp Chili Powder"", ""1 Onion (sliced)"", ""2 Jalapenos (minced)"", ""1 cup Pumpkin Puree"", ""3/4 cup Chicken Stock""]",PT10M,PT600M,Main Course,Dinner,,PT610M
+"[""1 refrigerated pizza crust"", ""1 lb spicy ground Italian sausage"", ""1/4 cup shredded cheddar cheese"", ""8 oz cream cheese; softened""]",PT15M,PT25M,,Appetizer,5.0,PT50M
+"[""1 cup shredded Mozzarella cheese"", ""2-3 zucchini"", ""1 1/2 cups pasta sauce"", ""1/2 cup shredded Parmesan cheese"", ""1 tsp Italian seasoning"", ""1 Tbsp oil"", ""2 cloves garlic, minced"", ""1 lb ground chicken"", ""1 onion, diced""]",PT10M,PT20M,Main Dishes,Italian,,PT30M
+"[""1 can fire roasted tomatoes (drained)"", ""1/2 red onion (thinly sliced)"", ""1/4 cup cashews (chopped)"", ""1/4 tsp chili powder"", ""1 cup canned mango (drained)"", ""1 can navy beans (drained and rinsed)"", ""1 1/2 cups cooked jasmine rice"", ""3 Tbsp chopped cilantro"", ""1 can coconut milk"", ""1 1/2 Tbsp curry powder"", ""1 Tbsp oil"", ""1 can chunk white meat chicken"", ""1/4 tsp salt""]",PT5M,PT20M,Main Course,Indian,5.0,PT25M
+"[""1 cup shredded cheddar cheese"", ""8 oz cream cheese (softened)"", ""16 oz elbow pasta"", ""1 cup pumpkin puree"", ""1/4 cup sour cream"", ""14 oz spaghetti sauce"", ""8 oz small curd cottage cheese"", ""1 lb ground turkey""]",,,,,,
+"[""3 cups Water"", ""750 ml Bottle of Moscato"", ""1 cup Sugar"", ""2 tsp Citric Acid""]",PT5M,,Drinks,Cocktail,,PT5M
+"[""Rosemary Sprigs"", ""1 granny smith apple, chopped"", ""3/4 cup apple cider"", ""1 honeycrisp or gala apple, chopped"", ""1 bottle sparkling wine or prosecco"", ""2 bottles Sauvignon Blanc or other dry white wine"", ""1/2 cup cranberries""]",PT5M,PT0S,Drinks,American,4.6,PT1H5M
+"[""1 Tbsp sugar"", ""1 Tbsp sesame oil"", ""2 tuna steaks"", ""1/4 cup lemon juice"", ""2 Tbsp soy sauce"", ""Pepper"", ""2 cups brown rice (cooked)"", ""1 tsp grated fresh ginger"", ""2 carrots (finely chopped)"", ""1 red bell pepper (finely chopped)"", ""1 cup edamame"", ""1 tsp Sriracha"", ""1/4 cup orange juice {I use Trop 50 for less calories}"", ""1/4 cup cilantro (chopped)"", ""2 cloves garlic (minced)"", ""Salt""]",,,,,,
+"[""1/2 cup Kahlua"", ""1 box Cake Mix"", ""1/3 cup Milk"", ""3/4 cup Water"", ""1/4 cup Unsweetened Cocoa"", ""2 tbsp Espresso Powder"", ""3 Eggs"", ""1 tsp Vanilla Extract"", ""3 cups Powdered Sugar"", ""1 cup Sweetened Condensed Milk"", ""1/2 cup Butter"", ""1/2 cup Vegetable Oil""]",PT15M,PT45M,Dessert,,,PT60M
+"[""2 cups quick cooking rice"", ""lemon slices for garnish"", ""2 cups cooked chicken breast (cubed)"", ""1/4 cup lemon juice"", ""1 onion (diced)"", ""6 cups chicken broth"", ""3 stalks celery (sliced)"", ""1 Tbsp oregano"", ""1 Tbsp butter"", ""2 cloves garlic (minced)"", ""Salt and pepper"", ""4 carrots (peeled and sliced)""]",PT15M,PT30M,,,,PT45M
+"[""2 sticks butter, melted"", ""1 cup graham cracker crumbs"", ""1 cup chocolate graham cracker crumbs"", ""2 Tbsp peanut butter, melted"", ""1/2 cup creamy peanut butter, melted"", ""1 cup mini chocolate chips"", ""1 cup mini peanut butter cups"", ""1/4 cup sugar"", ""1/2 cup sweetened condensed milk""]",PT10M,PT25M,Desserts,American,,PT35M
+"[""1 cup Apple Cider"", ""1 cup Sugar"", ""4 oz Gin"", ""2 Cinnamon Sticks"", ""1 oz Apple Cider Syrup""]",PT5M,PT20M,Drinks,Drink,,PT25M
+"[""1 Tbsp maple syrup"", ""1 1/4 cup brown sugar"", ""1 tsp cayenne pepper"", ""1 wheel brie"", ""1 lb bacon"", ""1 Tbsp white vinegar""]",PT10M,PT40M,,Appetizer,2.0,PT50M
+"[""4 Tbsp mayonnaise"", ""2 Tbsp chopped parsley"", ""8 large mushroom caps"", ""1/2 tsp sea salt"", ""3 Tbsp shredded Parmesan"", ""1 head of garlic"", ""3 Tbsp shredded white cheddar"", ""2 Tbsp olive oil""]",PT10M,PT60M,,Appetizer,5.0,PT70M
+"[""4 tbsp White Rum"", ""1/2 cup Sugar"", ""1/2 tsp Salt"", ""1/4 cup Eggnog"", ""1/2 tsp Nutmeg"", ""1/4 cup Butter (softened)"", ""4 tsp Baking Powder"", ""1/4 tsp Nutmeg"", ""1.5 cup Eggnog"", ""1 tsp Vanilla Extract"", ""1/2 tsp Baking Soda"", ""1 cup Powdered Sugar"", ""2 cups Flour"", ""2 Eggs"", ""1/2 tsp Vanilla Extract""]",PT15M,PT10M,Dessert,,,PT25M
+"[""1 cup Sugar"", ""1 bottle Sparkling Wine"", ""3 sprigs Fresh Rosemary"", ""Pomegranate Arils For Garnish"", ""1 cup Pomegranate Juice""]",PT5M,PT20M,Drinks,Cocktail,,PT25M
+"[""2 large Eggs"", ""1 tsp Baking soda"", ""1.5 cups Dark Chocolate Chips"", ""1 tsp Salt"", ""1.5 tbsp Water"", ""2/3 cup Sugar"", ""2/3 cup Dried Cherries (coarsely chopped)"", ""1 cup Butter (softened)"", ""1 tsp Vanilla Extract"", ""1 cup Powdered Sugar"", ""2 cups All Purpose Flour"", ""2/3 cup Brown Sugar"", ""3/4 cup Unsweetened Cocoa Powder"", ""2/3 cup Walnuts (coarsely chopped)""]",PT20M,PT11M,Dessert,,,PT31M
+"[""3 Tbsp garlic paste, divided"", ""5 Tbsp butter"", ""2 Tbsp chopped fresh parsley"", ""2 Tbsp panko crumbs"", ""1/2 tsp salt"", ""3/4 lb ground chicken"", ""1/2 cup shredded gruyere"", ""1/4 tsp pepper"", ""1/4 lb ground pork"", ""2 Tbsp chopped fresh oregano""]",PT10M,PT15M,Main Dishes,American,,PT25M
+"[""1/2 tsp Salt"", ""1/2 cup Butternut Squash Puree"", ""1.25 cups Chocolate Milk"", ""2 tbsp Cocoa"", ""1 tbsp Honey""]",PT5M,,Drinks,,,
+"[""Square Pretzels"", ""1 cup Pink Candy Melts"", ""Pecan Halves""]",PT5M,PT1M,Snack,,,PT6M
+"[""6 mint leaves"", ""Ice (optional)"", ""2 cups mixed berries, frozen (I used raspberries, blackberries and blueberries)"", ""2 cups raspberry lemonade"", ""1 bottle Prosecco"", ""1/2 cup water"", ""1/3 cup vodka"", ""1/2 cup sugar""]",PT0S,PT0S,Recipes,,,PT0S
+"[""1 2-3lb pork tenderloin"", ""1/2 onion, diced"", ""1 tsp dried basil"", ""1 Tbsp butter"", ""1 cup white wine"", ""3 cloves garlic, minced"", ""Salt and pepper"", ""1/2 cup heavy cream""]",PT5M,PT45M,Main Dishes,American,,PT50M
+"[""3/4 cup SPLENDA® No Calorie Sweetener"", ""3 tbsp Butter (melted)"", ""2.5 tsp Grated Lemon Peel"", ""6 large Egg Yolks"", ""1 stick Butter (cut into pieces)"", ""1 tbsp SPLENDA® No Calorie Sweetener"", ""3 cups Cranberries"", ""1/2 cup Fresh Lemon Juice"", ""1/2 tsp Cornstarch"", ""30 Ginger Thin Cookies"", ""1/3 cup Water"", ""2/3 cup SPLENDA® No Calorie Sweetener"", ""1.5 tsp Cornstarch"", ""3 tbsp Raw Honey""]",PT15M,PT30M,Dessert,Dessert,,PT45M
+"[""1/3 cup Greek yogurt"", ""6 slices bacon (cooked and crumbled)"", ""12 oz shell pasta"", ""2/3 cup frozen peas"", ""16 oz sour cream"", ""1 pkg ranch dressing mix"", ""2/3 cup shredded carrots"", ""1 Tbsp salt"", ""1/4 tsp pepper"", ""1/4 tsp salt""]",PT5M,PT15M,Side Dish,Side Dish,5.0,PT20M
+"[""4 tbsp Simple syrup"", ""6 oz Limoncello"", ""4 oz Half and Half*"", ""6 oz Vanilla flavored rum"", ""Whipped cream of choice* ((I made my own vanilla infused cream- see note below))"", ""Lemon slice (for garnish)"", ""1/2 Lemon (juiced)"", ""Graham cracker crumbs (for garnish)""]",PT5M,,Drinks,,,
+"[""4 slices bacon (cooked and crumbled)"", ""3/4 cup shredded Wellsley Farms cheddar cheese"", ""1 packet ranch seasoning"", ""48 oz container of Wellsley Farms red bliss potato salad""]",PT10M,PT5M,"[""side"", ""Side Dish""]",Salad,,PT15M
+"[""2 tsp Fresh Ginger (ground)"", ""1 cup Coconut Milk"", ""15 oz Crushed Pineapple (1 can)"", ""2 tsp Cayenne Pepper (divided (I like mine spicy so feel free to dial this back))"", ""2 cloves Garlic (minced)"", ""2 cups Shredded Coconut (roughly chopped)"", ""2 lbs Ground Pork"", ""2 Eggs (lightly beaten)"", ""2 small Jalapeños (minced)""]",PT10M,PT20M,Appetizer,,5.0,PT30M
+"[""1/4 cup plain (nonfat yogurt)"", ""1/2 cup quatered cherry tomatoes {optional}"", ""1/4 cup basil walnut pesto"", ""1/2 cup Greek yogurt"", ""2 1/2 cups cooked (chopped chicken breast)"", ""1 small red onion (finely diced)""]",,,,,,
+"[""2 Tbsp whiskey"", ""1/3 cup water"", ""1 cup strong coffee"", ""1/2 tsp coffee"", ""Vegetable oil or butter per package"", ""1/2 cup brown sugar"", ""3 eggs"", ""1 1/8 cup strong coffee"", ""1 box chocolate cake mix"", ""8 oz cream cheese (softened)"", ""1 tsp vanilla"", ""2 cups heavy cream"", ""1/2 cup white sugar"", ""1/2 cup sugar""]",PT20M,PT55M,Dessert,,,PT75M

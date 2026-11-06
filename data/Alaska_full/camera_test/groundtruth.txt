@@ -1,0 +1,248 @@
+Cluster 1:
+  cammarkt.com.csv.focus type
+  www.alibaba.com.csv.focus control
+  www.eglobalcentral.co.uk.csv.focus type
+
+Cluster 2:
+  www.cambuy.com.au.csv.af assist beam
+  www.ilgs.net.csv.auto focus af assist beam
+
+Cluster 3:
+  www.cambuy.com.au.csv.af modes
+  www.ilgs.net.csv.auto focusing af modes
+
+Cluster 4:
+  www.alibaba.com.csv.focus point
+  www.cambuy.com.au.csv.afarea mode
+  www.ilgs.net.csv.auto focus af points
+  www.mypriceindia.com.csv.other focus features
+
+Cluster 5:
+  www.ilgs.net.csv.auto focus af points selection
+
+Cluster 6:
+  www.cambuy.com.au.csv.autofocus af
+
+Cluster 7:
+  www.ilgs.net.csv.battery technology
+  www.walmart.com.csv.battery type
+
+Cluster 8:
+  www.ilgs.net.csv.battery life max
+
+Cluster 9:
+  cammarkt.com.csv.battery life
+  www.cambuy.com.au.csv.battery life
+  www.ilgs.net.csv.battery life cipa standard
+
+Cluster 10:
+  cammarkt.com.csv.brand
+  www.ilgs.net.csv.manufacturer
+  www.ukdigitalcameras.co.uk.csv.brand
+
+Cluster 11:
+  www.ilgs.net.csv.depth
+
+Cluster 12:
+  www.ilgs.net.csv.height
+
+Cluster 13:
+  cammarkt.com.csv.camera type
+  www.cambuy.com.au.csv.camera type
+  www.ilgs.net.csv.camera type
+
+Cluster 14:
+  cammarkt.com.csv.width
+  www.ilgs.net.csv.width
+
+Cluster 15:
+  cammarkt.com.csv.color
+  www.ilgs.net.csv.colour of product
+  www.ukdigitalcameras.co.uk.csv.colour
+  www.walmart.com.csv.primary color
+
+Cluster 16:
+  www.cambuy.com.au.csv.colour filter type
+  www.mypriceindia.com.csv.color filter
+
+Cluster 17:
+  www.cambuy.com.au.csv.exposure compensation
+  www.ilgs.net.csv.light exposure correction
+
+Cluster 18:
+  www.cambuy.com.au.csv.exposure mode
+  www.ilgs.net.csv.light exposure modes
+
+Cluster 19:
+  cammarkt.com.csv.memory type
+  www.eglobalcentral.co.uk.csv.storage type
+  www.ilgs.net.csv.compatible memory cards
+  www.mypriceindia.com.csv.memory card type
+
+Cluster 20:
+  www.cambuy.com.au.csv.file system
+
+Cluster 21:
+  www.ilgs.net.csv.maximum focal length 35mm film equiv
+
+Cluster 22:
+  www.eglobalcentral.co.uk.csv.focal length
+  www.ilgs.net.csv.minimum focal length 35mm film equiv
+
+Cluster 23:
+  www.cambuy.com.au.csv.still image type
+  www.ilgs.net.csv.image formats supported
+  www.mypriceindia.com.csv.image format
+
+Cluster 24:
+  cammarkt.com.csv.resolution
+  www.cambuy.com.au.csv.effective pixels
+  www.eglobalcentral.co.uk.csv.effective pixels
+  www.ilgs.net.csv.megapixel
+  www.mypriceindia.com.csv.camera resolution
+  www.ukdigitalcameras.co.uk.csv.camera resolution
+  www.walmart.com.csv.resolution megapixels
+
+Cluster 25:
+  cammarkt.com.csv.image resolutions
+  www.alibaba.com.csv.max image resolution
+  www.eglobalcentral.co.uk.csv.max resolution
+  www.ilgs.net.csv.still image resolutions
+  www.mypriceindia.com.csv.max resolution
+
+Cluster 26:
+  www.ilgs.net.csv.internal memory
+
+Cluster 27:
+  cammarkt.com.csv.light sensitivity max
+  www.ilgs.net.csv.iso sensitivity max
+
+Cluster 28:
+  cammarkt.com.csv.iso speeds
+  www.ilgs.net.csv.iso sensitivity min
+
+Cluster 29:
+  www.alibaba.com.csv.lens mount
+  www.cambuy.com.au.csv.lens mount
+  www.eglobalcentral.co.uk.csv.lens mount
+  www.ilgs.net.csv.lens mount interface
+  www.mypriceindia.com.csv.lens type
+  www.walmart.com.csv.lens system mounting
+
+Cluster 30:
+  cammarkt.com.csv.builtin microphone
+  www.cambuy.com.au.csv.audio recording device
+  www.eglobalcentral.co.uk.csv.microphone
+  www.ilgs.net.csv.builtin microphone
+  www.mypriceindia.com.csv.microphone
+
+Cluster 31:
+  www.mypriceindia.com.csv.picture angle
+
+Cluster 32:
+  www.alibaba.com.csv.picture control system
+  www.cambuy.com.au.csv.picture control system
+  www.ilgs.net.csv.photo effects
+
+Cluster 33:
+  www.cambuy.com.au.csv.redeye reduction
+  www.mypriceindia.com.csv.red eye reduction
+
+Cluster 34:
+  cammarkt.com.csv.lcd screen size
+  www.cambuy.com.au.csv.monitor size
+  www.eglobalcentral.co.uk.csv.lcd screen size inch
+  www.ilgs.net.csv.lcd screen size
+  www.ukdigitalcameras.co.uk.csv.lcd size
+  www.walmart.com.csv.lcd screen size
+
+Cluster 35:
+  cammarkt.com.csv.display type
+  www.ilgs.net.csv.display
+
+Cluster 36:
+  cammarkt.com.csv.self timer
+  www.cambuy.com.au.csv.selftimer
+  www.ilgs.net.csv.selftimer
+  www.mypriceindia.com.csv.self timer
+  www.walmart.com.csv.self timer delay
+
+Cluster 37:
+  www.cambuy.com.au.csv.image sensor size
+  www.ilgs.net.csv.image sensor size
+  www.mypriceindia.com.csv.sensor size
+
+Cluster 38:
+  cammarkt.com.csv.image sensor type
+  www.ilgs.net.csv.sensor type
+  www.mypriceindia.com.csv.sensor type
+
+Cluster 39:
+  www.mypriceindia.com.csv.maximum shutter speed
+
+Cluster 40:
+  www.mypriceindia.com.csv.minimum shutter speed
+
+Cluster 41:
+  www.cambuy.com.au.csv.shutter
+  www.ilgs.net.csv.camera shutter type
+
+Cluster 42:
+  www.cambuy.com.au.csv.aspect ratio
+  www.eglobalcentral.co.uk.csv.aspect ratio
+  www.ilgs.net.csv.supported aspect ratios
+  www.mypriceindia.com.csv.image ratio wh
+
+Cluster 43:
+  www.cambuy.com.au.csv.audio recording format
+  www.ilgs.net.csv.audio formats supported
+  www.mypriceindia.com.csv.audio formats
+
+Cluster 44:
+  www.cambuy.com.au.csv.supported languages
+  www.ilgs.net.csv.languages support
+
+Cluster 45:
+  www.ilgs.net.csv.video formats supported
+  www.mypriceindia.com.csv.video format
+
+Cluster 46:
+  cammarkt.com.csv.hd recording format
+  www.alibaba.com.csv.frame rate
+  www.cambuy.com.au.csv.1280 x 720 hd
+  www.eglobalcentral.co.uk.csv.resolution
+  www.ilgs.net.csv.maximum video resolution
+  www.mypriceindia.com.csv.video resolution
+
+Cluster 47:
+  cammarkt.com.csv.warranty
+  www.alibaba.com.csv.warranty time
+  www.ilgs.net.csv.warranty
+
+Cluster 48:
+  cammarkt.com.csv.white balance
+  www.alibaba.com.csv.white balance
+  www.cambuy.com.au.csv.white balance
+  www.ilgs.net.csv.white balance
+  www.mypriceindia.com.csv.white balancing
+
+Cluster 49:
+  www.cambuy.com.au.csv.humidity
+  www.ilgs.net.csv.operating relative humidity hh
+
+Cluster 50:
+  cammarkt.com.csv.digital zoom
+  www.cambuy.com.au.csv.digital zoom
+  www.ilgs.net.csv.digital zoom
+  www.mypriceindia.com.csv.digital zoom
+  www.walmart.com.csv.digital zoom
+
+Cluster 51:
+  cammarkt.com.csv.optical zoom
+  www.cambuy.com.au.csv.optical zoom
+  www.eglobalcentral.co.uk.csv.optical zoom
+  www.ilgs.net.csv.optical zoom
+  www.mypriceindia.com.csv.optical zoom
+  www.ukdigitalcameras.co.uk.csv.optical zoom
+  www.walmart.com.csv.optical zoom
+

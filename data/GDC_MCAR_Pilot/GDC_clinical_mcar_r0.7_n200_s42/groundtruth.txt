@@ -1,0 +1,169 @@
+Cluster 1:
+  Cao.csv.additional_pathologic_findings
+
+Cluster 2:
+  Cao.csv.alcohol_consumption
+
+Cluster 3:
+  Vasaikar.csv.Subsite
+
+Cluster 4:
+  Cao.csv.bmi
+  Clark.csv.BMI
+  Dou.csv.BMI
+  Gillette.csv.BMI
+  Wang.csv.bmi
+
+Cluster 5:
+  Cao.csv.cause_of_death
+  Wang.csv.cause_of_death
+
+Cluster 6:
+  Huang.csv.num_smoke_per_day
+  Satpathy.csv.Cigarettes.per.Day
+
+Cluster 7:
+  Gillette.csv.Country.of.Origin
+
+Cluster 8:
+  Wang.csv.path_diag_to_death_days
+
+Cluster 9:
+  Cao.csv.follow_up_days
+
+Cluster 10:
+  Wang.csv.path_diag_to_last_contact_days
+
+Cluster 11:
+  Gillette.csv.Secondhand.Smoke
+
+Cluster 12:
+  McDermott.csv.Ethnicity
+  Wang.csv.ethnicity_self_identify
+
+Cluster 13:
+  Dou.csv.FIGO_stage
+  McDermott.csv.Tumor Stage (Pathological) Ovary FIGO Staging System
+
+Cluster 14:
+  Cao.csv.sex
+  Clark.csv.Gender
+  Dou.csv.Gender
+  Gillette.csv.Gender
+  Huang.csv.gender
+  Krug.csv.Gender
+  McDermott.csv.Gender
+  Satpathy.csv.Gender
+  Vasaikar.csv.Gender
+  Wang.csv.gender
+
+Cluster 15:
+  Gillette.csv.Height.cm
+  Wang.csv.height
+
+Cluster 16:
+  Vasaikar.csv.Tumor.Status
+
+Cluster 17:
+  Cao.csv.is_this_patient_lost_to_follow_up
+  Wang.csv.lost_to_follow_up
+
+Cluster 18:
+  Cao.csv.number_of_lymph_nodes_positive_for_tumor
+
+Cluster 19:
+  Cao.csv.number_of_lymph_nodes_examined
+
+Cluster 20:
+  Vasaikar.csv.Lymphatic_Invasion
+
+Cluster 21:
+  McDermott.csv.Method of Initial Pathologic Diagnosis
+
+Cluster 22:
+  Vasaikar.csv.MSmutectFishercall
+
+Cluster 23:
+  Cao.csv.tumor_necrosis
+  Huang.csv.tumor_necrosis
+
+Cluster 24:
+  Satpathy.csv.Pack.Years.Smoked
+
+Cluster 25:
+  Cao.csv.Inflammation_fraction
+
+Cluster 26:
+  Cao.csv.Stromal_fraction
+
+Cluster 27:
+  Cao.csv.perineural_invasion
+  Vasaikar.csv.Perineural_Invasion
+
+Cluster 28:
+  Cao.csv.histology_diagnosis
+  Clark.csv.Histologic_Type
+  Dou.csv.Histologic_type
+  Huang.csv.histologic_type
+
+Cluster 29:
+  McDermott.csv.History of Other Malignancy?
+
+Cluster 30:
+  Wang.csv.tumor_reoccur_after_treatment
+
+Cluster 31:
+  Clark.csv.Race
+  Gillette.csv.Region.of.Origin
+  McDermott.csv.Race
+
+Cluster 32:
+  Vasaikar.csv.Synchronous_Tumors
+
+Cluster 33:
+  Clark.csv.Tumor/Normal
+  Dou.csv.Proteomics_Tumor_Normal
+  Gillette.csv.Type
+  Satpathy.csv.Type
+
+Cluster 34:
+  Huang.csv.smoke_age_start
+
+Cluster 35:
+  Cao.csv.tobacco_smoking_history
+  Gillette.csv.Smoking.History
+  Huang.csv.smoking_history
+  Satpathy.csv.Smoking.History
+  Wang.csv.smoking_history
+
+Cluster 36:
+  Dou.csv.Treatment_naive
+
+Cluster 37:
+  Cao.csv.tumor_focality
+  Clark.csv.Tumor_Focality
+  Dou.csv.Tumor_Focality
+  Huang.csv.tumor_focality
+
+Cluster 38:
+  Clark.csv.Grade
+  Dou.csv.Histologic_Grade_FIGO
+  Huang.csv.histologic_grade
+  McDermott.csv.Tumor Grade
+
+Cluster 39:
+  Dou.csv.Tumor_purity
+  Vasaikar.csv.TumorPurity
+
+Cluster 40:
+  Vasaikar.csv.Vascular_Invasion
+
+Cluster 41:
+  Cao.csv.vital_status
+  Vasaikar.csv.Vital.Status
+  Wang.csv.vital_status
+
+Cluster 42:
+  Gillette.csv.Weight.kg
+  Wang.csv.weight
+

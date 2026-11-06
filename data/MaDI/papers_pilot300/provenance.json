@@ -1,0 +1,136 @@
+{
+  "protocol": {
+    "adapter_version": 1,
+    "repository": "https://github.com/wbsg-uni-mannheim/MaDI-Bench",
+    "revision": "062058d09c8abd97026e6d4e9908b433753f58d3",
+    "domain": "papers",
+    "max_rows": 300,
+    "seed": 42,
+    "feature_policy": "all gold-annotated non-ID source columns; original column names",
+    "missing_policy": "preserve nulls; empty lists and null placeholders become empty cells",
+    "task": "derived multi-table schema matching; canonical targets used only for ground truth"
+  },
+  "upstream_sha256": {
+    "use cases/papers/base/input/schemamatching/sm_mapping_gold.json": "585fc57a9f10fe64597f1a6b0c51a3d4e19aecbbfd1168b924a90db5ebc618a7",
+    "use cases/papers/base/input/data/crossref.jsonl": "5cf23872c9e62fac835312aa969291f1897186cfed764fc2fc401d4aeb333530",
+    "use cases/papers/base/input/data/dblp.jsonl": "644a2c3ee63787e9745127c40c16dc6d903296dadd19760db9ece86aa10ebdf6",
+    "use cases/papers/base/input/data/open_alex.jsonl": "1c3941b2af896eb45c0671d779333849bd3035dc749bdd23a9a381a4c23e7ed9"
+  },
+  "files": {
+    "groundtruth.txt": "02575448be371bca6f3f909877a9fcec03e4f510cc6b57c35bb4c507ff2e1b30",
+    "original/dblp.csv": "a414e0a3923496dc50239d4c0c19ada5c423f8e23cfbe45fc71ec9d48650cc90",
+    "original/open_alex.csv": "27aa99607e42531e27d14f32c7ad1b160b5d586ea0236674d9f8267770009f27",
+    "original/crossref.csv": "4b79628c50daf119d374c82b542ae296308d47caf1a433d2ff0b1e07d82d6d87"
+  },
+  "tables": [
+    {
+      "table": "crossref.csv",
+      "original_rows": 60749,
+      "rows": 300,
+      "columns": [
+        "work_type",
+        "title_text",
+        "contributor_names",
+        "issued_year",
+        "container_title",
+        "volume_id",
+        "issue_id",
+        "page_first",
+        "page_last",
+        "reference_total",
+        "cited_total"
+      ],
+      "excluded_columns": [
+        "id",
+        "publisher_name",
+        "abstract_text"
+      ],
+      "missing_cells": 335,
+      "missing_rate": 0.10151515151515152,
+      "column_missing_rates": {
+        "work_type": 0.0,
+        "title_text": 0.0,
+        "contributor_names": 0.0,
+        "issued_year": 0.0,
+        "container_title": 0.22333333333333333,
+        "volume_id": 0.22333333333333333,
+        "issue_id": 0.51,
+        "page_first": 0.08,
+        "page_last": 0.08,
+        "reference_total": 0.0,
+        "cited_total": 0.0
+      }
+    },
+    {
+      "table": "dblp.csv",
+      "original_rows": 60591,
+      "rows": 300,
+      "columns": [
+        "entry_type",
+        "publication_title",
+        "author_list",
+        "pub_year",
+        "venue_name",
+        "volume_no",
+        "issue_no",
+        "page_start",
+        "page_finish"
+      ],
+      "excluded_columns": [
+        "id"
+      ],
+      "missing_cells": 886,
+      "missing_rate": 0.32814814814814813,
+      "column_missing_rates": {
+        "entry_type": 0.0,
+        "publication_title": 0.006666666666666667,
+        "author_list": 0.006666666666666667,
+        "pub_year": 0.0,
+        "venue_name": 0.2966666666666667,
+        "volume_no": 0.2966666666666667,
+        "issue_no": 0.5533333333333333,
+        "page_start": 0.8966666666666666,
+        "page_finish": 0.8966666666666666
+      }
+    },
+    {
+      "table": "open_alex.csv",
+      "original_rows": 60719,
+      "rows": 300,
+      "columns": [
+        "work_kind",
+        "display_title",
+        "authors_list",
+        "year_published",
+        "source_name",
+        "volume_tag",
+        "issue_tag",
+        "start_page",
+        "end_page",
+        "refs_count",
+        "citations_count"
+      ],
+      "excluded_columns": [
+        "id",
+        "topic_terms"
+      ],
+      "missing_cells": 404,
+      "missing_rate": 0.12242424242424242,
+      "column_missing_rates": {
+        "work_kind": 0.0,
+        "display_title": 0.0,
+        "authors_list": 0.0,
+        "year_published": 0.0,
+        "source_name": 0.24666666666666667,
+        "volume_tag": 0.2633333333333333,
+        "issue_tag": 0.57,
+        "start_page": 0.13333333333333333,
+        "end_page": 0.13333333333333333,
+        "refs_count": 0.0,
+        "citations_count": 0.0
+      }
+    }
+  ],
+  "gt_groups": 11,
+  "gt_pairs": 29
+}

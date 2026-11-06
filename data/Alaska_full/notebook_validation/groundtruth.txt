@@ -1,0 +1,183 @@
+Cluster 1:
+  buy.net.csv.aspect ratio
+  www.ebay.com.csv.aspect ratio
+  www.tigerdirect.com.csv.aspect ratio
+
+Cluster 2:
+  www.ebay.com.csv.battery capacity
+
+Cluster 3:
+  wallmartphoto.com.csv.battery type
+  www.amazon.com.csv.batteries
+  www.ebay.com.csv.battery
+  www.isupplyhub.com.csv.batteries
+  www.tigerdirect.com.csv.battery type
+
+Cluster 4:
+  buy.net.csv.battery life
+  wallmartphoto.com.csv.battery life
+  www.amazon.com.csv.average battery life in hours
+  www.ebay.com.csv.battery life
+  www.isupplyhub.com.csv.average battery life in hours
+  www.tigerdirect.com.csv.battery life
+
+Cluster 5:
+  buy.net.csv.brand name
+  www.amazon.com.csv.brand name
+  www.ebay.com.csv.brand
+  www.gosale.com.csv.manufacturer
+  www.isupplyhub.com.csv.brand name
+
+Cluster 6:
+  wallmartphoto.com.csv.processor brand
+  www.ebay.com.csv.processor brand
+  www.gosale.com.csv.processor manufacturer
+  www.isupplyhub.com.csv.processor brand
+  www.tigerdirect.com.csv.processor brand
+
+Cluster 7:
+  buy.net.csv.cache size
+  www.ebay.com.csv.cache
+  www.tigerdirect.com.csv.processor cache
+
+Cluster 8:
+  buy.net.csv.processor speed
+  wallmartphoto.com.csv.processor speed
+  www.ebay.com.csv.processor speed
+  www.gosale.com.csv.processor speed
+  www.tigerdirect.com.csv.processor speed
+
+Cluster 9:
+  buy.net.csv.number of processor cores
+  www.ebay.com.csv.processor class
+  www.tigerdirect.com.csv.processor class
+
+Cluster 10:
+  buy.net.csv.height
+  www.ebay.com.csv.height rear
+
+Cluster 11:
+  buy.net.csv.max resolution
+  wallmartphoto.com.csv.resolution
+  www.gosale.com.csv.monitor resolution
+
+Cluster 12:
+  buy.net.csv.display size
+  wallmartphoto.com.csv.laptop screen size
+  www.amazon.com.csv.screen size
+  www.ebay.com.csv.screen size
+  www.isupplyhub.com.csv.screen size
+  www.overstock.com.csv.screen size
+  www.tigerdirect.com.csv.screen size
+
+Cluster 13:
+  buy.net.csv.display type
+  wallmartphoto.com.csv.screen type
+
+Cluster 14:
+  www.amazon.com.csv.flash memory size
+  www.ebay.com.csv.flash
+  www.isupplyhub.com.csv.flash memory size
+
+Cluster 15:
+  www.ebay.com.csv.graphics controller manufacturer
+  www.isupplyhub.com.csv.chipset brand
+
+Cluster 16:
+  www.ebay.com.csv.graphics controller model
+
+Cluster 17:
+  www.ebay.com.csv.hdmi
+
+Cluster 18:
+  buy.net.csv.memory card reader
+  www.ebay.com.csv.memory card reader
+
+Cluster 19:
+  www.ebay.com.csv.vga
+
+Cluster 20:
+  buy.net.csv.hard drive capacity
+  wallmartphoto.com.csv.hard drive size
+  www.amazon.com.csv.hard drive
+  www.ebay.com.csv.hard drive capacity
+  www.gosale.com.csv.hard drive size
+  www.isupplyhub.com.csv.hard drive
+  www.overstock.com.csv.hard drive capacity
+  www.tigerdirect.com.csv.capacity
+
+Cluster 21:
+  buy.net.csv.hard drive rpm
+  www.ebay.com.csv.hard drive speed
+  www.tigerdirect.com.csv.hard drive speed
+
+Cluster 22:
+  buy.net.csv.64bit processing
+  www.ebay.com.csv.64bit processing
+
+Cluster 23:
+  wallmartphoto.com.csv.shipping weight in pounds
+  www.amazon.com.csv.shipping weight
+  www.ebay.com.csv.shipping weight in pounds
+
+Cluster 24:
+  www.ebay.com.csv.power requirements
+
+Cluster 25:
+  www.ebay.com.csv.power consumption
+
+Cluster 26:
+  buy.net.csv.installed memory
+  wallmartphoto.com.csv.system ram
+  www.ebay.com.csv.memory ram
+  www.gosale.com.csv.ram
+  www.overstock.com.csv.installed ram
+  www.tigerdirect.com.csv.total memory size
+
+Cluster 27:
+  buy.net.csv.maximum memory
+  wallmartphoto.com.csv.maximum memory expansion
+  www.ebay.com.csv.max ram supported
+
+Cluster 28:
+  www.ebay.com.csv.ram speed
+  www.tigerdirect.com.csv.ram speed
+
+Cluster 29:
+  buy.net.csv.memory technology
+  www.amazon.com.csv.computer memory type
+  www.ebay.com.csv.memory type
+  www.gosale.com.csv.ram type
+  www.isupplyhub.com.csv.computer memory type
+  www.tigerdirect.com.csv.memory type
+
+Cluster 30:
+  buy.net.csv.solid state drive capacity
+  www.ebay.com.csv.128gb ssd
+
+Cluster 31:
+  buy.net.csv.number of usb 20 ports
+  www.amazon.com.csv.number of usb 20 ports
+  www.ebay.com.csv.number of usb 20 ports
+  www.isupplyhub.com.csv.number of usb 20 ports
+
+Cluster 32:
+  buy.net.csv.number of usb 30 ports
+  www.amazon.com.csv.number of usb 30 ports
+  www.ebay.com.csv.ports
+  www.isupplyhub.com.csv.number of usb 30 ports
+
+Cluster 33:
+  buy.net.csv.warranty information
+  www.ebay.com.csv.warranty
+  www.tigerdirect.com.csv.lenovo
+
+Cluster 34:
+  buy.net.csv.weight
+  www.amazon.com.csv.item weight
+  www.ebay.com.csv.weight
+  www.gosale.com.csv.weight
+  www.isupplyhub.com.csv.item weight
+  www.overstock.com.csv.laptop weight
+  www.tigerdirect.com.csv.weight
+

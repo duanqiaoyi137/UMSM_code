@@ -1,0 +1,227 @@
+Cluster 1:
+  www.camerafarm.com.au.csv.af assist beam
+  www.canon-europe.com.csv.af assist beam
+  www.shopmania.in.csv.af illuminator
+
+Cluster 2:
+  www.camerafarm.com.au.csv.focus modes
+  www.canon-europe.com.csv.af modes
+
+Cluster 3:
+  www.camerafarm.com.au.csv.af system points
+  www.canon-europe.com.csv.af system points
+  www.shopmania.in.csv.number of focus points
+
+Cluster 4:
+  www.canon-europe.com.csv.af point selection
+
+Cluster 5:
+  www.camerafarm.com.au.csv.autofocus system
+
+Cluster 6:
+  www.buzzillions.com.csv.battery type
+
+Cluster 7:
+  buy.net.csv.battery model supported
+
+Cluster 8:
+  buy.net.csv.brand name
+  www.camerafarm.com.au.csv.brand
+  www.gosale.com.csv.manufacturer
+  www.shopmania.in.csv.brand
+
+Cluster 9:
+  buy.net.csv.depth
+  www.buzzillions.com.csv.depth inches
+  www.shopmania.in.csv.depth
+
+Cluster 10:
+  www.buzzillions.com.csv.height inches
+  www.shopmania.in.csv.height
+
+Cluster 11:
+  buy.net.csv.camera type
+  www.buzzillions.com.csv.camera style
+  www.gosale.com.csv.camera type
+  www.henrys.com.csv.camera type
+
+Cluster 12:
+  buy.net.csv.width
+  www.buzzillions.com.csv.width inches
+  www.shopmania.in.csv.width
+
+Cluster 13:
+  www.buzzillions.com.csv.camera color
+  www.henrys.com.csv.colour
+
+Cluster 14:
+  www.camerafarm.com.au.csv.color filter
+
+Cluster 15:
+  www.camerafarm.com.au.csv.exposure compensation
+  www.canon-europe.com.csv.exposure compensation
+  www.shopmania.in.csv.exposure compensation
+
+Cluster 16:
+  buy.net.csv.exposure control
+  www.buzzillions.com.csv.exposure modes
+  www.camerafarm.com.au.csv.exposure modes
+  www.henrys.com.csv.exposure modes
+  www.shopmania.in.csv.exposure modes
+
+Cluster 17:
+  buy.net.csv.memory card support
+  www.buzzillions.com.csv.storage media type
+  www.camerafarm.com.au.csv.card slot
+  www.garricks.com.au.csv.memory type
+  www.shopmania.in.csv.memory type
+
+Cluster 18:
+  www.camerafarm.com.au.csv.file system
+
+Cluster 19:
+  www.buzzillions.com.csv.image format
+  www.camerafarm.com.au.csv.still image type
+  www.canon-europe.com.csv.still image type
+  www.shopmania.in.csv.image format
+
+Cluster 20:
+  buy.net.csv.effective megapixels
+  www.buzzillions.com.csv.megapixels
+  www.camerafarm.com.au.csv.effective pixels
+  www.garricks.com.au.csv.resolution
+  www.gosale.com.csv.megapixels
+  www.henrys.com.csv.effective pixels
+  www.shopmania.in.csv.resolution
+
+Cluster 21:
+  www.buzzillions.com.csv.still image resolution max
+  www.shopmania.in.csv.image resolutions
+
+Cluster 22:
+  buy.net.csv.installed memory
+  www.buzzillions.com.csv.builtin memory
+  www.henrys.com.csv.builtin memory
+  www.shopmania.in.csv.installed memory
+
+Cluster 23:
+  buy.net.csv.iso sensitivity
+
+Cluster 24:
+  buy.net.csv.lens mount
+  www.buzzillions.com.csv.lens mount
+  www.camerafarm.com.au.csv.lens mount
+  www.garricks.com.au.csv.lens mount
+  www.henrys.com.csv.lens
+  www.shopmania.in.csv.lens mount
+
+Cluster 25:
+  www.buzzillions.com.csv.microphone
+  www.camerafarm.com.au.csv.movie audio recording device
+  www.shopmania.in.csv.microphone
+
+Cluster 26:
+  www.buzzillions.com.csv.scene modes
+  www.camerafarm.com.au.csv.picture control
+  www.canon-europe.com.csv.photo effects
+  www.shopmania.in.csv.special effects
+
+Cluster 27:
+  www.buzzillions.com.csv.red eye reduction
+  www.canon-europe.com.csv.redeye reduction
+  www.gosale.com.csv.redeye reduction
+  www.shopmania.in.csv.red eye reduction
+
+Cluster 28:
+  buy.net.csv.lcd screen size
+  www.buzzillions.com.csv.lcd viewer
+  www.gosale.com.csv.lcd screen size
+  www.henrys.com.csv.screen size
+  www.shopmania.in.csv.screen size
+
+Cluster 29:
+  www.henrys.com.csv.display screen type
+  www.shopmania.in.csv.screen type
+
+Cluster 30:
+  www.buzzillions.com.csv.self timer
+  www.camerafarm.com.au.csv.selftimer
+  www.canon-europe.com.csv.self timer
+  www.henrys.com.csv.self timer
+  www.shopmania.in.csv.self timer delay
+
+Cluster 31:
+  www.camerafarm.com.au.csv.sensor size
+  www.shopmania.in.csv.sensor size
+
+Cluster 32:
+  www.buzzillions.com.csv.interchangeable lens camera format
+  www.camerafarm.com.au.csv.image sensor format
+  www.garricks.com.au.csv.image format
+  www.shopmania.in.csv.sensor format
+
+Cluster 33:
+  buy.net.csv.image sensor
+  www.buzzillions.com.csv.sensor
+  www.camerafarm.com.au.csv.image sensor type
+  www.shopmania.in.csv.sensor type
+
+Cluster 34:
+  buy.net.csv.shortest shutter speed
+  www.camerafarm.com.au.csv.fastest shutter speed
+  www.shopmania.in.csv.max shutter speed
+
+Cluster 35:
+  buy.net.csv.longest shutter speed
+  www.camerafarm.com.au.csv.slowest shutter speed
+  www.shopmania.in.csv.min shutter speed
+
+Cluster 36:
+  www.camerafarm.com.au.csv.shutter type
+
+Cluster 37:
+  www.henrys.com.csv.aspect ratio
+  www.shopmania.in.csv.image ratio
+
+Cluster 38:
+  www.camerafarm.com.au.csv.movie audio recording format
+  www.henrys.com.csv.audio recording
+
+Cluster 39:
+  www.camerafarm.com.au.csv.supported languages
+  www.canon-europe.com.csv.menu languages
+
+Cluster 40:
+  www.camerafarm.com.au.csv.movie file format
+  www.garricks.com.au.csv.video recording format
+  www.shopmania.in.csv.digital video format
+
+Cluster 41:
+  buy.net.csv.maximum video capture resolution
+  www.shopmania.in.csv.video resolution
+
+Cluster 42:
+  buy.net.csv.warranty information
+  www.buzzillions.com.csv.standard warranty
+  www.henrys.com.csv.warranty
+
+Cluster 43:
+  buy.net.csv.white balance modes
+  www.buzzillions.com.csv.white balance
+  www.henrys.com.csv.white balance modes
+  www.shopmania.in.csv.white balance presets
+
+Cluster 44:
+  buy.net.csv.digital zoom
+  www.buzzillions.com.csv.digital zoom
+  www.henrys.com.csv.digital zoom
+  www.shopmania.in.csv.digital zoom
+
+Cluster 45:
+  buy.net.csv.optical zoom
+  www.buzzillions.com.csv.optical zoom
+  www.garricks.com.au.csv.zoom range
+  www.gosale.com.csv.optical zoom
+  www.henrys.com.csv.optical zoom
+  www.shopmania.in.csv.optical zoom
+

@@ -1,0 +1,887 @@
+{
+  "source": "https://data.dws.informatik.uni-mannheim.de/structureddata/sotab/v2/",
+  "protocol": {
+    "adapter_version": 2,
+    "max_rows": 300,
+    "max_sets_per_role": 6,
+    "tables_per_set": 12,
+    "seed": 42,
+    "selection": "3-16 unique CPA properties; >=20 rows; >=1 column with 30-90% nulls, >=10 observed cells and >=2 values",
+    "split": "official validation -> fit/validation by website hash; official test, excluding validation websites",
+    "groundtruth": "same CPA property within same table entity class and unique subject context; derived equivalence, review required",
+    "grouping": "distinct_sites",
+    "roles": [
+      "test"
+    ]
+  },
+  "archives": {
+    "CPA_validation_schemaorg.zip": "4ec7242a71498d5f7164428c9e1aaaace493de78b66fe246a281e61b2be14804",
+    "CPA_test_schemaorg.zip": "f2699faa6ebae5e49db529ecedbd0a78ecb75ceba7bf2ff4675af64cca095425"
+  },
+  "excluded": {
+    "fit_ineligible": 205,
+    "validation_ineligible": 231,
+    "test_ineligible": 483
+  },
+  "cases": [
+    {
+      "name": "test_01_Movie",
+      "role": "test",
+      "topic": "Movie",
+      "tables": [
+        {
+          "source": "Movie_clevelandfilm.org_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "clevelandfilm.org",
+          "labels": {
+            "c3": "actor",
+            "c5": "countryOfOrigin",
+            "c1": "description",
+            "c2": "duration",
+            "c4": "director"
+          },
+          "filename": "t_e15c2e87aa2b.csv",
+          "profile": {
+            "rows": 138,
+            "columns": 5,
+            "missing_rate": 0.09855072463768116,
+            "column_missing_rates": {
+              "c3": 0.45652173913043476,
+              "c5": 0.0,
+              "c1": 0.0,
+              "c2": 0.021739130434782608,
+              "c4": 0.014492753623188406
+            },
+            "observed_unique": {
+              "c3": 75,
+              "c5": 46,
+              "c1": 125,
+              "c2": 54,
+              "c4": 136
+            },
+            "informative_missing_columns": [
+              "c3"
+            ]
+          }
+        },
+        {
+          "source": "Movie_123movies.website_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "123movies.website",
+          "labels": {
+            "c8": "dateCreated",
+            "c6": "actor",
+            "c2": "duration",
+            "c3": "image",
+            "c4": "url"
+          },
+          "filename": "t_5e4426da8317.csv",
+          "profile": {
+            "rows": 90,
+            "columns": 5,
+            "missing_rate": 0.22,
+            "column_missing_rates": {
+              "c8": 0.36666666666666664,
+              "c6": 0.36666666666666664,
+              "c2": 0.36666666666666664,
+              "c3": 0.0,
+              "c4": 0.0
+            },
+            "observed_unique": {
+              "c8": 19,
+              "c6": 57,
+              "c2": 35,
+              "c3": 90,
+              "c4": 90
+            },
+            "informative_missing_columns": [
+              "c8",
+              "c6",
+              "c2"
+            ]
+          }
+        },
+        {
+          "source": "Movie_idtube.me_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "idtube.me",
+          "labels": {
+            "c11": "productionCompany",
+            "c7": "genre",
+            "c10": "actor"
+          },
+          "filename": "t_536350629d54.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 3,
+            "missing_rate": 0.18555555555555556,
+            "column_missing_rates": {
+              "c11": 0.49,
+              "c7": 0.0,
+              "c10": 0.06666666666666667
+            },
+            "observed_unique": {
+              "c11": 152,
+              "c7": 122,
+              "c10": 280
+            },
+            "informative_missing_columns": [
+              "c11"
+            ]
+          }
+        },
+        {
+          "source": "Movie_eventcinemas.co.nz_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "eventcinemas.co.nz",
+          "labels": {
+            "c5": "actor",
+            "c2": "duration",
+            "c1": "description",
+            "c4": "contentRating"
+          },
+          "filename": "t_f663ba64ef37.csv",
+          "profile": {
+            "rows": 82,
+            "columns": 4,
+            "missing_rate": 0.1676829268292683,
+            "column_missing_rates": {
+              "c5": 0.6463414634146342,
+              "c2": 0.0,
+              "c1": 0.024390243902439025,
+              "c4": 0.0
+            },
+            "observed_unique": {
+              "c5": 29,
+              "c2": 54,
+              "c1": 74,
+              "c4": 8
+            },
+            "informative_missing_columns": [
+              "c5"
+            ]
+          }
+        },
+        {
+          "source": "Movie_filmonlineindo.com_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "filmonlineindo.com",
+          "labels": {
+            "c4": "director",
+            "c2": "datePublished",
+            "c6": "bestRating",
+            "c8": "worstRating",
+            "c1": "description",
+            "c3": "image",
+            "c5": "genre",
+            "c7": "actor"
+          },
+          "filename": "t_d54fec472a68.csv",
+          "profile": {
+            "rows": 90,
+            "columns": 8,
+            "missing_rate": 0.21388888888888888,
+            "column_missing_rates": {
+              "c4": 0.5555555555555556,
+              "c2": 0.4111111111111111,
+              "c6": 0.2111111111111111,
+              "c8": 0.2111111111111111,
+              "c1": 0.1111111111111111,
+              "c3": 0.0,
+              "c5": 0.1,
+              "c7": 0.1111111111111111
+            },
+            "observed_unique": {
+              "c4": 24,
+              "c2": 42,
+              "c6": 1,
+              "c8": 1,
+              "c1": 67,
+              "c3": 79,
+              "c5": 53,
+              "c7": 64
+            },
+            "informative_missing_columns": [
+              "c4",
+              "c2"
+            ]
+          }
+        },
+        {
+          "source": "Movie_bollywoodmdb.com_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "bollywoodmdb.com",
+          "labels": {
+            "c8": "duration",
+            "c9": "ratingValue",
+            "c10": "worstRating",
+            "c12": "bestRating",
+            "c4": "inLanguage",
+            "c14": "actor",
+            "c5": "countryOfOrigin",
+            "c13": "productionCompany",
+            "c3": "datePublished",
+            "c7": "director"
+          },
+          "filename": "t_ef59e86a0fb0.csv",
+          "profile": {
+            "rows": 227,
+            "columns": 10,
+            "missing_rate": 0.4237885462555066,
+            "column_missing_rates": {
+              "c8": 0.6872246696035242,
+              "c9": 0.7224669603524229,
+              "c10": 0.7224669603524229,
+              "c12": 0.7224669603524229,
+              "c4": 0.28634361233480177,
+              "c14": 0.0,
+              "c5": 0.28634361233480177,
+              "c13": 0.6035242290748899,
+              "c3": 0.19823788546255505,
+              "c7": 0.00881057268722467
+            },
+            "observed_unique": {
+              "c8": 43,
+              "c9": 21,
+              "c10": 1,
+              "c12": 1,
+              "c4": 1,
+              "c14": 226,
+              "c5": 1,
+              "c13": 79,
+              "c3": 169,
+              "c7": 187
+            },
+            "informative_missing_columns": [
+              "c8",
+              "c9",
+              "c13"
+            ]
+          }
+        },
+        {
+          "source": "Movie_funrahi.com_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "funrahi.com",
+          "labels": {
+            "c5": "author",
+            "c4": "director",
+            "c6": "contentRating"
+          },
+          "filename": "t_5e8ea996075e.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 3,
+            "missing_rate": 0.4388888888888889,
+            "column_missing_rates": {
+              "c5": 0.6733333333333333,
+              "c4": 0.6433333333333333,
+              "c6": 0.0
+            },
+            "observed_unique": {
+              "c5": 82,
+              "c4": 88,
+              "c6": 9
+            },
+            "informative_missing_columns": [
+              "c5",
+              "c4"
+            ]
+          }
+        },
+        {
+          "source": "Movie_b4watch.com_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "b4watch.com",
+          "labels": {
+            "c9": "actor",
+            "c2": "duration",
+            "c5": "datePublished",
+            "c3": "contentRating",
+            "c4": "director",
+            "c6": "ratingValue",
+            "c7": "bestRating",
+            "c8": "worstRating"
+          },
+          "filename": "t_e45c66310457.csv",
+          "profile": {
+            "rows": 83,
+            "columns": 8,
+            "missing_rate": 0.11295180722891567,
+            "column_missing_rates": {
+              "c9": 0.3253012048192771,
+              "c2": 0.03614457831325301,
+              "c5": 0.0,
+              "c3": 0.21686746987951808,
+              "c4": 0.1927710843373494,
+              "c6": 0.13253012048192772,
+              "c7": 0.0,
+              "c8": 0.0
+            },
+            "observed_unique": {
+              "c9": 56,
+              "c2": 51,
+              "c5": 79,
+              "c3": 7,
+              "c4": 65,
+              "c6": 28,
+              "c7": 1,
+              "c8": 1
+            },
+            "informative_missing_columns": [
+              "c9"
+            ]
+          }
+        },
+        {
+          "source": "Movie_kollywoodzone.com_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "kollywoodzone.com",
+          "labels": {
+            "c2": "dateCreated",
+            "c1": "description",
+            "c3": "actor",
+            "c4": "review",
+            "c5": "director"
+          },
+          "filename": "t_51340f4bf511.csv",
+          "profile": {
+            "rows": 30,
+            "columns": 5,
+            "missing_rate": 0.1,
+            "column_missing_rates": {
+              "c2": 0.3,
+              "c1": 0.0,
+              "c3": 0.03333333333333333,
+              "c4": 0.13333333333333333,
+              "c5": 0.03333333333333333
+            },
+            "observed_unique": {
+              "c2": 20,
+              "c1": 30,
+              "c3": 29,
+              "c4": 26,
+              "c5": 29
+            },
+            "informative_missing_columns": [
+              "c2"
+            ]
+          }
+        },
+        {
+          "source": "Movie_hoblist.com_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "hoblist.com",
+          "labels": {
+            "c1": "description",
+            "c5": "actor",
+            "c6": "productionCompany"
+          },
+          "filename": "t_4bb60d322d0f.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 3,
+            "missing_rate": 0.6077777777777778,
+            "column_missing_rates": {
+              "c1": 0.44666666666666666,
+              "c5": 0.6466666666666666,
+              "c6": 0.73
+            },
+            "observed_unique": {
+              "c1": 166,
+              "c5": 106,
+              "c6": 58
+            },
+            "informative_missing_columns": [
+              "c1",
+              "c5",
+              "c6"
+            ]
+          }
+        },
+        {
+          "source": "Movie_eventcinemas.com.au_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "eventcinemas.com.au",
+          "labels": {
+            "c4": "actor",
+            "c5": "duration",
+            "c1": "description",
+            "c2": "contentRating"
+          },
+          "filename": "t_9741582f0699.csv",
+          "profile": {
+            "rows": 113,
+            "columns": 4,
+            "missing_rate": 0.10398230088495575,
+            "column_missing_rates": {
+              "c4": 0.39823008849557523,
+              "c5": 0.008849557522123894,
+              "c1": 0.008849557522123894,
+              "c2": 0.0
+            },
+            "observed_unique": {
+              "c4": 68,
+              "c5": 59,
+              "c1": 111,
+              "c2": 8
+            },
+            "informative_missing_columns": [
+              "c4"
+            ]
+          }
+        },
+        {
+          "source": "Movie_globalclosers.net_September2020_CPA.json.gz",
+          "topic": "Movie",
+          "host": "globalclosers.net",
+          "labels": {
+            "c7": "datePublished",
+            "c3": "inLanguage",
+            "c2": "genre",
+            "c4": "director",
+            "c5": "bestRating",
+            "c8": "ratingValue",
+            "c10": "actor",
+            "c11": "productionCompany"
+          },
+          "filename": "t_3d9deef3bbd9.csv",
+          "profile": {
+            "rows": 20,
+            "columns": 8,
+            "missing_rate": 0.09375,
+            "column_missing_rates": {
+              "c7": 0.0,
+              "c3": 0.25,
+              "c2": 0.0,
+              "c4": 0.0,
+              "c5": 0.0,
+              "c8": 0.0,
+              "c10": 0.1,
+              "c11": 0.4
+            },
+            "observed_unique": {
+              "c7": 19,
+              "c3": 2,
+              "c2": 16,
+              "c4": 18,
+              "c5": 1,
+              "c8": 11,
+              "c10": 18,
+              "c11": 12
+            },
+            "informative_missing_columns": [
+              "c11"
+            ]
+          }
+        }
+      ],
+      "gt_pairs": 143
+    },
+    {
+      "name": "test_02_Person",
+      "role": "test",
+      "topic": "Person",
+      "tables": [
+        {
+          "source": "Person_fhstp.ac.at_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "fhstp.ac.at",
+          "labels": {
+            "c4": "honorificSuffix",
+            "c5": "givenName",
+            "c2": "familyName"
+          },
+          "filename": "t_e12e801ffe3c.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 3,
+            "missing_rate": 0.18444444444444444,
+            "column_missing_rates": {
+              "c4": 0.5466666666666666,
+              "c5": 0.0033333333333333335,
+              "c2": 0.0033333333333333335
+            },
+            "observed_unique": {
+              "c4": 43,
+              "c5": 161,
+              "c2": 282
+            },
+            "informative_missing_columns": [
+              "c4"
+            ]
+          }
+        },
+        {
+          "source": "Person_rxlist.com_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "rxlist.com",
+          "labels": {
+            "c1": "jobTitle",
+            "c4": "alumniOf",
+            "c5": "honorificSuffix"
+          },
+          "filename": "t_6c29f65fa0c3.csv",
+          "profile": {
+            "rows": 25,
+            "columns": 3,
+            "missing_rate": 0.22666666666666666,
+            "column_missing_rates": {
+              "c1": 0.52,
+              "c4": 0.16,
+              "c5": 0.0
+            },
+            "observed_unique": {
+              "c1": 12,
+              "c4": 21,
+              "c5": 17
+            },
+            "informative_missing_columns": [
+              "c1"
+            ]
+          }
+        },
+        {
+          "source": "Person_4mula1stats.com_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "4mula1stats.com",
+          "labels": {
+            "c3": "birthPlace",
+            "c1": "birthDate",
+            "c2": "nationality"
+          },
+          "filename": "t_798b4797523a.csv",
+          "profile": {
+            "rows": 64,
+            "columns": 3,
+            "missing_rate": 0.11458333333333333,
+            "column_missing_rates": {
+              "c3": 0.34375,
+              "c1": 0.0,
+              "c2": 0.0
+            },
+            "observed_unique": {
+              "c3": 42,
+              "c1": 64,
+              "c2": 27
+            },
+            "informative_missing_columns": [
+              "c3"
+            ]
+          }
+        },
+        {
+          "source": "Person_pietrapolis.fr_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "pietrapolis.fr",
+          "labels": {
+            "c1": "jobTitle",
+            "c3": "telephone",
+            "c2": "gender"
+          },
+          "filename": "t_1eb61b94456f.csv",
+          "profile": {
+            "rows": 87,
+            "columns": 3,
+            "missing_rate": 0.12260536398467432,
+            "column_missing_rates": {
+              "c1": 0.367816091954023,
+              "c3": 0.0,
+              "c2": 0.0
+            },
+            "observed_unique": {
+              "c1": 15,
+              "c3": 87,
+              "c2": 2
+            },
+            "informative_missing_columns": [
+              "c1"
+            ]
+          }
+        },
+        {
+          "source": "Person_triviatribute.com_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "triviatribute.com",
+          "labels": {
+            "c2": "measurements",
+            "c3": "birthPlace",
+            "c1": "birthDate"
+          },
+          "filename": "t_f5cde0b20847.csv",
+          "profile": {
+            "rows": 44,
+            "columns": 3,
+            "missing_rate": 0.12878787878787878,
+            "column_missing_rates": {
+              "c2": 0.38636363636363635,
+              "c3": 0.0,
+              "c1": 0.0
+            },
+            "observed_unique": {
+              "c2": 18,
+              "c3": 36,
+              "c1": 44
+            },
+            "informative_missing_columns": [
+              "c2"
+            ]
+          }
+        },
+        {
+          "source": "Person_fcbarcelona.com_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "fcbarcelona.com",
+          "labels": {
+            "c3": "nationality",
+            "c2": "birthDate",
+            "c1": "description",
+            "c4": "jobTitle",
+            "c5": "weight"
+          },
+          "filename": "t_5eaae12454c7.csv",
+          "profile": {
+            "rows": 24,
+            "columns": 5,
+            "missing_rate": 0.25833333333333336,
+            "column_missing_rates": {
+              "c3": 0.625,
+              "c2": 0.375,
+              "c1": 0.08333333333333333,
+              "c4": 0.08333333333333333,
+              "c5": 0.125
+            },
+            "observed_unique": {
+              "c3": 6,
+              "c2": 13,
+              "c1": 22,
+              "c4": 12,
+              "c5": 14
+            },
+            "informative_missing_columns": [
+              "c2"
+            ]
+          }
+        },
+        {
+          "source": "Person_allchristianquotes.org_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "allchristianquotes.org",
+          "labels": {
+            "c3": "birthDate",
+            "c2": "deathDate",
+            "c1": "jobTitle"
+          },
+          "filename": "t_5a177e9e42c5.csv",
+          "profile": {
+            "rows": 40,
+            "columns": 3,
+            "missing_rate": 0.21666666666666667,
+            "column_missing_rates": {
+              "c3": 0.0,
+              "c2": 0.65,
+              "c1": 0.0
+            },
+            "observed_unique": {
+              "c3": 40,
+              "c2": 14,
+              "c1": 5
+            },
+            "informative_missing_columns": [
+              "c2"
+            ]
+          }
+        },
+        {
+          "source": "Person_cultural-opposition.eu_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "cultural-opposition.eu",
+          "labels": {
+            "c4": "deathDate",
+            "c2": "givenName",
+            "c5": "familyName",
+            "c3": "birthDate"
+          },
+          "filename": "t_aa801414824f.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 4,
+            "missing_rate": 0.14166666666666666,
+            "column_missing_rates": {
+              "c4": 0.5166666666666667,
+              "c2": 0.01,
+              "c5": 0.0033333333333333335,
+              "c3": 0.03666666666666667
+            },
+            "observed_unique": {
+              "c4": 52,
+              "c2": 220,
+              "c5": 284,
+              "c3": 78
+            },
+            "informative_missing_columns": [
+              "c4"
+            ]
+          }
+        },
+        {
+          "source": "Person_artbasel.com_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "artbasel.com",
+          "labels": {
+            "c2": "birthDate",
+            "c1": "givenName",
+            "c3": "familyName"
+          },
+          "filename": "t_8a0ccaf1b40f.csv",
+          "profile": {
+            "rows": 175,
+            "columns": 3,
+            "missing_rate": 0.21333333333333335,
+            "column_missing_rates": {
+              "c2": 0.6057142857142858,
+              "c1": 0.03428571428571429,
+              "c3": 0.0
+            },
+            "observed_unique": {
+              "c2": 44,
+              "c1": 154,
+              "c3": 171
+            },
+            "informative_missing_columns": [
+              "c2"
+            ]
+          }
+        },
+        {
+          "source": "Person_broncos.com.au_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "broncos.com.au",
+          "labels": {
+            "c6": "birthDate",
+            "c1": "jobTitle",
+            "c2": "familyName",
+            "c3": "givenName"
+          },
+          "filename": "t_d4144c54f9a0.csv",
+          "profile": {
+            "rows": 47,
+            "columns": 4,
+            "missing_rate": 0.22340425531914893,
+            "column_missing_rates": {
+              "c6": 0.6595744680851063,
+              "c1": 0.23404255319148937,
+              "c2": 0.0,
+              "c3": 0.0
+            },
+            "observed_unique": {
+              "c6": 16,
+              "c1": 15,
+              "c2": 44,
+              "c3": 37
+            },
+            "informative_missing_columns": [
+              "c6"
+            ]
+          }
+        },
+        {
+          "source": "Person_cyclingoo.com_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "cyclingoo.com",
+          "labels": {
+            "c8": "birthPlace",
+            "c2": "givenName",
+            "c5": "familyName",
+            "c4": "birthDate",
+            "c3": "gender",
+            "c7": "nationality"
+          },
+          "filename": "t_899de9062913.csv",
+          "profile": {
+            "rows": 300,
+            "columns": 6,
+            "missing_rate": 0.09333333333333334,
+            "column_missing_rates": {
+              "c8": 0.56,
+              "c2": 0.0,
+              "c5": 0.0,
+              "c4": 0.0,
+              "c3": 0.0,
+              "c7": 0.0
+            },
+            "observed_unique": {
+              "c8": 125,
+              "c2": 250,
+              "c5": 295,
+              "c4": 295,
+              "c3": 1,
+              "c7": 47
+            },
+            "informative_missing_columns": [
+              "c8"
+            ]
+          }
+        },
+        {
+          "source": "Person_actuellecd.com_September2020_CPA.json.gz",
+          "topic": "Person",
+          "host": "actuellecd.com",
+          "labels": {
+            "c2": "birthDate",
+            "c1": "givenName",
+            "c4": "familyName"
+          },
+          "filename": "t_88d85226b0ba.csv",
+          "profile": {
+            "rows": 107,
+            "columns": 3,
+            "missing_rate": 0.1838006230529595,
+            "column_missing_rates": {
+              "c2": 0.5420560747663551,
+              "c1": 0.009345794392523364,
+              "c4": 0.0
+            },
+            "observed_unique": {
+              "c2": 40,
+              "c1": 83,
+              "c4": 93
+            },
+            "informative_missing_columns": [
+              "c2"
+            ]
+          }
+        }
+      ],
+      "gt_pairs": 85
+    }
+  ],
+  "files": {
+    "test_02_Person/groundtruth.txt": "c802fbfc006bcee2dfdfbac0e6780bec24b519bfe9bd6d7de5355f467af0ed42",
+    "test_01_Movie/groundtruth.txt": "115c07bf50c3bbe92815f7a12b1c2d975331d0e66f3d2e1dfb29e4aeea50b6e1",
+    "test_02_Person/original/t_798b4797523a.csv": "a985e474430ad8915e64f5685599a981cf3bb8fad7698f42c0a2f30e5a18bea8",
+    "test_02_Person/original/t_5eaae12454c7.csv": "6ed46dcdabc46f14145db7fa6f207a8d28bcb7db55f6c0db843b100aefe137ab",
+    "test_02_Person/original/t_8a0ccaf1b40f.csv": "69c92e01e628b4fcd71ede87a64d0268d390dcf682dca7e07c52ba6c914e752f",
+    "test_02_Person/original/t_f5cde0b20847.csv": "3226a26fe7b634fcff6cc3a09eea287af7841aba72f1bb8a6a9eee5c189b0068",
+    "test_02_Person/original/t_aa801414824f.csv": "967a713154d6bd1954b2156c117d1a9540ce952611d78c6825b8cc5400049fe9",
+    "test_02_Person/original/t_88d85226b0ba.csv": "533e6de7897ac895b66d08e4d21ffea0471c92112e35ad29ff52cedc89ebc0ce",
+    "test_02_Person/original/t_899de9062913.csv": "90d2af4ffb50d08aa834f09637aae94219a59fa9dce1e9ec3f3168be7b2c8f91",
+    "test_02_Person/original/t_6c29f65fa0c3.csv": "7714d82de03ad3b147369fc9ba416c84b00812c84646b36b6de7258e79587106",
+    "test_02_Person/original/t_5a177e9e42c5.csv": "fe8dc17ba1b7e63fdcb4af544fe9f71efdaa17b7c8ee562263e2c17afe823ff3",
+    "test_02_Person/original/t_d4144c54f9a0.csv": "11ed81837faea3df481a7596e1c18378791f45f42d19f63e49f11d5efba4e8c2",
+    "test_02_Person/original/t_e12e801ffe3c.csv": "25a265c5dafb514280a5d591d823e3cb876f26f09ce69441430f864f9f94c7b4",
+    "test_02_Person/original/t_1eb61b94456f.csv": "345fd079700739e0e8ade221f5f64fc83746851a802e8b634225c62663de88dd",
+    "test_01_Movie/original/t_536350629d54.csv": "061e8552cc0fbc80b88357bc1bf3042dcad45de35dc5be6727cbc774e0c41a0a",
+    "test_01_Movie/original/t_51340f4bf511.csv": "f5da797868c740de0f3e7b42f0fc01b8558b3ffaed30a2054471e24e45d53ba5",
+    "test_01_Movie/original/t_e15c2e87aa2b.csv": "8b9dc1cc71f889c1da7a31f95565a14da899d3b7e6234667246642e9dd121bb9",
+    "test_01_Movie/original/t_5e4426da8317.csv": "0499d4e68f6c51f906fe08af8fe6b885187e3754b213108f80f4763e484d2c95",
+    "test_01_Movie/original/t_e45c66310457.csv": "e6ca0c2b61d6293c446e7bc48ce4e7a30b786761ccdcbb938d0d4322f4bc5188",
+    "test_01_Movie/original/t_ef59e86a0fb0.csv": "d777e32a2012914b6235d3c6c008b9c010e50096c9be741439aae291ceafb607",
+    "test_01_Movie/original/t_9741582f0699.csv": "0647927f1837f2d7738ebcbb7abff138044fb365fa54b01f35f62a36b9461080",
+    "test_01_Movie/original/t_4bb60d322d0f.csv": "dee19d01d2f7100d93d1a75510d0132caa51991cb62a7746c1f3bc76ff3c5ef4",
+    "test_01_Movie/original/t_f663ba64ef37.csv": "f096bc48f69c40dc943fd9f152d55635a5360587518b0e709b60043c0445ee27",
+    "test_01_Movie/original/t_3d9deef3bbd9.csv": "8ea6b7f13dba83b27bd2f50cf79024625a727b68bcf30c034e82313ec491c262",
+    "test_01_Movie/original/t_d54fec472a68.csv": "fb125d643eaad688dfd39f353b861f704a76c4d8b1964ba8ec23c00939d7b044",
+    "test_01_Movie/original/t_5e8ea996075e.csv": "b7fe0984d3cef95dd968e686e202a70e086af28fd96261189bcce270fba1d29d"
+  }
+}

@@ -1,0 +1,154 @@
+Proteomics_Tumor_Normal,Histologic_Grade_FIGO,Histologic_type,Treatment_naive,Tumor_purity,FIGO_stage,BMI,Gender,Tumor_Focality
+,FIGO grade 1,Endometrioid,YES,Normal,IA,38.88,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,,39.76,Female,
+Tumor,FIGO grade 2,,,Normal,IA,51.19,Female,
+,,Carcinosarcoma,,Normal,,,,
+Tumor,FIGO grade 2,,,,,32.69,Female,
+Tumor,,Serous,YES,,,20.28,,
+,,,,,,55.67,Female,Unifocal
+,FIGO grade 2,Endometrioid,,,IA,,,Unifocal
+Tumor,,Serous,YES,,IIIA,,,
+Tumor,FIGO grade 1,Endometrioid,,,,34.26,Female,Unifocal
+Tumor,FIGO grade 1,,,Normal,IA,,,Unifocal
+Tumor,FIGO grade 1,,YES,Normal,IA,,Female,Unifocal
+Tumor,,Clear cell,,,,,,
+Tumor,,Endometrioid,YES,,IB,,Female,Unifocal
+Tumor,,Carcinosarcoma,YES,,IA,25.37,,
+,,,YES,Normal,,26.22,Female,
+Tumor,,Endometrioid,YES,Normal,,42.98,Female,
+,FIGO grade 1,Endometrioid,YES,Normal,,,,
+Tumor,,Endometrioid,,Normal,,42.19,Female,Unifocal
+Tumor,FIGO grade 2,,YES,Normal,IA,,,
+Tumor,,Endometrioid,YES,,,34.72,Female,
+,,Endometrioid,YES,Normal,IIIC2,,,
+,,Endometrioid,,,,,Female,
+Tumor,,,,Normal,IA,,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,,Normal,IA,65.71,,
+Tumor,,,YES,,IB,,Female,Multifocal
+,,Endometrioid,YES,Normal,IA,,,
+,FIGO grade 2,,,Normal,IIIA,22.86,,Multifocal
+,,Endometrioid,,,IA,46.41,Female,Unifocal
+Tumor,,,,Normal,,,,Unifocal
+Tumor,FIGO grade 3,Endometrioid,,,IIIC1,44.81,,
+Tumor,,Endometrioid,YES,Normal,,43.0,Female,Unifocal
+,FIGO grade 2,Endometrioid,YES,Normal,II,,Female,
+,,Endometrioid,YES,Normal,,47.82,,Unifocal
+,FIGO grade 2,Endometrioid,YES,,,45.53,,Unifocal
+,FIGO grade 1,,,Normal,IA,31.58,Female,
+Tumor,,,,Normal,,17.64,,
+Tumor,FIGO grade 2,Endometrioid,,Normal,IA,36.84,Female,
+Tumor,FIGO grade 1,,,Normal,,37.69,Female,Unifocal
+,FIGO grade 2,Endometrioid,,,,28.5,,Multifocal
+Tumor,,,YES,,IB,34.89,,
+,,Serous,YES,Normal,IA,,,Unifocal
+Tumor,,Serous,YES,Low,IIIC1,38.44,Female,Unifocal
+,FIGO grade 1,,,,IB,,,
+,FIGO grade 2,,YES,Normal,,,Female,
+Tumor,,Endometrioid,YES,Normal,,,Female,Unifocal
+,FIGO grade 2,Endometrioid,,Low,IB,,Female,Unifocal
+,FIGO grade 1,Endometrioid,,Normal,IB,34.37,Female,Unifocal
+,,Endometrioid,,Normal,,17.11,Female,Unifocal
+,,Endometrioid,,Normal,IB,32.06,,
+,FIGO grade 3,Endometrioid,YES,Normal,IA,31.96,Female,Unifocal
+,,,,,,,,
+Tumor,FIGO grade 1,Endometrioid,,Normal,IA,41.44,,Unifocal
+,FIGO grade 3,,YES,Normal,IVB,,Female,
+,FIGO grade 1,Endometrioid,YES,Normal,IA,,Female,
+Tumor,FIGO grade 1,Endometrioid,YES,Normal,,,Female,Unifocal
+,FIGO grade 2,,,Normal,IA,46.45,Female,
+,,Serous,,Normal,,,Female,
+Tumor,FIGO grade 2,Endometrioid,YES,,IB,,,
+Tumor,,,,Normal,IIIC1,46.85,Female,
+Tumor,,Endometrioid,YES,,IA,26.0,Female,
+Tumor,FIGO grade 1,,,Normal,,,Female,
+Tumor,,Endometrioid,,,,27.0,Female,Multifocal
+Tumor,,,YES,,II,,Female,
+,FIGO grade 1,Endometrioid,,Normal,IA,,,Multifocal
+,FIGO grade 3,,YES,Normal,IB,,Female,
+Tumor,FIGO grade 1,,YES,,,31.0,Female,Multifocal
+,,,,Normal,IA,32.83,Female,
+,,,YES,Normal,,,Female,Multifocal
+,FIGO grade 3,,YES,Normal,IB,,Female,Multifocal
+Tumor,,Serous,YES,Normal,IA,21.83,,Multifocal
+Tumor,,,YES,Normal,IIIC1,27.0,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,,34.0,Female,
+Tumor,FIGO grade 2,Endometrioid,,Normal,,36.81,,Multifocal
+Tumor,,Endometrioid,YES,Normal,IA,46.0,Female,Unifocal
+Tumor,FIGO grade 1,Endometrioid,,,IA,,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,,Normal,IA,,Female,
+,FIGO grade 2,,YES,,IB,17.85,,
+,FIGO grade 2,,YES,Normal,IB,29.62,,
+Tumor,,Endometrioid,YES,,IIIA,,Female,Unifocal
+,FIGO grade 2,Endometrioid,YES,,,48.46,Female,Multifocal
+Tumor,FIGO grade 1,Endometrioid,YES,,,30.47,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,,34.53,,
+Tumor,,Endometrioid,,Normal,IA,,,Multifocal
+,FIGO grade 2,,YES,,IA,28.84,Female,
+Tumor,,Endometrioid,YES,,,36.0,Female,
+Tumor,FIGO grade 1,Endometrioid,YES,,IA,23.88,,Multifocal
+Tumor,FIGO grade 2,,YES,Normal,IA,27.0,,Unifocal
+Tumor,FIGO grade 2,,NO,Normal,II,44.0,,
+Tumor,FIGO grade 1,,,,,31.0,Female,Multifocal
+Tumor,FIGO grade 2,Endometrioid,,Normal,II,,Female,
+Tumor,FIGO grade 2,Endometrioid,YES,,,30.48,,
+,,Endometrioid,YES,,,,Female,Multifocal
+,,Endometrioid,YES,,IIIA,26.14,,Unifocal
+,,Endometrioid,,Normal,,30.85,Female,
+Tumor,,,YES,Normal,,34.0,Female,
+,,,,Normal,IB,31.0,Female,Multifocal
+,,,YES,,,40.72,Female,Multifocal
+Tumor,,,,,,29.37,Female,
+Tumor,,,YES,Normal,,,,Unifocal
+Tumor,FIGO grade 2,Endometrioid,YES,Normal,II,35.42,,Unifocal
+,,Serous,YES,Normal,,24.32,,Unifocal
+Tumor,,,,,IA,,,Unifocal
+Tumor,,Serous,,Normal,,,,
+Adjacent_normal,,,,,,,,
+Adjacent_normal,,,,,,,,
+,,,,,,,,
+Adjacent_normal,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Adjacent_normal,,,,,,,,
+Adjacent_normal,,,,,,,,
+Adjacent_normal,,,,,,,,
+Adjacent_normal,,,,,,,,
+Adjacent_normal,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Adjacent_normal,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Adjacent_normal,,,,,,,,
+Adjacent_normal,,,,,,,,
+Adjacent_normal,,,,,,,,
+Adjacent_normal,,,,,,,,
+Adjacent_normal,,,,,,,,
+,,,,,,,,
+Myometrium_normal,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Myometrium_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Enriched_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+,,,,,,,,
+Enriched_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+Enriched_normal,,,,,,,,
+,,,,,,,,

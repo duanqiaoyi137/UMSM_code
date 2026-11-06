@@ -1,0 +1,281 @@
+Cluster 1:
+  www.mediashopuk.com.csv.bluetooth
+  www.planet-computer.it.csv.bluetooth
+
+Cluster 2:
+  www.jrlinton.co.uk.csv.brand name
+  www.odsi.co.uk.csv.manufacturer
+  www.shopmania.com.csv.product name
+
+Cluster 3:
+  www.best-deal-items.com.csv.colour
+  www.jrlinton.co.uk.csv.colour
+  www.mediashopuk.com.csv.colour of product
+  www.odsi.co.uk.csv.colour
+  www.planet-computer.it.csv.colore del prodotto
+
+Cluster 4:
+  www.planet-computer.it.csv.colore del piede
+
+Cluster 5:
+  www.mediashopuk.com.csv.contrast ratio dynamic
+  www.planet-computer.it.csv.rapporto di contrasto dinamico
+  www.shopmania.com.csv.dynamic contrast ratio
+
+Cluster 6:
+  www.jrlinton.co.uk.csv.contrast ratio
+  www.mediashopuk.com.csv.contrast ratio typical
+  www.odsi.co.uk.csv.image contrast ratio
+  www.planet-computer.it.csv.rapporto di contrasto
+  www.shopmania.com.csv.contrast ratio
+
+Cluster 7:
+  www.mediashopuk.com.csv.displayports quantity
+  www.planet-computer.it.csv.quantità displayports
+
+Cluster 8:
+  www.best-deal-items.com.csv.dvid ports
+  www.mediashopuk.com.csv.dvid ports quantity
+  www.planet-computer.it.csv.quantità porte dvid
+
+Cluster 9:
+  www.mediashopuk.com.csv.dvii ports quantity
+
+Cluster 10:
+  www.planet-computer.it.csv.quantità porte ethernet lan rj45
+
+Cluster 11:
+  www.jrlinton.co.uk.csv.displayport
+
+Cluster 12:
+  www.best-deal-items.com.csv.dvi
+  www.jrlinton.co.uk.csv.dvi
+  www.mediashopuk.com.csv.dvi port
+  www.planet-computer.it.csv.porta dvi
+
+Cluster 13:
+  www.best-deal-items.com.csv.network rj45
+  www.jrlinton.co.uk.csv.network rj45
+  www.mediashopuk.com.csv.ethernet lan
+  www.planet-computer.it.csv.collegamento ethernet lan
+
+Cluster 14:
+  www.planet-computer.it.csv.full hd
+
+Cluster 15:
+  www.jrlinton.co.uk.csv.hdmi
+  www.planet-computer.it.csv.hdmi
+
+Cluster 16:
+  www.jrlinton.co.uk.csv.headphone
+
+Cluster 17:
+  www.planet-computer.it.csv.microfono incorporato
+
+Cluster 18:
+  www.mediashopuk.com.csv.microphone in
+  www.planet-computer.it.csv.microfono spinotto dingresso
+
+Cluster 19:
+  www.best-deal-items.com.csv.builtin speakers
+  www.jrlinton.co.uk.csv.speakers
+  www.planet-computer.it.csv.altoparlanti incorporati
+
+Cluster 20:
+  www.planet-computer.it.csv.altoparlante  cuffia  spinotto di uscita
+
+Cluster 21:
+  www.planet-computer.it.csv.subwoofer incorporato
+
+Cluster 22:
+  www.jrlinton.co.uk.csv.usb
+
+Cluster 23:
+  www.best-deal-items.com.csv.vga
+  www.jrlinton.co.uk.csv.vga
+
+Cluster 24:
+  www.best-deal-items.com.csv.hd type
+  www.jrlinton.co.uk.csv.screen mode
+  www.mediashopuk.com.csv.hd type
+  www.planet-computer.it.csv.tipologia hd
+
+Cluster 25:
+  www.mediashopuk.com.csv.hdmi ports quantity
+  www.odsi.co.uk.csv.hdmi ports qty
+  www.planet-computer.it.csv.quantità porte hdmi
+  www.shopmania.com.csv.hdmi ports
+
+Cluster 26:
+  www.mediashopuk.com.csv.headphone out
+
+Cluster 27:
+  www.mediashopuk.com.csv.headphone connectivity
+  www.planet-computer.it.csv.connessione cuffia
+
+Cluster 28:
+  www.mediashopuk.com.csv.input frequency
+  www.planet-computer.it.csv.frequenza di ingresso
+
+Cluster 29:
+  www.jrlinton.co.uk.csv.weight approximate
+  www.mediashopuk.com.csv.weight
+  www.odsi.co.uk.csv.weight
+  www.planet-computer.it.csv.peso
+  www.shopmania.com.csv.weight
+
+Cluster 30:
+  www.jrlinton.co.uk.csv.weight with stand approximate
+  www.mediashopuk.com.csv.weight with stand
+  www.planet-computer.it.csv.peso prodotto con supporto
+
+Cluster 31:
+  www.jrlinton.co.uk.csv.mount type
+
+Cluster 32:
+  www.mediashopuk.com.csv.nonoperating altitude
+  www.planet-computer.it.csv.altitudine di nonfunzionamento
+
+Cluster 33:
+  www.best-deal-items.com.csv.color supported
+  www.jrlinton.co.uk.csv.colour support
+  www.mediashopuk.com.csv.display number of colours
+  www.odsi.co.uk.csv.colour support
+  www.planet-computer.it.csv.colori del display
+  www.shopmania.com.csv.color depth
+
+Cluster 34:
+  www.mediashopuk.com.csv.operating altitude
+  www.planet-computer.it.csv.altitudine di funzionamento
+
+Cluster 35:
+  www.mediashopuk.com.csv.package weight
+  www.planet-computer.it.csv.peso incluso imballo
+
+Cluster 36:
+  www.mediashopuk.com.csv.pixel pitch
+  www.odsi.co.uk.csv.pixel pitch
+  www.planet-computer.it.csv.dot pitch
+  www.shopmania.com.csv.dot pitch
+
+Cluster 37:
+  www.jrlinton.co.uk.csv.energy efficiency class
+  www.mediashopuk.com.csv.energy efficiency class
+  www.odsi.co.uk.csv.energy class
+  www.planet-computer.it.csv.classe efficienza energetica
+
+Cluster 38:
+  www.jrlinton.co.uk.csv.operating power consumption
+  www.mediashopuk.com.csv.power consumption typical
+  www.odsi.co.uk.csv.power consumption operational
+  www.planet-computer.it.csv.consumi
+  www.shopmania.com.csv.power consumption operational
+
+Cluster 39:
+  www.best-deal-items.com.csv.power consumption stand by  sleep
+  www.jrlinton.co.uk.csv.standby power consumption
+  www.mediashopuk.com.csv.power consumption standby
+  www.odsi.co.uk.csv.power consumption stand by
+  www.planet-computer.it.csv.consumi modalità standby
+  www.shopmania.com.csv.power consumption stand by
+
+Cluster 40:
+  www.jrlinton.co.uk.csv.response time
+  www.mediashopuk.com.csv.response time
+  www.odsi.co.uk.csv.response time
+  www.planet-computer.it.csv.tempo di risposta
+  www.shopmania.com.csv.response time
+
+Cluster 41:
+  www.best-deal-items.com.csv.brightness typical
+  www.jrlinton.co.uk.csv.brightness
+  www.mediashopuk.com.csv.display brightness
+  www.odsi.co.uk.csv.brightness
+  www.planet-computer.it.csv.luminosità schermo
+  www.shopmania.com.csv.brightness
+
+Cluster 42:
+  www.jrlinton.co.uk.csv.screen size
+  www.mediashopuk.com.csv.display diagonal
+  www.odsi.co.uk.csv.diagonal size
+  www.planet-computer.it.csv.dimensioni schermo
+  www.shopmania.com.csv.diagonal size
+
+Cluster 43:
+  www.planet-computer.it.csv.dimensione visibile orizzontale
+
+Cluster 44:
+  www.planet-computer.it.csv.dimensione visibile verticale
+
+Cluster 45:
+  www.mediashopuk.com.csv.display
+  www.odsi.co.uk.csv.display type
+  www.planet-computer.it.csv.tipologia display
+  www.shopmania.com.csv.display type
+
+Cluster 46:
+  www.best-deal-items.com.csv.number of loudspeakers
+  www.jrlinton.co.uk.csv.number of speakers
+  www.odsi.co.uk.csv.speakers
+  www.planet-computer.it.csv.numero di altoparlanti
+  www.shopmania.com.csv.number of speakers
+
+Cluster 47:
+  www.best-deal-items.com.csv.aspect ratio
+  www.jrlinton.co.uk.csv.aspect ratio
+  www.mediashopuk.com.csv.aspect ratio
+  www.odsi.co.uk.csv.aspect ratio
+  www.planet-computer.it.csv.formato
+  www.shopmania.com.csv.aspect ratio
+
+Cluster 48:
+  www.odsi.co.uk.csv.osd languages
+  www.planet-computer.it.csv.lingue osd
+
+Cluster 49:
+  www.planet-computer.it.csv.numero di lingue osd
+
+Cluster 50:
+  www.best-deal-items.com.csv.display resolution
+  www.jrlinton.co.uk.csv.maximum resolution
+  www.mediashopuk.com.csv.display resolution
+  www.odsi.co.uk.csv.native resolution
+  www.planet-computer.it.csv.risoluzione
+  www.shopmania.com.csv.resolution
+
+Cluster 51:
+  www.best-deal-items.com.csv.usb 20 ports quantity
+  www.mediashopuk.com.csv.usb 20 ports quantity
+  www.planet-computer.it.csv.quantità porte usb 20
+
+Cluster 52:
+  www.mediashopuk.com.csv.usb 30 ports quantity
+  www.planet-computer.it.csv.quantità porte usb 30
+
+Cluster 53:
+  www.best-deal-items.com.csv.number of usb ports
+  www.shopmania.com.csv.usb ports
+
+Cluster 54:
+  www.jrlinton.co.uk.csv.usb standard
+
+Cluster 55:
+  www.best-deal-items.com.csv.vga dsub ports
+  www.mediashopuk.com.csv.vga dsub ports quantity
+  www.planet-computer.it.csv.quantità porte vga dsub
+
+Cluster 56:
+  www.best-deal-items.com.csv.limited warranty
+  www.jrlinton.co.uk.csv.limited warranty
+  www.odsi.co.uk.csv.service  support
+
+Cluster 57:
+  www.mediashopuk.com.csv.wifi
+  www.planet-computer.it.csv.wifi
+
+Cluster 58:
+  www.best-deal-items.com.csv.operating relative humidity hh
+  www.mediashopuk.com.csv.operating relative humidity hh
+  www.odsi.co.uk.csv.humidity range operating
+  www.planet-computer.it.csv.range di umidità di funzionamento
+

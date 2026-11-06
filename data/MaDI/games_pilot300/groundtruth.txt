@@ -1,0 +1,43 @@
+Cluster 1:
+  metacritic.csv.age_rating
+  sales.csv.age_classification
+
+Cluster 2:
+  metacritic.csv.press_rating
+  sales.csv.press_score
+
+Cluster 3:
+  dbpedia.csv.studio
+  metacritic.csv.made_by
+  sales.csv.studio
+
+Cluster 4:
+  dbpedia.csv.genre
+  metacritic.csv.genres
+  sales.csv.genre
+
+Cluster 5:
+  dbpedia.csv.title
+  metacritic.csv.game_title
+  sales.csv.prod_title
+
+Cluster 6:
+  dbpedia.csv.system
+  metacritic.csv.console
+  sales.csv.hw
+
+Cluster 7:
+  sales.csv.dist
+
+Cluster 8:
+  dbpedia.csv.launch_yr
+  metacritic.csv.year_published
+  sales.csv.launch_dt
+
+Cluster 9:
+  dbpedia.csv.franchise
+
+Cluster 10:
+  metacritic.csv.player_rating
+  sales.csv.comm_rating
+

@@ -1,0 +1,257 @@
+Cluster 1:
+  www.flexshopper.com.csv.aspect ratio
+  www.mygofer.com.csv.aspect ratio
+  www.thenerds.net.csv.aspect ratio
+  www.tigerdirect.com.csv.aspect ratio
+  www.topendelectronic.co.uk.csv.aspect ratio
+
+Cluster 2:
+  www.flexshopper.com.csv.battery capacity
+  www.techbuy.com.au.csv.battery
+  www.thenerds.net.csv.battery capacity
+  www.tinydeal.com.csv.builtin rechargeable polymer battery
+  www.topendelectronic.co.uk.csv.battery capacity
+
+Cluster 3:
+  wallmartphoto.com.csv.battery type
+  www.amazon.com.csv.batteries
+  www.flexshopper.com.csv.battery type
+  www.isupplyhub.com.csv.batteries
+  www.mygofer.com.csv.battery type
+  www.staples.com.csv.laptop battery type
+  www.thenerds.net.csv.battery chemistry
+  www.tigerdirect.com.csv.battery type
+  www.topendelectronic.co.uk.csv.battery
+
+Cluster 4:
+  wallmartphoto.com.csv.battery life
+  www.amazon.com.csv.average battery life in hours
+  www.flexshopper.com.csv.battery life
+  www.isupplyhub.com.csv.average battery life in hours
+  www.mygofer.com.csv.battery life range
+  www.staples.com.csv.laptop battery life
+  www.thenerds.net.csv.maximum battery run time
+  www.tigerdirect.com.csv.battery life
+  www.topendelectronic.co.uk.csv.maximum battery run time
+
+Cluster 5:
+  www.amazon.com.csv.brand name
+  www.directdial.com.csv.brand name
+  www.isupplyhub.com.csv.brand name
+  www.techbuy.com.au.csv.brand name
+  www.thenerds.net.csv.brand name
+  www.topendelectronic.co.uk.csv.brand
+
+Cluster 6:
+  wallmartphoto.com.csv.processor brand
+  www.flexshopper.com.csv.processor brand
+  www.isupplyhub.com.csv.processor brand
+  www.mygofer.com.csv.cpu brand
+  www.thenerds.net.csv.processor manufacturer
+  www.tigerdirect.com.csv.processor brand
+  www.topendelectronic.co.uk.csv.processor manufacturer
+
+Cluster 7:
+  www.directdial.com.csv.cache
+  www.flexshopper.com.csv.cache per processor
+  www.mygofer.com.csv.cpu cache mb
+  www.staples.com.csv.cpu cache
+  www.thenerds.net.csv.cache
+  www.tigerdirect.com.csv.processor cache
+  www.topendelectronic.co.uk.csv.cache
+
+Cluster 8:
+  wallmartphoto.com.csv.processor speed
+  www.directdial.com.csv.processor speed
+  www.flexshopper.com.csv.processor speed
+  www.mygofer.com.csv.cpu speed
+  www.staples.com.csv.processor speed up to ghz
+  www.thenerds.net.csv.processor speed
+  www.tigerdirect.com.csv.processor speed
+  www.topendelectronic.co.uk.csv.processor speed
+
+Cluster 9:
+  www.directdial.com.csv.processor type
+  www.flexshopper.com.csv.processor type
+  www.thenerds.net.csv.processor type
+  www.tigerdirect.com.csv.processor class
+  www.topendelectronic.co.uk.csv.processor type
+
+Cluster 10:
+  www.mygofer.com.csv.depth in
+
+Cluster 11:
+  wallmartphoto.com.csv.resolution
+
+Cluster 12:
+  wallmartphoto.com.csv.laptop screen size
+  www.amazon.com.csv.screen size
+  www.bidorbuy.co.za.csv.screen size diagonal
+  www.directdial.com.csv.screen size
+  www.flexshopper.com.csv.screen size measured diagonally
+  www.isupplyhub.com.csv.screen size
+  www.mygofer.com.csv.screen size range
+  www.overstock.com.csv.screen size
+  www.staples.com.csv.laptop screen size inches
+  www.techbuy.com.au.csv.screen size
+  www.thenerds.net.csv.screen size
+  www.tigerdirect.com.csv.screen size
+  www.topendelectronic.co.uk.csv.screen size
+
+Cluster 13:
+  wallmartphoto.com.csv.screen type
+
+Cluster 14:
+  www.amazon.com.csv.flash memory size
+  www.directdial.com.csv.flash memory
+  www.isupplyhub.com.csv.flash memory size
+  www.techbuy.com.au.csv.flash memory
+  www.thenerds.net.csv.flash memory capacity
+
+Cluster 15:
+  www.directdial.com.csv.graphics controller manufacturer
+  www.flexshopper.com.csv.graphics chip
+  www.isupplyhub.com.csv.chipset brand
+  www.mygofer.com.csv.gpu chipset
+  www.techbuy.com.au.csv.multigpu support
+  www.thenerds.net.csv.graphics controller manufacturer
+  www.topendelectronic.co.uk.csv.graphics controller manufacturer
+
+Cluster 16:
+  www.directdial.com.csv.graphics controller model
+  www.thenerds.net.csv.graphics controller model
+  www.topendelectronic.co.uk.csv.graphics controller model
+
+Cluster 17:
+  www.directdial.com.csv.hdmi
+  www.flexshopper.com.csv.hdmi output
+  www.mygofer.com.csv.hdmi outputs
+  www.thenerds.net.csv.hdmi
+  www.topendelectronic.co.uk.csv.interfacesports
+
+Cluster 18:
+  www.directdial.com.csv.memory card reader
+  www.flexshopper.com.csv.memory card reader
+  www.thenerds.net.csv.memory card reader
+  www.topendelectronic.co.uk.csv.memory card reader
+
+Cluster 19:
+  www.directdial.com.csv.vga
+  www.flexshopper.com.csv.vga input
+  www.mygofer.com.csv.vga out
+  www.thenerds.net.csv.vga
+  www.topendelectronic.co.uk.csv.vga
+
+Cluster 20:
+  wallmartphoto.com.csv.hard drive size
+  www.amazon.com.csv.hard drive
+  www.directdial.com.csv.total hard drive capacity
+  www.flexshopper.com.csv.drive capacity
+  www.isupplyhub.com.csv.hard drive
+  www.mygofer.com.csv.hard drive capacity range
+  www.overstock.com.csv.hard drive capacity
+  www.staples.com.csv.hard drive capacity
+  www.techbuy.com.au.csv.storage
+  www.thenerds.net.csv.hard drive capacity
+  www.tigerdirect.com.csv.capacity
+  www.topendelectronic.co.uk.csv.hdd
+
+Cluster 21:
+  www.tigerdirect.com.csv.hard drive speed
+  www.topendelectronic.co.uk.csv.hdd rpm
+
+Cluster 22:
+  www.directdial.com.csv.64bit processing
+  www.thenerds.net.csv.64bit processing
+  www.topendelectronic.co.uk.csv.64bit processing
+
+Cluster 23:
+  wallmartphoto.com.csv.shipping weight in pounds
+  www.amazon.com.csv.shipping weight
+
+Cluster 24:
+  www.flexshopper.com.csv.power consumption
+  www.techbuy.com.au.csv.power consumption
+
+Cluster 25:
+  www.directdial.com.csv.standby power consumption
+  www.techbuy.com.au.csv.power consumption standby
+
+Cluster 26:
+  wallmartphoto.com.csv.system ram
+  www.flexshopper.com.csv.system memory ram
+  www.mygofer.com.csv.memory range
+  www.overstock.com.csv.installed ram
+  www.staples.com.csv.ram capacity
+  www.tigerdirect.com.csv.total memory size
+  www.topendelectronic.co.uk.csv.memory
+
+Cluster 27:
+  wallmartphoto.com.csv.maximum memory expansion
+  www.directdial.com.csv.maximum memory
+  www.flexshopper.com.csv.system memory ram expandable to
+  www.mygofer.com.csv.maximum memory supported
+  www.techbuy.com.au.csv.memory
+
+Cluster 28:
+  www.tigerdirect.com.csv.ram speed
+
+Cluster 29:
+  www.amazon.com.csv.computer memory type
+  www.directdial.com.csv.memory technology
+  www.flexshopper.com.csv.type of memory ram
+  www.isupplyhub.com.csv.computer memory type
+  www.mygofer.com.csv.memory type
+  www.thenerds.net.csv.memory technology
+  www.tigerdirect.com.csv.memory type
+  www.topendelectronic.co.uk.csv.memory technology
+
+Cluster 30:
+  www.directdial.com.csv.ssd cache capacity
+
+Cluster 31:
+  www.thenerds.net.csv.solid state drive configuration
+  www.topendelectronic.co.uk.csv.ssd
+
+Cluster 32:
+  www.amazon.com.csv.number of usb 20 ports
+  www.directdial.com.csv.number of usb 20 ports
+  www.flexshopper.com.csv.number of usb 20 ports
+  www.isupplyhub.com.csv.number of usb 20 ports
+  www.thenerds.net.csv.number of usb 20 ports
+  www.topendelectronic.co.uk.csv.number of usb 20 ports
+
+Cluster 33:
+  www.amazon.com.csv.number of usb 30 ports
+  www.directdial.com.csv.number of usb 30 ports
+  www.flexshopper.com.csv.number of usb 30 ports
+  www.isupplyhub.com.csv.number of usb 30 ports
+  www.thenerds.net.csv.number of usb 30 ports
+  www.topendelectronic.co.uk.csv.number of usb 30 ports
+
+Cluster 34:
+  livehotdeals.com.csv.support
+  www.bidorbuy.co.za.csv.manufacturer warranty
+  www.directdial.com.csv.limited warranty
+  www.flexshopper.com.csv.manufacturer warranty
+  www.mygofer.com.csv.general warranty
+  www.staples.com.csv.laptop warranty
+  www.techbuy.com.au.csv.warranty
+  www.tigerdirect.com.csv.lenovo
+
+Cluster 35:
+  www.amazon.com.csv.item weight
+  www.bhphotovideo.com.csv.weight
+  www.bidorbuy.co.za.csv.weight
+  www.directdial.com.csv.weight approximate
+  www.flexshopper.com.csv.weight
+  www.isupplyhub.com.csv.item weight
+  www.mygofer.com.csv.item weight lbs
+  www.overstock.com.csv.laptop weight
+  www.staples.com.csv.laptop weight filter
+  www.techbuy.com.au.csv.weight
+  www.thenerds.net.csv.weight approximate
+  www.tigerdirect.com.csv.weight
+  www.tinydeal.com.csv.weight
+  www.topendelectronic.co.uk.csv.weight
+

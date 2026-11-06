@@ -1,0 +1,251 @@
+Cluster 1:
+  www.xpcpro.com.csv.bluetooth
+
+Cluster 2:
+  www.imldirect.it.csv.brand name
+  www.kingsfieldcomputers.co.uk.csv.brand name
+  www.softwarecity.ca.csv.brand name
+
+Cluster 3:
+  www.cleverboxes.com.csv.case colour
+  www.imldirect.it.csv.colour
+  www.kingsfieldcomputers.co.uk.csv.colour
+  www.softwarecity.ca.csv.color
+  www.xpcpro.com.csv.colour of product
+
+Cluster 4:
+  www.xpcpro.com.csv.feet colour
+
+Cluster 5:
+  www.xpcpro.com.csv.contrast ratio dynamic
+
+Cluster 6:
+  www.imldirect.it.csv.contrast ratio
+  www.kingsfieldcomputers.co.uk.csv.contrast ratio
+  www.softwarecity.ca.csv.contrast ratio
+  www.xpcpro.com.csv.contrast ratio typical
+
+Cluster 7:
+  www.cleverboxes.com.csv.displayport in
+  www.xpcpro.com.csv.displayports quantity
+
+Cluster 8:
+  www.xpcpro.com.csv.dvid ports quantity
+
+Cluster 9:
+  www.xpcpro.com.csv.dvii ports quantity
+
+Cluster 10:
+  www.imldirect.it.csv.displayport
+  www.kingsfieldcomputers.co.uk.csv.displayport
+  www.softwarecity.ca.csv.displayport
+
+Cluster 11:
+  www.cleverboxes.com.csv.dvi
+  www.imldirect.it.csv.dvi
+  www.kingsfieldcomputers.co.uk.csv.dvi
+  www.softwarecity.ca.csv.dvi
+  www.xpcpro.com.csv.dvi port
+
+Cluster 12:
+  www.imldirect.it.csv.network rj45
+  www.kingsfieldcomputers.co.uk.csv.network rj45
+  www.softwarecity.ca.csv.network rj45
+  www.xpcpro.com.csv.ethernet lan
+
+Cluster 13:
+  www.xpcpro.com.csv.full hd
+
+Cluster 14:
+  www.cleverboxes.com.csv.hdmi
+  www.imldirect.it.csv.hdmi
+  www.kingsfieldcomputers.co.uk.csv.hdmi
+  www.softwarecity.ca.csv.hdmi
+  www.xpcpro.com.csv.hdmi
+
+Cluster 15:
+  www.imldirect.it.csv.headphone
+  www.kingsfieldcomputers.co.uk.csv.headphone
+  www.softwarecity.ca.csv.headphone
+
+Cluster 16:
+  www.xpcpro.com.csv.microphone in
+
+Cluster 17:
+  www.getprice.com.au.csv.speakers
+  www.imldirect.it.csv.speakers
+  www.kingsfieldcomputers.co.uk.csv.speakers
+  www.softwarecity.ca.csv.speakers
+  www.xpcpro.com.csv.builtin speakers
+
+Cluster 18:
+  www.imldirect.it.csv.usb
+  www.kingsfieldcomputers.co.uk.csv.usb
+  www.softwarecity.ca.csv.usb
+  www.xpcpro.com.csv.usb powered
+
+Cluster 19:
+  www.cleverboxes.com.csv.vga
+  www.imldirect.it.csv.vga
+  www.kingsfieldcomputers.co.uk.csv.vga
+  www.softwarecity.ca.csv.vga
+
+Cluster 20:
+  www.imldirect.it.csv.screen mode
+  www.kingsfieldcomputers.co.uk.csv.screen mode
+  www.softwarecity.ca.csv.screen mode
+  www.xpcpro.com.csv.hd type
+
+Cluster 21:
+  www.cleverboxes.com.csv.hdmi ports
+  www.xpcpro.com.csv.hdmi ports quantity
+
+Cluster 22:
+  www.xpcpro.com.csv.headphone outputs
+
+Cluster 23:
+  www.xpcpro.com.csv.headphone connectivity
+
+Cluster 24:
+  www.xpcpro.com.csv.input frequency
+
+Cluster 25:
+  www.imldirect.it.csv.weight approximate
+  www.kingsfieldcomputers.co.uk.csv.weight approximate
+  www.softwarecity.ca.csv.weight approximate
+  www.xpcpro.com.csv.weight
+
+Cluster 26:
+  www.imldirect.it.csv.weight with stand approximate
+  www.kingsfieldcomputers.co.uk.csv.weight with stand approximate
+  www.softwarecity.ca.csv.weight with stand approximate
+  www.xpcpro.com.csv.weight with stand
+
+Cluster 27:
+  www.cleverboxes.com.csv.wall mount
+
+Cluster 28:
+  www.imldirect.it.csv.mount type
+  www.kingsfieldcomputers.co.uk.csv.mount type
+  www.softwarecity.ca.csv.mount type
+
+Cluster 29:
+  www.xpcpro.com.csv.nonoperating altitude
+
+Cluster 30:
+  www.cleverboxes.com.csv.colour support
+  www.imldirect.it.csv.colour support
+  www.kingsfieldcomputers.co.uk.csv.colour support
+  www.softwarecity.ca.csv.color supported
+  www.xpcpro.com.csv.display number of colours
+
+Cluster 31:
+  www.xpcpro.com.csv.package weight
+
+Cluster 32:
+  www.cleverboxes.com.csv.pixel pitch
+  www.xpcpro.com.csv.pixel pitch
+
+Cluster 33:
+  www.imldirect.it.csv.energy efficiency class
+  www.kingsfieldcomputers.co.uk.csv.energy efficiency class
+  www.xpcpro.com.csv.energy efficiency class
+
+Cluster 34:
+  www.imldirect.it.csv.operating power consumption
+  www.kingsfieldcomputers.co.uk.csv.operating power consumption
+  www.softwarecity.ca.csv.operating power consumption
+  www.xpcpro.com.csv.power consumption typical
+
+Cluster 35:
+  www.imldirect.it.csv.standby power consumption
+  www.kingsfieldcomputers.co.uk.csv.standby power consumption
+  www.softwarecity.ca.csv.standby power consumption
+  www.xpcpro.com.csv.power consumption standby
+
+Cluster 36:
+  www.cleverboxes.com.csv.response time
+  www.getprice.com.au.csv.response time
+  www.imldirect.it.csv.response time
+  www.kingsfieldcomputers.co.uk.csv.response time
+  www.softwarecity.ca.csv.response time
+  www.xpcpro.com.csv.response time
+
+Cluster 37:
+  www.cleverboxes.com.csv.brightness
+  www.imldirect.it.csv.brightness
+  www.kingsfieldcomputers.co.uk.csv.brightness
+  www.softwarecity.ca.csv.brightness
+  www.xpcpro.com.csv.display brightness
+
+Cluster 38:
+  www.cleverboxes.com.csv.screen dimensions
+  www.imldirect.it.csv.screen size
+  www.kingsfieldcomputers.co.uk.csv.screen size
+  www.softwarecity.ca.csv.screen size
+  www.xpcpro.com.csv.display diagonal
+
+Cluster 39:
+  www.cleverboxes.com.csv.product type
+  www.getprice.com.au.csv.monitor type
+  www.imldirect.it.csv.product type
+  www.kingsfieldcomputers.co.uk.csv.product type
+  www.softwarecity.ca.csv.product type
+  www.xpcpro.com.csv.display
+
+Cluster 40:
+  www.cleverboxes.com.csv.audio capabilities
+  www.imldirect.it.csv.number of speakers
+  www.kingsfieldcomputers.co.uk.csv.number of speakers
+  www.softwarecity.ca.csv.number of speakers
+  www.xpcpro.com.csv.number of loudspeakers
+
+Cluster 41:
+  www.cleverboxes.com.csv.aspect ratio
+  www.imldirect.it.csv.aspect ratio
+  www.kingsfieldcomputers.co.uk.csv.aspect ratio
+  www.softwarecity.ca.csv.aspect ratio
+  www.xpcpro.com.csv.aspect ratio
+
+Cluster 42:
+  www.xpcpro.com.csv.on screen display osd languages
+
+Cluster 43:
+  www.cleverboxes.com.csv.language selection
+  www.xpcpro.com.csv.number of osd languages
+
+Cluster 44:
+  www.cleverboxes.com.csv.resolution maximum
+  www.getprice.com.au.csv.display resolution
+  www.imldirect.it.csv.maximum resolution
+  www.kingsfieldcomputers.co.uk.csv.maximum resolution
+  www.softwarecity.ca.csv.maximum resolution
+  www.xpcpro.com.csv.display resolution
+
+Cluster 45:
+  www.xpcpro.com.csv.usb 20 ports quantity
+
+Cluster 46:
+  www.xpcpro.com.csv.usb 30 ports quantity
+
+Cluster 47:
+  www.imldirect.it.csv.usb standard
+  www.kingsfieldcomputers.co.uk.csv.usb standard
+  www.softwarecity.ca.csv.usb standard
+
+Cluster 48:
+  www.cleverboxes.com.csv.vga in
+  www.xpcpro.com.csv.vga dsub ports quantity
+
+Cluster 49:
+  www.cleverboxes.com.csv.warranty
+  www.imldirect.it.csv.limited warranty
+  www.kingsfieldcomputers.co.uk.csv.limited warranty
+  www.softwarecity.ca.csv.limited warranty
+
+Cluster 50:
+  www.xpcpro.com.csv.wifi
+
+Cluster 51:
+  www.xpcpro.com.csv.operating relative humidity range
+
