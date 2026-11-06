@@ -1,0 +1,48 @@
+# Magneto zero-shot on datasets with meaningful column names.
+base: full_pipeline_gpu.yaml
+research:
+  decision_offset_grid: [0]
+  lambda_grid: [0, 0.1, 0.25, 0.5, 0.75, 1.0]
+  plots: false
+  diagnostics: false
+  matcher_params:
+    magneto:
+      reranker: none
+      include_equal_matches: true
+study:
+  protocol_suffix: magneto_v1
+  state: output/results/magneto_eval_state.html
+  matchers: [magneto]
+  phases: [fit, validate-lambda, missing]
+  jobs:
+    - id: magneto-sotab-k5
+      overrides:
+        research:
+          name: magneto_sotab_k5
+          calibration_group: magneto_external
+          roles:
+            test: {name: SOTAB_K5, sets: ['test_*']}
+    - id: magneto-gdc
+      overrides:
+        research:
+          name: magneto_gdc
+          calibration_group: magneto_external
+          roles:
+            test: {name: GDC, sets: [clinical]}
+    - id: magneto-madi
+      overrides:
+        research:
+          name: magneto_madi
+          calibration_group: magneto_external
+          roles:
+            test: {name: MaDI, sets: [games_pilot300, music_pilot300, papers_pilot300]}
+    - id: magneto-alaska-monitor
+      overrides:
+        research:
+          name: magneto_alaska_monitor
+          fold: camera_notebook_monitor
+          calibration_group: magneto_alaska
+          roles:
+            fit: {name: Alaska_Partition, sets: [camera_pool]}
+            validation: {name: Alaska_Partition, sets: [notebook_pool]}
+            test: {name: Alaska_Partition, sets: [monitor_test_*]}

@@ -1,0 +1,41 @@
+# Magneto LLM reranker pilot on the fixed-Q protocol.
+# API key is read from DEEPSEEK_API_KEY; never stored in this file.
+base: full_pipeline_sbert_fix.yaml
+research:
+  plots: false
+  diagnostics: false
+  max_cells: 40
+  matcher_params:
+    magneto:
+      reranker: llm
+      rerank_k: 5
+      llm_sample_size: 5
+      llm_workers: 8
+      llm_max_variants: 2
+study:
+  protocol_suffix: magneto_llm_v1
+  state: output/results/magneto_llm_state.html
+  matchers: [magneto]
+  phases: [fit, validate-lambda, missing]
+  jobs:
+    - id: magneto-llm-gdc
+      overrides:
+        research:
+          name: magneto_llm_gdc
+          calibration_group: magneto_llm_external
+          roles:
+            test: {name: GDC, sets: [clinical]}
+    - id: magneto-llm-madi
+      overrides:
+        research:
+          name: magneto_llm_madi
+          calibration_group: magneto_llm_external
+          roles:
+            test: {name: MaDI, sets: [games_pilot300, music_pilot300, papers_pilot300]}
+    - id: magneto-llm-sotab-k5
+      overrides:
+        research:
+          name: magneto_llm_sotab_k5
+          calibration_group: magneto_llm_external
+          roles:
+            test: {name: SOTAB_K5, sets: ['test_*']}

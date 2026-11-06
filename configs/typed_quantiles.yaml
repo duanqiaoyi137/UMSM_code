@@ -1,0 +1,27 @@
+# First typed proposal variant. Use a new calibration and held-out validation.
+base: staged.yaml
+research:
+  name: paper_typed_quantiles
+  calibration: output/calibration/research/paper_typed_quantiles_{matcher}_{fold}.json
+  type_strata: true
+  statistical_baselines: [mean_mode, median_mode, knn, mice, missforest]
+  statistical_params: {max_iter: 5, n_estimators: 50}
+modules:
+  uncertainty_model:
+    name: calibrated_mixture
+    params:
+      routing: by_type
+      rho: 0.95
+      k_max: 10
+      type_options:
+        categorical_ratio: 0.3
+        identifier_ratio: 0.8
+        parse_fraction: 0.8
+        overrides: {}  # e.g. {'table.csv.product_id': identifier}
+      generators:
+        categorical: [knn_tuple, column_marginal]
+        ordered_numeric: [knn_tuple, column_marginal]
+        numeric: [quantile_marginal]
+        date: [quantile_marginal]
+        text: [knn_tuple, column_marginal]
+        identifier: []

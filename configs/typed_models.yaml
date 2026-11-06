@@ -1,0 +1,14 @@
+base: typed_cluster.yaml
+research:
+  name: paper_typed_models
+  calibration: output/calibration/research/paper_typed_models_{matcher}_{fold}.json
+modules:
+  uncertainty_model:
+    params:
+      generators:
+        categorical: [column_marginal, gower_knn, cluster_marginal, nb_classifier]
+        ordered_numeric: [column_marginal, gower_knn, cluster_marginal, numeric_kernel]
+        numeric: [quantile_marginal, gower_knn, cluster_marginal, mice_posterior]
+        date: [quantile_marginal, gower_knn, cluster_marginal, mice_posterior]
+        text: [gower_knn, column_marginal]
+        identifier: []

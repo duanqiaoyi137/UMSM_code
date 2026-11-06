@@ -57,6 +57,9 @@ def score_cache_key(cfg, iset, model, matcher, realization, data=None, canonical
                "seed": data.seed if data is not None else cfg["experiment"]["seed"]}
     if matcher.scoring_version != 1:
         payload["matcher_scoring_version"] = matcher.scoring_version
+    if getattr(matcher,'_retrieval',False) or getattr(getattr(matcher,'_base',None),'_retrieval',False):
+        # Raw scores are unchanged, but older caches do not contain retrieval membership.
+        payload['retrieval_membership_version']=1
     context_version = getattr(matcher, "context_sampling_version", None)
     if context_version is not None and data is not None and any(data.state_count(c) > 1 for c in data.columns):
         payload["context_sampling_version"] = context_version
@@ -90,6 +93,17 @@ def score_cache_key(cfg, iset, model, matcher, realization, data=None, canonical
 
 
 def score_with_cache(data, model, matcher, cfg, ctx):
+    # Input: evidence/config/context; output: serialized cache lookup/compute, shared safely by independent jobs.
+    if not cfg['matcher'].get('cache_scores',True):
+        return _score_with_cache_unlocked(data,model,matcher,cfg,ctx)
+    from filelock import FileLock
+    key=score_cache_key({**cfg,'_project_root':ctx.project_root},data.source,model,matcher,data.realization,data)
+    path=os.path.join(ctx.cache_dir,'scores',key+'.compute.lock')
+    os.makedirs(os.path.dirname(path),exist_ok=True)
+    with FileLock(path): return _score_with_cache_unlocked(data,model,matcher,cfg,ctx)
+
+
+def _score_with_cache_unlocked(data, model, matcher, cfg, ctx):
     # 输入：data、model、matcher、cfg、ctx；输出：(ScoreSamples, 是否命中缓存)；继承：无（模块函数）。
     """Return raw samples and cache-hit flag. Blocking is shared across crossed methods."""
     enabled = cfg["matcher"].get("cache_scores", True)
@@ -110,10 +124,12 @@ def score_with_cache(data, model, matcher, cfg, ctx):
     plan = ctx.shared(("candidates", candidate_cache_key(cfg, data.source, ctx)), make_plan) if enabled else make_plan()
     data.candidate_pairs, candidate_info = plan
     ctx.reset_rng()
+    ctx.resources['pair_cache_enabled']=enabled
     samples = matcher.score(data, ctx)
     samples.meta.update(data.score_meta())
     samples.meta["candidates"] = candidate_info
     if cache_path:
         os.makedirs(os.path.dirname(cache_path), exist_ok=True)
-        pd.to_pickle({"df": samples.df, "meta": samples.meta, "candidate_pairs": data.candidate_pairs}, cache_path)
+        from .online import atomic_pickle
+        atomic_pickle({"df": samples.df, "meta": samples.meta, "candidate_pairs": data.candidate_pairs}, cache_path)
     return samples, False

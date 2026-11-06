@@ -88,7 +88,8 @@ class MagnetoMatcher(BaseMatcher):
                  llm_prompt: str = "magneto", llm_top_n: int | None = None, llm_value_chars: int | None = None,
                  llm_extra_body: dict | None = None, llm_workers: int = 8, llm_price: list[float] | None = None,
                  llm_require_success: bool = False,
-                 device: str = "auto", batch_size: int = 64, max_length: int | None = 384):
+                 device: str = "auto", batch_size: int = 64, max_length: int | None = 384,
+                 numerical_device: str = 'cpu'):
         # 输入：model、encoding_mode、sampling_mode 等配置参数（详见签名）；输出：None；初始化实例及校验参数；继承：MagnetoMatcher(BaseMatcher)。
         if encoding_mode not in ENCODING_MODES:
             raise ValueError(f"encoding_mode must be one of {ENCODING_MODES}")
@@ -125,6 +126,7 @@ class MagnetoMatcher(BaseMatcher):
         self.llm_price = llm_price
         self.llm_require_success = llm_require_success
         self.device = device
+        self.numerical_device=numerical_device
         self.batch_size = batch_size
         self.max_length = max_length
 
@@ -226,7 +228,9 @@ class MagnetoMatcher(BaseMatcher):
                 fwd = outs[k]
                 if self.bidirectional:
                     bwd = outs[k + len(pairs)]
-                    fwd = {key: {f: (v + bwd[(key[1], key[0])][f].T) / 2 for f, v in m.items()} for key, m in fwd.items()}
+                    fwd = {key: {f: (np.maximum(v,bwd[(key[1], key[0])][f].T) if f == 'retrieved'
+                                           else (v + bwd[(key[1], key[0])][f].T) / 2)
+                                 for f, v in m.items()} for key, m in fwd.items()}
                 parts.extend((ci, cj, m) for (ci, cj), m in fwd.items())
             df = self._frame(parts)
         if self.reranker == "llm":
@@ -270,7 +274,8 @@ class MagnetoMatcher(BaseMatcher):
                 if not self._active_data.allows(ci, cj):
                     continue
                 if self._retrieval:
-                    s = np.clip(self._emb[ci] @ self._emb[cj].T, -1.0, 1.0)
+                    from ..numerics import matrix_product
+                    s = np.clip(matrix_product(self._emb[ci],self._emb[cj],self.numerical_device), -1.0, 1.0)
                     if self.include_equal_matches and clean_name(ci.name) == clean_name(cj.name):
                         s = np.ones_like(s)
                 else:
@@ -305,6 +310,9 @@ class MagnetoMatcher(BaseMatcher):
                 m = {"score": kept[cj]}
                 if self._retrieval:
                     m["retriever_score"] = raw[cj]
+                    # Membership is recorded explicitly: a retrieved score may itself be zero.
+                    m["retrieved"] = np.array([[float(cj in ranked[a]) for _ in range(raw[cj].shape[1])]
+                                                for a in range(len(ranked))])
                 if self.reranker == "llm":
                     m["llm_scored"] = llm_flag[cj]
                 out[(ci, cj)] = m

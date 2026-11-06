@@ -1,0 +1,168 @@
+base: common.yaml
+study:
+  state: output/results/rq4_benchmark_20261106_state.html
+  phases:
+  - fit
+  - validate-lambda
+  - benchmark
+  jobs:
+  - id: camera-online-batch
+    overrides:
+      research:
+        name: rq4_online_batch_camera
+        fold: monitor_notebook_camera
+        roles:
+          fit:
+            name: Alaska_Partition
+            sets:
+            - monitor_pool
+            variant: original
+            tables: null
+          validation:
+            name: Alaska_Partition
+            sets:
+            - notebook_pool
+            variant: original
+            tables: null
+          test:
+            name: RQ4_Alaska_20261106
+            sets:
+            - Alaska_Partition_camera_pool_mcar_r0.4_n100_s42
+            variant: original
+            tables:
+            - www.henrys.com.csv
+            - www.flipkart.com.csv
+            - www.price-hunt.com.csv
+            - www.wexphotographic.com.csv
+            - www.ebay.com.csv
+            - www.priceme.co.nz.csv
+            - www.pricedekho.com.csv
+            - www.buzzillions.com.csv
+            - www.ilgs.net.csv
+            - www.mypriceindia.com.csv
+            - www.pcconnection.com.csv
+            - www.shopmania.in.csv
+            - buy.net.csv
+            - www.garricks.com.au.csv
+            - www.alibaba.com.csv
+            - www.camerafarm.com.au.csv
+            - www.ukdigitalcameras.co.uk.csv
+            - www.shopbot.com.au.csv
+            - www.eglobalcentral.co.uk.csv
+            - www.canon-europe.com.csv
+            - www.gosale.com.csv
+            - www.walmart.com.csv
+            - www.cambuy.com.au.csv
+            - cammarkt.com.csv
+        sweeps:
+          tables:
+          - 8
+          R:
+          - 8
+          - 16
+          - 32
+          - 64
+  - id: monitor-online-batch
+    overrides:
+      research:
+        name: rq4_online_batch_monitor
+        fold: camera_notebook_monitor
+        roles:
+          fit:
+            name: Alaska_Partition
+            sets:
+            - camera_pool
+            variant: original
+            tables: null
+          validation:
+            name: Alaska_Partition
+            sets:
+            - notebook_pool
+            variant: original
+            tables: null
+          test:
+            name: RQ4_Alaska_20261106
+            sets:
+            - Alaska_Partition_monitor_pool_mcar_r0.4_n100_s42
+            variant: original
+            tables:
+            - www.nexus-t.co.uk.csv
+            - www.mediashopuk.com.csv
+            - www.hardware-planet.it.csv
+            - www.vology.com.csv
+            - catalog.com.csv
+            - www.planet-computer.it.csv
+            - www.best-deal-items.com.csv
+            - ce.yikus.com.csv
+            - www.softwarecity.ca.csv
+            - www.officedepot.com.csv
+            - www.cleverboxes.com.csv
+            - www.pc-canada.com.csv
+            - www.ohc24.ch.csv
+            - www.jrlinton.co.uk.csv
+            - www.shopmania.com.csv
+            - www.makingbuyingeasy.co.uk.csv
+            - www.kingsfieldcomputers.co.uk.csv
+            - www.mrhightech.com.csv
+            - www.itenergy.co.uk.csv
+            - www.imldirect.it.csv
+            - ca.pcpartpicker.com.csv
+            - www.xpcpro.com.csv
+            - www.odsi.co.uk.csv
+            - www.getprice.com.au.csv
+        sweeps:
+          tables:
+          - 8
+          R:
+          - 8
+          - 16
+          - 32
+          - 64
+  - id: notebook-online-batch
+    overrides:
+      research:
+        name: rq4_online_batch_notebook
+        fold: monitor_camera_notebook
+        roles:
+          fit:
+            name: Alaska_Partition
+            sets:
+            - monitor_pool
+            variant: original
+            tables: null
+          validation:
+            name: Alaska_Partition
+            sets:
+            - camera_pool
+            variant: original
+            tables: null
+          test:
+            name: RQ4_Alaska_20261106
+            sets:
+            - Alaska_Partition_notebook_pool_mcar_r0.4_n100_s42
+            variant: original
+            tables:
+            - www.amazon.com.csv
+            - www.tigerdirect.com.csv
+            - www.mygofer.com.csv
+            - wallmartphoto.com.csv
+            - www.techbuy.com.au.csv
+            - www.topendelectronic.co.uk.csv
+            - www.bhphotovideo.com.csv
+            - www.directdial.com.csv
+            - www.flexshopper.com.csv
+            - www.staples.com.csv
+            - www.isupplyhub.com.csv
+            - livehotdeals.com.csv
+            - www.bidorbuy.co.za.csv
+            - www.tinydeal.com.csv
+            - www.overstock.com.csv
+            - www.thenerds.net.csv
+        sweeps:
+          tables:
+          - 8
+          R:
+          - 8
+          - 16
+          - 32
+          - 64

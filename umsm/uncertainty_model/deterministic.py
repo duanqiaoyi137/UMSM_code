@@ -8,7 +8,7 @@ import pandas as pd
 
 from ..registry import UNCERTAINTY_MODELS
 from ..types import ZERO_EMBEDDING
-from .base import DeterministicModel
+from .base import CellDistribution, DeterministicModel
 
 
 @UNCERTAINTY_MODELS.register("observed_only")
@@ -63,9 +63,11 @@ class ArgmaxImputation(DeterministicModel):
         # 输入：frame、table、iset、ctx；输出：确定性补全后的 DataFrame；继承：ArgmaxImputation(DeterministicModel)，重写父类方法。
         out = frame.copy()
         for (r, c), q in self._base.cell_distributions(frame, table, iset, ctx).items():
+            continuous=isinstance(q,CellDistribution) and q.info.get('quantile_compressed',False)
             q, _ = self._base.prepare_distribution(q)
             if q:
-                out.iat[r, out.columns.get_loc(c)] = max(q, key=lambda vp: vp[1])[0]
+                tied=[v for v,p in q if abs(p-max(w for _,w in q))<=1e-12]
+                out.iat[r, out.columns.get_loc(c)] = tied[len(tied)//2] if continuous else q[0][0]
         return out
 
 

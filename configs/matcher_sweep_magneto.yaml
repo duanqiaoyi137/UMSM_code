@@ -1,0 +1,7 @@
+# Magneto zero-shot only; plots/diagnostics off.
+base: matcher_sweep.yaml
+research:
+  plots: false
+  diagnostics: false
+study:
+  matchers: [magneto]

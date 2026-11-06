@@ -1,0 +1,42 @@
+# Isolated scalability preparation: real complete rows, no extra masking; 50 tables near 2000 columns.
+base: full_pipeline.yaml
+research:
+  name: full_scale
+  calibration_group: full_scale_micefix_v4
+  missing: [observed_only, Q_risk]
+  global_missing: [observed_only, Q_risk]
+  optimizers: [greedy, kwik, global]
+  constraints_missing: [observed_only]
+  diagnostics: false
+modules:
+  global_optimizer:
+    params: {triangles: lazy, time_limit: 300, require_optimal: false}
+study:
+  state: output/results/full_scale_state.html
+  matchers: [distribution]
+  phases: [profile, fit, qcheck, validate-lambda, global, constraints]
+  construction:
+    c2: false
+    c3: true
+    c3_name: FullPipeline_Scale_v2
+    bases: [{dataset: Real, sets: [school_report]}]
+    donors: [{dataset: Alaska_full, sets: [monitor]}]
+    rows: [30]
+    seeds: [42]
+    donor_bands: [high]
+    alignments: [none]
+    tables: [10, 20, 30, 50]
+    sibling_ratios: [0.3]
+    mixed_formats: [false]
+    c3_conditions: [{column_coverage: [0.6, 0.9]}]
+    c3_selection: widest
+    audit: output/results/full_scale_v2_preparation.html
+  jobs:
+    - id: scale-k{k}
+      allow_empty: true
+      matrix: {k: [10, 20, 30, 50]}
+      overrides:
+        research:
+          name: 'full_scale_k{k}'
+          roles:
+            test: {name: FullPipeline_Scale_v2, sets: ['Real_school_report_t0_k{k}_b0.3_fmt0_o0.5_no_donor_none_n30_s42'], max_sets: 1}

@@ -1,0 +1,50 @@
+# Small S-BERT name/value weight grid on one SOTAB and one Alaska fold.
+base: full_pipeline_sbert_fix.yaml
+research:
+  plots: false
+  diagnostics: false
+  lambda_grid: [0, 1, 2, 5, 10, 20, 50, 100, 200]
+study:
+  protocol_suffix: weight_v1
+  state: output/results/sbert_weight_state.html
+  matchers: [mean]
+  phases: [fit, validate-lambda, missing]
+  jobs:
+    - id: sotab-k5-weight21
+      overrides:
+        research:
+          name: sbert_sotab_k5_weight21
+          calibration_group: sbert_weight21
+          matcher_params: {mean: {name_weight: 2.0, value_weight: 1.0}}
+          roles:
+            test: {name: SOTAB_K5, sets: ['test_*']}
+    - id: sotab-k5-weight12
+      overrides:
+        research:
+          name: sbert_sotab_k5_weight12
+          calibration_group: sbert_weight12
+          matcher_params: {mean: {name_weight: 1.0, value_weight: 2.0}}
+          roles:
+            test: {name: SOTAB_K5, sets: ['test_*']}
+    - id: alaska-monitor-weight21
+      overrides:
+        research:
+          name: sbert_alaska_monitor_weight21
+          fold: camera_notebook_monitor
+          calibration_group: sbert_alaska_weight21
+          matcher_params: {mean: {name_weight: 2.0, value_weight: 1.0}}
+          roles:
+            fit: {name: Alaska_Partition, sets: [camera_pool]}
+            validation: {name: Alaska_Partition, sets: [notebook_pool]}
+            test: {name: Alaska_Partition, sets: ['monitor_test_*']}
+    - id: alaska-monitor-weight12
+      overrides:
+        research:
+          name: sbert_alaska_monitor_weight12
+          fold: camera_notebook_monitor
+          calibration_group: sbert_alaska_weight12
+          matcher_params: {mean: {name_weight: 1.0, value_weight: 2.0}}
+          roles:
+            fit: {name: Alaska_Partition, sets: [camera_pool]}
+            validation: {name: Alaska_Partition, sets: [notebook_pool]}
+            test: {name: Alaska_Partition, sets: ['monitor_test_*']}

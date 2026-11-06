@@ -1,71 +1,68 @@
 # UMSM
 
-带缺失值的多表**列匹配**：候选分布 q_x → 逐轮匹配与在线概率统计 → 全局一致分区。
+含缺失值的多表列匹配框架：构造缺失值候选分布，逐轮传播到匹配概率，综合匹配均值和波动，最终求解全局一致的列分组。
 
-所有实验统一使用 `python run.py`。实验人员主要修改 [configs/paper.yaml](configs/paper.yaml) 中的四个 `modules`，不需要修改算法源码。`python -m umsm` 等价；旧的 research.py/ablation.py/fit_calibration.py 只保留兼容转发，不再维护第二套解析逻辑。
+本仓库保存算法实现、运行配置、数据准备脚本和离线测试。数据、预训练模型、校准文件、缓存、实验结果和论文文档需另行准备。
 
-## 安装与检查
+## 目录
 
-在 UMSM 根目录使用 Python 3.10+；已有 `.umsm` 就直接激活：
+| 路径 | 内容 |
+| --- | --- |
+| `umsm/uncertainty_model/` | 候选生成、按类型混合与校准、统计插补及 Multiple MICE |
+| `umsm/matcher/` | S-BERT、Magneto、ALITE 风格列表示、Valentine 及列对适配器 |
+| `umsm/uncertainty_propagation/` | 匹配分数校准、均值与标准差、风险调整及边权 |
+| `umsm/global_optimizer/` | 全局 ILP、Local、Greedy 和其他分组对照 |
+| `configs/` | YAML 配置及研究作业，`base:` 在同目录内继承 |
+| `tests/` | 不下载模型、不调用真实 LLM API 的离线测试 |
+| `prepare_*.py` | 原始数据转换、划分、受控缺失和 provenance |
+| `run.py` | 统一命令行入口；`python -m umsm` 等价 |
+| `SOURCE_MANIFEST.json` | 本次源码文件的 SHA256 清单 |
 
-```powershell
-.\.umsm\Scripts\Activate.ps1
+旧入口 `research.py`、`ablation.py`、`fit_calibration.py` 保留兼容转发；根目录其他分析脚本用于汇总和可视化运行时结果。
+
+## 安装和离线检查
+
+建议在 Python 3.11 的独立环境中安装依赖。Linux 示例：
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 python run.py --list
-python run.py --check-config
+python run.py -c configs/full_pipeline_sbert_fix.yaml --check-config
 python tests/run_all.py
 ```
 
-Linux/macOS 使用 `source .umsm/bin/activate`。`--list`、`--check-config` 和离线测试不下载模型、不调用 API。实际运行 SBERT 需要本地模型或首次下载；COMA 需要 NLTK English stopwords。先检查是否已有，不要重复下载：
+Windows PowerShell 激活命令为 `.\.venv\Scripts\Activate.ps1`。CUDA 运行需要安装与服务器环境兼容的 PyTorch。
 
-```powershell
-python -c "from nltk.corpus import stopwords; print(len(stopwords.words('english')))"
+## 四个模块与配置
+
+当前修复版 S-BERT 研究入口是 [configs/full_pipeline_sbert_fix.yaml](configs/full_pipeline_sbert_fix.yaml)，继承 [configs/full_pipeline.yaml](configs/full_pipeline.yaml) 的按类型候选生成配置。
+
+1. 根据观测数据推断列类型，使用同表信息生成候选；混合权重及分布参数在 fit 数据的伪缺失值上学习。
+2. 按 Q 抽样生成不同补全版本，交给指定 Matcher。主线配置 `R=32`，确定性列对可以只计算一次。
+3. 每轮分数经冻结 Platt 校准，再计算均值 μ 和标准差 σ。Q-risk 使用 `clip(μ−λσ)`，边权为 `logit(p_tilde)−logit(prior)`。
+4. 在同表互斥和传递一致性约束下，使用 SciPy `milp` / HiGHS 求解列分组。`full` 和 `lazy` 是两种三角约束处理方式。
+
+`Q_mean` 令 λ=0；Top1 对每格取 Q 中概率最大的候选。Multiple MICE 是独立的多重插补基线，当前实现先平均原始 Matcher 分数再校准。风险系数 λ 与 prior 的选择规则由各研究配置指定，不通过测试标签调参。
+
+## 数据 模型与正式运行
+
+数据默认放在 `data/`，本地编码模型放在 `models/`。按需要执行 `prepare_alaska.py`、`prepare_alaska_partitions.py`、`prepare_sotab.py`、`prepare_gdc.py`、`prepare_madi.py` 或 `prepare_variants.py`；具体数据源及参数可查看相应脚本的 `--help`。部分研究使用独立的 fit、validation、test 数据，评估前需要相应数据和自己的冻结校准文件。
+
+例如，准备完配置要求的数据及模型后，可运行 S-BERT 研究中的 GDC 作业：
+
+```bash
+python run.py -c configs/full_pipeline_sbert_fix.yaml --phase study --study-part gdc
 ```
 
-数据转换仍由 `prepare_alaska.py / prepare_sotab.py / prepare_madi.py / prepare_gdc.py / prepare_variants.py` 负责，它们不是另一套算法入口。来源、自然缺失、角色和转换哈希保存在 provenance.json。
+这会按配置执行对应阶段，并在 `output/` 生成校准、状态及结果。正式运行前先用 `--check-config`，并核对 YAML 中的角色划分、模型路径、生成器路由、采样预算和输出位置。已有结果及冻结校准不随源码发布。
 
-## 最短正式流程
+Magneto 的 `column_pair` 适配只暴露被评分的两列，与原生整表检索／多候选重排是不同运行方式，必须使用各自配置和校准。不要把“可运行的配置”理解为对应实验已经完成。
 
-默认配置是 Alaska 的独立 fit/validation/test 源划分，使用 SBERT mean 和论文严格的列对证据。**校准文件不存在时才执行 fit**；新方法必须使用自己的校准文件，不覆盖旧文件。
+## API 凭据
 
-```powershell
-python run.py --phase profile
-python run.py --phase fit
-python run.py --phase validate-prior
-python run.py --phase edges --selection latest
-python run.py --phase pairwise --selection latest
-python run.py --phase global --selection latest
-python run.py --phase factorial --selection latest
-```
+需要 LLM 时，复制 `.env.example` 为本地 `.env`，填写自己的环境变量。进程环境变量优先。提供商设置见 [configs/magneto_deepseek.yaml](configs/magneto_deepseek.yaml)，可用 `python check_llm.py -c configs/magneto_deepseek.yaml` 检查；该命令可能实际调用提供商接口。
 
-`fit` 生成可复用冻结校准；每次评估只生成一个自包含 HTML，含配置、校准哈希、指标及具体 FP/FN。新默认研究名为 `paper`，不会覆盖 `alaska_isolated` 的已有结果。
-
-
-## 切换方法
-
-```powershell
-python run.py --check-config --matcher coma
-python run.py --phase fit --matcher coma
-python run.py --phase validate-prior --matcher coma
-python run.py --phase pairwise --matcher coma --selection latest
-```
-
-`--matcher` 的 mean/name/value/coma/jaccard/distribution/magneto 是预设。完全自定义时，修改 YAML 的 `modules.matcher` 并设置唯一的 `research.matcher` 实验标签。其余三个模块也在同一个 YAML 中选择；模块替换后不会继承不兼容的旧构造参数。
-
-注意证据范围：论文公式假定 f(c_i,c_j) 仅依赖这两列。`paper.yaml` 的 `research.evidence_scope: pair` 会给整表 matcher 加上 `column_pair` 适配器；这与原生整表 COMA/Magneto 是**不同方法，需要独立校准**。原生整表实验继续使用 `configs/research/isolate_*.yaml`，或明确选择 `evidence_scope: table`，并独立命名研究/校准。
-
-## 缓存与计时
-
-默认按轮采样、逐次校准、Welford 更新，不保留 R 张分数表。新缓存保存 μ/σ；改变 λ/prior/优化器可以复用。可设置 `paths.raw_score_cache=true`，按轮缓存原始分数到磁盘，便于付费 matcher 续跑和换校准。旧缓存仍只读兼容，不删除、不改写。
-
-旧单文件 pickle 的首次导入会临时加载整张旧分数表，报告标记 `legacy_cache_import`，不能把该过程当作论文在线空间测量。`--no-cache` 禁用磁盘评分/向量缓存；同一运行内仍复用列表示。`experiment.save_score_samples=true` 是显式的大型调试输出，不用于在线空间复杂度结论。
-
-## API 凭据与交接
-
-复制 `.env.example` 为自己的 `.env`，只在本地填写 `DEEPSEEK_API_KEY`；进程环境变量优先。提供商和模型设置在 [configs/magneto_deepseek.yaml](configs/magneto_deepseek.yaml)。不要向源码、YAML、论文结果或共享包写入 key。配置中的费用仅是用户填写的估算，不作为服务商价格。
-
-```powershell
-python check_llm.py -c configs/magneto_deepseek.yaml
-python run.py --phase package --output dist/umsm_source.zip
-```
-
+密钥、数据、模型及所有 `output/` 内容均由 `.gitignore` 排除。不要提交真实 API 密钥、私钥、实验结果或本机环境。

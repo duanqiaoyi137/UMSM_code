@@ -1,0 +1,32 @@
+# Focused matcher / lambda sweep on the two cheapest natural-data folds.
+# Fit and lambda selection are validation-only; the test split is scored once.
+base: full_pipeline_gpu.yaml
+research:
+  decision_offset_grid: [0]
+  lambda_grid: [0, 0.1, 0.25, 0.5, 0.75, 1.0]
+  matcher_params:
+    magneto: {reranker: none}
+study:
+  protocol_suffix: matcher_sweep_v1
+  state: output/results/matcher_sweep_state.html
+  matchers: [mean, name, value, quantile, magneto]
+  phases: [fit, validate-lambda, missing]
+  jobs:
+    - id: sweep-sotab-k5
+      overrides:
+        research:
+          name: sweep_sotab_k5
+          roles:
+            test:
+              name: SOTAB_K5
+              sets: ['test_*']
+    - id: sweep-alaska-monitor
+      overrides:
+        research:
+          name: sweep_alaska_monitor
+          fold: camera_notebook_monitor
+          calibration_group: sweep_alaska
+          roles:
+            fit: {name: Alaska_Partition, sets: [camera_pool]}
+            validation: {name: Alaska_Partition, sets: [notebook_pool]}
+            test: {name: Alaska_Partition, sets: [monitor_test_*]}

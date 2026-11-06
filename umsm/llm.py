@@ -29,6 +29,7 @@ import os
 import re
 import threading
 import time
+from datetime import datetime, timezone
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -232,6 +233,7 @@ class LLMClient:
                 try:
                     with open(temporary, "w", encoding="utf-8") as f:
                         json.dump({"model": self.model, "messages": messages, "response": text,
+                                   "called_at_utc":datetime.now(timezone.utc).isoformat(),
                                    **provenance}, f, ensure_ascii=False, indent=1)
                     os.replace(temporary, path)
                 finally:
@@ -449,6 +451,8 @@ def llm_stats(ctx) -> dict:
     keys = ("llm_calls", "llm_cache_hits", "llm_prompt_tokens", "llm_cache_hit_tokens", "llm_cache_miss_tokens",
             "llm_completion_tokens", "llm_reasoning_tokens", "llm_cost_usd", "llm_time_s")
     return {**{k: sum(c.stats()[k] for c in clients) for k in keys},
+            "llm_pricing_configured":all(bool(c.price) for c in clients),
+            "llm_models":sorted({c.model for c in clients}),
             "llm_response_models": sorted({m for c in clients for m in c.response_models}),
             "llm_system_fingerprints": sorted({m for c in clients for m in c.system_fingerprints})}
 

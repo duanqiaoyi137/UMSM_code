@@ -1,0 +1,8 @@
+# Complete the remaining Alaska phases on the already-fitted S-BERT fix artifacts.
+# fit/validate-lambda/missing are reused from sbert_fix_v1; no test re-selection.
+base: full_pipeline_sbert_fix.yaml
+research:
+  plots: false
+  diagnostics: false
+study:
+  phases: [validate-lambda, validate-offsets, qcheck, audit, factorial, edges, pairwise, global]

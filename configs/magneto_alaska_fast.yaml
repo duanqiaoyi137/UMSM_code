@@ -1,0 +1,25 @@
+# Reduced Alaska Magneto zero-shot probe: 8 pseudo-masks instead of 200.
+# This is a fast, explicitly approximate calibration; do not mix it with the
+# formal Alaska protocol.
+base: magneto_eval.yaml
+research:
+  max_cells: 8
+  n_samples: 8
+  plots: false
+  diagnostics: false
+study:
+  protocol_suffix: magneto_alaska_fast_v1
+  state: output/results/magneto_alaska_fast_state.html
+  matchers: [magneto]
+  phases: [fit, validate-lambda, missing]
+  jobs:
+    - id: magneto-alaska-fast
+      overrides:
+        research:
+          name: magneto_alaska_monitor_fast
+          fold: camera_notebook_monitor
+          calibration_group: magneto_alaska_fast
+          roles:
+            fit: {name: Alaska_Partition, sets: [camera_pool]}
+            validation: {name: Alaska_Partition, sets: [notebook_pool]}
+            test: {name: Alaska_Partition, sets: [monitor_test_*]}

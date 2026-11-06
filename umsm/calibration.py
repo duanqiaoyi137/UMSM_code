@@ -94,6 +94,7 @@ def fit_platt(scores, labels, weights=None):
     w = np.ones(len(s)) if weights is None else np.asarray(weights, float)
     if w.shape != s.shape or (w < 0).any() or not np.isfinite(w).all() or w.sum() <= 0:
         raise ValueError("invalid calibration weights")
+    fitting_positive_prior=float(np.dot(w,y)/w.sum())
     w /= w.sum()
     def loss(x):
         # 输入：x；输出：当前参数的负对数似然目标 float；继承：无（fit_platt 内部函数）。
@@ -103,17 +104,67 @@ def fit_platt(scores, labels, weights=None):
     if not result.success:
         raise RuntimeError(f"Platt calibration failed: {result.message}")
     return {"method": "platt", "slope": float(result.x[0]), "intercept": float(result.x[1]),
+            "fit_positive_prior":fitting_positive_prior,
+            "prior_definition":"weighted positive fraction in Platt fit; equal total mass per candidate edge",
             "nll": float(result.fun), "n_samples": len(s), "fit_success": True,
             "weighting": "equal edge mass; equal MC draws within edge", "l2": 1e-6}
 
 
-def calibrate_scores(scores, params):
+def fit_retrieval_calibrators(scores, labels, retrieved, weights=None):
+    # Input: fit-only edge scores, labels, retrieval indicators and equal-edge weights; output: three frozen candidates.
+    from sklearn.isotonic import IsotonicRegression
+    s=np.asarray(scores,float); y=np.asarray(labels,float); r=np.asarray(retrieved,float)
+    w=np.ones(len(s)) if weights is None else np.asarray(weights,float)
+    single=fit_platt(s,y,w.copy())
+    if r.shape!=s.shape or not np.isin(r,[0.,1.]).all():
+        raise ValueError('retrieved must be a binary indicator for each score')
+    if set(r)!={0.,1.}:
+        raise ValueError('Retrieval-aware calibration needs both retrieved and pruned fitting edges; choose wider fit tables before test evaluation')
+    w=w/w.sum()
+    def loss(x):
+        z=x[0]*s+x[1]*r+x[2]
+        return float(np.dot(w,np.logaddexp(0.,z)-y*z)+1e-6*(x[0]**2+x[1]**2))
+    result=minimize(loss,[single['slope'],0.,single['intercept']],method='L-BFGS-B',
+                    bounds=[(0.,1000.),(-1000.,1000.),(-1000.,1000.)])
+    if not result.success: raise RuntimeError(f'Two-feature Platt fit failed: {result.message}')
+    support={}
+    for value,label in ((0,'pruned'),(1,'retrieved')):
+        mask=r==value; mass=float(w[mask].sum()); positives=float(np.dot(w[mask],y[mask]))
+        support[label]={'n_score_samples':int(mask.sum()),'positive_score_samples':int(y[mask].sum()),
+                        'weight_mass':mass,'positive_weight_mass':positives,
+                        'weighted_positive_rate':positives/mass if mass else None}
+    single['retrieval_support']=support
+    common={'fit_positive_prior':single['fit_positive_prior'],'n_samples':len(s),'retrieval_support':support,
+            'weighting':single['weighting'],'retrieved_samples':int(r.sum())}
+    dual={'method':'platt_retrieved','slope':float(result.x[0]),'retrieved_coefficient':float(result.x[1]),
+          'intercept':float(result.x[2]),'nll':float(result.fun),**common}
+    def isotonic(mask):
+        model=IsotonicRegression(y_min=0.,y_max=1.,out_of_bounds='clip').fit(s[mask],y[mask],sample_weight=w[mask])
+        return {'x':model.X_thresholds_.tolist(),'y':model.y_thresholds_.tolist(),'n_samples':int(mask.sum())}
+    entire=np.ones(len(s),dtype=bool); groups={str(i):isotonic(r==i) for i in (0,1) if (r==i).any()}
+    nonparam={'method':'isotonic_retrieved','groups':groups,'fallback':isotonic(entire),**common}
+    return {'platt_single':single,'platt_retrieved':dual,'isotonic_retrieved':nonparam}
+
+
+def calibrate_scores(scores, params, retrieved=None):
     # 输入：scores、params；输出：逐样本校准概率数组；继承：无（模块函数）。
     if params and params.get('method')=='identity':
         values = np.asarray(scores,float)
         if not np.isfinite(values).all() or ((values<0)|(values>1)).any():
             raise ValueError('Identity calibration requires finite probabilities in [0,1]')
         return values
+    if params and params.get('method') in ('platt_retrieved','isotonic_retrieved'):
+        s=np.asarray(scores,float)
+        if retrieved is None: raise ValueError('Retrieval-aware calibration requires explicit retrieved indicators')
+        r=np.asarray(retrieved,float)
+        if s.shape!=r.shape or not np.isin(r,[0.,1.]).all(): raise ValueError('Invalid retrieved indicators')
+        if params['method']=='platt_retrieved':
+            return expit(params['slope']*s+params['retrieved_coefficient']*r+params['intercept'])
+        result=np.empty_like(s,dtype=float)
+        for i in (0,1):
+            mask=r==i; mapping=params['groups'].get(str(i),params['fallback'])
+            result[mask]=np.interp(s[mask],mapping['x'],mapping['y'])
+        return result
     if not params or params.get("method") != "platt":
         raise ValueError("a fitted Platt calibrator is required; raw scores are not probabilities")
     return expit(params["slope"] * np.asarray(scores, float) + params["intercept"])

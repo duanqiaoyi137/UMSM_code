@@ -1,0 +1,46 @@
+# Validation-only prior/threshold sweep on the frozen S-BERT fix calibration.
+base: full_pipeline_sbert_fix.yaml
+research:
+  plots: false
+  diagnostics: false
+  prior_policy: configured
+  prior_optimizer: pairwise
+  prior_strategy: observed_only
+  prior: 0.1
+  prior_grid: [0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.5]
+study:
+  state: output/results/sbert_prior_state.html
+  matchers: [mean]
+  phases: [validate-prior, missing]
+  jobs:
+    - id: sotab-k5-prior
+      overrides:
+        research:
+          name: sbert_sotab_k5_prior
+          calibration_group: sbert_external
+          roles:
+            test: {name: SOTAB_K5, sets: ['test_*']}
+    - id: gdc-prior
+      overrides:
+        research:
+          name: sbert_gdc_prior
+          calibration_group: sbert_external
+          roles:
+            test: {name: GDC, sets: [clinical]}
+    - id: madi-prior
+      overrides:
+        research:
+          name: sbert_madi_prior
+          calibration_group: sbert_external
+          roles:
+            test: {name: MaDI, sets: [games_pilot300, music_pilot300, papers_pilot300]}
+    - id: alaska-monitor-prior
+      overrides:
+        research:
+          name: sbert_alaska_monitor_prior
+          fold: camera_notebook_monitor
+          calibration_group: sbert_alaska
+          roles:
+            fit: {name: Alaska_Partition, sets: [camera_pool]}
+            validation: {name: Alaska_Partition, sets: [notebook_pool]}
+            test: {name: Alaska_Partition, sets: ['monitor_test_*']}

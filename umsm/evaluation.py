@@ -65,7 +65,7 @@ def bcubed_precision_recall(pred: list[frozenset[str]], gt: list[frozenset[str]]
     return p / len(items), r / len(items)
 
 
-def evaluate(matching: Matching, groundtruth: list[frozenset[str]]) -> dict:
+def evaluate(matching: Matching, groundtruth: list[frozenset[str]], columns=None) -> dict:
     # 输入：matching、groundtruth；输出：完整匹配指标字典；继承：无（模块函数）。
     pred = [g for g in matching.groups if len(g) >= 2]
     gt = [g for g in groundtruth if len(g) >= 2]
@@ -75,6 +75,24 @@ def evaluate(matching: Matching, groundtruth: list[frozenset[str]]) -> dict:
                      ("bcubed", bcubed_precision_recall)]:
         p, r = fn(pred, gt)
         out[f"{name}_precision"], out[f"{name}_recall"], out[f"{name}_f1"] = p, r, _f1(p, r)
+    # ARI and B-cubed include all provided columns, including unmatched singletons.
+    from sklearn.metrics import adjusted_rand_score
+    universe={c.id if hasattr(c,'id') else str(c) for c in columns} if columns is not None else set()
+    universe.update(c for group in (groundtruth or []) for c in group)
+    universe.update(c for group in matching.groups for c in group)
+    pred_labels={c:i for i,g in enumerate(matching.groups) for c in g}
+    truth_labels={c:i for i,g in enumerate(groundtruth or []) for c in g}
+    ordered=sorted(universe)
+    predicted=[('p',pred_labels[c]) if c in pred_labels else ('s',c) for c in ordered]
+    actual=[('g',truth_labels[c]) if c in truth_labels else ('s',c) for c in ordered]
+    if ordered:
+        pred_codes={v:i for i,v in enumerate(dict.fromkeys(predicted))}
+        truth_codes={v:i for i,v in enumerate(dict.fromkeys(actual))}
+        out['ari']=float(adjusted_rand_score([truth_codes[v] for v in actual],[pred_codes[v] for v in predicted]))
+        p,r=bcubed_precision_recall([frozenset(c for c,v in zip(ordered,predicted) if v==label) for label in pred_codes],
+                                   [frozenset(c for c,v in zip(ordered,actual) if v==label) for label in truth_codes])
+        out.update(bcubed_precision=p,bcubed_recall=r,bcubed_f1=_f1(p,r))
+    else: out['ari']=None
     out["exact_group_matches"] = len(set(pred) & set(gt))
     return out
 

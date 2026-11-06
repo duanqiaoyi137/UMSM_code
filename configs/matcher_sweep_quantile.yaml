@@ -1,0 +1,7 @@
+# Quantile matcher only; plots/diagnostics off to avoid the slow Alaska report path.
+base: matcher_sweep.yaml
+research:
+  plots: false
+  diagnostics: false
+study:
+  matchers: [quantile]

@@ -2,12 +2,14 @@
 import argparse
 import hashlib
 import itertools
+import yaml
 from pathlib import Path
 
 from umsm.data.loader import load_dataset
 from umsm.data.masking import base_sample, mask_frame, stable_seed
 from umsm.data.preparation import publish_task
 from umsm.calibration import set_fingerprint
+from umsm.research import attach_preparation
 
 ROOT = Path(__file__).resolve().parent
 
@@ -23,7 +25,7 @@ def prepare(args, root=ROOT):
         donors = [t for s in load_dataset(args.donor_dataset,str(root/'data'),sets=args.donor_sets)
                   for t in s.tables]
     manifests = []
-    for source in load_dataset(args.dataset,str(root/'data'),sets=args.sets):
+    for source in attach_preparation(load_dataset(args.dataset,str(root/'data'),sets=args.sets)):
         for row_cap,seed in itertools.product(args.rows,args.seeds):
             min_columns = 2 if 'mar' in args.modes else 1
             oracle = base_sample(source,row_cap,seed,args.dense_max_missing,args.complete_rows,args.min_rows,min_columns)
@@ -32,8 +34,15 @@ def prepare(args, root=ROOT):
                     frames, audits = {}, {}
                     for index,table in enumerate(oracle.tables):
                         donor = donors[index%len(donors)] if mode=='transplant' else None
-                        frame, _, audit = mask_frame(table.df,mode,rate,stable_seed(seed,table.name),
-                                                       donor.df if donor is not None else None)
+                        if mode=='transplant' and getattr(args,'transplant_alignment','legacy')!='legacy':
+                            from umsm.data.transplant import transplant_mask
+                            maps=yaml.safe_load(Path(args.transplant_map).read_text(encoding='utf8')) if getattr(args,'transplant_map',None) else {}
+                            frame,_,audit=transplant_mask(table.df,donor.df,stable_seed(seed,table.name),
+                                alignment=args.transplant_alignment,column_map=maps.get('columns'),anchors=maps.get('anchors'),
+                                require_anchors=not getattr(args,'allow_unaligned',False))
+                        else:
+                            frame, _, audit = mask_frame(table.df,mode,rate,stable_seed(seed,table.name),
+                                                           donor.df if donor is not None else None)
                         if donor is not None:
                             audit['donor_table'] = donor.name
                         frames[table.name],audits[table.name] = frame,audit
@@ -43,8 +52,11 @@ def prepare(args, root=ROOT):
                         'source_fingerprint':set_fingerprint(source),'oracle_fingerprint':set_fingerprint(oracle),
                         'dense_max_missing':args.dense_max_missing,'complete_rows':args.complete_rows,
                         'min_rows':args.min_rows,'min_columns':min_columns,'donor_dataset':args.donor_dataset,'donor_sets':args.donor_sets,
+                        **({'transplant_alignment':args.transplant_alignment} if getattr(args,'transplant_alignment','legacy')!='legacy' else {}),
                         'donor_mask_hashes':{t.name:hashlib.sha256(t.df.isna().to_numpy().tobytes()).hexdigest() for t in donors},
                         'meaning':'additional masking of observed real cells; oracle is pre-mask input, not test-tuned decisions'}
+                    if source.meta.get('source_sites'):
+                        protocol['source_sites'] = source.meta['source_sites']
                     manifest = publish_task(root/'data'/args.name/case,frames,oracle.groundtruth,protocol,
                         variants={'oracle':{t.name:t.df for t in oracle.tables}},cell_masks=audits)
                     manifests.append(manifest)
@@ -66,4 +78,7 @@ if __name__=='__main__':
     parser.add_argument('--min-rows',type=int,default=2)
     parser.add_argument('--donor-dataset')
     parser.add_argument('--donor-sets',nargs='+')
+    parser.add_argument('--transplant-alignment',choices=('legacy','random','aligned'),default='legacy')
+    parser.add_argument('--transplant-map',help='YAML with columns and anchors dictionaries; declared before test outcomes')
+    parser.add_argument('--allow-unaligned',action='store_true',help='Explicitly report random fallback; not strict aligned transplant')
     prepare(parser.parse_args())

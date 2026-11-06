@@ -1,0 +1,67 @@
+# Optional paid RQ5 plugin; never part of the two-column imputation main study.
+base: full_pipeline.yaml
+research:
+  name: plugin_gdc
+  calibration_group: plugin_magneto_v4
+  fold: external
+  matcher: magneto
+  calibrator_selection_pool: [platt_retrieved]
+  matcher_params:
+    magneto: {bidirectional: true, topk: 20, llm_temperature: 0, llm_require_success: true, llm_price: null}
+  evidence_scope: table
+  missing: [observed_only]
+  include_retriever_bp: true
+  optimizers: [local, greedy, kwik, threshold, global]
+  roles:
+    fit: {name: Alaska_Partition, sets: [camera_test_02]}
+    validation: {name: Alaska_Partition, sets: [camera_test_01]}
+    test: {name: GDC, sets: [clinical]}
+calibration:
+  method: retrieval_candidates
+modules:
+  uncertainty_model: {name: observed_only, params: {}}
+paths:
+  raw_score_cache: true
+study:
+  state: output/results/full_magneto_state.html
+  matchers: [magneto]
+  phases: [profile, fit, select-calibrator, validate-lambda, global, frontier, edges, pairwise]
+  jobs:
+    - id: plugin-gdc
+    - id: plugin-alaska
+      overrides:
+        research:
+          name: plugin_alaska
+          roles:
+            test: {name: Alaska_Partition, sets: [monitor_test_01]}
+    - id: plugin-c3
+      allow_empty: true
+      overrides:
+        research:
+          name: plugin_c3
+          roles:
+            test: {name: FullPipeline_Split, sets: ['*_k8_b0.3_fmt0_o0.5_high_aligned_n30_s*'], max_sets: 1}
+    - id: budget-1
+      overrides:
+        research:
+          name: plugin_budget_1
+          calibration_group: plugin_budget_1
+          matcher_params: {magneto: {rerank_k: 1}}
+    - id: budget-3
+      overrides:
+        research:
+          name: plugin_budget_3
+          calibration_group: plugin_budget_3
+          matcher_params: {magneto: {rerank_k: 3}}
+    - id: budget-5
+      overrides:
+        research:
+          name: plugin_budget_5
+          calibration_group: plugin_budget_5
+          matcher_params: {magneto: {rerank_k: 5}}
+    - id: budget-all
+      overrides:
+        research:
+          name: plugin_budget_all
+          calibration_group: plugin_magneto_v4
+          matcher_params: {magneto: {rerank_k: null}}

@@ -1,10 +1,10 @@
 # Main handoff configuration. Change these four modules for controlled comparisons.
-base: research/isolate_alaska.yaml
+base: isolate_alaska.yaml
 research:
   name: paper
   matcher: mean
   evidence_scope: pair
-  calibration: calibration/research/paper_{matcher}_{fold}.json
+  calibration: output/calibration/research/paper_{matcher}_{fold}.json
 modules:
   uncertainty_model:
     name: calibrated_mixture

@@ -1,0 +1,40 @@
+# Remaining per-fold prior sweeps; external jobs reuse the shared SOTAB validation prior.
+base: sbert_prior_sweep.yaml
+study:
+  state: output/results/sbert_prior_state.html
+  phases: [validate-prior, missing]
+  jobs:
+    - id: sotab-k8-prior
+      overrides:
+        research:
+          name: sbert_sotab_k8_prior
+          calibration_group: sbert_external
+          roles:
+            test: {name: SOTAB_K8, sets: ['test_*']}
+    - id: sotab-k12-prior
+      overrides:
+        research:
+          name: sbert_sotab_k12_prior
+          calibration_group: sbert_external
+          roles:
+            test: {name: SOTAB_K12, sets: ['test_*']}
+    - id: alaska-camera-prior
+      overrides:
+        research:
+          name: sbert_alaska_camera_prior
+          fold: monitor_notebook_camera
+          calibration_group: sbert_alaska
+          roles:
+            fit: {name: Alaska_Partition, sets: [monitor_pool]}
+            validation: {name: Alaska_Partition, sets: [notebook_pool]}
+            test: {name: Alaska_Partition, sets: ['camera_test_*']}
+    - id: alaska-notebook-prior
+      overrides:
+        research:
+          name: sbert_alaska_notebook_prior
+          fold: monitor_camera_notebook
+          calibration_group: sbert_alaska
+          roles:
+            fit: {name: Alaska_Partition, sets: [monitor_pool]}
+            validation: {name: Alaska_Partition, sets: [camera_pool]}
+            test: {name: Alaska_Partition, sets: ['notebook_test_*']}

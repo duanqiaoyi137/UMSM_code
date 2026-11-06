@@ -1,0 +1,32 @@
+# Minimal controlled-missingness probe: GDC clinical with 40% MCAR on observed
+# cells, S-BERT mean matcher, same external calibration as the main protocol.
+# Purpose: isolate whether Q adds downstream value when missingness is known.
+base: full_pipeline_sbert_fix.yaml
+dataset:
+  name: GDC_MCAR_Pilot
+  root: data
+  variant: original
+research:
+  name: q_effect_mcar_gdc
+  matcher: mean
+  calibration: output/calibration/server/sbert_external_sbert_fix_v1_mean_external.json
+  calibration_group: sbert_external_sbert_fix_v1
+  fold: external
+  prior: 0.09854604200323101
+  risk_lambda: 0.0
+  n_samples: 8
+  max_cells: 40
+  plots: false
+  diagnostics: false
+  roles:
+    fit: {name: SOTAB_CPA, sets: ['fit_*']}
+    validation: {name: SOTAB_CPA, sets: ['validation_*']}
+    test: {name: GDC_MCAR_Pilot, sets: ['*']}
+modules:
+  uncertainty_model:
+    params:
+      calibration: output/calibration/server/sbert_external_sbert_fix_v1_mean_external.json
+uncertainty_propagation:
+  params:
+    prior: 0.09854604200323101
+    risk_lambda: 0.0

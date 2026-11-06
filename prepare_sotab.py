@@ -159,7 +159,7 @@ def prepare(name="SOTAB_CPA", max_rows=300, max_sets=6, tables_per_set=3, seed=4
             raise ValueError("Existing prepared dataset differs; choose a new --name rather than overwrite")
         print_summary(manifest)
         return manifest
-    folder = root / "cache/datasets/sotab_v2"
+    folder = root / "output/cache/datasets/sotab_v2"
     paths = {split: download(split, folder) for split in ("validation", "test")}
     pools, excluded = defaultdict(list), Counter()
     with zipfile.ZipFile(paths["validation"]) as archive:

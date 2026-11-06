@@ -1,0 +1,33 @@
+# Cold-cache runtime probe: Q and matcher caches disabled.
+base: full_pipeline_sbert_fix.yaml
+research:
+  plots: false
+  diagnostics: false
+  missing: [observed_only, Q_risk]
+  optimizers: [global]
+study:
+  state: output/results/sbert_cold_state.html
+  matchers: [mean]
+  phases: [validate-lambda, missing]
+  jobs:
+    - id: sotab-k5-cold
+      overrides:
+        research:
+          name: sbert_sotab_k5_cold
+          calibration_group: sbert_external
+          roles:
+            test: {name: SOTAB_K5, sets: ['test_*']}
+    - id: gdc-cold
+      overrides:
+        research:
+          name: sbert_gdc_cold
+          calibration_group: sbert_external
+          roles:
+            test: {name: GDC, sets: [clinical]}
+    - id: madi-cold
+      overrides:
+        research:
+          name: sbert_madi_cold
+          calibration_group: sbert_external
+          roles:
+            test: {name: MaDI, sets: [games_pilot300, music_pilot300, papers_pilot300]}

@@ -31,10 +31,29 @@ def ablation_specs(cfg):
         if evidence['name']=='calibrated_logit' and name!='Q_risk':
             evidence['params']['risk_lambda'] = 0.
         strategies[name] = {'uncertainty_model':selected,'uncertainty_propagation':evidence}
+    for method in cfg.get('research',{}).get('statistical_baselines',[]):
+        evidence=copy.deepcopy(prop)
+        if evidence['name']=='calibrated_logit': evidence['params']['risk_lambda']=0.
+        params={'method':method,'type_options':copy.deepcopy(model.get('params',{}).get('type_options',{}))}
+        params.update(cfg.get('research',{}).get('statistical_params',{}))
+        strategies['stat_'+method]={'uncertainty_model':{'name':'statistical','params':params},'uncertainty_propagation':evidence}
+    if cfg.get('research',{}).get('multiple_mice',False):
+        m=int(cfg['research'].get('multiple_mice_m',5))
+        evidence=copy.deepcopy(prop)
+        if evidence['name']=='calibrated_logit': evidence['params']['risk_lambda']=0.
+        strategies['mice_multiple']={'uncertainty_model':{'name':'multiple_mice',
+            'params':{'m':m,'max_iter':cfg['research'].get('statistical_params',{}).get('max_iter',5),
+                      'numerical_backend':cfg['research'].get('statistical_params',{}).get('numerical_backend','sklearn'),
+                      'device':cfg['research'].get('statistical_params',{}).get('device','auto'),
+                      'type_options':copy.deepcopy(model.get('params',{}).get('type_options',{}))},
+            'realization':{'mode':'mc','n_samples':m}},'uncertainty_propagation':evidence}
     prior = prop.get('params',{}).get('prior',.5)
     return {'objective':'pair_f1','reference':{'missing':'Q_risk','optimizer':'global'},
             'variants':{'list':['original']},'missing':strategies,'optimizers':{
         'local':{'name':'local_merge','params':{'local_decision':'hungarian','weight':'a','min_weight':0.}},
         'greedy':{'name':'greedy_merge','params':{'selection':'threshold','threshold':prior}},
         'alite':{'name':'alite_cluster','params':{}},
-        'global':copy.deepcopy(cfg['global_optimizer'])}}
+        'global':copy.deepcopy(cfg['global_optimizer']),
+        **({'kwik':{'name':'kwik_cluster','params':{}},
+            'threshold':{'name':'threshold_components','params':{}}}
+           if cfg.get('research',{}).get('extra_baselines',False) else {})}}

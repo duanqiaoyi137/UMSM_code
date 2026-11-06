@@ -1,0 +1,26 @@
+# Corrected Magneto LLM pilot: use the λ chosen on validation (0), not the
+# base-config λ=0.5.  ablation_specs() copies this value into Q_risk.
+base: magneto_llm_qrisk.yaml
+research:
+  risk_lambda: 0.0
+uncertainty_propagation:
+  params:
+    risk_lambda: 0.0
+study:
+  phases: [missing]
+  state: output/results/magneto_llm_tiny_state.html
+  jobs:
+    - id: magneto-llm-tiny-gdc
+      overrides:
+        research:
+          name: magneto_llm_tiny_gdc
+          calibration_group: magneto_llm_tiny_external
+          risk_lambda: 0.0
+          missing: [observed_only, Q_risk]
+          roles:
+            fit: {name: SOTAB_CPA, sets: ['fit_01_*'], max_sets: 1}
+            validation: {name: SOTAB_CPA, sets: ['validation_01_*'], max_sets: 1}
+            test: {name: GDC, sets: [clinical]}
+        uncertainty_propagation:
+          params:
+            risk_lambda: 0.0

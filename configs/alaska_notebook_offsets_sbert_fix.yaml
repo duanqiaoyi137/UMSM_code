@@ -1,0 +1,24 @@
+# Reduced but valid offset validation for Alaska-notebook (grid is only [0]).
+base: full_pipeline_sbert_fix.yaml
+research:
+  plots: false
+  diagnostics: false
+  missing: [Q_risk, observed_only]
+  optimizers: [global]
+  decision_offset_grid: [0]
+study:
+  protocol_suffix: sbert_fix_v1
+  state: output/results/sbert_fix_state.html
+  matchers: [mean]
+  phases: [validate-lambda, validate-offsets]
+  jobs:
+    - id: alaska-notebook-offsets
+      overrides:
+        research:
+          name: sbert_alaska_notebook
+          fold: monitor_camera_notebook
+          calibration_group: sbert_alaska
+          roles:
+            fit: {name: Alaska_Partition, sets: [monitor_pool]}
+            validation: {name: Alaska_Partition, sets: [camera_pool]}
+            test: {name: Alaska_Partition, sets: ['notebook_test_*']}

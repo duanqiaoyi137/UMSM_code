@@ -1,0 +1,27 @@
+# ALITE baseline on the MaDI pilot tables, matched to full_madi_gpu_v1.
+base: full_pipeline.yaml
+research:
+  name: full_alite_madi
+  calibration_group: full_alite_v3
+  matcher: alite_native
+  matcher_params: {alite_native: {model: models/bert-base-uncased}}
+  missing: [observed_only]
+  optimizers: [alite]
+modules:
+  uncertainty_model: {name: observed_only, params: {}}
+study:
+  state: output/results/full_alite_madi_state.html
+  matchers: [alite_native]
+  phases: [profile, fit, validate-lambda, validate-offsets, missing]
+  jobs:
+    - id: madi
+      overrides:
+        research:
+          name: full_alite_madi
+          roles:
+            test:
+              name: MaDI
+              sets:
+                - games_pilot300
+                - music_pilot300
+                - papers_pilot300

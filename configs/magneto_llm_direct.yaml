@@ -1,0 +1,30 @@
+# Direct missing-phase run with the frozen lambda selection from validation.
+# Uses the cached DeepSeek responses and cached Q from the tiny pilot.
+base: full_pipeline_sbert_fix.yaml
+research:
+  name: magneto_llm_direct_gdc
+  matcher: magneto
+  calibration: output/calibration/server/magneto_llm_tiny_external_magneto_llm_tiny_v1_magneto_external.json
+  calibration_group: magneto_llm_tiny_external
+  fold: external
+  prior: 0.1206896551724138
+  risk_lambda: 0.0
+  n_samples: 4
+  max_cells: 4
+  plots: false
+  diagnostics: false
+  matcher_params:
+    magneto:
+      reranker: llm
+      rerank_k: 1
+      llm_sample_size: 3
+      llm_workers: 16
+      llm_max_variants: 1
+      llm_max_tokens: 1024
+  roles:
+    fit: {name: SOTAB_CPA, sets: ['fit_01_*'], max_sets: 1}
+    validation: {name: SOTAB_CPA, sets: ['validation_01_*'], max_sets: 1}
+    test: {name: GDC, sets: [clinical]}
+uncertainty_propagation:
+  params:
+    risk_lambda: 0.0

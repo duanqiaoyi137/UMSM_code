@@ -1,0 +1,766 @@
+{
+  "format": "umsm-source-v1",
+  "entrypoint": "python run.py",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "f9dbc8703f77772b823797524a13874a2d687bbb79f77e04a35ebeff94802cf8"
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "sha256": "c65f75318be61bb6e5dd3665901598578234fe5f291c8508b4a4a9b98f797607"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "71d130fce99ddd6340ff376e269d6f718659006a1fafdc7b13952db7cde54790"
+    },
+    {
+      "path": "ablation.py",
+      "sha256": "b74329088ff4b4767709b6866bbf23f82a195599409821fc824ca40354f9dc92"
+    },
+    {
+      "path": "analyze_research.py",
+      "sha256": "8fd3b8d916ac06c7bab05eab7024b2233b335e90666929927a4b1683ae5f5f45"
+    },
+    {
+      "path": "check_gpu.py",
+      "sha256": "0d715a3c9d11392a2360f29fbb32998532f4509dea47ec72290f402f1980f038"
+    },
+    {
+      "path": "check_llm.py",
+      "sha256": "dcff2d0cdfe7563a6a13c4ccc4a9ebca2a75a79799b624b593feea09e61c6e49"
+    },
+    {
+      "path": "combine_factorial.py",
+      "sha256": "d1089537f729d28961293a0634a09755b84808f458e54ff7bee1dbec280a2d1b"
+    },
+    {
+      "path": "combine_pipeline.py",
+      "sha256": "4f4fc0f46103c6be48e990d14cee76ad1f4e552f548552546e50cf66a82871a1"
+    },
+    {
+      "path": "compare.py",
+      "sha256": "20408a94c369ffde5c4ee9c00e1ec4d074fe63a2d1e5cf0e8122b3465b9e2549"
+    },
+    {
+      "path": "configs/alaska.yaml",
+      "sha256": "35db6f25fd128f8d2d7522d2b970b4070a3df270a30a5d53fb312efcd4e71717"
+    },
+    {
+      "path": "configs/alaska_full_sbert_fix.yaml",
+      "sha256": "3a3a1d577e4424f56c9d096aa77fc7c0699f6070392f682d0fc419f50ac6e6af"
+    },
+    {
+      "path": "configs/alaska_notebook_final_sbert_fix.yaml",
+      "sha256": "1cda60cfaea2e164a8308df10049888923928afe472515b693e51f8edadcaadc"
+    },
+    {
+      "path": "configs/alaska_notebook_offsets_sbert_fix.yaml",
+      "sha256": "c19f112df3dab4435afee0bb0ea0cc04c29cb79fbf10efad41d3b0739c0add25"
+    },
+    {
+      "path": "configs/alaska_notebook_rest_sbert_fix.yaml",
+      "sha256": "6671c7e98975a625cedfb7407507f8127a09dedbc10fe9f2f071675b38051f47"
+    },
+    {
+      "path": "configs/full_alite.yaml",
+      "sha256": "eb73ba853223fba8ac2bf1ebb8900dc6211d75105b8b558f7b01819183d7137e"
+    },
+    {
+      "path": "configs/full_alite_madi.yaml",
+      "sha256": "2f2c30b38d1ea4baaabecaf141582dfac426ee934c97ac6a22cdbf6b7db019f4"
+    },
+    {
+      "path": "configs/full_magneto.yaml",
+      "sha256": "9f030f364383b4bc26b455a832718aac560a838b4e34cdb35f23c30186ab1f9f"
+    },
+    {
+      "path": "configs/full_magneto_gpu.yaml",
+      "sha256": "c14f480b4f36882f92b32550e7e60c9b572229795751d1d8e61b48e299a7fe37"
+    },
+    {
+      "path": "configs/full_pipeline.yaml",
+      "sha256": "6ca35120a569c506b35a1461bd7d45f7ec8b0bc8a9514b099b5a00094cb2e1a2"
+    },
+    {
+      "path": "configs/full_pipeline_fast.yaml",
+      "sha256": "46f01f96c19c5265aee6f10c16edb25c130e151c5ab3c748305167417e7b4793"
+    },
+    {
+      "path": "configs/full_pipeline_fast2.yaml",
+      "sha256": "d887c01ff3fb8bf19ffecb6dd97fd34d93e9d3f2673a395032c201539e28f100"
+    },
+    {
+      "path": "configs/full_pipeline_gpu.yaml",
+      "sha256": "94d9948922cf56f4f31032f2bb1710bb7fa4ae3220081974c1136ca971299218"
+    },
+    {
+      "path": "configs/full_pipeline_sbert.yaml",
+      "sha256": "e5d4bfe373825d816366cbb201a1dcb69a3a8c57723b719d9cfb8546296dc22a"
+    },
+    {
+      "path": "configs/full_pipeline_sbert_fix.yaml",
+      "sha256": "879e3fa2cfb129386012d52babc7759ef448360e6222f5bc8ad2a123d305f754"
+    },
+    {
+      "path": "configs/full_scale.yaml",
+      "sha256": "a0eeca3bd273a7981be132d67f8acd9fb07a89cf253f5263b129282661c34b53"
+    },
+    {
+      "path": "configs/full_scale_gpu.yaml",
+      "sha256": "9ab4ba2ab0f705ef67bf98b9553db029091cafbce84c6cfb711a51c67267778f"
+    },
+    {
+      "path": "configs/gdc.yaml",
+      "sha256": "12759ab5e2d45c0634b63e7ca7c7f728a2aca023a1acbeec0676571a56ed7ea8"
+    },
+    {
+      "path": "configs/generator_fix_check.yaml",
+      "sha256": "a5bb7fd6ec17f0b1ac5b4636dea2e54344fcbaf4181b699d8e9db4b6a138ffc7"
+    },
+    {
+      "path": "configs/isolate_alaska.yaml",
+      "sha256": "56c84a9f6bd647dbc5c437e889d1a3df0578d66cf3000e70716609d8b62b6859"
+    },
+    {
+      "path": "configs/isolate_gdc.yaml",
+      "sha256": "7ca1864080ecda1d69c2df71baab3a57516e7152277a742b37709b6e32ef023c"
+    },
+    {
+      "path": "configs/isolate_madi.yaml",
+      "sha256": "5fc485ce59db6a645405327291fe8f399aa0362998881cff6506852375a3e5f3"
+    },
+    {
+      "path": "configs/isolate_sotab.yaml",
+      "sha256": "c43f0638da60f91ca0de7638576ad5903cfa0a9ea21f4f793a6120a9899e036f"
+    },
+    {
+      "path": "configs/lambda_wide.yaml",
+      "sha256": "834cfe68cf2c404460cdb086fe8850c38fdff2a43dd031f16c0cf8920b94c6a9"
+    },
+    {
+      "path": "configs/madi.yaml",
+      "sha256": "93fd9e13ceb8c1fc931bc83ee352f734e92f396c71e27c79c7c0aa15353edf9c"
+    },
+    {
+      "path": "configs/magneto_alaska_fast.yaml",
+      "sha256": "965071dce9c2e26e7a71fe9713ee167282b33b84051d3c25192a385b858bdb58"
+    },
+    {
+      "path": "configs/magneto_deepseek.yaml",
+      "sha256": "08f5cb4ec471c6dbe2922886fe99561e82586c869dae5d99bec30cbedaea0817"
+    },
+    {
+      "path": "configs/magneto_eval.yaml",
+      "sha256": "12c77db647a141f0e931ec9f04ae20593efd714ef6069af2180466d204c31d75"
+    },
+    {
+      "path": "configs/magneto_llm_direct.yaml",
+      "sha256": "9e01e86b42a13bf898c6d7a1fdb47ea7832d6f577c575db7dc69fef1fad7012a"
+    },
+    {
+      "path": "configs/magneto_llm_fast.yaml",
+      "sha256": "a020aea352554787c5f1a20783f21a08957fdf0d448b9407fb4470a95c34e422"
+    },
+    {
+      "path": "configs/magneto_llm_pilot.yaml",
+      "sha256": "0698bdc0aab2ffb09a931ae3098e7b53598e7c36601dc5141db7ebe24f7d76fc"
+    },
+    {
+      "path": "configs/magneto_llm_qrisk.yaml",
+      "sha256": "238e330378020329263c67b3463c76f278519f67073348cb72ee82775702bcce"
+    },
+    {
+      "path": "configs/magneto_llm_qrisk0.yaml",
+      "sha256": "f2bf0daf7dbd2e3f9c2d57e8ef710701e10915fcbed71b96eb4f80e0fe10ef70"
+    },
+    {
+      "path": "configs/magneto_llm_tiny.yaml",
+      "sha256": "f4b20435d44b5c61de043ac8a90af403e8eb638a040ccedf3f7182851a9e4fbe"
+    },
+    {
+      "path": "configs/matcher_sweep.yaml",
+      "sha256": "c54c54b60f480c23196f2e55b3986c05814845bafe54d072e1048f4e457942c5"
+    },
+    {
+      "path": "configs/matcher_sweep_magneto.yaml",
+      "sha256": "259dc7b5e5207e868663d4adbc151398fe4d9bcd095a24c043045d87ab8d2c5c"
+    },
+    {
+      "path": "configs/matcher_sweep_quantile.yaml",
+      "sha256": "87caa42aeed69ab624e3e703712a1af6a583e7cf810dee9285a3d67a0409e2de"
+    },
+    {
+      "path": "configs/paper.yaml",
+      "sha256": "acf36804082d10e29383f9d36c9d2c8c4a47126479bf57b3ae0cc18d5df5f62a"
+    },
+    {
+      "path": "configs/q_effect_mcar_gdc.yaml",
+      "sha256": "c7ffcbde5c6dba475af1e2dec6b9bc69329fb585875e0dcd0e20196e7c3d05a3"
+    },
+    {
+      "path": "configs/rq4_supplement/benchmark.yaml",
+      "sha256": "62059f8eb6682bc2d644e24204f1d6cceebf66f636472008d27c5374a75d5e6e"
+    },
+    {
+      "path": "configs/rq4_supplement/benchmark_4090.yaml",
+      "sha256": "1a2190a5d7ab5820adf749b80966de9bab7de05888b44b63b0edc28c1962fa2a"
+    },
+    {
+      "path": "configs/rq4_supplement/common.yaml",
+      "sha256": "50904822dcb031dd81e0b7a1d265dc579fcaaae9ba8afb21447cbb9ff986a969"
+    },
+    {
+      "path": "configs/rq4_supplement/primary.yaml",
+      "sha256": "96d105ad35bb7bdecbaf1af83d09560e635360d0bf2c5fd55389951c2a454b37"
+    },
+    {
+      "path": "configs/rq4_supplement/primary_4090.yaml",
+      "sha256": "da83c985b9b06834261dfb2405c3cbe079a9294f35271f7b4571979bfd81f191"
+    },
+    {
+      "path": "configs/sbert_cold_runtime.yaml",
+      "sha256": "fcce0dce829b601eebae2ac758cde34521994d5b6eb467ece3a14dc93a5951ec"
+    },
+    {
+      "path": "configs/sbert_constraints.yaml",
+      "sha256": "d45ec2a33aa0a49d370997ea15c2fa92f3c464e86838bf8da776b3f47685c6e4"
+    },
+    {
+      "path": "configs/sbert_prior_remaining.yaml",
+      "sha256": "81f34d2bca64f0e49fcee95c8e78fd41d9a5f695a3f1deffa30edbcb4842003d"
+    },
+    {
+      "path": "configs/sbert_prior_sweep.yaml",
+      "sha256": "d1d2acf0e2cf1f6689a3391f563504e2e8395c3e94670b5d192ca397505821df"
+    },
+    {
+      "path": "configs/sbert_remaining_diagnostics.yaml",
+      "sha256": "0b1840fae6d2e8f66a23eb75e5f4bb65fdd4fbf9cb5e40baa4d9fc03d366164f"
+    },
+    {
+      "path": "configs/sbert_weight_grid.yaml",
+      "sha256": "1424bc8e56d6eb5e6b034d6cdd36cc4a8f41bf139e3344fbd2a7c28f8a2e1d7a"
+    },
+    {
+      "path": "configs/server.yaml",
+      "sha256": "fbbf61b8da9f2d14523bcbad2ba3b22cec4f777949c9e26b41c7dcf56b7041ef"
+    },
+    {
+      "path": "configs/server_aligned_pilot.yaml",
+      "sha256": "90cff1b3b81d2bcbcec17f919120379551a0b2681f12d0e5d152cf8318054339"
+    },
+    {
+      "path": "configs/server_magneto.yaml",
+      "sha256": "093533812e7afab0d65a67660b078744d0ccd13f0eaf3a490ed883594cdc9597"
+    },
+    {
+      "path": "configs/server_pilot.yaml",
+      "sha256": "06f9b3c4f6eaac494d7aa0538ad521cd9327320c256bd878077e110537783b17"
+    },
+    {
+      "path": "configs/sotab.yaml",
+      "sha256": "9589d0006a6eec1c3048e2353de32d50e501eab6848aafdce872821b05d52083"
+    },
+    {
+      "path": "configs/staged.yaml",
+      "sha256": "fd196336ca47ff70c0f70714208c9325e34d07be64bd60eaaa5045d46d7380ca"
+    },
+    {
+      "path": "configs/typed.yaml",
+      "sha256": "4273e64fee2a5be1d08d4e38cdff92023c7be3aa43a51ae83a9b2f1013854101"
+    },
+    {
+      "path": "configs/typed_cluster.yaml",
+      "sha256": "68239f51070cc1bc4eb6efcee46e95d841b9fe4a9bf4dc8c68f3cc49b3190cb8"
+    },
+    {
+      "path": "configs/typed_gower.yaml",
+      "sha256": "13d722f7d74336d0507a913269d4aec433fe56bba5c3c7e3b7f77b4825235d0f"
+    },
+    {
+      "path": "configs/typed_models.yaml",
+      "sha256": "95b45abaf84356b855487645dc5586fd930a5af88eac613c2c8b8278a624fc4f"
+    },
+    {
+      "path": "configs/typed_quantiles.yaml",
+      "sha256": "8dfdc5c2f25d49e7d0187677a1271f1802d76f6e966887c2b51e6d65420624da"
+    },
+    {
+      "path": "fit_calibration.py",
+      "sha256": "199fcb6b425378826763de898e4aa437c5e6ea6ebd66bb40e9eb2ed82fc26ed4"
+    },
+    {
+      "path": "make_optimized_assets.py",
+      "sha256": "4d500818a194c9cce655dc2b0efe7e5d8b37d43fab55a46ad5a2c08ec498aeb9"
+    },
+    {
+      "path": "make_paper_assets.py",
+      "sha256": "a9e9c5d1b2b0a363712552aca91cd89acb5025ca93540f56e56f0af730677b3e"
+    },
+    {
+      "path": "prepare_alaska.py",
+      "sha256": "8adafeb9a1e67d6b5201bb0a03be93c916654a13dc0448a93d9fa009a5ed18c4"
+    },
+    {
+      "path": "prepare_alaska_partitions.py",
+      "sha256": "2d3cb4b8da094dc1c5c7e7b21b41ab6ac367d3d49730afda943107ee66b0a7f3"
+    },
+    {
+      "path": "prepare_gdc.py",
+      "sha256": "2ddc419c5b4f134d6d0c20a5310724a8a7562f3b208cfe318bf279d9ba4af00b"
+    },
+    {
+      "path": "prepare_madi.py",
+      "sha256": "2106743238f0dcc10b3c9981f34de9a2bdb8bcbc6330f23bef893ee029c00268"
+    },
+    {
+      "path": "prepare_sotab.py",
+      "sha256": "df51b6003fd8206de3e7da204759489b5ca1ff9f07ff4cd4f3560da8f2efa1d5"
+    },
+    {
+      "path": "prepare_variants.py",
+      "sha256": "b8ea5515629a04e6eb1fec052dc2e120fec58745028bbe6d1195a004c397d78f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "b6512b37076725c945fe2c06c3f7757e01c6c6ba93cb2ec0b3ac8abcc9f893b4"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "0c22bd9d14c49eee5139167e5028a99069b727aab78acc7d34848306e4241c5b"
+    },
+    {
+      "path": "research.py",
+      "sha256": "56fe5bd7fea535f5877945bdc8904b46cca9d2171a40399af6833e4b338d484d"
+    },
+    {
+      "path": "research_helpers.ps1",
+      "sha256": "e5e6ecaf8b5b6a3bdba287a15e86edc7710099348dc744abbed5ee1f1bd3b56a"
+    },
+    {
+      "path": "run.py",
+      "sha256": "8b3375c5c4098e319a77c3cf7ae52c97398d8d6fa4f2e2b686abf19ee3d338cf"
+    },
+    {
+      "path": "tests/run_all.py",
+      "sha256": "f05fc7e6ac56efc95edb7ad69974c106510ba8e4333ad56037c89467c744316f"
+    },
+    {
+      "path": "tests/test_ablation.py",
+      "sha256": "e3fd459b8a795b8a87d3967ce578482cccf2c9f68d62ef9374900d6ca32af375"
+    },
+    {
+      "path": "tests/test_core.py",
+      "sha256": "21668b13888633df1daddab645aa8e6472198fdc4605708c1061a92d7ce1a63d"
+    },
+    {
+      "path": "tests/test_distribution_fast.py",
+      "sha256": "081ae83b023f433ec3aa33bb2430d8718df9f5dc0fba2e7ea5af9387e113d887"
+    },
+    {
+      "path": "tests/test_distribution_pair.py",
+      "sha256": "8a0598d218917614f6a88303d85c104f0436e55322503e2fc016f62f3bfbe770"
+    },
+    {
+      "path": "tests/test_evidence.py",
+      "sha256": "595f2c1715afd20fd79cbe2f968a60930b4c3b3ac4a3cd804692170f541d6b65"
+    },
+    {
+      "path": "tests/test_execution.py",
+      "sha256": "2b4aa5396d5930f6f0c2fdf0a3ff788c752decfeee9ebffb25c0f20532d02f66"
+    },
+    {
+      "path": "tests/test_full_pipeline.py",
+      "sha256": "d428299f3481332822a941f25159ca6b33e0f696ab083f51936ea2dfb7161063"
+    },
+    {
+      "path": "tests/test_gpu.py",
+      "sha256": "73fa5511af9d6939730e96a6aba5325ebe8a03de3aa6f60b079a895388db1f46"
+    },
+    {
+      "path": "tests/test_isolation.py",
+      "sha256": "610d9ac55b5d509e0f9f917129f873cba90f746ae801c75c39b3d231264c0368"
+    },
+    {
+      "path": "tests/test_llm_transport.py",
+      "sha256": "358a2db3e93f1e5602d88da8268e5650519d0472567d9a6f2e4b4ee7a65c4353"
+    },
+    {
+      "path": "tests/test_madi.py",
+      "sha256": "a5f68bc5e82f2b3e0e51f5862232d1c40e2a438093e146e615ffb0d793fc0381"
+    },
+    {
+      "path": "tests/test_matchers.py",
+      "sha256": "78049e4e9999457e4d0bffd8ece6e5d66f4f21e3010df74bafd00dfd15254ce8"
+    },
+    {
+      "path": "tests/test_paper.py",
+      "sha256": "183e9c763a43c6f0eecb1b47dcf9953e0dfc824166202686fe4df671a75b46f7"
+    },
+    {
+      "path": "tests/test_qx_global_v2.py",
+      "sha256": "2d304c433f7124bf0d1f01a0f1c39f41982feb04098fea69696841d3d2a0adca"
+    },
+    {
+      "path": "tests/test_regressions.py",
+      "sha256": "5f90e7452ca57732cf5a5a43c863c77b1af3bbc523fbb0e5e920bd77fb81669b"
+    },
+    {
+      "path": "tests/test_report.py",
+      "sha256": "388ecba49a39c0dd242cce7698e8f0867616f0c45ae614a60aacfb5004a1d164"
+    },
+    {
+      "path": "tests/test_research.py",
+      "sha256": "812afc3fcc0dbe8046615d746e54625f98788bd98cbbf97c73c327ca780eef79"
+    },
+    {
+      "path": "tests/test_sampling.py",
+      "sha256": "671b71c83bd9b1aa3d37d195d34641ded507252f83741c057a6e81a8c4913367"
+    },
+    {
+      "path": "tests/test_server_study.py",
+      "sha256": "103cfef50aecf0d75baccef11618d9bb14f7ec0b1664c2b5a89f9d3d471fa329"
+    },
+    {
+      "path": "tests/test_sotab.py",
+      "sha256": "ed2d3b9c85602923fbe1c323ccda21beaf5ae35cbab1c35cdce8e2ef27dd18aa"
+    },
+    {
+      "path": "tests/test_typed.py",
+      "sha256": "ab7d8ec871d85fbb0b362e90581018e737da65b72c2e7a0121e0a44563d029c9"
+    },
+    {
+      "path": "umsm/__init__.py",
+      "sha256": "addf7b4641c57143e3ab5e2d7bb1f32cf8aeb3a0a21144879952081bb3702935"
+    },
+    {
+      "path": "umsm/__main__.py",
+      "sha256": "709a08499f2827dc279aab4369140c971629870c49adc7632b438e682bda4a97"
+    },
+    {
+      "path": "umsm/ablation.py",
+      "sha256": "668591bf05dc222ded3e6b5870621421d0fc3408303f69f49c529d61692d8baf"
+    },
+    {
+      "path": "umsm/calibration.py",
+      "sha256": "a44a088b3b39edc825be3be3c1b0aa09c3f3fa8d3fae790107731e13cbad6b26"
+    },
+    {
+      "path": "umsm/candidates.py",
+      "sha256": "9b146b25f8485b2fd26fe219007a55856635a1db8ae2994a9c3cf64fbb6b22d7"
+    },
+    {
+      "path": "umsm/cli.py",
+      "sha256": "c754a0d1810dd44613864521c631fa05151621ee8e437ed01aedef495d688650"
+    },
+    {
+      "path": "umsm/config.py",
+      "sha256": "253fc888c5c66c6785ff972b92919cb3861656d715cef4c7e4c2d80dd1e95f67"
+    },
+    {
+      "path": "umsm/context.py",
+      "sha256": "885728482c95e7a61dadb0302386f67043a5c9ea88c506f8c1644f394ea2fd74"
+    },
+    {
+      "path": "umsm/data/__init__.py",
+      "sha256": "012b54fe93cd1ec26c5cd67c507f646f0a7829978610dc3a6e3d56f3e681f96c"
+    },
+    {
+      "path": "umsm/data/groundtruth.py",
+      "sha256": "d4bfcb337bdf082c7a78ec97eebcb27f4a43ffc36b4a6892d82500a4d8345dd3"
+    },
+    {
+      "path": "umsm/data/loader.py",
+      "sha256": "cdeb284203514671b3c5aa3c6a81a2d006b3cf976adf609ac767843625fec06e"
+    },
+    {
+      "path": "umsm/data/masking.py",
+      "sha256": "a61f128530af49715ea0374be2c27a889343cdf7928f40b000a1d35b6dce0dc0"
+    },
+    {
+      "path": "umsm/data/preparation.py",
+      "sha256": "a515de3204d83c17ceb0180400e9565945153e380bce65a76350e65cbbdce0a4"
+    },
+    {
+      "path": "umsm/data/study.py",
+      "sha256": "3f5a36face35a395e8c36e780cbc0279c9c742c4c4261d64d6113a0cc570a36c"
+    },
+    {
+      "path": "umsm/data/transplant.py",
+      "sha256": "270380c9121524fabe7a45b7bc97a7d646eb100aaecd6c764052d06fc296f324"
+    },
+    {
+      "path": "umsm/embedding.py",
+      "sha256": "e8cb1c56bab2a4789ec42aed175761d220c68593d962bd01fa2546d98d8ad906"
+    },
+    {
+      "path": "umsm/evaluation.py",
+      "sha256": "5625469b51a6027cb50c86a336fb50a3888bb4b220b10c4d7d35fa67d1b04ac9"
+    },
+    {
+      "path": "umsm/execution.py",
+      "sha256": "01d4ebf2b9b477bfa7944d19d514ce939863e8d9813b52b2400feea7fc4b807a"
+    },
+    {
+      "path": "umsm/experiment.py",
+      "sha256": "81ce666e5aaf7711e1a39b56d865e960a7f0906b5b170df15e11f469e491cab7"
+    },
+    {
+      "path": "umsm/factorial_analysis.py",
+      "sha256": "b65a074dc5075224574d18056605819d5d99b681e11c7c47847de174b644f359"
+    },
+    {
+      "path": "umsm/global_optimizer/__init__.py",
+      "sha256": "ea279fd0d8709934ea681f2548a923b9fb56b7a1e5234067a69dfb302a61503a"
+    },
+    {
+      "path": "umsm/global_optimizer/alite_cluster.py",
+      "sha256": "faf019a31de5c0d8a5b0b5f68669f722e4d2e6330a656a2a42761ea0e271eefc"
+    },
+    {
+      "path": "umsm/global_optimizer/base.py",
+      "sha256": "bae8405063fe5969fa2ffe1baad98a849f61e49f904ffe625bc172b8977be4e8"
+    },
+    {
+      "path": "umsm/global_optimizer/greedy_merge.py",
+      "sha256": "661c243b7823f976868c60a8995a56825e291e000eccebe2e85abafb1cc1032d"
+    },
+    {
+      "path": "umsm/global_optimizer/ilp.py",
+      "sha256": "036b8eaa53561308376437d0f67a87caeacf0eac89f8aab995ee6f2b16627aeb"
+    },
+    {
+      "path": "umsm/global_optimizer/local_merge.py",
+      "sha256": "2b850cb3547b3371a8242bed266998a6e242e139f5e65db0198c7f4155c94fe0"
+    },
+    {
+      "path": "umsm/global_optimizer/logit.py",
+      "sha256": "375d3990ac2c1a6d4b0d3a57f6830bc2a2ff139485e76ca7d07cebafa2ce9e7b"
+    },
+    {
+      "path": "umsm/global_optimizer/pivot.py",
+      "sha256": "5b2277fb5a67f88d7100d832c43f641802600cac7ad98108045bcac19c4b177e"
+    },
+    {
+      "path": "umsm/global_optimizer/raw.py",
+      "sha256": "bea048df9cfedb57c288d637fad1522ad7f858ab96a8edb15bf89ac67434746b"
+    },
+    {
+      "path": "umsm/isolated_metrics.py",
+      "sha256": "716afa5b236c475be2d7aa91ba3d107086bb7aeb0f1090ce5cfd545ac80b8a67"
+    },
+    {
+      "path": "umsm/isolation.py",
+      "sha256": "ea8414e2c8ea0e732c351cee9add5a2ba7374741d903fee1cdc4930a23b24efc"
+    },
+    {
+      "path": "umsm/llm.py",
+      "sha256": "bcfaab17de9a0038a9c47451ef63a840d088f307f2be64e23acf2e164b0015ac"
+    },
+    {
+      "path": "umsm/magneto_study.py",
+      "sha256": "885c5ab439a270800af6d5bb599b7bb19c6118401cb39c87265020af8a9b5d29"
+    },
+    {
+      "path": "umsm/matcher/__init__.py",
+      "sha256": "336bbea4ae22a59a1131020a27b1d63eb695f34dc7d3baff7e76ae8ca2db9a41"
+    },
+    {
+      "path": "umsm/matcher/alite.py",
+      "sha256": "b70e5381e8efe71e06766445d2a8bd74d8fa5014f81329c6f3a6d6869dea7203"
+    },
+    {
+      "path": "umsm/matcher/base.py",
+      "sha256": "5d1659378bda201dbbf4687fece1864286d8017af5d9929e8cc5e270c685373f"
+    },
+    {
+      "path": "umsm/matcher/column_pair.py",
+      "sha256": "509701d59fc9ace8b0cdf419efd933a8322753d87fb823bc76a1ec805ed33fec"
+    },
+    {
+      "path": "umsm/matcher/distribution_fast.py",
+      "sha256": "a3e4ae14dee39f287982b3947e86fd91350d0aac7d2bb739c0c66ae1d5f07264"
+    },
+    {
+      "path": "umsm/matcher/distribution_pair.py",
+      "sha256": "9d1ff4225c0b4adabb078f6292be12fb668b4c69d76e6a7d9109a686215dacad"
+    },
+    {
+      "path": "umsm/matcher/llm_matcher.py",
+      "sha256": "a8398dd18b6292db507df978ebd29b91cd21221bade2d07a9e213b8463fdfdad"
+    },
+    {
+      "path": "umsm/matcher/magneto.py",
+      "sha256": "d52332609059c473be2051287708effbcf03f530430062319bde51a1625a5955"
+    },
+    {
+      "path": "umsm/matcher/magneto_utils.py",
+      "sha256": "5d1e470e5d28d044a63417a6ad242e2d9a9a3dc43c1aac92f39d7663a55e3a60"
+    },
+    {
+      "path": "umsm/matcher/parallel_pairs.py",
+      "sha256": "4f16e6c41fa4ffc8d55c0fe6fc1f1db3917b88132d15bebbf159526214f0f786"
+    },
+    {
+      "path": "umsm/matcher/precomputed.py",
+      "sha256": "5c59ea72fccaf0de2542433ab8b4249ea4be3c4e20b22fe411386798f27350b4"
+    },
+    {
+      "path": "umsm/matcher/sbert_mean.py",
+      "sha256": "f840e9ad6f3ccad25169b6221b3a75c69ef4372de45fbd8610a9e4d43478cb12"
+    },
+    {
+      "path": "umsm/matcher/sbert_quantile.py",
+      "sha256": "347e2d53be7727a7723194a9c95d6a145fc87f0bd534cd2acd0463c1c2627730"
+    },
+    {
+      "path": "umsm/matcher/valentine_matchers.py",
+      "sha256": "b18cf83a3f4459ef8e30cbbd1c20e4fa5a527bd5b5347c770c385e7ed76daf19"
+    },
+    {
+      "path": "umsm/numerics.py",
+      "sha256": "e32301f93749c09459f971707408e01b071bae8a6130978136a21e7d5da2491e"
+    },
+    {
+      "path": "umsm/online.py",
+      "sha256": "84211c112fb8f590c70af4e4ef9ff366c1aa5f9e2051be3d608fa456a07c58c0"
+    },
+    {
+      "path": "umsm/pipeline.py",
+      "sha256": "25af5243ee77fab521c86a174ddc1a0405b1bdef9885f69062ed2bc0d1020f5a"
+    },
+    {
+      "path": "umsm/presets.py",
+      "sha256": "2437c97b7c951defbcb67bf82784efcd053c049386659c65ea3eb951b325d8e1"
+    },
+    {
+      "path": "umsm/profiling.py",
+      "sha256": "b1b9085359f364f81c030730579c103ac8cd0747f3a25dc4e7fccb93e17f54c2"
+    },
+    {
+      "path": "umsm/registry.py",
+      "sha256": "fd999c66007d82b1a6f78f3442ab6936580d8ca83098d6f9ef3963c095ce3f71"
+    },
+    {
+      "path": "umsm/release.py",
+      "sha256": "838968d5681616cae8f322f3d949bef58655faf94baaa493fa3a8e034ed9da85"
+    },
+    {
+      "path": "umsm/report.py",
+      "sha256": "596534041a3779ed52cf5b561d36da5df96a3b9cc43c6743ed2a6cabc42387ed"
+    },
+    {
+      "path": "umsm/research.py",
+      "sha256": "338b4d43441323e0c8263f7cbd66e1e7e97c35eab7e1f807699c00ee86f99b3d"
+    },
+    {
+      "path": "umsm/research_analysis.py",
+      "sha256": "2f6670c6ef19ba29dd8f9326cf3e0336abcc526c896c41c44f37a7bf7f3d76cd"
+    },
+    {
+      "path": "umsm/score_cache.py",
+      "sha256": "8772c75fd1b11c27cbee0947bdcce39fe7493c94e76cd0b0487bf637fbf69b2f"
+    },
+    {
+      "path": "umsm/study.py",
+      "sha256": "c64e04bdf0c09c51f975f5394cfd6f4cfce7756b596944885dc1119f236e6dcd"
+    },
+    {
+      "path": "umsm/study_eval.py",
+      "sha256": "4a57fdb6fbd102385f9aaea1e96b909af886a1a4e24c535259579ae641152fec"
+    },
+    {
+      "path": "umsm/study_parallel.py",
+      "sha256": "574e5066954f07020bbea1089e78776377149528d4589f8df12d36edb376e1d4"
+    },
+    {
+      "path": "umsm/study_state.py",
+      "sha256": "4f20efd02652d074018f3ccf1245e86b64ba2a909a6c8778746a211f3a2969f1"
+    },
+    {
+      "path": "umsm/threshold_selection.py",
+      "sha256": "0a41e4113f90322bde2e817bf242601fc847a00aa88d60197eb89227f0ef6375"
+    },
+    {
+      "path": "umsm/training.py",
+      "sha256": "49290f182eb985c7eef4fd5f048375052c938ceadfe85090833da6cc358293bc"
+    },
+    {
+      "path": "umsm/tuning.py",
+      "sha256": "7ee2454f7bbbfd2d18ab3cc11f0ad76592ed16d126b7588ec1b01bac64ad85a7"
+    },
+    {
+      "path": "umsm/types.py",
+      "sha256": "8469fa4ca053d401096f40abb8ce55ad68b266b693f4ee68c91b2b512bda897d"
+    },
+    {
+      "path": "umsm/uncertainty_model/__init__.py",
+      "sha256": "513a3435beb9730a1cc01827e0b7f72865c89a2a08ca66e6b3150a8597fac8a5"
+    },
+    {
+      "path": "umsm/uncertainty_model/base.py",
+      "sha256": "10d03d4ec1bb1b6927b0498a5ea8b7b649dcb46ba4baebb7e9edd0b5fb24542b"
+    },
+    {
+      "path": "umsm/uncertainty_model/deterministic.py",
+      "sha256": "c22be16a45c9795ed6d29a6dd65bb57e365a1e8b32c41cc65be7d4f01f7ad287"
+    },
+    {
+      "path": "umsm/uncertainty_model/distributional.py",
+      "sha256": "b9331437bfae11e61e2188d9cd40a4278ab6a7f3c94bf5e5a565ef2c00c59b7b"
+    },
+    {
+      "path": "umsm/uncertainty_model/mixture.py",
+      "sha256": "667ed7cf3073881e894997719704405b69f9b2690205ba9a9f0aa1da2e883b25"
+    },
+    {
+      "path": "umsm/uncertainty_model/multiple_mice.py",
+      "sha256": "cf6bb48c1500354f689af3262c8052678af9c408d4aa391de8f1eaebb591d649"
+    },
+    {
+      "path": "umsm/uncertainty_model/torch_bayes.py",
+      "sha256": "dc67e5c73e02e03b0bfd4ade7dd3d6fb45a0bc6de5dca173ebf7d87263643ad0"
+    },
+    {
+      "path": "umsm/uncertainty_model/typed.py",
+      "sha256": "a70705ce8c6c36d2a71b72021d9cd68e215012b2cc7cf0a063ac08f8f82d7b75"
+    },
+    {
+      "path": "umsm/uncertainty_propagation/__init__.py",
+      "sha256": "090afd7be6e433553080184dde0a8210e81ba9c6fbf21d26c36a7080bd9a8c1d"
+    },
+    {
+      "path": "umsm/uncertainty_propagation/base.py",
+      "sha256": "eaae7bc37d46f9802edef6cc6c67a4e1fd4e5d23a2228069fef175066068b8f6"
+    },
+    {
+      "path": "umsm/uncertainty_propagation/calibrated.py",
+      "sha256": "018e2fbe7adb0fa1941dc3cb177095c0812162ea73ec9009e335b9d175a0dd7d"
+    },
+    {
+      "path": "umsm/uncertainty_propagation/mean_std.py",
+      "sha256": "e6fe6c021e086c4f594fab5ab5c946f8e0adef281b8b464b2330ac9fc03e6b2c"
+    },
+    {
+      "path": "validate_distribution.py",
+      "sha256": "54dc3bcde2865fa02f5ce5024dc7131810ccb7c38106272dd0c857e1d01759fb"
+    }
+  ],
+  "excluded": [
+    ".env",
+    ".umsm",
+    ".venv",
+    "__pycache__",
+    "cache",
+    "calibration",
+    "data",
+    "docx",
+    "experiment",
+    "models",
+    "output",
+    "private_keys",
+    "results",
+    "tex"
+  ]
+}

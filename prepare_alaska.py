@@ -43,7 +43,7 @@ def prepare(domain, name='Alaska', max_rows=300, seed=42, alias_policy='most_obs
     if not name.replace('_', '').replace('-', '').isalnum() or max_rows < 1:
         raise ValueError('Use a safe dataset name and positive max_rows')
     archive = fetch_file(f'https://raw.githubusercontent.com/merialdo/research.alaska/{REVISION}/{domain}.tar.gz',
-                         root / 'cache/datasets/new_benchmarks' / (domain+'.tar.gz'))
+                         root / 'output/cache/datasets/new_benchmarks' / (domain+'.tar.gz'))
     frames, mappings = read_archive(archive, domain)
     frames, groups, audit = partition_annotations(frames, mappings, alias_policy, drop_absent=True)
     original_rows = {n: len(f) for n, f in frames.items()}

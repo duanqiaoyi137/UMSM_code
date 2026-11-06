@@ -1,0 +1,30 @@
+# Single-task Magneto LLM smoke pilot: one fit/validation set, 4 masks, rerank_k=1.
+base: full_pipeline_sbert_fix.yaml
+research:
+  plots: false
+  diagnostics: false
+  max_cells: 4
+  n_samples: 4
+  matcher_params:
+    magneto:
+      reranker: llm
+      rerank_k: 1
+      llm_sample_size: 3
+      llm_workers: 16
+      llm_max_variants: 1
+      llm_max_tokens: 1024
+study:
+  protocol_suffix: magneto_llm_tiny_v1
+  state: output/results/magneto_llm_tiny_state.html
+  matchers: [magneto]
+  phases: [fit, validate-lambda, missing]
+  jobs:
+    - id: magneto-llm-tiny-gdc
+      overrides:
+        research:
+          name: magneto_llm_tiny_gdc
+          calibration_group: magneto_llm_tiny_external
+          roles:
+            fit: {name: SOTAB_CPA, sets: ['fit_01_*'], max_sets: 1}
+            validation: {name: SOTAB_CPA, sets: ['validation_01_*'], max_sets: 1}
+            test: {name: GDC, sets: [clinical]}

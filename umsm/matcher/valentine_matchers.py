@@ -11,6 +11,7 @@ return get score 0. `is_match` marks Valentine's local (pair-table) decision, se
 from __future__ import annotations
 
 from itertools import combinations
+import warnings
 
 from ..registry import MATCHERS
 from ..types import ScoreSamples, UncertainData
@@ -30,8 +31,12 @@ ALGORITHMS = {
 class ValentineMatcher(BaseMatcher):
     """Valentine pair-table matchers (coma, coma_instance, cupid, similarity_flooding, jaccard_levenshtein, distribution_based)."""
 
-    scoring_version = 2  # All edges are evaluated under each aligned table context.
     sampling_scope = "table_pair"
+
+    @property
+    def scoring_version(self):
+        # Input: algorithm; output: score/cache/calibration version; inherits BaseMatcher.
+        return 3 if self.algorithm == 'distribution_based' else 2
 
     def __init__(self, algorithm: str = "coma", algorithm_params: dict | None = None,
                  instance_sample_size: int | None = 1000, local_selection: str = "one_to_one",
@@ -57,10 +62,16 @@ class ValentineMatcher(BaseMatcher):
 
     def score(self, data: UncertainData, ctx) -> ScoreSamples:
         # 输入：data、ctx；输出：ScoreSamples（对齐采样的原始分数）；继承：ValentineMatcher(BaseMatcher)，重写父类方法。
+        if ctx.resources.get('workers',1)>1:
+            from .parallel_pairs import score_native_tables
+            accelerated=score_native_tables(data,self,ctx)
+            if accelerated is not None: return accelerated
         from valentine import valentine_match
+        from dateutil.parser import UnknownTimezoneWarning
 
         reals = {t.name: data.table_realizations(t.name) for t in data.tables}
         records = []
+        empty_instance_runs = 0
         for ta, tb in combinations(data.tables, 2):
             active = [(ci, cj) for ci in ta.columns for cj in tb.columns if data.allows(ci, cj)]
             if not active:
@@ -74,9 +85,20 @@ class ValentineMatcher(BaseMatcher):
                 runs = [(r % len(ra), r % len(rb), 1.0 / n) for r in range(n)]
             for sample_id, (a, b, prob) in enumerate(runs):
                 fa, fb = ra[a][0], rb[b][0]
-                res = valentine_match([fa, fb], self._build(), df_names=[ta.name, tb.name],
-                                      instance_sample_size=self.instance_sample_size)
-                selected = res.one_to_one_hungarian(self.local_threshold) if self.local_selection == "one_to_one" else res
+                with warnings.catch_warnings():
+                    # Valentine probes date types; retain its result without repeated timezone-probe noise.
+                    warnings.filterwarnings('ignore',category=UnknownTimezoneWarning,
+                                            module=r'dateutil\.parser\._parser')
+                    if self.algorithm == 'distribution_based' and self._empty_instance_side(fa, fb):
+                        # No cross-table value evidence: retain every candidate with raw score 0.
+                        # Valentine otherwise indexes a missing distance row for a singleton.
+                        res = {}
+                        empty_instance_runs += 1
+                    else:
+                        res = valentine_match([fa, fb], self._build(), df_names=[ta.name, tb.name],
+                                              instance_sample_size=self.instance_sample_size)
+                selected = (res.one_to_one_hungarian(self.local_threshold)
+                            if res and self.local_selection == "one_to_one" else res)
                 scores = {}
                 for pair, sim in res.items():
                     key = _key(pair)
@@ -89,7 +111,16 @@ class ValentineMatcher(BaseMatcher):
                                                  scores.get(key, 0.0), is_match=key in local,
                                                  sample_id=sample_id))
         return ScoreSamples.from_records(records, data.columns,
-                                        meta={"matcher": f"valentine.{self.algorithm}", **data.score_meta()})
+                                        meta={"matcher": f"valentine.{self.algorithm}",
+                                              "empty_instance_runs": empty_instance_runs, **data.score_meta()})
+
+    def _empty_instance_side(self, fa, fb):
+        # Input: two realized frames; output: whether either sampled side has no values; BaseMatcher adapter.
+        from valentine.data_sources.dataframe.dataframe_table import DataframeTable
+
+        return any(not any(not c.is_empty for c in DataframeTable(frame, name,
+                       self.instance_sample_size).get_instances_columns())
+                   for name, frame in (('left', fa), ('right', fb)))
 
 
 def _key(pair) -> tuple[str, str]:

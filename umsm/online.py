@@ -46,7 +46,9 @@ class OnlineMoments:
         expected = np.array([self.expected[k] for k in keys])
         if not np.allclose(frame.prob,1/expected,rtol=0,atol=1e-12):
             raise ValueError('Every Monte Carlo edge must have equal 1/R weights')
-        values = calibrate_scores(frame.score.to_numpy(float),calibration)
+        raw_average=self.meta.get('aggregation')=='raw_mean_then_calibrate'
+        values = frame.score.to_numpy(float) if raw_average else calibrate_scores(frame.score.to_numpy(float),calibration,frame.get('retrieved'))
+        self.calibration=calibration
         self.count[idx] += 1
         delta = values-self.mean[idx]
         self.mean[idx] += delta/self.count[idx]
@@ -70,6 +72,10 @@ class OnlineMoments:
         frame['edge_type'] = [['complete_complete','complete_incomplete','incomplete_incomplete'][int(a in incomplete)+int(b in incomplete)] for a,b in self.pairs]
         for name,values in self.features.items():
             frame[name] = values
+        if self.meta.get('aggregation')=='raw_mean_then_calibrate':
+            # Baseline specifies averaging raw matcher scores before probability calibration.
+            frame['mu']=calibrate_scores(frame.mu,self.calibration,frame.get('retrieved'))
+            frame['sigma']=0.; frame['variance']=0.
         return frame
 
 
@@ -99,13 +105,26 @@ def atomic_pickle(payload, path):
     with tempfile.NamedTemporaryFile(dir=path.parent,suffix='.tmp',delete=False) as stream:
         temporary = Path(stream.name)
     try:
-        pd.to_pickle(payload,temporary)
-        os.replace(temporary,path)
+        from filelock import FileLock
+        with FileLock(str(path)+'.lock'):
+            pd.to_pickle(payload,temporary)
+            os.replace(temporary,path)
     finally:
         temporary.unlink(missing_ok=True)
 
 
 def estimate_online(data, model, matcher, propagation, artifact, cfg, ctx):
+    # Input: frozen Q/evidence/calibration; output: ordered online statistics protected from duplicate concurrent writes.
+    if not cfg['matcher'].get('cache_scores',True):
+        return _estimate_online_unlocked(data,model,matcher,propagation,artifact,cfg,ctx)
+    from filelock import FileLock
+    key=score_cache_key({**cfg,'_project_root':ctx.project_root},data.source,model,matcher,data.realization,data,canonical=True)
+    path=Path(ctx.cache_dir)/'evidence'/(key+'.compute.lock');path.parent.mkdir(parents=True,exist_ok=True)
+    with FileLock(str(path)):
+        return _estimate_online_unlocked(data,model,matcher,propagation,artifact,cfg,ctx)
+
+
+def _estimate_online_unlocked(data, model, matcher, propagation, artifact, cfg, ctx):
     # 输入：Q、matcher、冻结校准与配置；输出：轻量样本凭据、在线概率边、缓存标志；继承：无（模块函数）。
     if matcher.registry_name=='sbert_quantile' and matcher.normalization!='fixed':
         raise ValueError('Algorithm 1 needs realization-local scores: set sbert_quantile normalization=fixed; legacy_minmax requires explicit experiment.online=false')
@@ -167,6 +186,7 @@ def estimate_online(data, model, matcher, propagation, artifact, cfg, ctx):
                 snapshot = copy.copy(data)
                 snapshot._states = {c:[state] for c,state in states.items()}
                 snapshot.candidate_pairs = active
+                ctx.resources['pair_cache_enabled']=enabled
                 with ctx.profiler.stage('matcher',set=data.source.name):
                     frame = matcher.score(snapshot,ctx).df.copy()
                 frame['state_i'] = frame.col_i.map(lambda c:r%counts[c])

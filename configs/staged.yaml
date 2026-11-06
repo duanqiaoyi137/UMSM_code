@@ -1,0 +1,13 @@
+# Strict two-column evidence; native table-context extensions keep separate artifacts.
+base: paper.yaml
+research:
+  name: paper_staged
+  calibration: output/calibration/research/paper_staged_{matcher}_{fold}.json
+  prior_grid: [0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.4, 0.45, 0.5]
+  frontier_priors: [0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.4, 0.45, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95]
+  profile_role: validation
+  qcheck_by_task: true
+  oracle_reference: true
+  precision_targets: [0.7, 0.8, 0.9]
+  missing: [observed_only, top1, Q_mean, Q_risk]
+  bootstrap: {unit: task, resamples: 1000, confidence: 0.95, seed: 2026}

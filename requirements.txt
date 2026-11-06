@@ -10,3 +10,4 @@ valentine>=1.0      # COMA / Cupid / Similarity Flooding / Jaccard-Levenshtein /
 huggingface_hub     # model download
 openpyxl>=3.1      # official GDC clinical Excel sources
 matplotlib>=3.7    # scientific diagnostic figures embedded in the result HTML
+filelock>=3.13

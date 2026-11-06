@@ -1,0 +1,200 @@
+# Full preregistered server plan. Run individual job groups before the entire suite.
+base: typed.yaml
+research:
+  name: server_natural_real
+  fold: external
+  calibration_group: server_typed_shared
+  matcher: distribution
+  device: auto
+  prior_policy: fit_prevalence
+  lambda_optimizer: pairwise
+  lambda_grid: [0, 0.1, 0.25, 0.5]
+  prior_grid: [0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.5, 0.7, 0.9]
+  frontier_priors: [0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.5, 0.7, 0.9]
+  roles:
+    fit: {name: SOTAB_CPA, sets: ['fit_*']}
+    validation: {name: SOTAB_CPA, sets: ['validation_*']}
+    test: {name: Real, sets: ['*']}
+  extra_baselines: true
+  allow_unconstrained_baselines: true
+  optimizers: [local, greedy, alite, kwik, threshold, global]
+  subsets: {k: [2, 3, 4, 6, 8, 12, 16, all], repeats: 20, seed: 2026}
+  bootstrap: {unit: task, resamples: 1000, confidence: 0.95, seed: 2026}
+  gates:
+    min_sources: 10
+    min_ilp_tables: 6
+    min_masks: 30
+    max_top1: 0.7
+    min_coverage: 0.9
+    numeric: {coverage_low: 0.7, coverage_high: 0.95, min_crps_improvement: 0.0}
+  sweeps:
+    R: [4, 8, 16, 32, 64]
+    tables: [2, 3, 6, 8, 12, 16, all]
+    lambda: [0, 0.1, 0.25, 0.5]
+    prior: [0.01, 0.02, 0.05, 0.1, 0.2, 0.5]
+    k_max: [5, 10, 20]
+    rho: [0.8, 0.9, 0.95, 0.99]
+modules:
+  matcher: null  # clear paper.yaml's explicit SBERT override; use research.matcher aliases
+  uncertainty_model:
+    params:
+      generators:
+        categorical: [column_marginal, gower_knn, cluster_marginal, nb_classifier]
+        ordered_numeric: [column_marginal, gower_knn, cluster_marginal, numeric_kernel]
+        numeric: [quantile_marginal, gower_knn, cluster_marginal, mice_posterior]
+        date: [quantile_marginal, gower_knn, cluster_marginal, mice_posterior]
+        text: [{name: row_embedding_knn, params: {device: auto}}, column_marginal]
+        identifier: []
+study:
+  state: output/results/server_study_state.html
+  matchers: [distribution, quantile]
+  phases: [profile, fit, qcheck, validate-lambda, audit, global, frontier, edges, pairwise, missing, factorial]
+  bundle:
+    datasets: [Alaska, Alaska_full, Real, Align, MaDI, SOTAB_CPA, SOTAB_K5, SOTAB_K8, SOTAB_K12]
+    models: [models/all-mpnet-base-v2]
+  construction:
+    c2_name: Transplant_Real
+    c3_name: Split_Sibling
+    bases:
+      - {dataset: Real, sets: ['*']}
+      - {dataset: Align, sets: ['*']}
+      - {dataset: MaDI, sets: ['*_base']}
+      - {dataset: Alaska_full, sets: [camera, monitor, notebook]}
+    donors:
+      - {dataset: Alaska_full, sets: [camera, monitor, notebook]}
+      - {dataset: SOTAB_CPA, sets: ['test_*']}
+    dense_max_missing: 0.2
+    min_rows: 10
+    rows: [10, 30, 100, 300]
+    seeds: [42, 43, 44]
+    donor_bands: [low, medium, high]
+    alignments: [random, aligned]
+    tables: [3, 4, 6, 8, 12, 16]
+    sibling_ratios: [0, 0.1, 0.3, 0.5]
+    mixed_formats: [false, true]
+    column_coverage: [0.4, 0.9]
+    entity_overlaps: [0.5]
+    c3_sources: ['Real/*', 'Align/*', 'MaDI/*']
+    c3_tables_per_source: 1
+    c3_conditions:
+      - {sibling_ratios: [0.3], mixed_formats: [false], donor_bands: [high], alignments: [random, aligned], rows: [30]}
+      - {tables: [8], donor_bands: [high], alignments: [random, aligned]}
+    alignment_maps: {} # keys: dataset/task/table.csv -> {donor, columns: {...}, anchors: {...}}
+    audit: output/results/server_data_preparation.html
+  jobs:
+    - id: natural-real
+    - id: natural-madi
+      overrides:
+        research:
+          name: server_natural_madi
+          roles:
+            test: {name: MaDI, sets: [games_pilot300, music_pilot300, papers_pilot300]}
+    - id: natural-align
+      overrides:
+        research:
+          name: server_natural_align
+          roles:
+            test: {name: Align, sets: ['*']}
+    - id: sotab-k{k}
+      matrix: {k: [5, 8, 12]}
+      overrides:
+        research:
+          name: server_sotab_k{k}
+          roles:
+            test: {name: 'SOTAB_K{k}', sets: ['test_*']}
+    - id: alaska-monitor
+      phases: [profile, fit, qcheck, validate-lambda, audit, global, frontier, subsets, edges, pairwise, missing, factorial]
+      overrides:
+        research:
+          name: server_alaska_monitor
+          fold: camera_notebook_monitor
+          calibration_group: server_alaska
+          roles:
+            fit: {name: Alaska, sets: [camera_fit]}
+            validation: {name: Alaska, sets: [notebook_validation]}
+            test: {name: Alaska_full, sets: [monitor]}
+    - id: alaska-camera
+      phases: [profile, fit, qcheck, validate-lambda, audit, global, frontier, subsets, edges, pairwise, missing, factorial]
+      overrides:
+        research:
+          name: server_alaska_camera
+          fold: notebook_monitor_camera
+          calibration_group: server_alaska
+          roles:
+            fit: {name: Alaska, sets: [notebook_fit]}
+            validation: {name: Alaska, sets: [monitor_validation]}
+            test: {name: Alaska_full, sets: [camera]}
+    - id: alaska-notebook
+      phases: [profile, fit, qcheck, validate-lambda, audit, global, frontier, subsets, edges, pairwise, missing, factorial]
+      overrides:
+        research:
+          name: server_alaska_notebook
+          fold: monitor_camera_notebook
+          calibration_group: server_alaska
+          roles:
+            fit: {name: Alaska, sets: [monitor_fit]}
+            validation: {name: Alaska, sets: [camera_validation]}
+            test: {name: Alaska_full, sets: [notebook]}
+    - id: c2-{band}-{alignment}-n{rows}
+      allow_empty: true
+      matrix: {band: [low, medium, high], alignment: [random, aligned], rows: [10, 30, 100, 300]}
+      phases: [profile, fit, qcheck, validate-lambda, audit, edges, pairwise, missing]
+      overrides:
+        research:
+          name: 'server_c2_{band}_{alignment}_n{rows}'
+          roles:
+            test: {name: Transplant_Real, sets: ['*_{band}_{alignment}_n{rows}_s*']}
+    - id: c3-k{k}-{alignment}
+      allow_empty: true
+      matrix: {k: [3, 4, 6, 12, 16], alignment: [random, aligned]}
+      overrides:
+        research:
+          name: 'server_c3_k{k}_{alignment}'
+          roles:
+            test: {name: Split_Sibling, sets: ['*_k{k}_b0.3_fmt0_o0.5_high_{alignment}_n30_s*']}
+    - id: c3-b{ratio}-fmt{format}-{alignment}-n{rows}
+      allow_empty: true
+      matrix: {ratio: [0, 0.1, 0.3, 0.5], format: [0, 1], alignment: [random, aligned], rows: [10, 30, 100, 300]}
+      overrides:
+        research:
+          name: 'server_c3_b{ratio}_fmt{format}_{alignment}_n{rows}'
+          roles:
+            test: {name: Split_Sibling, sets: ['*_k8_b{ratio}_fmt{format}_o0.5_high_{alignment}_n{rows}_s*']}
+    - id: controls
+      matchers: [coma, mean, name]
+      phases: [profile, fit, qcheck, validate-lambda, audit, global, edges, pairwise, missing]
+      overrides:
+        research: {name: server_controls}
+    - id: statistical-baselines
+      phases: [profile, fit, qcheck, validate-lambda, audit, edges, pairwise, missing]
+      overrides:
+        research:
+          name: server_statistical_baselines
+          optimizers: [local, global]
+          missing: [observed_only, stat_mean_mode, stat_median_mode, stat_knn, stat_mice, stat_missforest, top1, Q_mean, Q_risk]
+    - id: ablation-symbolic
+      phases: [profile, fit, qcheck, validate-lambda, audit, edges, pairwise, missing, factorial]
+      overrides:
+        research: {name: server_symbolic, calibration_group: server_symbolic}
+        modules:
+          uncertainty_model:
+            params:
+              routing: shared
+              type_options: {}
+              generators: [{name: knn_tuple, params: {k: 10}}, {name: column_marginal}]
+    - id: efficiency
+      matchers: [quantile]
+      phases: [profile, fit, qcheck, validate-lambda, benchmark, sensitivity, constraints, downstream]
+      overrides:
+        research:
+          name: server_efficiency
+          roles:
+            test: {name: MaDI, sets: [games_pilot300]}
+    - id: efficiency-multitable
+      matchers: [quantile]
+      phases: [profile, fit, qcheck, validate-lambda, benchmark, sensitivity, constraints, downstream]
+      overrides:
+        research:
+          name: server_efficiency_multitable
+          roles:
+            test: {name: SOTAB_K12, sets: ['test_01_*'], max_sets: 1}

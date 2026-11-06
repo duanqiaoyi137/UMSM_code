@@ -15,12 +15,13 @@ from .base import BaseMatcher,cross_table_pairs,sample_record
 class ColumnPairMatcher(BaseMatcher):
     """Column-local adapter: uncertainty depends only on the two scored columns."""
 
-    def __init__(self, matcher, matcher_params=None):
+    def __init__(self, matcher, matcher_params=None, fast_distribution=True):
         # 输入：基础 matcher 名和参数；输出：严格二列 f 的适配器；继承：ColumnPairMatcher(BaseMatcher)。
         if matcher=='column_pair':
             raise ValueError('Do not nest column_pair adapters')
         self.matcher=matcher
         self._base=MATCHERS.build(matcher,matcher_params or {})
+        self._fast_distribution=fast_distribution
 
     @property
     def scoring_version(self):
@@ -38,6 +39,14 @@ class ColumnPairMatcher(BaseMatcher):
 
     def score(self,data,ctx):
         # 输入：列实现及固定候选对；输出：仅依赖每对两列的原始分数；继承：ColumnPairMatcher(BaseMatcher)，重写父类方法。
+        if self._fast_distribution and ctx.resources.get('fast_distribution',True) and getattr(self._base,'algorithm',None)=='distribution_based':
+            from .distribution_fast import score_distribution_pairs
+            accelerated=score_distribution_pairs(data,self._base,ctx)
+            if accelerated is not None: return accelerated
+        if getattr(self._base,'registry_name',None)=='valentine' and data.realization.mode=='mc':
+            from .parallel_pairs import score_valentine_columns
+            accelerated=score_valentine_columns(data,self._base,ctx)
+            if accelerated is not None: return accelerated
         records=[]
         for ci,cj in cross_table_pairs(data):
             states_i,states_j=data.states(ci),data.states(cj)

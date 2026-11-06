@@ -34,6 +34,11 @@ def decision_frame(graph, source, accepted):
         rates = {c.id:float(t.df[c.name].isna().mean()) for t in source.tables for c in t.columns}
         extra['missing_bin'] = pd.cut([max(rates[a],rates[b]) for a,b in zip(extra.col_i,extra.col_j)],
                                       [-1e-12,.2,.5,.8,1.],labels=BINS[1:]).astype(str)
+        if 'column_type_pair' in frame:
+            from .uncertainty_model.typed import profiles
+            kinds={c.id:p[c.name].kind for t in source.tables for p in [profiles(t.df,t.name,graph.meta.get('type_options',{}))] for c in t.columns}
+            extra['column_type_i']=extra.col_i.map(kinds); extra['column_type_j']=extra.col_j.map(kinds)
+            extra['column_type_pair']=[' / '.join(sorted((a,b))) for a,b in zip(extra.column_type_i,extra.column_type_j)]
         frame = pd.concat([frame,extra],ignore_index=True)
     frame['decision'] = [int(frozenset((a,b)) in accepted) for a,b in zip(frame.col_i,frame.col_j)]
     return frame
@@ -61,12 +66,18 @@ def pairwise_decisions(graph, source):
 def quality_rows(frame, tags):
     # 输入：含 mu/p_tilde 的闭包表与任务标识；输出：两种概率空间、所有缺失层的 AUC/AP/Brier/NLL；继承：无（模块函数）。
     rows = []
+    strata=[(name,'all',frame if name=='all' else frame[frame.missing_bin==name]) for name in BINS]
+    if 'column_type_pair' in frame:
+        strata.extend(('all',kind,part) for kind,part in frame.groupby('column_type_pair',sort=True))
     for space in ('mu','p_tilde'):
-        for name in BINS:
-            block = frame if name=='all' else frame[frame.missing_bin==name]
-            rows.append({**tags,'score_space':space,'missing_bin':name,**probability_metrics(block,space),
+        for name,kind,block in strata:
+            typed_tag={'column_type_pair':kind} if 'column_type_pair' in frame else {}
+            rows.append({**tags,**typed_tag,'score_space':space,'missing_bin':name,**probability_metrics(block,space),
                          'mean_sigma':float(block.sigma.mean()) if len(block) else None,
+                         'median_sigma':float(block.sigma.median()) if len(block) else None,
+                         'p95_sigma':float(block.sigma.quantile(.95)) if len(block) else None,
                          'max_sigma':float(block.sigma.max()) if len(block) else None,
+                         'threshold_flip_fraction':float(((block.mu>tags['prior'])!=(block.p_tilde>tags['prior'])).mean()) if len(block) and 'prior' in tags else None,
                          'mean_abs_risk_shift':float((block.mu-block.p_tilde).abs().mean()) if len(block) else None})
     return rows
 
@@ -127,8 +138,13 @@ def paired_bootstrap(blocks, settings, decision=False):
         aligned = [paired_frame(b['frames'][method],b['frames'][baseline]) for b in eligible]
         group_names = [settings.get('task_groups',{}).get(b['set'],b['set']) for b in eligible]
         groups = list(dict.fromkeys(group_names))
-        for bin_name in BINS:
-            local = [(a,b,np.ones(len(a),bool) if bin_name=='all' else a.missing_bin.to_numpy()==bin_name) for a,b in aligned]
+        strata=[(name,'all') for name in BINS]
+        if settings.get('type_strata'):
+            kinds=sorted({kind for a,b in aligned for kind in a.column_type_pair.unique()})
+            strata.extend(('all',kind) for kind in kinds)
+        for bin_name,kind in strata:
+            local = [(a,b,(a.column_type_pair.to_numpy()==kind) if kind!='all' else
+                      np.ones(len(a),bool) if bin_name=='all' else a.missing_bin.to_numpy()==bin_name) for a,b in aligned]
             def differences(weights):
                 # 输入：各任务共享的方法/基线边权重；输出：各任务的配对指标差；继承：无（内部函数）。
                 values = []
@@ -140,6 +156,7 @@ def paired_bootstrap(blocks, settings, decision=False):
                     values.append({metric:left[metric]-right[metric] for metric in metrics})
                 return pd.DataFrame(values)
             point = differences([np.ones(len(a)) for a,_ in aligned])
+            cluster_point = point.assign(_cluster=group_names).groupby('_cluster',sort=False)[list(metrics)].mean()
             samples = {metric:[] for metric in metrics}
             rng = np.random.default_rng(seed)
             columns = []
@@ -151,10 +168,7 @@ def paired_bootstrap(blocks, settings, decision=False):
             for _ in range(n if can_sample else 0):
                 if unit=='task':
                     picked = rng.choice(groups,size=len(groups),replace=True)
-                    counts = {g:int((picked==g).sum()) for g in groups}
-                    task_weights = np.array([counts[g] for g in group_names],float)
-                    values = {metric:np.average(point.loc[point[metric].notna(),metric],weights=task_weights[point[metric].notna()])
-                              if task_weights[point[metric].notna()].sum()>0 else np.nan for metric in metrics}
+                    values = cluster_point.loc[picked].mean().to_dict()
                 else:
                     counts = {}
                     for cols in by_table:
@@ -172,13 +186,14 @@ def paired_bootstrap(blocks, settings, decision=False):
                 alpha = (1-confidence)/2
                 lo,hi = np.quantile(valid,[alpha,1-alpha]) if enough else (None,None)
                 output.append({'contrast':contrast,'method_space':space,'baseline_space':bspace,'missing_bin':bin_name,
-                    'metric':metric,'difference':float(point[metric].mean()) if point[metric].notna().any() else None,
+                    **({'column_type_pair':kind} if settings.get('type_strata') else {}),
+                    'metric':metric,'difference':float((cluster_point if unit=='task' else point)[metric].mean()) if point[metric].notna().any() else None,
                     'ci_low':lo,'ci_high':hi,'confidence':confidence,'unit':unit,'n_tasks':len(eligible),
                     'n_clusters':len(groups) if unit=='task' else len(columns),'n_valid_tasks':int(point[metric].notna().sum()),
                     'n_valid_task_clusters':valid_clusters,
                     'resamples':n,'valid_resamples':len(valid),'status':'ok' if enough else 'insufficient_clusters_or_valid_resamples',
                     'better_direction':'negative' if metric in ('brier','nll') else 'positive',
-                    'scope':'macro-task metric; repeated task clusters' if unit=='task' else 'conditional fixed-prediction, table-stratified two-endpoint column bootstrap'})
+                    'scope':'equal-weight source-cluster means; repeats averaged within cluster' if unit=='task' else 'conditional fixed-prediction, table-stratified two-endpoint column bootstrap'})
     return output
 
 
@@ -196,6 +211,34 @@ def frontier_rows(rows):
     return result
 
 
+def recall_at_precision(rows, targets):
+    # 输入：固定 prior 网格的 PR 点和预定 precision 目标；输出：网格包络上的最大 recall，仅描述而非测试选参；继承：无（模块函数）。
+    frame = pd.DataFrame(rows)
+    result = []
+    for target in targets:
+        if not 0<target<=1:
+            raise ValueError('Precision targets must be in (0,1]')
+        for key,block in frame.groupby(['set','missing','optimizer','calibration_condition'],sort=False):
+            eligible = block[block.pair_precision>=target]
+            result.append({**dict(zip(('set','missing','optimizer','calibration_condition'),key)),
+                'precision_target':target,'feasible':not eligible.empty,
+                'max_grid_recall':float(eligible.pair_recall.max()) if len(eligible) else None,
+                'scope':'prespecified grid envelope, descriptive only; not a held-out operating-point selection'})
+    return result
+
+
+def risk_decision_changes(decisions, tags):
+    # 输入：同任务 Q_mean/Q_risk 的直接 Hungarian 决策；输出：接受边翻转数量和比例；继承：无（模块函数）。
+    if not {'Q_mean','Q_risk'}<=set(decisions):
+        return []
+    mean,risk = paired_frame(decisions['Q_mean'],decisions['Q_risk'])
+    changed = mean.decision.to_numpy()!=risk.decision.to_numpy()
+    accepted = mean.decision.astype(bool).to_numpy()|risk.decision.astype(bool).to_numpy()
+    return [{**tags,'n_evaluation_pairs':len(mean),'changed_decisions':int(changed.sum()),
+             'flip_fraction_all_pairs':float(changed.mean()) if len(mean) else None,
+             'flip_fraction_accepted_union':float(changed.sum()/accepted.sum()) if accepted.sum() else 0.}]
+
+
 def factorial_effects(rows, q='Q_mean', settings=None):
     # 输入：同任务 2×2 决策结果、Q 策略、任务簇设置；输出：四格 F1、主效应、交互差及任务区间；继承：无（模块函数）。
     effects = []
@@ -210,17 +253,60 @@ def factorial_effects(rows, q='Q_mean', settings=None):
                         'q_local':ql,'q_ilp':qg,'imputation_at_local':ql-ol,'imputation_at_ilp':qg-og,
                         'ilp_without_imputation':og-ol,'ilp_with_imputation':qg-ql,'interaction':(qg-og)-(ql-ol)})
     settings = settings or {}
-    clusters = list(dict.fromkeys(settings.get('task_groups',{}).get(r['set'],r['set']) for r in effects))
+    group_names = [settings.get('task_groups',{}).get(r['set'],r['set']) for r in effects]
+    means = pd.DataFrame({'cluster':group_names,'interaction':[r['interaction'] for r in effects]}).groupby('cluster',sort=False).interaction.mean()
+    clusters = list(means.index)
     samples = []
     rng = np.random.default_rng(settings.get('seed',2026))
     if len(clusters)>=2:
         for _ in range(settings.get('resamples',500)):
             chosen = rng.choice(clusters,size=len(clusters),replace=True)
-            weights = [sum(g==settings.get('task_groups',{}).get(r['set'],r['set']) for g in chosen) for r in effects]
-            samples.append(float(np.average([r['interaction'] for r in effects],weights=weights)))
+            samples.append(float(means.loc[chosen].mean()))
     alpha = (1-settings.get('confidence',.95))/2
     lo,hi = np.quantile(samples,[alpha,1-alpha]) if len(samples)>=20 else (None,None)
-    summary = {'n_tasks':len(effects),'n_clusters':len(clusters),'mean_interaction':float(np.mean([r['interaction'] for r in effects])),
+    summary = {'n_tasks':len(effects),'n_clusters':len(clusters),'mean_interaction':float(means.mean()),
                'ci_low':lo,'ci_high':hi,'unit':'task','status':'ok' if lo is not None else 'insufficient_clusters_or_resamples',
                'definition':'(Q_ILP - observed_ILP) - (Q_local - observed_local); F1 fractions'}
     return effects,[summary]
+
+
+def recovery_rows(rows):
+    # 输入：同任务、同决策器的 observed/Q/oracle 结果；输出：逐任务恢复比，非正 oracle 缺口保留为空；继承：无（模块函数）。
+    lookup = {(r['set'],r['optimizer'],r['missing']):r for r in rows}
+    result = []
+    for row in rows:
+        obs = lookup.get((row['set'],row['optimizer'],'observed_only'))
+        oracle = lookup.get((row['set'],row['optimizer'],'oracle'))
+        if not obs or not oracle:
+            continue
+        gap = oracle['pair_f1']-obs['pair_f1']
+        row.update(recovery_denominator=gap,
+                   recovery_ratio=(row['pair_f1']-obs['pair_f1'])/gap if gap>1e-12 else None)
+        result.append({k:row.get(k) for k in ('set','source_cluster','mechanism','rate','row_cap','missing','optimizer',
+                      'pair_f1','recovery_denominator','recovery_ratio')})
+    return result
+
+
+def recovery_cluster_ci(rows, settings):
+    # 输入：含预遮蔽恢复比的结果与来源簇设置；输出：按机制/缺失率/行数分别计算的来源宏均值和区间；继承：无（模块函数）。
+    data = pd.DataFrame([r for r in rows if r.get('recovery_denominator') is not None])
+    if data.empty:
+        return []
+    data['cluster'] = [settings.get('task_groups',{}).get(r['set'],r.get('source_cluster',r['set'])) for r in data.to_dict('records')]
+    keys = [c for c in ('mechanism','rate','row_cap','missing','optimizer') if c in data]
+    result = []
+    for key,block in data.groupby(keys,dropna=False,sort=False):
+        point = block.groupby('cluster',sort=False).recovery_ratio.mean().dropna()
+        samples = []
+        rng = np.random.default_rng(settings.get('seed',2026))
+        if len(point)>=2:
+            for _ in range(settings.get('resamples',500)):
+                samples.append(float(rng.choice(point.to_numpy(float),size=len(point),replace=True).mean()))
+        alpha = (1-settings.get('confidence',.95))/2
+        lo,hi = np.quantile(samples,[alpha,1-alpha]) if len(samples)>=20 else (None,None)
+        result.append({**dict(zip(keys,key if isinstance(key,tuple) else (key,))),
+            'n_cases':len(block),'n_nonpositive_oracle_gaps':int((block.recovery_denominator<=1e-12).sum()),
+            'n_source_clusters':block.cluster.nunique(),'n_valid_source_clusters':len(point),
+            'mean_recovery_ratio':float(point.mean()) if len(point) else None,'ci_low':lo,'ci_high':hi,
+            'scope':'conditional on positive pre-mask oracle gap; repeats averaged within source; equal source weights'})
+    return result

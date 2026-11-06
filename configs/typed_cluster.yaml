@@ -1,0 +1,14 @@
+base: typed_gower.yaml
+research:
+  name: paper_typed_cluster
+  calibration: output/calibration/research/paper_typed_cluster_{matcher}_{fold}.json
+modules:
+  uncertainty_model:
+    params:
+      generators:
+        categorical: [column_marginal, gower_knn, cluster_marginal]
+        ordered_numeric: [column_marginal, gower_knn, cluster_marginal]
+        numeric: [quantile_marginal, gower_knn, cluster_marginal]
+        date: [quantile_marginal, gower_knn, cluster_marginal]
+        text: [gower_knn, column_marginal]
+        identifier: []

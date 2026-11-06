@@ -118,7 +118,7 @@ def prepare(domain, revision=REVISION, max_rows=None, seed=42):
             raise ValueError(f"Prepared data has changed; inspect before reusing: {output}")
         print_profile(case, manifest)
         return manifest
-    cache = ROOT / "cache" / "datasets" / "madi" / revision
+    cache = ROOT / "output" / "cache" / "datasets" / "madi" / revision
     folder = PurePosixPath("use cases") / domain / "base" / "input"
     gold_path = str(folder / "schemamatching" / "sm_mapping_gold.json")
     gold_raw = download(gold_path, revision, cache)

@@ -1,0 +1,11 @@
+# Verified server: RTX 4090 24GB, CPU quota=16, RAM quota=120GiB.
+# Scientific grid is inherited unchanged. Separate artifact/state namespace.
+base: primary.yaml
+experiment:
+  workers: 1
+  notes: 'RQ4 hardware v2: RTX4090 24564MiB; CPU cgroup quota=16; RAM=120GiB; isolated formal measurements use OMP/MKL/OpenBLAS=16; bootstrap uses two external jobs with 8 threads each; embedding batch default=64.'
+paths:
+  cache_dir: output/cache/rq4_4090_20261106
+study:
+  protocol_suffix: rq4_4090_16cpu_20261106_v2
+  state: output/results/rq4_4090_20261106_state.html

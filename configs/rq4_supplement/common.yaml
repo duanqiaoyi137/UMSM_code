@@ -1,0 +1,78 @@
+base: ../full_pipeline_sbert_fix.yaml
+experiment:
+  seed: 42
+  workers: 1
+  online: true
+  save_edges: false
+  save_score_samples: false
+  verbose: false
+research:
+  name: rq4
+  calibration_group: rq4_alaska
+  matcher: mean
+  evidence_scope: pair
+  device: cuda
+  compute_device: cuda
+  numerical_backend: torch
+  n_samples: 32
+  max_cells: 200
+  cache_scores: false
+  missing:
+  - Q_risk
+  global_missing:
+  - Q_risk
+  optimizers:
+  - global
+  extra_baselines: false
+  lambda_grid:
+  - 0
+  - 1
+  - 2
+  - 5
+  - 10
+  - 20
+  - 50
+  - 100
+  - 200
+  decision_offset_grid:
+  - 0
+  plots: false
+  diagnostics: false
+  sweeps:
+    R:
+    - 32
+    tables:
+    - 2
+    k_max: []
+    rho: []
+    lambda: []
+    prior: []
+candidates:
+  mode: all
+modules:
+  matcher: null
+  global_optimizer:
+    name: ilp_logit
+    params:
+      triangles: auto
+      full_max_columns: 40
+      require_optimal: true
+      mip_rel_gap: 0.0
+      time_limit: 300
+      save_solution: false
+paths:
+  cache_dir: output/cache/rq4_20261106
+  embedding_cache: false
+  raw_score_cache: false
+  uncertainty_cache: false
+study:
+  parallel_jobs: 1
+  matchers:
+  - mean
+  protocol_suffix: rq4_20261106_v1
+  state: output/results/rq4_20261106_state.html
+  phases:
+  - fit
+  - validate-lambda
+  - sensitivity
+  jobs: []

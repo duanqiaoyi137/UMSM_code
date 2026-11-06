@@ -4,7 +4,7 @@ experiment: {name: MaDI_research}
 research:
   name: madi
   fold: external_calibration
-  calibration: calibration/research/madi_{matcher}_{fold}.json
+  calibration: output/calibration/research/madi_{matcher}_{fold}.json
   roles:
     fit: {name: Real, sets: [1009ipopayments]}
     validation: {name: Real, sets: [DCMS_NHM_NHM]}

@@ -1,0 +1,8 @@
+base: full_magneto.yaml
+research:
+  device: cuda
+  compute_device: cuda
+  numerical_backend: torch
+study:
+  protocol_suffix: gpu_v1
+  state: output/results/full_magneto_gpu_state.html

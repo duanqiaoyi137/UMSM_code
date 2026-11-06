@@ -1,0 +1,11 @@
+# Regression check for the missing categorical/text generator routes.
+# Re-fit Q so the calibration artifact contains the new routes, then score once.
+base: full_pipeline_sbert.yaml
+research:
+  plots: false
+  diagnostics: false
+  lambda_grid: [0, 1, 2, 5, 10, 20, 50, 100, 200]
+study:
+  protocol_suffix: generator_fix_v1
+  state: output/results/generator_fix_state.html
+  phases: [fit, qcheck, validate-lambda, missing]

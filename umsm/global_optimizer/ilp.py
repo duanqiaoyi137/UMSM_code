@@ -144,14 +144,18 @@ def all_triples(n: int) -> np.ndarray:
     return np.array(list(combinations(range(n), 3)), dtype=np.int64)
 
 
-def violated_triples(y: np.ndarray, prob: ComponentProblem) -> np.ndarray:
+def violated_triples(y: np.ndarray, prob: ComponentProblem, limit=None, deadline=None, return_complete=False):
     # 输入：y、prob；输出：违反传递性的三元组数组；继承：无（模块函数）。
     """Triples (i < j < k) with two pairs at 1 and the third at 0."""
     Y = np.zeros((prob.n, prob.n), dtype=bool)
     on = y > 0.5
     Y[prob.I[on], prob.J[on]] = Y[prob.J[on], prob.I[on]] = True
     found = set()
+    complete = True
     for j in range(prob.n):
+        if deadline is not None and time.perf_counter()>=deadline:
+            complete=False
+            break
         nb = np.flatnonzero(Y[j])
         if len(nb) < 2:
             continue
@@ -160,7 +164,12 @@ def violated_triples(y: np.ndarray, prob: ComponentProblem) -> np.ndarray:
         bad = ~sub[a, b]
         for x, z in zip(nb[a[bad]], nb[b[bad]]):
             found.add(tuple(sorted((int(x), j, int(z)))))
-    return np.array(sorted(found), dtype=np.int64).reshape(-1, 3)
+            if limit is not None and len(found)>=limit:
+                complete=False
+                break
+        if not complete: break
+    result=np.array(sorted(found), dtype=np.int64).reshape(-1, 3)
+    return (result,complete) if return_complete else result
 
 
 def build_ilp(prob: ComponentProblem, triples: np.ndarray) -> dict:
@@ -173,7 +182,7 @@ def build_ilp(prob: ComponentProblem, triples: np.ndarray) -> dict:
             "integrality": np.ones(n_vars)}
 
 
-def solve_ilp(model: dict, time_limit: float | None, mip_rel_gap: float) -> tuple[np.ndarray, int, str]:
+def solve_ilp(model: dict, time_limit: float | None, mip_rel_gap: float, return_gap=False):
     # 输入：model、time_limit、mip_rel_gap；输出：(二元解数组, 求解状态码, 求解消息)；继承：无（模块函数）。
     options = {"disp": False, "mip_rel_gap": mip_rel_gap}
     if time_limit is not None:
@@ -183,8 +192,13 @@ def solve_ilp(model: dict, time_limit: float | None, mip_rel_gap: float) -> tupl
     res = milp(c=model["c"], integrality=model["integrality"], bounds=model["bounds"],
                constraints=cons, options=options)
     if res.x is None:
+        if return_gap and res.status==1:
+            return np.zeros(len(model['c']),dtype=int),int(res.status),str(res.message)+'; all-singleton feasible fallback',None
         raise RuntimeError(f"ILP solver failed: status={res.status} {res.message}")
-    return np.round(res.x).astype(int), int(res.status), str(res.message)
+    answer=(np.round(res.x).astype(int),int(res.status),str(res.message))
+    bound=getattr(res,'mip_dual_bound',None)
+    bound=-float(bound) if bound is not None and np.isfinite(bound) else None
+    return (*answer,bound) if return_gap else answer
 
 
 def recover_groups(prob: ComponentProblem, y: np.ndarray) -> list[frozenset[str]]:
@@ -234,7 +248,8 @@ class PartitionILP(GlobalOptimizer):
 
     def __init__(self, triangles: str = "auto", full_max_columns: int = 40,
                  time_limit: float | None = None, mip_rel_gap: float = 0.0, max_lazy_rounds: int = 200,
-                 save_solution: bool = True, require_optimal: bool = True):
+                 save_solution: bool = True, require_optimal: bool = True, max_full_triples: int = 2000000,
+                 max_separated_triples: int = 50000):
         # 输入：triangles、full_max_columns、time_limit、mip_rel_gap、max_lazy_rounds、save_solution、require_optimal；输出：None；初始化实例及校验参数；继承：PartitionILP(GlobalOptimizer)。
         if triangles not in ("auto", "full", "lazy"):
             raise ValueError("triangles must be 'auto', 'full' or 'lazy'")
@@ -245,6 +260,9 @@ class PartitionILP(GlobalOptimizer):
         self.max_lazy_rounds = max_lazy_rounds
         self.save_solution = save_solution
         self.require_optimal = require_optimal
+        self.max_full_triples = max_full_triples
+        if max_full_triples<0 or max_separated_triples<1: raise ValueError('Invalid triangle limits')
+        self.max_separated_triples = max_separated_triples
 
     def _solve_component(self, prob: ComponentProblem) -> np.ndarray:
         # 输入：prob；输出：二元解 y 数组；诊断写入 prob.stats；继承：PartitionILP(GlobalOptimizer)。
@@ -252,21 +270,32 @@ class PartitionILP(GlobalOptimizer):
         if mode == "auto":
             mode = "full" if prob.n <= self.full_max_columns else "lazy"
         t0 = time.perf_counter()
+        bound=None
+        def solve(triples):
+            remaining=None if self.time_limit is None else max(.001,self.time_limit-(time.perf_counter()-t0))
+            result=solve_ilp(build_ilp(prob,triples),remaining,self.mip_rel_gap,return_gap=True)
+            return (*result,None) if len(result)==3 else result
         if mode == "full":
+            if prob.n*(prob.n-1)*(prob.n-2)//6>self.max_full_triples:
+                raise ValueError(f'Full triangle expansion exceeds max_full_triples={self.max_full_triples}; use lazy or explicitly increase the limit')
             triples = all_triples(prob.n)
-            y, status, msg = solve_ilp(build_ilp(prob, triples), self.time_limit, self.mip_rel_gap)
+            y, status, msg, bound = solve(triples)
             rounds = 1
         else:
             triples = np.zeros((0, 3), dtype=np.int64)
             rounds = 0
             while True:
                 rounds += 1
-                y, status, msg = solve_ilp(build_ilp(prob, triples), self.time_limit, self.mip_rel_gap)
-                new = violated_triples(y, prob)
-                if len(new) == 0:
+                y, status, msg, bound = solve(triples)
+                deadline=None if self.time_limit is None else t0+self.time_limit
+                new,complete = violated_triples(y,prob,limit=self.max_separated_triples,deadline=deadline,return_complete=True)
+                if len(new) == 0 and complete:
                     break
-                if rounds >= self.max_lazy_rounds:
-                    raise RuntimeError(f"lazy triangle separation did not converge in {rounds} rounds")
+                if rounds >= self.max_lazy_rounds or (self.time_limit is not None and time.perf_counter()-t0>=self.time_limit):
+                    if self.require_optimal: raise RuntimeError(f'lazy triangle separation did not converge in {rounds} rounds')
+                    y=np.zeros(len(prob.a),dtype=int); status=1
+                    msg='Lazy separation limit reached; returning feasible all-singleton fallback'
+                    break
                 triples = np.unique(np.concatenate([triples, new]), axis=0)
         if self.require_optimal and status != 0:
             raise RuntimeError(f"ILP did not reach optimality: status={status} {msg}; "
@@ -275,7 +304,7 @@ class PartitionILP(GlobalOptimizer):
                       "n_fixed_zero": int(prob.same_table.sum()), "n_closure_pairs": prob.n_closure_pairs,
                       "triangle_mode": mode, "n_triangle_constraints": 3 * len(triples), "solver_rounds": rounds,
                       "solver_time_s": time.perf_counter() - t0, "objective": float(prob.a @ y),
-                      "status": status, "message": msg}
+                      "objective_upper_bound":bound,"status": status, "message": msg}
         return y
 
     def _optimize_components(self, graph, ctx, comps, cand_pairs, w_lookup, *, info,
@@ -316,6 +345,10 @@ class PartitionILP(GlobalOptimizer):
                 "solver_time_s": float(comp_df["solver_time_s"].sum()) if len(comp_df) else 0.0,
                 "objective": float(comp_df["objective"].sum()) if len(comp_df) else 0.0,
                 "all_optimal": bool((comp_df["status"] == 0).all()) if len(comp_df) else True}
+        bounds=comp_df['objective_upper_bound'] if len(comp_df) else pd.Series(dtype=float)
+        upper=float(bounds.sum()) if len(comp_df) and bounds.notna().all() else (0. if not len(comp_df) else None)
+        info['objective_upper_bound']=upper
+        info['actual_mip_gap']=(max(0.,upper-info['objective'])/max(abs(info['objective']),1e-10)) if upper is not None else None
         info["global_exact"] = (info["scores_complete"] and info["blocking_exact"] and info["all_optimal"]
                                 and self.mip_rel_gap == 0 and missing_w is None)
         info["optimal_within_blocking"] = info["all_optimal"] and self.mip_rel_gap == 0 and missing_w is None

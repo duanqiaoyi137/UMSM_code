@@ -148,12 +148,23 @@ class TextEncoder:
         if not path:
             return
         os.makedirs(os.path.dirname(path), exist_ok=True)
-        store = self._memory[namespace]
-        texts = np.frombuffer(_SEP.join(store.keys()).encode("utf-8"), dtype=np.uint8)
-        vectors = np.stack(list(store.values())) if store else np.zeros((0, self.dim or 0), np.float32)
-        tmp = path + ".tmp.npz"
-        np.savez(tmp, texts=texts, vectors=vectors, namespace=np.frombuffer(namespace.encode("utf-8"), np.uint8))
-        os.replace(tmp, path)
+        from filelock import FileLock
+        import tempfile
+        with FileLock(path+'.lock'):
+            store = self._memory[namespace]
+            if os.path.exists(path):
+                with np.load(path,allow_pickle=False) as data:
+                    if len(data['vectors']):
+                        for text,vector in zip(data['texts'].tobytes().decode('utf-8').split(_SEP),data['vectors']):
+                            store.setdefault(text,vector)
+            texts = np.frombuffer(_SEP.join(store.keys()).encode("utf-8"), dtype=np.uint8)
+            vectors = np.stack(list(store.values())) if store else np.zeros((0, self.dim or 0), np.float32)
+            fd,tmp=tempfile.mkstemp(dir=os.path.dirname(path),suffix='.npz');os.close(fd)
+            try:
+                np.savez(tmp, texts=texts, vectors=vectors, namespace=np.frombuffer(namespace.encode("utf-8"), np.uint8))
+                os.replace(tmp, path)
+            finally:
+                if os.path.exists(tmp): os.unlink(tmp)
 
     def encode(self, texts: list[str], namespace: str = "default") -> np.ndarray:
         # 输入：texts、namespace；输出：与输入顺序一致的文本向量数组；继承：TextEncoder(object)。

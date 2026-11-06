@@ -29,6 +29,12 @@ def edge_records(edges, source, decisions=None):
     frame['missing_rate'] = frame[['missing_i', 'missing_j']].max(axis=1)
     frame['missing_bin'] = pd.cut(frame.missing_rate, [-1e-12, .2, .5, .8, 1.],
                                   labels=['0-20%', '20-50%', '50-80%', '80-100%']).astype(str)
+    if edges.meta.get('report_type_strata'):
+        from .uncertainty_model.typed import profiles
+        kinds={c.id:profile[c.name].kind for t in source.tables
+               for profile in [profiles(t.df,t.name,edges.meta.get('type_options',{}))] for c in t.columns}
+        frame['column_type_i']=frame.col_i.map(kinds); frame['column_type_j']=frame.col_j.map(kinds)
+        frame['column_type_pair']=[' / '.join(sorted((a,b))) for a,b in zip(frame.column_type_i,frame.column_type_j)]
     if decisions is not None:
         selected = pair_set(decisions.groups)
         frame['decision'] = [int(frozenset((a,b)) in selected) for a,b in zip(frame.col_i, frame.col_j)]
@@ -39,13 +45,15 @@ def edge_records(edges, source, decisions=None):
 def probability_metrics(frame, column='mu'):
     # 输入：含 label 与指定概率列的边表；输出：边数、正例数、AUC/AP/Brier/NLL；继承：无（模块函数）。
     if frame.empty:
-        return {'n_edges': 0, 'n_positive': 0, 'auc': None, 'average_precision': None, 'brier': None, 'nll': None}
+        return {'n_edges': 0, 'n_positive': 0, 'auc': None, 'average_precision': None, 'brier': None, 'nll': None, 'ece':None}
     y, p = frame.label.to_numpy(int), frame[column].to_numpy(float)
     both = len(set(y)) == 2
     return {'n_edges': len(y), 'n_positive': int(y.sum()),
             'auc': float(roc_auc_score(y,p)) if both else None,
             'average_precision': float(average_precision_score(y,p)) if both else None,
-            'brier': float(brier_score_loss(y,p)), 'nll': float(log_loss(y,p.clip(1e-12,1-1e-12),labels=[0,1]))}
+            'brier': float(brier_score_loss(y,p)), 'nll': float(log_loss(y,p.clip(1e-12,1-1e-12),labels=[0,1])),
+            'ece':float(sum(np.mean(mask)*abs(p[mask].mean()-y[mask].mean()) for i in range(10)
+                for mask in [(p>=i/10)&((p<(i+1)/10) if i<9 else (p<=1))] if mask.any()))}
 
 
 def missing_strata(frame):

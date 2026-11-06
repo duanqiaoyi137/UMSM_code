@@ -27,7 +27,7 @@ def set_global_seed(seed: int) -> None:
 class RunContext:
     seed: int = 42
     project_root: str = "."
-    cache_dir: str = "cache"
+    cache_dir: str = "output/cache"
     embedding_cache: bool = True
     profiler: object = NULL_PROFILER
     logger: logging.Logger = field(default_factory=lambda: logging.getLogger("umsm"))

@@ -4,7 +4,7 @@ experiment: {name: SOTAB_research}
 research:
   name: sotab
   fold: websites
-  calibration: calibration/research/sotab_{matcher}_{fold}.json
+  calibration: output/calibration/research/sotab_{matcher}_{fold}.json
   matcher_params:
     mean: {name_weight: 0.0, value_weight: 1.0}
   roles:

@@ -1,0 +1,46 @@
+# Small local/server smoke plan; separate names prevent confusion with formal results.
+base: server.yaml
+research:
+  name: server_pilot
+  calibration_group: server_pilot
+  max_cells: 40
+  n_samples: 4
+  bootstrap: {unit: task, resamples: 100, confidence: 0.95, seed: 2026}
+  roles:
+    fit: {name: Real, sets: [1009ipopayments]}
+    validation: {name: Real, sets: [DCMS_NHM_NHM]}
+    test: {name: Server_Transplant_Pilot, sets: ['*']}
+modules:
+  uncertainty_model:
+    params:
+      generators:
+        categorical: [column_marginal, gower_knn]
+        ordered_numeric: [column_marginal, gower_knn]
+        numeric: [quantile_marginal, gower_knn]
+        date: [quantile_marginal, gower_knn]
+        text: [gower_knn, column_marginal]
+        identifier: []
+study:
+  state: output/results/server_pilot_state.html
+  matchers: [distribution]
+  phases: [profile, fit, qcheck, validate-lambda, audit, edges, pairwise, global, factorial]
+  bundle:
+    datasets: [Alaska, Alaska_full, Real, Align, MaDI, SOTAB_CPA, SOTAB_K5, SOTAB_K8, SOTAB_K12, Server_Transplant_Pilot, Server_Split_Pilot, Server_Aligned_Pilot]
+    models: [models/all-mpnet-base-v2]
+  construction:
+    bases: [{dataset: Real, sets: [school_report, stockport_contracts]}]
+    donors: [{dataset: Alaska_full, sets: [monitor]}]
+    c2_name: Server_Transplant_Pilot
+    c3_name: Server_Split_Pilot
+    rows: [10, 30]
+    seeds: [42]
+    donor_bands: [medium]
+    alignments: [random, aligned]
+    tables: [3, 6]
+    sibling_ratios: [0.3]
+    mixed_formats: [false]
+    c3_conditions: [{}]
+    c3_sources: ['Real/*', 'MaDI/*']
+    audit: output/results/server_pilot_preparation.html
+  jobs:
+    - id: pilot

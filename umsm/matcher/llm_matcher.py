@@ -6,7 +6,7 @@ column, answered with a score in [0, 1] per target column (scoring-oriented one-
 umsm/llm.py). Columns the LLM does not score get 0. No embedding model is loaded.
 
 Configure the provider through llm_model / llm_base_url / llm_api_key_env (any OpenAI-compatible
-endpoint); llm_backend=mock runs offline. Prompts and answers are cached under cache/llm.
+endpoint); llm_backend=mock runs offline. Prompts and answers are cached under output/cache/llm.
 llm_prompt=compact (with llm_top_n, llm_value_chars) is the low-cost layout of the same prompt;
 configs/magneto_deepseek.yaml shows the provider settings.
 """

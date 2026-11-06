@@ -4,7 +4,7 @@ Examples
     python compare.py --dataset Real
     python compare.py --dataset Real --all            # every run, not only the latest per name
     python compare.py --dataset Real --sort pair_f1
-    python compare.py --ablation results/mcar40/ablation/<run_id>.html
+    python compare.py --ablation output/results/mcar40/ablation/<run_id>.html
 """
 import argparse
 import os
@@ -123,7 +123,7 @@ def main():
     p.add_argument("--dataset", default="Real")
     p.add_argument("--variant", default=None)
     p.add_argument("--summary", help="legacy summary.csv (optional)")
-    p.add_argument("--root", default=os.path.join(PROJECT_ROOT, "results"), help="search single-run HTML reports here")
+    p.add_argument("--root", default=os.path.join(PROJECT_ROOT, "output", "results"), help="search single-run HTML reports here")
     p.add_argument("--sort", default=None, help="metric; defaults to pair_f1 for ablations, cluster_f1 for runs")
     p.add_argument("--ablation", help="HTML result file or legacy ablation directory")
     p.add_argument("--against", help="another ablation directory, e.g. the native Magneto baseline")

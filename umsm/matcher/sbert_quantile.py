@@ -69,7 +69,7 @@ class SBertQuantileMatcher(BaseMatcher):
     def __init__(self, quantiles: int = 5, model: str = DEFAULT_MODEL, device: str = "auto",
                  batch_size: int = 64, max_length: int | None = None, name_weight: float = 1.0,
                  value_weight: float = 1.0, norm_decimals: int | None = 4,
-                 normalization: str = "legacy_minmax"):
+                 normalization: str = "legacy_minmax", numerical_device: str = 'cpu'):
         # 输入：quantiles、model、device 等配置参数（详见签名）；输出：None；初始化实例及校验参数；继承：SBertQuantileMatcher(BaseMatcher)。
         if normalization not in ("legacy_minmax", "fixed"):
             raise ValueError("normalization must be legacy_minmax or fixed")
@@ -86,6 +86,7 @@ class SBertQuantileMatcher(BaseMatcher):
         self.max_length = max_length
         self.name_weight = name_weight
         self.value_weight = value_weight
+        self.numerical_device=numerical_device
 
 
     def score(self, data: UncertainData, ctx) -> ScoreSamples:
@@ -118,19 +119,34 @@ class SBertQuantileMatcher(BaseMatcher):
 
         with ctx.profiler.stage("matcher.pairs"):
             parts = []
+            offsets={}; offset=0
+            for c in cols: offsets[c]=offset; offset+=len(feats[c][0])
+            gpu_left=[]; gpu_right=[]; gpu_name_left=[]; gpu_name_right=[]
+            positions={c:i for i,c in enumerate(cols)}
             for ci, cj in cross_table_pairs(data):
                 (qa, va), (qb, vb) = feats[ci], feats[cj]
                 a_idx, b_idx, prob = data.pair_indices(ci, cj)
-                w = np.exp(-np.abs(va[a_idx] - vb[b_idx]))
-                w = w / w.sum(-1, keepdims=True)
-                d = (w * np.maximum(0.0, 1.0 - _cos(qa[a_idx], qb[b_idx]))).sum(-1)
+                if self.numerical_device=='cpu':
+                    w = np.exp(-np.abs(va[a_idx] - vb[b_idx]))
+                    w = w / w.sum(-1, keepdims=True)
+                    d = (w * np.maximum(0.0, 1.0 - _cos(qa[a_idx], qb[b_idx]))).sum(-1)
+                else:
+                    d=None
+                    gpu_left.extend(offsets[ci]+a_idx); gpu_right.extend(offsets[cj]+b_idx)
+                    gpu_name_left.extend([positions[ci]]*len(a_idx)); gpu_name_right.extend([positions[cj]]*len(b_idx))
                 parts.append((ci, cj, a_idx, b_idx, prob, d,
                               float(_cos(name_vec[ci][None], name_vec[cj][None])[0])))
             sizes = [len(p[2]) for p in parts]
             if not parts:
                 return ScoreSamples.from_records([], cols, meta={"matcher": self.registry_name, **data.score_meta()})
-            value_d = np.concatenate([p[5] for p in parts])
-            name_cos = np.repeat([p[6] for p in parts], sizes)
+            if self.numerical_device=='cpu':
+                value_d = np.concatenate([p[5] for p in parts])
+                name_cos = np.repeat([p[6] for p in parts], sizes)
+            else:
+                from ..numerics import quantile_pair_values
+                value_d,name_cos=quantile_pair_values(np.concatenate([feats[c][0] for c in cols]),
+                    np.concatenate([feats[c][1] for c in cols]),np.stack([name_vec[c] for c in cols]),
+                    gpu_left,gpu_right,gpu_name_left,gpu_name_right,self.numerical_device)
             if self.normalization == "legacy_minmax":
                 d_name = 1.0 - _minmax(name_cos)
                 d_value = _minmax(value_d)

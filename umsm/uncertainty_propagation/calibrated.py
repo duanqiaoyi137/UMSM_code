@@ -25,7 +25,12 @@ class CalibratedLogit(UncertaintyPropagation):
         # 输入：samples、ctx；输出：EdgeTable（统计量与最终边证据）；继承：CalibratedLogit(UncertaintyPropagation)，重写父类方法。
         artifact = load_artifact(self.calibration, ctx)
         df = samples.df.copy()
-        df["score"] = calibrate_scores(df.score, artifact["platt"])
+        if samples.meta.get('aggregation')=='raw_mean_then_calibrate':
+            out=moments(samples)
+            out['mu']=calibrate_scores(out.mu,artifact['platt'],out.get('retrieved'))
+            out['sigma']=0.; out['variance']=0.
+            return self.from_moments(out,samples.columns,samples.meta,artifact['platt'])
+        df["score"] = calibrate_scores(df.score, artifact["platt"], df.get('retrieved'))
         samples.df["calibrated_probability"] = df["score"].to_numpy()
         calibrated = ScoreSamples(df, samples.columns, samples.meta)
         out = moments(calibrated)

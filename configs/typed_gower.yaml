@@ -1,0 +1,14 @@
+base: typed_quantiles.yaml
+research:
+  name: paper_typed_gower
+  calibration: output/calibration/research/paper_typed_gower_{matcher}_{fold}.json
+modules:
+  uncertainty_model:
+    params:
+      generators:
+        categorical: [column_marginal, gower_knn]
+        ordered_numeric: [column_marginal, gower_knn]
+        numeric: [quantile_marginal, gower_knn]
+        date: [quantile_marginal, gower_knn]
+        text: [gower_knn, column_marginal]
+        identifier: []

@@ -1,0 +1,24 @@
+# Optional paid extension, intentionally excluded from the default suite.
+base: server.yaml
+research:
+  name: server_gdc_magneto
+  calibration_group: server_gdc_magneto
+  matcher: magneto
+  evidence_scope: table
+  missing: [observed_only]
+  optimizers: [local, greedy, alite, global]
+  roles:
+    fit: {name: Real, sets: [1009ipopayments]}
+    validation: {name: Real, sets: [DCMS_NHM_NHM]}
+    test: {name: GDC, sets: [clinical]}
+modules:
+  uncertainty_model: {name: observed_only, params: {}}
+paths:
+  raw_score_cache: true
+study:
+  state: output/results/server_magneto_state.html
+  bundle:
+    datasets: [Real, GDC]
+  matchers: [magneto]
+  phases: [profile, fit, validate-lambda, global, frontier]
+  jobs: [{id: gdc-magneto}]

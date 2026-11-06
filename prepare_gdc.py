@@ -43,7 +43,7 @@ def prepare(name='GDC', max_rows=300, seed=42, alias_policy='most_observed', sou
     # 输入：数据集名、行上限、种子、别名规则、本地 CSV 来源；输出：GDC 多源任务清单；继承：无（模块函数）。
     if not name.replace('_', '').replace('-', '').isalnum() or max_rows < 1:
         raise ValueError('Use a safe dataset name and positive max_rows')
-    cache = root / 'cache/datasets/new_benchmarks'
+    cache = root / 'output/cache/datasets/new_benchmarks'
     meta = fetch_file(RECORD+'/files/papers_info.json/content', cache / 'gdc_papers_info.json')
     archive = fetch_file(RECORD+'/files/gdc-sm-data.zip/content', cache / 'gdc-sm-data.zip')
     papers, frames, mappings, source_files = json.loads(meta.read_bytes()), {}, [], {}

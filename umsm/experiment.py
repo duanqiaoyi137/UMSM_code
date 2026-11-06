@@ -52,12 +52,23 @@ def environment_info(project_root=None):
     info = {'python': sys.version, 'platform': platform.platform(), 'packages': packages,
             'processor': platform.processor(), 'cpu_count': os.cpu_count(),
             'total_ram_gb': psutil.virtual_memory().total / 1024 ** 3}
+    from .execution import resource_limits
+    info['execution_limits']=resource_limits()
     torch = sys.modules.get('torch')
     if torch is not None:
         info['cuda_available'] = torch.cuda.is_available()
         if info['cuda_available']:
             info['gpu'] = torch.cuda.get_device_name(0)
     if project_root:
+        from pathlib import Path
+        import json
+        import hashlib
+        for label,filename in [('distribution_implementation_validation','distribution_acceptance.json'),
+                               ('parallel_implementation_validation','parallel_acceptance.json')]:
+            acceptance=Path(project_root)/'output'/'cache'/filename
+            if acceptance.exists():
+                info[label]={'file':str(acceptance),'sha256':hashlib.sha256(acceptance.read_bytes()).hexdigest(),
+                    'receipt':json.loads(acceptance.read_text(encoding='utf-8'))}
         head = os.path.join(project_root, '.git', 'HEAD')
         if os.path.isfile(head):
             with open(head, encoding='utf-8') as source:

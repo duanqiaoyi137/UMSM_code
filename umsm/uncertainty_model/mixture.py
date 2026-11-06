@@ -52,6 +52,8 @@ class VoteGenerator:
 GENERATORS.update({"column_marginal": lambda p: VoteGenerator(ColumnMarginal(**p)),
                    "knn_tuple": lambda p: VoteGenerator(KnnTuple(**p))})
 DEFAULT_GENERATORS = [{"name": "knn_tuple", "params": {"k": 10}}, {"name": "column_marginal"}]
+from .typed import register_generators
+register_generators(GENERATORS)
 
 
 def generate_candidates(specs, frame, table, iset, ctx):
@@ -92,11 +94,36 @@ def build_qx(generators, temperatures, weights):
 class CalibratedMixture(DistributionModel):
     """Frozen temperature-calibrated generator mixture; fitted only by explicit training phases."""
 
-    def __init__(self, calibration: str | dict, generators=None, rho=.95, k_max=10):
-        # 输入：calibration、generators、rho、k_max；输出：None；初始化实例及校验参数；继承：CalibratedMixture(DistributionModel)，重写父类方法。
+    def __init__(self, calibration: str | dict, generators=None, rho=.95, k_max=10,
+                 routing='shared', type_options=None):
+        # 输入：calibration、generators、rho、k_max、routing、type_options；输出：配置好的 Q 模型；继承：CalibratedMixture(DistributionModel)。
         super().__init__(rho, k_max)
+        if routing not in ('shared','by_type'):
+            raise ValueError('routing must be shared or by_type')
         self.calibration = calibration
-        self.generators = DEFAULT_GENERATORS if generators is None else generators
+        self.routing, self.type_options = routing, dict(type_options or {})
+        if routing=='by_type':
+            from .typed import DEFAULT_ROUTES, KINDS, route_specs
+            self.generators = DEFAULT_ROUTES if generators is None else generators
+            if not isinstance(self.generators,dict) or set(self.generators)-set(KINDS):
+                raise ValueError('by_type requires a type -> generator list dictionary')
+            for kind in KINDS:
+                for spec in route_specs(self.generators,kind):
+                    if spec['name'] not in GENERATORS:
+                        raise ValueError(f"Unknown typed generator: {spec['name']}")
+            missing = [kind for kind in KINDS if kind != 'identifier' and kind not in self.generators]
+            if missing:
+                raise ValueError(
+                    "by_type routing must declare explicit generators for every data type; "
+                    f"missing routes: {missing}. `identifier` may remain empty, but categorical, "
+                    "ordered_numeric, numeric, date and text must not be omitted."
+                )
+            if self.generators.get('identifier'):
+                raise ValueError('identifier routing must remain empty')
+        else:
+            self.generators = DEFAULT_GENERATORS if generators is None else generators
+            if not isinstance(self.generators,list):
+                raise ValueError('shared routing requires a generator list')
         if not self.generators:
             raise ValueError("at least one candidate generator is required")
 
@@ -107,11 +134,26 @@ class CalibratedMixture(DistributionModel):
         q = artifact["qx"]
         if q["generators"] != self.generators:
             raise ValueError("qx generator specification differs from fitted calibration")
+        if q.get('routing','shared')!=self.routing or q.get('type_options',{})!=self.type_options:
+            raise ValueError('qx type routing/options differ from fitted calibration')
+        if self.routing=='by_type' and q.get('typed_version')!=1:
+            raise ValueError('Unsupported typed Q calibration version')
         return q
+
+    def params(self):
+        # Input: instance; output: stable constructor/cache parameters; DistributionModel override.
+        params=super().params()
+        if self.routing=='shared' and not self.type_options:
+            params.pop('routing'); params.pop('type_options')
+        return params
 
     def cell_distributions(self, frame, table, iset, ctx):
         # 输入：frame、table、iset、ctx；输出：缺失位置到候选分布的字典；继承：CalibratedMixture(DistributionModel)，重写父类方法。
         p = self.parameters(ctx, iset)
+        if self.routing=='by_type':
+            from .typed import candidate_examples, calibrated_q
+            examples=candidate_examples(self.generators,frame,table,iset,ctx,self.type_options)
+            return {key:calibrated_q(ex,p,self.k_max) for key,ex in examples.items()}
         proposals = generate_candidates(self.generators, frame, table, iset, ctx)
         out = {}
         for key in set().union(*(g.keys() for g in proposals)):
@@ -121,6 +163,14 @@ class CalibratedMixture(DistributionModel):
                                             "generator_candidate_counts": [len(g) for g in local]})
         return out
 
+    def prepare_distribution(self, q):
+        # Input: typed/legacy Q; output: retained finite probabilities and diagnostics; DistributionModel override.
+        if isinstance(q,CellDistribution) and q.info.get('quantile_compressed'):
+            from .base import truncate_and_normalize
+            kept,stats=truncate_and_normalize(q.candidates,1.,self.k_max)
+            return kept,{**stats,**q.info,'requested_rho':self.rho,'numeric_quantile_mass_kept':1.}
+        return super().prepare_distribution(q)
+
     def estimate(self, iset, ctx):
         # 输入：iset、ctx；输出：UncertainData（不修改原表）；继承：CalibratedMixture(DistributionModel)，重写父类方法。
         result = super().estimate(iset, ctx)
@@ -128,8 +178,8 @@ class CalibratedMixture(DistributionModel):
         return result
 
 
-def pseudo_mask_examples(sets, specs, ctx, max_cells=500, seed=42):
-    # 输入：sets、specs、ctx、max_cells、seed；输出：隐藏观测值及无泄漏候选的诊断样本列表；继承：无（模块函数）。
+def pseudo_mask_examples(sets, specs, ctx, max_cells=500, seed=42, type_options=None):
+    # 输入：sets、specs、ctx、max_cells、seed、type_options；输出：隐藏值及无泄漏候选/类型标签；继承：无（模块函数）。
     """One hidden cell per example. Neither frame, Table nor IntegrationSet exposes its y.
 
     Max cells applies over the whole split; existing natural missing cells are preserved.
@@ -142,6 +192,24 @@ def pseudo_mask_examples(sets, specs, ctx, max_cells=500, seed=42):
     ends = np.cumsum([n for _, _, n in blocks])
     total = int(ends[-1]) if len(ends) else 0
     chosen = rng.choice(total, min(max_cells, total), replace=False)
+    if isinstance(specs,dict):
+        from .typed import profiles
+        # Balanced type strata prevent long categorical columns monopolizing the fit budget.
+        strata={}; start=0
+        for si,ti,n in blocks:
+            source,table=sets[si],sets[si].tables[ti]
+            prof=profiles(table.df,table.name,type_options)
+            flat=np.flatnonzero(table.df.notna().to_numpy().ravel())
+            for offset,index in enumerate(flat):
+                ci=int(index%table.df.shape[1]); kind=prof[table.df.columns[ci]].kind
+                strata.setdefault(kind,[]).append(start+offset)
+            start+=n
+        pools={kind:list(rng.permutation(indices)) for kind,indices in sorted(strata.items())}
+        balanced=[]
+        while len(balanced)<min(max_cells,total):
+            for pool in pools.values():
+                if pool and len(balanced)<min(max_cells,total): balanced.append(pool.pop())
+        chosen=np.asarray(balanced,dtype=int)
     # Keep only selected positions, rather than a Python tuple per observed dataset cell.
     positions = {}
     for bi in set(np.searchsorted(ends, chosen, side="right")):
@@ -152,7 +220,7 @@ def pseudo_mask_examples(sets, specs, ctx, max_cells=500, seed=42):
             r, c = np.unravel_index(observed[ix - start], sets[si].tables[ti].df.shape)
             positions[int(ix)] = si, ti, int(r), int(c)
     examples = []
-    for ix in chosen:
+    for example_number,ix in enumerate(chosen,1):
         si, ti, r, ci = positions[int(ix)]
         source, table = sets[si], sets[si].tables[ti]
         frame = object_frame(table.df)
@@ -162,9 +230,20 @@ def pseudo_mask_examples(sets, specs, ctx, max_cells=500, seed=42):
         hidden_tables = [replace(t, path=None) for t in source.tables]
         hidden_tables[ti] = hidden_table
         hidden_set = replace(source, tables=hidden_tables, groundtruth=None)
-        proposals = generate_candidates(specs, frame, hidden_table, hidden_set, ctx)
-        examples.append({"generators": [p.get((r, col), []) for p in proposals], "truth": truth,
-                         "set": source.name, "table": table.name, "row": r, "column": str(col)})
+        if isinstance(specs,dict):
+            from .typed import candidate_examples, ColumnProfile, TypedGenerator
+            proposal=candidate_examples(specs,frame,hidden_table,hidden_set,ctx,type_options,{(r,col)})[(r,col)]
+            profile=ColumnProfile(**proposal['profile'])
+            baseline=TypedGenerator('quantile_marginal').generate(frame,hidden_table,hidden_set,ctx,
+                {col:profile},{(r,col)}).get((r,col),[]) if profile.kind in ('numeric','date') else []
+            examples.append({**proposal,'truth':truth,'numeric_truth':profile.number(truth) if profile.kind in ('numeric','date') else None,
+                'marginal_baseline':baseline,'set':source.name,'table':table.name,'row':r,'column':str(col)})
+        else:
+            proposals = generate_candidates(specs, frame, hidden_table, hidden_set, ctx)
+            examples.append({"generators": [p.get((r, col), []) for p in proposals], "truth": truth,
+                             "set": source.name, "table": table.name, "row": r, "column": str(col)})
+        if ctx.resources.get('calibration_fitting') and (example_number==1 or example_number%10==0 or example_number==len(chosen)):
+            print(f'Q fit pseudo-masks: {example_number}/{len(chosen)}',flush=True)
     return examples
 
 

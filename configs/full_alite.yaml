@@ -1,0 +1,56 @@
+# Separate ALITE-style value evidence plus ALITE-style clustering, for matched validation/test tasks.
+base: full_pipeline.yaml
+research:
+  name: full_alite
+  calibration_group: full_alite_v3
+  matcher: alite_native
+  matcher_params: {alite_native: {model: models/bert-base-uncased}}
+  missing: [observed_only]
+  optimizers: [alite]
+modules:
+  uncertainty_model: {name: observed_only, params: {}}
+study:
+  state: output/results/full_alite_state.html
+  matchers: [alite_native]
+  phases: [profile, fit, validate-lambda, validate-offsets, missing]
+  jobs:
+    - id: alaska-camera
+      overrides:
+        research:
+          name: full_alite_camera
+          fold: monitor_notebook_camera
+          roles:
+            fit: {name: Alaska_Partition, sets: [monitor_pool]}
+            validation: {name: Alaska_Partition, sets: [notebook_pool]}
+            test: {name: Alaska_Partition, sets: ['camera_test_*']}
+    - id: alaska-monitor
+      overrides:
+        research:
+          name: full_alite_monitor
+          fold: camera_notebook_monitor
+          roles:
+            fit: {name: Alaska_Partition, sets: [camera_pool]}
+            validation: {name: Alaska_Partition, sets: [notebook_pool]}
+            test: {name: Alaska_Partition, sets: ['monitor_test_*']}
+    - id: alaska-notebook
+      overrides:
+        research:
+          name: full_alite_notebook
+          fold: monitor_camera_notebook
+          roles:
+            fit: {name: Alaska_Partition, sets: [monitor_pool]}
+            validation: {name: Alaska_Partition, sets: [camera_pool]}
+            test: {name: Alaska_Partition, sets: ['notebook_test_*']}
+    - id: sotab-k{k}
+      matrix: {k: [5, 8, 12]}
+      overrides:
+        research:
+          name: 'full_alite_sotab_k{k}'
+          roles:
+            test: {name: 'SOTAB_K{k}', sets: ['test_*']}
+    - id: gdc
+      overrides:
+        research:
+          name: full_alite_gdc
+          roles:
+            test: {name: GDC, sets: [clinical]}

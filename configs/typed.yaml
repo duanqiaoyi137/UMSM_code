@@ -1,0 +1,15 @@
+# Full table-local typed variant; downstream modules inherit the strict paper protocol.
+base: typed_models.yaml
+research:
+  name: paper_typed_full
+  calibration: output/calibration/research/paper_typed_full_{matcher}_{fold}.json
+modules:
+  uncertainty_model:
+    params:
+      generators:
+        categorical: [column_marginal, gower_knn, cluster_marginal, nb_classifier]
+        ordered_numeric: [column_marginal, gower_knn, cluster_marginal, numeric_kernel]
+        numeric: [quantile_marginal, gower_knn, cluster_marginal, mice_posterior]
+        date: [quantile_marginal, gower_knn, cluster_marginal, mice_posterior]
+        text: [row_embedding_knn, column_marginal]
+        identifier: []

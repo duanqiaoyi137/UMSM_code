@@ -1,0 +1,18 @@
+# Cost-bounded Magneto LLM pilot: only the two strategies needed for the main
+# comparison (observed reference and Q_risk).  Reuses the fit/validation
+# artifacts and the DeepSeek response cache from configs/magneto_llm_tiny.yaml.
+base: magneto_llm_tiny.yaml
+study:
+  phases: [missing]
+  state: output/results/magneto_llm_tiny_state.html
+  jobs:
+    - id: magneto-llm-tiny-gdc
+      overrides:
+        research:
+          name: magneto_llm_tiny_gdc
+          calibration_group: magneto_llm_tiny_external
+          missing: [observed_only, Q_risk]
+          roles:
+            fit: {name: SOTAB_CPA, sets: ['fit_01_*'], max_sets: 1}
+            validation: {name: SOTAB_CPA, sets: ['validation_01_*'], max_sets: 1}
+            test: {name: GDC, sets: [clinical]}

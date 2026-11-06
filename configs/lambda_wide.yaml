@@ -1,0 +1,8 @@
+# Wide lambda sensitivity on SOTAB-K5 with the S-BERT mean matcher.
+# Validation-only selection; test is scored once.
+base: full_pipeline_sbert.yaml
+research:
+  lambda_grid: [0, 1, 2, 5, 10, 20, 50, 100, 200]
+study:
+  protocol_suffix: lambda_wide_v1
+  state: output/results/lambda_wide_state.html

@@ -11,7 +11,7 @@ def package_source(root, output):
     root,output = Path(root).resolve(),Path(output).resolve()
     if output.suffix.lower()!='.zip':
         raise ValueError('Source package output must end in .zip')
-    files = list(root.glob('*.py'))
+    files = list(root.glob('*.py')) + list(root.glob('*.ps1'))
     files += [root/name for name in ('README.md','requirements.txt','.gitignore','.env.example')]
     for name in ('umsm','configs','tests','md','.github'):
         files += [p for p in (root/name).rglob('*') if p.is_file() and p.suffix in ('.py','.yaml','.yml','.md','.txt')]
@@ -30,6 +30,6 @@ def package_source(root, output):
             archive.write(path,'UMSM/'+path.relative_to(root).as_posix())
         archive.writestr('UMSM/SOURCE_MANIFEST.json',json.dumps({'format':'umsm-source-v1',
             'entrypoint':'python run.py','files':manifest,
-            'excluded':['.env','data','models','cache','calibration','results','.umsm','dist']},indent=2))
+            'excluded':['.env','data','models','output','cache','calibration','results','.umsm','dist']},indent=2))
     print(f'Source package: {output} ({len(selected)} files)')
     return str(output)

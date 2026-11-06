@@ -1,0 +1,8 @@
+# Remaining S-BERT diagnostics for SOTAB/GDC/MaDI.
+base: full_pipeline_sbert_fix.yaml
+research:
+  plots: false
+  diagnostics: false
+study:
+  state: output/results/sbert_fix_state.html
+  phases: [validate-lambda, qcheck, audit, factorial, edges, pairwise, global]

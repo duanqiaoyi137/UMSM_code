@@ -1,0 +1,66 @@
+# S-BERT mean matcher, matched to the frozen natural-data protocol.
+# Fit and lambda selection use validation only; the test split is scored once.
+base: full_pipeline_gpu.yaml
+research:
+  decision_offset_grid: [0]
+  lambda_grid: [0, 0.1, 0.25, 0.5, 0.75, 1.0]
+  plots: false
+  diagnostics: false
+study:
+  protocol_suffix: sbert_mean_v1
+  state: output/results/sbert_mean_state.html
+  matchers: [mean]
+  phases: [fit, validate-lambda, missing]
+  jobs:
+    - id: alaska-camera
+      overrides:
+        research:
+          name: sbert_alaska_camera
+          fold: monitor_notebook_camera
+          calibration_group: sbert_alaska
+          roles:
+            fit: {name: Alaska_Partition, sets: [monitor_pool]}
+            validation: {name: Alaska_Partition, sets: [notebook_pool]}
+            test: {name: Alaska_Partition, sets: ['camera_test_*']}
+    - id: alaska-monitor
+      overrides:
+        research:
+          name: sbert_alaska_monitor
+          fold: camera_notebook_monitor
+          calibration_group: sbert_alaska
+          roles:
+            fit: {name: Alaska_Partition, sets: [camera_pool]}
+            validation: {name: Alaska_Partition, sets: [notebook_pool]}
+            test: {name: Alaska_Partition, sets: ['monitor_test_*']}
+    - id: alaska-notebook
+      overrides:
+        research:
+          name: sbert_alaska_notebook
+          fold: monitor_camera_notebook
+          calibration_group: sbert_alaska
+          roles:
+            fit: {name: Alaska_Partition, sets: [monitor_pool]}
+            validation: {name: Alaska_Partition, sets: [camera_pool]}
+            test: {name: Alaska_Partition, sets: ['notebook_test_*']}
+    - id: sotab-k{k}
+      matrix: {k: [5, 8, 12]}
+      overrides:
+        research:
+          name: 'sbert_sotab_k{k}'
+          calibration_group: sbert_external
+          roles:
+            test: {name: 'SOTAB_K{k}', sets: ['test_*']}
+    - id: gdc
+      overrides:
+        research:
+          name: sbert_gdc
+          calibration_group: sbert_external
+          roles:
+            test: {name: GDC, sets: [clinical]}
+    - id: madi
+      overrides:
+        research:
+          name: sbert_madi
+          calibration_group: sbert_external
+          roles:
+            test: {name: MaDI, sets: [games_pilot300, music_pilot300, papers_pilot300]}

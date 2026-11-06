@@ -1,0 +1,26 @@
+# Same-domain natural donor smoke set; unrelated cross-domain anchors are never fabricated.
+base: server_pilot.yaml
+research:
+  name: server_aligned_pilot
+  calibration_group: server_aligned_pilot
+  roles:
+    test: {name: Server_Aligned_Pilot, sets: ['*']}
+study:
+  state: output/results/server_aligned_pilot_state.html
+  construction:
+    bases: [{dataset: Alaska_full, sets: [monitor]}]
+    donors: [{dataset: Alaska_full, sets: [monitor]}]
+    c2_name: Server_Aligned_Pilot
+    c2: true
+    c3: false
+    alignments: [aligned]
+    base_tables:
+      Alaska_full/monitor: [www.cleverboxes.com.csv, www.imldirect.it.csv]
+    alignment_maps:
+      Alaska_full/monitor/www.cleverboxes.com.csv:
+        donor: Alaska_full/monitor/www.cleverboxes.com.csv
+        anchors: {aspect ratio: aspect ratio}
+      Alaska_full/monitor/www.imldirect.it.csv:
+        donor: Alaska_full/monitor/www.imldirect.it.csv
+        anchors: {aspect ratio: aspect ratio}
+    audit: output/results/server_aligned_pilot_preparation.html

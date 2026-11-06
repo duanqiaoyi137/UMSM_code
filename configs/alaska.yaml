@@ -1,11 +1,11 @@
 dataset: {name: Alaska, root: data, variant: original}
-experiment: {name: Alaska_research, output_dir: results/research, seed: 42}
+experiment: {name: Alaska_research, output_dir: output/results/research, seed: 42}
 candidates: {mode: all}
 research:
   name: alaska
   fold: camera8_notebook8_monitor8
   matcher: mean
-  calibration: calibration/research/alaska_{matcher}_{fold}.json
+  calibration: output/calibration/research/alaska_{matcher}_{fold}.json
   roles:
     fit: {name: Alaska, sets: [camera_fit]}
     validation: {name: Alaska, sets: [notebook_validation]}

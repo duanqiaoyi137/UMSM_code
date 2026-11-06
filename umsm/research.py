@@ -32,8 +32,8 @@ from .config import deep_merge
 from .training import fit_pipeline
 from .uncertainty_model.mixture import pseudo_mask_examples, qx_diagnostics
 
-PHASES = ('profile','fit','qcheck','global','missing','subsets','validate-lambda','validate-prior',
-          'edges','pairwise','frontier','diagnostic-calibration','factorial')
+PHASES = ('profile','fit','select-calibrator','qcheck','global','missing','subsets','validate-lambda','validate-offsets','validate-prior',
+          'edges','pairwise','frontier','diagnostic-calibration','factorial','benchmark','sensitivity','constraints','downstream','audit')
 
 
 def task_signature(source):
@@ -57,11 +57,40 @@ def attach_preparation(sets):
                     raise ValueError(f'Prepared input changed: {path}')
                 checked[path] = manifest
             source.meta.update(preparation=checked[path]['protocol'],preparation_sha256=file_sha256(path))
+            case_record = next((r for r in checked[path].get('cases',[]) if r['name']==case.name),{})
+            source.meta['source_sites'] = sorted({t['host'] for t in case_record.get('tables',[]) if t.get('host')}
+                                                |set(checked[path]['protocol'].get('source_sites',[])))
             break
     return sets
 
 
-def ensure_disjoint(left, right):
+def source_clusters(sets, declared=None):
+    # 输入：任务及可选人工来源分组；输出：按共同原任务/网站合并的簇，人工设置只能进一步合并；继承：无（模块函数）。
+    parents = {s.name:s.name for s in sets}
+    def find(name):
+        # 输入：任务名；输出：来源连通分量代表；继承：无（内部函数）。
+        while parents[name]!=name:
+            parents[name]=parents[parents[name]]
+            name=parents[name]
+        return name
+    owners = {}
+    for source in sets:
+        prep = source.meta.get('preparation',{})
+        tokens = [('origin',prep.get('source_fingerprint',source.name))]
+        tokens += [('origin',p) for p in prep.get('dependency_fingerprints',[])]
+        tokens += [('site',site) for site in source.meta.get('source_sites',[])]
+        if source.name in (declared or {}):
+            tokens.append(('declared',declared[source.name]))
+        for token in tokens:
+            if token in owners:
+                a,b=find(source.name),find(owners[token])
+                parents[max(a,b)]=min(a,b)
+            else:
+                owners[token]=source.name
+    return {s.name:find(s.name) for s in sets}
+
+
+def ensure_disjoint(left, right, by_site=False):
     # 输入：两个角色的多表任务列表；输出：None；任务/源表内容或派生来源重合时拒绝；继承：无（模块函数）。
     def identities(sets):
         # 输入：任务列表；输出：完整任务、各表及已记录原任务的内容指纹集合；继承：无（内部函数）。
@@ -72,9 +101,14 @@ def ensure_disjoint(left, right):
             protocol = source.meta.get('preparation',{})
             if protocol.get('source_fingerprint'):
                 found.add(protocol['source_fingerprint'])
+            found.update(protocol.get('dependency_fingerprints',[]))
         return found
     if identities(left)&identities(right):
         raise ValueError('Roles overlap in task/source-table contents or recorded pre-mask origin')
+    if by_site:
+        left_sites={site for source in left for site in source.meta.get('source_sites',[])}
+        right_sites={site for source in right for site in source.meta.get('source_sites',[])}
+        if left_sites&right_sites: raise ValueError('Roles overlap in recorded source websites')
 
 
 def calibration_sources(artifact, cfg, root):
@@ -119,6 +153,10 @@ def matcher_spec(label, params, root):
         weights = {'name_weight':0.,'value_weight':1.} if label=='value' else (
             {'name_weight':1.,'value_weight':0.} if label=='name' else {})
         result = {'name':'sbert_mean','params':weights}
+    elif label=='quantile':
+        result={'name':'sbert_quantile','params':{'normalization':'fixed','name_weight':0.,'value_weight':1.}}
+    elif label=='alite_native':
+        result={'name':'alite','params':{}}
     elif label in ('coma','jaccard','distribution'):
         algorithm = {'coma':'coma_instance','jaccard':'jaccard_levenshtein','distribution':'distribution_based'}[label]
         result = {'name':'valentine','params':{'algorithm':algorithm,'local_selection':'all','instance_sample_size':None}}
@@ -130,7 +168,7 @@ def matcher_spec(label, params, root):
     else:
         raise ValueError(f'Unknown research matcher: {label}')
     params = params or {}
-    if set(params)&{'mean','name','value','coma','jaccard','distribution','magneto'}:
+    if set(params)&{'mean','name','value','coma','jaccard','distribution','magneto','quantile','alite_native'}:
         params = params.get(label,{})
     result['params'].update(params)
     result['cache_scores'] = True
@@ -140,6 +178,8 @@ def matcher_spec(label, params, root):
 def research_config(cfg, root):
     # 输入：用户研究配置与根目录；输出：补齐四模块、策略和优化器的独立配置；继承：无（模块函数）。
     spec = cfg['research']
+    if spec.get('prior_policy','configured') not in ('configured','fit_prevalence'):
+        raise ValueError('prior_policy must be configured or fit_prevalence')
     label = spec.get('matcher','mean')
     artifact = spec['calibration'].format(matcher=label,fold=spec.get('fold','default'))
     result = paper_config(artifact,risk_lambda=spec.get('risk_lambda',.5),prior=spec.get('prior',.5))
@@ -147,11 +187,13 @@ def research_config(cfg, root):
         result[name].update(cfg.get(name,{}))
     result['candidates'] = copy.deepcopy(cfg.get('candidates',{'mode':'all'}))
     custom_matcher = cfg.get('modules',{}).get('matcher')
-    if label not in ('mean','name','value','coma','jaccard','distribution','magneto') and custom_matcher:
+    if label not in ('mean','name','value','coma','jaccard','distribution','magneto','quantile','alite_native') and custom_matcher:
         result['matcher'] = copy.deepcopy(custom_matcher)
     else:
         result['matcher'] = matcher_spec(label,spec.get('matcher_params',{}),root)
     result['matcher']['cache_scores'] = spec.get('cache_scores',True)
+    if spec.get('device') and result['matcher']['name'] in ('sbert_mean','sbert_quantile','magneto','alite'):
+        result['matcher']['params']['device']=spec['device']
     result['uncertainty_model']['realization']['n_samples'] = spec.get('n_samples',32)
     result['research'] = {**copy.deepcopy(spec),'matcher':label,'calibration':artifact}
     result['global_optimizer']['params'].update(spec.get('ilp',{}))
@@ -162,6 +204,26 @@ def research_config(cfg, root):
         if override.get('name',base['name'])!=base['name']:
             base = {**base,'params':{}}
         result[name] = deep_merge(base,override)
+    compute_device=spec.get('compute_device')
+    if compute_device:
+        # GPU execution settings are explicit protocol fields, included in Q/matcher/cache identities.
+        model=result['uncertainty_model']
+        routes=model.get('params',{}).get('generators')
+        if model['name']=='calibrated_mixture' and isinstance(routes,dict):
+            typed={'gower_knn','cluster_marginal','row_embedding_knn','mice_posterior','numeric_kernel','nb_classifier','quantile_marginal'}
+            for kind,entries in routes.items():
+                revised=[]
+                for entry in entries:
+                    entry={'name':entry} if isinstance(entry,str) else copy.deepcopy(entry)
+                    if entry['name'] in typed:
+                        entry.setdefault('params',{})['device']=compute_device
+                        if entry['name']=='mice_posterior': entry['params']['numerical_backend']=spec.get('numerical_backend','torch')
+                    revised.append(entry)
+                routes[kind]=revised
+        if result['matcher']['name'] in ('sbert_mean','sbert_quantile','magneto'):
+            result['matcher']['params']['numerical_device']=compute_device
+        result['research'].setdefault('statistical_params',{}).update(
+            device=compute_device,numerical_backend=spec.get('numerical_backend','torch'))
     scope = spec.get('evidence_scope','table')
     if scope not in ('pair','table'):
         raise ValueError('research.evidence_scope must be pair or table')
@@ -213,7 +275,8 @@ def select_parameter(path, cfg, root):
     # 输入：验证报告路径或 latest、当前配置、根目录；输出：通过协议与校准哈希检查的冻结选择；继承：无（模块函数）。
     folder = report_folder(cfg,root)
     if path=='latest':
-        pattern = 'validate-prior/*.html' if cfg['research'].get('prior_optimizer')=='pairwise' else 'validate-*/*.html'
+        pattern = ('validate-lambda/*.html' if cfg['research'].get('prior_policy')=='fit_prevalence' else
+                   'validate-prior/*.html' if cfg['research'].get('prior_optimizer')=='pairwise' else 'validate-*/*.html')
         candidates = list(folder.glob(pattern))
         if not candidates:
             raise FileNotFoundError('Run a validate-lambda or validate-prior phase first')
@@ -230,13 +293,17 @@ def select_parameter(path, cfg, root):
     previous=MATCHERS.build(fitted_matcher.get('name',''),fitted_matcher.get('params',{}))
     current=MATCHERS.build(cfg['matcher']['name'],cfg['matcher'].get('params',{}))
     same_matcher=previous.registry_name==current.registry_name and previous.params()==current.params()
-    if (report.get('protocol',{}).get('role')!='validation' or not same_matcher
-            or report.get('protocol',{}).get('fingerprints') != [task_signature(s) for s in expected_sets]
-            or report.get('calibration_sha256') != file_sha256(root/cfg['research']['calibration'])
-            or report['config']['candidates'] != cfg['candidates']
-            or report['config']['uncertainty_model']['realization'] != cfg['uncertainty_model']['realization']):
-        raise ValueError('Selection must use unchanged independent validation data, matcher, Q and calibration')
+    checks={'role':report.get('protocol',{}).get('role')=='validation','matcher':same_matcher,
+        'validation_data':report.get('protocol',{}).get('fingerprints')==[task_signature(s) for s in expected_sets],
+        'calibration_hash':report.get('calibration_sha256')==file_sha256(root/cfg['research']['calibration']),
+        'candidate_protocol':report['config']['candidates']==cfg['candidates'],
+        'realization':report['config']['uncertainty_model']['realization']==cfg['uncertainty_model']['realization']}
+    if not all(checks.values()):
+        raise ValueError('Selection must use unchanged independent validation data, matcher, Q and calibration; mismatched: '+
+                         ', '.join(k for k,v in checks.items() if not v))
     selection = report['selection']
+    if cfg['research'].get('prior_policy')=='fit_prevalence' and selection['axis']=='prior':
+        raise ValueError('Fit-prevalence protocol cannot use a tuned prior selection; validate lambda instead')
     if selection['axis']=='lambda' and report['config']['ablation']['missing']['Q_risk']['uncertainty_model']!=cfg['ablation']['missing']['Q_risk']['uncertainty_model']:
         raise ValueError('The Q model changed since lambda validation')
     if selection['axis']=='lambda' and cfg['research'].get('prior',.5)!=selection['held_fixed']:
@@ -252,6 +319,24 @@ def select_parameter(path, cfg, root):
     return {**selection,'report':str(path),'report_sha256':file_sha256(path)}
 
 
+def set_shared_prior(cfg, value):
+    # Input: full configuration and prior; output: all strategies/threshold baselines share that reference; module function.
+    if not np.isfinite(value) or not 0<value<1: raise ValueError('Prior must be inside (0,1)')
+    cfg['research']['prior']=float(value)
+    cfg['uncertainty_propagation']['params']['prior']=float(value)
+    for strategy in cfg['ablation']['missing'].values():
+        strategy['uncertainty_propagation']['params']['prior']=float(value)
+    cfg['ablation']['optimizers']['greedy']['params']['threshold']=float(value)
+
+
+def apply_fit_prior(cfg, artifact):
+    # Input: configuration and frozen Platt fit; output: prior resolved from equal-edge fit prevalence when requested; module function.
+    if cfg['research'].get('prior_policy','configured')=='fit_prevalence':
+        value=artifact.get('platt',{}).get('fit_positive_prior')
+        if value is None: raise ValueError('This protocol needs a new calibration with fit_positive_prior; do not guess from MC row counts')
+        set_shared_prior(cfg,value)
+
+
 def report_folder(cfg, root):
     # 输入：研究配置、根目录；输出：该研究/折/matcher 的报告目录 Path；继承：无（模块函数）。
     spec = cfg['research']
@@ -261,6 +346,20 @@ def report_folder(cfg, root):
 def run_research(cfg, phase, root, selection=None):
     # 输入：完整配置、阶段、根目录、可选冻结验证选择；输出：单 HTML 路径及完整结果；继承：无（模块函数）。
     spec = cfg['research']
+    if phase=='select-calibrator':
+        from .magneto_study import select_calibrator
+        return select_calibrator(cfg,root)
+    if phase=='validate-offsets':
+        from .threshold_selection import validate_offsets
+        return validate_offsets(cfg,root,selection)
+    if phase=='validate-prior' and spec.get('prior_policy')=='fit_prevalence':
+        raise ValueError('prior is fixed to fit prevalence in this protocol; use validate-lambda and frontier sensitivity instead')
+    if phase=='audit':
+        from .study import audit_job
+        return audit_job(cfg,root)
+    if phase in ('benchmark','sensitivity','constraints','downstream'):
+        from .study_eval import run_extended
+        return run_extended(cfg,phase,root,selection)
     artifact_path = root/spec['calibration']
     if phase=='fit':
         if artifact_path.exists():
@@ -268,51 +367,90 @@ def run_research(cfg, phase, root, selection=None):
         fitcfg,fitsets = role_config(cfg,'fit',root)
         for role in ('validation','test'):
             _,other = role_config(cfg,role,root)
-            ensure_disjoint(fitsets,other)
+            ensure_disjoint(fitsets,other,by_site=spec.get('require_site_disjoint',False))
             if spec.get('qx_from'):
-                ensure_disjoint(calibration_sources(load_artifact(str(root/spec['qx_from'])),cfg,root),other)
+                ensure_disjoint(calibration_sources(load_artifact(str(root/spec['qx_from'])),cfg,root),other,by_site=spec.get('require_site_disjoint',False))
         artifact = fit_pipeline(fitcfg,str(root),str(artifact_path),max_cells=spec.get('max_cells',200),
                                 qx_from=spec.get('qx_from'),mask_seed=spec.get('mask_seed',42),
                                 split_role=spec.get('calibration_split_role','validation'))
         print('Calibration:',artifact_path)
         return {'calibration':artifact}
-    role = 'validation' if phase.startswith('validate-') or phase=='qcheck' else 'test'
+    role = (spec.get('profile_role','test') if phase=='profile' else
+            'validation' if phase.startswith('validate-') or phase=='qcheck' else 'test')
+    if role not in ('validation','test'):
+        raise ValueError('profile_role must be validation or test')
     workcfg,sets = role_config(cfg,role,root)
     _,validation_sets = role_config(cfg,'validation',root)
     if role=='test':
-        ensure_disjoint(sets,validation_sets)
+        ensure_disjoint(sets,validation_sets,by_site=spec.get('require_site_disjoint',False))
     _,fitsets = role_config(cfg,'fit',root)
-    ensure_disjoint(sets,fitsets)
+    ensure_disjoint(sets,fitsets,by_site=spec.get('require_site_disjoint',False))
     run_id = datetime.now().strftime('%Y%m%d-%H%M%S-%f')
     path = report_folder(cfg,root)/phase/(run_id+'.html')
     seed = int(cfg['experiment']['seed'])
     ctx = RunContext(seed=seed,project_root=str(root),cache_dir=str(root/cfg['paths']['cache_dir']),
                      embedding_cache=cfg['paths'].get('embedding_cache',True))
     if phase=='profile':
-        profiles = [{'set':s.name,**s.stats()} for s in sets]
+        clusters = source_clusters(sets,spec.get('bootstrap',{}).get('task_groups',{}))
+        profiles = [{'set':s.name,'source_cluster':clusters[s.name],**s.stats()} for s in sets]
+        for source,row in zip(sets,profiles):
+            split = source.meta.get('preparation', {}).get('split')
+            row.update(mean_rows_per_table=float(np.mean([len(t.df) for t in source.tables])),
+                mean_gt_group_size=float(np.mean([len(g) for g in source.groundtruth])) if source.groundtruth else 0.,
+                sibling_ratio=split.get('actual_sibling_ratio') if isinstance(split,dict) else None)
         columns = [{'set':s.name,'table':t.name,'column':c.name,'rows':len(t.df),
                     'missing_rate':float(t.df[c.name].isna().mean()),'observed':int(t.df[c.name].notna().sum()),
                     'distinct_observed':int(t.df[c.name].nunique())} for s in sets for t in s.tables for c in t.columns]
+        if spec.get('type_strata'):
+            from .uncertainty_model.typed import profiles as column_profiles
+            from dataclasses import asdict
+            lookup={(s.name,t.name,c):asdict(p) for s in sets for t in s.tables
+                    for c,p in column_profiles(t.df,t.name,cfg['uncertainty_model']['params'].get('type_options',{})).items()}
+            for row in columns:
+                row.update(lookup[(row['set'],row['table'],row['column'])])
         payload={'run_id':run_id,'name':spec['name']+' data profile','kind':'data_profile','config':cfg,
+                 'protocol':{'role':role,'phase':phase,'source_clusters':clusters,'n_source_clusters':len(set(clusters.values()))},
                  'analysis_tables':{'Integration sets':profiles,'Natural-missing columns':columns}}
         write_report(path,payload)
         print(pd.DataFrame(profiles).to_string(index=False))
         print('Result:',path)
         return {'result_file':str(path),**payload}
     frozen = load_artifact(str(artifact_path))
-    ensure_disjoint(sets,calibration_sources(frozen,cfg,root))
+    apply_fit_prior(cfg,frozen)
+    ensure_disjoint(sets,calibration_sources(frozen,cfg,root),by_site=spec.get('require_site_disjoint',False))
     if phase=='qcheck':
+        if cfg['uncertainty_model']['name']=='calibrated_mixture':
+            from .uncertainty_model.mixture import CalibratedMixture
+            CalibratedMixture(**cfg['uncertainty_model']['params']).parameters(ctx)
         for source in sets:
             check_inference_split(str(artifact_path),source,ctx)
         q = frozen['qx']
-        examples = pseudo_mask_examples(sets,q['generators'],ctx,spec.get('max_cells',200),42)
+        typed=q.get('routing')=='by_type'
+        type_options=q.get('type_options',{})
+        examples = pseudo_mask_examples(sets,q['generators'],ctx,spec.get('max_cells',200),42,type_options)
+        truncation = {k:cfg['uncertainty_model']['params'].get(k,default) for k,default in (('rho',.95),('k_max',10))}
         diagnostics = []
-        for index in range(-1,len(q['generators'])):
-            weights = q['weights'] if index<0 else [float(i==index) for i in range(len(q['generators']))]
-            isolated = examples if index<0 else [{**ex,'generators':[g if i==index else [] for i,g in enumerate(ex['generators'])]} for ex in examples]
-            diagnostics.append({'method':'mixture' if index<0 else q['generators'][index]['name'],
-                                **qx_diagnostics(isolated,q['temperatures'],weights)})
-        payload = {'run_id':run_id,'name':spec['name']+' Q diagnostics','config':cfg,'qx_diagnostics':diagnostics}
+        if typed:
+            from .uncertainty_model.typed import typed_diagnostics
+            diagnostics.append({'method':'typed_mixture',**typed_diagnostics(examples,q,**truncation)})
+        else:
+            for index in range(-1,len(q['generators'])):
+                weights = q['weights'] if index<0 else [float(i==index) for i in range(len(q['generators']))]
+                isolated = examples if index<0 else [{**ex,'generators':[g if i==index else [] for i,g in enumerate(ex['generators'])]} for ex in examples]
+                diagnostics.append({'method':'mixture' if index<0 else q['generators'][index]['name'],
+                                    **qx_diagnostics(isolated,q['temperatures'],weights,**truncation)})
+        by_task = []
+        if spec.get('qcheck_by_task',False):
+            for source in sets:
+                examples = pseudo_mask_examples([source],q['generators'],ctx,spec.get('max_cells',200),42,type_options)
+                diag=typed_diagnostics(examples,q,**truncation) if typed else qx_diagnostics(examples,q['temperatures'],q['weights'],**truncation)
+                by_task.append({'set':source.name,**diag})
+        payload = {'run_id':run_id,'name':spec['name']+' Q diagnostics','config':cfg,'qx_diagnostics':diagnostics,
+                   'calibration_sha256':file_sha256(artifact_path),
+                   'protocol':{'role':'validation','phase':'qcheck'},
+                   'analysis_tables':{'Q diagnostics by validation task':by_task,
+                        'Q diagnostics by column type':[{'method':d['method'],**row} for d in diagnostics for row in d.get('by_type',[])],
+                        'Q diagnostics by task and type':[{'set':d['set'],**row} for d in by_task for row in d.get('by_type',[])]}}
         write_report(path,payload)
         print('Result:',path)
         return {'result_file':str(path),**payload}
@@ -321,15 +459,20 @@ def run_research(cfg, phase, root, selection=None):
         if chosen['axis']=='lambda':
             cfg['ablation']['missing']['Q_risk']['uncertainty_propagation']['params']['risk_lambda']=chosen['value']
         else:
+            cfg['research']['prior']=chosen['value']
+            cfg['uncertainty_propagation']['params']['prior']=chosen['value']
             for strategy in cfg['ablation']['missing'].values():
                 strategy['uncertainty_propagation']['params']['prior']=chosen['value']
             cfg['ablation']['optimizers']['greedy']['params']['threshold']=chosen['value']
     else:
         chosen = None
     from .isolation import ISOLATED_PHASES, run_isolation
-    if phase in ISOLATED_PHASES or (phase=='validate-prior' and spec.get('prior_optimizer','global')=='pairwise'):
+    if (phase in ISOLATED_PHASES or (phase=='validate-prior' and spec.get('prior_optimizer','global')=='pairwise')
+            or (phase=='validate-lambda' and spec.get('lambda_optimizer')=='pairwise')):
         return run_isolation(cfg,phase,sets,workcfg,ctx,frozen,chosen,path,run_id,root)
     strategies = copy.deepcopy(cfg['ablation']['missing'])
+    bootstrap = copy.deepcopy(spec.get('bootstrap',{}))
+    bootstrap['task_groups'] = source_clusters(sets,bootstrap.get('task_groups',{}))
     if phase in ('global','subsets'):
         strategies = {n:strategies[n] for n in spec.get('global_missing',['observed_only'])}
     elif phase.startswith('validate-'):
@@ -358,7 +501,9 @@ def run_research(cfg, phase, root, selection=None):
             for current,case in cases:
                 prep = source.meta.get('preparation',{})
                 tags = {**case,'variant':f'k{case["k"]}_d{case["draw"]}' if phase=='subsets' else workcfg['dataset'].get('variant','original'),
-                        'mechanism':prep.get('mechanism','natural'),'rate':prep.get('rate'), 'row_cap':prep.get('row_cap')}
+                        'source_cluster':bootstrap['task_groups'][source.name],
+                        'mechanism':prep.get('mechanism','natural'),'rate':prep.get('rate'), 'row_cap':prep.get('row_cap'),
+                        **{key:prep.get(key) for key in ('construction','donor_band','alignment','requested_sibling_ratio','mixed_format','entity_overlap')}}
                 start_case = len(rows)
                 # Oracle reference uses pre-mask values, not truth-driven parameter selection.
                 if prep.get('mechanism') and phase!='subsets':
@@ -394,37 +539,52 @@ def run_research(cfg, phase, root, selection=None):
                             detail['edges'] = frame
                         edge_details.append({**tags,'missing':missing,**detail})
                     for name,ospec in optimizer_specs.items():
+                        from .threshold_selection import offset_graph
+                        offset=0. if phase in ('global','subsets') else (chosen or {}).get('decision_offsets',{}).get(missing,{}).get(name,0.)
+                        decision_edges=offset_graph(edges,offset) if offset else edges
                         optimizer = OPTIMIZERS.build(ospec['name'],ospec['params'])
                         started = time.perf_counter()
-                        result = optimizer.optimize(edges,ctx)
+                        before_optimizer=len(profiler.records)
+                        with profiler.stage('optimizer',set=iset.name,optimizer=name):
+                            result = optimizer.optimize(decision_edges,ctx)
                         optimizer_time = time.perf_counter()-started
-                        validate_matching(result,edges,f'{missing}/{name}/{current.name}')
+                        optimizer_stages=profiler.records[before_optimizer:]
+                        peak=max((r.get('rss_peak_mb',0.) for r in stages+optimizer_stages),default=0.)
+                        if not (result.info.get('diagnostic_unconstrained') and spec.get('allow_unconstrained_baselines',False)):
+                            validate_matching(result,edges,f'{missing}/{name}/{current.name}')
                         record = matching_record(result,iset.groundtruth,edges.columns)
-                        rows.append({**tags,'missing':missing,'optimizer':name,'oracle':False,
-                            **evaluate(result,iset.groundtruth),**{k:record[k] for k in ('TP','FP','FN')},
+                        rows.append({**tags,'missing':missing,'optimizer':name,'oracle':False,'prior':float(edges.meta['prior']),
+                            'decision_offset':float(offset),
+                            'comparison_scope':'unconstrained baseline' if result.info.get('diagnostic_unconstrained') else 'feasible partition',
+                            'same_table_conflicts':result.info.get('same_table_conflicts',0),
+                            **evaluate(result,iset.groundtruth,edges.columns),**{k:record[k] for k in ('TP','FP','FN')},
                             'mean_sigma':float(frame.sigma.mean()) if len(frame) else 0.,'edge_auc':edge_metrics['auc'],
-                            'edge_brier':edge_metrics['brier'],'edge_nll':edge_metrics['nll'],**conflicts,
+                            'edge_brier':edge_metrics['brier'],'edge_nll':edge_metrics['nll'],'edge_ece':edge_metrics['ece'],**conflicts,
                             'compute_edges_s':elapsed,'optimizer_time_s':optimizer_time,'matcher_cache_hit':hit,
+                            'rss_peak_mb_in_process':peak,
                             **{k:samples.meta.get(k,False) for k in ('online_statistics','legacy_cache_import','raw_samples_retained')},
                             'n_score_samples':len(samples),'n_edges':len(edges.df),'R':realization.n_samples,
                             'component_recall':blocking.get('component_recall'),'recall_at_l':blocking.get('recall_at_l'),
-                            'llm_calls':llm_after.get('llm_calls',0)-llm_before.get('llm_calls',0),
-                            'llm_cost_usd':llm_after.get('llm_cost_usd',0)-llm_before.get('llm_cost_usd',0),
+                            **{key:llm_after.get(key,0)-llm_before.get(key,0) for key in ('llm_calls','llm_cache_hits',
+                                'llm_prompt_tokens','llm_cache_hit_tokens','llm_cache_miss_tokens','llm_completion_tokens','llm_reasoning_tokens')},
+                            'llm_pricing_configured':llm_after.get('llm_pricing_configured',False),
+                            'llm_cost_usd':(llm_after.get('llm_cost_usd',0)-llm_before.get('llm_cost_usd',0)) if llm_after.get('llm_pricing_configured',False) else None,
                             'n_uncertain_edges':int((frame.sigma>1e-12).sum()),
                             'uncertainty_model_s':sum(r['time_s'] for r in stages if r['stage']=='uncertainty_model'),
                             'sampling_s':sum(r['time_s'] for r in stages if r['stage']=='sampling'),
                             'matcher_s':sum(r['time_s'] for r in stages if r['stage']=='matcher'),
                             'propagation_s':sum(r['time_s'] for r in stages if r['stage']=='uncertainty_propagation'),
                             **partition_objective(result,edges),
-                            **{k:result.info.get(k) for k in ('all_optimal','global_exact','n_variables','n_triangle_constraints','max_component_columns','solver_time_s')}})
+                            **{k:result.info.get(k) for k in ('all_optimal','global_exact','n_variables','n_triangle_constraints','max_component_columns','solver_time_s','actual_mip_gap','objective_upper_bound')}})
                         predictions.append({**tags,'missing':missing,'optimizer':name,'matching':record})
                         if spec.get('diagnostics',True):
                             strata.extend({**tags,'missing':missing,'optimizer':name,**r} for r in missing_strata(edge_records(edges,iset,result)))
                     method_rows = [r for r in rows[start_case:] if r['missing']==missing]
                     optimum = next((r for r in method_rows if r['optimizer']=='global'),None)
                     for row in method_rows:
-                        row['objective_gap'] = (optimum['partition_objective']-row['partition_objective']) if optimum and row['pairs_outside_closure']==0 else None
-                        if row['k']==2 and row['optimizer']=='local' and optimum:
+                        comparable=optimum and row['decision_offset']==optimum['decision_offset']
+                        row['objective_gap'] = (optimum['partition_objective']-row['partition_objective']) if comparable and row['pairs_outside_closure']==0 else None
+                        if row['k']==2 and row['optimizer']=='local' and comparable:
                             row['two_table_objective_agrees'] = abs(row['objective_gap'])<1e-6
                 case_rows = rows[start_case:]
                 for row in case_rows:
@@ -451,6 +611,7 @@ def run_research(cfg, phase, root, selection=None):
                             'held_fixed':spec.get('prior',.5) if axis=='lambda' else cfg['ablation']['missing'][base_strategy]['uncertainty_propagation']['params']['risk_lambda']}
     payload = {'run_id':run_id,'name':spec['name']+' '+phase,'kind':'research','config':cfg,
         'protocol':{'role':role,'phase':phase,'fingerprints':[task_signature(s) for s in sets],
+                    'bootstrap':bootstrap,
                     'note':'Repeated overlapping source subsets are paired cases, not independent datasets; no test-fitted thresholds.'},
         'calibration':calibrations,'calibration_sha256':file_sha256(artifact_path),'selection':selection_record,
         'rows':rows,'summary':research_summary(rows),'predictions':predictions,
@@ -460,7 +621,9 @@ def run_research(cfg, phase, root, selection=None):
                            'Risk coverage':risk,'Frozen validation selection':[selection_record] if selection_record else [],
                            'Runtime and ILP size':[{k:r.get(k) for k in ('set','k','draw','missing','optimizer','R','n_edges','n_score_samples',
                             'compute_edges_s','optimizer_time_s','matcher_cache_hit','matcher_s','sampling_s','uncertainty_model_s','propagation_s',
-                            'n_variables','n_triangle_constraints','max_component_columns','all_optimal','llm_calls','llm_cost_usd')} for r in rows],
+                            'n_variables','n_triangle_constraints','max_component_columns','all_optimal','actual_mip_gap','llm_calls',
+                            'llm_cache_hits','llm_prompt_tokens','llm_cache_hit_tokens','llm_cache_miss_tokens','llm_completion_tokens',
+                            'llm_reasoning_tokens','llm_pricing_configured','llm_cost_usd')} for r in rows],
                            'Objective and recovery':[{k:r.get(k) for k in ('set','k','draw','missing','optimizer','pair_f1','partition_objective',
                             'objective_gap','pairs_outside_closure','two_table_objective_agrees','mechanism','rate','row_cap','recovery_denominator','recovery_ratio')} for r in rows]},
         'diagnostics':edge_details,'stage_records':stage_records}

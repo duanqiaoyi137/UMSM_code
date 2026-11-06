@@ -1,0 +1,11 @@
+# Same real-data protocol, with explicit GPU numerical backends and isolated artifacts.
+base: full_pipeline.yaml
+research:
+  device: cuda
+  compute_device: cuda
+  numerical_backend: torch
+paths:
+  raw_score_cache: true
+study:
+  protocol_suffix: gpu_v1
+  state: output/results/full_pipeline_gpu_state.html

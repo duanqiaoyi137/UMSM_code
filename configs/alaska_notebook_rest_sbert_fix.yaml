@@ -1,0 +1,8 @@
+# Finish Alaska-notebook without the expensive validate-offsets phase.
+# decision_offset_grid is [0], so the frozen offset is already trivially zero.
+base: full_pipeline_sbert_fix.yaml
+research:
+  plots: false
+  diagnostics: false
+study:
+  phases: [qcheck, audit, factorial, edges, pairwise, global]

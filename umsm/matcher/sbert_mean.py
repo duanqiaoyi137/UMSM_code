@@ -31,12 +31,13 @@ class SBertMeanMatcher(BaseMatcher):
     """Frequency-preserving mean cell embeddings with optional header similarity."""
 
     def __init__(self, model=DEFAULT_MODEL, device="auto", batch_size=64, max_length=None,
-                 name_weight=1.0, value_weight=1.0):
+                 name_weight=1.0, value_weight=1.0,numerical_device='cpu'):
         # 输入：model、device、batch_size、max_length、name_weight、value_weight；输出：None；初始化实例及校验参数；继承：SBertMeanMatcher(BaseMatcher)。
         if not np.isfinite([name_weight, value_weight]).all() or min(name_weight, value_weight) < 0 or name_weight + value_weight <= 0:
             raise ValueError("weights must be finite, nonnegative, and have positive sum")
         self.model, self.device, self.batch_size, self.max_length = model, device, batch_size, max_length
         self.name_weight, self.value_weight = name_weight, value_weight
+        self.numerical_device=numerical_device
 
     def score(self, data, ctx):
         # 输入：data、ctx；输出：ScoreSamples（对齐采样的原始分数）；继承：SBertMeanMatcher(BaseMatcher)，重写父类方法。
@@ -53,13 +54,35 @@ class SBertMeanMatcher(BaseMatcher):
             key = ('mean_column',self.model,self.device,self.max_length,digest)
             return ctx.shared(key,lambda:frequency_mean(state.values,vec,dim))
         means = {c: np.stack([representation(s) for s in ss]) for c, ss in states.items()}
-        records = []
+        records = []; parts=[]; offsets={}; offset=0
+        for c in states: offsets[c]=offset; offset+=len(means[c])
+        left=[]; right=[]
         for ci, cj in cross_table_pairs(data):
             ai, bj, prob = data.pair_indices(ci, cj)
             name = float(np.clip(_cos(vec[ci.name.strip()][None], vec[cj.name.strip()][None])[0], -1, 1))
+            if self.numerical_device!='cpu':
+                parts.append((ci,cj,ai,bj,prob,name)); left.extend(offsets[ci]+ai); right.extend(offsets[cj]+bj)
+                continue
             value = np.clip(_cos(means[ci][ai], means[cj][bj]), -1, 1)
             scores = .5 + .5 * (self.name_weight * name + self.value_weight * value) / (self.name_weight + self.value_weight)
             for r, (a, b, p, s) in enumerate(zip(ai, bj, prob, scores)):
                 records.append(sample_record(ci, cj, int(a), int(b), p, s,
                                              name_score=(1 + name) / 2, value_score=(1 + value[r]) / 2))
+        if parts:
+            # Upload unique state vectors once; score aligned pairs in bounded batches.
+            import torch
+            from ..numerics import torch_device
+            with torch.inference_mode():
+                vectors=torch.as_tensor(np.concatenate(list(means.values())),dtype=torch.float64,device=torch_device(self.numerical_device))
+                values=[]
+                for start in range(0,len(left),4096):
+                    a=vectors[left[start:start+4096]]; b=vectors[right[start:start+4096]]
+                    denom=torch.linalg.vector_norm(a,dim=-1)*torch.linalg.vector_norm(b,dim=-1)
+                    values.extend(torch.where(denom>0,(a*b).sum(-1)/denom.clamp_min(1e-300),0.).clamp(-1,1).cpu().numpy())
+            cursor=0
+            for ci,cj,ai,bj,prob,name in parts:
+                value=np.asarray(values[cursor:cursor+len(ai)]); cursor+=len(ai)
+                scores=.5+.5*(self.name_weight*name+self.value_weight*value)/(self.name_weight+self.value_weight)
+                for r,(a,b,p,s) in enumerate(zip(ai,bj,prob,scores)):
+                    records.append(sample_record(ci,cj,int(a),int(b),p,s,name_score=(1+name)/2,value_score=(1+value[r])/2))
         return ScoreSamples.from_records(records, data.columns, {"matcher": self.registry_name, **data.score_meta()})

@@ -1,0 +1,439 @@
+base: full_pipeline_gpu.yaml
+research:
+  decision_offset_grid:
+  - 0
+study:
+  matchers:
+  - distribution
+  jobs:
+  - id: alaska-camera
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - audit
+    - missing
+    - factorial
+    - edges
+    - pairwise
+    - global
+    - frontier
+    overrides:
+      research:
+        name: full_alaska_camera
+        fold: monitor_notebook_camera
+        calibration_group: full_alaska_micefix_v4
+        roles:
+          fit:
+            name: Alaska_Partition
+            sets:
+            - monitor_pool
+          validation:
+            name: Alaska_Partition
+            sets:
+            - notebook_pool
+          test:
+            name: Alaska_Partition
+            sets:
+            - camera_test_*
+  - id: alaska-monitor
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - audit
+    - missing
+    - factorial
+    - edges
+    - pairwise
+    - global
+    - frontier
+    overrides:
+      research:
+        name: full_alaska_monitor
+        fold: camera_notebook_monitor
+        calibration_group: full_alaska_micefix_v4
+        roles:
+          fit:
+            name: Alaska_Partition
+            sets:
+            - camera_pool
+          validation:
+            name: Alaska_Partition
+            sets:
+            - notebook_pool
+          test:
+            name: Alaska_Partition
+            sets:
+            - monitor_test_*
+  - id: alaska-notebook
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - audit
+    - missing
+    - factorial
+    - edges
+    - pairwise
+    - global
+    - frontier
+    overrides:
+      research:
+        name: full_alaska_notebook
+        fold: monitor_camera_notebook
+        calibration_group: full_alaska_micefix_v4
+        roles:
+          fit:
+            name: Alaska_Partition
+            sets:
+            - monitor_pool
+          validation:
+            name: Alaska_Partition
+            sets:
+            - camera_pool
+          test:
+            name: Alaska_Partition
+            sets:
+            - notebook_test_*
+  - id: c1-camera
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    overrides:
+      research:
+        name: full_c1_camera
+        fold: monitor_notebook_camera
+        calibration_group: full_alaska_micefix_v4
+        roles:
+          fit:
+            name: Alaska_Partition
+            sets:
+            - monitor_pool
+          validation:
+            name: Alaska_Partition
+            sets:
+            - notebook_pool
+          test:
+            name: Alaska_Partition
+            sets:
+            - camera_pool
+  - id: c1-monitor
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    overrides:
+      research:
+        name: full_c1_monitor
+        fold: camera_notebook_monitor
+        calibration_group: full_alaska_micefix_v4
+        roles:
+          fit:
+            name: Alaska_Partition
+            sets:
+            - camera_pool
+          validation:
+            name: Alaska_Partition
+            sets:
+            - notebook_pool
+          test:
+            name: Alaska_Partition
+            sets:
+            - monitor_pool
+  - id: c1-notebook
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    overrides:
+      research:
+        name: full_c1_notebook
+        fold: monitor_camera_notebook
+        calibration_group: full_alaska_micefix_v4
+        roles:
+          fit:
+            name: Alaska_Partition
+            sets:
+            - monitor_pool
+          validation:
+            name: Alaska_Partition
+            sets:
+            - camera_pool
+          test:
+            name: Alaska_Partition
+            sets:
+            - notebook_pool
+  - id: sotab-k{k}
+    matrix:
+      k:
+      - 5
+      - 8
+      - 12
+    overrides:
+      research:
+        name: full_sotab_k{k}
+        roles:
+          test:
+            name: SOTAB_K{k}
+            sets:
+            - test_*
+  - id: gdc
+    overrides:
+      research:
+        name: full_gdc
+        roles:
+          test:
+            name: GDC
+            sets:
+            - clinical
+  - id: madi
+    overrides:
+      research:
+        name: full_madi
+        roles:
+          test:
+            name: MaDI
+            sets:
+            - games_pilot300
+            - music_pilot300
+            - papers_pilot300
+  - id: c2-{band}-n{rows}
+    allow_empty: true
+    matrix:
+      band:
+      - low
+      - medium
+      - high
+      rows:
+      - 10
+      - 30
+      - 100
+      - 300
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - audit
+    - missing
+    - factorial
+    - edges
+    - pairwise
+    overrides:
+      research:
+        name: full_c2_{band}_n{rows}
+        roles:
+          test:
+            name: FullPipeline_Transplant
+            sets:
+            - '*_{band}_aligned_n{rows}_s*'
+  - id: c3-k{k}
+    allow_empty: true
+    matrix:
+      k:
+      - 2
+      - 3
+      - 4
+      - 6
+      - 8
+      - 10
+      - 12
+      - 16
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - audit
+    - missing
+    - factorial
+    - global
+    overrides:
+      research:
+        name: full_c3_k{k}
+        roles:
+          test:
+            name: FullPipeline_Split
+            sets:
+            - '*_k{k}_b0.3_fmt0_o0.5_high_aligned_n30_s*'
+  - id: c3-b{ratio}-fmt{format}-n{rows}
+    allow_empty: true
+    matrix:
+      ratio:
+      - 0
+      - 0.1
+      - 0.3
+      - 0.5
+      format:
+      - 0
+      - 1
+      rows:
+      - 10
+      - 30
+      - 100
+      - 300
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - audit
+    - missing
+    - factorial
+    - global
+    overrides:
+      research:
+        name: full_c3_b{ratio}_fmt{format}_n{rows}
+        roles:
+          test:
+            name: FullPipeline_Split
+            sets:
+            - '*_k8_b{ratio}_fmt{format}_o0.5_high_aligned_n{rows}_s*'
+  - id: controls
+    matchers:
+    - mean
+    - name
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - audit
+    - missing
+    - factorial
+    overrides:
+      research:
+        name: full_controls
+  - id: ablation-symbolic
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - audit
+    - missing
+    - factorial
+    overrides:
+      research:
+        name: full_symbolic
+        calibration_group: full_symbolic_micefix_v4
+      modules:
+        uncertainty_model:
+          params:
+            routing: shared
+            type_options: {}
+            generators:
+            - name: knn_tuple
+              params:
+                k: 10
+            - name: column_marginal
+  - id: ablation-alaska-monitor
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - constraints
+    overrides:
+      research:
+        name: full_ablation_monitor
+        fold: camera_notebook_monitor
+        calibration_group: full_alaska_micefix_v4
+        roles:
+          fit:
+            name: Alaska_Partition
+            sets:
+            - camera_pool
+          validation:
+            name: Alaska_Partition
+            sets:
+            - notebook_pool
+          test:
+            name: Alaska_Partition
+            sets:
+            - monitor_test_01
+  - id: ablation-gdc
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - constraints
+    overrides:
+      research:
+        name: full_ablation_gdc
+        roles:
+          test:
+            name: GDC
+            sets:
+            - clinical
+  - id: alaska-case-study
+    matchers:
+    - distribution
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - missing
+    overrides:
+      experiment:
+        save_edges: true
+      research:
+        name: full_alaska_case
+        fold: camera_notebook_monitor
+        calibration_group: full_alaska_micefix_v4
+        roles:
+          fit:
+            name: Alaska_Partition
+            sets:
+            - camera_pool
+          validation:
+            name: Alaska_Partition
+            sets:
+            - notebook_pool
+          test:
+            name: Alaska_Partition
+            sets:
+            - monitor_test_01
+  - id: efficiency
+    matchers:
+    - quantile
+    phases:
+    - profile
+    - fit
+    - qcheck
+    - validate-lambda
+    - validate-offsets
+    - benchmark
+    - sensitivity
+    - constraints
+    - downstream
+    overrides:
+      research:
+        name: full_efficiency
+        roles:
+          test:
+            name: SOTAB_K12
+            sets:
+            - test_01_*
+            max_sets: 1

@@ -1,0 +1,43 @@
+# Fast Magneto LLM reranker approximation for the remaining matcher comparison.
+# Explicitly marked as approximate: fewer masks, one text variant, rerank_k=2.
+base: full_pipeline_sbert_fix.yaml
+research:
+  plots: false
+  diagnostics: false
+  max_cells: 8
+  n_samples: 8
+  matcher_params:
+    magneto:
+      reranker: llm
+      rerank_k: 2
+      llm_sample_size: 4
+      llm_workers: 12
+      llm_max_variants: 1
+      llm_max_tokens: 1024
+study:
+  protocol_suffix: magneto_llm_fast_v1
+  state: output/results/magneto_llm_fast_state.html
+  matchers: [magneto]
+  phases: [fit, validate-lambda, missing]
+  jobs:
+    - id: magneto-llm-fast-gdc
+      overrides:
+        research:
+          name: magneto_llm_fast_gdc
+          calibration_group: magneto_llm_fast_external
+          roles:
+            test: {name: GDC, sets: [clinical]}
+    - id: magneto-llm-fast-madi
+      overrides:
+        research:
+          name: magneto_llm_fast_madi
+          calibration_group: magneto_llm_fast_external
+          roles:
+            test: {name: MaDI, sets: [games_pilot300, music_pilot300, papers_pilot300]}
+    - id: magneto-llm-fast-sotab-k5
+      overrides:
+        research:
+          name: magneto_llm_fast_sotab_k5
+          calibration_group: magneto_llm_fast_external
+          roles:
+            test: {name: SOTAB_K5, sets: ['test_*']}

@@ -1,0 +1,8 @@
+# S-BERT constraints ablation on representative folds.
+base: full_pipeline_sbert_fix.yaml
+research:
+  plots: false
+  diagnostics: false
+study:
+  state: output/results/sbert_fix_state.html
+  phases: [validate-lambda, constraints]

@@ -32,7 +32,7 @@ def config_from_args(args) -> dict:
                           (args.propagation, "uncertainty_propagation"), (args.optimizer, "global_optimizer")):
         if flag and 'research' in cfg:
             modules = cfg.setdefault('modules',{})
-            if section=='matcher' and flag in ('mean','name','value','coma','jaccard','distribution','magneto'):
+            if section=='matcher' and flag in ('mean','name','value','coma','jaccard','distribution','magneto','quantile','alite_native'):
                 cfg['research']['matcher'] = flag
                 modules.pop('matcher',None)
             else:
@@ -57,6 +57,10 @@ def config_from_args(args) -> dict:
 
 def main(argv=None, default_phase='run'):
     # 输入：统一命令行；输出：显式阶段的单 HTML/冻结校准，或无执行配置预览；继承：无（模块函数）。
+    import signal
+    import threading
+    if threading.current_thread() is threading.main_thread():
+        signal.signal(signal.SIGINT,signal.default_int_handler)
     from .pipeline import build_components
     from .registry import MATCHERS,OPTIMIZERS,PROPAGATIONS,UNCERTAINTY_MODELS
     from .research import PHASES,research_config,role_config,run_research
@@ -64,7 +68,9 @@ def main(argv=None, default_phase='run'):
     parser = argparse.ArgumentParser(description='UMSM paper experiments: one interface, four configurable modules')
     add_config_args(parser)
     parser.set_defaults(config=str(root/'configs/paper.yaml'))
-    parser.add_argument('--phase',choices=('run','ablation','summarize','package',*PHASES),default=default_phase)
+    parser.add_argument('--phase',choices=('run','ablation','summarize','package','prepare-study','study','bundle',*PHASES),default=default_phase)
+    parser.add_argument('--study-part',help='comma-separated declared suite job IDs')
+    parser.add_argument('--jobs',type=int,help='independent study jobs; CPU quota is divided across jobs')
     parser.add_argument('--selection',help='frozen validation HTML; never a test-fitted diagnostic')
     parser.add_argument('--list',action='store_true')
     parser.add_argument('--check-config',action='store_true',help='validate components without loading data/models or calling APIs')
@@ -88,15 +94,32 @@ def main(argv=None, default_phase='run'):
         return
     if args.phase=='package':
         from .release import package_source
-        return package_source(root,args.output or root/'dist/umsm_source.zip')
+        return package_source(root,args.output or root/'output/dist/umsm_source.zip')
     if args.phase=='summarize':
         if not args.reports:
             parser.error('summarize requires --reports')
         from analyze_research import analyze
-        return analyze(args.reports,args.output or str(root/'results/research_comparison.html'))
-    if args.selection and (args.phase.startswith('validate-') or args.phase in ('fit','qcheck','profile')):
+        return analyze(args.reports,args.output or str(root/'output/results/research_comparison.html'))
+    if args.selection and ((args.phase.startswith('validate-') and args.phase!='validate-offsets') or args.phase in ('fit','qcheck','profile')):
         parser.error('Frozen selection is used only for evaluation phases')
     cfg = config_from_args(args)
+    from .execution import install_q_cache_lock
+    install_q_cache_lock()
+    if args.jobs is not None:
+        if args.phase!='study' or args.jobs<1: parser.error('--jobs needs --phase study and a positive integer')
+        cfg['study']['parallel_jobs']=args.jobs
+    if args.phase in ('prepare-study','study','bundle'):
+        if args.check_config:
+            print(yaml.safe_dump(cfg,sort_keys=False,allow_unicode=True))
+            return cfg
+        if args.phase=='prepare-study':
+            from .data.study import prepare_study
+            return prepare_study(cfg['study']['construction'],root)
+        if args.phase=='study':
+            from .study import run_suite
+            return run_suite(cfg,root,args.study_part)
+        from .study import bundle_study
+        return bundle_study(cfg,root,args.output or 'output/dist/umsm_server.zip')
     research = 'research' in cfg
     if research:
         if args.dataset:
@@ -142,6 +165,8 @@ def main(argv=None, default_phase='run'):
     if args.selection:
         parser.error('Use research phases missing/factorial for a frozen selection')
     if research:
+        if cfg['research'].get('prior_policy')=='fit_prevalence':
+            parser.error('This fixed-prior protocol needs --phase study or an explicit research phase with a frozen calibration')
         cfg,_ = role_config(cfg,'test',root)
     from .experiment import run_experiment
     return run_experiment(cfg,str(root))

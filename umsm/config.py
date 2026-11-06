@@ -12,9 +12,10 @@ DEFAULTS = {
     "experiment": {
         "name": None,                # run name; default "<dataset>__<model>+<matcher>+<propagation>+<optimizer>"
         "seed": 42,
-        "output_dir": "results",
+        "output_dir": "output/results",
         "verbose": False,
         "online": True,            # Algorithm 1; false is an explicit batch reference only
+        "workers": 1,             # CPU scoring processes; bounded by the actual cgroup quota
         "save_edges": False,        # optional diagnostics embedded in the same HTML result
         "save_score_samples": False,
         "save_uncertainty": False,
@@ -42,7 +43,8 @@ DEFAULTS = {
     "profiling": {"interval_s": 0.02, "tracemalloc": False},
     # For runtime/scalability experiments set embedding_cache: false and matcher.cache_scores: false,
     # otherwise the matcher time excludes encoding / scoring.
-    "paths": {"cache_dir": "cache", "embedding_cache": True, "raw_score_cache": False},
+    "paths": {"cache_dir": "output/cache", "embedding_cache": True, "raw_score_cache": False,
+              "uncertainty_cache": True},
 }
 
 
@@ -97,6 +99,9 @@ def read_yaml(path: str, _chain: tuple = ()) -> dict:
         if "name" in child and child["name"] != (parent.get(m) or {}).get("name"):
             merged[m]["params"] = copy.deepcopy(child.get("params") or {})
     for m,child in data.get('modules',{}).items():
+        if child is None:
+            merged['modules'].pop(m,None)
+            continue
         old = parent.get('modules',{}).get(m,{})
         if 'name' in child and child['name']!=old.get('name'):
             merged['modules'][m]['params'] = copy.deepcopy(child.get('params') or {})

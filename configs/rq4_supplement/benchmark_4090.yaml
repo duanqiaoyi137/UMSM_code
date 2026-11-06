@@ -1,0 +1,9 @@
+base: benchmark.yaml
+experiment:
+  workers: 1
+  notes: 'RQ4 hardware v2: isolated online/batch comparison on RTX4090 24564MiB, CPU quota=16, RAM=120GiB; OMP/MKL/OpenBLAS=16; embedding batch default=64.'
+paths:
+  cache_dir: output/cache/rq4_4090_20261106
+study:
+  protocol_suffix: rq4_4090_16cpu_20261106_v2
+  state: output/results/rq4_benchmark_4090_20261106_state.html

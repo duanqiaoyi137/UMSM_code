@@ -1,0 +1,10 @@
+# S-BERT mean with the corrected categorical/text/ordered_numeric routes.
+# Wide lambda grid; validation-only selection; test scored once.
+base: full_pipeline_sbert.yaml
+research:
+  lambda_grid: [0, 1, 2, 5, 10, 20, 50, 100, 200]
+  plots: false
+  diagnostics: false
+study:
+  protocol_suffix: sbert_fix_v1
+  state: output/results/sbert_fix_state.html
