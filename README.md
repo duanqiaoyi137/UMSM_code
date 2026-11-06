@@ -43,7 +43,7 @@ Windows PowerShell 激活命令为 `.\.venv\Scripts\Activate.ps1`。CUDA 运行�
 1. 根据观测数据推断列类型，使用同表信息生成候选；混合权重及分布参数在 fit 数据的伪缺失值上学习。
 2. 按 Q 抽样生成不同补全版本，交给指定 Matcher。主线配置 `R=32`，确定性列对可以只计算一次。
 3. 每轮分数经冻结 Platt 校准，再计算均值 μ 和标准差 σ。Q-risk 使用 `clip(μ−λσ)`，边权为 `logit(p_tilde)−logit(prior)`。
-4. 在同表互斥和传递一致性约束下，使用 SciPy `milp` / HiGHS 求解列分组。`full` 和 `lazy` 是两种三角约束处理方式。
+4. 在同表互斥和传递一致性约束下，使用ILP求解列分组。`full` 和 `lazy` 是两种三角约束处理方式。
 
 `Q_mean` 令 λ=0；Top1 对每格取 Q 中概率最大的候选。Multiple MICE 是独立的多重插补基线，当前实现先平均原始 Matcher 分数再校准。风险系数 λ 与 prior 的选择规则由各研究配置指定，不通过测试标签调参。
 
@@ -65,4 +65,3 @@ Magneto 的 `column_pair` 适配只暴露被评分的两列，与原生整表检
 
 需要 LLM 时，复制 `.env.example` 为本地 `.env`，填写自己的环境变量。进程环境变量优先。提供商设置见 [configs/magneto_deepseek.yaml](configs/magneto_deepseek.yaml)，可用 `python check_llm.py -c configs/magneto_deepseek.yaml` 检查；该命令可能实际调用提供商接口。
 
-密钥、数据、模型及所有 `output/` 内容均由 `.gitignore` 排除。不要提交真实 API 密钥、私钥、实验结果或本机环境。
