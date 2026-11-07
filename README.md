@@ -2,7 +2,7 @@
 
 含缺失值的多表列匹配框架：构造缺失值候选分布，逐轮传播到匹配概率，综合匹配均值和波动，最终求解全局一致的列分组。
 
-本仓库保存算法实现、运行配置、数据准备脚本和离线测试，并包含 `data/` 中的预处理数据。预训练模型、校准文件、缓存、实验结果和论文文档需另行准备。
+本仓库保存算法实现、运行配置、数据准备脚本和离线测试，并包含 `data/` 中的预处理数据。预训练模型位于 `models/`（使用 Git LFS）；校准文件、缓存、实验结果和论文文档需另行准备。
 
 ## 目录
 
@@ -51,7 +51,7 @@ Windows PowerShell 激活命令为 `.\.venv\Scripts\Activate.ps1`。CUDA 运行�
 
 ## 数据 模型与正式运行
 
-仓库已包含 `data/` 中的预处理数据；本地编码模型放在 `models/`，需要另行准备。按需要执行 `prepare_alaska.py`、`prepare_alaska_partitions.py`、`prepare_sotab.py`、`prepare_gdc.py`、`prepare_madi.py` 或 `prepare_variants.py`；具体数据源及参数可查看相应脚本的 `--help`。部分研究使用独立的 fit、validation、test 数据，评估前需要相应数据和自己的冻结校准文件。
+仓库已包含 `data/` 中的预处理数据；本地编码模型已放在 `models/`，下载仓库后执行 `git lfs install` 和 `git lfs pull`，详见 [models/README.md](models/README.md)。按需要执行 `prepare_alaska.py`、`prepare_alaska_partitions.py`、`prepare_sotab.py`、`prepare_gdc.py`、`prepare_madi.py` 或 `prepare_variants.py`；具体数据源及参数可查看相应脚本的 `--help`。部分研究使用独立的 fit、validation、test 数据，评估前需要相应数据和自己的冻结校准文件。
 
 例如，准备完配置要求的数据及模型后，可运行 S-BERT 研究中的 GDC 作业：
 

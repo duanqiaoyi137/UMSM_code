@@ -1,6 +1,5 @@
 # Runtime artifacts and local assets
 /output/
-/models/
 /cache/
 /results/
 /calibration/
@@ -46,3 +45,6 @@ venv/
 .idea/
 *.log
 *.lock
+
+# Model download metadata is not needed to load checkpoints
+/models/**/.cache/

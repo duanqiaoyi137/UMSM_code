@@ -12,7 +12,7 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "5f1983a9a3a54591e4fe0559fd06689c64e84b144cd3fb5f32e2e6efeb0b29d6"
+      "sha256": "08b820e42209a545bdd2a585b51923d56a3c0da884dc80b3b5bb951a6138d44c"
     },
     {
       "path": "ablation.py",
@@ -324,7 +324,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "d2db9b8aec196090a49c2b183a92264cbca04cbb6d6c101787a17639d97e6616"
+      "sha256": "45920e280d2ab0581e60a9489aec55557d71ff04f24baf13555a7ef5f0564360"
     },
     {
       "path": "requirements.txt",
@@ -763,5 +763,5 @@
     "results",
     "tex"
   ],
-  "scope": "Source files only; data/ is tracked separately in DATA_MANIFEST.json"
+  "scope": "Source files only; data/ is recorded in DATA_MANIFEST.json and models/ in MODEL_MANIFEST.json"
 }

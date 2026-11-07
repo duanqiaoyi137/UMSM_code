@@ -1,0 +1,253 @@
+{
+  "format": "umsm-models-v1",
+  "files": [
+    {
+      "path": "models/all-mpnet-base-v2/.gitattributes",
+      "bytes": 1229,
+      "sha256": "98ccb431c012ebfe976280fbd45aea4cec7409935868ccecf3954370f96732a1",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/1_Pooling/config.json",
+      "bytes": 190,
+      "sha256": "a37f83ada23e7887be6b88f4998927dbeac0038af301553c7cd5461413bf1a56",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/config.json",
+      "bytes": 571,
+      "sha256": "d46a3e04ded82bba22528424480697d394eeda6a27484e08c5bb2bdf5906cfa0",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/config_sentence_transformers.json",
+      "bytes": 116,
+      "sha256": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/data_config.json",
+      "bytes": 39265,
+      "sha256": "32edcb108fc2516b920734a862ae0692bcae1c5d45d5f8d972cb0d53434a4c54",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/model.safetensors",
+      "bytes": 437971872,
+      "sha256": "78c0197b6159d92658e319bc1d72e4c73a9a03dd03815e70e555c5ef05615658",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": true
+    },
+    {
+      "path": "models/all-mpnet-base-v2/modules.json",
+      "bytes": 349,
+      "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/onnx/model.onnx",
+      "bytes": 435826548,
+      "sha256": "74187b16d9c946fea252e120cfd7a12c5779d8b8b86838a2e4c56573c47941bd",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/onnx/model_O1.onnx",
+      "bytes": 435730180,
+      "sha256": "5c0b47004076ab40bf15a2c52b98a53e985ebb84faaeeb6d2551768f96e384b0",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/onnx/model_O2.onnx",
+      "bytes": 435666661,
+      "sha256": "14d01256f5f3d2245b15b596173bca4367c9405fde5700dd7fb4e110708c1793",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/onnx/model_O3.onnx",
+      "bytes": 435666516,
+      "sha256": "dd55510706038d0817b7d41bf2078f01472e4865190584ad624e8ab79bbcb310",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/onnx/model_O4.onnx",
+      "bytes": 217894954,
+      "sha256": "cab2a54139fc4fd5b8e2a23cb5729ee28dc44cfde685ad3356d533653e635310",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/onnx/model_qint8_arm64.onnx",
+      "bytes": 110124379,
+      "sha256": "c392a9c545c7d4438a16fed8287a76a576b27eaf029c1c23bbf78a7a666d197f",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/onnx/model_qint8_avx512.onnx",
+      "bytes": 110124379,
+      "sha256": "c392a9c545c7d4438a16fed8287a76a576b27eaf029c1c23bbf78a7a666d197f",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/onnx/model_qint8_avx512_vnni.onnx",
+      "bytes": 110124379,
+      "sha256": "c392a9c545c7d4438a16fed8287a76a576b27eaf029c1c23bbf78a7a666d197f",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/onnx/model_quint8_avx2.onnx",
+      "bytes": 110207323,
+      "sha256": "aa5c27172d77bbd1cbae3628cbac4b26d7c12adabff25d2d4285d0f29159b237",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/openvino/openvino_model.bin",
+      "bytes": 435583684,
+      "sha256": "5c3279d833888eaab745e24b652126c5a71375af185ac21aa47e112e2468dec0",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/openvino/openvino_model.xml",
+      "bytes": 432773,
+      "sha256": "a2912e3dbd3426b77984992953998d8026a3d2377104093079e810b53fc51bf6",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/openvino/openvino_model_qint8_quantized.bin",
+      "bytes": 109974792,
+      "sha256": "fde0c650018f5e244f793316b666aaf4758d4e19072f430e59eb2bcc414895ce",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/openvino/openvino_model_qint8_quantized.xml",
+      "bytes": 741875,
+      "sha256": "930bc2a849d48941bb4752d8dac018f0c0ee8709ba023e47aeab4f8bb9c25b59",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/README.md",
+      "bytes": 11612,
+      "sha256": "89a1a9c3290fe58e76c939b578c48a14331dc7bfcaaf5a53102adb183da6f96a",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/sentence_bert_config.json",
+      "bytes": 53,
+      "sha256": "cabfacded9272091a06ff595a46ef027a76ddf4ac9e77d0fcf11c605748f1667",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/special_tokens_map.json",
+      "bytes": 239,
+      "sha256": "9ef40e9c160511bf3f46ceb71f1471dafa1e9473d5120bb816c36b2efa75f8ba",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/tokenizer.json",
+      "bytes": 466021,
+      "sha256": "b8be2c30ba5dd723a6d5ee26d013da103d5408d92ddcb23747622f9e48f1d842",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/tokenizer_config.json",
+      "bytes": 363,
+      "sha256": "67f2ff7e223518e729869bb3a70f0caf8368fe549383fc11cfe2dfb42fffc268",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/train_script.py",
+      "bytes": 13123,
+      "sha256": "dea86a7066caa55d0c84c343890dfd849714b6affd8b424ba12372a091578cc8",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/all-mpnet-base-v2/vocab.txt",
+      "bytes": 231536,
+      "sha256": "dbd90cb94e2247bd4d4ccaecbf616d2290e66691d7d5e5bb81f063c2d0649ada",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/bert-base-uncased/config.json",
+      "bytes": 570,
+      "sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/bert-base-uncased/model.safetensors",
+      "bytes": 440449768,
+      "sha256": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+      "upstream_lfs_sha256_verified": true,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/bert-base-uncased/tokenizer.json",
+      "bytes": 466062,
+      "sha256": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/bert-base-uncased/tokenizer_config.json",
+      "bytes": 48,
+      "sha256": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/bert-base-uncased/vocab.txt",
+      "bytes": 231508,
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "upstream_lfs_sha256_verified": false,
+      "repaired_copy": false
+    },
+    {
+      "path": "models/README.md",
+      "bytes": 1557,
+      "sha256": "5e2d92fbbf7ab68bdec863f0dc4b3687ee63838f08e78a4691c7836254d76bd2",
+      "generated_documentation": true
+    }
+  ],
+  "file_count": 33,
+  "total_bytes": 3827984495,
+  "excluded": [
+    "models/*.zip",
+    "models/**/.cache/**"
+  ],
+  "repairs": [
+    {
+      "path": "models/all-mpnet-base-v2/model.safetensors",
+      "local_original_bytes": 424673280,
+      "published_bytes": 437971872,
+      "repair": "Append missing suffix from server copy verified against original Hugging Face LFS SHA256; local original unchanged"
+    }
+  ],
+  "upstream_revisions": {
+    "sentence-transformers/all-mpnet-base-v2": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "google-bert/bert-base-uncased": "86b5e0934494bd15c9632b12f734a8a67f723594"
+  }
+}
